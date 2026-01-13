@@ -1,0 +1,121 @@
+category,likert_color,prompt,qtype,is_active
+Drive & Decisiveness,green,I'm more confident moving forward when there's a clear plan instead of improvising.,likert,True
+Drive & Decisiveness,yellow,I tend to slow down decisions if I sense tension or discomfort between people.,likert,True
+Drive & Decisiveness,blue,I lose steam when things feel routine or predictable for too long.,likert,True
+Drive & Decisiveness,red,I feel responsible for keeping things moving when others hesitate.,likert,True
+Drive & Decisiveness,green,I prefer to think through possible outcomes before committing to a direction.,likert,True
+Drive & Decisiveness,yellow,I'm willing to compromise on speed if it helps maintain trust.,likert,True
+Drive & Decisiveness,blue,"I'm more productive when I enjoy the process, not just the outcome.",likert,True
+Drive & Decisiveness,red,I'm comfortable being the one who takes the heat if a decision doesn't work out.,likert,True
+Drive & Decisiveness,green,I get uneasy when expectations aren't clearly defined.,likert,True
+Drive & Decisiveness,yellow,"I'm motivated when I feel connected to the people involved, not just the task"".",likert,True
+Drive & Decisiveness,green,I'm more confident moving forward when there's a clear plan instead of improvising.,likert,True
+Drive & Decisiveness,yellow,I tend to slow down decisions if I sense tension or discomfort between people.,likert,True
+Drive & Decisiveness,blue,I lose steam when things feel routine or predictable for too long.,likert,True
+Drive & Decisiveness,red,I feel responsible for keeping things moving when others hesitate.,likert,True
+Drive & Decisiveness,green,I prefer to think through possible outcomes before committing to a direction.,likert,True
+Drive & Decisiveness,yellow,I'm willing to compromise on speed if it helps maintain trust.,likert,True
+Drive & Decisiveness,blue,"I'm more productive when I enjoy the process, not just the outcome.",likert,True
+Drive & Decisiveness,red,I'm comfortable being the one who takes the heat if a decision doesn't work out.,likert,True
+Drive & Decisiveness,green,I get uneasy when expectations aren't clearly defined.,likert,True
+Drive & Decisiveness,yellow,"I'm motivated when I feel connected to the people involved, not just the task"".",likert,True
+Fun & Social Energy,blue,"I feel most alive when I'm laughing, talking, or sharing experiences with others.",likert,True
+Fun & Social Energy,green,I enjoy social events more when I know what to expect ahead of time.,likert,True
+Fun & Social Energy,yellow,I like being part of social settings where everyone feels included and comfortable.,likert,True
+Fun & Social Energy,red,I enjoy social situations when there's a clear purpose or activity involved.,likert,True
+Fun & Social Energy,blue,"If things feel dull or repetitive, I start looking for something more exciting to do.",likert,True
+Fun & Social Energy,green,"Large or noisy gatherings drain me faster than smaller, quieter ones.",likert,True
+Fun & Social Energy,yellow,I'm happiest in social settings where people are kind and supportive of each other.,likert,True
+Fun & Social Energy,red,I prefer events or activities that feel productive rather than just passing time.,likert,True
+Fun & Social Energy,blue,I'm usually up for trying something new if it sounds fun.,likert,True
+Fun & Social Energy,green,"I need downtime alone to recharge after being around people"".",likert,True
+Fun & Social Energy,blue,I'm usually the one suggesting plans or activities when people are hanging out.,likert,True
+Fun & Social Energy,yellow,I pay attention to who might feel left out during group activities.,likert,True
+Fun & Social Energy,green,I'm more relaxed socially when there's a schedule or structure to the event.,likert,True
+Fun & Social Energy,red,"I enjoy social situations more when there's a goal, game, or outcome involved.",likert,True
+Fun & Social Energy,blue,I get restless if I'm stuck at home too long without something fun planned.,likert,True
+Fun & Social Energy,green,I prefer meaningful conversations over small talk at social events.,likert,True
+Fun & Social Energy,yellow,I enjoy bringing people together and helping everyone feel connected.,likert,True
+Fun & Social Energy,red,I don't mind taking charge of plans if it keeps things moving.,likert,True
+Fun & Social Energy,blue,Spontaneous plans sound more appealing to me than carefully planned ones.,likert,True
+Fun & Social Energy,green,"I'm selective about social events and don't feel the need to attend everything"".",likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,red.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Values,loyalty & relationships,blue.,likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Values,loyalty & relationships,red.,likert,True
+Values,loyalty & relationships,blue.,likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,red.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Values,loyalty & relationships,blue.,likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Values,loyalty & relationships,red.,likert,True
+Values,loyalty & relationships,blue.,likert,True
+Values,loyalty & relationships,yellow.,likert,True
+Values,loyalty & relationships,green.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,blue.,likert,True
+Structure,planning & organization,yellow.,likert,True
+Structure,planning & organization,red.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,blue.,likert,True
+Structure,planning & organization,yellow.,likert,True
+Structure,planning & organization,red.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,blue.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,red.,likert,True
+Structure,planning & organization,blue.,likert,True
+Structure,planning & organization,yellow.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,blue.,likert,True
+Structure,planning & organization,yellow.,likert,True
+Structure,planning & organization,red.,likert,True
+Structure,planning & organization,green.,likert,True
+Structure,planning & organization,blue.,likert,True
+Risk,change & comfort zones,blue.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Risk,change & comfort zones,red.,likert,True
+Risk,change & comfort zones,yellow.,likert,True
+Risk,change & comfort zones,blue.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Risk,change & comfort zones,red.,likert,True
+Risk,change & comfort zones,yellow.,likert,True
+Risk,change & comfort zones,blue.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Risk,change & comfort zones,red.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Risk,change & comfort zones,blue.,likert,True
+Risk,change & comfort zones,yellow.,likert,True
+Risk,change & comfort zones,red.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Risk,change & comfort zones,blue.,likert,True
+Risk,change & comfort zones,yellow.,likert,True
+Risk,change & comfort zones,red.,likert,True
+Risk,change & comfort zones,green.,likert,True
+Focus,follow-through & consistency,green.,likert,True
+Focus,follow-through & consistency,blue.,likert,True
+Focus,follow-through & consistency,red.,likert,True
+Focus,follow-through & consistency,yellow.,likert,True
+Focus,follow-through & consistency,green.,likert,True
+Focus,follow-through & consistency,blue.,likert,True
+Focus,follow-through & consistency,red.,likert,True
+Focus,follow-through & consistency,yellow.,likert,True
+Focus,follow-through & consistency,green.,likert,True
+Focus,follow-through & consistency,blue.,likert,True
+Money,success & rewards,red.,likert,True
+Money,success & rewards,yellow.,likert,True
+Money,success & rewards,green.,likert,True
+Money,success & rewards,blue.,likert,True
+Money,success & rewards,red.,likert,True
+Money,success & rewards,yellow.,likert,True
+Money,success & rewards,green.,likert,True
+Money,success & rewards,blue.,likert,True
+Money,success & rewards,red.,likert,True
+Money,success & rewards,yellow.,likert,True

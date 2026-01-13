@@ -1,0 +1,31 @@
+category,prompt,opt1_label,opt1_color,opt2_label,opt2_color,opt3_label,opt3_color,opt4_label,opt4_color,qtype,is_active
+Team & Leadership,"In a group project, I’m most likely to…",take the lead and set the pace,red,keep the energy up and rally people,blue,make sure everyone feels included,yellow,organize the plan and track details,green,single,True
+Team & Leadership,"When a decision needs to be made, I usually…",decide fast and move,red,talk it out and go with what feels exciting,blue,look for the option that’s fairest for everyone,yellow,ask questions until it’s clear,green,single,True
+Work Style,My ideal workday feels like…,progress and measurable wins,red,"variety, people, and momentum",blue,steady teamwork and support,yellow,"structure, clarity, and focus time",green,single,True
+Pressure & Conflict,"If someone is upset with me, I tend to…",address it directly and quickly,red,try to lighten it up and reset the vibe,blue,listen and apologize if needed,yellow,ask for specifics and clarify what happened,green,single,True
+Planning & Structure,"Before starting something new, I prefer to…",jump in and adjust on the fly,red,talk it out and get excited first,blue,check how it affects everyone involved,yellow,map it out step-by-step,green,single,True
+Motivation,What motivates me most?,winning and hitting goals,red,fun and recognition,blue,helping people and belonging,yellow,mastery and getting it right,green,single,True
+Communication,"In meetings, I’m usually the one who…",pushes for decisions,red,shares stories and ideas,blue,makes sure quieter people are heard,yellow,asks clarifying questions,green,single,True
+Risk & Change,"When plans change suddenly, I…",adapt fast and push forward,red,roll with it if it’s interesting,blue,worry about how it impacts people,yellow,want time to re-check the details,green,single,True
+Feedback,"When I get feedback, my first reaction is…",‘Cool—what’s the fix?’,red,"‘Oof—okay, but are we good?’",blue,‘I hope I didn’t disappoint anyone’,yellow,‘Can you give examples?’,green,single,True
+Time & Deadlines,"With deadlines, I…",race the clock and finish strong,red,start late but bring big energy,blue,check in so nobody gets stuck,yellow,start early to avoid surprises,green,single,True
+Social Energy,"At an event, you’ll find me…",talking strategy or next moves,red,meeting everyone and having fun,blue,sticking close to my people,yellow,observing and choosing my moments,green,single,True
+Customer/Client Style,"With customers/clients, I’m best at…",driving outcomes and confidence,red,creating connection and excitement,blue,building trust and care,yellow,being accurate and consistent,green,single,True
+Conflict,"When two people disagree, I’m most likely to…",pick a direction and move on,red,crack a joke and break tension,blue,mediate and find common ground,yellow,slow it down and define the issue,green,single,True
+Learning,I learn best when…,I can compete or apply it fast,red,it’s interactive and social,blue,someone encourages me along the way,yellow,it’s organized and detailed,green,single,True
+Routine,My relationship with routines is…,useful if it speeds results,red,hard to stick to unless it’s fun,blue,I’ll do it if it helps others,yellow,I love routines—they reduce stress,green,single,True
+Mistakes,"If I make a mistake, I…",fix it fast and move on,red,talk it out and reset,blue,feel bad I affected others,yellow,analyze why it happened,green,single,True
+Recognition,I feel most recognized when…,I’m trusted with authority,red,people hype me up,blue,people appreciate my effort,yellow,my work is accurate and respected,green,single,True
+Goals,"When setting goals, I…",set big targets and go,red,pick goals that sound exciting,blue,pick goals that protect relationships,yellow,pick goals that are realistic and clear,green,single,True
+Delegation,"When delegating, I…",hand it off and expect ownership,red,ask who wants it and encourage them,blue,make sure the person feels supported,yellow,define expectations and steps,green,single,True
+Decision Tradeoffs,I’d rather be…,effective than liked,red,liked than consistent,blue,kind than confrontational,yellow,correct than fast,green,single,True
+Work Preferences,I prefer a boss who…,sets high standards and pushes,red,keeps things positive and flexible,blue,cares about people and culture,yellow,gives clear instructions and logic,green,single,True
+Energy Drain,What drains me fastest?,slow progress,red,boring repetition,blue,tension between people,yellow,unclear expectations,green,single,True
+Focus,"When I’m focused, I…",move fast and take action,red,talk through ideas out loud,blue,support others and stay steady,yellow,go quiet and get precise,green,single,True
+Problem Solving,"When something breaks, I…",take charge and troubleshoot immediately,red,call people in and brainstorm,blue,check on who’s impacted first,yellow,trace the cause step-by-step,green,single,True
+Competition,"In competition, I…",play to win,red,play for the fun of it,blue,play to keep things fair,yellow,play to improve my technique,green,single,True
+Spending/Resources,"With money/resources, I…",invest aggressively for results,red,spend on experiences,blue,spend on people and comfort,yellow,research before spending,green,single,True
+Change & Growth,"If I want to improve, I…",set a hard goal and push,red,change my environment to stay motivated,blue,get accountability from someone I trust,yellow,build a system and track it,green,single,True
+Team Roles,People usually rely on me for…,direction and urgency,red,energy and connection,blue,support and stability,yellow,details and accuracy,green,single,True
+Boundaries,"When I need a boundary, I…",state it clearly,red,try to soften it with humor,blue,worry about hurting feelings,yellow,explain it logically,green,single,True
+Communication Style,My natural communication style is…,direct and bottom-line,red,animated and expressive,blue,warm and careful,yellow,precise and measured,green,single,True
