@@ -600,9 +600,16 @@ export default function QuizPage() {
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center p-6">
       <div className={`w-full max-w-2xl rounded-2xl border ${colorBorder[borderColor]} bg-zinc-950 p-6`}>
-        <div className="mb-4 text-lime-400 font-semibold tracking-wide">
-          {t.brand}
-        </div>
+        <div className="mb-4 flex items-center gap-3">
+  <img
+  src="/viago-logo.svg"
+  alt="VIAGO"
+  className="h-32 w-auto"
+/>
+  <div className="text-lime-400 font-semibold tracking-wide">
+    {t.brand}
+  </div>
+</div>
 
         {error && (
           <div className="mb-4 rounded-xl border border-red-500/30 bg-red-950/30 px-4 py-3 text-sm text-red-200">
