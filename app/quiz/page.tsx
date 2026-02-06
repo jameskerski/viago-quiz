@@ -601,10 +601,12 @@ export default function QuizPage() {
     <main className="min-h-screen bg-black text-white flex items-center justify-center p-6">
       <div className={`w-full max-w-2xl rounded-2xl border ${colorBorder[borderColor]} bg-zinc-950 p-6`}>
         <div className="mb-4 flex items-center gap-3">
-  <img
+  <Image
   src="/viago-logo.svg"
   alt="VIAGO"
-  className="h-32 w-auto"
+  width={32}
+  height={32}
+  priority
 />
   <div className="text-lime-400 font-semibold tracking-wide">
     {t.brand}
