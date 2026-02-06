@@ -21,6 +21,7 @@ type AttemptQuestion = {
   id: string;
   prompt: string;
   options: Option[];
+  likert_color?: string | null;
 };
 
 type FinishPayload = {
@@ -50,17 +51,86 @@ const colorLabel: Record<Color, string> = {
   green: 'GREEN',
 };
 
-const LIKERT_LABELS: Record<number, string> = {
-  0: 'Not like me at all',
-  1: 'Slightly like me',
-  2: 'Somewhat like me',
-  3: 'Very like me',
-  4: 'Exactly like me',
+const UI = {
+  en: {
+    brand: 'VIAGO • Personality Quiz',
+    languageTitle: 'Choose your language',
+    languageSub: 'This will apply to the entire quiz and results.',
+    english: 'English',
+    spanish: 'Español',
+    startTitle: 'VIAGO Personality Quiz',
+    startSub: 'Discover how you think, lead, and grow in network marketing — the VIAGO way',
+    startBtn: 'Start Quiz',
+    questionXofY: (x: number, y: number) => `Question ${x} of ${y}`,
+    back: 'Back',
+    next: 'Next',
+    finish: 'Finish',
+    saving: 'Saving…',
+    starting: 'Starting…',
+    winner: 'Winner',
+    definition: 'Definition:',
+    industry: 'As it relates to this industry:',
+    show: 'Show',
+    hide: 'Hide',
+    primary: 'Primary',
+    takeAgain: 'Take Again',
+    selectOption: 'Select an option',
+    startFailed: 'Start failed',
+    attemptFetchFailed: 'Attempt fetch failed',
+    finishFailed: 'Finish failed',
+    saveFailed: 'Failed to save answer',
+  },
+  es: {
+    brand: 'VIAGO • Test de Personalidad',
+    languageTitle: 'Elige tu idioma',
+    languageSub: 'Se aplicará a todo el test y a tus resultados.',
+    english: 'English',
+    spanish: 'Español',
+    startTitle: 'VIAGO • Test de Personalidad',
+    startSub: 'Descubre cómo piensas, lideras y creces en el network marketing — a la manera VIAGO.',
+    startBtn: 'Comenzar',
+    questionXofY: (x: number, y: number) => `Pregunta ${x} de ${y}`,
+    back: 'Atrás',
+    next: 'Siguiente',
+    finish: 'Finalizar',
+    saving: 'Guardando…',
+    starting: 'Iniciando…',
+    winner: 'Resultado principal',
+    definition: 'Definición:',
+    industry: 'En esta industria:',
+    show: 'Ver',
+    hide: 'Ocultar',
+    primary: 'Principal',
+    takeAgain: 'Hacerlo de nuevo',
+    selectOption: 'Elige una opción',
+    startFailed: 'No se pudo iniciar',
+    attemptFetchFailed: 'No se pudo cargar el intento',
+    finishFailed: 'No se pudo finalizar',
+    saveFailed: 'No se pudo guardar la respuesta',
+  },
+} as const;
+
+const LIKERT_LABELS: Record<Lang, Record<number, string>> = {
+  en: {
+    0: 'Not like me at all',
+    1: 'Slightly like me',
+    2: 'Somewhat like me',
+    3: 'Very like me',
+    4: 'Exactly like me',
+  },
+  es: {
+    0: 'Para nada como yo',
+    1: 'Un poco como yo',
+    2: 'Algo como yo',
+    3: 'Muy como yo',
+    4: 'Exactamente como yo',
+  },
 };
 
-const DESCRIPTIONS: Record<Color, { definition_en: string; definition_es: string; industry: string }> = {
-  red: {
-    definition_en: `🔴 RED — The Driver / Achiever
+const DESCRIPTIONS: Record<Lang, Record<Color, { definition: string; industry: string }>> = {
+  en: {
+    red: {
+      definition: `🔴 RED — The Driver / Achiever
 
 Core Drive
 
@@ -73,57 +143,25 @@ Reds move fast. They decide quickly, take charge instinctively, and step into pr
 They often surround themselves with other high performers and “top-tier” people. Not always because they enjoy it — but because approval and validation quietly matter more than they admit.
 
 Strengths (Pros)
-  • Decisive under pressure — they don’t freeze when stakes are high
-  • Highly driven — they raise standards and expectations
-  • Comfortable with responsibility — they’ll take the heat if things go wrong
-  • Results-oriented — they keep teams focused on outcomes, not excuses
+• Decisive under pressure
+• Highly driven
+• Comfortable with responsibility
+• Results-oriented
 
 Weaknesses (Cons)
-  • Impatient with people — especially slower thinkers or emotional processors
-  • Poor listeners when they’ve already made up their mind
-  • Can appear arrogant or dismissive, even when unintentional
-  • Team friction — collaboration often takes a back seat to speed
+• Impatient with people
+• Poor listeners once decided
+• Can appear dismissive
+• Team friction
 
 Real-World Example
 
-A Red project lead will push a team to hit a deadline even if morale suffers — and may genuinely believe that “winning fixes everything.” When it works, they look brilliant. When it doesn’t, people feel steamrolled.
-
-⸻`,
-    definition_es: `🔴 ROJO — El Impulsor / Logrador
-
-Impulso central
-
-Los rojos se alimentan del progreso, la competencia y los resultados. Les importa ganar, avanzar y ser vistos como competentes o exitosos. Para ellos, el impulso pesa más que la comodidad.
-
-Cómo se manifiestan
-
-Los rojos se mueven rápido. Deciden rápido, toman el mando por instinto y se meten en la presión sin titubear. A menudo los verás liderando reuniones, empujando plazos, negociando acuerdos o persiguiendo el próximo hito. Les atraen los entornos donde el éxito es visible — títulos, números, estatus, rankings.
-
-Suelen rodearse de gente de alto rendimiento y “top”. No siempre porque lo disfruten — sino porque la aprobación y la validación les importan más de lo que admiten.
-
-Fortalezas
-  • Deciden bajo presión — no se paralizan cuando hay mucho en juego
-  • Muy impulsados — elevan estándares y expectativas
-  • Cómodos con responsabilidad — dan la cara si algo sale mal
-  • Orientados a resultados — enfocan al equipo en lo que se logra, no en excusas
-
-Debilidades
-  • Impacientes con la gente — sobre todo con quienes procesan más lento o con emoción
-  • Escuchan poco cuando ya decidieron
-  • Pueden parecer arrogantes o tajantes, incluso sin querer
-  • Fricción en equipo — la colaboración se queda atrás frente a la velocidad
-
-Ejemplo real
-
-Un líder rojo empuja al equipo a cumplir un plazo aunque la moral se rompa — y puede creer de verdad que “ganar lo arregla todo”. Cuando funciona, se ve brillante. Cuando no, la gente se siente arrollada.
-
-⸻`,
-    industry:
-      'Reds push momentum. They respond well to targets, scoreboards, and clear standards. Their biggest unlock is developing other people without steamrolling them.',
-  },
-
-  yellow: {
-    definition_en: `🟡 YELLOW — The Stabilizer / Loyalist
+A Red lead will push a deadline even if morale suffers — believing “winning fixes everything.” When it works, they look brilliant. When it doesn’t, people feel steamrolled.`,
+      industry:
+        'Reds push momentum. They respond well to targets, scoreboards, and clear standards. Their biggest unlock is developing other people without steamrolling them.',
+    },
+    yellow: {
+      definition: `🟡 YELLOW — The Stabilizer / Loyalist
 
 Core Drive
 
@@ -136,57 +174,25 @@ Yellows are the emotional glue in groups. They notice who feels left out, who’
 They’re loyal to a fault — once they commit to people, causes, or teams, they stick around long after others would walk away.
 
 Strengths (Pros)
-  • Excellent team players — dependable, supportive, consistent
-  • High integrity — honesty and fairness matter more than convenience
-  • Emotionally intuitive — they read rooms well
-  • Values-driven — they anchor groups during ethical or interpersonal tension
+• Dependable and supportive
+• High integrity
+• Emotionally intuitive
+• Values-driven
 
 Weaknesses (Cons)
-  • Conflict avoidance — problems can fester because they delay hard conversations
-  • Reluctance to lead — even when they’re the most qualified
-  • Can enable bad behavior by over-prioritizing peace
-  • Emotionally drained by aggressive or selfish personalities
+• Avoid conflict
+• Reluctant to lead
+• Can enable bad behavior
+• Drained by aggressive personalities
 
 Real-World Example
 
-A Yellow employee may quietly carry extra workload to keep the team functioning — while resenting leadership for not stepping up. They’ll stay loyal, but burnout is the hidden cost.
-
-⸻`,
-    definition_es: `🟡 AMARILLO — El Estabilizador / Leal
-
-Impulso central
-
-Los amarillos se mueven por valores, justicia y relaciones. Quieren que la gente se sienta segura, apoyada y tratada con ética. La armonía no es un extra — es la meta.
-
-Cómo se manifiestan
-
-Los amarillos son el pegamento emocional de los grupos. Notan quién se siente por fuera, quién está incómodo y cuándo algo “no cuadra”. No buscan autoridad, pero les importa mucho quién lidera y cómo lidera.
-
-Son leales hasta el extremo: cuando se comprometen con personas, causas o equipos, se quedan mucho después de que otros se irían.
-
-Fortalezas
-  • Gran apoyo en equipo — confiables, constantes, presentes
-  • Alta integridad — la honestidad y la justicia importan más que la conveniencia
-  • Intuición emocional — leen bien el ambiente
-  • Guiados por valores — sostienen al grupo en tensión ética o interpersonal
-
-Debilidades
-  • Evitan el conflicto — los problemas crecen porque retrasan conversaciones difíciles
-  • Les cuesta liderar — incluso siendo los más capaces
-  • Pueden permitir conductas malas por priorizar “paz”
-  • Se agotan con personalidades agresivas o egoístas
-
-Ejemplo real
-
-Un amarillo puede cargar trabajo extra en silencio para que el equipo funcione — mientras por dentro resiente que el liderazgo no se haga cargo. Se mantienen leales, pero el costo escondido es el desgaste.
-
-⸻`,
-    industry:
-      'Yellows build trust and retention. They’re strong at culture and long-term relationships. Their growth accelerates when they learn to have direct conversations instead of avoiding conflict.',
-  },
-
-  blue: {
-    definition_en: `🔵 BLUE — The Energizer / Explorer
+A Yellow may quietly carry extra workload to keep the team stable — while resentment builds. Loyalty is real, but burnout is the hidden cost.`,
+      industry:
+        'Yellows build trust and retention. They’re strong at culture and long-term relationships. Growth accelerates when they learn direct conversations instead of avoiding conflict.',
+    },
+    blue: {
+      definition: `🔵 BLUE — The Energizer / Explorer
 
 Core Drive
 
@@ -194,62 +200,28 @@ Blues are driven by experience, connection, and stimulation. They want life to f
 
 How Blues Show Up
 
-Blues bring energy into rooms. They’re spontaneous, expressive, and optimistic. They thrive on interaction, novelty, and freedom. Routine suffocates them. They’ll happily follow leadership — as long as it’s kind, engaging, and doesn’t micromanage them.
-
-They decide based on excitement and trust, not spreadsheets.
+Blues bring energy into rooms. They’re spontaneous, expressive, and optimistic. They thrive on interaction, novelty, and freedom. Routine suffocates them. They’ll follow leadership — as long as it’s kind, engaging, and doesn’t micromanage.
 
 Strengths (Pros)
-  • Socially magnetic — they lift morale and engagement
-  • Adaptable — change excites them instead of stressing them out
-  • Creative thinkers — they bring fresh ideas and enthusiasm
-  • Relationship builders — they connect easily across groups
+• Socially magnetic
+• Adaptable
+• Creative
+• Relationship builders
 
 Weaknesses (Cons)
-  • Poor follow-through on long, repetitive tasks
-  • Time blindness — punctuality and planning aren’t natural strengths
-  • Impulsive decisions, especially with money or commitments
-  • Easily distracted when novelty fades
+• Poor follow-through on repetitive tasks
+• Time blindness
+• Impulsive decisions
+• Distracted when novelty fades
 
 Real-World Example
 
-A Blue team member will generate excitement for a new initiative — but may lose interest once the work becomes repetitive. They’re fantastic starters, unreliable finishers unless supported.
-
-⸻`,
-    definition_es: `🔵 AZUL — El Energizador / Explorador
-
-Impulso central
-
-Los azules se mueven por experiencias, conexión y estímulo. Quieren que la vida se sienta viva — divertida, significativa y socialmente rica.
-
-Cómo se manifiestan
-
-Los azules le meten energía a los espacios. Son espontáneos, expresivos y optimistas. Viven bien con interacción, novedad y libertad. La rutina los asfixia. Siguen liderazgo con gusto… mientras sea amable, interesante y no los microgestione.
-
-Deciden por emoción y confianza, no por hojas de cálculo.
-
-Fortalezas
-  • Magnéticos socialmente — suben la moral y el ánimo
-  • Adaptables — el cambio los emociona en vez de estresarlos
-  • Creativos — aportan ideas frescas y entusiasmo
-  • Construyen relaciones — conectan fácil entre grupos
-
-Debilidades
-  • Poco seguimiento en tareas largas y repetitivas
-  • “Ceguera del tiempo” — puntualidad y planificación no les salen natural
-  • Decisiones impulsivas, sobre todo con dinero o compromisos
-  • Se distraen cuando la novedad se acaba
-
-Ejemplo real
-
-Un azul prende la chispa de una iniciativa nueva — pero puede perder interés cuando el trabajo se vuelve repetitivo. Son excelentes para empezar, flojos para terminar si no tienen soporte.
-
-⸻`,
-    industry:
-      'Blues excel at creating connection and momentum. They do best with simple systems and strong structure that helps them stay consistent after the initial excitement wears off.',
-  },
-
-  green: {
-    definition_en: `🟢 GREEN — The Analyst / Planner
+A Blue will spark excitement for a new initiative — then lose interest when it becomes repetitive. Great starters, inconsistent finishers unless supported.`,
+      industry:
+        'Blues excel at creating connection and momentum. They do best with simple systems and structure that helps them stay consistent after the initial excitement.',
+    },
+    green: {
+      definition: `🟢 GREEN — The Analyst / Planner
 
 Core Drive
 
@@ -257,62 +229,161 @@ Greens seek clarity, logic, and predictability. They feel safest when systems ar
 
 How Greens Show Up
 
-Greens slow things down — intentionally. They research, analyze, and question assumptions. They prefer structure, guidelines, and plans. Ambiguity stresses them. Emotional decision-making irritates them.
-
-They’re often skeptical of people’s motives, not because they’re cold — but because they trust data over intuition.
+Greens slow things down — intentionally. They research, analyze, and question assumptions. They prefer structure, guidelines, and plans. Ambiguity stresses them.
 
 Strengths (Pros)
-  • Thorough and precise — mistakes are less likely under their watch
-  • Excellent planners — systems, processes, documentation
-  • Calm in chaos — as long as there’s logic to apply
-  • Risk-aware — they spot problems others miss
+• Thorough and precise
+• Excellent planners
+• Calm in chaos (with logic)
+• Risk-aware
 
 Weaknesses (Cons)
-  • Analysis paralysis — decisions can stall indefinitely
-  • Emotionally detached — can seem cold or overly critical
-  • Rigid under pressure — flexibility doesn’t come easily
-  • Prejudging people based on incomplete data
+• Analysis paralysis
+• Can seem cold/critical
+• Rigid under pressure
+• Prejudge with incomplete data
 
 Real-World Example
 
-A Green manager will design an airtight process — but may struggle when a fast, imperfect decision is required. They protect organizations from chaos, but sometimes slow momentum.`,
-    definition_es: `🟢 VERDE — El Analista / Planificador
+A Green will design an airtight process — but may struggle when a fast, imperfect decision is required. They protect organizations from chaos, but can slow momentum.`,
+      industry:
+        'Greens strengthen systems. They refine processes and improve training. Growth accelerates when they allow action before every variable is fully certain.',
+    },
+  },
+  es: {
+    red: {
+      definition: `🔴 ROJO — El Impulsor / Logrador
 
-Impulso central
+Motor
 
-Los verdes buscan claridad, lógica y previsibilidad. Se sienten más seguros cuando hay sistemas definidos, expectativas claras y decisiones basadas en evidencia — no en emoción o impulso.
+Los ROJOS se alimentan de avance, competencia y resultados. Les importa ganar, subir de nivel y sentirse vistos como capaces. Para ellos, el impulso vale más que la comodidad.
 
-Cómo se manifiestan
+Cómo se ve en la vida real
 
-Los verdes frenan las cosas — a propósito. Investigan, analizan y cuestionan supuestos. Prefieren estructura, reglas y planes. La ambigüedad los estresa. La toma de decisiones emocional los irrita.
+Se mueven rápido. Deciden rápido, toman el mando por instinto y no se achican con la presión. Los vas a ver liderando, apretando fechas, negociando, y buscando el siguiente “hito”. Les atraen lugares donde el éxito es visible (números, rangos, estatus).
 
-A menudo son escépticos con los motivos de la gente, no por fríos — sino porque confían más en datos que en intuición.
+Suelen rodearse de gente “top”. A veces no porque lo disfruten — sino porque la validación les importa más de lo que admiten.
 
 Fortalezas
-  • Meticulosos y precisos — bajo su ojo se cometen menos errores
-  • Excelentes planificando — sistemas, procesos, documentación
-  • Calmos en el caos — mientras haya lógica que aplicar
-  • Conscientes del riesgo — ven problemas que otros no ven
+• Decisión bajo presión
+• Ambición alta
+• Asumen responsabilidad
+• Enfoque en resultados
 
-Debilidades
-  • Parálisis por análisis — las decisiones se pueden alargar eternamente
-  • Distancia emocional — pueden parecer fríos o demasiado críticos
-  • Rigidez bajo presión — la flexibilidad no les sale fácil
-  • Juzgar rápido con información incompleta
+Puntos ciegos
+• Impaciencia con personas
+• Escuchan poco cuando ya decidieron
+• Pueden sonar secos o tajantes
+• Fricción en equipo
 
-Ejemplo real
+Ejemplo
 
-Un gerente verde diseña un proceso “a prueba de todo” — pero puede sufrir cuando hace falta una decisión rápida e imperfecta. Protegen a la organización del caos, pero a veces frenan el impulso.`,
-    industry:
-      'Greens strengthen systems. They ask smart questions, refine processes, and improve training. Their growth accelerates when they allow action before every variable feels fully certain.',
+Un ROJO empuja una entrega aunque el ánimo del equipo se caiga, porque cree que “ganar lo arregla todo”. Cuando sale bien, se ven brillantes. Cuando sale mal, la gente se siente atropellada.`,
+      industry:
+        'Los ROJOS mueven el ritmo. Responden a metas claras, métricas y estándares. Su desbloqueo es desarrollar a otros sin pasarles por encima.',
+    },
+    yellow: {
+      definition: `🟡 AMARILLO — El Estabilizador / Leal
+
+Motor
+
+Los AMARILLOS se mueven por valores, justicia y relaciones. Quieren que la gente se sienta segura, apoyada y tratada con respeto. La armonía no es un “plus”: es el objetivo.
+
+Cómo se ve en la vida real
+
+Son el pegamento emocional del grupo. Detectan quién está incómodo, quién quedó por fuera y cuándo algo “no cuadra”. No buscan poder, pero les importa muchísimo quién lidera y cómo lidera.
+
+Son leales de verdad: cuando se comprometen con una persona, una causa o un equipo, aguantan más de lo que la mayoría.
+
+Fortalezas
+• Confiables y constantes
+• Integridad alta
+• Buen “radar” emocional
+• Enfoque en valores
+
+Puntos ciegos
+• Evitan conflicto
+• Les cuesta ponerse al frente
+• Pueden sostener dinámicas malas por “paz”
+• Se drenan con gente agresiva
+
+Ejemplo
+
+Un AMARILLO puede cargar trabajo extra para que el equipo no se rompa… mientras por dentro se va quemando. La lealtad es real; el costo oculto es el desgaste.`,
+      industry:
+        'Los AMARILLOS construyen confianza y retención. Son fuertes en cultura y relaciones. Crecen cuando aprenden a tener conversaciones directas en vez de evitarlas.',
+    },
+    blue: {
+      definition: `🔵 AZUL — El Energizador / Explorador
+
+Motor
+
+Los AZULES se mueven por experiencia, conexión y estímulo. Quieren que la vida se sienta viva: divertida, significativa y social.
+
+Cómo se ve en la vida real
+
+Traen energía al ambiente. Son espontáneos, expresivos y optimistas. Les gusta lo nuevo, la libertad y la interacción. La rutina los apaga. Siguen liderazgo si es cercano, humano y no controladora.
+
+Deciden más por emoción y confianza que por hojas de cálculo.
+
+Fortalezas
+• Elevan el ánimo
+• Se adaptan fácil
+• Creativos
+• Conectan con todo el mundo
+
+Puntos ciegos
+• Les cuesta sostener lo repetitivo
+• Tiempo “se les va”
+• Decisiones impulsivas
+• Se distraen cuando baja la novedad
+
+Ejemplo
+
+Un AZUL prende la chispa de una iniciativa… pero puede perder interés cuando se vuelve rutina. Excelentes para arrancar; necesitan estructura para terminar.`,
+      industry:
+        'Los AZULES crean conexión y momentum. Les va mejor con sistemas simples y estructura clara que los mantenga consistentes después del “rush” inicial.',
+    },
+    green: {
+      definition: `🟢 VERDE — El Analista / Planificador
+
+Motor
+
+Los VERDES buscan claridad, lógica y predictibilidad. Se sienten seguros cuando hay reglas, expectativas claras y decisiones basadas en evidencia (no en impulso o drama).
+
+Cómo se ve en la vida real
+
+Frenan el ritmo a propósito. Investigan, analizan y cuestionan supuestos. Prefieren estructura, guías y planes. La ambigüedad los estresa.
+
+Fortalezas
+• Precisión y detalle
+• Muy buenos planificando
+• Calma en caos (si hay lógica)
+• Detectan riesgos antes
+
+Puntos ciegos
+• Se quedan pensando de más
+• Pueden sonar fríos/críticos
+• Rigidez bajo presión
+• Juzgan con datos incompletos
+
+Ejemplo
+
+Un VERDE arma un proceso “a prueba de balas”… pero se traba cuando toca decidir rápido con info imperfecta. Protegen del caos, pero pueden frenar el avance.`,
+      industry:
+        'Los VERDES fortalecen sistemas. Mejoran procesos y entrenamientos. Crecen cuando permiten acción antes de tener el 100% de certeza.',
+    },
   },
 };
 
 export default function QuizPage() {
+  // flow: language -> start -> quiz -> results
+  const [step, setStep] = useState<'language' | 'start' | 'quiz' | 'results'>('language');
+  const [language, setLanguage] = useState<Lang | null>(null);
+
   const [attemptId, setAttemptId] = useState<string | null>(null);
   const [questions, setQuestions] = useState<AttemptQuestion[]>([]);
   const [index, setIndex] = useState(0);
-  const [language, setLanguage] = useState<'en' | 'es' | null>(null);
 
   const [likertAnswers, setLikertAnswers] = useState<Record<string, number>>({});
   const [singleAnswers, setSingleAnswers] = useState<Record<string, string>>({});
@@ -322,6 +393,8 @@ export default function QuizPage() {
   const [error, setError] = useState<string | null>(null);
   const [finished, setFinished] = useState<FinishPayload | null>(null);
 
+  const t = language ? UI[language] : UI.en;
+
   // Results dropdown state
   const [open, setOpen] = useState<Record<Color, boolean>>({
     red: false,
@@ -329,9 +402,6 @@ export default function QuizPage() {
     yellow: false,
     green: false,
   });
-
-  // language toggle (results only for now)
-  const [lang, setLang] = useState<Lang>('en');
 
   const current = questions[index];
   const total = questions.length;
@@ -343,7 +413,21 @@ export default function QuizPage() {
 
   const borderColor: Color = finished?.winner_color ?? 'green';
 
+  function pickLanguage(l: Lang) {
+    setLanguage(l);
+    setError(null);
+    setFinished(null);
+    setAttemptId(null);
+    setQuestions([]);
+    setIndex(0);
+    setLikertAnswers({});
+    setSingleAnswers({});
+    setStep('start');
+  }
+
   async function start() {
+    if (!language) return;
+
     setLoading(true);
     setError(null);
     setFinished(null);
@@ -351,21 +435,24 @@ export default function QuizPage() {
     try {
       const res = await fetch('/api/start', { method: 'POST' });
       const json = await res.json();
-      if (!res.ok) throw new Error(json?.error || 'Start failed');
+      if (!res.ok) throw new Error(json?.error || t.startFailed);
       if (!json?.attempt_id) throw new Error('Missing attempt_id from /api/start');
 
       setAttemptId(json.attempt_id);
 
-      const qRes = await fetch(`/api/attempt?attempt_id=${encodeURIComponent(json.attempt_id)}`);
+      const qRes = await fetch(
+        `/api/attempt?attempt_id=${encodeURIComponent(json.attempt_id)}&lang=${language}`
+      );
       const qJson = await qRes.json();
-      if (!qRes.ok) throw new Error(qJson?.error || 'Attempt fetch failed');
+      if (!qRes.ok) throw new Error(qJson?.error || t.attemptFetchFailed);
 
-      const qs = (qJson.questions as AttemptQuestion[]).slice().sort((a, b) => a.position - b.position);
+      const qs = (qJson.questions as AttemptQuestion[])
+        .slice()
+        .sort((a, b) => a.position - b.position);
+
       setQuestions(qs);
       setIndex(0);
-
-      // reset language each new run (optional)
-      setLang('en');
+      setStep('quiz');
     } catch (e: any) {
       setError(e?.message ?? String(e));
     } finally {
@@ -381,7 +468,7 @@ export default function QuizPage() {
   }
 
   async function submitAnswerAndAdvance() {
-    if (!attemptId || !current) return;
+    if (!attemptId || !current || !language) return;
 
     setSaving(true);
     setError(null);
@@ -389,7 +476,7 @@ export default function QuizPage() {
     try {
       if (current.qtype === 'likert') {
         const v = likertAnswers[current.id];
-        if (v === undefined) throw new Error('Select an option');
+        if (v === undefined) throw new Error(t.selectOption);
 
         const res = await fetch('/api/answer', {
           method: 'POST',
@@ -403,12 +490,12 @@ export default function QuizPage() {
         });
 
         const j = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(j?.error || 'Failed to save answer');
+        if (!res.ok) throw new Error(j?.error || t.saveFailed);
       }
 
       if (current.qtype === 'single') {
         const optId = singleAnswers[current.id];
-        if (!optId) throw new Error('Select an option');
+        if (!optId) throw new Error(t.selectOption);
 
         const res = await fetch('/api/answer', {
           method: 'POST',
@@ -422,7 +509,7 @@ export default function QuizPage() {
         });
 
         const j = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(j?.error || 'Failed to save answer');
+        if (!res.ok) throw new Error(j?.error || t.saveFailed);
       }
 
       // last question => finish
@@ -434,14 +521,15 @@ export default function QuizPage() {
         });
 
         const j = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(j?.error || 'Finish failed');
+        if (!res.ok) throw new Error(j?.error || t.finishFailed);
 
         const fin = j as FinishPayload;
         setFinished(fin);
 
-        // primary open by default, others collapsed
         const primary = fin.winner_color;
         setOpen({ red: false, blue: false, yellow: false, green: false, [primary]: true } as Record<Color, boolean>);
+
+        setStep('results');
         return;
       }
 
@@ -453,10 +541,10 @@ export default function QuizPage() {
     }
   }
 
-  // keep single-choice options in the order the API returns (already randomized per attempt)
+  // Single options are already randomized per attempt in the API response
   const singleOptions = useMemo(() => {
     if (!current || current.qtype !== 'single') return [];
-    return (current.options || []).slice(); // DO NOT sort, or you undo the randomization
+    return (current.options || []).slice(); // DO NOT sort
   }, [current]);
 
   const sortedResults = useMemo(() => {
@@ -465,7 +553,6 @@ export default function QuizPage() {
   }, [finished]);
 
   function toggleColor(c: Color) {
-    // don't allow collapsing the primary (keeps it “main one expanded”)
     if (finished?.winner_color === c) return;
     setOpen((prev) => ({ ...prev, [c]: !prev[c] }));
   }
@@ -475,7 +562,7 @@ export default function QuizPage() {
     const expanded = open[c];
     const isPrimary = primary === c;
 
-    const def = lang === 'es' ? DESCRIPTIONS[c].definition_es : DESCRIPTIONS[c].definition_en;
+    const desc = DESCRIPTIONS[language ?? 'en'][c];
 
     return (
       <div className="rounded-xl bg-zinc-900 p-4 border border-zinc-800">
@@ -483,13 +570,13 @@ export default function QuizPage() {
           <div className={`${colorText[c]} font-semibold`}>{colorLabel[c]}</div>
 
           {isPrimary ? (
-            <div className="text-xs text-zinc-500">Primary</div>
+            <div className="text-xs text-zinc-500">{t.primary}</div>
           ) : (
             <button
               onClick={() => toggleColor(c)}
               className="text-xs rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-1 hover:border-lime-400/60 transition"
             >
-              {expanded ? 'Hide' : 'Show'}
+              {expanded ? t.hide : t.show}
             </button>
           )}
         </div>
@@ -497,17 +584,12 @@ export default function QuizPage() {
         {expanded && (
           <div className="mt-3 space-y-3">
             <div className="text-sm text-zinc-300 whitespace-pre-wrap">
-              <span className="font-semibold text-zinc-100">
-                {lang === 'es' ? 'Definición:' : 'Definition:'}
-              </span>
+              <span className="font-semibold text-zinc-100">{t.definition}</span>
               {'\n'}
-              {def}
+              {desc.definition}
             </div>
             <div className="text-sm text-zinc-400">
-              <span className="font-semibold text-zinc-200">
-                {lang === 'es' ? 'Cómo se ve en esta industria:' : 'As it relates to this industry:'}
-              </span>{' '}
-              {DESCRIPTIONS[c].industry}
+              <span className="font-semibold text-zinc-200">{t.industry}</span> {desc.industry}
             </div>
           </div>
         )}
@@ -518,7 +600,9 @@ export default function QuizPage() {
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center p-6">
       <div className={`w-full max-w-2xl rounded-2xl border ${colorBorder[borderColor]} bg-zinc-950 p-6`}>
-        <div className="mb-4 text-lime-400 font-semibold tracking-wide">VIAGO • Personality Quiz</div>
+        <div className="mb-4 text-lime-400 font-semibold tracking-wide">
+          {t.brand}
+        </div>
 
         {error && (
           <div className="mb-4 rounded-xl border border-red-500/30 bg-red-950/30 px-4 py-3 text-sm text-red-200">
@@ -526,65 +610,51 @@ export default function QuizPage() {
           </div>
         )}
 
-        {!language && !attemptId && !finished && (
-  <div className="space-y-3">
-    <button
-      onClick={() => setLanguage('en')}
-      className="w-full rounded-xl bg-lime-400 px-5 py-3 font-semibold text-black hover:bg-lime-300 transition"
-    >
-      English
-    </button>
+        {/* 1) LANGUAGE SCREEN */}
+        {step === 'language' && (
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+            <div className="text-2xl font-bold mb-2">{UI.en.languageTitle}</div>
+            <div className="text-zinc-400 mb-6">{UI.en.languageSub}</div>
 
-    <button
-      onClick={() => setLanguage('es')}
-      className="w-full rounded-xl bg-lime-400 px-5 py-3 font-semibold text-black hover:bg-lime-300 transition"
-    >
-      Español
-    </button>
-  </div>
-)}
+            <div className="grid gap-3">
+              <button
+                onClick={() => pickLanguage('en')}
+                className="rounded-2xl bg-lime-400 px-6 py-4 font-extrabold text-black hover:bg-lime-300 transition text-xl"
+              >
+                English
+              </button>
 
-{!attemptId && !finished && (
-  <div className="space-y-4">
-    {/* Language selector */}
-    <div className="flex gap-3 justify-center">
-      <button
-        onClick={() => setLanguage('en')}
-        className={`px-4 py-2 rounded-lg border ${
-          language === 'en'
-            ? 'border-lime-400 text-lime-400'
-            : 'border-zinc-700 text-zinc-400'
-        }`}
-      >
-        English
-      </button>
+              <button
+                onClick={() => pickLanguage('es')}
+                className="rounded-2xl bg-lime-400 px-6 py-4 font-extrabold text-black hover:bg-lime-300 transition text-xl"
+              >
+                Español
+              </button>
+            </div>
+          </div>
+        )}
 
-      <button
-        onClick={() => setLanguage('es')}
-        className={`px-4 py-2 rounded-lg border ${
-          language === 'es'
-            ? 'border-lime-400 text-lime-400'
-            : 'border-zinc-700 text-zinc-400'
-        }`}
-      >
-        Español
-      </button>
-    </div>
+        {/* 2) START SCREEN */}
+        {step === 'start' && (
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+            <div className="text-3xl font-extrabold mb-2">{t.startTitle}</div>
+            <div className="text-zinc-400 mb-6">{t.startSub}</div>
 
-    <button
-      onClick={start}
-      disabled={loading || !language}
-      className="rounded-xl bg-lime-400 px-5 py-3 font-semibold text-black hover:bg-lime-300 transition disabled:opacity-50"
-    >
-      {loading ? 'Starting…' : 'Start Quiz'}
-    </button>
-  </div>
-)}
+            <button
+              onClick={start}
+              disabled={loading}
+              className="rounded-xl bg-lime-400 px-6 py-3 font-semibold text-black hover:bg-lime-300 transition disabled:opacity-50"
+            >
+              {loading ? t.starting : t.startBtn}
+            </button>
+          </div>
+        )}
 
-        {attemptId && !finished && current && (
+        {/* 3) QUIZ SCREEN */}
+        {step === 'quiz' && attemptId && current && (
           <>
             <div className="text-xs text-zinc-400 mb-2">
-              Question {index + 1} of {total}
+              {t.questionXofY(index + 1, total)}
             </div>
 
             <div className="h-2 bg-zinc-800 rounded-full mb-6 overflow-hidden">
@@ -604,7 +674,7 @@ export default function QuizPage() {
                       className={`rounded-xl border px-4 py-3 text-left transition
                         ${likertAnswers[current.id] === v ? 'border-lime-400/70 bg-zinc-950' : 'border-zinc-700 hover:border-lime-400/40'}`}
                     >
-                      {LIKERT_LABELS[v]}
+                      {LIKERT_LABELS[language ?? 'en'][v]}
                     </button>
                   ))}
                 </div>
@@ -632,7 +702,7 @@ export default function QuizPage() {
                   onClick={() => setIndex((i) => Math.max(0, i - 1))}
                   className="rounded-xl border border-zinc-700 bg-zinc-950 px-5 py-3 font-semibold text-zinc-200 disabled:opacity-40"
                 >
-                  Back
+                  {t.back}
                 </button>
 
                 <button
@@ -640,47 +710,20 @@ export default function QuizPage() {
                   disabled={saving || !isCurrentAnswered()}
                   className="rounded-xl bg-lime-400 px-6 py-3 font-semibold text-black hover:bg-lime-300 transition disabled:opacity-50"
                 >
-                  {saving ? 'Saving…' : index === total - 1 ? 'Finish' : 'Next'}
+                  {saving ? t.saving : index === total - 1 ? t.finish : t.next}
                 </button>
               </div>
             </div>
           </>
         )}
 
-        {/* RESULTS */}
-        {finished && (
+        {/* 4) RESULTS SCREEN */}
+        {step === 'results' && finished && (
           <>
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
-              <div className="flex items-center justify-between gap-3 mb-4">
-                <div>
-                  <div className="text-sm text-zinc-400 mb-1">{lang === 'es' ? 'Resultado' : 'Result'}</div>
-                  <div className={`text-3xl font-extrabold ${colorText[finished.winner_color]}`}>
-                    {colorLabel[finished.winner_color]}
-                  </div>
-                </div>
-
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setLang('en')}
-                    className={`rounded-xl px-4 py-2 text-sm font-semibold border transition ${
-                      lang === 'en'
-                        ? 'border-lime-400/70 bg-zinc-950 text-lime-300'
-                        : 'border-zinc-700 bg-zinc-950 text-zinc-300 hover:border-lime-400/40'
-                    }`}
-                  >
-                    EN
-                  </button>
-                  <button
-                    onClick={() => setLang('es')}
-                    className={`rounded-xl px-4 py-2 text-sm font-semibold border transition ${
-                      lang === 'es'
-                        ? 'border-lime-400/70 bg-zinc-950 text-lime-300'
-                        : 'border-zinc-700 bg-zinc-950 text-zinc-300 hover:border-lime-400/40'
-                    }`}
-                  >
-                    ES
-                  </button>
-                </div>
+              <div className="text-sm text-zinc-400 mb-1">{t.winner}</div>
+              <div className={`text-3xl font-extrabold mb-6 ${colorText[finished.winner_color]}`}>
+                {colorLabel[finished.winner_color]}
               </div>
 
               <div className="space-y-3 mb-6">
@@ -692,7 +735,7 @@ export default function QuizPage() {
                 ))}
               </div>
 
-              {/* Primary expanded, other three dropdowns */}
+                            {/* Results descriptions */}
               <div className="grid gap-4">
                 <ResultCard c={finished.winner_color} />
                 {(['red', 'blue', 'yellow', 'green'] as const)
@@ -707,7 +750,7 @@ export default function QuizPage() {
               className="mt-6 rounded-xl bg-lime-400 px-5 py-3 font-semibold text-black hover:bg-lime-300 transition"
               onClick={() => window.location.reload()}
             >
-              Take Again
+              {t.takeAgain}
             </button>
           </>
         )}

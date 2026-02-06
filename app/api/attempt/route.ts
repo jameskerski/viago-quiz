@@ -13,9 +13,8 @@ const supabase = createClient(
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
-    const attempt_id = searchParams.get("attempt_id");
 
-    // language: default to English unless explicitly "es"
+    const attempt_id = searchParams.get("attempt_id");
     const lang = searchParams.get("lang") === "es" ? "es" : "en";
 
     if (!attempt_id) {
@@ -36,7 +35,7 @@ export async function GET(req: Request) {
       return NextResponse.json({ attempt_id, questions: [] });
     }
 
-    // 2) Load question prompts (include Spanish column)
+    // 2) Load question prompts (English + Spanish)
     const { data: qRows, error: qErr } = await supabase
       .from("questions")
       .select("id, prompt, prompt_es, likert_color")
@@ -55,7 +54,7 @@ export async function GET(req: Request) {
     let optionsByQuestionId = new Map<string, any[]>();
 
     if (singleQuestionIds.length) {
-      // 3a) All options for those questions (include Spanish label column)
+      // 3a) All options for those questions (English + Spanish)
       const { data: optRows, error: optErr } = await supabase
         .from("question_options")
         .select("id, question_id, label, label_es, red, blue, yellow, green")
@@ -67,13 +66,12 @@ export async function GET(req: Request) {
       (optRows ?? []).forEach((o) => optById.set(o.id, o));
 
       // 3b) Attempt-specific ordering table
-      // IMPORTANT: this table uses sort_order (NOT position)
       const { data: orderRows, error: orderErr } = await supabase
         .from("quiz_attempt_option_order")
-        .select("question_id, option_id, sort_order")
+        .select("question_id, option_id, position, sort_order")
         .eq("attempt_id", attempt_id)
         .in("question_id", singleQuestionIds)
-        .order("sort_order", { ascending: true });
+        .order("position", { ascending: true });
 
       if (orderErr) throw orderErr;
 
@@ -86,29 +84,35 @@ export async function GET(req: Request) {
         const arr = grouped.get(r.question_id) ?? [];
         arr.push({
           id: opt.id,
-          label: lang === "es" ? (opt.label_es ?? opt.label) : opt.label,
+          label:
+            lang === "es"
+              ? (opt.label_es ?? opt.label ?? "")
+              : (opt.label ?? ""),
           red: opt.red,
           blue: opt.blue,
           yellow: opt.yellow,
           green: opt.green,
-          sort_order: r.sort_order ?? 0,
+          sort_order: r.position ?? r.sort_order ?? 0, // keep numeric order for UI if needed
         });
         grouped.set(r.question_id, arr);
       });
 
-      // Fallback: if any question somehow has no order rows, use raw options in original order
+      // Fallback: if any question somehow has no order rows, just use raw options
       for (const qid of singleQuestionIds) {
         if (!grouped.has(qid)) {
           const fallback = (optRows ?? [])
             .filter((o) => o.question_id === qid)
-            .map((o, idx) => ({
+            .map((o) => ({
               id: o.id,
-              label: lang === "es" ? (o.label_es ?? o.label) : o.label,
+              label:
+                lang === "es"
+                  ? (o.label_es ?? o.label ?? "")
+                  : (o.label ?? ""),
               red: o.red,
               blue: o.blue,
               yellow: o.yellow,
               green: o.green,
-              sort_order: idx + 1,
+              sort_order: 0,
             }));
           grouped.set(qid, fallback);
         }
@@ -120,24 +124,27 @@ export async function GET(req: Request) {
     // 4) Shape response exactly how your UI expects it
     const questions = (aqRows ?? []).map((r) => {
       const q = qById.get(r.question_id);
-      const prompt =
-        lang === "es" ? (q?.prompt_es ?? q?.prompt ?? "") : (q?.prompt ?? "");
-
       return {
         position: r.position,
         qtype: r.qtype,
         id: r.question_id,
-        prompt,
+        prompt:
+          lang === "es"
+            ? (q?.prompt_es ?? q?.prompt ?? "")
+            : (q?.prompt ?? ""),
         likert_color: q?.likert_color ?? null,
         options:
           r.qtype === "single"
-            ? optionsByQuestionId.get(r.question_id) ?? []
+            ? (optionsByQuestionId.get(r.question_id) ?? [])
             : [],
       };
     });
 
     return NextResponse.json({ attempt_id, questions });
   } catch (e: any) {
-    return NextResponse.json({ error: e?.message ?? String(e) }, { status: 500 });
+    return NextResponse.json(
+      { error: e?.message ?? String(e) },
+      { status: 500 }
+    );
   }
 }
