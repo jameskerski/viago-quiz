@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Image from "next/image";
 
 type Color = 'red' | 'blue' | 'yellow' | 'green';
 type Lang = 'en' | 'es';
