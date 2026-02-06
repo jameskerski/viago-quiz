@@ -54,12 +54,12 @@ const colorLabel: Record<Color, string> = {
 
 const UI = {
   en: {
-    brand: 'VIAGO • Personality Quiz',
+    brand: 'Personality Quiz',
     languageTitle: 'Choose your language',
     languageSub: 'This will apply to the entire quiz and results.',
     english: 'English',
     spanish: 'Español',
-    startTitle: 'VIAGO Personality Quiz',
+    startTitle: 'Personality Quiz',
     startSub: 'Discover how you think, lead, and grow in network marketing — the VIAGO way',
     startBtn: 'Start Quiz',
     questionXofY: (x: number, y: number) => `Question ${x} of ${y}`,
@@ -82,12 +82,12 @@ const UI = {
     saveFailed: 'Failed to save answer',
   },
   es: {
-    brand: 'VIAGO • Test de Personalidad',
+    brand: 'Test de Personalidad',
     languageTitle: 'Elige tu idioma',
     languageSub: 'Se aplicará a todo el test y a tus resultados.',
     english: 'English',
     spanish: 'Español',
-    startTitle: 'VIAGO • Test de Personalidad',
+    startTitle: 'Test de Personalidad',
     startSub: 'Descubre cómo piensas, lideras y creces en el network marketing — a la manera VIAGO.',
     startBtn: 'Comenzar',
     questionXofY: (x: number, y: number) => `Pregunta ${x} de ${y}`,
