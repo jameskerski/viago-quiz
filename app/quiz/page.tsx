@@ -255,125 +255,140 @@ A Green will design an airtight process — but may struggle when a fast, imperf
     red: {
       definition: `🔴 ROJO — El Impulsor / Logrador
 
-Motor
+IMPULSO CENTRAL
+Los rojos se alimentan del progreso, la competencia y los resultados. Les importa ganar, avanzar y ser vistos como competentes o exitosos. Para ellos, el impulso pesa más que la
+comodidad.
 
-Los ROJOS se alimentan de avance, competencia y resultados. Les importa ganar, subir de nivel y sentirse vistos como capaces. Para ellos, el impulso vale más que la comodidad.
+¿CÓMO SE MANIFIESTAN?
+Los rojos se mueven rápido. Deciden rápido, toman el mando por instinto y se meten en la presión sin titubear. A menudo los verás liderando reuniones, empujando plazos, negociando acuerdos o persiguiendo el próximo hito. Les atraen los entornos donde el éxito es visible —
+títulos, números, estatus, rankings. Suelen rodearse de gente de alto rendimiento y “top”. No siempre porque lo disfruten — sinoporque la aprobación y la validación les importan más de lo que admiten.
 
-Cómo se ve en la vida real
+FORTALEZAS
+• Deciden bajo presión — no se paralizan cuando hay mucho en juego
+• Muy impulsados — elevan estándares y expectativas
+• Cómodos con responsabilidad — dan la cara si algo sale mal
+• Orientados a resultados — enfocan al equipo en lo que se logra, no en excusas
 
-Se mueven rápido. Deciden rápido, toman el mando por instinto y no se achican con la presión. Los vas a ver liderando, apretando fechas, negociando, y buscando el siguiente “hito”. Les atraen lugares donde el éxito es visible (números, rangos, estatus).
-
-Suelen rodearse de gente “top”. A veces no porque lo disfruten — sino porque la validación les importa más de lo que admiten.
-
-Fortalezas
-• Decisión bajo presión
-• Ambición alta
-• Asumen responsabilidad
-• Enfoque en resultados
-
-Puntos ciegos
-• Impaciencia con personas
+DEBILIDADES
+• Impacientes con la gente — sobre todo con quienes procesan más lento o con emoción
 • Escuchan poco cuando ya decidieron
-• Pueden sonar secos o tajantes
-• Fricción en equipo
+• Pueden parecer arrogantes o tajantes, incluso sin querer
+• Fricción en equipo — la colaboración se queda atrás frente a la velocidad
 
-Ejemplo
+EJEMPLO EN EL MUNDO REAL
+Un líder rojo empuja al equipo a cumplir un plazo aunque la moral se rompa — y puede creer de verdad que “ganar lo arregla todo”
+. Cuando funciona, se ve brillante. Cuando no, la gente se siente arrollada.
 
-Un ROJO empuja una entrega aunque el ánimo del equipo se caiga, porque cree que “ganar lo arregla todo”. Cuando sale bien, se ven brillantes. Cuando sale mal, la gente se siente atropellada.`,
+EN LA INDUSTRIA:
+Los rojos impulsan el ritmo. Responden bien a objetivos, marcadores y estándares claros. Su mayor potencial reside en desarrollar a otros jugadores sin aplastarlos.`,
       industry:
         'Los ROJOS mueven el ritmo. Responden a metas claras, métricas y estándares. Su desbloqueo es desarrollar a otros sin pasarles por encima.',
     },
     yellow: {
       definition: `🟡 AMARILLO — El Estabilizador / Leal
 
-Motor
+IMPULSO CENTRAL
+Los amarillos se mueven por valores, justicia y relaciones. Quieren que la gente se sienta
+segura, apoyada y tratada con ética. La armonía no es un extra — es la meta.
 
-Los AMARILLOS se mueven por valores, justicia y relaciones. Quieren que la gente se sienta segura, apoyada y tratada con respeto. La armonía no es un “plus”: es el objetivo.
+¿CÓMO SE MANIFIESTAN?
+Los amarillos son el pegamento emocional de los grupos. Notan quién se siente por fuera,
+quién está incómodo y cuándo algo “no cuadra”
+. No buscan autoridad, pero les importa mucho
+quién lidera y cómo lidera.
+Son leales hasta el extremo: cuando se comprometen con personas, causas o equipos, se
+quedan mucho después de que otros se irían.
 
-Cómo se ve en la vida real
+FORTALEZAS
+• Gran apoyo en equipo — confiables, constantes, presentes
+• Alta integridad — la honestidad y la justicia importan más que la conveniencia
+• Intuición emocional — leen bien el ambiente
+• Guiados por valores — sostienen al grupo en tensión ética o interpersonal
 
-Son el pegamento emocional del grupo. Detectan quién está incómodo, quién quedó por fuera y cuándo algo “no cuadra”. No buscan poder, pero les importa muchísimo quién lidera y cómo lidera.
+DEBILIDADES
+• Evitan el conflicto — los problemas crecen porque retrasan conversaciones difíciles
+• Les cuesta liderar — incluso siendo los más capaces
+• Pueden permitir conductas malas por priorizar “paz”
+• Se agotan con personalidades agresivas o egoístas
 
-Son leales de verdad: cuando se comprometen con una persona, una causa o un equipo, aguantan más de lo que la mayoría.
+EJEMPLO EN EL MUNDO REAL
+Un amarillo puede cargar trabajo extra en silencio para que el equipo funcione — mientras por
+dentro resiente que el liderazgo no se haga cargo. Se mantienen leales, pero el costo
+escondido es el desgaste.
 
-Fortalezas
-• Confiables y constantes
-• Integridad alta
-• Buen “radar” emocional
-• Enfoque en valores
-
-Puntos ciegos
-• Evitan conflicto
-• Les cuesta ponerse al frente
-• Pueden sostener dinámicas malas por “paz”
-• Se drenan con gente agresiva
-
-Ejemplo
-
-Un AMARILLO puede cargar trabajo extra para que el equipo no se rompa… mientras por dentro se va quemando. La lealtad es real; el costo oculto es el desgaste.`,
+EN LA INDUSTRIA:
+Los amarillos generan confianza y retención. Son fuertes en cultura y relaciones a largo plazo.
+Su crecimiento se acelera cuando aprenden a tener conversaciones directas en lugar de evitar
+el conflicto.`,
       industry:
         'Los AMARILLOS construyen confianza y retención. Son fuertes en cultura y relaciones. Crecen cuando aprenden a tener conversaciones directas en vez de evitarlas.',
     },
     blue: {
-      definition: `🔵 AZUL — El Energizador / Explorador
+  definition: `🔵 AZUL — El Energizador / Explorador
 
-Motor
+IMPULSO CENTRAL
+Los azules se mueven por experiencias, conexión y estímulo. Quieren que la vida se sienta viva
+— divertida, significativa y socialmente rica.
 
-Los AZULES se mueven por experiencia, conexión y estímulo. Quieren que la vida se sienta viva: divertida, significativa y social.
+¿CÓMO SE MANIFIESTAN?
+Los azules le meten energía a los espacios. Son espontáneos, expresivos y optimistas. Viven
+bien con interacción, novedad y libertad. La rutina los asfixia. Siguen liderazgo con gusto…
+mientras sea amable, interesante y no los microgestione.
+Deciden por emoción y confianza, no por hojas de cálculo.
 
-Cómo se ve en la vida real
+FORTALEZAS
+• Magnéticos socialmente — suben la moral y el ánimo
+• Adaptables — el cambio los emociona en vez de estresarlos
+• Creativos — aportan ideas frescas y entusiasmo
+• Construyen relaciones — conectan fácil entre grupos
 
-Traen energía al ambiente. Son espontáneos, expresivos y optimistas. Les gusta lo nuevo, la libertad y la interacción. La rutina los apaga. Siguen liderazgo si es cercano, humano y no controladora.
+DEBILIDADES
+• Poco seguimiento en tareas largas y repetitivas
+• “Ceguera del tiempo” — puntualidad y planificación no les salen natural
+• Decisiones impulsivas, sobre todo con dinero o compromisos
+• Se distraen cuando la novedad se acaba
 
-Deciden más por emoción y confianza que por hojas de cálculo.
+EJEMPLO EN EL MUNDO REAL
+Un azul prende la chispa de una iniciativa nueva — pero puede perder interés cuando el trabajo
+se vuelve repetitivo. Son excelentes para empezar, flojos para terminar si no tienen soporte.`,
+  industry:
+    'Los AZULES son excelentes para crear conexión e impulso. Se desenvuelven mejor con sistemas simples y una estructura sólida que les ayuda a mantener la constancia una vez que se desvanece la emoción inicial.',
+},
 
-Fortalezas
-• Elevan el ánimo
-• Se adaptan fácil
-• Creativos
-• Conectan con todo el mundo
+green: {
+  definition: `🟢 VERDE — El Analista / Planificador
 
-Puntos ciegos
-• Les cuesta sostener lo repetitivo
-• Tiempo “se les va”
-• Decisiones impulsivas
-• Se distraen cuando baja la novedad
+IMPULSO CENTRAL
+Los verdes buscan claridad, lógica y previsibilidad. Se sienten más seguros cuando hay
+sistemas definidos, expectativas claras y decisiones basadas en evidencia — no en emoción o
+impulso.
 
-Ejemplo
+¿CÓMO SE MANIFIESTAN?
+Los verdes frenan las cosas — a propósito. Investigan, analizan y cuestionan supuestos.
+Prefieren estructura, reglas y planes. La ambigüedad los estresa. La toma de decisiones
+emocional los irrita.
+A menudo son escépticos con los motivos de la gente, no por fríos — sino porque confían más
+en datos que en intuición.
 
-Un AZUL prende la chispa de una iniciativa… pero puede perder interés cuando se vuelve rutina. Excelentes para arrancar; necesitan estructura para terminar.`,
-      industry:
-        'Los AZULES crean conexión y momentum. Les va mejor con sistemas simples y estructura clara que los mantenga consistentes después del “rush” inicial.',
-    },
-    green: {
-      definition: `🟢 VERDE — El Analista / Planificador
+FORTALEZAS
+• Meticulosos y precisos — bajo su ojo se cometen menos errores
+• Excelentes planificando — sistemas, procesos, documentación
+• Calmos en el caos — mientras haya lógica que aplicar
+• Conscientes del riesgo — ven problemas que otros no ven
 
-Motor
+DEBILIDADES
+• Parálisis por análisis — las decisiones se pueden alargar eternamente
+• Distancia emocional — pueden parecer fríos o demasiado críticos
+• Rigidez bajo presión — la flexibilidad no les sale fácil
+• Juzgar rápido con información incompleta
 
-Los VERDES buscan claridad, lógica y predictibilidad. Se sienten seguros cuando hay reglas, expectativas claras y decisiones basadas en evidencia (no en impulso o drama).
-
-Cómo se ve en la vida real
-
-Frenan el ritmo a propósito. Investigan, analizan y cuestionan supuestos. Prefieren estructura, guías y planes. La ambigüedad los estresa.
-
-Fortalezas
-• Precisión y detalle
-• Muy buenos planificando
-• Calma en caos (si hay lógica)
-• Detectan riesgos antes
-
-Puntos ciegos
-• Se quedan pensando de más
-• Pueden sonar fríos/críticos
-• Rigidez bajo presión
-• Juzgan con datos incompletos
-
-Ejemplo
-
-Un VERDE arma un proceso “a prueba de balas”… pero se traba cuando toca decidir rápido con info imperfecta. Protegen del caos, pero pueden frenar el avance.`,
-      industry:
-        'Los VERDES fortalecen sistemas. Mejoran procesos y entrenamientos. Crecen cuando permiten acción antes de tener el 100% de certeza.',
-    },
+EJEMPLO EN EL MUNDO REAL
+Un gerente verde diseña un proceso “a prueba de todo” — pero puede sufrir cuando hace falta
+una decisión rápida e imperfecta. Protegen a la organización del caos, pero a veces frenan el
+impulso.`,
+  industry:
+    'Los VERDES fortalecen los sistemas. Formulan preguntas inteligentes, refinan los procesos y mejoran la capacitación. Su crecimiento se acelera cuando permiten la acción antes de que cada variable se sienta completamente segura.',
+},
   },
 };
 
