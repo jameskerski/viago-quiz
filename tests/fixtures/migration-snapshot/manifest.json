@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source_project": "fixture",
+  "cutoff": "2026-08-21T00:00:00.000Z",
+  "tables": {
+    "questions": { "rows": 0, "sha256": "fixture", "pk": ["id"] },
+    "question_options": { "rows": 0, "sha256": "fixture", "pk": ["id"] },
+    "quiz_attempts": { "rows": 0, "sha256": "fixture", "pk": ["id"] },
+    "quiz_attempt_questions": { "rows": 0, "sha256": "fixture", "pk": ["attempt_id", "question_id"] },
+    "quiz_attempt_option_order": { "rows": 0, "sha256": "fixture", "pk": ["attempt_id", "option_id"] },
+    "quiz_attempt_answers": { "rows": 0, "sha256": "fixture", "pk": ["attempt_id", "question_id"] }
+  }
+}

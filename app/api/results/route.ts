@@ -1,13 +1,8 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { supabaseAdmin as supabase } from "@/lib/supabaseAdminClient";
+import { authorizeAttempt } from "@/lib/attemptCapability";
 
 export const runtime = "nodejs";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  { auth: { persistSession: false } }
-);
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
@@ -19,6 +14,7 @@ export async function GET(req: Request) {
       { status: 400 }
     );
   }
+  if (!authorizeAttempt(req, attempt_id)) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
 
   const { data, error } = await supabase.rpc("results_for_attempt", {
     p_attempt_id: attempt_id,

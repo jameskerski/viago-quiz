@@ -1,0 +1,15 @@
+version: 1
+integration_lane: shared-viago-supabase
+applications:
+  - id: traveler-big-chill-escape-operations
+    owner_repository: jameskerski/viago-escape-operations
+    project_ref: xombtulaktoprxxtkbcy
+    owned_schema: public
+    change_policy: protected; personality-quiz work must not alter this domain
+  - id: personality-quiz
+    owner_repository: jameskerski/viago-quiz
+    current_project_ref: zkmkenhziznafbgmcayp
+    target_project_ref: xombtulaktoprxxtkbcy
+    owned_schema: viago_quiz
+temporary_resources:
+  required_fields: [owner, purpose, created_at, expires_at, cleanup_rule]

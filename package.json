@@ -6,7 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "db:validate": "node scripts/migration/validate-artifacts.mjs",
+    "governance:validate": "node scripts/governance/validate.mjs",
+    "migration:snapshot": "node scripts/migration/snapshot.mjs",
+    "migration:load": "node scripts/migration/load.mjs",
+    "migration:delta": "node scripts/migration/delta.mjs",
+    "migration:reconcile": "node scripts/migration/reconcile.mjs",
+    "migration:parity": "node scripts/migration/parity.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",

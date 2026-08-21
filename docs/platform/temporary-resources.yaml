@@ -1,0 +1,3 @@
+version: 1
+# Each future entry must contain: id, owner, purpose, created_at, expires_at, cleanup_rule.
+resources: []

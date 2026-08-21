@@ -1,14 +1,9 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { supabaseAdmin as supabase } from "@/lib/supabaseAdminClient";
+import { authorizeAttempt } from "@/lib/attemptCapability";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  { auth: { persistSession: false } }
-);
 
 export async function GET(req: Request) {
   try {
@@ -20,6 +15,7 @@ export async function GET(req: Request) {
     if (!attempt_id) {
       return NextResponse.json({ error: "Missing attempt_id" }, { status: 400 });
     }
+    if (!authorizeAttempt(req, attempt_id)) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
 
     // 1) Get the picked questions for this attempt (in position order)
     const { data: aqRows, error: aqErr } = await supabase

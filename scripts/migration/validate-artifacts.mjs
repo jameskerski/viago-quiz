@@ -1,0 +1,12 @@
+import fs from "node:fs/promises";
+const files=["supabase/migrations/20260821000100_current_live_baseline.sql","supabase/migrations/20260821000200_viago_quiz_target.sql"];
+const functions=await fs.readFile("supabase/baseline/current_live_functions.sql","utf8");
+const required=["viago_quiz.questions","viago_quiz.question_options","viago_quiz.quiz_attempts","viago_quiz.quiz_attempt_questions","viago_quiz.quiz_attempt_answers","viago_quiz.quiz_attempt_option_order","viago_quiz.pick_balanced_questions_50","viago_quiz.results_for_attempt"];
+const [baseline,target]=await Promise.all(files.map(f=>fs.readFile(f,"utf8")));
+for(const name of required)if(!target.includes(name))throw new Error(`Target migration missing ${name}`);
+for(const table of ["quiz_answers","quiz_rankings","quiz_answer_orders","quiz_responses","quiz_attempt_questions","quiz_attempts","quiz_attempt_answers","quiz_attempt_option_order"])if(!baseline.includes(`public.${table}`))throw new Error(`Baseline missing ${table}`);
+for(const fn of ["create_quiz_attempt","get_results","get_winner","pick_balanced_questions_50","results_for_attempt"])if(!functions.includes(`public.${fn}`))throw new Error(`Baseline function inventory missing ${fn}`);
+if(/grant\s+.*\s+to\s+(anon|authenticated)/i.test(target.replace(/revoke[^;]+;/gi,"")))throw new Error("Target grants public runtime authority");
+if(!target.includes("set search_path=''"))throw new Error("Target functions lack fixed search_path");
+if(/position integer not null check\s*\(position between 1 and 50\)/i.test(target))throw new Error("Target rejects historical assignment shapes");
+console.log("Migration artifacts pass structural/security checks.");
