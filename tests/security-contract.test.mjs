@@ -48,5 +48,6 @@ test("target SQL denies browser roles and permits historical positions", () => {
   const sql = fs.readFileSync("supabase/migrations/20260821000200_viago_quiz_target.sql", "utf8");
   assert.match(sql, /revoke all on all tables in schema viago_quiz from public, anon, authenticated/i);
   assert.doesNotMatch(sql, /position integer not null check\s*\(position between 1 and 50\)/i);
+  assert.doesNotMatch(sql, /unique\s*\(attempt_id\s*,\s*position\)/i);
   assert.match(sql, /foreign key\(question_id,option_id\)/i);
 });

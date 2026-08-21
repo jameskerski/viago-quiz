@@ -26,7 +26,9 @@ create table viago_quiz.quiz_attempt_questions (
   question_id uuid not null references viago_quiz.questions on delete restrict, qtype text not null check(qtype in ('likert','single')),
   -- No 1..50 check: historical source facts include 36/48/53-question attempts.
   position integer not null, created_at timestamptz default now(),
-  primary key(attempt_id,question_id), unique(attempt_id,position)
+  -- Source history contains four duplicate position groups across two attempts.
+  -- New attempts remain unique because the picker assigns row_number(), but history must not be normalized.
+  primary key(attempt_id,question_id)
 );
 create table viago_quiz.quiz_attempt_answers (
   attempt_id uuid not null, question_id uuid not null, qtype text not null check(qtype in ('likert','single')),
