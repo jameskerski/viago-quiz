@@ -22,7 +22,7 @@ Do not execute without separate hosted-change authorization.
 
 Rollback immediately for any material score/result mismatch; assignment not exactly 50 or 25/25; translation/order loss; elevated start/answer/finish failure rate; cross-domain access; target integrity error; or unacceptable latency/error regression.
 
-Action: freeze quiz writes, point Vercel variables back to the unchanged standalone URL/key with schema `public`, redeploy the known-good production commit, and smoke test. Do not delete target rows. Identify attempts whose `created_at` falls between target cutover and rollback; export those attempts, assignments, orders, and answers as a reconciliation bundle. Because writes were single-authority, these are the only divergent records. Decide after incident review whether to import them into the standalone source; never overwrite same-PK historical answers automatically.
+Action: freeze quiz writes, point Vercel variables back to the unchanged standalone URL/key with schema `public`, redeploy the known-good production commit, and smoke test. Retrieve the server-side rollback key only from canonical credential-registry identity `viago_rollback_replacement` (macOS Keychain service `PCS.SUPABASE.VIAGO_ROLLBACK`, account `viago_rollback_replacement`); never place it in Git or a plaintext local environment file. Do not delete target rows. Identify attempts whose `created_at` falls between target cutover and rollback; export those attempts, assignments, orders, and answers as a reconciliation bundle. Because writes were single-authority, these are the only divergent records. Decide after incident review whether to import them into the standalone source; never overwrite same-PK historical answers automatically.
 
 ## Retirement gates
 
