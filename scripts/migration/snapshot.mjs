@@ -2,7 +2,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
 import { TABLES, PK, hashRows, requireEnv } from "./lib.mjs";
+import { assertArchivedMigrationAuthorized } from "./retirement-guard.mjs";
 
+assertArchivedMigrationAuthorized({ source: true });
 requireEnv(["QUIZ_SOURCE_URL", "QUIZ_SOURCE_SERVICE_ROLE_KEY"]);
 const out = path.resolve(process.argv[2] || "artifacts/quiz-snapshot");
 const cutoff = process.env.QUIZ_SNAPSHOT_CUTOFF || new Date().toISOString();

@@ -8,8 +8,10 @@ applications:
     change_policy: protected; personality-quiz work must not alter this domain
   - id: personality-quiz
     owner_repository: jameskerski/viago-quiz
-    current_project_ref: zkmkenhziznafbgmcayp
-    target_project_ref: xombtulaktoprxxtkbcy
+    current_project_ref: xombtulaktoprxxtkbcy
     owned_schema: viago_quiz
+    historical_rollback_project_ref: zkmkenhziznafbgmcayp
+    historical_rollback_schema: public
+    historical_rollback_status: retirement_pending; archive_only; not authoritative
 temporary_resources:
   required_fields: [owner, purpose, created_at, expires_at, cleanup_rule]

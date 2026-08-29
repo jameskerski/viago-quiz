@@ -1,5 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { canonical, requireEnv } from "./lib.mjs";
+import { assertArchivedMigrationAuthorized } from "./retirement-guard.mjs";
+assertArchivedMigrationAuthorized({ source: true, target: true });
 requireEnv(["QUIZ_SOURCE_URL","QUIZ_SOURCE_SERVICE_ROLE_KEY","QUIZ_TARGET_URL","QUIZ_TARGET_SERVICE_ROLE_KEY"]);
 const limit=Number(process.env.QUIZ_PARITY_SAMPLE||100);
 const source=createClient(process.env.QUIZ_SOURCE_URL,process.env.QUIZ_SOURCE_SERVICE_ROLE_KEY,{auth:{persistSession:false}});

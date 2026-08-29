@@ -1,5 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { TABLES, PK, hashRows, requireEnv } from "./lib.mjs";
+import { assertArchivedMigrationAuthorized } from "./retirement-guard.mjs";
+assertArchivedMigrationAuthorized({ source: true, target: true });
 requireEnv(["QUIZ_SOURCE_URL","QUIZ_SOURCE_SERVICE_ROLE_KEY","QUIZ_TARGET_URL","QUIZ_TARGET_SERVICE_ROLE_KEY"]);
 const source=createClient(process.env.QUIZ_SOURCE_URL,process.env.QUIZ_SOURCE_SERVICE_ROLE_KEY,{auth:{persistSession:false}});
 const target=createClient(process.env.QUIZ_TARGET_URL,process.env.QUIZ_TARGET_SERVICE_ROLE_KEY,{auth:{persistSession:false},db:{schema:"viago_quiz"}});
