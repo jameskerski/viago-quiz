@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_REVIEW_REQUIRED_NOT_RUNTIME_ELIGIBLE",
+  "source_commit": "3177753",
+  "source_package": "data/v2-proposals/cohort-02.json",
+  "accepted_unchanged_count": 19,
+  "revision_count": 5,
+  "quality_rules": ["VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1", "VIAGO_CONTEXT_DIVERSITY_V1"],
+  "runtime_impact": {"questions_activated": 0, "active_questions_changed": 0, "scoring_changed": false, "selector_changed": false, "cohort_03_generated": false},
+  "revisions": [
+    {
+      "proposal_id": "C02-S-01",
+      "question_type": "SINGLE_SELECT",
+      "question": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first?",
+      "options": [
+        {"label": "Set the first priorities and help people take ownership of them", "mapping": "red"},
+        {"label": "Create an engaging way for volunteers to begin contributing", "mapping": "blue"},
+        {"label": "Help volunteers feel connected to one another and confident about where they fit", "mapping": "yellow"},
+        {"label": "Map the essential tasks, resources, and order of operations", "mapping": "green"}
+      ],
+      "discriminator_and_balance": "Yellow now expresses belonging and supportive connection rather than role assignment; all four options remain useful ways to help the event begin."
+    },
+    {
+      "proposal_id": "C02-S-05",
+      "question_type": "SINGLE_SELECT",
+      "question": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?",
+      "options": [
+        {"label": "Which choice will create the clearest visible result", "mapping": "red"},
+        {"label": "Which choice could generate the most participation and fresh energy", "mapping": "blue"},
+        {"label": "Which choice will strengthen residents’ connection to the shared space over time", "mapping": "yellow"},
+        {"label": "Which choice has the strongest cost, maintenance, and feasibility case", "mapping": "green"}
+      ],
+      "discriminator_and_balance": "Yellow now favors lasting community connection and continuity; visible impact, participation, belonging, and feasibility are all defensible priorities."
+    },
+    {
+      "proposal_id": "C02-S-12",
+      "question_type": "SINGLE_SELECT",
+      "question": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+      "options": [
+        {"label": "Identify the most important priority and help them take the next action", "mapping": "red"},
+        {"label": "Help them see possibilities and regain some energy for the work", "mapping": "blue"},
+        {"label": "Help them identify which relationships and commitments need steady attention first", "mapping": "yellow"},
+        {"label": "Organize the demands into clear steps, resources, and dependencies", "mapping": "green"}
+      ],
+      "discriminator_and_balance": "Yellow now prioritizes relational continuity and commitments rather than uniquely compassionate listening; each option supplies practical, mature help."
+    },
+    {
+      "proposal_id": "C02-S-13",
+      "question_type": "SINGLE_SELECT",
+      "question": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+      "options": [
+        {"label": "Use the time to make visible progress on something I want to accomplish", "mapping": "red"},
+        {"label": "Choose something spontaneous, social, or new that feels energizing", "mapping": "blue"},
+        {"label": "Spend the time in a comfortable way with someone I care about", "mapping": "yellow"},
+        {"label": "Dive into something I have wanted time to understand properly", "mapping": "green"}
+      ],
+      "discriminator_and_balance": "Green now expresses attraction to careful understanding rather than organization or productivity; all four are equally reasonable uses of free time."
+    },
+    {
+      "proposal_id": "C02-L-Y-01",
+      "question_type": "LIKERT",
+      "question": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+      "intended_mapping": "yellow",
+      "discriminator_and_balance": "The item contrasts harmony before closure with reasonable closure followed by natural recovery; neither side implies greater emotional maturity."
+    }
+  ]
+}

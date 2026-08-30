@@ -1,0 +1,28 @@
+{
+  "rule_id": "VIAGO_CONTEXT_DIVERSITY_V1",
+  "status": "OWNER_APPROVED_ACTIVE",
+  "effective_date": "2026-08-30",
+  "scope": "question_bank_expansion_and_review",
+  "runtime_authority": false,
+  "rule": "Track candidate and active-bank context distribution and prevent work, business, team, or project scenarios from dominating personality measurement. Include meaningful ordinary-life coverage without imposing rigid equal quotas.",
+  "ordinary_life_contexts": [
+    "friendships",
+    "family-household",
+    "travel",
+    "leisure-free-time",
+    "unfamiliar-social-situations",
+    "purchasing-choices",
+    "personal-projects",
+    "community",
+    "learning",
+    "ordinary-life-planning",
+    "group-recreation",
+    "everyday-problem-solving"
+  ],
+  "review_tests": [
+    "Record context metadata for every candidate.",
+    "Report candidate and active-bank context distributions before proposing a new cohort.",
+    "Identify overrepresented work, business, team, and project contexts.",
+    "Use future cohorts to address meaningful context gaps rather than satisfy rigid quotas."
+  ]
+}
