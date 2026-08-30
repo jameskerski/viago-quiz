@@ -51,7 +51,7 @@ test('Yellow learned behavior and universal virtues fail closed', () => {
   assert.match(review.decision_rule, /learned maturity/);
 });
 
-test('revised review remains isolated from application runtime and Cohort 02 is absent', () => {
+test('revised review remains isolated from application runtime', () => {
   assert.equal(review.status, 'OWNER_REVIEW_REQUIRED_NOT_RUNTIME_AUTHORITY');
   assert.deepEqual(review.runtime_impact, {
     questions_activated: 0,
@@ -61,7 +61,6 @@ test('revised review remains isolated from application runtime and Cohort 02 is 
     cohort_02_generated: false,
   });
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-  assert.equal(fs.existsSync(path.join(root, 'data/v2-proposals/cohort-02.json')), false);
   for (const file of [...walk(path.join(root, 'app')), ...walk(path.join(root, 'lib'))]) {
     assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /cohort-01-approved-model-review/);
   }

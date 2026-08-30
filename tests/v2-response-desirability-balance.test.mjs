@@ -12,7 +12,8 @@ const colors = ['red', 'blue', 'yellow', 'green'];
 
 test('response desirability balance is a permanent OWNER-governed item-quality rule', () => {
   assert.equal(rule.rule_id, 'VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1');
-  assert.equal(rule.status, 'OWNER_GOVERNED_ACTIVE');
+  assert.equal(rule.status, 'OWNER_APPROVED_FROZEN');
+  assert.equal(rule.owner_approval.approved, true);
   assert.equal(rule.runtime_authority, false);
   assert.ok(rule.single_select_test.length >= 4);
   assert.ok(rule.likert_test.length >= 3);
@@ -48,7 +49,7 @@ test('Yellow Likert revision presents two reasonable timing priorities', () => {
   assert.match(yellow.question, /moving ahead and gathering their feedback afterward/);
 });
 
-test('amendment remains non-runtime and Cohort 02 remains absent', () => {
+test('amendment remains non-runtime', () => {
   assert.equal(amendment.status, 'OWNER_REVIEW_REQUIRED_NOT_RUNTIME_ELIGIBLE');
   assert.deepEqual(amendment.runtime_impact, {
     active_questions_changed: 0,
@@ -58,7 +59,6 @@ test('amendment remains non-runtime and Cohort 02 remains absent', () => {
     cohort_02_generated: false,
   });
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-  assert.equal(fs.existsSync(path.join(root, 'data/v2-proposals/cohort-02.json')), false);
   for (const file of [...walk(path.join(root, 'app')), ...walk(path.join(root, 'lib'))]) {
     assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /cohort-01-desirability-balance-revisions|response-desirability-balance-rule/);
   }

@@ -1,7 +1,12 @@
 {
   "rule_id": "VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1",
-  "status": "OWNER_GOVERNED_ACTIVE",
+  "status": "OWNER_APPROVED_FROZEN",
   "effective_date": "2026-08-30",
+  "owner_approval": {
+    "approved": true,
+    "approved_at": "2026-08-30T17:48:57Z",
+    "approval_reference": "OWNER_APPROVAL_AFTER_COMMIT_bd7136e"
+  },
   "scope": "candidate_item_writing_and_review",
   "runtime_authority": false,
   "rule": "Responses must be approximately equally competent, ethical, mature, socially acceptable, and useful in the stated situation. Selection or agreement should reveal natural preference or motivation rather than the obviously responsible, kind, intelligent, decisive, or fun response.",

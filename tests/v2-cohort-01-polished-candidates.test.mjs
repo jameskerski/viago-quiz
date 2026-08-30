@@ -62,7 +62,7 @@ test('all eight rejected proposals remain preserved and excluded', () => {
   assert.ok(rejected.every((id) => !candidateIds.has(id)));
 });
 
-test('candidate package remains isolated from runtime and Cohort 02 remains absent', () => {
+test('candidate package remains isolated from runtime', () => {
   assert.deepEqual(polished.runtime_impact, {
     active_questions_changed: 0,
     questions_activated: 0,
@@ -71,7 +71,6 @@ test('candidate package remains isolated from runtime and Cohort 02 remains abse
     cohort_02_generated: false,
   });
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-  assert.equal(fs.existsSync(path.join(root, 'data/v2-proposals/cohort-02.json')), false);
   for (const file of [...walk(path.join(root, 'app')), ...walk(path.join(root, 'lib'))]) {
     assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /cohort-01-polished-candidates/);
   }

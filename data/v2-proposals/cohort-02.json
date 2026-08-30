@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "cohort_id": "VIAGO_V2_COHORT_02",
+  "status": "OWNER_REVIEW_ONLY_NOT_RUNTIME_ELIGIBLE",
+  "governing_model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "writing_standard_id": "VIAGO_COHORT_01_QUESTION_DEVELOPMENT_STANDARD_V1",
+  "quality_rule_id": "VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1",
+  "candidate_count": 24,
+  "composition": {"SINGLE_SELECT": 16, "LIKERT": 8},
+  "expansion_rationale": {
+    "active_baseline": {"questions": 151, "likert": 120, "single_select": 31},
+    "priority": "Reduce repeat exposure in the small single-select pool while expanding thin domains and non-personal contexts.",
+    "thin_domains_addressed": ["leadership-influence", "rules-process", "stability-security", "detail-accuracy", "communication", "decision-making", "cooperation-support", "risk-change"],
+    "context_expansion": ["customer-service", "community", "home", "travel", "technology", "volunteer", "onboarding", "creative-collaboration"]
+  },
+  "runtime_impact": {"questions_activated": 0, "active_questions_changed": 0, "scoring_changed": false, "selector_changed": false},
+  "candidates": [
+    {
+      "proposal_id": "C02-S-01", "question_type": "SINGLE_SELECT", "behavioral_domain": "leadership-influence", "context": "volunteer", "semantic_family": "unowned-volunteer-launch",
+      "question": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first?",
+      "options": [
+        {"label": "Set the first priorities and help people take ownership of them", "mapping": "red"},
+        {"label": "Create an engaging way for volunteers to begin contributing", "mapping": "blue"},
+        {"label": "Connect with volunteers about where they feel most able to contribute", "mapping": "yellow"},
+        {"label": "Map the essential tasks, resources, and order of operations", "mapping": "green"}
+      ],
+      "distinction": "Separates leadership through direction, energy, supportive fit, or operational structure."
+    },
+    {
+      "proposal_id": "C02-S-02", "question_type": "SINGLE_SELECT", "behavioral_domain": "decision-making", "context": "customer-service", "semantic_family": "ambiguous-custom-request",
+      "question": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first?",
+      "options": [
+        {"label": "Define the decision that must be made and establish the next step", "mapping": "red"},
+        {"label": "Explore creative alternatives that might make the request work", "mapping": "blue"},
+        {"label": "Understand which customer and team commitments the change will affect", "mapping": "yellow"},
+        {"label": "Clarify the requirements, dependencies, and likely consequences", "mapping": "green"}
+      ],
+      "distinction": "Separates closure, possibility, commitments, and evidence when a request is ambiguous."
+    },
+    {
+      "proposal_id": "C02-S-03", "question_type": "SINGLE_SELECT", "behavioral_domain": "risk-change", "context": "travel", "semantic_family": "missed-travel-connection",
+      "question": "A missed connection changes a group trip with little warning. What matters most in your first response?",
+      "options": [
+        {"label": "Choose the strongest available route so the trip keeps moving", "mapping": "red"},
+        {"label": "Look for an unexpected possibility that could still make the trip memorable", "mapping": "blue"},
+        {"label": "Coordinate around the travelers’ needs and the commitments already made", "mapping": "yellow"},
+        {"label": "Compare timing, constraints, and reliability before choosing the new route", "mapping": "green"}
+      ],
+      "distinction": "Separates progress, possibility, people/commitments, and predictable travel recovery."
+    },
+    {
+      "proposal_id": "C02-S-04", "question_type": "SINGLE_SELECT", "behavioral_domain": "rules-process", "context": "home", "semantic_family": "shared-household-routine",
+      "question": "A shared household routine keeps breaking down. Which response feels most natural to you?",
+      "options": [
+        {"label": "Choose a clearer arrangement and start using it right away", "mapping": "red"},
+        {"label": "Try a more flexible approach that makes the routine easier to stay engaged with", "mapping": "blue"},
+        {"label": "Talk through what each person can sustain and agree on together", "mapping": "yellow"},
+        {"label": "Lay out the tasks, timing, and handoffs in a repeatable system", "mapping": "green"}
+      ],
+      "distinction": "Separates action, engaging flexibility, shared sustainability, and repeatable structure."
+    },
+    {
+      "proposal_id": "C02-S-05", "question_type": "SINGLE_SELECT", "behavioral_domain": "cooperation-support", "context": "community", "semantic_family": "limited-community-budget",
+      "question": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?",
+      "options": [
+        {"label": "Which choice will create the clearest visible result", "mapping": "red"},
+        {"label": "Which choice could generate the most participation and fresh energy", "mapping": "blue"},
+        {"label": "Which choice best fits how residents want to use the shared space", "mapping": "yellow"},
+        {"label": "Which choice has the strongest cost, maintenance, and feasibility case", "mapping": "green"}
+      ],
+      "distinction": "Separates visible outcome, participation energy, community fit, and practical evidence."
+    },
+    {
+      "proposal_id": "C02-S-06", "question_type": "SINGLE_SELECT", "behavioral_domain": "leadership-influence", "context": "team", "semantic_family": "new-team-working-norms",
+      "question": "A newly formed team needs a way of working together. What would you most naturally help establish first?",
+      "options": [
+        {"label": "Clear ownership for decisions and the pace needed to deliver", "mapping": "red"},
+        {"label": "An open exchange where possibilities and energy can build", "mapping": "blue"},
+        {"label": "Shared expectations that support trust and dependable commitments", "mapping": "yellow"},
+        {"label": "Defined roles, processes, and checkpoints that keep work coherent", "mapping": "green"}
+      ],
+      "distinction": "Separates team leadership through accountability, participation, trust, or structure."
+    },
+    {
+      "proposal_id": "C02-S-07", "question_type": "SINGLE_SELECT", "behavioral_domain": "communication", "context": "customer-pressure", "semantic_family": "urgent-customer-complaint",
+      "question": "A customer raises an urgent complaint that needs a thoughtful response. What do you naturally contribute first?",
+      "options": [
+        {"label": "Take ownership of the resolution and make the next action clear", "mapping": "red"},
+        {"label": "Generate response options that could reopen a constructive path", "mapping": "blue"},
+        {"label": "Understand the impact on the customer and protect the working relationship", "mapping": "yellow"},
+        {"label": "Verify what happened and define a correction that will hold", "mapping": "green"}
+      ],
+      "distinction": "Separates resolution ownership, possibility, relationship repair, and reliable diagnosis."
+    },
+    {
+      "proposal_id": "C02-S-08", "question_type": "SINGLE_SELECT", "behavioral_domain": "risk-change", "context": "community-event", "semantic_family": "weather-event-redesign",
+      "question": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you?",
+      "options": [
+        {"label": "Choose a workable backup and organize the immediate switch", "mapping": "red"},
+        {"label": "Reimagine the event so the changed format still feels lively", "mapping": "blue"},
+        {"label": "Coordinate around participant needs and promises already made", "mapping": "yellow"},
+        {"label": "Compare the constraints and select the most reliable fallback", "mapping": "green"}
+      ],
+      "distinction": "Separates change response through action, reinvention, commitments, or reliability."
+    },
+    {
+      "proposal_id": "C02-S-09", "question_type": "SINGLE_SELECT", "behavioral_domain": "decision-making", "context": "technology", "semantic_family": "team-tool-selection",
+      "question": "A team is choosing between several capable software tools. What matters most in your recommendation?",
+      "options": [
+        {"label": "Which tool will improve output and speed soonest", "mapping": "red"},
+        {"label": "Which tool opens the most interesting possibilities for how the team works", "mapping": "blue"},
+        {"label": "Which tool best supports the team’s shared needs and working commitments", "mapping": "yellow"},
+        {"label": "Which tool has the strongest evidence for reliability, fit, and integration", "mapping": "green"}
+      ],
+      "distinction": "Separates tool choice through performance, possibility, team fit, or evidence."
+    },
+    {
+      "proposal_id": "C02-S-10", "question_type": "SINGLE_SELECT", "behavioral_domain": "communication", "context": "creative-collaboration", "semantic_family": "rough-idea-feedback",
+      "question": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go?",
+      "options": [
+        {"label": "The strongest direction and the next move that would advance it", "mapping": "red"},
+        {"label": "The possibilities that could make the idea more vivid or engaging", "mapping": "blue"},
+        {"label": "How the idea may connect with the people it is meant to serve", "mapping": "yellow"},
+        {"label": "The assumptions, details, and consequences that still need testing", "mapping": "green"}
+      ],
+      "distinction": "Separates feedback through advancement, possibility, audience connection, or verification."
+    },
+    {
+      "proposal_id": "C02-S-11", "question_type": "SINGLE_SELECT", "behavioral_domain": "rules-process", "context": "work-business", "semantic_family": "recurring-minor-errors",
+      "question": "A familiar work process keeps producing small but avoidable errors. What do you naturally examine first?",
+      "options": [
+        {"label": "The bottleneck that should be changed so performance improves", "mapping": "red"},
+        {"label": "Alternative approaches that could make the process work better", "mapping": "blue"},
+        {"label": "The handoffs where people may need clearer support or coordination", "mapping": "yellow"},
+        {"label": "The pattern of errors and the process control that would prevent them", "mapping": "green"}
+      ],
+      "distinction": "Separates process improvement through performance, alternatives, coordination, or control."
+    },
+    {
+      "proposal_id": "C02-S-12", "question_type": "SINGLE_SELECT", "behavioral_domain": "cooperation-support", "context": "onboarding", "semantic_family": "overwhelmed-new-colleague",
+      "question": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+      "options": [
+        {"label": "Identify the most important priority and help them take the next action", "mapping": "red"},
+        {"label": "Help them see possibilities and regain some energy for the work", "mapping": "blue"},
+        {"label": "Listen to what is weighing on them and stay alongside them as they adjust", "mapping": "yellow"},
+        {"label": "Organize the demands into clear steps, resources, and dependencies", "mapping": "green"}
+      ],
+      "distinction": "Separates useful support through priority, energy, relational presence, or structure."
+    },
+    {
+      "proposal_id": "C02-S-13", "question_type": "SINGLE_SELECT", "behavioral_domain": "general-behavioral-preference", "context": "personal-leisure", "semantic_family": "unexpected-free-afternoon",
+      "question": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+      "options": [
+        {"label": "Use the time to make visible progress on something I want to accomplish", "mapping": "red"},
+        {"label": "Choose something spontaneous, social, or new that feels energizing", "mapping": "blue"},
+        {"label": "Spend the time in a comfortable way with someone I care about", "mapping": "yellow"},
+        {"label": "Put something in order or prepare thoughtfully for what is ahead", "mapping": "green"}
+      ],
+      "distinction": "Separates an unpressured preference for accomplishment, novelty, connection, or order."
+    },
+    {
+      "proposal_id": "C02-S-14", "question_type": "SINGLE_SELECT", "behavioral_domain": "detail-accuracy", "context": "team-decision", "semantic_family": "conflicting-reports",
+      "question": "A group receives two credible reports that point toward different decisions. What gets your attention first?",
+      "options": [
+        {"label": "Which decision must be made now to keep the objective moving", "mapping": "red"},
+        {"label": "Which new explanation or option could connect what the reports reveal", "mapping": "blue"},
+        {"label": "Which people and commitments would be affected by choosing either direction", "mapping": "yellow"},
+        {"label": "Which evidence, assumptions, and methods account for the disagreement", "mapping": "green"}
+      ],
+      "distinction": "Separates attention to closure, possibility, impact, or evidence under conflicting information."
+    },
+    {
+      "proposal_id": "C02-S-15", "question_type": "SINGLE_SELECT", "behavioral_domain": "decision-making", "context": "team", "semantic_family": "too-many-good-ideas",
+      "question": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you?",
+      "options": [
+        {"label": "Narrow the choices and recommend the direction most likely to deliver", "mapping": "red"},
+        {"label": "Explore whether the strongest ideas can create a more exciting possibility", "mapping": "blue"},
+        {"label": "Look for the direction the group can support and sustain together", "mapping": "yellow"},
+        {"label": "Define criteria and compare how well each idea meets them", "mapping": "green"}
+      ],
+      "distinction": "Separates convergence through outcome, possibility, shared commitment, or criteria."
+    },
+    {
+      "proposal_id": "C02-S-16", "question_type": "SINGLE_SELECT", "behavioral_domain": "stability-security", "context": "home-transition", "semantic_family": "new-neighborhood-settling",
+      "question": "You have just moved to an unfamiliar neighborhood. What helps you feel settled first?",
+      "options": [
+        {"label": "Getting the essential tasks handled so daily life is moving", "mapping": "red"},
+        {"label": "Exploring interesting places and meeting people nearby", "mapping": "blue"},
+        {"label": "Building a few familiar relationships and comfortable routines", "mapping": "yellow"},
+        {"label": "Learning the routes, services, schedules, and practical details", "mapping": "green"}
+      ],
+      "distinction": "Separates settling through progress, exploration, belonging, or practical clarity."
+    },
+    {
+      "proposal_id": "C02-L-R-01", "question_type": "LIKERT", "intended_mapping": "red", "behavioral_domain": "competition-achievement", "context": "work-business", "semantic_family": "clear-performance-standard",
+      "question": "When a goal is ambitious but reachable, competing against a clear standard brings out my best effort.",
+      "distinction": "Measures Red motivation from challenge and visible performance standards."
+    },
+    {
+      "proposal_id": "C02-L-R-02", "question_type": "LIKERT", "intended_mapping": "red", "behavioral_domain": "leadership-influence", "context": "team", "semantic_family": "ambiguous-result-ownership",
+      "question": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+      "distinction": "Measures Red preference for result ownership over unresolved responsibility."
+    },
+    {
+      "proposal_id": "C02-L-B-01", "question_type": "LIKERT", "intended_mapping": "blue", "behavioral_domain": "risk-change", "context": "creative-work", "semantic_family": "emergent-project-path",
+      "question": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+      "distinction": "Measures Blue energy from freedom, novelty, and emerging possibility."
+    },
+    {
+      "proposal_id": "C02-L-B-02", "question_type": "LIKERT", "intended_mapping": "blue", "behavioral_domain": "rules-process", "context": "daily-routine", "semantic_family": "refresh-working-routine",
+      "question": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+      "distinction": "Measures Blue novelty preference without implying that the routine is defective."
+    },
+    {
+      "proposal_id": "C02-L-Y-01", "question_type": "LIKERT", "intended_mapping": "yellow", "behavioral_domain": "conflict", "context": "team", "semantic_family": "trust-before-quick-closure",
+      "question": "When a group is under strain, I prefer leaving a decision open longer to protect trust rather than closing it first and rebuilding trust afterward.",
+      "distinction": "Measures Yellow preference for relational trust over rapid closure."
+    },
+    {
+      "proposal_id": "C02-L-Y-02", "question_type": "LIKERT", "intended_mapping": "yellow", "behavioral_domain": "social-interaction", "context": "personal-relationship", "semantic_family": "depth-over-new-connections",
+      "question": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+      "distinction": "Measures Yellow preference for loyal relational depth over broader novelty."
+    },
+    {
+      "proposal_id": "C02-L-G-01", "question_type": "LIKERT", "intended_mapping": "green", "behavioral_domain": "decision-making", "context": "unfamiliar-situation", "semantic_family": "consequences-over-instinct",
+      "question": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct.",
+      "distinction": "Measures Green preference for evidence and consequence checking over intuition."
+    },
+    {
+      "proposal_id": "C02-L-G-02", "question_type": "LIKERT", "intended_mapping": "green", "behavioral_domain": "rules-process", "context": "work-business", "semantic_family": "repeatability-over-improvisation",
+      "question": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time.",
+      "distinction": "Measures Green preference for reliable structure over repeated improvisation."
+    }
+  ]
+}
