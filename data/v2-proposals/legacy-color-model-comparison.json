@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_REVIEW_ONLY_NOT_RUNTIME_AUTHORITY",
+  "review_date": "2026-08-30",
+  "compared_commit": "51a04e9ab6d23d769f9f297b821d25820ceaa759",
+  "semantic_authority": "preserved_result_output_content",
+  "yellow_concern": "CONFIRMED",
+  "legacy_sources": [
+    "app/quiz/page.tsx",
+    "/Users/jameskerski/Documents/ChatGPT/yest/app/quiz/page.tsx",
+    "git:f44ae0f:app/quiz/page.tsx",
+    "app/results/[sessionId]/page.tsx",
+    "lib/v2/publicContent.ts",
+    "lib/spanishResultDescriptions.ts",
+    "docs/spanish-result-descriptions-review.md",
+    "docs/v2/CONTENT_MODEL.md"
+  ],
+  "preserved_narrative_extraction": {
+    "algorithm": "extract each RED/YELLOW/BLUE/GREEN definition and industry block; normalize CRLF and leading indentation",
+    "sha256": "61e52a132a9855117d44fb9399e6075c981584eca4ca664a485095594aa5ef1e",
+    "current_equals_preserved_local_copy": true,
+    "initial_commit_exact_match_by_color": {
+      "red": false,
+      "blue": true,
+      "yellow": true,
+      "green": true
+    },
+    "red_difference": "later editorial compression; core behavioral meaning retained"
+  },
+  "dimension_comparison": {
+    "core_motivations": { "red": "ALIGNED", "blue": "ALIGNED", "yellow": "ALIGNED", "green": "ALIGNED" },
+    "decision_style": { "red": "ALIGNED", "blue": "PARTIALLY_ALIGNED", "yellow": "PARTIALLY_ALIGNED", "green": "ALIGNED" },
+    "communication_style": { "red": "PARTIALLY_ALIGNED", "blue": "PARTIALLY_ALIGNED", "yellow": "PARTIALLY_ALIGNED", "green": "PARTIALLY_ALIGNED" },
+    "relationship_orientation": { "red": "PARTIALLY_ALIGNED", "blue": "ALIGNED", "yellow": "ALIGNED", "green": "NOT_ESTABLISHED_BY_LEGACY_CONTENT" },
+    "conflict_response": { "red": "PARTIALLY_ALIGNED", "blue": "SEMANTIC_DRIFT", "yellow": "SEMANTIC_DRIFT", "green": "PARTIALLY_ALIGNED" },
+    "pressure_response": { "red": "ALIGNED", "blue": "PARTIALLY_ALIGNED", "yellow": "ALIGNED", "green": "ALIGNED" },
+    "leadership_followership": { "red": "ALIGNED", "blue": "PARTIALLY_ALIGNED", "yellow": "PARTIALLY_ALIGNED", "green": "NOT_ESTABLISHED_BY_LEGACY_CONTENT" },
+    "change_approach": { "red": "PARTIALLY_ALIGNED", "blue": "ALIGNED", "yellow": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "green": "PARTIALLY_ALIGNED" },
+    "risk_approach": { "red": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "blue": "PARTIALLY_ALIGNED", "yellow": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "green": "ALIGNED" },
+    "planning_execution": { "red": "PARTIALLY_ALIGNED", "blue": "ALIGNED", "yellow": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "green": "ALIGNED" },
+    "strengths": { "red": "ALIGNED", "blue": "ALIGNED", "yellow": "ALIGNED", "green": "ALIGNED" },
+    "overextensions": { "red": "ALIGNED", "blue": "ALIGNED", "yellow": "ALIGNED", "green": "ALIGNED" },
+    "confusion_zones": { "red": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "blue": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "yellow": "NOT_ESTABLISHED_BY_LEGACY_CONTENT", "green": "NOT_ESTABLISHED_BY_LEGACY_CONTENT" }
+  },
+  "affected_cohort_01_proposals": [
+    "C01-L-R-04",
+    "C01-L-R-05",
+    "C01-L-B-01",
+    "C01-L-B-04",
+    "C01-L-Y-01",
+    "C01-L-Y-03",
+    "C01-S-04",
+    "C01-S-05",
+    "C01-S-06"
+  ],
+  "constraints": {
+    "cohort_02_generated": false,
+    "cohort_01_rewritten": false,
+    "runtime_authority_changed": false,
+    "production_changed": false
+  }
+}
