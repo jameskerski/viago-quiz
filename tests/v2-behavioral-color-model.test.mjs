@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -11,14 +12,29 @@ const evidenceClasses = ['HISTORICALLY_ESTABLISHED', 'OWNER_GOVERNED', 'SUPPORTE
 const patternDimensions = ['decision', 'communication', 'work_execution', 'social_relationship', 'leadership_followership', 'conflict', 'pressure_stress', 'change', 'risk', 'planning_organization'];
 const listDimensions = ['core_preferences', 'core_motivators', 'observable_indicators', 'strengths', 'overextensions', 'growth_behaviors', 'nonqualifying_behaviors'];
 
-test('model identity is immutable, review-only, and not OWNER-approved', () => {
+test('model identity is immutable, OWNER-approved, and semantically authoritative', () => {
   assert.equal(model.model_id, 'VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0');
   assert.equal(model.semantic_version, '1.0.0');
-  assert.equal(model.status, 'PROPOSED_FOR_OWNER_REVIEW');
-  assert.equal(model.owner_approval.approved, false);
-  assert.equal(model.owner_approval.approved_at, null);
+  assert.equal(model.status, 'OWNER_APPROVED_FROZEN');
+  assert.equal(model.owner_approval.approved, true);
+  assert.match(model.owner_approval.approved_at, /^2026-08-30T/);
+  assert.match(model.owner_approval.approval_reference, /fb6c80da38267047c83fec3f2b87a3dd7b7f8199/);
+  assert.equal(model.semantic_authority, true);
   assert.equal(model.runtime_authority, false);
   assert.deepEqual(model.evidence_classes, evidenceClasses);
+
+  const frozen = {
+    model_id: model.model_id,
+    semantic_version: model.semantic_version,
+    governance: model.governance,
+    evidence_classes: model.evidence_classes,
+    evidence_provenance: model.evidence_provenance,
+    universal_virtue_rule: model.universal_virtue_rule,
+    colors: model.colors,
+    cross_color_discriminator_matrix: model.cross_color_discriminator_matrix,
+  };
+  const semanticHash = crypto.createHash('sha256').update(JSON.stringify(frozen)).digest('hex');
+  assert.equal(semanticHash, model.frozen_semantic_sha256);
 });
 
 test('every color has complete governed content and pairwise confusion coverage', () => {

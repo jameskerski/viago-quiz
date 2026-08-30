@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_REVIEW_REQUIRED_NOT_RUNTIME_AUTHORITY",
+  "source_cohort": "data/v2-proposals/cohort-01.json",
+  "supersedes_review": "data/v2-proposals/cohort-01-color-model-review.json",
+  "governing_model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "governing_model_version": "1.0.0",
+  "governing_model_status": "OWNER_APPROVED_FROZEN",
+  "review_date": "2026-08-30",
+  "allowed_dispositions": ["KEEP", "REVISE", "REJECT", "NEEDS_OWNER_JUDGMENT"],
+  "decision_rule": "Keep or revise only when an item exposes an underlying VIAGO preference or motivational tradeoff. Reject surface behavior, universal virtue, learned maturity, professional competency, or unsupported theory that cannot be repaired without changing the construct.",
+  "summary": {"KEEP": 5, "REVISE": 10, "REJECT": 8, "NEEDS_OWNER_JUDGMENT": 1},
+  "runtime_impact": {"questions_activated": 0, "questions_modified": 0, "scoring_changed": false, "selector_changed": false, "cohort_02_generated": false},
+  "reviews": [
+    {
+      "proposal_id": "C01-L-R-01",
+      "disposition": "REVISE",
+      "model_basis": ["red.core_preferences", "red.patterns.decision", "red.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "The original can reward competent facilitation. The revision makes decision ownership and progress more important than continued consultation, creating a Red motivational tradeoff.",
+      "revised_wording": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+      "remaining_risk": "Authority, role expectations, or facilitation training may still affect endorsement."
+    },
+    {
+      "proposal_id": "C01-L-R-02",
+      "disposition": "KEEP",
+      "model_basis": ["red.patterns.decision", "green.patterns.decision"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED"],
+      "diagnostic": "The reversible-decision condition creates a defensible tradeoff between Red momentum/closure and Green detail/evidence rather than asking whether the respondent is generally decisive.",
+      "revised_wording": null,
+      "remaining_risk": "Domain-specific risk tolerance may still affect the answer."
+    },
+    {
+      "proposal_id": "C01-L-R-03",
+      "disposition": "REVISE",
+      "model_basis": ["red.patterns.pressure_stress", "red.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Clear instruction under pressure can be professional competence. The revision exposes willingness to prioritize the next action despite relational abruptness.",
+      "revised_wording": "When time is short, I become more direct about the next action, even if the conversation feels abrupt.",
+      "remaining_risk": "Emergency training and job responsibility may dominate personality preference."
+    },
+    {
+      "proposal_id": "C01-L-R-04",
+      "disposition": "REVISE",
+      "model_basis": ["red.core_preferences", "red.patterns.change", "red.patterns.risk"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "SUPPORTED_INFERENCE", "NOT_ESTABLISHED"],
+      "diagnostic": "Changing course before agreement overstates an unestablished Red change/risk doctrine. The revision returns the construct to historically established momentum versus preparation.",
+      "revised_wording": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+      "remaining_risk": "The item still requires future evidence that respondents interpret 'losing ground' consistently."
+    },
+    {
+      "proposal_id": "C01-L-R-05",
+      "disposition": "KEEP",
+      "model_basis": ["red.core_preferences", "red.patterns.work_execution", "red.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Owning the mistake is neutral framing; the diagnostic content is attention moving quickly toward the next decision and restored momentum.",
+      "revised_wording": null,
+      "remaining_risk": "Accountability language may create some socially desirable endorsement."
+    },
+    {
+      "proposal_id": "C01-L-B-01",
+      "disposition": "REJECT",
+      "model_basis": ["blue.patterns.communication", "blue.nonqualifying_behaviors"],
+      "evidence_classes": ["NOT_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Story/example use is not established Blue meaning and is a learnable communication technique. Repair would require a different construct, not wording polish.",
+      "revised_wording": null,
+      "remaining_risk": "Do not reuse story-first communication as Blue evidence without new governed evidence."
+    },
+    {
+      "proposal_id": "C01-L-B-02",
+      "disposition": "KEEP",
+      "model_basis": ["blue.core_preferences", "blue.observable_indicators", "blue.patterns.social_relationship"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED"],
+      "diagnostic": "Spontaneous entry into unfamiliar social interaction directly reflects established Blue broad connection and social energy, without merely asking whether the respondent likes people.",
+      "revised_wording": null,
+      "remaining_risk": "Culture, social anxiety, disability, and context can suppress the behavior independently of preference."
+    },
+    {
+      "proposal_id": "C01-L-B-03",
+      "disposition": "KEEP",
+      "model_basis": ["blue.core_preferences", "blue.patterns.change"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED"],
+      "diagnostic": "Interest in what an unexpected change could become measures attraction to novelty and possibility, not generic adaptability or competence.",
+      "revised_wording": null,
+      "remaining_risk": "Optimism may contribute independently of Blue preference."
+    },
+    {
+      "proposal_id": "C01-L-B-04",
+      "disposition": "REJECT",
+      "model_basis": ["blue.nonqualifying_behaviors", "green.nonqualifying_behaviors"],
+      "evidence_classes": ["OWNER_GOVERNED"],
+      "diagnostic": "Noticing detail and making ideas vivid are competencies available to any color. The proposed 'expressive precision' construct is not part of approved Blue V1.0.",
+      "revised_wording": null,
+      "remaining_risk": "Irreparable without replacing the construct."
+    },
+    {
+      "proposal_id": "C01-L-B-05",
+      "disposition": "REVISE",
+      "model_basis": ["blue.observable_indicators", "blue.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Restoring a group's energy can be facilitation skill. The revision makes spontaneous attraction to conversational energy the signal, even without a task need.",
+      "revised_wording": "In a quiet group, I feel drawn to spark conversation even when there is nothing specific we need to decide.",
+      "remaining_risk": "A practiced host or facilitator may endorse it for role reasons."
+    },
+    {
+      "proposal_id": "C01-L-Y-01",
+      "disposition": "REJECT",
+      "model_basis": ["yellow.growth_behaviors", "yellow.nonqualifying_behaviors"],
+      "evidence_classes": ["OWNER_GOVERNED"],
+      "diagnostic": "Kind directness is a mature relationship skill and explicit Yellow growth behavior, not evidence of the underlying Yellow preference. The item would reward emotional maturity.",
+      "revised_wording": null,
+      "remaining_risk": "A replacement should measure loyalty, harmony, support, or relational safety rather than confrontation skill."
+    },
+    {
+      "proposal_id": "C01-L-Y-02",
+      "disposition": "REVISE",
+      "model_basis": ["yellow.core_preferences", "yellow.patterns.decision", "universal_virtue_rule"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Advocacy and fairness are universal virtues. The revision introduces a real cost—slowing an otherwise workable decision—to reveal a Yellow people/voice priority.",
+      "revised_wording": "I have trouble supporting a workable group decision when the people most affected had no voice in it, even if reopening it would slow us down.",
+      "remaining_risk": "Ethics training and organizational policy may still drive endorsement."
+    },
+    {
+      "proposal_id": "C01-L-Y-03",
+      "disposition": "REJECT",
+      "model_basis": ["yellow.growth_behaviors", "yellow.nonqualifying_behaviors", "universal_virtue_rule"],
+      "evidence_classes": ["OWNER_GOVERNED"],
+      "diagnostic": "Supportive boundary-setting measures learned maturity and directly uses a Yellow growth behavior as if it were core evidence.",
+      "revised_wording": null,
+      "remaining_risk": "Irreparable without replacing the construct."
+    },
+    {
+      "proposal_id": "C01-L-G-01",
+      "disposition": "REVISE",
+      "model_basis": ["green.core_preferences", "green.observable_indicators", "green.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Identifying missing instructions can be competence. The revision creates a Green clarification-versus-reasonable-assumption tradeoff.",
+      "revised_wording": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+      "remaining_risk": "High-stakes occupations can make clarification mandatory."
+    },
+    {
+      "proposal_id": "C01-L-G-02",
+      "disposition": "REVISE",
+      "model_basis": ["green.patterns.risk", "green.nonqualifying_behaviors", "universal_virtue_rule"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "Checking consequences is responsible behavior. The revision makes Green verification win a real speed tradeoff despite a workable quick fix.",
+      "revised_wording": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+      "remaining_risk": "The imagined severity of the second problem may vary."
+    },
+    {
+      "proposal_id": "C01-L-G-03",
+      "disposition": "REVISE",
+      "model_basis": ["green.patterns.decision", "green.patterns.conflict", "green.nonqualifying_behaviors"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "SUPPORTED_INFERENCE", "OWNER_GOVERNED"],
+      "diagnostic": "Separating fact from assumption can be professional competency. The revision makes evidence separation more important than the group's desired speed of closure.",
+      "revised_wording": "During disagreement, I focus first on separating facts from assumptions, even when others want to settle the issue quickly.",
+      "remaining_risk": "Legal, investigative, analytical, or scientific training may dominate preference."
+    },
+    {
+      "proposal_id": "C01-S-01",
+      "disposition": "REVISE",
+      "model_basis": ["cross_color_discriminator_matrix:Acts quickly", "universal_virtue_rule"],
+      "evidence_classes": ["SUPPORTED_INFERENCE", "OWNER_GOVERNED"],
+      "diagnostic": "The scenario supports distinct motives, but 'right people' and 'safest' make some options sound objectively superior. Revised options remove virtue loading.",
+      "revised_wording": "A time-sensitive problem appears and no one clearly owns it. What gets your attention first?",
+      "revised_options": {"red": "Choosing the first action and taking responsibility for it", "blue": "Getting people talking so possible responses start to emerge", "yellow": "Finding out who is affected and what they need", "green": "Confirming the facts and narrowing a workable response"},
+      "remaining_risk": "In real emergencies all four may be necessary in sequence."
+    },
+    {
+      "proposal_id": "C01-S-02",
+      "disposition": "REVISE",
+      "model_basis": ["red.patterns.decision", "blue.core_preferences", "yellow.core_preferences", "green.core_preferences"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED"],
+      "diagnostic": "The original Yellow option asks about hopes, which can be generic stakeholder discovery. The revision makes commitments and affected people more central.",
+      "revised_wording": "You join a new project and the goal is still vague. What helps you engage first?",
+      "revised_options": {"red": "Proposing a starting direction we can adjust as we learn", "blue": "Talking through possibilities until an exciting angle emerges", "yellow": "Understanding who depends on the project and which commitments matter", "green": "Clarifying the requirements and what success must include"},
+      "remaining_risk": "Assigned role and project type can determine the practical first step."
+    },
+    {
+      "proposal_id": "C01-S-03",
+      "disposition": "NEEDS_OWNER_JUDGMENT",
+      "model_basis": ["red.patterns.change", "blue.patterns.change", "yellow.patterns.change", "green.patterns.change"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "SUPPORTED_INFERENCE"],
+      "diagnostic": "The four motives are coherent, but Red, Yellow, and Green change patterns include supported inference. Model approval did not promote those inferences into scoring authority.",
+      "revised_wording": null,
+      "remaining_risk": "OWNER must decide whether to govern these change distinctions for item research or defer the item pending validation."
+    },
+    {
+      "proposal_id": "C01-S-04",
+      "disposition": "REJECT",
+      "model_basis": ["blue.patterns.conflict", "yellow.growth_behaviors", "universal_virtue_rule"],
+      "evidence_classes": ["NOT_ESTABLISHED", "OWNER_GOVERNED"],
+      "diagnostic": "The Blue response relies on an unestablished lightening-conflict style, while all options mix mature repair, professional correction, and context-dependent procedure.",
+      "revised_wording": null,
+      "remaining_risk": "Requires a new scenario and construct rather than revision."
+    },
+    {
+      "proposal_id": "C01-S-05",
+      "disposition": "REJECT",
+      "model_basis": ["red.patterns.conflict", "blue.patterns.conflict", "yellow.patterns.conflict", "green.patterns.conflict"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED", "SUPPORTED_INFERENCE", "NOT_ESTABLISHED"],
+      "diagnostic": "The options mostly measure good facilitation techniques, and Blue/Green conflict mechanisms are not established scoring authority. Motivation cannot be recovered cleanly from the surface actions.",
+      "revised_wording": null,
+      "remaining_risk": "Do not reuse until conflict distinctions have separate governed validation."
+    },
+    {
+      "proposal_id": "C01-S-06",
+      "disposition": "REJECT",
+      "model_basis": ["colors.*.patterns", "universal_virtue_rule"],
+      "evidence_classes": ["NOT_ESTABLISHED"],
+      "diagnostic": "The approved model does not establish four color-specific learning styles. The options are shaped by experience, task stakes, accessibility, and available support.",
+      "revised_wording": null,
+      "remaining_risk": "Learning modality requires independent evidence before it can become a VIAGO color domain."
+    },
+    {
+      "proposal_id": "C01-S-07",
+      "disposition": "KEEP",
+      "model_basis": ["red.core_preferences", "blue.core_preferences", "yellow.core_preferences", "green.core_preferences"],
+      "evidence_classes": ["HISTORICALLY_ESTABLISHED"],
+      "diagnostic": "The low-stakes setting provides four defensible first preferences: closure, novelty/energy, inclusion/belonging, and practical evaluation. No option is an obvious universal virtue.",
+      "revised_wording": null,
+      "remaining_risk": "Friend-group dynamics and familiarity with the options may affect choice."
+    },
+    {
+      "proposal_id": "C01-S-08",
+      "disposition": "REJECT",
+      "model_basis": ["universal_virtue_rule"],
+      "evidence_classes": ["OWNER_GOVERNED"],
+      "diagnostic": "Deadline-versus-quality decisions depend on contractual standards, harm, downstream consequences, and job requirements. The options cannot be interpreted as color without missing context.",
+      "revised_wording": null,
+      "remaining_risk": "Irreparably context-dependent in its current construct."
+    }
+  ]
+}

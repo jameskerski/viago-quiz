@@ -4,13 +4,15 @@
 
 **Semantic version:** `1.0.0`
 
-**Status:** `PROPOSED_FOR_OWNER_REVIEW`
+**Status:** `OWNER_APPROVED_FROZEN`
 
-**OWNER approval:** Not yet approved
+**OWNER approval:** Approved 2026-08-30, based on commit `fb6c80da38267047c83fec3f2b87a3dd7b7f8199`
 
 **Runtime authority:** None
 
-This is the proposed shared meaning of Red, Blue, Yellow, and Green inside VIAGO. It is richer than a result summary but deliberately avoids claiming more than the preserved VIAGO evidence supports. Questions do not define this model. Once approved, the model will define what questions are allowed to measure.
+**Frozen semantic SHA-256:** `db232016489eac4e6f117c8293f5ce7b21d2bbb76bfdc9cffdeb083a351d27c2`
+
+This is the OWNER-approved canonical semantic meaning of Red, Blue, Yellow, and Green inside VIAGO. It is richer than a result summary but deliberately avoids claiming more than the preserved VIAGO evidence supports. Questions do not define this model. This model defines what questions are allowed to measure.
 
 ## How to read the evidence labels
 
@@ -19,7 +21,7 @@ This is the proposed shared meaning of Red, Blue, Yellow, and Green inside VIAGO
 - **SUPPORTED_INFERENCE** — a reasonable extension of established meaning that may guide research, but is not scoring authority.
 - **NOT_ESTABLISHED** — a tempting assumption VIAGO currently lacks authority to use.
 
-Only historically established and OWNER-governed claims could become scoring authority, and only after separate OWNER approval and implementation authorization.
+Only historically established and OWNER-governed claims may be considered for scoring authority, and only after separate question/content approval and implementation authorization. Model approval does not promote supported inference or authorize runtime scoring changes.
 
 # A. RED
 
@@ -241,7 +243,7 @@ Additional universal cautions:
 
 # I. Version and change governance
 
-This proposal is immutable by identity: `VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0` means semantic version `1.0.0`. It is not approved and has no runtime authority. If OWNER approves it, later semantic changes must create a new model version rather than silently alter V1.0.
+This approved model is immutable by identity: `VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0` means semantic version `1.0.0`. It is the canonical semantic authority but has not been connected to runtime scoring. Later semantic changes must create a new governed model version rather than silently alter V1.0.
 
 Questions, question audits, scoring validation, result narratives, Spanish alignment, coaching content, and future AI-assisted work should eventually reference an approved model version. Activation requires separate authorization; this proposal itself changes nothing at runtime.
 
@@ -251,4 +253,4 @@ Machine-readable companion: `data/v2-governance/viago-behavioral-color-model-v1.
 
 Deterministic validation checks model identity/status, evidence labels, required color sections, pairwise confusion coverage, universal-virtue rules, Yellow directness/quietness safeguards, and absence of runtime imports.
 
-No application, database, scoring, selector, question, result narrative, Spanish content, or deployment is changed by this model proposal. Cohort 02 remains stopped and Cohort 01 remains untouched.
+No application, database, scoring, selector, question, result narrative, Spanish content, or deployment was changed by recording approval. Cohort 02 remains stopped. Cohort 01 may be reviewed against this model, but remains non-runtime unless separately approved and activated.

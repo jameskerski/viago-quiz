@@ -1,13 +1,15 @@
 {
   "model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   "semantic_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "status": "OWNER_APPROVED_FROZEN",
   "owner_approval": {
-    "approved": false,
-    "approved_at": null,
-    "approval_reference": null
+    "approved": true,
+    "approved_at": "2026-08-30T17:25:32Z",
+    "approval_reference": "OWNER_APPROVAL_BASED_ON_COMMIT_fb6c80da38267047c83fec3f2b87a3dd7b7f8199"
   },
   "created_at": "2026-08-30",
+  "frozen_semantic_sha256": "db232016489eac4e6f117c8293f5ce7b21d2bbb76bfdc9cffdeb083a351d27c2",
+  "semantic_authority": true,
   "runtime_authority": false,
   "governance": {
     "questions_define_model": false,
