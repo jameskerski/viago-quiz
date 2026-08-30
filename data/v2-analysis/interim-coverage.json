@@ -1,0 +1,1540 @@
+{
+  "schema_version": "1.0.0",
+  "status": "OWNER_REVIEW_COVERAGE_ANALYSIS",
+  "production_impact": "NONE",
+  "sources": {
+    "active_audit": "data/v2-audit/current-question-audit.json",
+    "coverage_matrix": "data/v2-audit/coverage-matrix.json",
+    "cohort_01_base": "data/v2-proposals/cohort-01.json",
+    "cohort_01_polished": "data/v2-proposals/cohort-01-polished-candidates.json",
+    "cohort_01_amendments": "data/v2-proposals/cohort-01-desirability-balance-revisions.json",
+    "cohort_02_base": "data/v2-proposals/cohort-02.json",
+    "cohort_02_amendments": "data/v2-proposals/cohort-02-owner-revisions.json"
+  },
+  "counts": {
+    "active": 151,
+    "cohort_01": 16,
+    "cohort_02": 24,
+    "candidates": 40,
+    "combined": 191,
+    "active_by_type": {
+      "LIKERT": 120,
+      "SINGLE_SELECT": 31
+    },
+    "candidates_by_type": {
+      "LIKERT": 20,
+      "SINGLE_SELECT": 20
+    },
+    "combined_by_type": {
+      "LIKERT": 140,
+      "SINGLE_SELECT": 51
+    }
+  },
+  "color_measurement_opportunities": {
+    "red": {
+      "active_likert": 26,
+      "active_single_select": 31,
+      "active_total": 57,
+      "candidate_likert": 7,
+      "candidate_single_select": 20,
+      "candidate_total": 27,
+      "combined_total": 84
+    },
+    "blue": {
+      "active_likert": 30,
+      "active_single_select": 31,
+      "active_total": 61,
+      "candidate_likert": 5,
+      "candidate_single_select": 20,
+      "candidate_total": 25,
+      "combined_total": 86
+    },
+    "yellow": {
+      "active_likert": 29,
+      "active_single_select": 31,
+      "active_total": 60,
+      "candidate_likert": 3,
+      "candidate_single_select": 20,
+      "candidate_total": 23,
+      "combined_total": 83
+    },
+    "green": {
+      "active_likert": 35,
+      "active_single_select": 31,
+      "active_total": 66,
+      "candidate_likert": 5,
+      "candidate_single_select": 20,
+      "candidate_total": 25,
+      "combined_total": 91
+    }
+  },
+  "domains": {
+    "communication": {
+      "active": 5,
+      "candidates": 3,
+      "combined": 8
+    },
+    "competition-achievement": {
+      "active": 6,
+      "candidates": 1,
+      "combined": 7
+    },
+    "conflict": {
+      "active": 7,
+      "candidates": 1,
+      "combined": 8
+    },
+    "cooperation-support": {
+      "active": 12,
+      "candidates": 3,
+      "combined": 15
+    },
+    "decision-making": {
+      "active": 9,
+      "candidates": 6,
+      "combined": 15
+    },
+    "detail-accuracy": {
+      "active": 2,
+      "candidates": 2,
+      "combined": 4
+    },
+    "emotional-expression": {
+      "active": 7,
+      "candidates": 0,
+      "combined": 7
+    },
+    "general-behavioral-preference": {
+      "active": 26,
+      "candidates": 1,
+      "combined": 27
+    },
+    "independence-follow-through": {
+      "active": 2,
+      "candidates": 1,
+      "combined": 3
+    },
+    "leadership-influence": {
+      "active": 1,
+      "candidates": 6,
+      "combined": 7
+    },
+    "pace-action": {
+      "active": 10,
+      "candidates": 0,
+      "combined": 10
+    },
+    "planning-organization": {
+      "active": 16,
+      "candidates": 0,
+      "combined": 16
+    },
+    "problem-solving-learning": {
+      "active": 1,
+      "candidates": 2,
+      "combined": 3
+    },
+    "risk-change": {
+      "active": 10,
+      "candidates": 7,
+      "combined": 17
+    },
+    "rules-process": {
+      "active": 4,
+      "candidates": 4,
+      "combined": 8
+    },
+    "social-interaction": {
+      "active": 28,
+      "candidates": 2,
+      "combined": 30
+    },
+    "stability-security": {
+      "active": 5,
+      "candidates": 1,
+      "combined": 6
+    }
+  },
+  "active_contexts": {
+    "communication": 3,
+    "conflict": 5,
+    "leadership": 1,
+    "personal-preference": 89,
+    "planning": 15,
+    "pressure": 5,
+    "social": 8,
+    "team": 9,
+    "unfamiliar-situation": 8,
+    "work-business": 8
+  },
+  "candidate_contexts": {
+    "community": 1,
+    "community-event": 1,
+    "conflict": 1,
+    "creative-collaboration": 1,
+    "creative-work": 1,
+    "customer-pressure": 1,
+    "customer-service": 1,
+    "daily-routine": 1,
+    "home": 1,
+    "home-transition": 1,
+    "onboarding": 1,
+    "personal-leisure": 1,
+    "personal-preference": 1,
+    "personal-relationship": 1,
+    "pressure": 3,
+    "social": 1,
+    "team": 8,
+    "team-decision": 1,
+    "technology": 1,
+    "travel": 1,
+    "unfamiliar-situation": 4,
+    "volunteer": 1,
+    "work-business": 6
+  },
+  "context_balance": {
+    "active": {
+      "cross_context_or_unspecified": 36,
+      "ordinary_life_or_community": 97,
+      "work_business_or_team": 18
+    },
+    "candidates": {
+      "cross_context_or_unspecified": 8,
+      "ordinary_life_or_community": 11,
+      "work_business_or_team": 21
+    }
+  },
+  "semantic_families": {
+    "adaptive-curiosity": 1,
+    "ambiguous-custom-request": 1,
+    "ambiguous-result-ownership": 1,
+    "clear-performance-standard": 1,
+    "conflicting-reports": 1,
+    "consequences-over-instinct": 1,
+    "decisive-action": 4,
+    "depth-over-new-connections": 1,
+    "emergent-project-path": 1,
+    "evidence-before-action": 3,
+    "expressive-connection": 2,
+    "limited-community-budget": 1,
+    "missed-travel-connection": 1,
+    "new-neighborhood-settling": 1,
+    "new-team-working-norms": 1,
+    "overwhelmed-new-colleague": 1,
+    "plan-disruption": 1,
+    "pressure-first-response": 1,
+    "principled-inclusion": 1,
+    "recovery-after-setback": 1,
+    "recurring-minor-errors": 1,
+    "refresh-working-routine": 1,
+    "repeatability-over-improvisation": 1,
+    "rough-idea-feedback": 1,
+    "shared-household-routine": 1,
+    "social-decision": 1,
+    "team-tool-selection": 1,
+    "too-many-good-ideas": 1,
+    "trust-before-quick-closure": 1,
+    "unexpected-free-afternoon": 1,
+    "unfamiliar-entry": 1,
+    "unowned-volunteer-launch": 1,
+    "urgent-customer-complaint": 1,
+    "weather-event-redesign": 1
+  },
+  "repeated_candidate_semantic_families": {
+    "decisive-action": 4,
+    "evidence-before-action": 3,
+    "expressive-connection": 2
+  },
+  "lexical_similarity_screen": {
+    "method": "TF-IDF cosine over normalized prompt plus options; screening only, not a semantic verdict",
+    "candidate_to_candidate_top": [
+      {
+        "left_id": "C01-S-07",
+        "right_id": "C02-S-15",
+        "cosine": 0.3089,
+        "left_text": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you? Narrow the workable choices and recommend one so the group can get going Offer a fresh possibility that could bring some energy back to the group Look for the choice that best fits the group’s shared mood and preferences Compare time, cost, and logistics and suggest the most practical fit",
+        "right_text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you? Narrow the choices and recommend the direction most likely to deliver Explore whether the strongest ideas can create a more exciting possibility Look for the direction the group can support and sustain together Define criteria and compare how well each idea meets them"
+      },
+      {
+        "left_id": "C01-L-R-01",
+        "right_id": "C01-L-Y-02",
+        "cosine": 0.2454,
+        "left_text": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+        "right_text": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward."
+      },
+      {
+        "left_id": "C02-S-02",
+        "right_id": "C02-S-07",
+        "cosine": 0.2398,
+        "left_text": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first? Define the decision that must be made and establish the next step Explore creative alternatives that might make the request work Understand which customer and team commitments the change will affect Clarify the requirements, dependencies, and likely consequences",
+        "right_text": "A customer raises an urgent complaint that needs a thoughtful response. What do you naturally contribute first? Take ownership of the resolution and make the next action clear Generate response options that could reopen a constructive path Understand the impact on the customer and protect the working relationship Verify what happened and define a correction that will hold"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "C02-L-Y-01",
+        "cosine": 0.2268,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward."
+      },
+      {
+        "left_id": "C02-S-01",
+        "right_id": "C02-S-12",
+        "cosine": 0.2255,
+        "left_text": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first? Set the first priorities and help people take ownership of them Create an engaging way for volunteers to begin contributing Help volunteers feel connected to one another and confident about where they fit Map the essential tasks, resources, and order of operations",
+        "right_text": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you? Identify the most important priority and help them take the next action Help them see possibilities and regain some energy for the work Help them identify which relationships and commitments need steady attention first Organize the demands into clear steps, resources, and dependencies"
+      },
+      {
+        "left_id": "C01-S-01",
+        "right_id": "C02-S-07",
+        "cosine": 0.2113,
+        "left_text": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first? Set a workable first direction and coordinate the next action Generate a few fast possibilities and rally people around the most promising one Check the immediate effects on people and coordinate the support they will need Verify the critical facts and define a reliable first response",
+        "right_text": "A customer raises an urgent complaint that needs a thoughtful response. What do you naturally contribute first? Take ownership of the resolution and make the next action clear Generate response options that could reopen a constructive path Understand the impact on the customer and protect the working relationship Verify what happened and define a correction that will hold"
+      },
+      {
+        "left_id": "C01-S-07",
+        "right_id": "C02-S-05",
+        "cosine": 0.2086,
+        "left_text": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you? Narrow the workable choices and recommend one so the group can get going Offer a fresh possibility that could bring some energy back to the group Look for the choice that best fits the group’s shared mood and preferences Compare time, cost, and logistics and suggest the most practical fit",
+        "right_text": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first? Which choice will create the clearest visible result Which choice could generate the most participation and fresh energy Which choice will strengthen residents’ connection to the shared space over time Which choice has the strongest cost, maintenance, and feasibility case"
+      },
+      {
+        "left_id": "C01-S-03",
+        "right_id": "C02-S-03",
+        "cosine": 0.2069,
+        "left_text": "A plan you were counting on changes with little warning. What matters most in your first response? Finding the best available direction so progress does not stall Seeing what new possibilities the change opens up Protecting the people and commitments affected by the change Rebuilding enough clarity to understand what happens next",
+        "right_text": "A missed connection changes a group trip with little warning. What matters most in your first response? Choose the strongest available route so the trip keeps moving Look for an unexpected possibility that could still make the trip memorable Coordinate around the travelers’ needs and the commitments already made Compare timing, constraints, and reliability before choosing the new route"
+      },
+      {
+        "left_id": "C02-L-R-02",
+        "right_id": "C02-L-G-01",
+        "cosine": 0.1891,
+        "left_text": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+        "right_text": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct."
+      },
+      {
+        "left_id": "C02-S-06",
+        "right_id": "C02-S-12",
+        "cosine": 0.1879,
+        "left_text": "A newly formed team needs a way of working together. What would you most naturally help establish first? Clear ownership for decisions and the pace needed to deliver An open exchange where possibilities and energy can build Shared expectations that support trust and dependable commitments Defined roles, processes, and checkpoints that keep work coherent",
+        "right_text": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you? Identify the most important priority and help them take the next action Help them see possibilities and regain some energy for the work Help them identify which relationships and commitments need steady attention first Organize the demands into clear steps, resources, and dependencies"
+      },
+      {
+        "left_id": "C02-S-03",
+        "right_id": "C02-S-08",
+        "cosine": 0.187,
+        "left_text": "A missed connection changes a group trip with little warning. What matters most in your first response? Choose the strongest available route so the trip keeps moving Look for an unexpected possibility that could still make the trip memorable Coordinate around the travelers’ needs and the commitments already made Compare timing, constraints, and reliability before choosing the new route",
+        "right_text": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you? Choose a workable backup and organize the immediate switch Reimagine the event so the changed format still feels lively Coordinate around participant needs and promises already made Compare the constraints and select the most reliable fallback"
+      },
+      {
+        "left_id": "C01-S-01",
+        "right_id": "C02-S-08",
+        "cosine": 0.1859,
+        "left_text": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first? Set a workable first direction and coordinate the next action Generate a few fast possibilities and rally people around the most promising one Check the immediate effects on people and coordinate the support they will need Verify the critical facts and define a reliable first response",
+        "right_text": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you? Choose a workable backup and organize the immediate switch Reimagine the event so the changed format still feels lively Coordinate around participant needs and promises already made Compare the constraints and select the most reliable fallback"
+      },
+      {
+        "left_id": "C02-S-10",
+        "right_id": "C02-S-15",
+        "cosine": 0.1747,
+        "left_text": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go? The strongest direction and the next move that would advance it The possibilities that could make the idea more vivid or engaging How the idea may connect with the people it is meant to serve The assumptions, details, and consequences that still need testing",
+        "right_text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you? Narrow the choices and recommend the direction most likely to deliver Explore whether the strongest ideas can create a more exciting possibility Look for the direction the group can support and sustain together Define criteria and compare how well each idea meets them"
+      },
+      {
+        "left_id": "C02-S-14",
+        "right_id": "C02-L-Y-01",
+        "cosine": 0.1736,
+        "left_text": "A group receives two credible reports that point toward different decisions. What gets your attention first? Which decision must be made now to keep the objective moving Which new explanation or option could connect what the reports reveal Which people and commitments would be affected by choosing either direction Which evidence, assumptions, and methods account for the disagreement",
+        "right_text": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward."
+      },
+      {
+        "left_id": "C01-S-01",
+        "right_id": "C02-S-01",
+        "cosine": 0.1729,
+        "left_text": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first? Set a workable first direction and coordinate the next action Generate a few fast possibilities and rally people around the most promising one Check the immediate effects on people and coordinate the support they will need Verify the critical facts and define a reliable first response",
+        "right_text": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first? Set the first priorities and help people take ownership of them Create an engaging way for volunteers to begin contributing Help volunteers feel connected to one another and confident about where they fit Map the essential tasks, resources, and order of operations"
+      },
+      {
+        "left_id": "C01-S-02",
+        "right_id": "C02-L-B-01",
+        "cosine": 0.172,
+        "left_text": "You join a new project and the goal is still vague. What helps you engage first? Proposing a starting direction we can adjust as we learn Talking through possibilities until an exciting angle emerges Understanding who depends on the project and which commitments matter Clarifying the requirements and what success must include",
+        "right_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start."
+      },
+      {
+        "left_id": "C02-L-R-02",
+        "right_id": "C02-L-B-01",
+        "cosine": 0.1642,
+        "left_text": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+        "right_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start."
+      },
+      {
+        "left_id": "C01-L-R-05",
+        "right_id": "C02-L-G-01",
+        "cosine": 0.1578,
+        "left_text": "After I own a mistake, my attention moves quickly to the decision that will get things back on track.",
+        "right_text": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct."
+      },
+      {
+        "left_id": "C01-L-Y-02",
+        "right_id": "C02-L-Y-01",
+        "cosine": 0.1576,
+        "left_text": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward.",
+        "right_text": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward."
+      },
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "C02-S-08",
+        "cosine": 0.1558,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you? Choose a workable backup and organize the immediate switch Reimagine the event so the changed format still feels lively Coordinate around participant needs and promises already made Compare the constraints and select the most reliable fallback"
+      },
+      {
+        "left_id": "C01-L-R-01",
+        "right_id": "C02-L-R-02",
+        "cosine": 0.1544,
+        "left_text": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+        "right_text": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle."
+      },
+      {
+        "left_id": "C01-S-01",
+        "right_id": "C02-S-15",
+        "cosine": 0.1525,
+        "left_text": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first? Set a workable first direction and coordinate the next action Generate a few fast possibilities and rally people around the most promising one Check the immediate effects on people and coordinate the support they will need Verify the critical facts and define a reliable first response",
+        "right_text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you? Narrow the choices and recommend the direction most likely to deliver Explore whether the strongest ideas can create a more exciting possibility Look for the direction the group can support and sustain together Define criteria and compare how well each idea meets them"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "C01-L-G-01",
+        "cosine": 0.1519,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later."
+      },
+      {
+        "left_id": "C01-S-03",
+        "right_id": "C02-S-02",
+        "cosine": 0.1513,
+        "left_text": "A plan you were counting on changes with little warning. What matters most in your first response? Finding the best available direction so progress does not stall Seeing what new possibilities the change opens up Protecting the people and commitments affected by the change Rebuilding enough clarity to understand what happens next",
+        "right_text": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first? Define the decision that must be made and establish the next step Explore creative alternatives that might make the request work Understand which customer and team commitments the change will affect Clarify the requirements, dependencies, and likely consequences"
+      },
+      {
+        "left_id": "C02-S-06",
+        "right_id": "C02-S-09",
+        "cosine": 0.1509,
+        "left_text": "A newly formed team needs a way of working together. What would you most naturally help establish first? Clear ownership for decisions and the pace needed to deliver An open exchange where possibilities and energy can build Shared expectations that support trust and dependable commitments Defined roles, processes, and checkpoints that keep work coherent",
+        "right_text": "A team is choosing between several capable software tools. What matters most in your recommendation? Which tool will improve output and speed soonest Which tool opens the most interesting possibilities for how the team works Which tool best supports the team’s shared needs and working commitments Which tool has the strongest evidence for reliability, fit, and integration"
+      },
+      {
+        "left_id": "C01-L-R-03",
+        "right_id": "C02-S-13",
+        "cosine": 0.1504,
+        "left_text": "When time is short, I become more direct about the next action, even if the conversation feels abrupt.",
+        "right_text": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do? Use the time to make visible progress on something I want to accomplish Choose something spontaneous, social, or new that feels energizing Spend the time in a comfortable way with someone I care about Dive into something I have wanted time to understand properly"
+      },
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "C02-S-15",
+        "cosine": 0.15,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you? Narrow the choices and recommend the direction most likely to deliver Explore whether the strongest ideas can create a more exciting possibility Look for the direction the group can support and sustain together Define criteria and compare how well each idea meets them"
+      },
+      {
+        "left_id": "C02-L-B-01",
+        "right_id": "C02-L-Y-02",
+        "cosine": 0.1495,
+        "left_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+        "right_text": "I feel more settled deepening a dependable relationship than widening my circle with new connections."
+      },
+      {
+        "left_id": "C02-S-10",
+        "right_id": "C02-S-14",
+        "cosine": 0.1493,
+        "left_text": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go? The strongest direction and the next move that would advance it The possibilities that could make the idea more vivid or engaging How the idea may connect with the people it is meant to serve The assumptions, details, and consequences that still need testing",
+        "right_text": "A group receives two credible reports that point toward different decisions. What gets your attention first? Which decision must be made now to keep the objective moving Which new explanation or option could connect what the reports reveal Which people and commitments would be affected by choosing either direction Which evidence, assumptions, and methods account for the disagreement"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "C01-L-Y-02",
+        "cosine": 0.1484,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward."
+      }
+    ],
+    "candidate_to_active_top": [
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+        "cosine": 0.2888,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "When plans change suddenly, I…"
+      },
+      {
+        "left_id": "C02-L-B-02",
+        "right_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+        "cosine": 0.2872,
+        "left_text": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+        "right_text": "If things feel dull or repetitive, I start looking for something more exciting to do."
+      },
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+        "cosine": 0.2661,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "I’m usually up for trying something new if it sounds fun."
+      },
+      {
+        "left_id": "C01-L-R-05",
+        "right_id": "d60128b7-cef9-42f3-8841-3b4d024cb71b",
+        "cosine": 0.2543,
+        "left_text": "After I own a mistake, my attention moves quickly to the decision that will get things back on track.",
+        "right_text": "If I make a mistake, I…"
+      },
+      {
+        "left_id": "C01-L-G-01",
+        "right_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "cosine": 0.2524,
+        "left_text": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+        "right_text": "Before starting something new, I prefer to…"
+      },
+      {
+        "left_id": "C02-L-G-02",
+        "right_id": "4d694041-2641-4635-aa79-e5dc6c188682",
+        "cosine": 0.2476,
+        "left_text": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time.",
+        "right_text": "I focus more on results than on following a process exactly."
+      },
+      {
+        "left_id": "C02-L-Y-02",
+        "right_id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+        "cosine": 0.2257,
+        "left_text": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+        "right_text": "My relationship with routines is…"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+        "cosine": 0.2188,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "I’d rather be…"
+      },
+      {
+        "left_id": "C01-L-R-04",
+        "right_id": "17d21643-7826-47e6-b115-79d0a74fa33c",
+        "cosine": 0.2174,
+        "left_text": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+        "right_text": "I’m more confident moving forward when there’s a clear plan instead of improvising."
+      },
+      {
+        "left_id": "C01-L-R-04",
+        "right_id": "e87cd6d6-d8dd-4270-b919-72042faab17f",
+        "cosine": 0.2174,
+        "left_text": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+        "right_text": "I’m more confident moving forward when there’s a clear plan instead of improvising."
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "3b9a1aa5-09ba-4bb9-b3c9-c8033791974c",
+        "cosine": 0.215,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "I like to understand every option fully before making a change."
+      },
+      {
+        "left_id": "C02-L-B-01",
+        "right_id": "79803d54-28bb-4990-b557-22fd67927109",
+        "cosine": 0.2128,
+        "left_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+        "right_text": "I’m energized by new experiences, even if they’re unpredictable."
+      },
+      {
+        "left_id": "C01-L-R-01",
+        "right_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+        "cosine": 0.2121,
+        "left_text": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+        "right_text": "I’d rather be…"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "fe20ba22-9f49-472d-b284-8bfb7f0b91fa",
+        "cosine": 0.2121,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "I prefer flexibility over having every detail mapped out in advance."
+      },
+      {
+        "left_id": "C02-S-09",
+        "right_id": "695d628c-53d3-46c2-b360-d355ee0511ad",
+        "cosine": 0.2099,
+        "left_text": "A team is choosing between several capable software tools. What matters most in your recommendation? Which tool will improve output and speed soonest Which tool opens the most interesting possibilities for how the team works Which tool best supports the team’s shared needs and working commitments Which tool has the strongest evidence for reliability, fit, and integration",
+        "right_text": "Money feels like a tool to create experiences, not an end goal."
+      },
+      {
+        "left_id": "C02-L-G-02",
+        "right_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+        "cosine": 0.2087,
+        "left_text": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time.",
+        "right_text": "I’d rather be…"
+      },
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "cosine": 0.2049,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "Before starting something new, I prefer to…"
+      },
+      {
+        "left_id": "C01-L-G-01",
+        "right_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+        "cosine": 0.2045,
+        "left_text": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+        "right_text": "I’d rather be…"
+      },
+      {
+        "left_id": "C02-S-13",
+        "right_id": "eae82ae1-ca73-4c00-b328-7c846c5fbc26",
+        "cosine": 0.2013,
+        "left_text": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do? Use the time to make visible progress on something I want to accomplish Choose something spontaneous, social, or new that feels energizing Spend the time in a comfortable way with someone I care about Dive into something I have wanted time to understand properly",
+        "right_text": "When something breaks, I…"
+      },
+      {
+        "left_id": "C01-L-R-01",
+        "right_id": "17d21643-7826-47e6-b115-79d0a74fa33c",
+        "cosine": 0.1993,
+        "left_text": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+        "right_text": "I’m more confident moving forward when there’s a clear plan instead of improvising."
+      },
+      {
+        "left_id": "C01-L-R-01",
+        "right_id": "e87cd6d6-d8dd-4270-b919-72042faab17f",
+        "cosine": 0.1993,
+        "left_text": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+        "right_text": "I’m more confident moving forward when there’s a clear plan instead of improvising."
+      },
+      {
+        "left_id": "C02-S-15",
+        "right_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+        "cosine": 0.1967,
+        "left_text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you? Narrow the choices and recommend the direction most likely to deliver Explore whether the strongest ideas can create a more exciting possibility Look for the direction the group can support and sustain together Define criteria and compare how well each idea meets them",
+        "right_text": "In a group project, I’m most likely to…"
+      },
+      {
+        "left_id": "C02-S-13",
+        "right_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "cosine": 0.1965,
+        "left_text": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do? Use the time to make visible progress on something I want to accomplish Choose something spontaneous, social, or new that feels energizing Spend the time in a comfortable way with someone I care about Dive into something I have wanted time to understand properly",
+        "right_text": "Before starting something new, I prefer to…"
+      },
+      {
+        "left_id": "C01-L-R-02",
+        "right_id": "c647a4f5-8b50-466f-9a65-c6a8f2d0fda2",
+        "cosine": 0.1956,
+        "left_text": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+        "right_text": "I’d rather avoid risk than deal with potential complications later."
+      },
+      {
+        "left_id": "C01-L-G-03",
+        "right_id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+        "cosine": 0.1946,
+        "left_text": "During disagreement, I focus first on separating facts from assumptions, even when others want to settle the issue quickly.",
+        "right_text": "If I want to improve, I…"
+      },
+      {
+        "left_id": "C02-S-02",
+        "right_id": "0309c2cb-91b4-4ac4-936f-051fd9a9c18c",
+        "cosine": 0.1942,
+        "left_text": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first? Define the decision that must be made and establish the next step Explore creative alternatives that might make the request work Understand which customer and team commitments the change will affect Clarify the requirements, dependencies, and likely consequences",
+        "right_text": "I consider how change might affect relationships before moving forward."
+      },
+      {
+        "left_id": "C01-L-B-03",
+        "right_id": "a1fbe330-1e47-4251-9a07-ce5c2029f916",
+        "cosine": 0.1934,
+        "left_text": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+        "right_text": "I’m usually the one suggesting plans or activities when people are hanging out."
+      },
+      {
+        "left_id": "C02-L-G-01",
+        "right_id": "f5025dca-a545-4b59-9d59-b0ef9f5a8a6a",
+        "cosine": 0.1931,
+        "left_text": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct.",
+        "right_text": "I need downtime alone to recharge after being around people."
+      },
+      {
+        "left_id": "C01-S-07",
+        "right_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+        "cosine": 0.1925,
+        "left_text": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you? Narrow the workable choices and recommend one so the group can get going Offer a fresh possibility that could bring some energy back to the group Look for the choice that best fits the group’s shared mood and preferences Compare time, cost, and logistics and suggest the most practical fit",
+        "right_text": "In a group project, I’m most likely to…"
+      },
+      {
+        "left_id": "C02-S-10",
+        "right_id": "186c99bb-b666-4a64-a85e-955e84388dcb",
+        "cosine": 0.1872,
+        "left_text": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go? The strongest direction and the next move that would advance it The possibilities that could make the idea more vivid or engaging How the idea may connect with the people it is meant to serve The assumptions, details, and consequences that still need testing",
+        "right_text": "Your natural reaction to conflict is:"
+      },
+      {
+        "left_id": "C02-S-13",
+        "right_id": "94495f50-2c0b-4df5-89be-1233fd84ee62",
+        "cosine": 0.1841,
+        "left_text": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do? Use the time to make visible progress on something I want to accomplish Choose something spontaneous, social, or new that feels energizing Spend the time in a comfortable way with someone I care about Dive into something I have wanted time to understand properly",
+        "right_text": "Trying something new feels exciting rather than stressful to me."
+      },
+      {
+        "left_id": "C01-L-G-01",
+        "right_id": "c647a4f5-8b50-466f-9a65-c6a8f2d0fda2",
+        "cosine": 0.1828,
+        "left_text": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+        "right_text": "I’d rather avoid risk than deal with potential complications later."
+      },
+      {
+        "left_id": "C01-S-02",
+        "right_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+        "cosine": 0.182,
+        "left_text": "You join a new project and the goal is still vague. What helps you engage first? Proposing a starting direction we can adjust as we learn Talking through possibilities until an exciting angle emerges Understanding who depends on the project and which commitments matter Clarifying the requirements and what success must include",
+        "right_text": "In a group project, I’m most likely to…"
+      },
+      {
+        "left_id": "C01-L-G-02",
+        "right_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+        "cosine": 0.1816,
+        "left_text": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+        "right_text": "I tend to slow down decisions if I sense tension or discomfort between people."
+      },
+      {
+        "left_id": "C01-L-G-02",
+        "right_id": "c117eb5e-feba-43db-9d9d-8da220cce761",
+        "cosine": 0.1816,
+        "left_text": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+        "right_text": "I tend to slow down decisions if I sense tension or discomfort between people."
+      },
+      {
+        "left_id": "C02-S-12",
+        "right_id": "14135310-4169-47af-bbc7-8d1345b2b51c",
+        "cosine": 0.1809,
+        "left_text": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you? Identify the most important priority and help them take the next action Help them see possibilities and regain some energy for the work Help them identify which relationships and commitments need steady attention first Organize the demands into clear steps, resources, and dependencies",
+        "right_text": "I like routines that help things run smoothly for everyone involved."
+      },
+      {
+        "left_id": "C02-L-B-01",
+        "right_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+        "cosine": 0.1752,
+        "left_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+        "right_text": "If things feel dull or repetitive, I start looking for something more exciting to do."
+      },
+      {
+        "left_id": "C02-L-B-01",
+        "right_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+        "cosine": 0.1728,
+        "left_text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+        "right_text": "In a group project, I’m most likely to…"
+      },
+      {
+        "left_id": "C02-S-03",
+        "right_id": "2df82369-1df5-407a-be21-1dff3ccb59d5",
+        "cosine": 0.1727,
+        "left_text": "A missed connection changes a group trip with little warning. What matters most in your first response? Choose the strongest available route so the trip keeps moving Look for an unexpected possibility that could still make the trip memorable Coordinate around the travelers’ needs and the commitments already made Compare timing, constraints, and reliability before choosing the new route",
+        "right_text": "Unexpected changes tend to make me feel uneasy."
+      },
+      {
+        "left_id": "C01-L-Y-02",
+        "right_id": "eed5b69d-d389-4e2c-9b28-bc8d9da662a4",
+        "cosine": 0.1702,
+        "left_text": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward.",
+        "right_text": "When I get feedback, my first reaction is…"
+      }
+    ]
+  },
+  "repeat_exposure_projection": {
+    "assumption": "Selector continues choosing 25 single-select questions uniformly without replacement from the eligible single-select pool.",
+    "current_single_pool": 31,
+    "combined_single_pool_if_all_candidates_later_activated": 51,
+    "current_per_question_appearance_probability": 0.8065,
+    "combined_per_question_appearance_probability": 0.4902,
+    "current_expected_shared_single_questions_between_two_attempts": 20.1613,
+    "combined_expected_shared_single_questions_between_two_attempts": 12.2549,
+    "current_expected_pairwise_jaccard": 0.6757,
+    "combined_expected_pairwise_jaccard": 0.3247,
+    "active_likert_per_question_appearance_probability": 0.2083,
+    "combined_likert_per_question_appearance_probability": 0.1786
+  },
+  "resolved_candidates": [
+    {
+      "proposal_id": "C01-L-R-01",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "leadership-influence",
+      "context": "team",
+      "semantic_family": "decisive-action",
+      "question": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-R-02",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "decision-making",
+      "context": "work-business",
+      "semantic_family": "decisive-action",
+      "question": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-R-03",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "leadership-influence",
+      "context": "pressure",
+      "semantic_family": "decisive-action",
+      "question": "When time is short, I become more direct about the next action, even if the conversation feels abrupt.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-R-04",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "risk-change",
+      "context": "team",
+      "semantic_family": "decisive-action",
+      "question": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-R-05",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "independence-follow-through",
+      "context": "work-business",
+      "semantic_family": "recovery-after-setback",
+      "question": "After I own a mistake, my attention moves quickly to the decision that will get things back on track.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-B-02",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "blue",
+      "behavioral_domain": "social-interaction",
+      "context": "unfamiliar-situation",
+      "semantic_family": "expressive-connection",
+      "question": "In a room where I don’t know anyone, I usually find a natural way into the conversation without waiting to be introduced.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-B-03",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "blue",
+      "behavioral_domain": "risk-change",
+      "context": "unfamiliar-situation",
+      "semantic_family": "adaptive-curiosity",
+      "question": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-B-05",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "blue",
+      "behavioral_domain": "communication",
+      "context": "team",
+      "semantic_family": "expressive-connection",
+      "question": "In a quiet group, I feel drawn to spark conversation even when there is nothing specific we need to decide.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-Y-02",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "yellow",
+      "behavioral_domain": "cooperation-support",
+      "context": "team",
+      "semantic_family": "principled-inclusion",
+      "question": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-G-01",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "green",
+      "behavioral_domain": "detail-accuracy",
+      "context": "work-business",
+      "semantic_family": "evidence-before-action",
+      "question": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-G-02",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "green",
+      "behavioral_domain": "problem-solving-learning",
+      "context": "pressure",
+      "semantic_family": "evidence-before-action",
+      "question": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-L-G-03",
+      "cohort": "Cohort 01",
+      "question_type": "LIKERT",
+      "color": "green",
+      "behavioral_domain": "problem-solving-learning",
+      "context": "conflict",
+      "semantic_family": "evidence-before-action",
+      "question": "During disagreement, I focus first on separating facts from assumptions, even when others want to settle the issue quickly.",
+      "options": []
+    },
+    {
+      "proposal_id": "C01-S-01",
+      "cohort": "Cohort 01",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "leadership-influence",
+      "context": "pressure",
+      "semantic_family": "pressure-first-response",
+      "question": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+      "options": [
+        {
+          "label": "Set a workable first direction and coordinate the next action",
+          "mapping": "red"
+        },
+        {
+          "label": "Generate a few fast possibilities and rally people around the most promising one",
+          "mapping": "blue"
+        },
+        {
+          "label": "Check the immediate effects on people and coordinate the support they will need",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Verify the critical facts and define a reliable first response",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C01-S-02",
+      "cohort": "Cohort 01",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "risk-change",
+      "context": "unfamiliar-situation",
+      "semantic_family": "unfamiliar-entry",
+      "question": "You join a new project and the goal is still vague. What helps you engage first?",
+      "options": [
+        {
+          "label": "Proposing a starting direction we can adjust as we learn",
+          "mapping": "red"
+        },
+        {
+          "label": "Talking through possibilities until an exciting angle emerges",
+          "mapping": "blue"
+        },
+        {
+          "label": "Understanding who depends on the project and which commitments matter",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Clarifying the requirements and what success must include",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C01-S-03",
+      "cohort": "Cohort 01",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color; research-only change distinctions",
+      "behavioral_domain": "risk-change",
+      "context": "personal-preference",
+      "semantic_family": "plan-disruption",
+      "question": "A plan you were counting on changes with little warning. What matters most in your first response?",
+      "options": [
+        {
+          "label": "Finding the best available direction so progress does not stall",
+          "mapping": "red"
+        },
+        {
+          "label": "Seeing what new possibilities the change opens up",
+          "mapping": "blue"
+        },
+        {
+          "label": "Protecting the people and commitments affected by the change",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Rebuilding enough clarity to understand what happens next",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C01-S-07",
+      "cohort": "Cohort 01",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "decision-making",
+      "context": "social",
+      "semantic_family": "social-decision",
+      "question": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Narrow the workable choices and recommend one so the group can get going",
+          "mapping": "red"
+        },
+        {
+          "label": "Offer a fresh possibility that could bring some energy back to the group",
+          "mapping": "blue"
+        },
+        {
+          "label": "Look for the choice that best fits the group’s shared mood and preferences",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Compare time, cost, and logistics and suggest the most practical fit",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-01",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "leadership-influence",
+      "context": "volunteer",
+      "semantic_family": "unowned-volunteer-launch",
+      "question": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first?",
+      "options": [
+        {
+          "label": "Set the first priorities and help people take ownership of them",
+          "mapping": "red"
+        },
+        {
+          "label": "Create an engaging way for volunteers to begin contributing",
+          "mapping": "blue"
+        },
+        {
+          "label": "Help volunteers feel connected to one another and confident about where they fit",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Map the essential tasks, resources, and order of operations",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-02",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "decision-making",
+      "context": "customer-service",
+      "semantic_family": "ambiguous-custom-request",
+      "question": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first?",
+      "options": [
+        {
+          "label": "Define the decision that must be made and establish the next step",
+          "mapping": "red"
+        },
+        {
+          "label": "Explore creative alternatives that might make the request work",
+          "mapping": "blue"
+        },
+        {
+          "label": "Understand which customer and team commitments the change will affect",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Clarify the requirements, dependencies, and likely consequences",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-03",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "risk-change",
+      "context": "travel",
+      "semantic_family": "missed-travel-connection",
+      "question": "A missed connection changes a group trip with little warning. What matters most in your first response?",
+      "options": [
+        {
+          "label": "Choose the strongest available route so the trip keeps moving",
+          "mapping": "red"
+        },
+        {
+          "label": "Look for an unexpected possibility that could still make the trip memorable",
+          "mapping": "blue"
+        },
+        {
+          "label": "Coordinate around the travelers’ needs and the commitments already made",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Compare timing, constraints, and reliability before choosing the new route",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-04",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "rules-process",
+      "context": "home",
+      "semantic_family": "shared-household-routine",
+      "question": "A shared household routine keeps breaking down. Which response feels most natural to you?",
+      "options": [
+        {
+          "label": "Choose a clearer arrangement and start using it right away",
+          "mapping": "red"
+        },
+        {
+          "label": "Try a more flexible approach that makes the routine easier to stay engaged with",
+          "mapping": "blue"
+        },
+        {
+          "label": "Talk through what each person can sustain and agree on together",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Lay out the tasks, timing, and handoffs in a repeatable system",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-05",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "cooperation-support",
+      "context": "community",
+      "semantic_family": "limited-community-budget",
+      "question": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?",
+      "options": [
+        {
+          "label": "Which choice will create the clearest visible result",
+          "mapping": "red"
+        },
+        {
+          "label": "Which choice could generate the most participation and fresh energy",
+          "mapping": "blue"
+        },
+        {
+          "label": "Which choice will strengthen residents’ connection to the shared space over time",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Which choice has the strongest cost, maintenance, and feasibility case",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-06",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "leadership-influence",
+      "context": "team",
+      "semantic_family": "new-team-working-norms",
+      "question": "A newly formed team needs a way of working together. What would you most naturally help establish first?",
+      "options": [
+        {
+          "label": "Clear ownership for decisions and the pace needed to deliver",
+          "mapping": "red"
+        },
+        {
+          "label": "An open exchange where possibilities and energy can build",
+          "mapping": "blue"
+        },
+        {
+          "label": "Shared expectations that support trust and dependable commitments",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Defined roles, processes, and checkpoints that keep work coherent",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-07",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "communication",
+      "context": "customer-pressure",
+      "semantic_family": "urgent-customer-complaint",
+      "question": "A customer raises an urgent complaint that needs a thoughtful response. What do you naturally contribute first?",
+      "options": [
+        {
+          "label": "Take ownership of the resolution and make the next action clear",
+          "mapping": "red"
+        },
+        {
+          "label": "Generate response options that could reopen a constructive path",
+          "mapping": "blue"
+        },
+        {
+          "label": "Understand the impact on the customer and protect the working relationship",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Verify what happened and define a correction that will hold",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-08",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "risk-change",
+      "context": "community-event",
+      "semantic_family": "weather-event-redesign",
+      "question": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Choose a workable backup and organize the immediate switch",
+          "mapping": "red"
+        },
+        {
+          "label": "Reimagine the event so the changed format still feels lively",
+          "mapping": "blue"
+        },
+        {
+          "label": "Coordinate around participant needs and promises already made",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Compare the constraints and select the most reliable fallback",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-09",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "decision-making",
+      "context": "technology",
+      "semantic_family": "team-tool-selection",
+      "question": "A team is choosing between several capable software tools. What matters most in your recommendation?",
+      "options": [
+        {
+          "label": "Which tool will improve output and speed soonest",
+          "mapping": "red"
+        },
+        {
+          "label": "Which tool opens the most interesting possibilities for how the team works",
+          "mapping": "blue"
+        },
+        {
+          "label": "Which tool best supports the team’s shared needs and working commitments",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Which tool has the strongest evidence for reliability, fit, and integration",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-10",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "communication",
+      "context": "creative-collaboration",
+      "semantic_family": "rough-idea-feedback",
+      "question": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go?",
+      "options": [
+        {
+          "label": "The strongest direction and the next move that would advance it",
+          "mapping": "red"
+        },
+        {
+          "label": "The possibilities that could make the idea more vivid or engaging",
+          "mapping": "blue"
+        },
+        {
+          "label": "How the idea may connect with the people it is meant to serve",
+          "mapping": "yellow"
+        },
+        {
+          "label": "The assumptions, details, and consequences that still need testing",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-11",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "rules-process",
+      "context": "work-business",
+      "semantic_family": "recurring-minor-errors",
+      "question": "A familiar work process keeps producing small but avoidable errors. What do you naturally examine first?",
+      "options": [
+        {
+          "label": "The bottleneck that should be changed so performance improves",
+          "mapping": "red"
+        },
+        {
+          "label": "Alternative approaches that could make the process work better",
+          "mapping": "blue"
+        },
+        {
+          "label": "The handoffs where people may need clearer support or coordination",
+          "mapping": "yellow"
+        },
+        {
+          "label": "The pattern of errors and the process control that would prevent them",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-12",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "cooperation-support",
+      "context": "onboarding",
+      "semantic_family": "overwhelmed-new-colleague",
+      "question": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+      "options": [
+        {
+          "label": "Identify the most important priority and help them take the next action",
+          "mapping": "red"
+        },
+        {
+          "label": "Help them see possibilities and regain some energy for the work",
+          "mapping": "blue"
+        },
+        {
+          "label": "Help them identify which relationships and commitments need steady attention first",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Organize the demands into clear steps, resources, and dependencies",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-13",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "general-behavioral-preference",
+      "context": "personal-leisure",
+      "semantic_family": "unexpected-free-afternoon",
+      "question": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+      "options": [
+        {
+          "label": "Use the time to make visible progress on something I want to accomplish",
+          "mapping": "red"
+        },
+        {
+          "label": "Choose something spontaneous, social, or new that feels energizing",
+          "mapping": "blue"
+        },
+        {
+          "label": "Spend the time in a comfortable way with someone I care about",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Dive into something I have wanted time to understand properly",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-14",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "detail-accuracy",
+      "context": "team-decision",
+      "semantic_family": "conflicting-reports",
+      "question": "A group receives two credible reports that point toward different decisions. What gets your attention first?",
+      "options": [
+        {
+          "label": "Which decision must be made now to keep the objective moving",
+          "mapping": "red"
+        },
+        {
+          "label": "Which new explanation or option could connect what the reports reveal",
+          "mapping": "blue"
+        },
+        {
+          "label": "Which people and commitments would be affected by choosing either direction",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Which evidence, assumptions, and methods account for the disagreement",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-15",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "decision-making",
+      "context": "team",
+      "semantic_family": "too-many-good-ideas",
+      "question": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Narrow the choices and recommend the direction most likely to deliver",
+          "mapping": "red"
+        },
+        {
+          "label": "Explore whether the strongest ideas can create a more exciting possibility",
+          "mapping": "blue"
+        },
+        {
+          "label": "Look for the direction the group can support and sustain together",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Define criteria and compare how well each idea meets them",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-S-16",
+      "cohort": "Cohort 02",
+      "question_type": "SINGLE_SELECT",
+      "color": "one option per color",
+      "behavioral_domain": "stability-security",
+      "context": "home-transition",
+      "semantic_family": "new-neighborhood-settling",
+      "question": "You have just moved to an unfamiliar neighborhood. What helps you feel settled first?",
+      "options": [
+        {
+          "label": "Getting the essential tasks handled so daily life is moving",
+          "mapping": "red"
+        },
+        {
+          "label": "Exploring interesting places and meeting people nearby",
+          "mapping": "blue"
+        },
+        {
+          "label": "Building a few familiar relationships and comfortable routines",
+          "mapping": "yellow"
+        },
+        {
+          "label": "Learning the routes, services, schedules, and practical details",
+          "mapping": "green"
+        }
+      ]
+    },
+    {
+      "proposal_id": "C02-L-R-01",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "competition-achievement",
+      "context": "work-business",
+      "semantic_family": "clear-performance-standard",
+      "question": "When a goal is ambitious but reachable, competing against a clear standard brings out my best effort.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-R-02",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "red",
+      "behavioral_domain": "leadership-influence",
+      "context": "team",
+      "semantic_family": "ambiguous-result-ownership",
+      "question": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-B-01",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "blue",
+      "behavioral_domain": "risk-change",
+      "context": "creative-work",
+      "semantic_family": "emergent-project-path",
+      "question": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-B-02",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "blue",
+      "behavioral_domain": "rules-process",
+      "context": "daily-routine",
+      "semantic_family": "refresh-working-routine",
+      "question": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-Y-01",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "yellow",
+      "behavioral_domain": "conflict",
+      "context": "team",
+      "semantic_family": "trust-before-quick-closure",
+      "question": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-Y-02",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "yellow",
+      "behavioral_domain": "social-interaction",
+      "context": "personal-relationship",
+      "semantic_family": "depth-over-new-connections",
+      "question": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-G-01",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "green",
+      "behavioral_domain": "decision-making",
+      "context": "unfamiliar-situation",
+      "semantic_family": "consequences-over-instinct",
+      "question": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct.",
+      "options": []
+    },
+    {
+      "proposal_id": "C02-L-G-02",
+      "cohort": "Cohort 02",
+      "question_type": "LIKERT",
+      "color": "green",
+      "behavioral_domain": "rules-process",
+      "context": "work-business",
+      "semantic_family": "repeatability-over-improvisation",
+      "question": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time.",
+      "options": []
+    }
+  ]
+}
