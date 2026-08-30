@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "dimensions": [
+    "color",
+    "behavioral_domain",
+    "context"
+  ],
+  "caveat": "Single-select prompts are multi-color; their four one-hot options carry the color measurement.",
+  "matrix": {
+    "yellow": {
+      "decision-making": {
+        "unfamiliar-situation": 1,
+        "personal-preference": 1
+      },
+      "social-interaction": {
+        "team": 3,
+        "personal-preference": 7,
+        "social": 1
+      },
+      "cooperation-support": {
+        "personal-preference": 5,
+        "team": 1
+      },
+      "risk-change": {
+        "unfamiliar-situation": 2
+      },
+      "independence-follow-through": {
+        "personal-preference": 1
+      },
+      "competition-achievement": {
+        "personal-preference": 1
+      },
+      "pace-action": {
+        "unfamiliar-situation": 1
+      },
+      "conflict": {
+        "conflict": 2
+      },
+      "planning-organization": {
+        "planning": 1,
+        "pressure": 1
+      },
+      "general-behavioral-preference": {
+        "personal-preference": 1
+      }
+    },
+    "red": {
+      "conflict": {
+        "pressure": 2
+      },
+      "general-behavioral-preference": {
+        "personal-preference": 2,
+        "communication": 1
+      },
+      "leadership-influence": {
+        "leadership": 1
+      },
+      "pace-action": {
+        "team": 1,
+        "work-business": 1,
+        "personal-preference": 2
+      },
+      "cooperation-support": {
+        "personal-preference": 1
+      },
+      "rules-process": {
+        "personal-preference": 1
+      },
+      "risk-change": {
+        "unfamiliar-situation": 1,
+        "personal-preference": 1
+      },
+      "emotional-expression": {
+        "personal-preference": 2
+      },
+      "social-interaction": {
+        "personal-preference": 3,
+        "social": 2
+      },
+      "competition-achievement": {
+        "personal-preference": 1
+      },
+      "planning-organization": {
+        "planning": 3
+      },
+      "decision-making": {
+        "personal-preference": 1
+      }
+    },
+    "multi-color-single-select": {
+      "decision-making": {
+        "personal-preference": 1
+      },
+      "conflict": {
+        "conflict": 3
+      },
+      "communication": {
+        "work-business": 1,
+        "communication": 1,
+        "team": 1
+      },
+      "planning-organization": {
+        "planning": 1
+      },
+      "general-behavioral-preference": {
+        "personal-preference": 11,
+        "planning": 1,
+        "pressure": 1
+      },
+      "problem-solving-learning": {
+        "personal-preference": 1
+      },
+      "social-interaction": {
+        "personal-preference": 1,
+        "team": 1,
+        "social": 1
+      },
+      "cooperation-support": {
+        "personal-preference": 1
+      },
+      "pace-action": {
+        "personal-preference": 2
+      },
+      "detail-accuracy": {
+        "personal-preference": 1
+      },
+      "competition-achievement": {
+        "work-business": 1
+      },
+      "emotional-expression": {
+        "personal-preference": 1
+      }
+    },
+    "green": {
+      "risk-change": {
+        "personal-preference": 2,
+        "unfamiliar-situation": 3
+      },
+      "social-interaction": {
+        "social": 2,
+        "work-business": 1,
+        "personal-preference": 3
+      },
+      "decision-making": {
+        "planning": 2,
+        "personal-preference": 3
+      },
+      "planning-organization": {
+        "planning": 3,
+        "social": 1
+      },
+      "rules-process": {
+        "personal-preference": 1
+      },
+      "communication": {
+        "social": 1
+      },
+      "general-behavioral-preference": {
+        "personal-preference": 4
+      },
+      "pace-action": {
+        "personal-preference": 1
+      },
+      "stability-security": {
+        "personal-preference": 2
+      },
+      "independence-follow-through": {
+        "personal-preference": 1
+      },
+      "competition-achievement": {
+        "personal-preference": 1
+      },
+      "emotional-expression": {
+        "personal-preference": 1
+      },
+      "cooperation-support": {
+        "personal-preference": 3
+      }
+    },
+    "blue": {
+      "planning-organization": {
+        "planning": 4,
+        "personal-preference": 2
+      },
+      "rules-process": {
+        "personal-preference": 2
+      },
+      "emotional-expression": {
+        "personal-preference": 2,
+        "pressure": 1
+      },
+      "cooperation-support": {
+        "personal-preference": 1
+      },
+      "competition-achievement": {
+        "work-business": 1,
+        "personal-preference": 1
+      },
+      "stability-security": {
+        "personal-preference": 1,
+        "team": 2
+      },
+      "general-behavioral-preference": {
+        "work-business": 2,
+        "personal-preference": 3
+      },
+      "social-interaction": {
+        "personal-preference": 3
+      },
+      "communication": {
+        "communication": 1
+      },
+      "pace-action": {
+        "personal-preference": 2
+      },
+      "risk-change": {
+        "work-business": 1
+      },
+      "detail-accuracy": {
+        "personal-preference": 1
+      }
+    }
+  }
+}

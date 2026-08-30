@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "PROPOSAL_NOT_FOR_PRODUCTION",
+  "engine_version": {
+    "id": "immutable identifier",
+    "selection_policy": "versioned JSON with type/color/domain/context targets",
+    "scoring_policy": "versioned JSON with contribution, normalization and tie rules",
+    "published_at": "timestamp",
+    "retired_at": "nullable timestamp"
+  },
+  "question_revision": {
+    "canonical_question_id": "uuid",
+    "revision_id": "uuid",
+    "publication_state": "DRAFT|IN_REVIEW|APPROVED|PUBLISHED|RETIRED",
+    "question_type": "LIKERT|SINGLE_SELECT",
+    "prompt_en": "text",
+    "prompt_es": "text",
+    "behavioral_domain": "controlled vocabulary",
+    "context": "controlled vocabulary",
+    "measurement_direction": "text plus POSITIVE|NEGATIVE key direction",
+    "intensity": "MILD|MODERATE|STRONG",
+    "semantic_family_id": "uuid",
+    "quality_flags": ["controlled vocabulary"],
+    "assignment_confidence": "HIGH|MODERATE|LOW|DISPUTED",
+    "review_classification": "KEEP|LIGHT_REWRITE|FULL_REWRITE|RETIRE_CANDIDATE|DEFER",
+    "review_reason": "text",
+    "provenance": "author/reviewer/timestamps/source revision"
+  },
+  "scoring_revision": {
+    "revision_id": "uuid",
+    "likert_color": "red|blue|yellow|green|null",
+    "reverse_keyed": "boolean",
+    "option_weights": "ordered immutable option IDs with red/blue/yellow/green weights"
+  },
+  "attempt_audit": {
+    "attempt_id": "uuid",
+    "engine_version_id": "uuid",
+    "content_revision_id": "uuid",
+    "selection_seed": "stored non-user-facing seed",
+    "selected_question_revisions": "ordered immutable IDs",
+    "option_order": "ordered immutable IDs",
+    "constraint_evidence": "observed type/color/domain/context counts"
+  },
+  "hard_invariants": [
+    "Published revisions are immutable",
+    "Historical attempts retain their original revision and engine bindings",
+    "Selection is deterministic and inspectable",
+    "Semantic-family duplicates cannot co-occur",
+    "Constraint failure is fail-closed",
+    "No browser-side scoring authority"
+  ]
+}

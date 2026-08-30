@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "generated_from_snapshot": "51a541889f71de51f8802cfc2051b4816de5f576996b89218a348aed89e23756",
+  "implementation_basis": "Independent executable model of canonical SQL migrations/20260821000200_viago_quiz_target.sql.",
+  "iterations": 10000,
+  "targets": {
+    "likert": {
+      "red": 6,
+      "blue": 6,
+      "yellow": 6,
+      "green": 7
+    },
+    "single": 25
+  },
+  "distinct_observed_compositions": [
+    {
+      "single": 25,
+      "red": 6,
+      "blue": 6,
+      "green": 7,
+      "yellow": 6
+    }
+  ],
+  "frequency_summary": {
+    "likert:yellow": {
+      "minimum": 2010,
+      "maximum": 2171,
+      "average": 2068.97
+    },
+    "likert:red": {
+      "minimum": 2238,
+      "maximum": 2397,
+      "average": 2307.69
+    },
+    "single": {
+      "minimum": 7953,
+      "maximum": 8155,
+      "average": 8064.52
+    },
+    "likert:green": {
+      "minimum": 1925,
+      "maximum": 2062,
+      "average": 2000
+    },
+    "likert:blue": {
+      "minimum": 1902,
+      "maximum": 2066,
+      "average": 2000
+    }
+  },
+  "all_attempts_exactly_50": true,
+  "scoring_vectors": [
+    {
+      "id": "all-zero-likert",
+      "description": "Zero-valued Likert answers retain all colors; deterministic tie order selects red.",
+      "questions": [
+        {
+          "id": "q-red",
+          "likert_color": "red"
+        },
+        {
+          "id": "q-blue",
+          "likert_color": "blue"
+        },
+        {
+          "id": "q-green",
+          "likert_color": "green"
+        },
+        {
+          "id": "q-yellow",
+          "likert_color": "yellow"
+        }
+      ],
+      "options": [],
+      "answers": [
+        {
+          "question_id": "q-red",
+          "qtype": "likert",
+          "likert_value": 0
+        },
+        {
+          "question_id": "q-blue",
+          "qtype": "likert",
+          "likert_value": 0
+        },
+        {
+          "question_id": "q-green",
+          "qtype": "likert",
+          "likert_value": 0
+        },
+        {
+          "question_id": "q-yellow",
+          "qtype": "likert",
+          "likert_value": 0
+        }
+      ],
+      "expected": {
+        "winner_color": "red",
+        "totals": {
+          "red": 0,
+          "blue": 0,
+          "green": 0,
+          "yellow": 0
+        }
+      },
+      "actual": {
+        "winner_color": "red",
+        "totals": {
+          "red": 0,
+          "blue": 0,
+          "green": 0,
+          "yellow": 0
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "max-hit-breaks-total-tie",
+      "description": "A higher single-item maximum breaks an equal raw total before positive-hit count.",
+      "questions": [
+        {
+          "id": "q-red",
+          "likert_color": "red"
+        },
+        {
+          "id": "q-blue-1",
+          "likert_color": "blue"
+        },
+        {
+          "id": "q-blue-2",
+          "likert_color": "blue"
+        }
+      ],
+      "options": [],
+      "answers": [
+        {
+          "question_id": "q-red",
+          "qtype": "likert",
+          "likert_value": 4
+        },
+        {
+          "question_id": "q-blue-1",
+          "qtype": "likert",
+          "likert_value": 2
+        },
+        {
+          "question_id": "q-blue-2",
+          "qtype": "likert",
+          "likert_value": 2
+        }
+      ],
+      "expected": {
+        "winner_color": "red",
+        "totals": {
+          "red": 4,
+          "blue": 4
+        }
+      },
+      "actual": {
+        "winner_color": "red",
+        "totals": {
+          "red": 4,
+          "blue": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "positive-hit-breaks-total-and-max-tie",
+      "description": "More positive contributions breaks a tie after raw total and maximum contribution.",
+      "questions": [
+        {
+          "id": "q-red-1",
+          "likert_color": "red"
+        },
+        {
+          "id": "q-red-2",
+          "likert_color": "red"
+        },
+        {
+          "id": "q-blue-1",
+          "likert_color": "blue"
+        },
+        {
+          "id": "q-blue-2",
+          "likert_color": "blue"
+        },
+        {
+          "id": "q-blue-3",
+          "likert_color": "blue"
+        }
+      ],
+      "options": [],
+      "answers": [
+        {
+          "question_id": "q-red-1",
+          "qtype": "likert",
+          "likert_value": 2
+        },
+        {
+          "question_id": "q-red-2",
+          "qtype": "likert",
+          "likert_value": 2
+        },
+        {
+          "question_id": "q-blue-1",
+          "qtype": "likert",
+          "likert_value": 2
+        },
+        {
+          "question_id": "q-blue-2",
+          "qtype": "likert",
+          "likert_value": 1
+        },
+        {
+          "question_id": "q-blue-3",
+          "qtype": "likert",
+          "likert_value": 1
+        }
+      ],
+      "expected": {
+        "winner_color": "blue",
+        "totals": {
+          "red": 4,
+          "blue": 4
+        }
+      },
+      "actual": {
+        "winner_color": "blue",
+        "totals": {
+          "blue": 4,
+          "red": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "multi-color-option",
+      "description": "The grader technically permits one selected option to contribute to multiple colors.",
+      "questions": [],
+      "options": [
+        {
+          "id": "o",
+          "red": 4,
+          "blue": 2,
+          "green": 0,
+          "yellow": 0
+        }
+      ],
+      "answers": [
+        {
+          "question_id": "q",
+          "qtype": "single",
+          "option_id": "o"
+        }
+      ],
+      "expected": {
+        "winner_color": "red",
+        "totals": {
+          "red": 4,
+          "blue": 2
+        }
+      },
+      "actual": {
+        "winner_color": "red",
+        "totals": {
+          "red": 4,
+          "blue": 2
+        }
+      },
+      "passed": true
+    }
+  ]
+}

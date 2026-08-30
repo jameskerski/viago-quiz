@@ -1,0 +1,4601 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "generated_from_snapshot": "51a541889f71de51f8802cfc2051b4816de5f576996b89218a348aed89e23756",
+  "source": {
+    "repository_path": "data/spanish-corpus-review.json",
+    "production_snapshot_question_sha256": "51a541889f71de51f8802cfc2051b4816de5f576996b89218a348aed89e23756",
+    "production_snapshot_option_sha256": "e4d9e5e1dbd6b9693158c3709134350708aa7b08021277bd3fb6b712a9521e72",
+    "limitations": "Taxonomy, quality, and confidence fields are audit proposals. They do not alter canonical content or scoring."
+  },
+  "counts": {
+    "total": 151,
+    "by_type": {
+      "likert": 120,
+      "single": 31
+    },
+    "likert_by_color": {
+      "red": 26,
+      "blue": 30,
+      "yellow": 29,
+      "green": 35
+    },
+    "quality_flags": {
+      "CLEAR": 90,
+      "POSSIBLE_REVERSE_INTERPRETATION": 25,
+      "SEMANTICALLY_OVERLAPPING": 22,
+      "COLOR_ASSIGNMENT_QUESTIONABLE": 47,
+      "MINOR_WORDING_ISSUE": 2,
+      "SOCIAL_DESIRABILITY_RISK": 4,
+      "CONTEXT_DEPENDENT": 8,
+      "AMBIGUOUS": 23,
+      "DOUBLE_BARRELED": 1
+    },
+    "assignment_confidence": {
+      "HIGH": 104,
+      "MODERATE": 25,
+      "LOW": 22,
+      "DISPUTED": 0
+    }
+  },
+  "questions": [
+    {
+      "canonical_id": "0309c2cb-91b4-4ac4-936f-051fd9a9c18c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I consider how change might affect relationships before moving forward.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "039de60f-9c76-45f4-9061-147a51745e0f",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m comfortable being the one who takes the heat if a decision doesn’t work out.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "pressure",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage conflict and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "04cb4f9d-f1e1-476a-862c-b1c7c18faaaf",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "It is important to me that social settings always ensure everyone feels included and comfortable.\n",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "MINOR_WORDING_ISSUE",
+        "SOCIAL_DESIRABILITY_RISK",
+        "CONTEXT_DEPENDENT",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "092ef69e-a476-4451-a770-a879e8723fae",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When a decision needs to be made, I usually…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "d40b4327-7531-40a3-9ccf-a899f4de14d4",
+          "english": "decide fast and move",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "6499ebbc-8dfc-4584-8205-20f890b8d582",
+          "english": "talk it out and go with what feels exciting",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "c2c350fb-95bc-48fe-9340-78092a3ece5b",
+          "english": "look for the option that’s fairest for everyone",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "ec4c6851-07c1-488d-aafb-c049dacc2702",
+          "english": "ask questions until it’s clear",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "0a24caa5-8413-49e7-a56f-9999f4e50879",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "If someone is upset with me, I tend to…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "9129c143-4f4e-49e2-8f16-e921865379c8",
+          "english": "address it directly and quickly",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "91d47f37-e23e-45c0-8e95-1ca57d0488b4",
+          "english": "try to lighten it up and reset the vibe",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "73f73331-8ca9-4a98-8fb3-e6cc7f2ff09d",
+          "english": "listen and apologize if needed",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "cce4b8d7-d87a-4a9d-b733-8dfd50e50333",
+          "english": "ask for specifics and clarify what happened",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "conflict",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "0e761ffa-caa5-4505-a28c-3387445e805e",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel uneasy benefiting if it means someone else is treated unfairly.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "0eaa09f4-95af-45a6-9846-13202a795033",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer steady, predictable income over high-risk opportunities.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "0f42f5e4-1703-416f-863a-e46b511b19d8",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m careful not to rush change if people around me aren’t ready.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CONTEXT_DEPENDENT",
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage risk-change and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "My ideal workday feels like…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "3e68e1c7-3b51-4fb6-b505-bd281e2eef08",
+          "english": "progress and measurable wins",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "001d63a2-0f52-4981-b15a-ea7e385880f4",
+          "english": "variety, people, and momentum",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "f10e2917-c174-41df-bd91-a9d699b5945c",
+          "english": "steady teamwork and support",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "dd8ed5c7-b3f8-4ec0-8a37-e054f732ed63",
+          "english": "structure, clarity, and focus time",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "communication",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "10c0c4fb-2eca-474f-bc81-50229d945b34",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy social events more when I know what to expect ahead of time.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "12783d10-ecb1-400c-97bb-edb5a458caef",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get restless if I’m stuck at home too long without something fun planned.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "14135310-4169-47af-bbc7-8d1345b2b51c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I like routines that help things run smoothly for everyone involved.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SOCIAL_DESIRABILITY_RISK",
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage cooperation-support and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When plans change suddenly, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "14fe8034-c7dc-456f-bc66-378546212baf",
+          "english": "adapt fast and push forward",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "a8d1ea8d-051e-46cd-bb17-732b8edf16c9",
+          "english": "roll with it if it’s interesting",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "8ce96a7b-222e-4c60-aace-f228bc9bcd53",
+          "english": "worry about how it impacts people",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "14680bd8-fb76-40e7-9fbd-a65de7c6879e",
+          "english": "want time to re-check the details",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "17d21643-7826-47e6-b115-79d0a74fa33c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more confident moving forward when there’s a clear plan instead of improvising.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "186c99bb-b666-4a64-a85e-955e84388dcb",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "Your natural reaction to conflict is:",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "8784d78a-c47e-4759-8587-b49a726cd8ce",
+          "english": "Confront it",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "de0b4608-97bd-47f6-bb90-dc774fd34607",
+          "english": "Diffuse it",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "e4879af9-ffb8-4a90-8406-9dea83ee05f6",
+          "english": "Avoid it",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "82627191-f298-4e33-974e-29c2e0f0b858",
+          "english": "Analyze it",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "conflict",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "199f9df0-be56-402e-a98c-8b1b8e4518af",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m comfortable being the one who takes the heat if a decision doesn’t work out.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "pressure",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage conflict and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "1afbc3be-b62d-44cd-a335-a75d7cc9655c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Too much structure makes me feel boxed in or restless.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "1babc919-9400-4599-8b87-fdca1602b19e",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy bringing people together and helping everyone feel connected.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SOCIAL_DESIRABILITY_RISK"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "1bac0735-73c1-43b1-86a8-41ec34adfd86",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get uncomfortable when things feel disorganized or unclear.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "1bde0c6b-3fa1-4740-8799-338b6dc42f98",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I care a lot about being fair, even when it’s uncomfortable.\n",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "MINOR_WORDING_ISSUE"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "2171df8f-e7e0-4de3-90f8-eaa1d186e9f1",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy measuring progress through income, rank, or performance.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "222b3445-8da7-4fba-9f97-e64240c4e75b",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more productive when I enjoy the process, not just the outcome.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "rules-process",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage rules-process and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "22bfd6a8-b54b-442c-8ec6-888f9cefe1d0",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I like having systems in place so I don’t have to guess what to do next.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "rules-process",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage rules-process and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "24b34387-e0fb-42c6-8ee9-5609dff49dc1",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m selective about social events and don’t feel the need to attend everything.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "24c90a2c-32e9-4a0d-8518-7c0e659e3f65",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I don’t mind a little chaos if it leads to progress.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "leadership-influence",
+        "context": "leadership",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage leadership-influence and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "I’d rather be…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "28ce25d5-1893-46b6-815d-736e176f6770",
+          "english": "effective than liked",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "e73652b0-1c82-4d1f-b3f8-dc56cc62f29a",
+          "english": "liked than consistent",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "dd5e9a1b-dd79-4549-a8a5-2e4b96b36d8f",
+          "english": "kind than confrontational",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "f8ad81a1-1c74-418d-ab83-8a225f317e3a",
+          "english": "correct than fast",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "28c5ada7-9157-449c-927b-212170e6296f",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer to think through possible outcomes before committing to a direction.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "29efc415-38e9-408a-aa7b-4d46f6996c20",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel responsible for keeping things moving when others in the group hesitate.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "team",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage pace-action and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "2defbffe-826b-42a3-a027-dcfc98677739",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer working steadily rather than in bursts of energy.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "2df82369-1df5-407a-be21-1dff3ccb59d5",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Unexpected changes tend to make me feel uneasy.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "30031eb0-f025-4b1a-b4e6-a9455967f735",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m motivated to follow through when others are counting on me.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "independence-follow-through",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "32eff408-9a02-4372-8f53-0289f79f07ae",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I trust my ability to handle problems as they come up.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "34202350-60a2-45e1-b4b8-bf0fa471d020",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer meaningful conversations over small talk at social events.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "communication",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "36041a0f-a82d-4c66-96f1-973ea25a3daf",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get excited starting things, but I don’t always enjoy the follow-through.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "SOCIAL_DESIRABILITY_RISK",
+        "AMBIGUOUS",
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage emotional-expression and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "3b6479df-3e88-473b-85d7-731fe1083b4a",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I like breaking big tasks into clear, manageable steps.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "3b9a1aa5-09ba-4bb9-b3c9-c8033791974c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I like to understand every option fully before making a change.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "3bb2ff0b-1bac-4bc0-a4d4-5e75387751f0",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "I learn best when…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "299a4020-d33c-4662-8d8f-f7509708bbdd",
+          "english": "I can compete or apply it fast",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "07a6bc76-4c6e-4486-b947-50cb1da22853",
+          "english": "it’s interactive and social",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "b6d1ccd4-e7a3-4a1c-aeff-456fbf95df96",
+          "english": "someone encourages me along the way",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "e08dab9d-7366-4124-b59a-ef44f24a447e",
+          "english": "it’s organized and detailed",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "problem-solving-learning",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "3dc580d8-8ac6-4af0-b4c4-7dc2559f9fed",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’d rather have a difficult but honest conversation than avoid an issue.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "communication",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage general-behavioral-preference and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4043bf30-62cb-4968-ba6e-85c7a554d894",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I value emotional openness more than formal boundaries in relationships.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "40ff71e9-a36f-4f66-8193-e8a7aef0b6c3",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer to think through possible outcomes before committing to a direction.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "44a6b54a-9864-4137-bdec-50ba8cbb0bb5",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m motivated when I feel connected to the people involved, not just the task.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4a55dabb-d73c-41a5-88c1-b997f91ff950",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Large or noisy gatherings drain me faster than smaller, quieter ones.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4a7016b7-648a-45a7-8b3b-0047215b2270",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m willing to compromise on speed if it helps maintain trust.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4afceb5f-2cbf-4027-91b4-2fe0440b5225",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I try to stay consistent so I don’t let people down.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4d694041-2641-4635-aa79-e5dc6c188682",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I focus more on results than on following a process exactly.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "rules-process",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "Before starting something new, I prefer to…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "5d888f83-466e-4afa-9f14-f590a9316074",
+          "english": "jump in and adjust on the fly",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "6e371dd1-a071-4c1a-b0b2-2fda778c1150",
+          "english": "talk it out and get excited first",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "540d46de-3c01-44fd-8f0f-45d5797f985c",
+          "english": "check how it affects everyone involved",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "98566e9e-db19-4597-a76b-2701be796176",
+          "english": "map it out step-by-step",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "505ae241-8349-438d-b8db-d37b51518f95",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "With customers/clients, I’m best at…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "d34ce8f0-3c99-43ff-bc06-6932f5279f8b",
+          "english": "driving outcomes and confidence",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "94615b80-728d-407c-a14d-8f18532648cc",
+          "english": "creating connection and excitement",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9b3ad256-9253-4832-b887-11a873608412",
+          "english": "building trust and care",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "37d55c31-fd74-480a-bff4-3db37d7d525d",
+          "english": "being accurate and consistent",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "517a3cb3-a701-4fcb-8bb3-848e2f237424",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m disciplined about finishing what I commit to.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "53a98bef-2fdf-4619-a09c-b4e02847b10c",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "What motivates me most?",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "8540c16c-1d68-46fd-98c9-ea32f4a32d54",
+          "english": "winning and hitting goals",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "2d09190d-b9ef-4676-a971-0e1540101081",
+          "english": "fun and recognition",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "a383b565-57c0-4bae-8776-4fa2bb6fc4f7",
+          "english": "helping people and belonging",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "3743d5d6-92b6-48fa-8041-2cdd7536c419",
+          "english": "mastery and getting it right",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "53ece3a0-2862-42b5-a4fc-1468fd3549e8",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Financial security is more important to me than rapid growth.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "stability-security",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I see uncertainty as an opportunity rather than a threat.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "58c09422-edfe-40e3-b370-35f9bde18564",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I care about success, but not if it comes at the expense of others.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage competition-achievement and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "59ded366-49c8-46e8-891e-3dd48a501695",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m comfortable being rewarded more when I contribute more.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "5a6e8337-90ce-4cc9-b766-f74ecafab528",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "In competition, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "d9b4ebf5-d598-43d6-8860-32d672154120",
+          "english": "play to win",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "d97137b2-34db-4572-b733-34755a787490",
+          "english": "play for the fun of it",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "f8193854-6cb8-4905-8b6a-e820ab320fc1",
+          "english": "play to keep things fair",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "7cd37e1b-a29a-412c-b7cd-645251c59e6f",
+          "english": "play to improve my technique",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "5f17485f-373e-455d-af0b-70ec6485943b",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m cautious about who I let into my inner circle.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "63a771d2-a37a-4a48-b5fd-f5d316d26b0d",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel responsible for supporting people I’ve committed to.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "If things feel dull or repetitive, I start looking for something more exciting to do.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage emotional-expression and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "694ed9fd-222a-4f6c-942e-8148f41ff344",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m good at sticking with tasks until they’re fully completed.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "independence-follow-through",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "695d628c-53d3-46c2-b360-d355ee0511ad",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Money feels like a tool to create experiences, not an end goal.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage competition-achievement and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6a004186-77cd-415b-bf4f-8cd631a9c1d6",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel calmer when I have a clear plan for what’s coming next.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I hesitate to make changes if they could negatively affect others.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6cbf5dfd-cb2e-4f14-ac91-982c113f59ee",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer knowing expectations ahead of time rather than figuring things out as I go.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage competition-achievement and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6e4c968a-2895-4b4b-ba5e-32d47bc6abca",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I respect people who say what they mean, even if it comes across blunt.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I tend to slow down decisions if I sense tension or discomfort between people.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "conflict",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage conflict and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "6f36bb70-0eee-4678-af55-78f9cae07eec",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I pay close attention to whether people follow through on what they say.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "74135a00-827b-4c5f-9a7c-b72d076607ee",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I try to stay organized so others can rely on me.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "76a13ab4-c5cc-43df-8d92-100689764905",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When I’m focused, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "1bd6d9ed-ff86-40b7-90e0-22b1f36ebb20",
+          "english": "move fast and take action",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "af0bdc1a-81ae-4b67-9756-b399e6cae3e5",
+          "english": "talk through ideas out loud",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "ff0780a3-e979-467b-b6a5-517fc510e0f7",
+          "english": "support others and stay steady",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "5c7ca0b2-9ba3-4065-ac28-fe27b9bea14d",
+          "english": "go quiet and get precise",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "77234471-04bc-431d-8e8d-43bad7c191ae",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When I need a boundary, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "5cf5f3c9-14d7-4199-8158-5c407bfc498b",
+          "english": "state it clearly",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "5a46d38e-bd39-4068-9c73-192da94205db",
+          "english": "try to soften it with humor",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "08dec022-cbbe-4e5b-bd08-90f0039774f2",
+          "english": "worry about hurting feelings",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "7cabd4ea-552a-4638-a0c8-2a065ceaf94e",
+          "english": "explain it logically",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "People usually rely on me for…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "d980e49b-25e1-4ee3-827d-247860831fe1",
+          "english": "direction and urgency",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9380f2af-0d2b-4b73-b08a-f84942a1fb7b",
+          "english": "energy and connection",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "0077cbdf-1e0d-4a85-960a-79a9b424a844",
+          "english": "support and stability",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "601e48ce-0472-4dec-a7e9-2486b49e162f",
+          "english": "details and accuracy",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "79686573-8d40-4d83-af77-41d35547619d",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m motivated when I feel connected to the people involved, not just the task.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "79803d54-28bb-4990-b557-22fd67927109",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m energized by new experiences, even if they’re unpredictable.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "stability-security",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "799f2aac-8544-4bd3-850b-dd76fc1e2cfc",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I stay focused when I know results depend on me.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When delegating, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "e440ba33-40d6-493c-814f-8b9231eacb54",
+          "english": "hand it off and expect ownership",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "51b435b5-78be-418c-8ae3-478a639bbf31",
+          "english": "ask who wants it and encourage them",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "feb92a4f-2d49-4b56-9b6a-f44236058a08",
+          "english": "make sure the person feels supported",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "514fdd3c-be4a-4acf-95cb-c3b1010f7b06",
+          "english": "define expectations and steps",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "My relationship with routines is…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "1d9f5c65-dbbe-4537-80c0-cc8d8361ee46",
+          "english": "useful if it speeds results",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "1e597e07-4b1a-4809-a21b-213b6e7ca186",
+          "english": "hard to stick to unless it’s fun",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "24e33df1-3d38-4062-bb2f-9059a6992296",
+          "english": "I’ll do it if it helps others",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "e4489a9c-9a7e-4bf5-a4a9-3d02822c9378",
+          "english": "I love routines—they reduce stress",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "7d345f7b-6c63-429d-981c-857b2af2fb58",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Spontaneous plans sound more appealing to me than carefully planned ones.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "7f3ec23c-2461-4d22-9273-07353c301efb",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I work best when I can switch things up instead of doing the same task for long periods.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage general-behavioral-preference and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "806a2363-7e28-42b9-99dd-7faabf6710b7",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I connect most with people who are open, expressive, and genuine.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "829ad3cb-57ca-4836-99f2-a50c36b8f4e0",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I tend to resist schedules that feel overly rigid or restrictive.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "83774c86-111b-4f91-8f1b-60565c95f6d4",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel most at ease when I know what the future is likely to look like.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "84e30ad7-b146-489b-9041-8645ef2b02c1",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get uneasy when expectations aren’t clearly defined.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "86f93908-6a45-42f7-bd7b-d2d7d3d13de6",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "My natural communication style is…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "c365a1b8-f1bb-41bb-bec8-cf4eae164d22",
+          "english": "direct and bottom-line",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "5c7fa3ce-5b3c-4a8b-83a2-f03a22a32a45",
+          "english": "animated and expressive",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "62455f85-d75c-4d97-a78c-028af4f7c617",
+          "english": "warm and careful",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "602b0012-abcd-4697-859d-eeb4418e5fe1",
+          "english": "precise and measured",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "communication",
+        "context": "communication",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "878213b1-fed4-4fb2-b056-be5439af77e3",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I push through distractions when there’s a clear goal at stake.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "89253e02-693d-46ea-85a4-c1af38ac9a73",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I struggle to stay motivated when everything feels too structured.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "89df63e5-ffa9-4e7a-a228-f1651750ac20",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel responsible for keeping things moving when others hesitate.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage pace-action and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "8ab6d9b5-9a3b-48e2-9eb8-f5e37edf3a9c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer events or activities that feel productive rather than just passing time.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "8c889b4b-94cf-41b5-89d0-507cbc300e8b",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel more comfortable trusting people once they’ve proven they’re reliable.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "8e010957-ec1f-4880-9efe-8fc1a505e68a",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel most alive when I’m laughing, talking, or sharing experiences with others.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "communication",
+        "context": "communication",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CONTEXT_DEPENDENT",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage communication and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "8ed50147-99ab-4673-9004-567c307646c9",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m motivated by achieving visible results and tangible rewards.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "8fa4cb1b-6113-4e67-af9a-5bde9b37ef51",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I often put effort into keeping relationships balanced and supportive.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "9077ae62-0208-4f48-8b11-56808573fa7d",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get bored doing the same things the same way for too long.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage general-behavioral-preference and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "90dc1f5e-f00c-4c49-bf94-5f4c8de94975",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I lose interest quickly if something stops feeling engaging.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage pace-action and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "917bb239-754d-4fc1-abe5-731dd1389226",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more productive when I enjoy the process, not just the outcome.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "rules-process",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage rules-process and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "9431c0ae-dc91-4d89-b055-040b44034cc3",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy stepping outside my comfort zone just to see what happens.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "94495f50-2c0b-4df5-89be-1233fd84ee62",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Trying something new feels exciting rather than stressful to me.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "pressure",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage emotional-expression and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "94fc0c96-7820-416c-a6e4-abe8f767ad07",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more relaxed socially when there’s a schedule or structure to the event.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "96176295-ca26-41d0-bd7b-9523ece63555",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel most comfortable when outcomes are predictable.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "stability-security",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "97a8c511-a2e2-4fd3-8d0d-46b65f7d3c6b",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "Trust builds slowly for me, but once it’s there, it’s solid.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "9d253ad8-d0ca-4269-a68f-2d079807ee4f",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I don’t mind taking charge of plans if it keeps things moving.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "If I want to improve, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "99542a27-219b-4cef-b608-4e77eb932e98",
+          "english": "set a hard goal and push",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9b7e780e-cc87-403b-af12-d432fdd0786c",
+          "english": "change my environment to stay motivated",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "7b40a668-b2eb-40cc-8bc2-a4e36e8be112",
+          "english": "get accountability from someone I trust",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "6d2e152b-214f-48e2-8974-8f192a9c6473",
+          "english": "build a system and track it",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a064ecbd-c94d-4a31-a221-e986984c6cd6",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I think organization is important because it affects more than just me.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a0bea5a2-24a4-4f40-8bea-d1090df652d5",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel best about earning money when it helps support people I care about.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a1fbe330-1e47-4251-9a07-ce5c2029f916",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m usually the one suggesting plans or activities when people are hanging out.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "In a group project, I’m most likely to…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "9138483d-ae6c-4d20-ae9a-d90b14718f95",
+          "english": "take the lead and set the pace",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "49d69a09-ffdf-4092-ba5d-3db6697f4ab8",
+          "english": "keep the energy up and rally people",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "b6aacda5-53ea-4d3a-a6ed-fa450fde21d3",
+          "english": "make sure everyone feels included",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "35c0cfc2-fbf1-4d18-aaeb-9fd55abb4f1f",
+          "english": "organize the plan and track details",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "CONTEXT_DEPENDENT"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a3e20241-f9fd-4095-a984-c1b7fe724697",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m uncomfortable when money becomes the main focus over people.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a4a2deed-c11e-43bd-abff-1a6055c64d83",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m comfortable making decisions even when I don’t have all the information.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage decision-making and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m usually up for trying something new if it sounds fun.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "ab13308d-501e-4e58-9039-a1f21f6b900c",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "At a party or club, you’ll find me…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "ac6d09cf-c6eb-40a8-b737-28687b8a54df",
+          "english": "In the VIP section ",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "d7cbf9d5-cc16-42ac-b2b5-171fa12e474d",
+          "english": "On the dance floor",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "3c8b83f8-cec3-4b88-8c8f-804eb2c1b3c1",
+          "english": "sticking close to my people",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "d5974bd0-0276-4756-9e8b-48ecd228559f",
+          "english": "Hanging back observing ",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "adac68bb-5fd6-4cae-90c6-576985ca3df1",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy social situations when there’s a clear purpose or activity involved.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "afc159a2-fc5e-4f09-aa25-2912ae7d0e1c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I pay attention to who might feel left out during group activities.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "b4fdbbe6-d483-41a2-8033-25ede709c182",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I trust myself to adapt if things don’t go as planned.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "b6eaa376-b183-47b4-b1a1-8093f4a9bebf",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel more confident when I know there’s a plan backing my actions.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "b770ab96-fa4a-4177-be7e-4021c654effb",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "In meetings, I’m usually the one who…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "df827d39-9f2e-4866-acaf-a7ce3b4c2630",
+          "english": "pushes for decisions",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "bec5cf07-42fc-4ce9-9606-7bd33099183b",
+          "english": "shares stories and ideas",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "d9967add-0760-4762-bba4-b743797d0a3c",
+          "english": "makes sure quieter people are heard",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "5aec0ccf-d5b3-425f-8023-ee763e107fbf",
+          "english": "asks clarifying questions",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "communication",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CONTEXT_DEPENDENT"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "b9cc48a1-8a44-44d5-820d-71f8955e5281",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I feel closest to people I can be myself around without overthinking.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "bb828a98-5342-4c50-8107-c03365e479d8",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I lose steam when things feel routine or predictable for too long.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "stability-security",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "CONTEXT_DEPENDENT",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage stability-security and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "bfc68ed4-c42e-4783-9535-a36af5da531e",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I value honesty more than keeping the peace.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c117eb5e-feba-43db-9d9d-8da220cce761",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I tend to slow down decisions if I sense tension or discomfort between people.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "conflict",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage conflict and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c4485883-d8d7-44e9-996e-4f819726516e",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy social situations more when there’s a goal, game, or outcome involved.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c473564b-baf5-4e51-98da-7218465fd67f",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m uncomfortable when people are treated unfairly or excluded.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c5bddcff-8d89-4c7f-877e-bc23951ff80a",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I lose respect when people avoid accountability.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c5e34cf0-bcbe-4a13-b7ec-b93ba6559df8",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "I prefer a boss who…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "7762d416-dc1f-41fc-b140-09e34a34576c",
+          "english": "sets high standards and pushes",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "16c136ff-176b-4f5a-afe6-5299220538af",
+          "english": "keeps things positive and flexible",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "974fbd3c-788c-447c-afd7-79ee95827c33",
+          "english": "cares about people and culture",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "dc0c419c-fb86-4f0c-a33a-86545de75ed8",
+          "english": "gives clear instructions and logic",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c5f3b06e-2858-45a8-81cd-68560c8a00cd",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer stability over taking chances when outcomes are uncertain.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c63eb5c7-fdc8-4cc3-8425-84d462975496",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "With deadlines, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "966cde41-aaf7-4219-9c3e-8a8a76119804",
+          "english": "race the clock and finish strong",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "a99ecff9-3a76-47fa-aedd-a4895d98b8d3",
+          "english": "start late but bring big energy",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "c69377cc-a03e-4dcc-9863-fda8bdd26fb2",
+          "english": "check in so nobody gets stuck",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "6e6eb07d-50d4-4769-8773-9bc178a63fc5",
+          "english": "start early to avoid surprises",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "pressure",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c647a4f5-8b50-466f-9a65-c6a8f2d0fda2",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’d rather avoid risk than deal with potential complications later.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates inhibition/resistance toward the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage risk-change and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "c8a8ef6c-5e93-4671-bebb-f2bfb90ae7d8",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m willing to compromise on speed if it helps maintain trust.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "d05bda80-6edc-400c-bdb4-f8052938fa79",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "What drains me fastest?",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "e1f0f9a3-fc9e-4e55-93c0-9d3759b223e3",
+          "english": "slow progress",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "ecec0709-e481-4651-bb05-629d8dced139",
+          "english": "boring repetition",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "98c9cca1-b5d3-4da0-9ea2-ee8d77e79adc",
+          "english": "tension between people",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "a6f80603-8d9f-4553-a993-2275aee23313",
+          "english": "unclear expectations",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "d60128b7-cef9-42f3-8841-3b4d024cb71b",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "If I make a mistake, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "3ec4e748-e689-447c-855c-dadd83321c58",
+          "english": "fix it fast and move on",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9dab4e87-ba43-46ae-b581-82ba801e189b",
+          "english": "talk it out and reset",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "2c9271e7-6780-40b8-a681-a37dd4fc1fc5",
+          "english": "feel bad I affected others",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "c92ffac8-cc59-4248-95c9-925ed09a2253",
+          "english": "analyze why it happened",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "detail-accuracy",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "With money/resources, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "4db7e647-bd6c-4f0d-80ac-27f3815b2d87",
+          "english": "invest aggressively for results",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "131a8b4e-3223-4834-bdad-f62d6b4a903c",
+          "english": "spend on experiences",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "371301c5-4079-4c57-a782-5c3646a84b51",
+          "english": "spend on people and comfort",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "ec869453-3dfe-4bf9-9d2d-80e9a4215aab",
+          "english": "research before spending",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "db2ae24e-58c6-4e26-8d43-0fd177f8fec3",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When setting goals, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "dcd5159b-f5f1-4d33-afd7-d51cb8ce5ce2",
+          "english": "set big targets and go",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "f0282f7a-43ac-4a10-b559-5f312a7d9f4e",
+          "english": "pick goals that sound exciting",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "96e96086-b1dd-44ae-afee-5367ca0dff28",
+          "english": "pick goals that protect relationships",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "675343f9-83f0-4824-bb24-f7b37e0e5dd6",
+          "english": "pick goals that are realistic and clear",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e00be20f-9d46-4250-b263-9644b5270e1a",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I take relationships seriously and don’t invest in them lightly.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage cooperation-support and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e0bbdf96-ca93-4f07-a4a1-199cd25ae427",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I work best when I have freedom to adjust my approach as I go.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e24c1a59-d6f6-4cde-9293-06a8f0740b99",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m motivated when success allows me more freedom and enjoyment.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "competition-achievement",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e3b026d5-8dc5-4670-8773-cd89bfa7c58c",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I use plans as tools, but I’m fine changing them if something better comes up.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e6164f25-f8ce-4038-8a32-b001f5fecb48",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "I feel most recognized when…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "7b2391a7-364a-401a-96f8-efe0b75389a0",
+          "english": "I’m trusted with authority",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "79d315bc-b556-4c7c-9c63-a0abfae68e73",
+          "english": "people hype me up",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9927d74d-cc43-4857-9784-7321a3328d96",
+          "english": "people appreciate my effort",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "80986435-fd1f-457c-95fe-b4c0a73eba5d",
+          "english": "my work is accurate and respected",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "emotional-expression",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e87cd6d6-d8dd-4270-b919-72042faab17f",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more confident moving forward when there’s a clear plan instead of improvising.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "decision-making",
+        "context": "planning",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e8d51a74-edc5-4f06-9329-3e9b289f94b6",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer relationships that are steady and predictable rather than intense and emotional.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "cooperation-support",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "DOUBLE_BARRELED",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage cooperation-support and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "e9de4944-2359-4540-99e6-d480706d0ef7",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I get uneasy when expectations aren’t clearly defined.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "SEMANTICALLY_OVERLAPPING"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "eae82ae1-ca73-4c00-b328-7c846c5fbc26",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When something breaks, I…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "3eb8fc08-8d4b-4e1a-b6e5-7d45e546a28a",
+          "english": "take charge and troubleshoot immediately",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "647bed3a-5c8d-4898-8fb1-0d5866c91f67",
+          "english": "call people in and brainstorm",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "3b72fdde-9c28-4715-9bc7-fc29a48234a7",
+          "english": "check on who’s impacted first",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "b6c78e25-549f-41ba-a67a-8070bdb00fc0",
+          "english": "trace the cause step-by-step",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "ec7581d0-c886-4fb0-a80e-286b664385ae",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I enjoy working in ways that allow for spontaneity and creativity.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "work-business",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "edc39e05-a151-4cbc-8d29-60ffeec35c2d",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m more likely to say yes to something new than stick with what’s familiar.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "general-behavioral-preference",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage general-behavioral-preference and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "eed5b69d-d389-4e2c-9b28-bc8d9da662a4",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When I get feedback, my first reaction is…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "94e9d249-4b32-49ac-ab31-5c7477e18ba3",
+          "english": "‘Cool—what’s the fix?’",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "c2e4ebcc-7fba-4c96-94fb-3dd47fae401d",
+          "english": "‘Oof—okay, but are we good?’",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "e05c8d43-44c0-4670-99a3-1e3d97746d30",
+          "english": "‘I hope I didn’t disappoint anyone’",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "9811adf6-62cc-4e36-b135-b314a03a3f24",
+          "english": "‘Can you give examples?’",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f1aac210-24f8-4066-85c4-c2711536e596",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m willing to take risks if there’s a strong potential upside.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f2019a64-d80f-40c7-9bf3-1c85cdc94afb",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I bond quickly with people who are warm and expressive.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f2f7dddd-ce94-41e5-b0ba-385e1dad769d",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m loyal to people even when it would be easier to walk away.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f48cde21-44cb-488a-a40d-b203d49060f5",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m cautious about change when it feels disruptive or unsettling.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "risk-change",
+        "context": "unfamiliar-situation",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f5025dca-a545-4b59-9d59-b0ef9f5a8a6a",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I need downtime alone to recharge after being around people.",
+      "assigned_color": "green",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f57711a6-f43a-4512-b0a6-e4777e614b26",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I try to stay organized so I don’t create stress for other people.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "planning-organization",
+        "context": "pressure",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "POSSIBLE_REVERSE_INTERPRETATION",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage planning-organization and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f6d67e8f-9521-42e7-9f20-2322e033e33b",
+      "active_baseline": true,
+      "question_type": "single",
+      "english": "When two people disagree, I’m most likely to…",
+      "assigned_color": null,
+      "options": [
+        {
+          "canonical_id": "ba73bd71-0095-42b5-8c7c-6a63706f1e04",
+          "english": "pick a direction and move on",
+          "sort_order": 1,
+          "weights": {
+            "red": 4,
+            "blue": 0,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "00c317af-dea8-4879-8bac-c809e972fb0f",
+          "english": "crack a joke and break tension",
+          "sort_order": 2,
+          "weights": {
+            "red": 0,
+            "blue": 4,
+            "yellow": 0,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "8ae8eee8-63ea-46be-a8e5-9a4500c99249",
+          "english": "mediate and find common ground",
+          "sort_order": 3,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 4,
+            "green": 0
+          }
+        },
+        {
+          "canonical_id": "85435cf1-8653-489f-b8fd-469fabf7174d",
+          "english": "slow it down and define the issue",
+          "sort_order": 4,
+          "weights": {
+            "red": 0,
+            "blue": 0,
+            "yellow": 0,
+            "green": 4
+          }
+        }
+      ],
+      "proposed_taxonomy": {
+        "behavioral_domain": "conflict",
+        "context": "conflict",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "strong"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "f7825ff2-5132-448c-b725-abc436e70304",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I lose steam when things feel routine or predictable for too long.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "stability-security",
+        "context": "team",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "AMBIGUOUS",
+        "CONTEXT_DEPENDENT",
+        "SEMANTICALLY_OVERLAPPING",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "LOW",
+      "competing_interpretation": "Wording/context may engage stability-security and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "fac997ca-5035-4573-929c-38c5a010b701",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m happiest in social settings where people are kind and supportive of each other.",
+      "assigned_color": "yellow",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "social-interaction",
+        "context": "social",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CONTEXT_DEPENDENT",
+        "COLOR_ASSIGNMENT_QUESTIONABLE"
+      ],
+      "color_assignment_confidence": "MODERATE",
+      "competing_interpretation": "Wording/context may engage social-interaction and adjacent color traits; this is a review flag, not a reclassification.",
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "fe20ba22-9f49-472d-b284-8bfb7f0b91fa",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I prefer flexibility over having every detail mapped out in advance.",
+      "assigned_color": "blue",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "detail-accuracy",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "moderate"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    },
+    {
+      "canonical_id": "ff6825e1-6afd-4686-a323-507195f22cb9",
+      "active_baseline": true,
+      "question_type": "likert",
+      "english": "I’m comfortable skipping steps if it helps me move faster.",
+      "assigned_color": "red",
+      "options": [],
+      "proposed_taxonomy": {
+        "behavioral_domain": "pace-action",
+        "context": "personal-preference",
+        "measurement_direction": "endorsement indicates stronger preference for the described behavior",
+        "intensity": "mild"
+      },
+      "quality_classifications": [
+        "CLEAR"
+      ],
+      "color_assignment_confidence": "HIGH",
+      "competing_interpretation": null,
+      "evidence_kind": "INFERENCE_REQUIRES_OWNER_REVIEW"
+    }
+  ],
+  "semantic_overlap_pairs": [
+    {
+      "left_id": "039de60f-9c76-45f4-9061-147a51745e0f",
+      "right_id": "199f9df0-be56-402e-a98c-8b1b8e4518af",
+      "similarity": 1
+    },
+    {
+      "left_id": "17d21643-7826-47e6-b115-79d0a74fa33c",
+      "right_id": "e87cd6d6-d8dd-4270-b919-72042faab17f",
+      "similarity": 1
+    },
+    {
+      "left_id": "222b3445-8da7-4fba-9f97-e64240c4e75b",
+      "right_id": "917bb239-754d-4fc1-abe5-731dd1389226",
+      "similarity": 1
+    },
+    {
+      "left_id": "28c5ada7-9157-449c-927b-212170e6296f",
+      "right_id": "40ff71e9-a36f-4f66-8193-e8a7aef0b6c3",
+      "similarity": 1
+    },
+    {
+      "left_id": "44a6b54a-9864-4137-bdec-50ba8cbb0bb5",
+      "right_id": "79686573-8d40-4d83-af77-41d35547619d",
+      "similarity": 1
+    },
+    {
+      "left_id": "4a7016b7-648a-45a7-8b3b-0047215b2270",
+      "right_id": "c8a8ef6c-5e93-4671-bebb-f2bfb90ae7d8",
+      "similarity": 1
+    },
+    {
+      "left_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+      "right_id": "c117eb5e-feba-43db-9d9d-8da220cce761",
+      "similarity": 1
+    },
+    {
+      "left_id": "84e30ad7-b146-489b-9041-8645ef2b02c1",
+      "right_id": "e9de4944-2359-4540-99e6-d480706d0ef7",
+      "similarity": 1
+    },
+    {
+      "left_id": "bb828a98-5342-4c50-8107-c03365e479d8",
+      "right_id": "f7825ff2-5132-448c-b725-abc436e70304",
+      "similarity": 1
+    },
+    {
+      "left_id": "29efc415-38e9-408a-aa7b-4d46f6996c20",
+      "right_id": "89df63e5-ffa9-4e7a-a228-f1651750ac20",
+      "similarity": 0.857
+    },
+    {
+      "left_id": "adac68bb-5fd6-4cae-90c6-576985ca3df1",
+      "right_id": "c4485883-d8d7-44e9-996e-4f819726516e",
+      "similarity": 0.455
+    },
+    {
+      "left_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+      "right_id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+      "similarity": 0.333
+    },
+    {
+      "left_id": "806a2363-7e28-42b9-99dd-7faabf6710b7",
+      "right_id": "f2019a64-d80f-40c7-9bf3-1c85cdc94afb",
+      "similarity": 0.333
+    },
+    {
+      "left_id": "94495f50-2c0b-4df5-89be-1233fd84ee62",
+      "right_id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+      "similarity": 0.333
+    }
+  ]
+}
