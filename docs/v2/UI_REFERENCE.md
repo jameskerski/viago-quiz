@@ -50,12 +50,14 @@ Direct live-row editing from an admin form is **not** the V2 design. Content edi
 
 ## Visual reference artifact
 
-Approved generated concept board filename:
+The approved generated concept board has been preserved outside conversational memory in the OWNER's Google Drive:
 
-`viago-v2-approved-concept-board.jpg`
+- File: `VIAGO Personality Quiz V2 - Approved Concept Board.png`
+- Drive file ID: `1uFF8ldqps8jmvIv2414YO6R_zS-QhuSW`
+- Reference URL: `https://drive.google.com/file/d/1uFF8ldqps8jmvIv2414YO6R_zS-QhuSW/view?usp=drivesdk`
 
-The original generated board from the V2 kickoff conversation remains the visual source used to establish this contract. A repository binary asset should be placed at:
+A repository-local binary copy may also be added later at:
 
-`docs/v2/assets/viago-v2-approved-concept-board.jpg`
+`docs/v2/assets/viago-v2-approved-concept-board.png`
 
 The written contract in this file is authoritative for implementation details where generated concept artwork contains decorative/demo values that are not real product requirements (for example sample countries, completion time, or invented analytics values).
