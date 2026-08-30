@@ -1,16 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { ReactNode } from 'react';
+
+export function V2OfficialLogo({ compact = false, className = '' }: { compact?: boolean; className?: string }) {
+  return <Image src="/viago-logo-official-white.png" alt="VIAGO" width={849} height={298} priority className={`${compact ? 'h-10 sm:h-11' : 'h-11 sm:h-14'} w-auto object-contain ${className}`} />;
+}
 
 export function V2Brand({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/v2" className="group flex items-center gap-3" aria-label="VIAGO Personality home">
-      <span className="grid h-10 w-10 place-items-center rounded-xl border border-white/12 bg-white/[0.06] shadow-[0_10px_35px_rgba(109,74,255,.2)] sm:h-12 sm:w-12">
-        <span className="v2-brand-mark" aria-hidden />
-      </span>
-      <span>
-        <span className={`${compact ? 'text-xl sm:text-2xl' : 'text-2xl sm:text-3xl'} block font-black tracking-[0.14em] text-white`}>VIAGO</span>
-        <span className="block text-[9px] font-semibold uppercase tracking-[0.26em] text-white/42">Personality</span>
-      </span>
+    <Link href="/v2" className="group inline-flex items-center" aria-label="VIAGO Personality home">
+      <V2OfficialLogo compact={compact} />
     </Link>
   );
 }

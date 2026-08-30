@@ -56,14 +56,6 @@ body {
   mask-image: linear-gradient(to bottom, black, transparent 78%);
 }
 
-.v2-brand-mark {
-  width: 24px;
-  height: 21px;
-  display: block;
-  clip-path: polygon(0 0, 28% 0, 50% 48%, 72% 0, 100% 0, 58% 100%, 42% 100%);
-  background: linear-gradient(135deg, #8a5cff 8%, #43a8ff 52%, #ff70b8 100%);
-}
-
 .v2-panel {
   border: 1px solid rgba(255,255,255,.1);
   background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));

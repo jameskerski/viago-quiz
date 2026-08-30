@@ -39,7 +39,7 @@ export default function V2ResultsClient({ attemptId }: { attemptId: string }) {
     setCopied(true); window.setTimeout(() => setCopied(false), 2200);
   }
 
-  return <V2Shell compactHeader action={<button onClick={() => router.push(`/v2?lang=${lang}`)} className="text-xs font-semibold uppercase tracking-[.16em] text-white/45 hover:text-white">VIAGO V2</button>}>
+  return <V2Shell compactHeader action={<button onClick={() => router.push(`/v2?lang=${lang}`)} className="text-xs font-semibold uppercase tracking-[.16em] text-white/45 hover:text-white">{lang === 'es' ? 'Inicio' : 'Home'}</button>}>
     <main className="mx-auto w-full max-w-6xl py-8 sm:py-14">
       {!result && !error && <div className="v2-panel rounded-3xl p-12 text-center text-white/55">{t.loading}</div>}
       {error && <V2Error message={error} onRetry={() => window.location.reload()} />}

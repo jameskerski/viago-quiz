@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ColorOrb, V2Shell } from '@/components/v2/V2Shell';
+import { ColorOrb, V2OfficialLogo, V2Shell } from '@/components/v2/V2Shell';
 import { getCompletedAssessmentCount } from '@/lib/v2/analytics';
 
 export const dynamic = 'force-dynamic';
@@ -31,7 +31,7 @@ export default async function V2LandingPage() {
           <ColorOrb labels={{ red: 'Drive', blue: 'Connect', yellow: 'Care', green: 'Understand' }} />
         </div>
       </section>
-      <footer className="flex flex-col justify-between gap-2 border-t border-white/[0.07] py-5 text-xs text-white/32 sm:flex-row"><span>VIAGO Personality Quiz</span><span>Private V2 preview · English / Español</span></footer>
+      <footer className="flex flex-col items-start justify-between gap-3 border-t border-white/[0.07] py-5 text-xs text-white/32 sm:flex-row sm:items-center"><V2OfficialLogo compact className="!h-7 opacity-55" /><span>Private V2 preview · English / Español</span></footer>
     </V2Shell>
   );
 }
