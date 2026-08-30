@@ -1,3 +1,5 @@
+import { requireAdminSession } from '@/lib/v2/adminAuth';
+
 const cards = [
   ['Completed assessments', '—'],
   ['Completion rate', '—'],
@@ -5,7 +7,9 @@ const cards = [
   ['Spanish usage', '—'],
 ];
 
-export default function V2AdminDashboardPage() {
+export default async function V2AdminDashboardPage() {
+  await requireAdminSession();
+
   return (
     <main className="min-h-screen bg-[#050812] px-6 py-10 text-white">
       <div className="mx-auto max-w-7xl">
@@ -13,7 +17,7 @@ export default function V2AdminDashboardPage() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">VIAGO V2 Admin</p>
             <h1 className="mt-2 text-4xl font-semibold tracking-tight">Analytics</h1>
-            <p className="mt-2 text-white/45">Foundation shell only — canonical analytics queries are not connected yet.</p>
+            <p className="mt-2 text-white/45">Canonical analytics queries are the next connected foundation layer.</p>
           </div>
           <a href="/v2/admin/questions" className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/70">
             Questions & content
@@ -32,11 +36,11 @@ export default function V2AdminDashboardPage() {
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.35fr_.65fr]">
           <section className="min-h-80 rounded-2xl border border-white/10 bg-white/[0.035] p-6">
             <h2 className="font-semibold">Assessment activity</h2>
-            <p className="mt-2 text-sm text-white/40">Future deterministic time-series view.</p>
+            <p className="mt-2 text-sm text-white/40">Deterministic time-series view will derive from canonical attempt data.</p>
           </section>
           <section className="min-h-80 rounded-2xl border border-white/10 bg-white/[0.035] p-6">
             <h2 className="font-semibold">Personality distribution</h2>
-            <p className="mt-2 text-sm text-white/40">Future four-color result distribution.</p>
+            <p className="mt-2 text-sm text-white/40">Four-color result distribution will derive from completed assessments.</p>
           </section>
         </div>
       </div>
