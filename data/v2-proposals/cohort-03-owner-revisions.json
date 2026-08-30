@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "status": "OWNER_REVIEW_REVISION_ONLY",
+  "source_commit": "07b8b9149716ba8a1e461833986ce0c258ed4700",
+  "source_package": "data/v2-proposals/cohort-03.json",
+  "accepted_unchanged_count": 12,
+  "revision_count": 3,
+  "deferred_count": 1,
+  "current_candidate_count_after_disposition": 15,
+  "runtime_impact": "NONE",
+  "revisions": [
+    {
+      "proposal_id": "C03-S-01",
+      "question_type": "SINGLE_SELECT",
+      "question": "A personal project you chose has been sitting unfinished for several weeks. What would most naturally draw you back into it?",
+      "options": [
+        { "label": "Choosing the next visible milestone and deciding to finish it", "mapping": "red" },
+        { "label": "Finding a fresh angle that makes the project interesting again", "mapping": "blue" },
+        { "label": "Reconnecting with why I chose the project and what continuing it means to me", "mapping": "yellow" },
+        { "label": "Working out why progress stopped and creating a more reliable approach", "mapping": "green" }
+      ],
+      "what_it_measures": "What motive naturally restores follow-through after a self-chosen project loses momentum: completion, renewed interest, attachment to meaning and continuity, or a reliable method.",
+      "discriminator_and_balance": "Yellow now rests on attachment, continuity, and personal meaning even when nobody else benefits from completion. All four responses offer a legitimate reason to resume the project."
+    },
+    {
+      "proposal_id": "C03-S-04",
+      "question_type": "SINGLE_SELECT",
+      "question": "A family tradition still matters, but its old format no longer fits everyone’s lives. What matters most as you help shape its next version?",
+      "options": [
+        { "label": "Choose a workable version that keeps the tradition happening", "mapping": "red" },
+        { "label": "Give it a new form that people will be excited to experience", "mapping": "blue" },
+        { "label": "Preserve the sense of connection and meaning people rely on", "mapping": "yellow" },
+        { "label": "Understand the practical constraints and create a version with a predictable structure", "mapping": "green" }
+      ],
+      "what_it_measures": "How continuity is protected when form can change: ongoing action, renewed experience, relational meaning, or coherent predictability.",
+      "discriminator_and_balance": "Green now prioritizes understanding constraints and predictable coherence rather than displaying scheduling competence. Each option protects a different legitimate part of the tradition."
+    },
+    {
+      "proposal_id": "C03-L-B-01",
+      "question_type": "LIKERT",
+      "question": "When something captures my interest, I feel more energized turning it into a lively exchange of reactions and possibilities than exploring it privately at first.",
+      "intended_mapping": "blue",
+      "semantic_family": "expressive-possibility-exchange",
+      "what_it_measures": "Blue preference to expand interest through energetic expression, interaction, and possibility-building rather than generic sociability or relational closeness.",
+      "discriminator_and_balance": "The discriminator is energy from expressive exchange and expanding possibilities. Private exploration remains an equally reasonable preference, and inviting relational closeness is no longer the basis for agreement."
+    }
+  ],
+  "deferred": [
+    {
+      "proposal_id": "C03-S-11",
+      "disposition": "DEFER_REDUNDANCY",
+      "reason": "Individually reasonable, but it currently adds insufficient measurement value beyond C03-S-02 and C03-S-09.",
+      "preservation": "Retain as non-production audit history for possible future use if evidence supports another parallel item in this semantic family."
+    }
+  ],
+  "production_impact": "NONE"
+}
