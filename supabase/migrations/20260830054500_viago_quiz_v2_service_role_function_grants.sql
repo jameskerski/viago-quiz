@@ -39,4 +39,8 @@ begin
 end
 $guard$;
 
+-- Refresh PostgREST's routine privilege cache so the server-only RPCs become
+-- available immediately after this migration is applied.
+notify pgrst, 'reload schema';
+
 commit;
