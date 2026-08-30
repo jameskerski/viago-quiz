@@ -6,36 +6,48 @@ Provide a discreet authenticated administration area for analytics and governed 
 
 ## Admin entry
 
-Public landing page may expose a small settings/admin affordance. It routes to `/v2/admin/login`.
+The public V2 landing page exposes a small settings/admin affordance that routes to `/v2/admin/login`.
 
-The link itself is not a security boundary. All `/v2/admin/*` routes and write APIs must enforce server-side authentication and authorization.
+The link itself is not a security boundary. All `/v2/admin/*` routes and admin APIs enforce the server-side session.
 
 ## Authentication
 
-Use the existing Supabase project only. Do not create a second auth provider or database.
+V2 intentionally uses a simple shared-password model because the administration surface is operated by two trusted people.
 
-Recommended V2 model:
-- Supabase Auth for administrator identity.
-- Explicit admin allowlist/role table in the canonical project.
-- Server-side session verification for every admin route and write operation.
-- No privileged database credential in browser JavaScript.
+Authoritative flow:
 
-Exact identity enrollment and roles require OWNER review before production enablement.
+```text
+discreet settings link
+  -> /v2/admin/login
+  -> shared password verified server-side
+  -> signed HttpOnly admin session cookie
+  -> analytics + content administration
+```
+
+Rules:
+- Password source of truth is the server-only `VIAGO_ADMIN_PASSWORD` environment variable.
+- Never commit the password value to Git, documentation, client JavaScript, database rows, or generated artifacts.
+- Password comparison happens server-side.
+- Successful login issues a signed HttpOnly, Secure-in-production, SameSite=Strict session cookie.
+- Admin pages and admin APIs require a valid session.
+- Logout invalidates the cookie.
+- There is no Supabase Auth dependency, username/account system, role table, or third-party identity provider in V2 unless the operating model materially changes later.
+- No privileged Supabase credential is exposed to browser JavaScript.
+
+This deliberately keeps identity simple while keeping content publication safety strong.
 
 ## Content source of truth
 
-Do not let the editor update active `questions` / `question_options` rows directly.
+The admin editor must not update active `questions` / `question_options` rows directly.
 
-Introduce a versioned content layer:
+V2 introduces a versioned authoring layer:
 
 ```text
 assessment_content_revisions
   id
-  status: DRAFT | REVIEW_REQUIRED | APPROVED | PUBLISHED | SUPERSEDED
-  created_by
+  status: DRAFT | READY_TO_PUBLISH | PUBLISHED | SUPERSEDED
   created_at
-  approved_by
-  approved_at
+  updated_at
   published_at
   source_revision_id
   notes
@@ -49,7 +61,7 @@ assessment_question_revisions
   prompt_en
   prompt_es
   active
-  scoring metadata / construct metadata
+  construct/scoring metadata
 
 assessment_option_revisions
   revision_id
@@ -57,59 +69,77 @@ assessment_option_revisions
   canonical_question_id
   label_en
   label_es
+  active
   sort/scoring metadata
 
 assessment_content_audit
-  actor
   action
   revision_id
-  timestamp
+  occurred_at
   deterministic diff / metadata
 ```
 
-Publishing is an explicit transaction that validates the revision and then updates the canonical live corpus. Draft saves never change a live attempt.
+Draft saves only alter authoring rows. Publishing is a separate guarded transaction that validates a complete revision before changing the canonical runtime corpus.
 
 ## Validation before publish
 
 At minimum:
-- question/option identity validity;
+- canonical question/option identity validity;
 - English authority present;
-- Spanish coverage if the question is publishable bilingually;
+- Spanish coverage for bilingual publication;
 - qtype-specific requirements;
-- no duplicate positions/IDs;
-- scoring/color totals within approved rules;
+- option membership and ordering validity;
+- scoring/color metadata validity;
 - construct/dimension coverage;
-- 50-question composition simulator/regression checks;
+- 50-question composition simulation/regression checks;
 - known-defect checks;
-- deterministic diff against current published revision.
+- deterministic diff against the currently published corpus.
+
+Publication remains disabled/fail-closed until these checks and the publish transaction have production acceptance.
+
+## Attempt/outcome metadata
+
+V1 stores the durable attempt, assigned questions, answers, and option order, but not language or a persisted final score snapshot. V2 adds additive attempt metadata so analytics do not have to repeatedly reconstruct the entire corpus.
+
+For V2-capable attempts capture, when known:
+- language (`en` / `es`);
+- completion timestamp;
+- winner color;
+- Red / Blue / Yellow / Green final score snapshot;
+- published content revision identifier.
+
+Historical V1 rows remain authoritative and are not fabricated. In particular, historical language remains unknown unless it was actually persisted elsewhere.
 
 ## Analytics
 
-Analytics are query/service projections over canonical quiz data, not manually maintained counters.
+Analytics are deterministic projections over canonical `xombtulaktoprxxtkbcy.viago_quiz` data, never a separately maintained counter.
 
 Public metric:
-- completed assessments = attempts with a valid completed result state.
+- completed assessments only, not attempts started.
 
-Admin metrics can include:
+Admin metrics:
 - attempts started;
 - completed assessments;
 - completion rate;
 - activity by day/week/month;
-- English/Spanish usage;
+- known-language split;
 - primary result distribution;
-- primary + secondary combinations;
 - score margins and tie rates;
-- per-question selection distributions;
-- item discrimination/health indicators once statistically justified;
-- abandonment position.
+- active question count and qtype composition;
+- per-question selection distributions and item-health indicators when statistically justified.
 
-Do not surface pseudo-scientific validation claims. Statistical quality metrics should be labeled for what they actually measure.
+Do not surface invented historical language data or pseudo-scientific validation claims. Statistical quality metrics must be labeled for what they actually measure.
 
-## Authorization boundaries
+## Operational boundary
 
-Initial roles should stay simple:
-- OWNER: all administration + publish authority.
-- EDITOR: draft/edit content, no publication.
-- ANALYST: read analytics only.
+The shared password makes access simple. Content safety remains deliberately stronger:
 
-Avoid implementing a broad role system until there is a real use case.
+```text
+LOGIN grants access.
+DRAFT allows editing.
+VALIDATE proves corpus rules.
+READY_TO_PUBLISH means the revision is eligible.
+PUBLISH is a separate guarded transaction.
+```
+
+This prevents a typo in the admin editor from silently changing the live assessment.
