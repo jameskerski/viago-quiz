@@ -1,0 +1,310 @@
+{
+  "schema_version": "1.0.0",
+  "cohort_id": "VIAGO_V2_COHORT_03",
+  "status": "OWNER_REVIEW_ONLY",
+  "governing_model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "source_coverage_commit": "e9df0dcf884ee8cfc798771596b308afc73fe06b",
+  "candidate_count": 16,
+  "composition": {
+    "single_select": 12,
+    "likert": 4,
+    "clearly_non_workplace": 16
+  },
+  "runtime_impact": "NONE",
+  "coverage_classifications": [
+    "NET_NEW_COVERAGE",
+    "DELIBERATE_PARALLEL_MEASUREMENT",
+    "POTENTIAL_LEGACY_REPLACEMENT",
+    "REDUNDANT_DO_NOT_ADD"
+  ],
+  "candidates": [
+    {
+      "proposal_id": "C03-S-01",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "independence-follow-through",
+      "context": "personal-project",
+      "semantic_family": "return-to-self-chosen-project",
+      "question": "A personal project you chose has been sitting unfinished for several weeks. What would most naturally draw you back into it?",
+      "options": [
+        { "label": "Choosing the next visible milestone and deciding to finish it", "mapping": "red" },
+        { "label": "Finding a fresh angle that makes the project interesting again", "mapping": "blue" },
+        { "label": "Remembering the commitment I made and who it matters to", "mapping": "yellow" },
+        { "label": "Working out why progress stopped and creating a more reliable approach", "mapping": "green" }
+      ],
+      "what_it_measures": "What motive naturally restores follow-through after a self-chosen project loses momentum: completion, renewed interest, meaningful commitment, or a reliable method.",
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "closest_existing_or_new": ["C01-L-R-05"],
+      "why_it_earns_a_place": "It adds ordinary-life recovery evidence without asking whether the respondent is responsible or productive; each option offers a credible route back into the project."
+    },
+    {
+      "proposal_id": "C03-S-02",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "problem-solving-learning",
+      "context": "hobby-learning",
+      "semantic_family": "entry-into-unfamiliar-hobby",
+      "question": "You are beginning a hobby that has several ways to learn it. Which starting point feels most natural?",
+      "options": [
+        { "label": "Pick a concrete result I want to achieve and practice toward it", "mapping": "red" },
+        { "label": "Try several techniques and follow whichever one captures my interest", "mapping": "blue" },
+        { "label": "Learn alongside someone so the experience and encouragement are shared", "mapping": "yellow" },
+        { "label": "Understand the fundamentals and build skill in a logical sequence", "mapping": "green" }
+      ],
+      "what_it_measures": "The motivation that organizes entry into voluntary learning: outcome, exploration, shared experience, or coherent understanding.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": [],
+      "why_it_earns_a_place": "Learning entry is one of the thinnest audited domains, and the item avoids claiming that any color has a superior learning style."
+    },
+    {
+      "proposal_id": "C03-S-03",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "detail-accuracy",
+      "context": "household-purchase",
+      "semantic_family": "household-purchase-priority",
+      "question": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?",
+      "options": [
+        { "label": "Which option solves the main need most directly", "mapping": "red" },
+        { "label": "Which option offers the most enjoyable or flexible experience", "mapping": "blue" },
+        { "label": "Which option best fits the people and routines it will support", "mapping": "yellow" },
+        { "label": "Which option has the strongest evidence of dependable long-term value", "mapping": "green" }
+      ],
+      "what_it_measures": "The priority accepted when adequate purchase choices compete: direct utility, experience, household continuity, or verified value.",
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "closest_existing_or_new": ["C02-S-05"],
+      "why_it_earns_a_place": "It introduces a common purchasing context and a real accuracy tradeoff without making research the obviously intelligent response."
+    },
+    {
+      "proposal_id": "C03-S-04",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "stability-security",
+      "context": "family-tradition",
+      "semantic_family": "tradition-that-no-longer-fits",
+      "question": "A family tradition still matters, but its old format no longer fits everyone’s lives. What matters most as you help shape its next version?",
+      "options": [
+        { "label": "Choose a workable version that keeps the tradition happening", "mapping": "red" },
+        { "label": "Give it a new form that people will be excited to experience", "mapping": "blue" },
+        { "label": "Preserve the sense of connection and meaning people rely on", "mapping": "yellow" },
+        { "label": "Create a clear format and schedule that can hold up over time", "mapping": "green" }
+      ],
+      "what_it_measures": "How continuity is protected when form can change: ongoing action, renewed experience, relational meaning, or sustainable structure.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C02-S-16"],
+      "why_it_earns_a_place": "It measures stability and continuity through a family tradition rather than another sudden-disruption scenario."
+    },
+    {
+      "proposal_id": "C03-S-05",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "communication",
+      "context": "unfamiliar-social-situation",
+      "semantic_family": "preferred-new-social-contact",
+      "question": "At a gathering where you know almost no one, what kind of interaction are you most naturally drawn toward?",
+      "options": [
+        { "label": "A focused conversation that leads to a useful idea or next step", "mapping": "red" },
+        { "label": "Several lively conversations that open up new people and possibilities", "mapping": "blue" },
+        { "label": "A comfortable conversation where mutual trust can begin", "mapping": "yellow" },
+        { "label": "A thoughtful conversation where we explore a subject in depth", "mapping": "green" }
+      ],
+      "what_it_measures": "What a person seeks through communication with unfamiliar people: purposeful value, social energy, relational connection, or substantive understanding.",
+      "coverage_classification": "POTENTIAL_LEGACY_REPLACEMENT",
+      "closest_existing_or_new": ["C01-L-B-02"],
+      "why_it_earns_a_place": "It could replace generic sociability evidence with a motive-based unfamiliar-social discriminator while avoiding quietness as Yellow or Green evidence."
+    },
+    {
+      "proposal_id": "C03-S-06",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "everyday-problem-solving",
+      "context": "cooking-hobby",
+      "semantic_family": "inconsistent-favorite-recipe",
+      "question": "A favorite recipe keeps turning out differently even though each version is usable. What would you be most interested in trying next?",
+      "options": [
+        { "label": "Choose the result I want and change the factor most likely to improve it", "mapping": "red" },
+        { "label": "Experiment with a new variation and see what enjoyable result emerges", "mapping": "blue" },
+        { "label": "Adapt it around the tastes and experience of the people sharing it", "mapping": "yellow" },
+        { "label": "Change one factor at a time so I can understand what produces each result", "mapping": "green" }
+      ],
+      "what_it_measures": "The preferred way to frame an ordinary inconsistent outcome: target improvement, exploratory variation, shared experience, or causal understanding.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": [],
+      "why_it_earns_a_place": "It adds concrete everyday problem framing in a hobby context without asking who is the most competent cook or duplicating household-routine governance."
+    },
+    {
+      "proposal_id": "C03-S-07",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "planning-organization",
+      "context": "leisure-travel",
+      "semantic_family": "open-day-travel-planning",
+      "question": "You have one open day in a place you have wanted to visit. How would you most naturally shape the day?",
+      "options": [
+        { "label": "Choose the experience that matters most and build the day around completing it", "mapping": "red" },
+        { "label": "Keep plenty of room to follow whatever looks interesting once I am there", "mapping": "blue" },
+        { "label": "Shape the day around a pace and experiences everyone can enjoy together", "mapping": "yellow" },
+        { "label": "Research the route, timing, and key details so the day works smoothly", "mapping": "green" }
+      ],
+      "what_it_measures": "The motive that anchors ordinary leisure planning: priority accomplishment, openness, shared experience, or dependable coherence.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": [],
+      "why_it_earns_a_place": "It adds travel planning without using disruption, emergency, or generic adaptability architecture."
+    },
+    {
+      "proposal_id": "C03-S-08",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "problem-framing",
+      "context": "friendship",
+      "semantic_family": "friend-facing-two-good-options",
+      "question": "A friend is choosing between two good opportunities and asks you to talk it through. Which question are you most naturally inclined to explore?",
+      "options": [
+        { "label": "Which opportunity moves you closer to the result you want most?", "mapping": "red" },
+        { "label": "Which opportunity opens the experiences and possibilities that energize you?", "mapping": "blue" },
+        { "label": "Which opportunity best fits the relationships and commitments you want to maintain?", "mapping": "yellow" },
+        { "label": "Which opportunity holds up best when you compare the evidence and consequences?", "mapping": "green" }
+      ],
+      "what_it_measures": "The lens naturally used to frame an underdetermined personal decision: outcome, possibility, commitments, or evidence.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C02-S-02"],
+      "why_it_earns_a_place": "It measures problem framing through the question selected, not through giving competent advice or solving an urgent problem."
+    },
+    {
+      "proposal_id": "C03-S-09",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "competition-achievement",
+      "context": "group-recreation",
+      "semantic_family": "casual-recreation-reward",
+      "question": "You join a casual activity that people enjoy in very different ways. Which part is most likely to keep you coming back?",
+      "options": [
+        { "label": "Having a clear challenge and seeing myself improve", "mapping": "red" },
+        { "label": "The energy, variety, and memorable moments around the activity", "mapping": "blue" },
+        { "label": "The dependable connection that develops with the people involved", "mapping": "yellow" },
+        { "label": "Understanding the patterns and becoming more consistent over time", "mapping": "green" }
+      ],
+      "what_it_measures": "What makes repeat recreation rewarding: achievement, experience, durable belonging, or mastery through understanding.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C02-L-R-01"],
+      "why_it_earns_a_place": "It moves achievement evidence into recreation and gives every color an equally legitimate reason to return."
+    },
+    {
+      "proposal_id": "C03-S-10",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "conflict",
+      "context": "family-memory",
+      "semantic_family": "different-memories-without-required-decision",
+      "question": "You and a sibling remember an important family event differently, but no practical decision depends on agreeing. What would you most naturally want from the conversation?",
+      "options": [
+        { "label": "A clear conclusion about the main point so the disagreement can close", "mapping": "red" },
+        { "label": "A lively exchange that leaves room for both versions of the story", "mapping": "blue" },
+        { "label": "Understanding how each version connects to what matters to each of us", "mapping": "yellow" },
+        { "label": "Clarity about what can be verified and what genuinely remains uncertain", "mapping": "green" }
+      ],
+      "what_it_measures": "What a person seeks from low-stakes disagreement when action is unnecessary: closure, expressive openness, relational understanding, or evidentiary clarity.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C02-L-Y-01"],
+      "why_it_earns_a_place": "It tests conflict motive in a non-decision family setting and keeps all four outcomes legitimate without making Yellow uniquely mature."
+    },
+    {
+      "proposal_id": "C03-S-11",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "stability-security",
+      "context": "personal-commitment",
+      "semantic_family": "choosing-recurring-activity",
+      "question": "You are choosing one activity to make part of your regular week. What makes an option most appealing?",
+      "options": [
+        { "label": "It gives me a clear goal and visible progress to pursue", "mapping": "red" },
+        { "label": "It keeps bringing new experiences, people, or possibilities", "mapping": "blue" },
+        { "label": "It offers a dependable community where relationships can deepen", "mapping": "yellow" },
+        { "label": "It offers a structured path for developing real understanding or skill", "mapping": "green" }
+      ],
+      "what_it_measures": "What makes a recurring personal commitment attractive: progress, variety, belonging, or structured mastery.",
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "closest_existing_or_new": ["C03-S-02", "C03-S-09"],
+      "why_it_earns_a_place": "It deliberately tests the same broad motives in a forward-looking commitment choice rather than a learning start or retrospective recreation reward."
+    },
+    {
+      "proposal_id": "C03-S-12",
+      "question_type": "SINGLE_SELECT",
+      "behavioral_domain": "communication",
+      "context": "everyday-recommendation",
+      "semantic_family": "partly-known-recommendation",
+      "question": "Someone asks for your opinion about something you know only partly. What response feels most natural?",
+      "options": [
+        { "label": "Give the clearest useful recommendation I can and state the main limitation", "mapping": "red" },
+        { "label": "Share the possibilities that seem most interesting and invite them to explore", "mapping": "blue" },
+        { "label": "Ask what matters to them so the opinion fits their situation", "mapping": "yellow" },
+        { "label": "Check the important facts before offering a firm recommendation", "mapping": "green" }
+      ],
+      "what_it_measures": "What a person protects when communicating under incomplete knowledge: usefulness, possibility, personal fit, or evidentiary confidence.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C01-L-G-03"],
+      "why_it_earns_a_place": "It creates a balanced everyday accuracy tradeoff rather than asking whether the respondent is careful, honest, or helpful."
+    },
+    {
+      "proposal_id": "C03-L-R-01",
+      "question_type": "LIKERT",
+      "behavioral_domain": "independence-follow-through",
+      "context": "personal-goal",
+      "semantic_family": "finish-versus-replace-personal-goal",
+      "question": "When a personal goal stops feeling exciting, I would rather keep working toward the result I chose than replace it with a more interesting goal.",
+      "intended_mapping": "red",
+      "what_it_measures": "Red result commitment after novelty fades, balanced against the reasonable choice to redirect energy toward a more engaging goal.",
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "closest_existing_or_new": ["C03-S-01", "C02-L-B-02"],
+      "why_it_earns_a_place": "It gives the follow-through gap a direct Red-versus-Blue tradeoff without presenting persistence as universally virtuous."
+    },
+    {
+      "proposal_id": "C03-L-B-01",
+      "question_type": "LIKERT",
+      "behavioral_domain": "communication",
+      "context": "personal-interest",
+      "semantic_family": "invite-others-into-experience",
+      "question": "When I discover something I enjoy, my first impulse is usually to invite others into the experience rather than keep exploring it on my own.",
+      "intended_mapping": "blue",
+      "what_it_measures": "Blue preference to expand personal enjoyment into shared expression and experience, rather than generic friendliness or social skill.",
+      "coverage_classification": "POTENTIAL_LEGACY_REPLACEMENT",
+      "closest_existing_or_new": ["C01-L-B-05"],
+      "why_it_earns_a_place": "It can replace generic sociability language with a motive-linked expression/experience tradeoff."
+    },
+    {
+      "proposal_id": "C03-L-Y-01",
+      "question_type": "LIKERT",
+      "behavioral_domain": "stability-security",
+      "context": "community-belonging",
+      "semantic_family": "known-belonging-versus-new-opportunity",
+      "question": "When deciding whether to leave a familiar group for a more appealing opportunity, I give more weight to the relationships I have built than to what the new experience might offer.",
+      "intended_mapping": "yellow",
+      "what_it_measures": "Yellow preference for loyalty and durable belonging when it competes with an attractive new experience.",
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "closest_existing_or_new": ["C02-L-Y-02"],
+      "why_it_earns_a_place": "It directly measures continuity and loyalty through a legitimate stay-versus-explore tradeoff without implying that either choice is more caring."
+    },
+    {
+      "proposal_id": "C03-L-G-01",
+      "question_type": "LIKERT",
+      "behavioral_domain": "planning-organization",
+      "context": "personal-travel",
+      "semantic_family": "travel-structure-versus-freedom",
+      "question": "For a personal trip, I would rather settle the route and key details early than preserve maximum freedom to decide as I go.",
+      "intended_mapping": "green",
+      "what_it_measures": "Green preference for predictable coherence when it directly competes with Blue freedom and spontaneity.",
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "closest_existing_or_new": ["C03-S-07"],
+      "why_it_earns_a_place": "It supplies a clean non-work planning tradeoff and deliberately parallels the travel scenario in a different response format."
+    }
+  ],
+  "pre_review_rejections": [
+    {
+      "draft_id": "C03-DRAFT-REJECT-01",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "A delayed trip forces a new plan.",
+      "basis": "Duplicates the disruption architecture already present in C01-S-03, C02-S-03, and C02-S-08."
+    },
+    {
+      "draft_id": "C03-DRAFT-REJECT-02",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "Friends cannot agree on a restaurant.",
+      "basis": "Duplicates the stalled group-choice architecture in C01-S-07 and C02-S-15."
+    },
+    {
+      "draft_id": "C03-DRAFT-REJECT-03",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "Missing directions before assembling something.",
+      "basis": "Duplicates incomplete-instruction and evidence-before-action content already represented by active questions and C01-L-G-01."
+    }
+  ]
+}

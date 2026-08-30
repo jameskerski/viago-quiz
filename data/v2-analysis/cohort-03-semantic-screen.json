@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.0.0",
+  "status": "REVIEW_ONLY_SCREEN_COMPLETE",
+  "baseline": {
+    "active_questions": 151,
+    "owner_reviewed_candidates": 40,
+    "total": 191
+  },
+  "method": "Exact normalized duplicate rejection plus TF-IDF cosine screening over prompt and options. Semantic acceptance is documented in each candidate's measurement, closest-item, classification, and earned-place rationale.",
+  "automatic_rejection_threshold": 0.34,
+  "automatic_rejections": [],
+  "accepted_candidate_screen": [
+    {
+      "proposal_id": "C03-S-01",
+      "closest_lexical_matches": [
+        {
+          "id": "C01-S-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1321
+        },
+        {
+          "id": "C02-L-R-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1256
+        },
+        {
+          "id": "C02-L-B-01",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0978
+        },
+        {
+          "id": "C01-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0893
+        },
+        {
+          "id": "5f17485f-373e-455d-af0b-70ec6485943b",
+          "source": "active",
+          "cosine": 0.0811
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-02",
+      "closest_lexical_matches": [
+        {
+          "id": "3bb2ff0b-1bac-4bc0-a4d4-5e75387751f0",
+          "source": "active",
+          "cosine": 0.1164
+        },
+        {
+          "id": "36041a0f-a82d-4c66-96f1-973ea25a3daf",
+          "source": "active",
+          "cosine": 0.1045
+        },
+        {
+          "id": "C02-L-R-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1027
+        },
+        {
+          "id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+          "source": "active",
+          "cosine": 0.0965
+        },
+        {
+          "id": "C02-L-B-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0918
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-03",
+      "closest_lexical_matches": [
+        {
+          "id": "C02-L-Y-01",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.2273
+        },
+        {
+          "id": "C02-S-05",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.2053
+        },
+        {
+          "id": "3b9a1aa5-09ba-4bb9-b3c9-c8033791974c",
+          "source": "active",
+          "cosine": 0.1769
+        },
+        {
+          "id": "C01-L-R-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1417
+        },
+        {
+          "id": "C02-S-14",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1372
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-04",
+      "closest_lexical_matches": [
+        {
+          "id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+          "source": "active",
+          "cosine": 0.1093
+        },
+        {
+          "id": "C02-S-08",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1066
+        },
+        {
+          "id": "C02-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1027
+        },
+        {
+          "id": "C02-S-12",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1011
+        },
+        {
+          "id": "74135a00-827b-4c5f-9a7c-b72d076607ee",
+          "source": "active",
+          "cosine": 0.1
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-05",
+      "closest_lexical_matches": [
+        {
+          "id": "C01-L-B-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.2223
+        },
+        {
+          "id": "C01-L-B-05",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1879
+        },
+        {
+          "id": "fac997ca-5035-4573-929c-38c5a010b701",
+          "source": "active",
+          "cosine": 0.1772
+        },
+        {
+          "id": "C02-S-10",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.17
+        },
+        {
+          "id": "C02-S-06",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1412
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-06",
+      "closest_lexical_matches": [
+        {
+          "id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+          "source": "active",
+          "cosine": 0.1329
+        },
+        {
+          "id": "0f42f5e4-1703-416f-863a-e46b511b19d8",
+          "source": "active",
+          "cosine": 0.1162
+        },
+        {
+          "id": "C01-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1143
+        },
+        {
+          "id": "C02-L-R-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1127
+        },
+        {
+          "id": "3b9a1aa5-09ba-4bb9-b3c9-c8033791974c",
+          "source": "active",
+          "cosine": 0.1076
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-07",
+      "closest_lexical_matches": [
+        {
+          "id": "C02-S-06",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1097
+        },
+        {
+          "id": "1babc919-9400-4599-8b87-fdca1602b19e",
+          "source": "active",
+          "cosine": 0.1036
+        },
+        {
+          "id": "C02-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1009
+        },
+        {
+          "id": "C02-L-B-01",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0927
+        },
+        {
+          "id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+          "source": "active",
+          "cosine": 0.0918
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-08",
+      "closest_lexical_matches": [
+        {
+          "id": "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b",
+          "source": "active",
+          "cosine": 0.2525
+        },
+        {
+          "id": "C02-S-09",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1162
+        },
+        {
+          "id": "C01-S-07",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0929
+        },
+        {
+          "id": "C01-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0912
+        },
+        {
+          "id": "e0bbdf96-ca93-4f07-a4a1-199cd25ae427",
+          "source": "active",
+          "cosine": 0.0813
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-09",
+      "closest_lexical_matches": [
+        {
+          "id": "adac68bb-5fd6-4cae-90c6-576985ca3df1",
+          "source": "active",
+          "cosine": 0.2401
+        },
+        {
+          "id": "b9cc48a1-8a44-44d5-820d-71f8955e5281",
+          "source": "active",
+          "cosine": 0.1433
+        },
+        {
+          "id": "6a004186-77cd-415b-bf4f-8cd631a9c1d6",
+          "source": "active",
+          "cosine": 0.1276
+        },
+        {
+          "id": "C02-L-G-02",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1215
+        },
+        {
+          "id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+          "source": "active",
+          "cosine": 0.1069
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-10",
+      "closest_lexical_matches": [
+        {
+          "id": "a0bea5a2-24a4-4f40-8bea-d1090df652d5",
+          "source": "active",
+          "cosine": 0.1069
+        },
+        {
+          "id": "C02-S-15",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1032
+        },
+        {
+          "id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+          "source": "active",
+          "cosine": 0.0892
+        },
+        {
+          "id": "C01-L-R-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0826
+        },
+        {
+          "id": "fac997ca-5035-4573-929c-38c5a010b701",
+          "source": "active",
+          "cosine": 0.0821
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-11",
+      "closest_lexical_matches": [
+        {
+          "id": "C02-L-B-01",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1346
+        },
+        {
+          "id": "c5e34cf0-bcbe-4a13-b7ec-b93ba6559df8",
+          "source": "active",
+          "cosine": 0.0967
+        },
+        {
+          "id": "1babc919-9400-4599-8b87-fdca1602b19e",
+          "source": "active",
+          "cosine": 0.0954
+        },
+        {
+          "id": "adac68bb-5fd6-4cae-90c6-576985ca3df1",
+          "source": "active",
+          "cosine": 0.0939
+        },
+        {
+          "id": "C02-S-06",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0916
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-S-12",
+      "closest_lexical_matches": [
+        {
+          "id": "C02-S-05",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1095
+        },
+        {
+          "id": "C02-S-09",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0985
+        },
+        {
+          "id": "C01-L-B-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0931
+        },
+        {
+          "id": "C02-S-10",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0869
+        },
+        {
+          "id": "C02-S-13",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.0865
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-L-R-01",
+      "closest_lexical_matches": [
+        {
+          "id": "90dc1f5e-f00c-4c49-bf94-5f4c8de94975",
+          "source": "active",
+          "cosine": 0.2309
+        },
+        {
+          "id": "94495f50-2c0b-4df5-89be-1233fd84ee62",
+          "source": "active",
+          "cosine": 0.1789
+        },
+        {
+          "id": "2defbffe-826b-42a3-a027-dcfc98677739",
+          "source": "active",
+          "cosine": 0.1781
+        },
+        {
+          "id": "c4485883-d8d7-44e9-996e-4f819726516e",
+          "source": "active",
+          "cosine": 0.1726
+        },
+        {
+          "id": "878213b1-fed4-4fb2-b056-be5439af77e3",
+          "source": "active",
+          "cosine": 0.1521
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-L-B-01",
+      "closest_lexical_matches": [
+        {
+          "id": "94495f50-2c0b-4df5-89be-1233fd84ee62",
+          "source": "active",
+          "cosine": 0.1747
+        },
+        {
+          "id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+          "source": "active",
+          "cosine": 0.1681
+        },
+        {
+          "id": "C01-L-R-01",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1282
+        },
+        {
+          "id": "C01-L-B-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.1281
+        },
+        {
+          "id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+          "source": "active",
+          "cosine": 0.1275
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-L-Y-01",
+      "closest_lexical_matches": [
+        {
+          "id": "edc39e05-a151-4cbc-8d29-60ffeec35c2d",
+          "source": "active",
+          "cosine": 0.2288
+        },
+        {
+          "id": "7d345f7b-6c63-429d-981c-857b2af2fb58",
+          "source": "active",
+          "cosine": 0.1747
+        },
+        {
+          "id": "4043bf30-62cb-4968-ba6e-85c7a554d894",
+          "source": "active",
+          "cosine": 0.1473
+        },
+        {
+          "id": "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b",
+          "source": "active",
+          "cosine": 0.146
+        },
+        {
+          "id": "0309c2cb-91b4-4ac4-936f-051fd9a9c18c",
+          "source": "active",
+          "cosine": 0.1436
+        }
+      ]
+    },
+    {
+      "proposal_id": "C03-L-G-01",
+      "closest_lexical_matches": [
+        {
+          "id": "C02-S-03",
+          "source": "owner_reviewed_candidate",
+          "cosine": 0.2237
+        },
+        {
+          "id": "e0bbdf96-ca93-4f07-a4a1-199cd25ae427",
+          "source": "active",
+          "cosine": 0.2177
+        },
+        {
+          "id": "6cbf5dfd-cb2e-4f14-ac91-982c113f59ee",
+          "source": "active",
+          "cosine": 0.1482
+        },
+        {
+          "id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+          "source": "active",
+          "cosine": 0.1203
+        },
+        {
+          "id": "092ef69e-a476-4451-a770-a879e8723fae",
+          "source": "active",
+          "cosine": 0.1194
+        }
+      ]
+    }
+  ],
+  "pre_review_rejections": [
+    {
+      "draft_id": "C03-DRAFT-REJECT-01",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "A delayed trip forces a new plan.",
+      "basis": "Duplicates the disruption architecture already present in C01-S-03, C02-S-03, and C02-S-08."
+    },
+    {
+      "draft_id": "C03-DRAFT-REJECT-02",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "Friends cannot agree on a restaurant.",
+      "basis": "Duplicates the stalled group-choice architecture in C01-S-07 and C02-S-15."
+    },
+    {
+      "draft_id": "C03-DRAFT-REJECT-03",
+      "reason": "REDUNDANT_DO_NOT_ADD",
+      "summary": "Missing directions before assembling something.",
+      "basis": "Duplicates incomplete-instruction and evidence-before-action content already represented by active questions and C01-L-G-01."
+    }
+  ],
+  "production_impact": "NONE"
+}
