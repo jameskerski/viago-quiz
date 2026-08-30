@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_REVIEW_REQUIRED_NOT_RUNTIME_ELIGIBLE",
+  "source_commit": "63095d920c655b9c65dc9e761efb5e71b945d32d",
+  "source_package": "data/v2-proposals/cohort-01-polished-candidates.json",
+  "quality_rule": "VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1",
+  "revision_count": 3,
+  "unchanged_candidate_count": 13,
+  "runtime_impact": {
+    "active_questions_changed": 0,
+    "questions_activated": 0,
+    "scoring_changed": false,
+    "selector_changed": false,
+    "cohort_02_generated": false
+  },
+  "revisions": [
+    {
+      "proposal_id": "C01-L-Y-02",
+      "question_type": "LIKERT",
+      "question": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward.",
+      "intended_mapping": "yellow",
+      "desirability_balance": "Both hearing people before the decision and moving ahead with later feedback are considerate, workable choices; the distinction is Yellow preference for voice and inclusion before closure."
+    },
+    {
+      "proposal_id": "C01-S-01",
+      "question_type": "SINGLE_SELECT",
+      "question": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+      "options": [
+        {"label": "Set a workable first direction and coordinate the next action", "mapping": "red"},
+        {"label": "Generate a few fast possibilities and rally people around the most promising one", "mapping": "blue"},
+        {"label": "Check the immediate effects on people and coordinate the support they will need", "mapping": "yellow"},
+        {"label": "Verify the critical facts and define a reliable first response", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color",
+      "desirability_balance": "Every option makes a useful contribution under time pressure; preference separates direction, possibility-generation, people support, and factual reliability."
+    },
+    {
+      "proposal_id": "C01-S-07",
+      "question_type": "SINGLE_SELECT",
+      "question": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?",
+      "options": [
+        {"label": "Narrow the workable choices and recommend one so the group can get going", "mapping": "red"},
+        {"label": "Offer a fresh possibility that could bring some energy back to the group", "mapping": "blue"},
+        {"label": "Look for the choice that best fits the group’s shared mood and preferences", "mapping": "yellow"},
+        {"label": "Compare time, cost, and logistics and suggest the most practical fit", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color",
+      "desirability_balance": "All four options help the group reasonably; Yellow expresses relational fit and harmony without implying that the other options exclude or disregard anyone."
+    }
+  ]
+}

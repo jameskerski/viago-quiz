@@ -1,0 +1,20 @@
+{
+  "rule_id": "VIAGO_RESPONSE_DESIRABILITY_BALANCE_V1",
+  "status": "OWNER_GOVERNED_ACTIVE",
+  "effective_date": "2026-08-30",
+  "scope": "candidate_item_writing_and_review",
+  "runtime_authority": false,
+  "rule": "Responses must be approximately equally competent, ethical, mature, socially acceptable, and useful in the stated situation. Selection or agreement should reveal natural preference or motivation rather than the obviously responsible, kind, intelligent, decisive, or fun response.",
+  "single_select_test": [
+    "Each color option is a reasonable response to the stated situation.",
+    "No option wins primarily by sounding more competent, ethical, mature, socially acceptable, or useful.",
+    "The options differ principally in underlying color motivation or priority.",
+    "Removing the color labels does not reveal an obvious good or bad answer."
+  ],
+  "likert_test": [
+    "Agreement does not amount to endorsing an obvious virtue or professional competency.",
+    "The statement exposes a legitimate preference, motive, cost, or tradeoff.",
+    "A mature person of another color could reasonably disagree."
+  ],
+  "relationship_to_color_model": "This is an item-quality governance rule. It does not modify VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0 or promote any evidence class."
+}
