@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { V2OfficialLogo } from '@/components/v2/V2Shell';
 
 export default function V2AdminLoginPage() {
   const router = useRouter();
@@ -32,11 +33,11 @@ export default function V2AdminLoginPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#050812] px-6 py-10 text-white">
+    <main className="v2-page min-h-screen px-6 py-10 text-white"><div className="v2-ambient" aria-hidden /><div className="relative">
       <div className="mx-auto flex min-h-[80vh] max-w-lg items-center">
         <section className="w-full rounded-3xl border border-white/10 bg-white/[0.04] p-7 shadow-2xl sm:p-9">
           <div className="mb-8 flex items-center justify-between">
-            <img src="/viago-logo.svg" alt="VIAGO" className="h-8 w-auto" />
+            <V2OfficialLogo className="!h-12" />
             <Link href="/v2" className="text-sm text-white/45 hover:text-white/80">← Back</Link>
           </div>
 
@@ -69,6 +70,6 @@ export default function V2AdminLoginPage() {
           </form>
         </section>
       </div>
-    </main>
+    </div></main>
   );
 }
