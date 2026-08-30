@@ -1,107 +1,41 @@
 import Link from 'next/link';
+import { ColorOrb, V2Shell } from '@/components/v2/V2Shell';
 import { getCompletedAssessmentCount } from '@/lib/v2/analytics';
 
-const personalityTeasers = [
-  { label: 'RED', word: 'Drive', className: 'border-red-400/30 text-red-300' },
-  { label: 'BLUE', word: 'Connect', className: 'border-blue-400/30 text-blue-300' },
-  { label: 'YELLOW', word: 'Care', className: 'border-yellow-300/30 text-yellow-200' },
-  { label: 'GREEN', word: 'Understand', className: 'border-green-400/30 text-green-300' },
-];
+export const dynamic = 'force-dynamic';
 
 export default async function V2LandingPage() {
-  let completedCount: number | null = null;
-  try {
-    completedCount = await getCompletedAssessmentCount();
-  } catch {
-    completedCount = null;
-  }
+  const completedCount = await getCompletedAssessmentCount().catch(() => null);
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#050812] text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(91,73,255,.2),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(16,147,255,.13),transparent_26%),radial-gradient(circle_at_65%_85%,rgba(236,72,153,.09),transparent_30%)]" />
-
-      <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-6 py-7 sm:px-10 lg:px-14">
-        <header className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/viago-logo.svg" alt="VIAGO" className="h-8 w-auto" />
-            <span className="hidden text-xs font-semibold uppercase tracking-[0.26em] text-white/55 sm:inline">
-              Personality
-            </span>
+    <V2Shell action={<Link href="/v2/admin/login" aria-label="Admin settings" className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/[0.035] text-white/40 transition hover:border-white/25 hover:text-white/80">⚙</Link>}>
+      <section className="grid flex-1 items-center gap-12 py-12 lg:grid-cols-[1.08fr_.92fr] lg:py-16">
+        <div className="v2-enter">
+          <div className="mb-6 inline-flex items-center rounded-full border border-violet-300/20 bg-violet-400/[0.07] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-violet-200">A clearer way to understand yourself</div>
+          <h1 className="max-w-4xl text-[clamp(2.85rem,6.2vw,5.9rem)] font-semibold leading-[.98] tracking-[-.055em]">
+            Discover your natural personality. <span className="bg-gradient-to-r from-white via-white to-violet-300 bg-clip-text text-transparent">Unlock your potential.</span>
+          </h1>
+          <p className="mt-7 max-w-2xl text-base leading-7 text-white/58 sm:text-xl sm:leading-8">This is not a test of right or wrong. It is a practical look at how you decide, connect, adapt, and move through the world.</p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <Link href="/v2/quiz?lang=en" className="v2-primary-button">Start in English <span className="ml-3">→</span></Link>
+            <Link href="/v2/quiz?lang=es" className="inline-flex min-h-[52px] items-center justify-center rounded-[14px] border border-white/12 bg-white/[0.045] px-6 font-semibold text-white/78 transition hover:border-white/25 hover:bg-white/[0.075]">Comenzar en Español</Link>
           </div>
-
-          <Link
-            href="/v2/admin/login"
-            aria-label="Admin settings"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.035] text-white/40 transition hover:border-white/20 hover:text-white/80"
-          >
-            <span aria-hidden>⚙</span>
-          </Link>
-        </header>
-
-        <section className="grid flex-1 items-center gap-12 py-14 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
-          <div>
-            <div className="mb-6 inline-flex items-center rounded-full border border-violet-400/20 bg-violet-400/[0.07] px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-violet-200">
-              VIAGO Personality Quiz · V2
-            </div>
-
-            <h1 className="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
-              Discover how you&apos;re naturally wired.
-            </h1>
-
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/62 sm:text-xl">
-              A practical personality experience built around how you make decisions, connect with people,
-              handle change, and get things done.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-4">
-              <Link
-                href="/quiz"
-                className="rounded-xl bg-violet-600 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_14px_60px_rgba(124,58,237,.35)] transition hover:bg-violet-500"
-              >
-                Start the quiz →
-              </Link>
-              <span className="text-sm text-white/45">50 questions · English / Español</span>
-            </div>
-
-            <div className="mt-10 flex items-center gap-3 text-sm text-white/45">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-              {completedCount === null ? (
-                <span>Live completion counter is activating with the V2 analytics foundation.</span>
-              ) : (
-                <span><strong className="font-semibold text-white/75">{completedCount.toLocaleString()}</strong> completed personality assessments</span>
-              )}
-            </div>
+          <div className="mt-10 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
+            <Stat value="50" label="thoughtfully selected questions" />
+            <Stat value="2" label="languages available" />
+            <Stat value={completedCount === null ? '—' : completedCount.toLocaleString()} label="completed assessments" wide />
           </div>
-
-          <div className="relative">
-            <div className="absolute -inset-8 rounded-[2.5rem] bg-gradient-to-br from-violet-500/10 via-transparent to-blue-500/10 blur-2xl" />
-            <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.035] p-5 shadow-2xl backdrop-blur sm:p-7">
-              <div className="grid grid-cols-2 gap-4">
-                {personalityTeasers.map((item) => (
-                  <div
-                    key={item.label}
-                    className={`min-h-40 rounded-2xl border bg-black/20 p-5 ${item.className}`}
-                  >
-                    <div className="text-xs font-bold tracking-[0.24em] opacity-70">{item.label}</div>
-                    <div className="mt-12 text-2xl font-semibold tracking-tight">{item.word}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 rounded-2xl border border-white/10 bg-black/20 p-5">
-                <p className="text-sm leading-6 text-white/55">
-                  No color is better than another. The goal is to understand the tendencies you naturally bring
-                  into decisions, relationships, leadership, and everyday life.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <footer className="flex flex-col justify-between gap-3 border-t border-white/8 py-5 text-xs text-white/35 sm:flex-row">
-          <span>VIAGO Personality Quiz</span>
-          <span>V2 foundation · public experience remains isolated from current production until acceptance</span>
-        </footer>
-      </div>
-    </main>
+        </div>
+        <div className="v2-enter relative mx-auto flex w-full max-w-xl items-center justify-center py-5 lg:justify-end">
+          <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(125,72,255,.22),transparent_61%)] blur-2xl" />
+          <ColorOrb labels={{ red: 'Drive', blue: 'Connect', yellow: 'Care', green: 'Understand' }} />
+        </div>
+      </section>
+      <footer className="flex flex-col justify-between gap-2 border-t border-white/[0.07] py-5 text-xs text-white/32 sm:flex-row"><span>VIAGO Personality Quiz</span><span>Private V2 preview · English / Español</span></footer>
+    </V2Shell>
   );
+}
+
+function Stat({ value, label, wide = false }: { value: string; label: string; wide?: boolean }) {
+  return <div className={`rounded-2xl border border-white/[0.09] bg-white/[0.035] px-4 py-4 ${wide ? 'col-span-2 sm:col-span-1' : ''}`}><strong className="block text-xl text-white/90">{value}</strong><span className="mt-1 block text-[11px] leading-4 text-white/40">{label}</span></div>;
 }
