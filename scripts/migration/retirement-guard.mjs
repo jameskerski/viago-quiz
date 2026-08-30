@@ -9,10 +9,9 @@ export function assertArchivedMigrationAuthorized({ source = false, target = fal
   }
 
   if (source) {
-    const sourceUrl = process.env.QUIZ_SOURCE_URL || "";
-    if (!sourceUrl.includes("zkmkenhziznafbgmcayp.supabase.co")) {
-      throw new Error("Archived source must be the historical rollback project zkmkenhziznafbgmcayp.");
-    }
+    throw new Error(
+      "The historical VIAGO source project was permanently retired. Use the immutable OWNER archive only in a separately authorized isolated recovery."
+    );
   }
 
   if (target) {

@@ -12,6 +12,6 @@ applications:
     owned_schema: viago_quiz
     historical_rollback_project_ref: zkmkenhziznafbgmcayp
     historical_rollback_schema: public
-    historical_rollback_status: retirement_pending; archive_only; not authoritative
+    historical_rollback_status: retired_2026-08-29; archive_only; project deleted; not authoritative
 temporary_resources:
   required_fields: [owner, purpose, created_at, expires_at, cleanup_rule]

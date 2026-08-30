@@ -18,12 +18,12 @@ Do not execute without separate hosted-change authorization.
 9. Smoke test English and Spanish: language/start, 50 questions, 25/25 composition, stable question/option order, answer persistence, finish/result, tie-break/result descriptions, direct result retrieval, and recovery behavior.
 10. Monitor API 4xx/5xx, function/database errors, latency, attempt creation, assignment count, answer completion, and result distribution.
 
-## Rollback
+## Historical rollback (retired 2026-08-29)
 
-Rollback immediately for any material score/result mismatch; assignment not exactly 50 or 25/25; translation/order loss; elevated start/answer/finish failure rate; cross-domain access; target integrity error; or unacceptable latency/error regression.
+The former standalone rollback project `zkmkenhziznafbgmcayp` was permanently deleted after the authorized retirement gate. It is no longer a deployable rollback destination, and its credential was destroyed. Historical records are preserved only in the immutable OWNER retirement archive with disposition `ARCHIVE_ONLY_DO_NOT_MERGE`.
 
-Action: freeze quiz writes, point Vercel variables back to the unchanged standalone URL/key with schema `public`, redeploy the known-good production commit, and smoke test. Retrieve the server-side rollback key only from canonical credential-registry identity `viago_rollback_replacement` (macOS Keychain service `PCS.SUPABASE.VIAGO_ROLLBACK`, account `viago_rollback_replacement`); never place it in Git or a plaintext local environment file. Do not delete target rows. Identify attempts whose `created_at` falls between target cutover and rollback; export those attempts, assignments, orders, and answers as a reconciliation bundle. Because writes were single-authority, these are the only divergent records. Decide after incident review whether to import them into the standalone source; never overwrite same-PK historical answers automatically.
+Any future recovery requires a separately authorized isolated restoration from that archive. Never restore into or overwrite canonical production automatically.
 
 ## Retirement gates
 
-The standalone project cannot be retired until all are true: approved production soak; final count/hash and sampled-result parity; no Vercel environment references; no application/site/embed references; no unresolved production errors; rollback window complete; reconciliation bundles resolved; owner acceptance. When authorized, pause first, observe through an additional window, retain export/manifests, and delete only under a separate destructive-action approval.
+The retirement gates were completed and OWNER-authorized deletion occurred on 2026-08-29. Preserve the immutable export/manifests permanently unless OWNER separately authorizes destruction.
