@@ -1,0 +1,213 @@
+{
+  "model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "semantic_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "owner_approval": {
+    "approved": false,
+    "approved_at": null,
+    "approval_reference": null
+  },
+  "created_at": "2026-08-30",
+  "runtime_authority": false,
+  "governance": {
+    "questions_define_model": false,
+    "future_change_rule": "After OWNER approval, semantic changes require a new model version; approved versions are immutable.",
+    "scoring_rule": "Only HISTORICALLY_ESTABLISHED and OWNER_GOVERNED claims may become scoring authority after separate OWNER approval and implementation authorization.",
+    "supported_inference_rule": "SUPPORTED_INFERENCE may guide research and review but is not scoring authority.",
+    "not_established_rule": "NOT_ESTABLISHED claims must not be used for scoring or stated as VIAGO doctrine."
+  },
+  "evidence_classes": [
+    "HISTORICALLY_ESTABLISHED",
+    "OWNER_GOVERNED",
+    "SUPPORTED_INFERENCE",
+    "NOT_ESTABLISHED"
+  ],
+  "evidence_provenance": {
+    "LEGACY_V1_RESULT_NARRATIVES": {
+      "priority": 1,
+      "references": ["app/quiz/page.tsx:132-255", "/Users/jameskerski/Documents/ChatGPT/yest/app/quiz/page.tsx:131-254", "git:f44ae0f:app/quiz/page.tsx"],
+      "normalized_narrative_sha256": "61e52a132a9855117d44fb9399e6075c981584eca4ca664a485095594aa5ef1e"
+    },
+    "OWNER_COLOR_INTERPRETATION_2026_08_30": {
+      "priority": 2,
+      "reference": "OWNER direction preserved in docs/v2/legacy-color-result-evidence-review.md"
+    },
+    "ACCEPTED_CONSISTENT_CONTENT": {
+      "priority": 3,
+      "references": ["app/results/[sessionId]/page.tsx", "lib/v2/publicContent.ts", "lib/spanishResultDescriptions.ts", "docs/spanish-result-descriptions-review.md"]
+    },
+    "COLOR_EVIDENCE_AUDIT_68BE918": {
+      "priority": 4,
+      "references": ["docs/v2/legacy-color-result-evidence-review.md", "data/v2-proposals/legacy-color-model-comparison.json"]
+    }
+  },
+  "universal_virtue_rule": {
+    "claim": "A desirable or mature behavior is not independently personality-color evidence. A valid item must expose an underlying preference, motive, or meaningful tradeoff.",
+    "evidence_class": "OWNER_GOVERNED",
+    "behaviors": ["kindness", "fairness", "courage", "competence", "responsibility", "honesty", "accountability", "accuracy", "emotional maturity", "good communication"]
+  },
+  "colors": {
+    "red": {
+      "identity": {
+        "canonical_color": "Red",
+        "role": {"claim": "Driver / Achiever", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        "essence": {"claim": "Restores progress and secures outcomes through decisive ownership and momentum.", "evidence_class": "HISTORICALLY_ESTABLISHED"}
+      },
+      "core_preferences": [{"claim": "Progress, competition, achievement, visible results, and momentum.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "core_motivators": [{"claim": "Challenge, targets, scoreboards, standards, responsibility, recognition, and the chance to advance.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "observable_indicators": [
+        {"claim": "Chooses a workable direction quickly when delay threatens progress.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Takes charge, pushes deadlines, negotiates, or pursues milestones.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Direct or assertive behavior supports Red only when the motive is progress, decision ownership, accountability, or outcome.", "evidence_class": "OWNER_GOVERNED"}
+      ],
+      "patterns": {
+        "decision": [{"claim": "Prefers timely closure and an actionable direction over prolonged deliberation when progress is at stake.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "communication": [{"claim": "Tends toward concise, candid, outcome-focused communication.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "work_execution": [{"claim": "Organizes effort around goals, milestones, standards, deadlines, and visible results.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "social_relationship": [{"claim": "May prioritize the objective over relational comfort and may value visible competence or recognition.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "leadership_followership": [{"claim": "Readily assumes responsibility, direction, and pace under pressure.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "conflict": [{"claim": "May become blunt, impatient, dismissive, or steamroll others when pursuing closure or a win.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "pressure_stress": [{"claim": "Narrows attention to the objective, decides quickly, and assumes control.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "change": [{"claim": "Supports a change when it restores progress or improves results.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "risk": [{"claim": "Has an inherently aggressive or high risk appetite.", "evidence_class": "NOT_ESTABLISHED"}],
+        "planning_organization": [{"claim": "Uses enough structure to drive action, milestones, and completion rather than exhaustive preparation.", "evidence_class": "SUPPORTED_INFERENCE"}]
+      },
+      "strengths": [{"claim": "Decisiveness, momentum, ownership, ambition, responsibility, and result focus.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "overextensions": [{"claim": "Impatience, premature closure, weak listening after deciding, dismissiveness, status sensitivity, and steamrolling.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "growth_behaviors": [{"claim": "Listening longer, developing people, consulting others, and preserving morale without abandoning outcome focus.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "nonqualifying_behaviors": [{"claim": "Directness, courage, competence, holding a leadership title, meeting a deadline, or fixing a mistake do not independently score Red.", "evidence_class": "OWNER_GOVERNED"}],
+      "confusion_zones": [
+        {"with": "blue", "claim": "Both may act quickly; Red seeks outcome and control, while Blue seeks novelty, energy, or possibility.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "yellow", "claim": "Both may lead or advocate; Red prioritizes progress or accountability, while Yellow prioritizes people, trust, or values.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "green", "claim": "Both may appear competent and responsible; Red favors pace and closure, while Green favors evidence and coherence.", "evidence_class": "SUPPORTED_INFERENCE"}
+      ]
+    },
+    "blue": {
+      "identity": {
+        "canonical_color": "Blue",
+        "role": {"claim": "Energizer / Explorer", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        "essence": {"claim": "Creates energy and connection through expression, novelty, freedom, and shared experience.", "evidence_class": "HISTORICALLY_ESTABLISHED"}
+      },
+      "core_preferences": [{"claim": "Experience, connection, stimulation, novelty, freedom, fun, and a socially rich life.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "core_motivators": [{"claim": "Interaction, new possibilities, spontaneous experience, variety, and freedom from micromanagement or dull routine.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "observable_indicators": [
+        {"claim": "Brings expressive energy, optimism, conversation, or enthusiasm to a group.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Engages readily with novelty and may lose energy when work becomes repetitive.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Connects broadly and responds strongly to social energy and shared experience.", "evidence_class": "HISTORICALLY_ESTABLISHED"}
+      ],
+      "patterns": {
+        "decision": [{"claim": "May follow interest, intuition, possibility, or spontaneous momentum and may undercheck consequences.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "communication": [{"claim": "Tends to be outgoing, expressive, animated, conversational, and responsive to audience energy.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "work_execution": [{"claim": "Starts readily and creatively but may need simple structure to sustain repetitive follow-through.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "social_relationship": [{"claim": "Builds broad connection through openness, warmth, interaction, and shared experience.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "leadership_followership": [{"claim": "Energizes participation and follows leaders who are engaging, kind, and not micromanaging.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "conflict": [{"claim": "Habitually lightens, reframes, or avoids sustained conflict.", "evidence_class": "NOT_ESTABLISHED"}],
+        "pressure_stress": [{"claim": "May improvise and generate alternatives but can become scattered or impulsive as constraints tighten.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "change": [{"claim": "Often experiences change as novelty and possibility, while repetitive implementation can reduce energy.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "risk": [{"claim": "May accept poorly examined risk through impulsivity or attraction to possibility; a general risk appetite is not established.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "planning_organization": [{"claim": "Prefers flexible direction and room to improvise, with simple systems supporting consistency.", "evidence_class": "HISTORICALLY_ESTABLISHED"}]
+      },
+      "strengths": [{"claim": "Social energy, optimism, adaptability, creativity, expression, connection, and possibility generation.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "overextensions": [{"claim": "Impulsivity, time blindness, distraction, novelty dependence, and weak repetitive follow-through.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "growth_behaviors": [{"claim": "Using simple systems, checking consequences, sustaining repetitive work, and completing after initial excitement fades.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "nonqualifying_behaviors": [{"claim": "Friendliness, storytelling skill, public-speaking skill, creativity, adaptability, or enjoying people do not independently score Blue.", "evidence_class": "OWNER_GOVERNED"}],
+      "confusion_zones": [
+        {"with": "red", "claim": "Both create momentum; Blue seeks energy, freedom, and possibility, while Red seeks outcome, control, and closure.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "yellow", "claim": "Both are people-oriented; Blue favors breadth, expression, and shared experience, while Yellow favors loyalty, safety, and durable trust.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "green", "claim": "Both may be creative or articulate; Blue favors spontaneous possibility, while Green favors coherent evidence and structure.", "evidence_class": "SUPPORTED_INFERENCE"}
+      ]
+    },
+    "yellow": {
+      "identity": {
+        "canonical_color": "Yellow",
+        "role": {"claim": "Stabilizer / Loyalist", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        "essence": {"claim": "Protects people, values, trust, harmony, and durable relationships through loyal support.", "evidence_class": "HISTORICALLY_ESTABLISHED"}
+      },
+      "core_preferences": [{"claim": "Values, fairness, ethical treatment, relationships, harmony, safety, support, loyalty, and belonging.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "core_motivators": [{"claim": "People feeling safe, included, supported, treated fairly, and able to depend on one another.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "observable_indicators": [
+        {"claim": "Notices exclusion, discomfort, unmet support needs, or relational strain.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Invests loyally, carries relational load, and supports people or continuity over time.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Quieter, compassionate, caring, supportive, or softer behavior is Yellow evidence only when connected to the underlying loyalty, harmony, values, or support preference.", "evidence_class": "OWNER_GOVERNED"}
+      ],
+      "patterns": {
+        "decision": [{"claim": "Considers people impact, trust, commitments, fairness, and values before closure.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "communication": [{"claim": "Tends toward attentive, caring, tactful, supportive, and inclusive communication.", "evidence_class": "OWNER_GOVERNED"}],
+        "work_execution": [{"claim": "Works dependably to stabilize the group and may quietly carry more than a fair share.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "social_relationship": [{"claim": "Builds durable trust, honors commitments, protects belonging, and may remain loyal too long.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "leadership_followership": [{"claim": "Does not characteristically crave authority, cares who leads and how, and may hesitate when leadership requires relational rupture.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "conflict": [{"claim": "Often avoids or softens conflict, self-silences, or enables behavior to preserve harmony.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "pressure_stress": [{"claim": "Carries relational load and preserves continuity, sometimes until resentment, exhaustion, or burnout develops.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "change": [{"claim": "Evaluates change primarily through its effect on people, commitments, safety, and continuity.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "risk": [{"claim": "Has a generally low risk appetite or accepts personal risk to protect the group.", "evidence_class": "NOT_ESTABLISHED"}],
+        "planning_organization": [{"claim": "Prefers dependable coordination and sustainable pace because others rely on the plan.", "evidence_class": "SUPPORTED_INFERENCE"}]
+      },
+      "strengths": [{"claim": "Loyalty, dependability, support, integrity, emotional intuition, inclusion, trust building, and values awareness.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "overextensions": [{"claim": "Conflict avoidance, self-silencing, enabling, overcommitment, reluctance to lead, resentment, and burnout.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "growth_behaviors": [
+        {"claim": "Direct conversations, assertiveness, courageous confrontation, healthy boundaries, and leading through relational discomfort are learnable growth behaviors, not core Yellow scoring evidence.", "evidence_class": "OWNER_GOVERNED"}
+      ],
+      "nonqualifying_behaviors": [
+        {"claim": "Directness, confrontation, advocacy, boundary-setting, kindness, fairness, compassion, or support do not independently score Yellow.", "evidence_class": "OWNER_GOVERNED"},
+        {"claim": "Introversion, quietness, and soft-spokenness do not independently score Yellow and can also occur in other colors, especially Green.", "evidence_class": "OWNER_GOVERNED"}
+      ],
+      "confusion_zones": [
+        {"with": "red", "claim": "Both may advocate or lead; Yellow protects people, fairness, and trust, while Red restores progress, accountability, or outcome.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "blue", "claim": "Both value people; Yellow favors depth, loyalty, and safety, while Blue favors breadth, expression, and shared experience.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "green", "claim": "Both may be quiet or stability-seeking; Yellow protects relational continuity, while Green protects clarity, evidence, and predictability.", "evidence_class": "OWNER_GOVERNED"}
+      ]
+    },
+    "green": {
+      "identity": {
+        "canonical_color": "Green",
+        "role": {"claim": "Analyst / Planner", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        "essence": {"claim": "Creates clarity and dependable systems through evidence, logic, precision, structure, and risk awareness.", "evidence_class": "HISTORICALLY_ESTABLISHED"}
+      },
+      "core_preferences": [{"claim": "Clarity, logic, evidence, accuracy, predictability, defined systems, and clear expectations.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "core_motivators": [{"claim": "Understanding the problem, checking assumptions, reducing uncertainty, and building a reliable process or plan.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "observable_indicators": [
+        {"claim": "Researches, analyzes, questions assumptions, asks for specifics, and checks consequences before commitment.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Creates structure, guidelines, plans, processes, standards, or quality checks.", "evidence_class": "HISTORICALLY_ESTABLISHED"},
+        {"claim": "Accepts a speed cost when verification, coherence, or risk control matters.", "evidence_class": "SUPPORTED_INFERENCE"}
+      ],
+      "patterns": {
+        "decision": [{"claim": "Defines the problem, separates evidence from assumption, and seeks enough information before commitment.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "communication": [{"claim": "Tends toward measured, precise, question-led, qualification-aware communication focused on specifics.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "work_execution": [{"claim": "Builds systems, steps, standards, contingencies, and checks for reliable execution.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "social_relationship": [{"claim": "Is inherently socially selective and forms trust mainly through reliability and clear expectations.", "evidence_class": "NOT_ESTABLISHED"}],
+        "leadership_followership": [{"claim": "Leads through expertise, standards, and risk control and follows only when reasoning is explicit.", "evidence_class": "NOT_ESTABLISHED"}],
+        "conflict": [{"claim": "Tends to move toward facts, definitions, evidence, and process during disagreement.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "pressure_stress": [{"claim": "Adds structure and verification but may slow excessively, become rigid, or appear cold or critical.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "change": [{"claim": "Seeks rationale, implications, and an executable transition before supporting change.", "evidence_class": "SUPPORTED_INFERENCE"}],
+        "risk": [{"claim": "Checks downstream effects and reduces avoidable uncertainty before acting.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+        "planning_organization": [{"claim": "Uses plans, defined systems, clear expectations, standards, and quality checks.", "evidence_class": "HISTORICALLY_ESTABLISHED"}]
+      },
+      "strengths": [{"claim": "Analysis, thoroughness, precision, planning, consistency, calm logic, systems thinking, and risk awareness.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "overextensions": [{"claim": "Analysis paralysis, rigidity, excessive certainty-seeking, delay, and appearing cold or critical.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "growth_behaviors": [{"claim": "Acting before every unknown is resolved, tolerating imperfect information, and engaging emotional or relational context.", "evidence_class": "HISTORICALLY_ESTABLISHED"}],
+      "nonqualifying_behaviors": [{"claim": "Accuracy, intelligence, noticing a missing instruction, checking work, being reasonable, or making a careful high-stakes choice do not independently score Green.", "evidence_class": "OWNER_GOVERNED"}],
+      "confusion_zones": [
+        {"with": "red", "claim": "Both may be competent and decisive; Green protects evidence and coherence, while Red protects pace, control, and outcome.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "blue", "claim": "Both may create ideas; Green tests coherence and implications, while Blue expands possibility and energy.", "evidence_class": "SUPPORTED_INFERENCE"},
+        {"with": "yellow", "claim": "Both may be quiet or stability-seeking; Green protects clarity and predictability, while Yellow protects trust and relational continuity.", "evidence_class": "OWNER_GOVERNED"}
+      ]
+    }
+  },
+  "cross_color_discriminator_matrix": [
+    {"surface_behavior": "Acts quickly", "red": "Restore progress, control, or closure", "blue": "Follow novelty, energy, or possibility", "yellow": "Respond to an immediate people/support need", "green": "Act after the evidence threshold is met", "evidence_class": "SUPPORTED_INFERENCE"},
+    {"surface_behavior": "Takes leadership", "red": "Own direction and results", "blue": "Create enthusiasm and participation", "yellow": "Protect people, trust, or values", "green": "Create standards, clarity, or risk control", "evidence_class": "SUPPORTED_INFERENCE"},
+    {"surface_behavior": "Supports another person", "red": "Enable performance or progress", "blue": "Create connection or shared energy", "yellow": "Sustain care, loyalty, fairness, or belonging", "green": "Provide reliable information, structure, or solution", "evidence_class": "SUPPORTED_INFERENCE"},
+    {"surface_behavior": "Challenges a decision", "red": "Improve outcome, pace, ownership, or accountability", "blue": "Keep possibility, freedom, or participation alive", "yellow": "Protect people, fairness, trust, or commitments", "green": "Correct weak evidence, logic, assumptions, or process", "evidence_class": "SUPPORTED_INFERENCE"},
+    {"surface_behavior": "Plans carefully", "red": "Secure the objective and milestones", "blue": "Preserve room for an engaging possibility", "yellow": "Keep commitments dependable for people", "green": "Reduce uncertainty and create a coherent system", "evidence_class": "SUPPORTED_INFERENCE"},
+    {"surface_behavior": "Communicates directly", "red": "Drive closure, progress, or accountability", "blue": "Express energy or an immediate idea", "yellow": "Learned behavior that may protect a relationship but is not Yellow evidence by itself", "green": "State a precise conclusion or correction", "evidence_class": "OWNER_GOVERNED"},
+    {"surface_behavior": "Appears quiet", "red": "No color meaning without motive", "blue": "No color meaning without motive", "yellow": "May accompany supportive/harmony preference but is not evidence alone", "green": "May accompany analysis/observation but is not evidence alone", "evidence_class": "OWNER_GOVERNED"},
+    {"surface_behavior": "Changes course", "red": "Restore results or momentum", "blue": "Pursue novelty or possibility", "yellow": "Protect people, trust, or continuity", "green": "Respond to stronger evidence or a safer plan", "evidence_class": "SUPPORTED_INFERENCE"}
+  ],
+  "runtime_integration": {
+    "imported_by_application": false,
+    "used_by_scoring": false,
+    "used_by_selector": false,
+    "used_by_result_content": false,
+    "used_by_spanish_content": false
+  }
+}
