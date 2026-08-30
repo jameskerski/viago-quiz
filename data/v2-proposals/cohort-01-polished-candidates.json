@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "status": "OWNER_REVIEW_REQUIRED_NOT_RUNTIME_ELIGIBLE",
+  "governing_model_id": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "governing_model_version": "1.0.0",
+  "source_review_commit": "73e36f7142a37e1986df34d7ea80252b8ad2cecb",
+  "source_review": "data/v2-proposals/cohort-01-approved-model-review.json",
+  "owner_decision": {
+    "accepted_baseline": {"KEEP": 5, "REVISE": 10, "REJECT": 8, "NEEDS_OWNER_JUDGMENT": 1},
+    "c01_s_03": {
+      "new_disposition": "REVISE",
+      "research_status": "CONTINUE_RESEARCH",
+      "authority_limit": "Change distinctions may guide this item's research only. They are not independent or general scoring doctrine.",
+      "required_motives": {
+        "red": "restoring progress or results",
+        "blue": "attraction to novelty or possibility",
+        "yellow": "protecting people, commitments, trust, or continuity",
+        "green": "restoring clarity, predictability, evidence, or risk control"
+      }
+    }
+  },
+  "candidate_count": 16,
+  "candidate_composition": {"KEEP": 5, "REVISE": 10, "REVISED_CONTINUE_RESEARCH": 1},
+  "rejected_audit_history": {
+    "preserved": true,
+    "source": "data/v2-proposals/cohort-01-approved-model-review.json",
+    "proposal_ids": ["C01-L-B-01", "C01-L-B-04", "C01-L-Y-01", "C01-L-Y-03", "C01-S-04", "C01-S-05", "C01-S-06", "C01-S-08"]
+  },
+  "runtime_impact": {
+    "active_questions_changed": 0,
+    "questions_activated": 0,
+    "scoring_changed": false,
+    "selector_changed": false,
+    "cohort_02_generated": false
+  },
+  "candidates": [
+    {
+      "proposal_id": "C01-L-R-01",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+      "intended_mapping": "red",
+      "distinction": "Measures Red preference for decision ownership and restored progress over continued consultation."
+    },
+    {
+      "proposal_id": "C01-L-R-02",
+      "review_origin": "KEEP",
+      "question_type": "LIKERT",
+      "question": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+      "intended_mapping": "red",
+      "distinction": "Measures Red preference for reversible action and momentum over complete information."
+    },
+    {
+      "proposal_id": "C01-L-R-03",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "When time is short, I become more direct about the next action, even if the conversation feels abrupt.",
+      "intended_mapping": "red",
+      "distinction": "Measures Red focus on immediate action under pressure rather than directness by itself."
+    },
+    {
+      "proposal_id": "C01-L-R-04",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+      "intended_mapping": "red",
+      "distinction": "Measures Red preference for restoring momentum over perfecting a new plan."
+    },
+    {
+      "proposal_id": "C01-L-R-05",
+      "review_origin": "KEEP",
+      "question_type": "LIKERT",
+      "question": "After I own a mistake, my attention moves quickly to the decision that will get things back on track.",
+      "intended_mapping": "red",
+      "distinction": "Measures Red attention shifting toward the next decision and restored progress."
+    },
+    {
+      "proposal_id": "C01-L-B-02",
+      "review_origin": "KEEP",
+      "question_type": "LIKERT",
+      "question": "In a room where I don’t know anyone, I usually find a natural way into the conversation without waiting to be introduced.",
+      "intended_mapping": "blue",
+      "distinction": "Measures Blue attraction to broad social connection and spontaneous interaction."
+    },
+    {
+      "proposal_id": "C01-L-B-03",
+      "review_origin": "KEEP",
+      "question_type": "LIKERT",
+      "question": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+      "intended_mapping": "blue",
+      "distinction": "Measures Blue attraction to novelty and possibility rather than generic adaptability."
+    },
+    {
+      "proposal_id": "C01-L-B-05",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "In a quiet group, I feel drawn to spark conversation even when there is nothing specific we need to decide.",
+      "intended_mapping": "blue",
+      "distinction": "Measures Blue attraction to conversational energy without a task requirement."
+    },
+    {
+      "proposal_id": "C01-L-Y-02",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "I have trouble supporting a workable group decision when the people most affected had no voice in it, even if reopening it would slow us down.",
+      "intended_mapping": "yellow",
+      "distinction": "Measures Yellow priority for people, voice, and fairness when it costs speed."
+    },
+    {
+      "proposal_id": "C01-L-G-01",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+      "intended_mapping": "green",
+      "distinction": "Measures Green preference for clarity over beginning with an adjustable assumption."
+    },
+    {
+      "proposal_id": "C01-L-G-02",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+      "intended_mapping": "green",
+      "distinction": "Measures Green willingness to trade speed for downstream verification."
+    },
+    {
+      "proposal_id": "C01-L-G-03",
+      "review_origin": "REVISE",
+      "question_type": "LIKERT",
+      "question": "During disagreement, I focus first on separating facts from assumptions, even when others want to settle the issue quickly.",
+      "intended_mapping": "green",
+      "distinction": "Measures Green preference for evidence separation over rapid social closure."
+    },
+    {
+      "proposal_id": "C01-S-01",
+      "review_origin": "REVISE",
+      "question_type": "SINGLE_SELECT",
+      "question": "A time-sensitive problem appears and no one clearly owns it. What gets your attention first?",
+      "options": [
+        {"label": "Choosing the first action and taking responsibility for it", "mapping": "red"},
+        {"label": "Getting people talking so possible responses start to emerge", "mapping": "blue"},
+        {"label": "Finding out who is affected and what they need", "mapping": "yellow"},
+        {"label": "Confirming the facts and narrowing a workable response", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color",
+      "distinction": "Separates first attention toward ownership, possibility, people impact, or factual clarity under time pressure."
+    },
+    {
+      "proposal_id": "C01-S-02",
+      "review_origin": "REVISE",
+      "question_type": "SINGLE_SELECT",
+      "question": "You join a new project and the goal is still vague. What helps you engage first?",
+      "options": [
+        {"label": "Proposing a starting direction we can adjust as we learn", "mapping": "red"},
+        {"label": "Talking through possibilities until an exciting angle emerges", "mapping": "blue"},
+        {"label": "Understanding who depends on the project and which commitments matter", "mapping": "yellow"},
+        {"label": "Clarifying the requirements and what success must include", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color",
+      "distinction": "Separates engagement through direction, possibility, people commitments, or requirements."
+    },
+    {
+      "proposal_id": "C01-S-03",
+      "review_origin": "REVISED_CONTINUE_RESEARCH",
+      "question_type": "SINGLE_SELECT",
+      "question": "A plan you were counting on changes with little warning. What matters most in your first response?",
+      "options": [
+        {"label": "Finding the best available direction so progress does not stall", "mapping": "red"},
+        {"label": "Seeing what new possibilities the change opens up", "mapping": "blue"},
+        {"label": "Protecting the people and commitments affected by the change", "mapping": "yellow"},
+        {"label": "Rebuilding enough clarity to understand what happens next", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color; research-only change distinctions",
+      "distinction": "Separates why the respondent responds to change: progress, possibility, people/commitments, or restored clarity."
+    },
+    {
+      "proposal_id": "C01-S-07",
+      "review_origin": "KEEP",
+      "question_type": "SINGLE_SELECT",
+      "question": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?",
+      "options": [
+        {"label": "Choose one of the workable ideas so we can get going", "mapping": "red"},
+        {"label": "Throw out a fresh idea that gets people excited", "mapping": "blue"},
+        {"label": "Find the option that nobody feels pushed out of", "mapping": "yellow"},
+        {"label": "Compare time, cost, and logistics before recommending one", "mapping": "green"}
+      ],
+      "intended_mapping": "one option per color",
+      "distinction": "Separates a natural contribution of closure, novelty, inclusion, or practical evaluation."
+    }
+  ]
+}
