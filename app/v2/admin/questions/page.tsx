@@ -1,3 +1,5 @@
+import { requireAdminSession } from '@/lib/v2/adminAuth';
+
 const exampleFields = [
   'Question type',
   'Category / dimension',
@@ -8,7 +10,9 @@ const exampleFields = [
   'Publication status',
 ];
 
-export default function V2QuestionEditorPage() {
+export default async function V2QuestionEditorPage() {
+  await requireAdminSession();
+
   return (
     <main className="min-h-screen bg-[#050812] px-6 py-10 text-white">
       <div className="mx-auto max-w-7xl">
@@ -17,7 +21,7 @@ export default function V2QuestionEditorPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">VIAGO V2 Admin</p>
             <h1 className="mt-2 text-4xl font-semibold tracking-tight">Questions & content</h1>
             <p className="mt-2 max-w-3xl text-white/45">
-              This is the editor shell. Live editing remains disabled until the versioned draft/review/publish data model and admin authorization are implemented.
+              Routine content maintenance will live here. Live publication remains guarded by the versioned draft/review/publish model.
             </p>
           </div>
           <a href="/v2/admin" className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white/70">
