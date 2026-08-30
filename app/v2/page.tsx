@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { getCompletedAssessmentCount } from '@/lib/v2/analytics';
 
 const personalityTeasers = [
   { label: 'RED', word: 'Drive', className: 'border-red-400/30 text-red-300' },
@@ -7,7 +8,14 @@ const personalityTeasers = [
   { label: 'GREEN', word: 'Understand', className: 'border-green-400/30 text-green-300' },
 ];
 
-export default function V2LandingPage() {
+export default async function V2LandingPage() {
+  let completedCount: number | null = null;
+  try {
+    completedCount = await getCompletedAssessmentCount();
+  } catch {
+    completedCount = null;
+  }
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#050812] text-white">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(91,73,255,.2),transparent_30%),radial-gradient(circle_at_85%_20%,rgba(16,147,255,.13),transparent_26%),radial-gradient(circle_at_65%_85%,rgba(236,72,153,.09),transparent_30%)]" />
@@ -57,7 +65,11 @@ export default function V2LandingPage() {
 
             <div className="mt-10 flex items-center gap-3 text-sm text-white/45">
               <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-              <span>Completed assessment counter will be connected to canonical production analytics.</span>
+              {completedCount === null ? (
+                <span>Live completion counter is activating with the V2 analytics foundation.</span>
+              ) : (
+                <span><strong className="font-semibold text-white/75">{completedCount.toLocaleString()}</strong> completed personality assessments</span>
+              )}
             </div>
           </div>
 
