@@ -8,7 +8,10 @@ const SESSION_SECONDS = 60 * 60 * 12;
 function configuredPassword() {
   const value = process.env.VIAGO_ADMIN_PASSWORD;
   if (!value) throw new Error('VIAGO_ADMIN_PASSWORD is not configured');
-  return value;
+  // Vercel CLI stdin updates may retain a terminal line break. The governed
+  // credential is a printable shared password, so surrounding whitespace is
+  // configuration transport noise rather than part of its identity.
+  return value.trim();
 }
 
 function digest(value: string) {
