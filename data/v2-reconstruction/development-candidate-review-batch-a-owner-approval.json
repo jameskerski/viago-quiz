@@ -1,0 +1,10 @@
+{
+  "approval_id": "VIAGO_DEVELOPMENT_CANDIDATE_REVIEW_BATCH_A_OWNER_APPROVAL",
+  "approved_commit": "21beacc2fdfc5b5ff00137ddcec3124b27bd3175",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
+  "counts": { "ADMIT": 10, "REVISE": 3, "REPLACE_LEGACY": 11, "DEFER_REDUNDANCY": 4, "RETIRE_CANDIDATE": 0 },
+  "approved_revisions": ["C01-L-R-03", "C01-L-B-02", "C01-L-B-05"],
+  "approved_deferrals": ["C01-L-B-03", "C01-L-G-01", "C02-S-01", "C02-S-08"],
+  "provisional_unique_bank_count": 109,
+  "production_authority": false
+}

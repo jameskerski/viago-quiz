@@ -1,0 +1,1978 @@
+{
+  "manifest_id": "VIAGO_DEVELOPMENT_CANDIDATE_FINAL_REASSESSMENT_BATCH_B",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "counts": {
+    "ADMIT": 13,
+    "REVISE": 0,
+    "REPLACE_LEGACY": 14,
+    "DEFER_REDUNDANCY": 0,
+    "RETIRE_CANDIDATE": 0
+  },
+  "combined_candidate_counts": {
+    "ADMIT": 23,
+    "REVISE": 3,
+    "REPLACE_LEGACY": 25,
+    "DEFER_REDUNDANCY": 4,
+    "RETIRE_CANDIDATE": 0
+  },
+  "critical_counts": {
+    "unique_reconstructed_legacy_questions": 97,
+    "unique_admitted_development_questions": 51,
+    "legacy_identities_replaced_by_development_items": 28,
+    "development_candidates_deferred": 4,
+    "development_candidates_retired": 0,
+    "total_unique_proposed_canonical_bank": 120
+  },
+  "records": [
+    {
+      "batch_position": 1,
+      "candidate_id": "C02-S-13",
+      "cohort": "COHORT_02",
+      "wording": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+      "options": [
+        {
+          "label": "Use the time to make visible progress on something I want to accomplish",
+          "color": "red"
+        },
+        {
+          "label": "Choose something spontaneous, social, or new that feels energizing",
+          "color": "blue"
+        },
+        {
+          "label": "Spend the time in a comfortable way with someone I care about",
+          "color": "yellow"
+        },
+        {
+          "label": "Dive into something I have wanted time to understand properly",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 11,
+          "question_id": "12783d10-ecb1-400c-97bb-edb5a458caef",
+          "current": "I get restless if I’m stuck at home too long without something fun planned."
+        }
+      ],
+      "semantic_family": "unexpected-free-afternoon",
+      "measurement": {
+        "core_traits": [
+          "unexpected",
+          "free",
+          "afternoon"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "free-time-leisure",
+        "situational_tones": [
+          "opportunity",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 11,
+        "question_id": "12783d10-ecb1-400c-97bb-edb5a458caef",
+        "current": "I get restless if I’m stuck at home too long without something fun planned."
+      },
+      "closest_development_candidate": "C03-S-09",
+      "what_unique_value_it_adds": "Adds a positive, obligation-free view of what naturally attracts each color.",
+      "why": "Approved replacement for legacy Question 11 and a rare calm free-time item.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 2,
+      "candidate_id": "C02-S-14",
+      "cohort": "COHORT_02",
+      "wording": "A group receives two credible reports that point toward different decisions. What gets your attention first?",
+      "options": [
+        {
+          "label": "Which decision must be made now to keep the objective moving",
+          "color": "red"
+        },
+        {
+          "label": "Which new explanation or option could connect what the reports reveal",
+          "color": "blue"
+        },
+        {
+          "label": "Which people and commitments would be affected by choosing either direction",
+          "color": "yellow"
+        },
+        {
+          "label": "Which evidence, assumptions, and methods account for the disagreement",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "conflicting-reports",
+      "measurement": {
+        "core_traits": [
+          "conflicting",
+          "reports"
+        ],
+        "behavioral_domain": "problem-framing",
+        "life_context": "team",
+        "situational_tones": [
+          "uncertainty",
+          "competing-alternatives"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 47,
+        "question_id": "505ae241-8349-438d-b8db-d37b51518f95",
+        "current": "With customers/clients, I’m best at…",
+        "similarity": 0.1304
+      },
+      "closest_development_candidate": "C01-L-G-03",
+      "what_unique_value_it_adds": "Adds four-color attention priorities when credible evidence conflicts.",
+      "why": "This is not generic accuracy: it measures decision, synthesis, commitments, and evidence-method attention.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 3,
+      "candidate_id": "C02-S-15",
+      "cohort": "COHORT_02",
+      "wording": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Narrow the choices and recommend the direction most likely to deliver",
+          "color": "red"
+        },
+        {
+          "label": "Explore whether the strongest ideas can create a more exciting possibility",
+          "color": "blue"
+        },
+        {
+          "label": "Look for the direction the group can support and sustain together",
+          "color": "yellow"
+        },
+        {
+          "label": "Define criteria and compare how well each idea meets them",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 4,
+          "question_id": "092ef69e-a476-4451-a770-a879e8723fae",
+          "current": "When a decision needs to be made, I usually…"
+        }
+      ],
+      "semantic_family": "too-many-good-ideas",
+      "measurement": {
+        "core_traits": [
+          "too",
+          "many",
+          "good",
+          "ideas"
+        ],
+        "behavioral_domain": "decision-making",
+        "life_context": "team",
+        "situational_tones": [
+          "opportunity",
+          "competing-alternatives"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 4,
+        "question_id": "092ef69e-a476-4451-a770-a879e8723fae",
+        "current": "When a decision needs to be made, I usually…"
+      },
+      "closest_development_candidate": "C01-S-07",
+      "what_unique_value_it_adds": "Adds balanced convergence behavior when every option is genuinely attractive.",
+      "why": "Approved replacement for legacy Question 4.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 4,
+      "candidate_id": "C02-S-16",
+      "cohort": "COHORT_02",
+      "wording": "You have just moved to an unfamiliar neighborhood. What helps you feel settled first?",
+      "options": [
+        {
+          "label": "Getting the essential tasks handled so daily life is moving",
+          "color": "red"
+        },
+        {
+          "label": "Exploring interesting places and meeting people nearby",
+          "color": "blue"
+        },
+        {
+          "label": "Building a few familiar relationships and comfortable routines",
+          "color": "yellow"
+        },
+        {
+          "label": "Learning the routes, services, schedules, and practical details",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "new-neighborhood-settling",
+      "measurement": {
+        "core_traits": [
+          "new",
+          "neighborhood",
+          "settling"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "unfamiliar-social-situation",
+        "situational_tones": [
+          "new-unfamiliar",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 46,
+        "question_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "current": "Before starting something new, I prefer to…",
+        "similarity": 0.1875
+      },
+      "closest_development_candidate": "C03-S-05",
+      "what_unique_value_it_adds": "Adds ordinary-life settling motives spanning task progress, exploration, belonging, and practical understanding.",
+      "why": "Neighborhood adaptation is a distinct non-work window rather than another generic change response.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 5,
+      "candidate_id": "C02-L-R-01",
+      "cohort": "COHORT_02",
+      "wording": "When a goal is ambitious but reachable, competing against a clear standard brings out my best effort.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 82,
+          "question_id": "878213b1-fed4-4fb2-b056-be5439af77e3",
+          "current": "I push through distractions when there’s a clear goal at stake."
+        }
+      ],
+      "semantic_family": "clear-performance-standard",
+      "measurement": {
+        "core_traits": [
+          "clear",
+          "performance",
+          "standard"
+        ],
+        "behavioral_domain": "achievement-competition",
+        "life_context": "work-business",
+        "situational_tones": [
+          "opportunity",
+          "success-enjoyment"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 82,
+        "question_id": "878213b1-fed4-4fb2-b056-be5439af77e3",
+        "current": "I push through distractions when there’s a clear goal at stake."
+      },
+      "closest_development_candidate": "C03-S-09",
+      "what_unique_value_it_adds": "Adds Red attraction to a clear external performance standard.",
+      "why": "Approved replacement for legacy Question 82.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 6,
+      "candidate_id": "C02-L-R-02",
+      "cohort": "COHORT_02",
+      "wording": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "ambiguous-result-ownership",
+      "measurement": {
+        "core_traits": [
+          "ambiguous",
+          "result",
+          "ownership"
+        ],
+        "behavioral_domain": "leadership-ownership",
+        "life_context": "work-business",
+        "situational_tones": [
+          "uncertainty",
+          "long-term-commitment"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 27,
+        "question_id": "28c5ada7-9157-449c-927b-212170e6296f",
+        "current": "I prefer to think through possible outcomes before committing to a direction.",
+        "similarity": 0.25
+      },
+      "closest_development_candidate": "C01-L-R-01",
+      "what_unique_value_it_adds": "Adds voluntary ownership before roles settle, distinct from restoring a stalled decision.",
+      "why": "This directly strengthens the approved Red–Green ownership-versus-process gap.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 7,
+      "candidate_id": "C02-L-B-01",
+      "cohort": "COHORT_02",
+      "wording": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 83,
+          "question_id": "89253e02-693d-46ea-85a4-c1af38ac9a73",
+          "current": "I struggle to stay motivated when everything feels too structured."
+        }
+      ],
+      "semantic_family": "emergent-project-path",
+      "measurement": {
+        "core_traits": [
+          "emergent",
+          "project",
+          "path"
+        ],
+        "behavioral_domain": "change-risk",
+        "life_context": "personal-project",
+        "situational_tones": [
+          "opportunity",
+          "change"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 83,
+        "question_id": "89253e02-693d-46ea-85a4-c1af38ac9a73",
+        "current": "I struggle to stay motivated when everything feels too structured."
+      },
+      "closest_development_candidate": "C03-L-B-01",
+      "what_unique_value_it_adds": "Adds positive Blue energy from shaping an evolving path.",
+      "why": "Approved replacement for legacy Question 83 and avoids deficit framing.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 8,
+      "candidate_id": "C02-L-B-02",
+      "cohort": "COHORT_02",
+      "wording": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 57,
+          "question_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+          "current": "If things feel dull or repetitive, I start looking for something more exciting to do."
+        }
+      ],
+      "semantic_family": "refresh-working-routine",
+      "measurement": {
+        "core_traits": [
+          "refresh",
+          "working",
+          "routine"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "routine-stability",
+          "opportunity"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 57,
+        "question_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+        "current": "If things feel dull or repetitive, I start looking for something more exciting to do."
+      },
+      "closest_development_candidate": "C02-L-B-01",
+      "what_unique_value_it_adds": "Adds proactive freshness inside a functioning routine rather than inability to tolerate routine.",
+      "why": "Approved replacement for legacy Question 57.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 9,
+      "candidate_id": "C02-L-Y-01",
+      "cohort": "COHORT_02",
+      "wording": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+      "options": [],
+      "intended_mapping": "yellow",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 64,
+          "question_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+          "current": "I tend to slow down decisions if I sense tension or discomfort between people."
+        }
+      ],
+      "semantic_family": "trust-before-quick-closure",
+      "measurement": {
+        "core_traits": [
+          "trust",
+          "quick",
+          "closure"
+        ],
+        "behavioral_domain": "conflict",
+        "life_context": "friendship",
+        "situational_tones": [
+          "disagreement",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 64,
+        "question_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+        "current": "I tend to slow down decisions if I sense tension or discomfort between people."
+      },
+      "closest_development_candidate": "C01-L-Y-02",
+      "what_unique_value_it_adds": "Adds harmony-before-closure where either substantive option could work.",
+      "why": "Approved replacement for legacy Question 64 and balances both responses.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 10,
+      "candidate_id": "C02-L-Y-02",
+      "cohort": "COHORT_02",
+      "wording": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+      "options": [],
+      "intended_mapping": "yellow",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 18,
+          "question_id": "1babc919-9400-4599-8b87-fdca1602b19e",
+          "current": "I enjoy bringing people together and helping everyone feel connected."
+        },
+        {
+          "corpus_position": 55,
+          "question_id": "5f17485f-373e-455d-af0b-70ec6485943b",
+          "current": "I’m cautious about who I let into my inner circle."
+        },
+        {
+          "corpus_position": 143,
+          "question_id": "f2f7dddd-ce94-41e5-b0ba-385e1dad769d",
+          "current": "I’m loyal to people even when it would be easier to walk away."
+        }
+      ],
+      "semantic_family": "depth-over-new-connections",
+      "measurement": {
+        "core_traits": [
+          "depth",
+          "new",
+          "connections"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "close-relationship",
+        "situational_tones": [
+          "ordinary-calm",
+          "long-term-commitment"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 18,
+        "question_id": "1babc919-9400-4599-8b87-fdca1602b19e",
+        "current": "I enjoy bringing people together and helping everyone feel connected."
+      },
+      "closest_development_candidate": "C03-L-Y-01",
+      "what_unique_value_it_adds": "Adds dependable relational depth against broader connection novelty.",
+      "why": "One candidate replaces legacy Questions 18, 55, and 143 and must enter only once.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 11,
+      "candidate_id": "C02-L-G-01",
+      "cohort": "COHORT_02",
+      "wording": "When several options could work, I feel more confident after comparing the likely consequences than after choosing on instinct.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 27,
+          "question_id": "28c5ada7-9157-449c-927b-212170e6296f",
+          "current": "I prefer to think through possible outcomes before committing to a direction."
+        }
+      ],
+      "semantic_family": "consequences-over-instinct",
+      "measurement": {
+        "core_traits": [
+          "consequences",
+          "instinct"
+        ],
+        "behavioral_domain": "decision-making",
+        "life_context": "everyday-decision",
+        "situational_tones": [
+          "uncertainty",
+          "competing-alternatives"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 27,
+        "question_id": "28c5ada7-9157-449c-927b-212170e6296f",
+        "current": "I prefer to think through possible outcomes before committing to a direction."
+      },
+      "closest_development_candidate": "C01-L-G-02",
+      "what_unique_value_it_adds": "Adds consequence comparison before choosing among viable alternatives.",
+      "why": "Approved replacement for legacy Question 27.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 12,
+      "candidate_id": "C02-L-G-02",
+      "cohort": "COHORT_02",
+      "wording": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 23,
+          "question_id": "22bfd6a8-b54b-442c-8ec6-888f9cefe1d0",
+          "current": "I like having systems in place so I don’t have to guess what to do next."
+        }
+      ],
+      "semantic_family": "repeatability-over-improvisation",
+      "measurement": {
+        "core_traits": [
+          "repeatability",
+          "improvisation"
+        ],
+        "behavioral_domain": "organization-process",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "routine-stability",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 23,
+        "question_id": "22bfd6a8-b54b-442c-8ec6-888f9cefe1d0",
+        "current": "I like having systems in place so I don’t have to guess what to do next."
+      },
+      "closest_development_candidate": "C03-L-G-01",
+      "what_unique_value_it_adds": "Adds positive attraction to repeatable process and consistent output.",
+      "why": "Approved replacement for legacy Question 23 and avoids anxiety/organization shorthand.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 13,
+      "candidate_id": "C03-S-01",
+      "cohort": "COHORT_03",
+      "wording": "A personal project you chose has been sitting unfinished for several weeks. What would most naturally draw you back into it?",
+      "options": [
+        {
+          "label": "Choosing the next visible milestone and deciding to finish it",
+          "color": "red"
+        },
+        {
+          "label": "Finding a fresh angle that makes the project interesting again",
+          "color": "blue"
+        },
+        {
+          "label": "Reconnecting with why I chose the project and what continuing it means to me",
+          "color": "yellow"
+        },
+        {
+          "label": "Working out why progress stopped and creating a more reliable approach",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "return-to-self-chosen-project",
+      "measurement": {
+        "core_traits": [
+          "return",
+          "to",
+          "self",
+          "chosen",
+          "project"
+        ],
+        "behavioral_domain": "follow-through-recovery",
+        "life_context": "personal-project",
+        "situational_tones": [
+          "recovery",
+          "long-term-commitment"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 4,
+        "question_id": "092ef69e-a476-4451-a770-a879e8723fae",
+        "current": "When a decision needs to be made, I usually…",
+        "similarity": 0.1739
+      },
+      "closest_development_candidate": "C03-L-R-01",
+      "what_unique_value_it_adds": "Adds four governed reasons for returning to an abandoned self-chosen project.",
+      "why": "This materially strengthens independent follow-through and recovery outside work.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 14,
+      "candidate_id": "C03-S-02",
+      "cohort": "COHORT_03",
+      "wording": "You are beginning a hobby that has several ways to learn it. Which starting point feels most natural?",
+      "options": [
+        {
+          "label": "Pick a concrete result I want to achieve and practice toward it",
+          "color": "red"
+        },
+        {
+          "label": "Try several techniques and follow whichever one captures my interest",
+          "color": "blue"
+        },
+        {
+          "label": "Learn alongside someone so the experience and encouragement are shared",
+          "color": "yellow"
+        },
+        {
+          "label": "Understand the fundamentals and build skill in a logical sequence",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 37,
+          "question_id": "3bb2ff0b-1bac-4bc0-a4d4-5e75387751f0",
+          "current": "I learn best when…"
+        }
+      ],
+      "semantic_family": "entry-into-unfamiliar-hobby",
+      "measurement": {
+        "core_traits": [
+          "entry",
+          "unfamiliar",
+          "hobby"
+        ],
+        "behavioral_domain": "learning",
+        "life_context": "hobbies",
+        "situational_tones": [
+          "new-unfamiliar",
+          "opportunity"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 37,
+        "question_id": "3bb2ff0b-1bac-4bc0-a4d4-5e75387751f0",
+        "current": "I learn best when…"
+      },
+      "closest_development_candidate": "C03-S-06",
+      "what_unique_value_it_adds": "Adds color-specific learning entry in an ordinary hobby.",
+      "why": "Approved replacement for legacy Question 37 and essential because learning remains thin.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 15,
+      "candidate_id": "C03-S-03",
+      "cohort": "COHORT_03",
+      "wording": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?",
+      "options": [
+        {
+          "label": "Which option solves the main need most directly",
+          "color": "red"
+        },
+        {
+          "label": "Which option offers the most enjoyable or flexible experience",
+          "color": "blue"
+        },
+        {
+          "label": "Which option best fits the people and routines it will support",
+          "color": "yellow"
+        },
+        {
+          "label": "Which option has the strongest evidence of dependable long-term value",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "household-purchase-priority",
+      "measurement": {
+        "core_traits": [
+          "household",
+          "purchase",
+          "priority"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "money-purchasing",
+        "situational_tones": [
+          "ordinary-calm",
+          "competing-alternatives"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 27,
+        "question_id": "28c5ada7-9157-449c-927b-212170e6296f",
+        "current": "I prefer to think through possible outcomes before committing to a direction.",
+        "similarity": 0.1538
+      },
+      "closest_development_candidate": "C02-S-09",
+      "what_unique_value_it_adds": "Adds frequent-use household purchasing across need, experience, people/routines, and evidence.",
+      "why": "This is a distinct ordinary-life allocation window with balanced reasonable options.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 16,
+      "candidate_id": "C03-S-04",
+      "cohort": "COHORT_03",
+      "wording": "A family tradition still matters, but its old format no longer fits everyone’s lives. What matters most as you help shape its next version?",
+      "options": [
+        {
+          "label": "Choose a workable version that keeps the tradition happening",
+          "color": "red"
+        },
+        {
+          "label": "Give it a new form that people will be excited to experience",
+          "color": "blue"
+        },
+        {
+          "label": "Preserve the sense of connection and meaning people rely on",
+          "color": "yellow"
+        },
+        {
+          "label": "Understand the practical constraints and create a version with a predictable structure",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 61,
+          "question_id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+          "current": "I hesitate to make changes if they could negatively affect others."
+        }
+      ],
+      "semantic_family": "tradition-that-no-longer-fits",
+      "measurement": {
+        "core_traits": [
+          "tradition",
+          "no",
+          "longer",
+          "fits"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "family",
+        "situational_tones": [
+          "change",
+          "long-term-commitment"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 61,
+        "question_id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+        "current": "I hesitate to make changes if they could negatively affect others."
+      },
+      "closest_development_candidate": "C03-L-Y-01",
+      "what_unique_value_it_adds": "Adds family-tradition evolution across outcome, novelty, meaning, and dependable structure.",
+      "why": "Approved replacement for legacy Question 61.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 17,
+      "candidate_id": "C03-S-05",
+      "cohort": "COHORT_03",
+      "wording": "At a gathering where you know almost no one, what kind of interaction are you most naturally drawn toward?",
+      "options": [
+        {
+          "label": "A focused conversation that leads to a useful idea or next step",
+          "color": "red"
+        },
+        {
+          "label": "Several lively conversations that open up new people and possibilities",
+          "color": "blue"
+        },
+        {
+          "label": "A comfortable conversation where mutual trust can begin",
+          "color": "yellow"
+        },
+        {
+          "label": "A thoughtful conversation where we explore a subject in depth",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 33,
+          "question_id": "34202350-60a2-45e1-b4b8-bf0fa471d020",
+          "current": "I prefer meaningful conversations over small talk at social events."
+        }
+      ],
+      "semantic_family": "preferred-new-social-contact",
+      "measurement": {
+        "core_traits": [
+          "preferred",
+          "new",
+          "social",
+          "contact"
+        ],
+        "behavioral_domain": "social-interaction",
+        "life_context": "unfamiliar-social-situation",
+        "situational_tones": [
+          "new-unfamiliar",
+          "social-setting"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 33,
+        "question_id": "34202350-60a2-45e1-b4b8-bf0fa471d020",
+        "current": "I prefer meaningful conversations over small talk at social events."
+      },
+      "closest_development_candidate": "C02-S-16",
+      "what_unique_value_it_adds": "Adds type of interaction sought, not simple extraversion or social position.",
+      "why": "Approved replacement for legacy Question 33.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 18,
+      "candidate_id": "C03-S-06",
+      "cohort": "COHORT_03",
+      "wording": "A favorite recipe keeps turning out differently even though each version is usable. What would you be most interested in trying next?",
+      "options": [
+        {
+          "label": "Choose the result I want and change the factor most likely to improve it",
+          "color": "red"
+        },
+        {
+          "label": "Experiment with a new variation and see what enjoyable result emerges",
+          "color": "blue"
+        },
+        {
+          "label": "Adapt it around the tastes and experience of the people sharing it",
+          "color": "yellow"
+        },
+        {
+          "label": "Change one factor at a time so I can understand what produces each result",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "inconsistent-favorite-recipe",
+      "measurement": {
+        "core_traits": [
+          "inconsistent",
+          "favorite",
+          "recipe"
+        ],
+        "behavioral_domain": "problem-solving",
+        "life_context": "household",
+        "situational_tones": [
+          "failure-mistake",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 61,
+        "question_id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+        "current": "I hesitate to make changes if they could negatively affect others.",
+        "similarity": 0.1481
+      },
+      "closest_development_candidate": "C03-S-02",
+      "what_unique_value_it_adds": "Adds experimentation, outcome, shared experience, and controlled learning in a low-stakes problem.",
+      "why": "The everyday recipe setting supplies rare calm problem-solving evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 19,
+      "candidate_id": "C03-S-07",
+      "cohort": "COHORT_03",
+      "wording": "You have one open day in a place you have wanted to visit. How would you most naturally shape the day?",
+      "options": [
+        {
+          "label": "Choose the experience that matters most and build the day around completing it",
+          "color": "red"
+        },
+        {
+          "label": "Keep plenty of room to follow whatever looks interesting once I am there",
+          "color": "blue"
+        },
+        {
+          "label": "Shape the day around a pace and experiences everyone can enjoy together",
+          "color": "yellow"
+        },
+        {
+          "label": "Research the route, timing, and key details so the day works smoothly",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "open-day-travel-planning",
+      "measurement": {
+        "core_traits": [
+          "open",
+          "day",
+          "travel",
+          "planning"
+        ],
+        "behavioral_domain": "planning",
+        "life_context": "travel",
+        "situational_tones": [
+          "opportunity",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 99,
+        "question_id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+        "current": "If I want to improve, I…",
+        "similarity": 0.1579
+      },
+      "closest_development_candidate": "C03-L-G-01",
+      "what_unique_value_it_adds": "Adds four-color day-shaping behavior in positive travel rather than disruption.",
+      "why": "Single-select format provides useful parallel measurement beside the Green–Blue Likert tradeoff.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 20,
+      "candidate_id": "C03-S-08",
+      "cohort": "COHORT_03",
+      "wording": "A friend is choosing between two good opportunities and asks you to talk it through. Which question are you most naturally inclined to explore?",
+      "options": [
+        {
+          "label": "Which opportunity moves you closer to the result you want most?",
+          "color": "red"
+        },
+        {
+          "label": "Which opportunity opens the experiences and possibilities that energize you?",
+          "color": "blue"
+        },
+        {
+          "label": "Which opportunity best fits the relationships and commitments you want to maintain?",
+          "color": "yellow"
+        },
+        {
+          "label": "Which opportunity holds up best when you compare the evidence and consequences?",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "friend-facing-two-good-options",
+      "measurement": {
+        "core_traits": [
+          "friend",
+          "facing",
+          "two",
+          "good",
+          "options"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "friendship",
+        "situational_tones": [
+          "competing-alternatives",
+          "ordinary-calm"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 49,
+        "question_id": "53a98bef-2fdf-4619-a09c-b4e02847b10c",
+        "current": "What motivates me most?",
+        "similarity": 0.1667
+      },
+      "closest_development_candidate": "C03-S-12",
+      "what_unique_value_it_adds": "Adds what each color asks another person to consider when both choices are good.",
+      "why": "This directly strengthens RESPONSE_TO_OTHERS and preference-in-others evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 21,
+      "candidate_id": "C03-S-09",
+      "cohort": "COHORT_03",
+      "wording": "You join a casual activity that people enjoy in very different ways. Which part is most likely to keep you coming back?",
+      "options": [
+        {
+          "label": "Having a clear challenge and seeing myself improve",
+          "color": "red"
+        },
+        {
+          "label": "The energy, variety, and memorable moments around the activity",
+          "color": "blue"
+        },
+        {
+          "label": "The dependable connection that develops with the people involved",
+          "color": "yellow"
+        },
+        {
+          "label": "Understanding the patterns and becoming more consistent over time",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 26,
+          "question_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+          "current": "I’d rather be…"
+        }
+      ],
+      "semantic_family": "casual-recreation-reward",
+      "measurement": {
+        "core_traits": [
+          "casual",
+          "recreation",
+          "reward"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "recreation",
+        "situational_tones": [
+          "success-enjoyment",
+          "routine-stability"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 26,
+        "question_id": "27df6129-27a7-42e5-8cbb-12fb5007190a",
+        "current": "I’d rather be…"
+      },
+      "closest_development_candidate": "C02-S-13",
+      "what_unique_value_it_adds": "Adds the reward that sustains repeat engagement in recreation.",
+      "why": "Approved replacement for legacy Question 26 and distinct from a one-time free-afternoon attraction.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 22,
+      "candidate_id": "C03-S-10",
+      "cohort": "COHORT_03",
+      "wording": "You and a sibling remember an important family event differently, but no practical decision depends on agreeing. What would you most naturally want from the conversation?",
+      "options": [
+        {
+          "label": "A clear conclusion about the main point so the disagreement can close",
+          "color": "red"
+        },
+        {
+          "label": "A lively exchange that leaves room for both versions of the story",
+          "color": "blue"
+        },
+        {
+          "label": "Understanding how each version connects to what matters to each of us",
+          "color": "yellow"
+        },
+        {
+          "label": "Clarity about what can be verified and what genuinely remains uncertain",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 15,
+          "question_id": "186c99bb-b666-4a64-a85e-955e84388dcb",
+          "current": "Your natural reaction to conflict is:"
+        }
+      ],
+      "semantic_family": "different-memories-without-required-decision",
+      "measurement": {
+        "core_traits": [
+          "different",
+          "memories",
+          "without",
+          "required",
+          "decision"
+        ],
+        "behavioral_domain": "conflict",
+        "life_context": "family",
+        "situational_tones": [
+          "disagreement",
+          "ordinary-calm"
+        ],
+        "orientation": "INTERPERSONAL",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 15,
+        "question_id": "186c99bb-b666-4a64-a85e-955e84388dcb",
+        "current": "Your natural reaction to conflict is:"
+      },
+      "closest_development_candidate": "C02-S-14",
+      "what_unique_value_it_adds": "Adds conflict preference when no practical closure is required.",
+      "why": "Approved replacement for legacy Question 15 and avoids making resolution universally necessary.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 23,
+      "candidate_id": "C03-S-12",
+      "cohort": "COHORT_03",
+      "wording": "Someone asks for your opinion about something you know only partly. What response feels most natural?",
+      "options": [
+        {
+          "label": "Give the clearest useful recommendation I can and state the main limitation",
+          "color": "red"
+        },
+        {
+          "label": "Share the possibilities that seem most interesting and invite them to explore",
+          "color": "blue"
+        },
+        {
+          "label": "Ask what matters to them so the opinion fits their situation",
+          "color": "yellow"
+        },
+        {
+          "label": "Check the important facts before offering a firm recommendation",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "partly-known-recommendation",
+      "measurement": {
+        "core_traits": [
+          "partly",
+          "known",
+          "recommendation"
+        ],
+        "behavioral_domain": "communication-expression",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "uncertainty",
+          "ordinary-calm"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 5,
+        "question_id": "0a24caa5-8413-49e7-a56f-9999f4e50879",
+        "current": "If someone is upset with me, I tend to…",
+        "similarity": 0.2381
+      },
+      "closest_development_candidate": "C03-S-08",
+      "what_unique_value_it_adds": "Adds how each color responds when asked for an opinion under partial knowledge.",
+      "why": "This is a strong non-crisis communication and epistemic-humility tradeoff.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 24,
+      "candidate_id": "C03-L-R-01",
+      "cohort": "COHORT_03",
+      "wording": "When a personal goal stops feeling exciting, I would rather keep working toward the result I chose than replace it with a more interesting goal.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "finish-versus-replace-personal-goal",
+      "measurement": {
+        "core_traits": [
+          "finish",
+          "replace",
+          "personal",
+          "goal"
+        ],
+        "behavioral_domain": "follow-through-recovery",
+        "life_context": "personal-project",
+        "situational_tones": [
+          "long-term-commitment",
+          "recovery"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 28,
+        "question_id": "29efc415-38e9-408a-aa7b-4d46f6996c20",
+        "current": "I feel responsible for keeping things moving when others in the group hesitate.",
+        "similarity": 0.1786
+      },
+      "closest_development_candidate": "C03-S-01",
+      "what_unique_value_it_adds": "Adds persistence toward a chosen result after excitement fades.",
+      "why": "Likert format supplies useful parallel Red–Blue follow-through measurement.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 25,
+      "candidate_id": "C03-L-B-01",
+      "cohort": "COHORT_03",
+      "wording": "When something captures my interest, I feel more energized turning it into a lively exchange of reactions and possibilities than exploring it privately at first.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "expressive-possibility-exchange",
+      "measurement": {
+        "core_traits": [
+          "expressive",
+          "possibility",
+          "exchange"
+        ],
+        "behavioral_domain": "communication-expression",
+        "life_context": "free-time-leisure",
+        "situational_tones": [
+          "opportunity",
+          "success-enjoyment"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 83,
+        "question_id": "89253e02-693d-46ea-85a4-c1af38ac9a73",
+        "current": "I struggle to stay motivated when everything feels too structured.",
+        "similarity": 0.25
+      },
+      "closest_development_candidate": "C02-L-B-01",
+      "what_unique_value_it_adds": "Adds Blue energy from expressive exchange rather than private exploration or sociability alone.",
+      "why": "This fills positive non-work communication without deficit framing.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 26,
+      "candidate_id": "C03-L-Y-01",
+      "cohort": "COHORT_03",
+      "wording": "When deciding whether to leave a familiar group for a more appealing opportunity, I give more weight to the relationships I have built than to what the new experience might offer.",
+      "options": [],
+      "intended_mapping": "yellow",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "known-belonging-versus-new-opportunity",
+      "measurement": {
+        "core_traits": [
+          "known",
+          "belonging",
+          "new",
+          "opportunity"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "close-relationship",
+        "situational_tones": [
+          "competing-alternatives",
+          "long-term-commitment"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 139,
+        "question_id": "edc39e05-a151-4cbc-8d29-60ffeec35c2d",
+        "current": "I’m more likely to say yes to something new than stick with what’s familiar.",
+        "similarity": 0.1923
+      },
+      "closest_development_candidate": "C02-L-Y-02",
+      "what_unique_value_it_adds": "Adds a consequential belonging-versus-opportunity tradeoff beyond social-circle depth.",
+      "why": "This is useful parallel Yellow measurement with a genuine attractive alternative.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 27,
+      "candidate_id": "C03-L-G-01",
+      "cohort": "COHORT_03",
+      "wording": "For a personal trip, I would rather settle the route and key details early than preserve maximum freedom to decide as I go.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "travel-structure-versus-freedom",
+      "measurement": {
+        "core_traits": [
+          "travel",
+          "structure",
+          "freedom"
+        ],
+        "behavioral_domain": "planning",
+        "life_context": "travel",
+        "situational_tones": [
+          "ordinary-calm",
+          "opportunity"
+        ],
+        "orientation": "SELF_PREFERENCE",
+        "pairwise_discrimination": [
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 23,
+        "question_id": "22bfd6a8-b54b-442c-8ec6-888f9cefe1d0",
+        "current": "I like having systems in place so I don’t have to guess what to do next.",
+        "similarity": 0.125
+      },
+      "closest_development_candidate": "C03-S-07",
+      "what_unique_value_it_adds": "Adds an explicit Green–Blue planning tradeoff in personal travel.",
+      "why": "Likert format complements the four-way travel scenario and strengthens pairwise evidence.",
+      "runtime_authority": false
+    }
+  ],
+  "combined_coverage": {
+    "unique_item_count": 120,
+    "format_balance": {
+      "LIKERT": 73,
+      "SINGLE_SELECT": 47
+    },
+    "color_opportunities": {
+      "red": 65,
+      "blue": 69,
+      "yellow": 61,
+      "green": 66
+    },
+    "core_traits": {
+      "achievement": 11,
+      "action": 1,
+      "activity": 1,
+      "adaptability": 1,
+      "afternoon": 1,
+      "ambiguous": 2,
+      "assumptions": 1,
+      "belonging": 4,
+      "budget": 1,
+      "casual": 1,
+      "change": 1,
+      "choice": 1,
+      "chosen": 1,
+      "clarity": 7,
+      "clear": 1,
+      "closure": 2,
+      "coherence": 2,
+      "coherent-understanding": 2,
+      "colleague": 1,
+      "commitment": 2,
+      "community": 1,
+      "complaint": 1,
+      "complete": 1,
+      "conflicting": 1,
+      "connection": 1,
+      "connections": 1,
+      "consequences": 1,
+      "consistency": 1,
+      "contact": 1,
+      "continuity": 8,
+      "creating": 1,
+      "creativity": 1,
+      "customer": 2,
+      "day": 1,
+      "decision": 4,
+      "decisive-ownership": 4,
+      "defined-systems": 2,
+      "depth": 1,
+      "detail": 1,
+      "different": 1,
+      "direct": 1,
+      "disagreement": 1,
+      "downstream": 1,
+      "emergent": 1,
+      "energy": 4,
+      "engagement": 1,
+      "enjoyment": 1,
+      "entry": 2,
+      "errors": 1,
+      "evidence": 7,
+      "exchange": 1,
+      "experience": 4,
+      "exploratory": 1,
+      "expression": 5,
+      "expressive": 1,
+      "facing": 1,
+      "facts": 1,
+      "favorite": 1,
+      "feedback": 1,
+      "finish": 1,
+      "fits": 1,
+      "fix": 1,
+      "flexibility": 1,
+      "free": 1,
+      "freedom": 7,
+      "friend": 2,
+      "goal": 2,
+      "good": 2,
+      "harmony": 1,
+      "hobby": 1,
+      "household": 2,
+      "idea": 1,
+      "ideas": 1,
+      "improvisation": 1,
+      "in": 1,
+      "inconsistent": 1,
+      "instinct": 1,
+      "interaction": 2,
+      "known": 2,
+      "limited": 1,
+      "longer": 1,
+      "loyalty": 4,
+      "many": 1,
+      "memories": 1,
+      "minor": 1,
+      "missed": 1,
+      "mistake": 1,
+      "momentum": 2,
+      "motive": 1,
+      "movement": 1,
+      "mutual-support": 1,
+      "neighborhood": 1,
+      "new": 5,
+      "no": 1,
+      "norms": 1,
+      "novelty": 4,
+      "open": 1,
+      "opportunity": 1,
+      "options": 1,
+      "overwhelmed": 1,
+      "ownership": 3,
+      "partly": 1,
+      "path": 1,
+      "perfect": 1,
+      "performance": 1,
+      "personal": 1,
+      "planning": 2,
+      "possibility": 16,
+      "post": 1,
+      "predictability": 8,
+      "preferred": 1,
+      "pressure": 1,
+      "priority": 1,
+      "problem": 1,
+      "problem-framing": 1,
+      "progress": 5,
+      "project": 2,
+      "purchase": 1,
+      "quality": 1,
+      "quick": 2,
+      "recipe": 1,
+      "recommendation": 1,
+      "recovery": 2,
+      "recreation": 1,
+      "recurring": 1,
+      "refresh": 1,
+      "relational-continuity": 3,
+      "relational-depth": 1,
+      "relational-safety": 1,
+      "repeatability": 1,
+      "replace": 1,
+      "replacement": 1,
+      "reports": 1,
+      "request": 1,
+      "required": 1,
+      "resolution": 1,
+      "responsibility-for-results": 1,
+      "restore": 2,
+      "result": 1,
+      "results": 1,
+      "return": 1,
+      "reward": 1,
+      "risk": 2,
+      "risk-awareness": 2,
+      "root-cause": 2,
+      "rough": 1,
+      "routine": 2,
+      "selection": 1,
+      "self": 1,
+      "settling": 1,
+      "shared": 2,
+      "shared-experience": 1,
+      "social": 3,
+      "social-energy": 1,
+      "spontaneity": 3,
+      "stability-security": 2,
+      "stalled": 1,
+      "standard": 1,
+      "stimulation": 2,
+      "structure": 7,
+      "support": 8,
+      "supporting": 1,
+      "team": 2,
+      "time": 1,
+      "to": 2,
+      "too": 1,
+      "tool": 1,
+      "tradition": 1,
+      "travel": 3,
+      "trust": 7,
+      "two": 1,
+      "under": 1,
+      "unexpected": 2,
+      "unfamiliar": 1,
+      "unowned": 1,
+      "upside": 1,
+      "urgent": 2,
+      "vague": 1,
+      "visible-results": 10,
+      "voice": 1,
+      "without": 1,
+      "workable": 1,
+      "working": 2
+    },
+    "behavioral_domains": {
+      "achievement-competition": 8,
+      "change-risk": 11,
+      "communication-expression": 8,
+      "conflict": 5,
+      "decision-making": 9,
+      "follow-through-recovery": 9,
+      "general-preference": 10,
+      "leadership-ownership": 5,
+      "learning": 2,
+      "organization-process": 8,
+      "planning": 8,
+      "problem-framing": 4,
+      "problem-solving": 3,
+      "relationships-support": 13,
+      "social-interaction": 9,
+      "stability-security": 2,
+      "work-execution": 6
+    },
+    "contexts": {
+      "close-relationship": 6,
+      "community": 3,
+      "everyday-decision": 5,
+      "family": 2,
+      "free-time-leisure": 3,
+      "friendship": 6,
+      "general-cross-context": 42,
+      "hobbies": 2,
+      "household": 4,
+      "money-purchasing": 4,
+      "personal-project": 6,
+      "recreation": 3,
+      "team": 7,
+      "travel": 3,
+      "unfamiliar-social-situation": 7,
+      "work-business": 17
+    },
+    "orientations": {
+      "INTERPERSONAL": 5,
+      "PREFERENCE_IN_OTHERS": 4,
+      "RESPONSE_TO_OTHERS": 20,
+      "SELF_ACTION": 8,
+      "SELF_ATTENTION": 36,
+      "SELF_PREFERENCE": 47
+    },
+    "tones": {
+      "change": 7,
+      "competing-alternatives": 29,
+      "constrained-resources": 3,
+      "disagreement": 6,
+      "failure-mistake": 9,
+      "long-term-commitment": 19,
+      "new-unfamiliar": 9,
+      "opportunity": 25,
+      "ordinary-calm": 39,
+      "pressure": 14,
+      "recovery": 6,
+      "routine-stability": 8,
+      "social-setting": 11,
+      "success-enjoyment": 13,
+      "uncertainty": 25
+    },
+    "semantic_family_depth": {
+      "ambiguous-customer-request": 1,
+      "ambiguous-result-ownership": 1,
+      "attraction-to-personal-goal": 1,
+      "casual-recreation-reward": 1,
+      "clarity-after-unexpected-change": 1,
+      "clear-performance-standard": 1,
+      "clear-plan-versus-improvisation": 1,
+      "commitment-preserving-transition": 1,
+      "commitment-versus-more-appealing-option": 1,
+      "conflicting-reports": 1,
+      "connection-as-task-motivation": 1,
+      "consequences-over-instinct": 1,
+      "constraints-before-entry": 1,
+      "contribution-after-useful-group-input": 1,
+      "creating-shared-social-energy": 1,
+      "decision-ownership-to-restore-progress": 1,
+      "depth-over-new-connections": 1,
+      "different-memories-without-required-decision": 1,
+      "direct-action-under-time-pressure": 1,
+      "discretionary-resource-allocation": 1,
+      "downstream-risk-before-quick-fix": 1,
+      "earning-for-relational-support": 1,
+      "emergent-project-path": 1,
+      "energy-drain-from-blocked-core-motive": 1,
+      "energy-from-reasonable-new-option": 1,
+      "energy-from-unpredictable-experience": 1,
+      "engagement-with-vague-goal": 1,
+      "engaging-process-versus-outcome-alone": 1,
+      "entry-into-unfamiliar-hobby": 1,
+      "evidence-before-reliance": 1,
+      "experience-spending-versus-future-purpose": 1,
+      "exploratory-social-entry": 1,
+      "expressive-immediacy-versus-private-processing": 1,
+      "expressive-possibility-exchange": 1,
+      "facts-versus-assumptions-in-disagreement": 1,
+      "finish-versus-replace-personal-goal": 1,
+      "first-focus-after-shared-plan-fails": 1,
+      "first-foundation-in-complicated-update": 1,
+      "first-motive-after-unexpected-change": 1,
+      "first-need-from-constructive-feedback": 1,
+      "first-priority-after-system-failure": 1,
+      "first-priority-when-delegating": 1,
+      "flexibility-over-mapped-detail": 1,
+      "focus-when-results-depend-on-self": 1,
+      "follow-through-when-relied-upon": 1,
+      "freedom-to-adjust-working-approach": 1,
+      "friend-facing-two-good-options": 1,
+      "household-purchase-priority": 1,
+      "ideal-workday-environment": 1,
+      "inconsistent-favorite-recipe": 1,
+      "introducing-novelty-in-casual-social-time": 1,
+      "known-belonging-versus-new-opportunity": 1,
+      "leisure-satisfaction-from-completion": 1,
+      "limited-community-budget": 1,
+      "missed-travel-connection": 1,
+      "most-rewarding-progress": 1,
+      "motivation-by-visible-progress": 1,
+      "motivation-from-visible-results-and-rewards": 1,
+      "motivation-in-friendly-competition": 1,
+      "mutual-support-versus-relational-independence": 1,
+      "new-idea-energy-versus-later-stage": 1,
+      "new-neighborhood-settling": 1,
+      "new-team-working-norms": 1,
+      "open-day-travel-planning": 1,
+      "partly-known-recommendation": 1,
+      "post-mistake-recovery-decision": 1,
+      "predictability-versus-upside": 1,
+      "predictable-progress-versus-rapid-growth": 1,
+      "preferred-contribution-to-two-person-disagreement": 1,
+      "preferred-form-of-recognition": 1,
+      "preferred-new-social-contact": 1,
+      "preferred-openness-pace-in-others": 1,
+      "preferred-supervisor-foundation": 1,
+      "progress-despite-uncertainty": 1,
+      "progress-versus-process-order": 1,
+      "recovery-from-stalled-personal-improvement": 1,
+      "recurring-minor-errors": 1,
+      "refresh-working-routine": 1,
+      "relational-continuity-during-change": 1,
+      "reliable-mutual-support-over-social-variety": 1,
+      "repeatability-over-improvisation": 1,
+      "response-to-personal-upset": 1,
+      "restore-movement-before-perfect-replacement": 1,
+      "results-versus-exact-process": 1,
+      "return-to-self-chosen-project": 1,
+      "reward-tied-to-achieved-result": 1,
+      "risk-for-strong-upside": 1,
+      "rough-idea-feedback": 1,
+      "safeguards-before-uncertain-upside": 1,
+      "settled-next-steps-versus-flexibility": 1,
+      "shared-household-routine": 1,
+      "social-energy-from-breadth-and-liveliness": 1,
+      "social-engagement-from-shared-outcome": 1,
+      "social-predictability-versus-openness": 1,
+      "spontaneous-creative-working-method": 1,
+      "spontaneous-versus-carefully-planned": 1,
+      "stability-versus-uncertain-chance": 1,
+      "stalled-friend-activity-choice": 1,
+      "steady-pace-versus-energy-bursts": 1,
+      "steps-before-starting": 1,
+      "structure-before-proceeding": 1,
+      "structure-in-social-event": 1,
+      "structure-restlessness": 1,
+      "success-as-freedom-and-enjoyment": 1,
+      "supporting-established-commitments": 1,
+      "supporting-overwhelmed-colleague": 1,
+      "team-tool-selection": 1,
+      "too-many-good-ideas": 1,
+      "tradition-that-no-longer-fits": 1,
+      "travel-structure-versus-freedom": 1,
+      "trust-before-quick-closure": 1,
+      "trust-versus-speed": 1,
+      "uncommitted-time-for-emerging-possibility": 1,
+      "unexpected-free-afternoon": 1,
+      "unfamiliar-experience-for-discovery": 1,
+      "unowned-urgent-problem": 1,
+      "urgent-customer-complaint": 1,
+      "value-of-a-working-routine": 1,
+      "voice-before-closure": 1,
+      "workable-decision-before-complete-detail": 1
+    },
+    "pairwise_discrimination": {
+      "RED_BLUE": 63,
+      "RED_YELLOW": 69,
+      "RED_GREEN": 77,
+      "BLUE_YELLOW": 71,
+      "BLUE_GREEN": 85,
+      "YELLOW_GREEN": 62
+    }
+  },
+  "backlog_dispositions": [
+    {
+      "id": "EXP-001",
+      "classification": "SATISFIED",
+      "evidence": "C02-L-Y-02, C03-S-05, C03-S-09, C03-L-B-01, and C03-L-Y-01 now separate social breadth, expressive exchange, belonging, and relational depth."
+    },
+    {
+      "id": "EXP-002",
+      "classification": "DOWNGRADE",
+      "evidence": "Yellow–Green continuity versus predictability improves through family tradition, household routine, team norms, and close-relationship tradeoffs, but pairwise depth still merits monitoring."
+    },
+    {
+      "id": "EXP-003",
+      "classification": "SATISFIED",
+      "evidence": "Decision ownership, result recovery, repeatable process, consequence comparison, and recurring-error control now provide multiple Red–Green windows."
+    },
+    {
+      "id": "EXP-004",
+      "classification": "STILL_HIGH",
+      "evidence": "PREFERENCE_IN_OTHERS remains only 4 of 120 items despite strong RESPONSE_TO_OTHERS growth."
+    },
+    {
+      "id": "EXP-005",
+      "classification": "DOWNGRADE",
+      "evidence": "Free time, hobbies, recreation, travel, neighborhood, household purchasing, recipes, and social contact materially improve positive ordinary-life coverage, but attraction/attention remains less deep than problem response."
+    },
+    {
+      "id": "EXP-006",
+      "classification": "SATISFIED",
+      "evidence": "Personal goals, travel, recreation, emerging projects, and recovery now provide repeated non-work Red progress versus Blue possibility contrasts."
+    },
+    {
+      "id": "EXP-007",
+      "classification": "DOWNGRADE",
+      "evidence": "Relational depth, known belonging, mutual support, family tradition, household continuity, and friendship conflict now provide non-virtue Yellow coverage; family/close-relationship parallel depth should still be monitored."
+    },
+    {
+      "id": "EXP-008",
+      "classification": "SATISFIED",
+      "evidence": "Blue freedom and variety are positively represented through evolving paths, expressive exchange, travel, fresh routines, exploration, and experience without relying on boredom or distractibility."
+    },
+    {
+      "id": "EXP-009",
+      "classification": "STILL_MEDIUM",
+      "evidence": "The governed four-color drain item remains the main direct measure; frustration and blocked-motive parallel coverage is still shallow."
+    }
+  ],
+  "new_gaps": [
+    {
+      "id": "EXP-010",
+      "priority": "HIGH",
+      "gap": "learning and skill-development entry across multiple contexts and orientations",
+      "evidence": "Learning remains among the thinnest domains (2 items)."
+    },
+    {
+      "id": "EXP-011",
+      "priority": "MEDIUM",
+      "gap": "recovery after personal, relational, and ordinary-life setbacks beyond progress restoration",
+      "evidence": "Recovery tone remains only 6 items."
+    }
+  ],
+  "next_phase_recommendation": {
+    "priority_order": [
+      "EXP-004",
+      "EXP-010",
+      "EXP-009",
+      "EXP-005",
+      "EXP-007",
+      "EXP-011",
+      "EXP-002"
+    ],
+    "formats": "Prioritize situational single-select for repeat variety and PREFERENCE_IN_OTHERS/RESPONSE_TO_OTHERS; use Likert only for clean pairwise motivational tradeoffs.",
+    "contexts": "Friendship, family, close relationships, learning, leisure, purchasing, household, travel, and unfamiliar social situations before additional work/team content.",
+    "orientations": "PREFERENCE_IN_OTHERS first, then SELF_ATTENTION and RESPONSE_TO_OTHERS.",
+    "justified_next_tranche": "Approximately 24–32 candidates, gated by semantic-family screening rather than a bank-size quota."
+  },
+  "production_impact": "NONE"
+}
