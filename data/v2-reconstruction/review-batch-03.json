@@ -1,0 +1,2047 @@
+{
+  "manifest_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_03",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "metadata_schema": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
+  "taxonomy": "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
+  "source": "Canonical legacy identities 51-75 in data/v2-audit/current-question-audit.json order.",
+  "counts": {
+    "KEEP_EXACTLY": 4,
+    "REWORD": 8,
+    "REPLACE": 6,
+    "RETIRE": 7
+  },
+  "cumulative_counts": {
+    "KEEP_EXACTLY": 12,
+    "REWORD": 23,
+    "REPLACE": 22,
+    "RETIRE": 18
+  },
+  "coverage": {
+    "by_disposition": {
+      "KEEP_EXACTLY": 4,
+      "REWORD": 8,
+      "REPLACE": 6,
+      "RETIRE": 7
+    },
+    "cumulative_by_disposition": {
+      "KEEP_EXACTLY": 12,
+      "REWORD": 23,
+      "REPLACE": 22,
+      "RETIRE": 18
+    },
+    "by_domain": {
+      "achievement-competition": 3,
+      "change-risk": 8,
+      "communication-expression": 4,
+      "conflict": 4,
+      "decision-making": 4,
+      "follow-through-recovery": 7,
+      "general-preference": 4,
+      "leadership-ownership": 3,
+      "learning": 1,
+      "organization-process": 7,
+      "planning": 4,
+      "problem-framing": 2,
+      "problem-solving": 2,
+      "relationships-support": 12,
+      "social-interaction": 4,
+      "stability-security": 2,
+      "work-execution": 4
+    },
+    "by_context": {
+      "close-relationship": 5,
+      "everyday-decision": 2,
+      "family": 2,
+      "free-time-leisure": 1,
+      "general-cross-context": 38,
+      "hobbies": 1,
+      "household": 2,
+      "money-purchasing": 1,
+      "personal-project": 1,
+      "recreation": 2,
+      "team": 7,
+      "unfamiliar-social-situation": 2,
+      "work-business": 11
+    },
+    "by_orientation": {
+      "INTERPERSONAL": 9,
+      "PREFERENCE_IN_OTHERS": 2,
+      "RESPONSE_TO_OTHERS": 8,
+      "SELF_ACTION": 6,
+      "SELF_ATTENTION": 11,
+      "SELF_PREFERENCE": 39
+    },
+    "by_tone": {
+      "change": 6,
+      "competing-alternatives": 26,
+      "disagreement": 7,
+      "failure-mistake": 3,
+      "independent-activity": 2,
+      "long-term-commitment": 10,
+      "new-unfamiliar": 6,
+      "opportunity": 7,
+      "ordinary-calm": 10,
+      "pressure": 7,
+      "recovery": 1,
+      "routine-stability": 6,
+      "social-setting": 6,
+      "success-enjoyment": 4,
+      "uncertainty": 16
+    },
+    "pairwise_opportunities": {
+      "RED_BLUE": 23,
+      "RED_YELLOW": 33,
+      "RED_GREEN": 37,
+      "BLUE_YELLOW": 32,
+      "BLUE_GREEN": 38,
+      "YELLOW_GREEN": 26
+    }
+  },
+  "expansion_backlog_changes": [
+    {
+      "backlog_id": "EXP-001",
+      "colors_or_pairs": [
+        "BLUE_YELLOW"
+      ],
+      "core_trait_gap": "social breadth versus relational depth",
+      "behavioral_domain": "social-interaction",
+      "life_contexts": [
+        "friendship",
+        "unfamiliar-social-situation",
+        "community"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "social-setting"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "PREFERENCE_IN_OTHERS"
+      ],
+      "motivational_tradeoff": "breadth, energy, and new contact vs. trust, depth, and dependable connection",
+      "insufficiency": "Legacy items frequently substitute sociability or introversion; existing candidates establish the distinction but lack enough independent contexts for a large bank.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-002",
+      "colors_or_pairs": [
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "relational continuity versus structural predictability",
+      "behavioral_domain": "stability-security",
+      "life_contexts": [
+        "household",
+        "travel",
+        "family",
+        "everyday-decision"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "change",
+        "long-term-commitment"
+      ],
+      "orientations": [
+        "SELF_PREFERENCE",
+        "SELF_ATTENTION"
+      ],
+      "motivational_tradeoff": "protecting trust and continuity vs. restoring clarity and predictable structure",
+      "insufficiency": "Legacy material repeatedly assigns generic caution, reliability, or introversion to these colors without exposing why stability matters.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-003",
+      "colors_or_pairs": [
+        "RED_GREEN"
+      ],
+      "core_trait_gap": "result ownership versus process reliability",
+      "behavioral_domain": "leadership-ownership",
+      "life_contexts": [
+        "work-business",
+        "team",
+        "personal-project"
+      ],
+      "situational_tones": [
+        "pressure",
+        "failure-mistake",
+        "long-term-commitment"
+      ],
+      "orientations": [
+        "SELF_ACTION",
+        "RESPONSE_TO_OTHERS"
+      ],
+      "motivational_tradeoff": "restoring or owning the result vs. protecting coherence, evidence, and reliable execution",
+      "insufficiency": "Many legacy questions measure generic responsibility or competence; additional motive-centered parallel items are needed.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-004",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "preferences in other people",
+      "behavioral_domain": "communication-expression",
+      "life_contexts": [
+        "friendship",
+        "family",
+        "close-relationship",
+        "team"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "disagreement"
+      ],
+      "orientations": [
+        "PREFERENCE_IN_OTHERS"
+      ],
+      "motivational_tradeoff": "which qualities or interaction patterns a person naturally seeks from others",
+      "insufficiency": "The first 75 legacy questions provide almost no valid PREFERENCE_IN_OTHERS evidence; the few examples are virtue-loaded or semantically unclear.",
+      "needed_format": "EITHER",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-005",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "positive ordinary-life attention and attraction",
+      "behavioral_domain": "general-preference",
+      "life_contexts": [
+        "free-time-leisure",
+        "money-purchasing",
+        "recreation",
+        "hobbies",
+        "household"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "opportunity",
+        "success-enjoyment",
+        "independent-activity"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "SELF_PREFERENCE"
+      ],
+      "motivational_tradeoff": "what naturally attracts or rewards each color outside a problem state",
+      "insufficiency": "Reconstruction still contains disproportionate uncertainty, pressure, change, and problem scenarios relative to calm or enjoyable ordinary life.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-006",
+      "colors_or_pairs": [
+        "RED_BLUE"
+      ],
+      "core_trait_gap": "progress-seeking action versus possibility-seeking spontaneity",
+      "behavioral_domain": "problem-solving",
+      "life_contexts": [
+        "everyday-decision",
+        "travel",
+        "personal-project",
+        "recreation"
+      ],
+      "situational_tones": [
+        "opportunity",
+        "uncertainty",
+        "recovery"
+      ],
+      "orientations": [
+        "SELF_ACTION",
+        "SELF_ATTENTION"
+      ],
+      "motivational_tradeoff": "acting to produce a result vs. moving to discover an interesting possibility",
+      "insufficiency": "Legacy action language often conflates Red momentum with Blue spontaneity; more controlled non-work contrasts are needed.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "MEDIUM",
+      "discovered_in": "BATCH_03"
+    }
+  ],
+  "questions": [
+    {
+      "batch_position": 1,
+      "corpus_position": 51,
+      "question_id": "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b",
+      "current_revision_id": "legacy:56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b:production-baseline",
+      "proposed_revision_id": "legacy:56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "I see uncertainty as an opportunity rather than a threat.",
+        "scoring": {
+          "intended_color": "red"
+        }
+      },
+      "proposed": {
+        "prompt": "When an uncertain situation still offers a meaningful result, I prefer choosing a direction and pursuing progress rather than waiting for the uncertainty to disappear.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "progress",
+          "decisive-ownership"
+        ],
+        "behavioral_domain": "change-risk",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "uncertainty",
+          "opportunity"
+        ],
+        "motivational_tradeoff": "progress under uncertainty vs. waiting for greater certainty",
+        "orientation": "SELF_ACTION",
+        "semantic_family": "progress-despite-uncertainty",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_GREEN"
+        ],
+        "what_it_measures": "Whether meaningful progress motivates action despite unresolved uncertainty."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy threat/opportunity framing can indicate optimism or Blue novelty; the revision anchors endorsement in Red progress and chosen direction.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 2,
+      "corpus_position": 52,
+      "question_id": "58c09422-edfe-40e3-b370-35f9bde18564",
+      "current_revision_id": "legacy:58c09422-edfe-40e3-b370-35f9bde18564:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I care about success, but not if it comes at the expense of others.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "support"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "competing-alternatives"
+        ],
+        "motivational_tradeoff": "personal success vs. avoiding harm to others",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "success-without-harming-others",
+        "pairwise_discrimination": [
+          "RED_YELLOW"
+        ],
+        "what_it_measures": "Reluctance to pursue success when it harms other people."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "MODERATE",
+        "original_audit_flags": [
+          "POSSIBLE_REVERSE_INTERPRETATION",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Avoiding success at others’ expense is an ethical position and universal virtue, not independently Yellow evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 3,
+      "corpus_position": 53,
+      "question_id": "59ded366-49c8-46e8-891e-3dd48a501695",
+      "current_revision_id": "legacy:59ded366-49c8-46e8-891e-3dd48a501695:production-baseline",
+      "proposed_revision_id": "legacy:59ded366-49c8-46e8-891e-3dd48a501695:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "I’m comfortable being rewarded more when I contribute more.",
+        "scoring": {
+          "intended_color": "red"
+        }
+      },
+      "proposed": {
+        "prompt": "A reward tied directly to the result I achieve motivates me more than receiving the same recognition regardless of outcome.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "achievement",
+          "visible-results"
+        ],
+        "behavioral_domain": "achievement-competition",
+        "life_context": "work-business",
+        "situational_tones": [
+          "success-enjoyment",
+          "competing-alternatives"
+        ],
+        "motivational_tradeoff": "result-linked reward vs. equal recognition",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "reward-tied-to-achieved-result",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "RED_GREEN"
+        ],
+        "what_it_measures": "Whether outcome-linked recognition is more motivating than equal recognition."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy wording invites a fairness judgment about deserving more; the revision measures Red motivation from visible, outcome-linked reward.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 4,
+      "corpus_position": 54,
+      "question_id": "5a6e8337-90ce-4cc9-b766-f74ecafab528",
+      "current_revision_id": "legacy:5a6e8337-90ce-4cc9-b766-f74ecafab528:production-baseline",
+      "proposed_revision_id": "legacy:5a6e8337-90ce-4cc9-b766-f74ecafab528:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "In competition, I…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "d9b4ebf5-d598-43d6-8860-32d672154120",
+              "wording": "play to win",
+              "color": "red"
+            },
+            {
+              "option_id": "d97137b2-34db-4572-b733-34755a787490",
+              "wording": "play for the fun of it",
+              "color": "blue"
+            },
+            {
+              "option_id": "f8193854-6cb8-4905-8b6a-e820ab320fc1",
+              "wording": "play to keep things fair",
+              "color": "yellow"
+            },
+            {
+              "option_id": "7cd37e1b-a29a-412c-b7cd-645251c59e6f",
+              "wording": "play to improve my technique",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": {
+        "prompt": "During a friendly competition, what most naturally keeps you engaged?",
+        "options": [
+          {
+            "label": "A clear challenge and the chance to earn the result",
+            "color": "red"
+          },
+          {
+            "label": "The energy, surprises, and memorable moments along the way",
+            "color": "blue"
+          },
+          {
+            "label": "The camaraderie and tradition that keep the group connected",
+            "color": "yellow"
+          },
+          {
+            "label": "The chance to understand patterns and refine my technique",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "achievement",
+          "energy",
+          "belonging",
+          "coherent-understanding"
+        ],
+        "behavioral_domain": "achievement-competition",
+        "life_context": "recreation",
+        "situational_tones": [
+          "success-enjoyment",
+          "social-setting"
+        ],
+        "motivational_tradeoff": "winning challenge vs. experience energy vs. camaraderie vs. mastery",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "motivation-in-friendly-competition",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Which source of reward sustains engagement in friendly competition."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy Yellow option makes fairness the color signal; the revision gives all four colors attractive, governed motivations.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 5,
+      "corpus_position": 55,
+      "question_id": "5f17485f-373e-455d-af0b-70ec6485943b",
+      "current_revision_id": "legacy:5f17485f-373e-455d-af0b-70ec6485943b:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "I’m cautious about who I let into my inner circle.",
+        "scoring": {
+          "intended_color": "green"
+        }
+      },
+      "proposed": {
+        "prompt": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+        "options": []
+      },
+      "replacement": {
+        "question_id": "C02-L-Y-02",
+        "origin": "COHORT_02",
+        "format": "LIKERT",
+        "prompt": "I feel more settled deepening a dependable relationship than widening my circle with new connections.",
+        "options": [],
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "trust",
+          "relational-depth"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "close-relationship",
+        "situational_tones": [
+          "ordinary-calm",
+          "competing-alternatives"
+        ],
+        "motivational_tradeoff": "deepening dependable relationship vs. adding new connections",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "relational-depth-versus-breadth",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Whether dependable relational depth feels more settling than widening one’s circle."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Caution about an inner circle can reflect introversion or risk; the candidate directly measures Yellow relational depth against Blue breadth.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 6,
+      "corpus_position": 56,
+      "question_id": "63a771d2-a37a-4a48-b5fd-f5d316d26b0d",
+      "current_revision_id": "legacy:63a771d2-a37a-4a48-b5fd-f5d316d26b0d:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "KEEP_EXACTLY",
+      "current": {
+        "prompt": "I feel responsible for supporting people I’ve committed to.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": {
+        "prompt": "I feel responsible for supporting people I’ve committed to.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "loyalty",
+          "support"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "supporting committed relationships vs. independently redirecting effort",
+        "orientation": "RESPONSE_TO_OTHERS",
+        "semantic_family": "supporting-established-commitments",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "BLUE_YELLOW"
+        ],
+        "what_it_measures": "Whether an established commitment to people naturally creates a support obligation."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "LOW",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Commitment is the explicit source of the support motivation, so the item measures governed Yellow loyalty rather than generic helpfulness.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 7,
+      "corpus_position": 57,
+      "question_id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+      "current_revision_id": "legacy:66083e12-2f11-4849-976a-7e9d7edebc38:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "If things feel dull or repetitive, I start looking for something more exciting to do.",
+        "scoring": {
+          "intended_color": "blue"
+        }
+      },
+      "proposed": {
+        "prompt": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+        "options": []
+      },
+      "replacement": {
+        "question_id": "C02-L-B-02",
+        "origin": "COHORT_02",
+        "format": "LIKERT",
+        "prompt": "Even when a routine works, I start looking for ways to make the experience feel fresh.",
+        "options": [],
+        "scoring": {
+          "intended_color": "blue"
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "novelty",
+          "stimulation"
+        ],
+        "behavioral_domain": "general-preference",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "routine-stability",
+          "opportunity"
+        ],
+        "motivational_tradeoff": "fresh experience vs. preserving a working routine",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "refreshing-a-working-routine",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "BLUE_GREEN"
+        ],
+        "what_it_measures": "Whether novelty remains attractive even when an existing routine works."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "LOW",
+        "original_audit_flags": [
+          "AMBIGUOUS",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy wording can signal boredom tolerance or poor follow-through; the candidate preserves Blue freshness without implying abandonment.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 8,
+      "corpus_position": 58,
+      "question_id": "694ed9fd-222a-4f6c-942e-8148f41ff344",
+      "current_revision_id": "legacy:694ed9fd-222a-4f6c-942e-8148f41ff344:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I’m good at sticking with tasks until they’re fully completed.",
+        "scoring": {
+          "intended_color": "green"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "follow-through"
+        ],
+        "behavioral_domain": "follow-through-recovery",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "full completion vs. incomplete work",
+        "orientation": "SELF_ACTION",
+        "semantic_family": "completion-competence",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Self-described ability to complete tasks."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Being good at completing tasks is a competency and socially desirable self-claim, not independently Green evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 9,
+      "corpus_position": 59,
+      "question_id": "695d628c-53d3-46c2-b360-d355ee0511ad",
+      "current_revision_id": "legacy:695d628c-53d3-46c2-b360-d355ee0511ad:production-baseline",
+      "proposed_revision_id": "legacy:695d628c-53d3-46c2-b360-d355ee0511ad:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "Money feels like a tool to create experiences, not an end goal.",
+        "scoring": {
+          "intended_color": "blue"
+        }
+      },
+      "proposed": {
+        "prompt": "When I have discretionary money, I’m more drawn to using it for a memorable experience than reserving it for a defined future purpose.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "experience",
+          "stimulation"
+        ],
+        "behavioral_domain": "decision-making",
+        "life_context": "money-purchasing",
+        "situational_tones": [
+          "opportunity",
+          "competing-alternatives"
+        ],
+        "motivational_tradeoff": "experience now vs. reserved future purpose",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "experience-spending-versus-future-purpose",
+        "pairwise_discrimination": [
+          "BLUE_GREEN",
+          "BLUE_YELLOW"
+        ],
+        "what_it_measures": "Whether a memorable experience is more attractive than a defined future use for discretionary money."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "MODERATE",
+        "original_audit_flags": [
+          "POSSIBLE_REVERSE_INTERPRETATION",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The revision supplies a real choice and limits the scenario to discretionary money, reducing financial-security and moral confounds.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 10,
+      "corpus_position": 60,
+      "question_id": "6a004186-77cd-415b-bf4f-8cd631a9c1d6",
+      "current_revision_id": "legacy:6a004186-77cd-415b-bf4f-8cd631a9c1d6:production-baseline",
+      "proposed_revision_id": "legacy:6a004186-77cd-415b-bf4f-8cd631a9c1d6:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "I feel calmer when I have a clear plan for what’s coming next.",
+        "scoring": {
+          "intended_color": "green"
+        }
+      },
+      "proposed": {
+        "prompt": "When several next steps are possible, I prefer settling a clear plan for what comes next rather than preserving flexibility to decide later.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "clarity",
+          "planning"
+        ],
+        "behavioral_domain": "planning",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "uncertainty",
+          "competing-alternatives"
+        ],
+        "motivational_tradeoff": "clear plan now vs. flexibility to decide later",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "settled-next-steps-versus-flexibility",
+        "pairwise_discrimination": [
+          "BLUE_GREEN",
+          "RED_GREEN"
+        ],
+        "what_it_measures": "Whether defined next steps feel preferable to preserving flexibility."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy item can measure anxiety; the revision compares two reasonable planning preferences.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 11,
+      "corpus_position": 61,
+      "question_id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+      "current_revision_id": "legacy:6aef9c71-489c-47a3-98bf-89c37cdd5009:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "I hesitate to make changes if they could negatively affect others.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": {
+        "prompt": "A family tradition still matters, but its old format no longer fits everyone’s lives. What matters most as you help shape its next version?",
+        "options": [
+          {
+            "label": "Choose a workable version that keeps the tradition happening",
+            "color": "red"
+          },
+          {
+            "label": "Give it a new form that people will be excited to experience",
+            "color": "blue"
+          },
+          {
+            "label": "Preserve the sense of connection and meaning people rely on",
+            "color": "yellow"
+          },
+          {
+            "label": "Understand the practical constraints and create a version with a predictable structure",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": {
+        "question_id": "C03-S-04",
+        "origin": "COHORT_03",
+        "format": "SINGLE_SELECT",
+        "prompt": "A family tradition still matters, but its old format no longer fits everyone’s lives. What matters most as you help shape its next version?",
+        "options": [
+          {
+            "wording": "Choose a workable version that keeps the tradition happening",
+            "color": "red"
+          },
+          {
+            "wording": "Give it a new form that people will be excited to experience",
+            "color": "blue"
+          },
+          {
+            "wording": "Preserve the sense of connection and meaning people rely on",
+            "color": "yellow"
+          },
+          {
+            "wording": "Understand the practical constraints and create a version with a predictable structure",
+            "color": "green"
+          }
+        ],
+        "scoring": {
+          "option_to_color": [
+            {
+              "wording": "Choose a workable version that keeps the tradition happening",
+              "color": "red"
+            },
+            {
+              "wording": "Give it a new form that people will be excited to experience",
+              "color": "blue"
+            },
+            {
+              "wording": "Preserve the sense of connection and meaning people rely on",
+              "color": "yellow"
+            },
+            {
+              "wording": "Understand the practical constraints and create a version with a predictable structure",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "continuity",
+          "belonging"
+        ],
+        "behavioral_domain": "change-risk",
+        "life_context": "family",
+        "situational_tones": [
+          "change",
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "purposeful result vs. renewed experience vs. continuity vs. coherent format",
+        "orientation": "INTERPERSONAL",
+        "semantic_family": "relational-continuity-through-change",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Which priority guides change when a valued family tradition no longer fits."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Hesitating because change could affect others is generic caution; the candidate reveals Yellow continuity alongside three equally legitimate motives.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 12,
+      "corpus_position": 62,
+      "question_id": "6cbf5dfd-cb2e-4f14-ac91-982c113f59ee",
+      "current_revision_id": "legacy:6cbf5dfd-cb2e-4f14-ac91-982c113f59ee:production-baseline",
+      "proposed_revision_id": "legacy:6cbf5dfd-cb2e-4f14-ac91-982c113f59ee:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "I prefer knowing expectations ahead of time rather than figuring things out as I go.",
+        "scoring": {
+          "intended_color": "green"
+        }
+      },
+      "proposed": {
+        "prompt": "In an unfamiliar situation, I prefer knowing the important expectations and constraints before I begin rather than discovering them as I go.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "clarity",
+          "defined-systems"
+        ],
+        "behavioral_domain": "problem-framing",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "new-unfamiliar",
+          "uncertainty"
+        ],
+        "motivational_tradeoff": "known constraints before action vs. discovery through action",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "constraints-before-entry",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "BLUE_GREEN"
+        ],
+        "what_it_measures": "Whether important constraints are sought before entering an unfamiliar situation."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "LOW",
+        "original_audit_flags": [
+          "AMBIGUOUS",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The revision makes Green clarity—not compliance or competence—the reason for preferring advance expectations.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 13,
+      "corpus_position": 63,
+      "question_id": "6e4c968a-2895-4b4b-ba5e-32d47bc6abca",
+      "current_revision_id": "legacy:6e4c968a-2895-4b4b-ba5e-32d47bc6abca:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I respect people who say what they mean, even if it comes across blunt.",
+        "scoring": {
+          "intended_color": "red"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "directness"
+        ],
+        "behavioral_domain": "communication-expression",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "disagreement"
+        ],
+        "motivational_tradeoff": "blunt candor vs. softened expression",
+        "orientation": "PREFERENCE_IN_OTHERS",
+        "semantic_family": "respect-for-blunt-honesty",
+        "pairwise_discrimination": [
+          "RED_YELLOW"
+        ],
+        "what_it_measures": "Respect for blunt, candid communication."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Honesty is a universal virtue and bluntness/directness is explicitly insufficient as Red scoring evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 14,
+      "corpus_position": 64,
+      "question_id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+      "current_revision_id": "legacy:6eb555cb-c60c-4820-9a3d-6b1017514265:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "I tend to slow down decisions if I sense tension or discomfort between people.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": {
+        "prompt": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+        "options": []
+      },
+      "replacement": {
+        "question_id": "C02-L-Y-01",
+        "origin": "COHORT_02",
+        "format": "LIKERT",
+        "prompt": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+        "options": [],
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "trust",
+          "harmony"
+        ],
+        "behavioral_domain": "conflict",
+        "life_context": "team",
+        "situational_tones": [
+          "disagreement",
+          "pressure"
+        ],
+        "motivational_tradeoff": "trust preservation vs. quick closure",
+        "orientation": "INTERPERSONAL",
+        "semantic_family": "trust-before-quick-closure",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Whether protecting trust justifies leaving a decision open longer."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "MODERATE",
+        "original_audit_flags": [
+          "POSSIBLE_REVERSE_INTERPRETATION",
+          "SEMANTICALLY_OVERLAPPING",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The candidate makes the Yellow relational motive and real cost explicit instead of treating interpersonal discomfort itself as evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 15,
+      "corpus_position": 65,
+      "question_id": "6f36bb70-0eee-4678-af55-78f9cae07eec",
+      "current_revision_id": "legacy:6f36bb70-0eee-4678-af55-78f9cae07eec:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I pay close attention to whether people follow through on what they say.",
+        "scoring": {
+          "intended_color": "green"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "reliability"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "demonstrated follow-through vs. stated intention",
+        "orientation": "PREFERENCE_IN_OTHERS",
+        "semantic_family": "judging-others-follow-through",
+        "pairwise_discrimination": [
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Attention to whether other people keep their word."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The item can reflect trust, conscientiousness, suspicion, or practical judgment and its Green assignment is not governed by the color model.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 16,
+      "corpus_position": 66,
+      "question_id": "74135a00-827b-4c5f-9a7c-b72d076607ee",
+      "current_revision_id": "legacy:74135a00-827b-4c5f-9a7c-b72d076607ee:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I try to stay organized so others can rely on me.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "reliability"
+        ],
+        "behavioral_domain": "organization-process",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "ordinary-calm"
+        ],
+        "motivational_tradeoff": "organized reliability vs. less structured support",
+        "orientation": "RESPONSE_TO_OTHERS",
+        "semantic_family": "organization-to-be-reliable",
+        "pairwise_discrimination": [
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Use of organization so other people can rely on the respondent."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The statement combines organization and reliability as virtues; neither independently establishes Yellow.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 17,
+      "corpus_position": 67,
+      "question_id": "76a13ab4-c5cc-43df-8d92-100689764905",
+      "current_revision_id": "legacy:76a13ab4-c5cc-43df-8d92-100689764905:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "When I’m focused, I…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "1bd6d9ed-ff86-40b7-90e0-22b1f36ebb20",
+              "wording": "move fast and take action",
+              "color": "red"
+            },
+            {
+              "option_id": "af0bdc1a-81ae-4b67-9756-b399e6cae3e5",
+              "wording": "talk through ideas out loud",
+              "color": "blue"
+            },
+            {
+              "option_id": "ff0780a3-e979-467b-b6a5-517fc510e0f7",
+              "wording": "support others and stay steady",
+              "color": "yellow"
+            },
+            {
+              "option_id": "5c7ca0b2-9ba3-4065-ac28-fe27b9bea14d",
+              "wording": "go quiet and get precise",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": {
+        "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+        "options": [
+          {
+            "label": "Set a workable first direction and coordinate the next action",
+            "color": "red"
+          },
+          {
+            "label": "Generate a few fast possibilities and rally people around the most promising one",
+            "color": "blue"
+          },
+          {
+            "label": "Check the immediate effects on people and coordinate the support they will need",
+            "color": "yellow"
+          },
+          {
+            "label": "Verify the critical facts and define a reliable first response",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": {
+        "question_id": "C01-S-01",
+        "origin": "COHORT_01",
+        "format": "SINGLE_SELECT",
+        "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+        "options": [
+          {
+            "wording": "Set a workable first direction and coordinate the next action",
+            "color": "red"
+          },
+          {
+            "wording": "Generate a few fast possibilities and rally people around the most promising one",
+            "color": "blue"
+          },
+          {
+            "wording": "Check the immediate effects on people and coordinate the support they will need",
+            "color": "yellow"
+          },
+          {
+            "wording": "Verify the critical facts and define a reliable first response",
+            "color": "green"
+          }
+        ],
+        "scoring": {
+          "option_to_color": [
+            {
+              "wording": "Set a workable first direction and coordinate the next action",
+              "color": "red"
+            },
+            {
+              "wording": "Generate a few fast possibilities and rally people around the most promising one",
+              "color": "blue"
+            },
+            {
+              "wording": "Check the immediate effects on people and coordinate the support they will need",
+              "color": "yellow"
+            },
+            {
+              "wording": "Verify the critical facts and define a reliable first response",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "decisive-ownership",
+          "possibility",
+          "support",
+          "evidence"
+        ],
+        "behavioral_domain": "problem-solving",
+        "life_context": "team",
+        "situational_tones": [
+          "pressure",
+          "uncertainty"
+        ],
+        "motivational_tradeoff": "ownership vs. possibilities vs. support vs. evidence",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "first-attention-in-unowned-urgent-problem",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "What first attracts attention when an urgent problem has no clear owner."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy item mixes speed, talking, helping, and quiet precision as stereotypes; the candidate provides four useful motivations in one situation.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 18,
+      "corpus_position": 68,
+      "question_id": "77234471-04bc-431d-8e8d-43bad7c191ae",
+      "current_revision_id": "legacy:77234471-04bc-431d-8e8d-43bad7c191ae:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "When I need a boundary, I…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "5cf5f3c9-14d7-4199-8158-5c407bfc498b",
+              "wording": "state it clearly",
+              "color": "red"
+            },
+            {
+              "option_id": "5a46d38e-bd39-4068-9c73-192da94205db",
+              "wording": "try to soften it with humor",
+              "color": "blue"
+            },
+            {
+              "option_id": "08dec022-cbbe-4e5b-bd08-90f0039774f2",
+              "wording": "worry about hurting feelings",
+              "color": "yellow"
+            },
+            {
+              "option_id": "7cabd4ea-552a-4638-a0c8-2a065ceaf94e",
+              "wording": "explain it logically",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "boundaries"
+        ],
+        "behavioral_domain": "communication-expression",
+        "life_context": "close-relationship",
+        "situational_tones": [
+          "disagreement"
+        ],
+        "motivational_tradeoff": "clarity vs. humor vs. concern about feelings vs. logic",
+        "orientation": "INTERPERSONAL",
+        "semantic_family": "boundary-expression-style",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Preferred way to express a personal boundary."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "Boundary style is learned and context-dependent; the Yellow option is pejoratively anxious while directness and logic are not standalone color signals.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 19,
+      "corpus_position": 69,
+      "question_id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+      "current_revision_id": "legacy:78167084-c8aa-4e21-bc88-cf35b4ac0021:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "REPLACE",
+      "current": {
+        "prompt": "People usually rely on me for…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "d980e49b-25e1-4ee3-827d-247860831fe1",
+              "wording": "direction and urgency",
+              "color": "red"
+            },
+            {
+              "option_id": "9380f2af-0d2b-4b73-b08a-f84942a1fb7b",
+              "wording": "energy and connection",
+              "color": "blue"
+            },
+            {
+              "option_id": "0077cbdf-1e0d-4a85-960a-79a9b424a844",
+              "wording": "support and stability",
+              "color": "yellow"
+            },
+            {
+              "option_id": "601e48ce-0472-4dec-a7e9-2486b49e162f",
+              "wording": "details and accuracy",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": {
+        "prompt": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+        "options": [
+          {
+            "label": "Identify the most important priority and help them take the next action",
+            "color": "red"
+          },
+          {
+            "label": "Help them see possibilities and regain some energy for the work",
+            "color": "blue"
+          },
+          {
+            "label": "Help them identify which relationships and commitments need steady attention first",
+            "color": "yellow"
+          },
+          {
+            "label": "Organize the demands into clear steps, resources, and dependencies",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": {
+        "question_id": "C02-S-12",
+        "origin": "COHORT_02",
+        "format": "SINGLE_SELECT",
+        "prompt": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+        "options": [
+          {
+            "wording": "Identify the most important priority and help them take the next action",
+            "color": "red"
+          },
+          {
+            "wording": "Help them see possibilities and regain some energy for the work",
+            "color": "blue"
+          },
+          {
+            "wording": "Help them identify which relationships and commitments need steady attention first",
+            "color": "yellow"
+          },
+          {
+            "wording": "Organize the demands into clear steps, resources, and dependencies",
+            "color": "green"
+          }
+        ],
+        "scoring": {
+          "option_to_color": [
+            {
+              "wording": "Identify the most important priority and help them take the next action",
+              "color": "red"
+            },
+            {
+              "wording": "Help them see possibilities and regain some energy for the work",
+              "color": "blue"
+            },
+            {
+              "wording": "Help them identify which relationships and commitments need steady attention first",
+              "color": "yellow"
+            },
+            {
+              "wording": "Organize the demands into clear steps, resources, and dependencies",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "measurement": {
+        "core_traits": [
+          "decisive-ownership",
+          "possibility",
+          "support",
+          "structure"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "work-business",
+        "situational_tones": [
+          "pressure",
+          "new-unfamiliar"
+        ],
+        "motivational_tradeoff": "prioritization vs. possibilities vs. supportive steadiness vs. structure",
+        "orientation": "RESPONSE_TO_OTHERS",
+        "semantic_family": "help-for-overwhelmed-person",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Which useful form of help comes naturally when someone faces competing demands."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "SUBSTANTIAL",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy item asks respondents to claim strengths; the candidate observes a preferred helping contribution with balanced options.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 20,
+      "corpus_position": 70,
+      "question_id": "79686573-8d40-4d83-af77-41d35547619d",
+      "current_revision_id": "legacy:79686573-8d40-4d83-af77-41d35547619d:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "RETIRE",
+      "current": {
+        "prompt": "I’m motivated when I feel connected to the people involved, not just the task.",
+        "scoring": {
+          "intended_color": "yellow"
+        }
+      },
+      "proposed": null,
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "belonging",
+          "support"
+        ],
+        "behavioral_domain": "relationships-support",
+        "life_context": "team",
+        "situational_tones": [
+          "ordinary-calm"
+        ],
+        "motivational_tradeoff": "relational connection vs. task-only motivation",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "connection-as-task-motivation",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "BLUE_YELLOW"
+        ],
+        "what_it_measures": "Whether connection to involved people is a stronger motivator than the task alone."
+      },
+      "quality": {
+        "color_model_alignment": "CONTRADICTED_OR_NOT_ESTABLISHED",
+        "color_assignment_confidence": "MODERATE",
+        "original_audit_flags": [
+          "POSSIBLE_REVERSE_INTERPRETATION",
+          "SEMANTICALLY_OVERLAPPING",
+          "COLOR_ASSIGNMENT_QUESTIONABLE"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "HIGH",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "DUPLICATE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "This is an exact duplicate of reviewed Question 41, which Batch 02 proposes to keep exactly.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 21,
+      "corpus_position": 71,
+      "question_id": "79803d54-28bb-4990-b557-22fd67927109",
+      "current_revision_id": "legacy:79803d54-28bb-4990-b557-22fd67927109:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "KEEP_EXACTLY",
+      "current": {
+        "prompt": "I’m energized by new experiences, even if they’re unpredictable.",
+        "scoring": {
+          "intended_color": "blue"
+        }
+      },
+      "proposed": {
+        "prompt": "I’m energized by new experiences, even if they’re unpredictable.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "novelty",
+          "experience"
+        ],
+        "behavioral_domain": "change-risk",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "new-unfamiliar",
+          "uncertainty"
+        ],
+        "motivational_tradeoff": "novel experience vs. predictability",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "energy-from-unpredictable-experience",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "BLUE_GREEN"
+        ],
+        "what_it_measures": "Whether new experience remains energizing despite unpredictability."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "LOW",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The item cleanly measures Blue attraction to experience and novelty against a real uncertainty cost.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 22,
+      "corpus_position": 72,
+      "question_id": "799f2aac-8544-4bd3-850b-dd76fc1e2cfc",
+      "current_revision_id": "legacy:799f2aac-8544-4bd3-850b-dd76fc1e2cfc:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "KEEP_EXACTLY",
+      "current": {
+        "prompt": "I stay focused when I know results depend on me.",
+        "scoring": {
+          "intended_color": "red"
+        }
+      },
+      "proposed": {
+        "prompt": "I stay focused when I know results depend on me.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "responsibility-for-results",
+          "visible-results"
+        ],
+        "behavioral_domain": "leadership-ownership",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "pressure",
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "result ownership vs. shared or process-based motivation",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "focus-when-results-depend-on-self",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "RED_GREEN"
+        ],
+        "what_it_measures": "Whether responsibility for the result naturally sharpens focus."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "LOW",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The item ties motivation to responsibility for results, an established Red foundation, rather than generic responsibility alone.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 23,
+      "corpus_position": 73,
+      "question_id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+      "current_revision_id": "legacy:7cf21580-ec06-4c65-b602-4c9317eeac3d:production-baseline",
+      "proposed_revision_id": "legacy:7cf21580-ec06-4c65-b602-4c9317eeac3d:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "When delegating, I…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "e440ba33-40d6-493c-814f-8b9231eacb54",
+              "wording": "hand it off and expect ownership",
+              "color": "red"
+            },
+            {
+              "option_id": "51b435b5-78be-418c-8ae3-478a639bbf31",
+              "wording": "ask who wants it and encourage them",
+              "color": "blue"
+            },
+            {
+              "option_id": "feb92a4f-2d49-4b56-9b6a-f44236058a08",
+              "wording": "make sure the person feels supported",
+              "color": "yellow"
+            },
+            {
+              "option_id": "514fdd3c-be4a-4acf-95cb-c3b1010f7b06",
+              "wording": "define expectations and steps",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": {
+        "prompt": "You are delegating an important task to someone capable. What do you most naturally establish first?",
+        "options": [
+          {
+            "label": "The result they own and the authority they have to reach it",
+            "color": "red"
+          },
+          {
+            "label": "Room for them to shape the approach and bring their own energy",
+            "color": "blue"
+          },
+          {
+            "label": "A dependable way to ask for support without losing ownership",
+            "color": "yellow"
+          },
+          {
+            "label": "The requirements, dependencies, and checkpoints that define success",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "decisive-ownership",
+          "freedom",
+          "support",
+          "defined-systems"
+        ],
+        "behavioral_domain": "leadership-ownership",
+        "life_context": "work-business",
+        "situational_tones": [
+          "ordinary-calm",
+          "long-term-commitment"
+        ],
+        "motivational_tradeoff": "owned result vs. autonomy vs. support channel vs. defined requirements",
+        "orientation": "RESPONSE_TO_OTHERS",
+        "semantic_family": "first-priority-when-delegating",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Which foundation a person naturally establishes first when delegating meaningful ownership."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The revision gives every color a competent delegation priority and removes the implication that only Yellow supports people.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 24,
+      "corpus_position": 74,
+      "question_id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+      "current_revision_id": "legacy:7d22afa7-f5b6-450c-93d4-a8b2f3318410:production-baseline",
+      "proposed_revision_id": "legacy:7d22afa7-f5b6-450c-93d4-a8b2f3318410:proposed-v2-batch-03",
+      "origin": "LEGACY",
+      "format": "SINGLE_SELECT",
+      "proposed_disposition": "REWORD",
+      "current": {
+        "prompt": "My relationship with routines is…",
+        "scoring": {
+          "options": [
+            {
+              "option_id": "1d9f5c65-dbbe-4537-80c0-cc8d8361ee46",
+              "wording": "useful if it speeds results",
+              "color": "red"
+            },
+            {
+              "option_id": "1e597e07-4b1a-4809-a21b-213b6e7ca186",
+              "wording": "hard to stick to unless it’s fun",
+              "color": "blue"
+            },
+            {
+              "option_id": "24e33df1-3d38-4062-bb2f-9059a6992296",
+              "wording": "I’ll do it if it helps others",
+              "color": "yellow"
+            },
+            {
+              "option_id": "e4489a9c-9a7e-4bf5-a4a9-3d02822c9378",
+              "wording": "I love routines—they reduce stress",
+              "color": "green"
+            }
+          ]
+        }
+      },
+      "proposed": {
+        "prompt": "An everyday routine is working well. What most makes it worth keeping?",
+        "options": [
+          {
+            "label": "It frees attention for the results and priorities that matter most",
+            "color": "red"
+          },
+          {
+            "label": "It leaves enough flexibility to keep the experience fresh",
+            "color": "blue"
+          },
+          {
+            "label": "It makes shared life more dependable for the people involved",
+            "color": "yellow"
+          },
+          {
+            "label": "It produces predictable results and reduces avoidable uncertainty",
+            "color": "green"
+          }
+        ]
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "progress",
+          "freedom",
+          "continuity",
+          "predictability"
+        ],
+        "behavioral_domain": "organization-process",
+        "life_context": "household",
+        "situational_tones": [
+          "routine-stability",
+          "ordinary-calm"
+        ],
+        "motivational_tradeoff": "freed attention vs. flexibility vs. shared continuity vs. predictability",
+        "orientation": "SELF_ATTENTION",
+        "semantic_family": "value-of-a-working-routine",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ],
+        "what_it_measures": "Which benefit makes a successful everyday routine worth preserving."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "MODERATE",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The legacy options portray Blue as unable to persist and Green as stressed; the revision offers four constructive reasons to keep a routine.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 25,
+      "corpus_position": 75,
+      "question_id": "7d345f7b-6c63-429d-981c-857b2af2fb58",
+      "current_revision_id": "legacy:7d345f7b-6c63-429d-981c-857b2af2fb58:production-baseline",
+      "proposed_revision_id": null,
+      "origin": "LEGACY",
+      "format": "LIKERT",
+      "proposed_disposition": "KEEP_EXACTLY",
+      "current": {
+        "prompt": "Spontaneous plans sound more appealing to me than carefully planned ones.",
+        "scoring": {
+          "intended_color": "blue"
+        }
+      },
+      "proposed": {
+        "prompt": "Spontaneous plans sound more appealing to me than carefully planned ones.",
+        "options": []
+      },
+      "replacement": null,
+      "measurement": {
+        "core_traits": [
+          "spontaneity",
+          "freedom"
+        ],
+        "behavioral_domain": "planning",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "competing-alternatives",
+          "opportunity"
+        ],
+        "motivational_tradeoff": "spontaneity vs. advance planning",
+        "orientation": "SELF_PREFERENCE",
+        "semantic_family": "spontaneous-versus-carefully-planned",
+        "pairwise_discrimination": [
+          "BLUE_GREEN"
+        ],
+        "what_it_measures": "Whether spontaneous plans feel more appealing than carefully planned ones."
+      },
+      "quality": {
+        "color_model_alignment": "ALIGNED",
+        "color_assignment_confidence": "HIGH",
+        "original_audit_flags": [
+          "CLEAR"
+        ],
+        "ambiguity_risk": "LOW",
+        "response_desirability_risk": "LOW",
+        "context_dependence_risk": "LOW",
+        "semantic_redundancy": "NONE",
+        "owner_review_state": "PENDING_BATCH_REVIEW"
+      },
+      "why": "The item presents a clear Blue/Green preference with neither approach framed as more competent or mature.",
+      "runtime_authority": false
+    }
+  ],
+  "production_impact": "NONE"
+}

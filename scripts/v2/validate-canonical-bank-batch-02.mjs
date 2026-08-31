@@ -18,7 +18,7 @@ assert.equal(taxonomy.runtime_authority, false);
 assert.equal(approval.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.deepEqual(approval.approved_counts, { KEEP_EXACTLY: 3, REWORD: 8, REPLACE: 9, RETIRE: 5 });
 assert.equal(batch01.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
-assert.equal(batch02.status, "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION");
+assert.equal(batch02.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.equal(batch02.production_impact, "NONE");
 assert.equal(batch02.questions.length, 25);
 assert.deepEqual(batch02.questions.map((item) => item.question_id), audit.questions.slice(25, 50).map((item) => item.canonical_id));
@@ -36,7 +36,7 @@ for (const item of batch02.questions) {
   assert.ok(allowedDispositions.has(item.proposed_disposition));
   assert.equal(item.origin, "LEGACY");
   assert.equal(item.runtime_authority, false);
-  assert.equal(item.quality.owner_review_state, "PENDING_BATCH_REVIEW");
+  assert.equal(item.quality.owner_review_state, "OWNER_APPROVED");
   assert.ok(domains.has(item.measurement.behavioral_domain));
   assert.ok(contexts.has(item.measurement.life_context));
   assert.ok(item.measurement.situational_tones.every((tone) => tones.has(tone)));

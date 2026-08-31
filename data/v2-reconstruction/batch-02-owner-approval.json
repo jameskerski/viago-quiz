@@ -1,0 +1,14 @@
+{
+  "approval_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_02_OWNER_BASELINE",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
+  "approved_commit": "aabe18d7774a3c538a172d9dc54903adf9609093",
+  "approved_counts": {
+    "KEEP_EXACTLY": 5,
+    "REWORD": 7,
+    "REPLACE": 7,
+    "RETIRE": 6
+  },
+  "scope": "Questions 26-50 remain proposed canonical dispositions only.",
+  "production_authority": false,
+  "production_impact": "NONE"
+}

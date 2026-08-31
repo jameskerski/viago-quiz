@@ -1,0 +1,184 @@
+{
+  "backlog_id": "VIAGO_QUESTION_EXPANSION_BACKLOG",
+  "schema_version": "1.0.0",
+  "status": "GOVERNED_RESEARCH_BACKLOG_NON_PRODUCTION",
+  "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "entries": [
+    {
+      "backlog_id": "EXP-001",
+      "colors_or_pairs": [
+        "BLUE_YELLOW"
+      ],
+      "core_trait_gap": "social breadth versus relational depth",
+      "behavioral_domain": "social-interaction",
+      "life_contexts": [
+        "friendship",
+        "unfamiliar-social-situation",
+        "community"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "social-setting"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "PREFERENCE_IN_OTHERS"
+      ],
+      "motivational_tradeoff": "breadth, energy, and new contact vs. trust, depth, and dependable connection",
+      "insufficiency": "Legacy items frequently substitute sociability or introversion; existing candidates establish the distinction but lack enough independent contexts for a large bank.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-002",
+      "colors_or_pairs": [
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "relational continuity versus structural predictability",
+      "behavioral_domain": "stability-security",
+      "life_contexts": [
+        "household",
+        "travel",
+        "family",
+        "everyday-decision"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "change",
+        "long-term-commitment"
+      ],
+      "orientations": [
+        "SELF_PREFERENCE",
+        "SELF_ATTENTION"
+      ],
+      "motivational_tradeoff": "protecting trust and continuity vs. restoring clarity and predictable structure",
+      "insufficiency": "Legacy material repeatedly assigns generic caution, reliability, or introversion to these colors without exposing why stability matters.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-003",
+      "colors_or_pairs": [
+        "RED_GREEN"
+      ],
+      "core_trait_gap": "result ownership versus process reliability",
+      "behavioral_domain": "leadership-ownership",
+      "life_contexts": [
+        "work-business",
+        "team",
+        "personal-project"
+      ],
+      "situational_tones": [
+        "pressure",
+        "failure-mistake",
+        "long-term-commitment"
+      ],
+      "orientations": [
+        "SELF_ACTION",
+        "RESPONSE_TO_OTHERS"
+      ],
+      "motivational_tradeoff": "restoring or owning the result vs. protecting coherence, evidence, and reliable execution",
+      "insufficiency": "Many legacy questions measure generic responsibility or competence; additional motive-centered parallel items are needed.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-004",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "preferences in other people",
+      "behavioral_domain": "communication-expression",
+      "life_contexts": [
+        "friendship",
+        "family",
+        "close-relationship",
+        "team"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "disagreement"
+      ],
+      "orientations": [
+        "PREFERENCE_IN_OTHERS"
+      ],
+      "motivational_tradeoff": "which qualities or interaction patterns a person naturally seeks from others",
+      "insufficiency": "The first 75 legacy questions provide almost no valid PREFERENCE_IN_OTHERS evidence; the few examples are virtue-loaded or semantically unclear.",
+      "needed_format": "EITHER",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-005",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "positive ordinary-life attention and attraction",
+      "behavioral_domain": "general-preference",
+      "life_contexts": [
+        "free-time-leisure",
+        "money-purchasing",
+        "recreation",
+        "hobbies",
+        "household"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "opportunity",
+        "success-enjoyment",
+        "independent-activity"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "SELF_PREFERENCE"
+      ],
+      "motivational_tradeoff": "what naturally attracts or rewards each color outside a problem state",
+      "insufficiency": "Reconstruction still contains disproportionate uncertainty, pressure, change, and problem scenarios relative to calm or enjoyable ordinary life.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_03"
+    },
+    {
+      "backlog_id": "EXP-006",
+      "colors_or_pairs": [
+        "RED_BLUE"
+      ],
+      "core_trait_gap": "progress-seeking action versus possibility-seeking spontaneity",
+      "behavioral_domain": "problem-solving",
+      "life_contexts": [
+        "everyday-decision",
+        "travel",
+        "personal-project",
+        "recreation"
+      ],
+      "situational_tones": [
+        "opportunity",
+        "uncertainty",
+        "recovery"
+      ],
+      "orientations": [
+        "SELF_ACTION",
+        "SELF_ATTENTION"
+      ],
+      "motivational_tradeoff": "acting to produce a result vs. moving to discover an interesting possibility",
+      "insufficiency": "Legacy action language often conflates Red momentum with Blue spontaneity; more controlled non-work contrasts are needed.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "MEDIUM",
+      "discovered_in": "BATCH_03"
+    }
+  ],
+  "production_impact": "NONE"
+}

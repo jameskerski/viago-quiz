@@ -18,10 +18,10 @@ test('Batch 02 covers exactly legacy questions 26 through 50', () => {
 });
 
 test('Batch 02 remains pending, review-only, and fail-closed', () => {
-  assert.equal(batch.status, 'PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION');
+  assert.equal(batch.status, 'OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION');
   assert.equal(batch.production_impact, 'NONE');
   assert.ok(batch.questions.every((item) => item.runtime_authority === false));
-  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'PENDING_BATCH_REVIEW'));
+  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('each disposition preserves deterministic traceability', () => {

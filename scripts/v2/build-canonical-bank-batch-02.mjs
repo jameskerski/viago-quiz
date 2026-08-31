@@ -104,7 +104,7 @@ const records = batchSource.map((question, index) => {
       response_desirability_risk: question.quality_classifications.includes("SOCIAL_DESIRABILITY_RISK") || decision.family.includes("virtue") ? "HIGH" : "LOW",
       context_dependence_risk: question.quality_classifications.includes("CONTEXT_DEPENDENT") ? "HIGH" : "LOW",
       semantic_redundancy: decision.id === "40ff71e9-a36f-4f66-8193-e8a7aef0b6c3" ? "DUPLICATE" : decision.replacement ? "SUBSTANTIAL" : question.quality_classifications.includes("SEMANTICALLY_OVERLAPPING") ? "RELATED" : "NONE",
-      owner_review_state: "PENDING_BATCH_REVIEW"
+      owner_review_state: "OWNER_APPROVED"
     },
     why: decision.why,
     runtime_authority: false
@@ -127,7 +127,7 @@ const coverage = {
 const output = {
   manifest_id: "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_02",
   schema_version: "1.0.0",
-  status: "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  status: "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
   governing_model: "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   metadata_schema: "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   taxonomy: "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
@@ -143,7 +143,7 @@ const output = {
 fs.mkdirSync(path.join(ROOT, "data/v2-reconstruction"), { recursive: true });
 fs.writeFileSync(path.join(ROOT, "data/v2-reconstruction/review-batch-02.json"), `${JSON.stringify(output, null, 2)}\n`);
 
-const lines = ["# VIAGO Canonical Question Bank Reconstruction — Review Batch 02", "", "Status: `PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION`", "", `Counts: ${counts.KEEP_EXACTLY} KEEP_EXACTLY · ${counts.REWORD} REWORD · ${counts.REPLACE} REPLACE · ${counts.RETIRE} RETIRE`, ""];
+const lines = ["# VIAGO Canonical Question Bank Reconstruction — Review Batch 02", "", "Status: `OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION`", "", `Counts: ${counts.KEEP_EXACTLY} KEEP_EXACTLY · ${counts.REWORD} REWORD · ${counts.REPLACE} REPLACE · ${counts.RETIRE} RETIRE`, ""];
 for (const item of records) {
   lines.push(`## ${String(item.corpus_position).padStart(2, "0")}. ${item.question_id} / LEGACY`, "", "**CURRENT**", "", item.current.prompt, "");
   if (item.current.scoring.options) for (const option of item.current.scoring.options) lines.push(`- ${option.wording} → ${option.color}`);
