@@ -1,0 +1,4477 @@
+{
+  "schema_version": "1.0.0",
+  "status": "FROZEN_RESEARCH_CONTENT",
+  "semantic_authority": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "drafts_generated": 128,
+  "rejected": [
+    {
+      "id": "EXP3-RJ-001",
+      "draft": "Cancelled outing replanning",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Duplicates established disruption-response family"
+    },
+    {
+      "id": "EXP3-RJ-002",
+      "draft": "Restaurant group choice",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Duplicates stalled group-choice architecture"
+    },
+    {
+      "id": "EXP3-RJ-003",
+      "draft": "Missing device instructions",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Duplicates incomplete-instruction family"
+    },
+    {
+      "id": "EXP3-RJ-004",
+      "draft": "I am highly responsible",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Virtue/competency loading"
+    },
+    {
+      "id": "EXP3-RJ-005",
+      "draft": "I care deeply about people",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Virtue loading; non-diagnostic Yellow"
+    },
+    {
+      "id": "EXP3-RJ-006",
+      "draft": "I am always accurate",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Self-esteem and competency loading"
+    },
+    {
+      "id": "EXP3-RJ-007",
+      "draft": "I am naturally a leader",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Status-loaded self-description"
+    },
+    {
+      "id": "EXP3-RJ-008",
+      "draft": "Blue gets bored with routine",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Prohibited deficit shortcut"
+    },
+    {
+      "id": "EXP3-RJ-009",
+      "draft": "Green dislikes crowds",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Introversion/sensory contamination"
+    },
+    {
+      "id": "EXP3-RJ-010",
+      "draft": "Red confronts unfairness",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Directness and morality contamination"
+    },
+    {
+      "id": "EXP3-RJ-011",
+      "draft": "Yellow forgives mistakes",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Maturity and virtue loading"
+    },
+    {
+      "id": "EXP3-RJ-012",
+      "draft": "Trip delay response",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Saturated change/disruption measurement"
+    },
+    {
+      "id": "EXP3-RJ-013",
+      "draft": "Team kickoff contribution",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Work-heavy saturated architecture"
+    },
+    {
+      "id": "EXP3-RJ-014",
+      "draft": "Urgent volunteer response",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Competency/desirability imbalance"
+    },
+    {
+      "id": "EXP3-RJ-015",
+      "draft": "Preferred calendar style",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Near-duplicate planning/predictability evidence"
+    },
+    {
+      "id": "EXP3-RJ-016",
+      "draft": "Best friend quality",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "One option sounded uniquely kind"
+    },
+    {
+      "id": "EXP3-RJ-017",
+      "draft": "Learning style identity",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Unsupported rigid learning-style claim"
+    },
+    {
+      "id": "EXP3-RJ-018",
+      "draft": "Handling a rude stranger",
+      "decision": "REJECTED_BEFORE_ADMISSION",
+      "reason": "Conflict morality and desirability imbalance"
+    }
+  ],
+  "admitted": [
+    {
+      "question_revision_id": "EXP3-S-001@validation-2.0.0",
+      "id": "EXP3-S-001",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You have a free Saturday with no obligations. What would make it feel best spent?",
+      "options": [
+        {
+          "id": "EXP3-S-001:o1",
+          "label": "Finish something that matters to me",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-001:o2",
+          "label": "Follow whatever sounds most interesting",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-001:o3",
+          "label": "Spend meaningful time with someone close",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-001:o4",
+          "label": "Use the time for a plan I have considered",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "free-time",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "satisfying-free-day",
+      "construct": "satisfying-free-day",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON",
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-002@validation-2.0.0",
+      "id": "EXP3-S-002",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend invites you on a day trip with several good possibilities. What do you value most in their approach?",
+      "options": [
+        {
+          "id": "EXP3-S-002:o1",
+          "label": "They help us choose and get moving",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-002:o2",
+          "label": "They keep the day open to discovery",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-002:o3",
+          "label": "They make sure we enjoy it together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-002:o4",
+          "label": "They check details that could affect the day",
+          "color": "green"
+        }
+      ],
+      "domain": "relationships-support",
+      "context": "friendship-travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valued-trip-companion",
+      "construct": "valued-trip-companion",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-003@validation-2.0.0",
+      "id": "EXP3-S-003",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are choosing a new hobby. What draws you in first?",
+      "options": [
+        {
+          "id": "EXP3-S-003:o1",
+          "label": "A clear challenge I can improve at",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-003:o2",
+          "label": "Room to explore and try different things",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-003:o3",
+          "label": "A community I would enjoy returning to",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-003:o4",
+          "label": "A subject I can understand in depth",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "hobby",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "hobby-entry-attraction",
+      "construct": "hobby-entry-attraction",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-004@validation-2.0.0",
+      "id": "EXP3-S-004",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A household purchase has four good options. What breaks the tie for you?",
+      "options": [
+        {
+          "id": "EXP3-S-004:o1",
+          "label": "Which one delivers the strongest result",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-004:o2",
+          "label": "Which one opens the most possibilities",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-004:o3",
+          "label": "Which one fits the people who will share it",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-004:o4",
+          "label": "Which one has the clearest evidence behind it",
+          "color": "green"
+        }
+      ],
+      "domain": "decision-making",
+      "context": "household-purchase",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "purchase-tiebreaker",
+      "construct": "purchase-tiebreaker",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-005@validation-2.0.0",
+      "id": "EXP3-S-005",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A celebration is going well. What do you naturally add?",
+      "options": [
+        {
+          "id": "EXP3-S-005:o1",
+          "label": "A moment that gives the event momentum",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-005:o2",
+          "label": "An idea that makes it more memorable",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-005:o3",
+          "label": "Attention that keeps everyone connected",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-005:o4",
+          "label": "A detail that helps everything run smoothly",
+          "color": "green"
+        }
+      ],
+      "domain": "social-interaction",
+      "context": "celebration",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "celebration-contribution",
+      "construct": "celebration-contribution",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-006@validation-2.0.0",
+      "id": "EXP3-S-006",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "Someone recommends a book you might enjoy. What makes you most likely to read it?",
+      "options": [
+        {
+          "id": "EXP3-S-006:o1",
+          "label": "It could sharpen how I perform or decide",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-006:o2",
+          "label": "It promises a fresh world or point of view",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-006:o3",
+          "label": "It mattered to someone whose judgment I value",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-006:o4",
+          "label": "Its ideas appear thoughtful and well supported",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "learning-leisure",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "book-recommendation-attraction",
+      "construct": "book-recommendation-attraction",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-007@validation-2.0.0",
+      "id": "EXP3-S-007",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are arranging a room you use often. What matters most?",
+      "options": [
+        {
+          "id": "EXP3-S-007:o1",
+          "label": "It supports what I want to accomplish there",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-007:o2",
+          "label": "It feels lively and easy to change",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-007:o3",
+          "label": "It feels welcoming and familiar",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-007:o4",
+          "label": "It has a clear, practical arrangement",
+          "color": "green"
+        }
+      ],
+      "domain": "environment-preference",
+      "context": "home-environment",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "room-design-priority",
+      "construct": "room-design-priority",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-008@validation-2.0.0",
+      "id": "EXP3-S-008",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A close friend shares exciting news. What response feels most natural?",
+      "options": [
+        {
+          "id": "EXP3-S-008:o1",
+          "label": "Ask what they want to achieve next",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-008:o2",
+          "label": "Match their energy and celebrate the possibilities",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-008:o3",
+          "label": "Share the moment and what it means to them",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-008:o4",
+          "label": "Ask enough detail to understand what happened",
+          "color": "green"
+        }
+      ],
+      "domain": "communication",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "response-to-friend-success",
+      "construct": "response-to-friend-success",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-009@validation-2.0.0",
+      "id": "EXP3-S-009",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You have several entertainment choices tonight. What do you choose first?",
+      "options": [
+        {
+          "id": "EXP3-S-009:o1",
+          "label": "Something engaging with a strong payoff",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-009:o2",
+          "label": "Something surprising or unlike my usual choice",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-009:o3",
+          "label": "Something I can share or revisit with people I value",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-009:o4",
+          "label": "Something well made that rewards close attention",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "entertainment",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "entertainment-choice",
+      "construct": "entertainment-choice",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-010@validation-2.0.0",
+      "id": "EXP3-S-010",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A local event offers several ways to participate. Which role attracts you?",
+      "options": [
+        {
+          "id": "EXP3-S-010:o1",
+          "label": "Take ownership of a visible outcome",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-010:o2",
+          "label": "Create an experience people will talk about",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-010:o3",
+          "label": "Help regular participants feel included",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-010:o4",
+          "label": "Make the activity clear and dependable",
+          "color": "green"
+        }
+      ],
+      "domain": "community-participation",
+      "context": "community",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "community-role-attraction",
+      "construct": "community-role-attraction",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "AUTONOMY_INTERDEPENDENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-011@validation-2.0.0",
+      "id": "EXP3-S-011",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are learning to cook a new dish. What makes the first attempt satisfying?",
+      "options": [
+        {
+          "id": "EXP3-S-011:o1",
+          "label": "Getting a result I am proud to serve",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-011:o2",
+          "label": "Trying flavors and making it my own",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-011:o3",
+          "label": "Sharing the process or meal with someone",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-011:o4",
+          "label": "Understanding the method well enough to repeat it",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "household-learning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "cooking-first-attempt",
+      "construct": "cooking-first-attempt",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-012@validation-2.0.0",
+      "id": "EXP3-S-012",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A service provider gives you four kinds of reassurance. Which builds trust fastest?",
+      "options": [
+        {
+          "id": "EXP3-S-012:o1",
+          "label": "They take ownership and promise a clear result",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-012:o2",
+          "label": "They offer flexible options as things develop",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-012:o3",
+          "label": "They stay responsive and remember what matters to me",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-012:o4",
+          "label": "They explain the process, limits, and evidence",
+          "color": "green"
+        }
+      ],
+      "domain": "trust-formation",
+      "context": "service-provider",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "provider-trust-signal",
+      "construct": "provider-trust-signal",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-013@validation-2.0.0",
+      "id": "EXP3-S-013",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You find an unexpected hour in your day. What do you notice first?",
+      "options": [
+        {
+          "id": "EXP3-S-013:o1",
+          "label": "A useful result I can complete",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-013:o2",
+          "label": "An interesting possibility I can follow",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-013:o3",
+          "label": "Someone or something I have wanted to reconnect with",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-013:o4",
+          "label": "A loose end I can understand or organize",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "ordinary-planning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "unexpected-hour-attention",
+      "construct": "unexpected-hour-attention",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-014@validation-2.0.0",
+      "id": "EXP3-S-014",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?",
+      "options": [
+        {
+          "id": "EXP3-S-014:o1",
+          "label": "A clear direction they can act on",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-014:o2",
+          "label": "More possibilities than they saw before",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-014:o3",
+          "label": "Support for what matters in their relationships",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-014:o4",
+          "label": "A sound way to compare the consequences",
+          "color": "green"
+        }
+      ],
+      "domain": "communication",
+      "context": "friendship",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "advice-purpose",
+      "construct": "advice-purpose",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-015@validation-2.0.0",
+      "id": "EXP3-S-015",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "Your group has extra money left after a trip. What use appeals to you most?",
+      "options": [
+        {
+          "id": "EXP3-S-015:o1",
+          "label": "Upgrade one part of the trip in a noticeable way",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-015:o2",
+          "label": "Use it for an unplanned experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-015:o3",
+          "label": "Choose something the group can enjoy together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-015:o4",
+          "label": "Save it or use it where the value is clearest",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "shared-surplus-use",
+      "construct": "shared-surplus-use",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-016@validation-2.0.0",
+      "id": "EXP3-S-016",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are picking a gift for someone you know well. What guides you most?",
+      "options": [
+        {
+          "id": "EXP3-S-016:o1",
+          "label": "Something that supports a goal they care about",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-016:o2",
+          "label": "Something unexpected that creates a story",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-016:o3",
+          "label": "Something tied to your shared connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-016:o4",
+          "label": "Something chosen from what you know about their needs",
+          "color": "green"
+        }
+      ],
+      "domain": "relationships-support",
+      "context": "close-relationship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "gift-selection-motive",
+      "construct": "gift-selection-motive",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-017@validation-2.0.0",
+      "id": "EXP3-S-017",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A personal technology tool works well but has many unused features. What interests you?",
+      "options": [
+        {
+          "id": "EXP3-S-017:o1",
+          "label": "Using it to get more done",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-017:o2",
+          "label": "Discovering what else it could do",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-017:o3",
+          "label": "Making it easier to share or stay connected",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-017:o4",
+          "label": "Understanding and configuring it properly",
+          "color": "green"
+        }
+      ],
+      "domain": "problem-framing",
+      "context": "personal-technology",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "technology-interest",
+      "construct": "technology-interest",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-018@validation-2.0.0",
+      "id": "EXP3-S-018",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A healthy routine has been easy to maintain. What keeps it worthwhile?",
+      "options": [
+        {
+          "id": "EXP3-S-018:o1",
+          "label": "Seeing continued improvement",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-018:o2",
+          "label": "Keeping enough variety to stay engaged",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-018:o3",
+          "label": "Feeling supported by a steady rhythm or partner",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-018:o4",
+          "label": "Knowing why it works and tracking consistency",
+          "color": "green"
+        }
+      ],
+      "domain": "follow-through",
+      "context": "wellness-routine",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "routine-sustaining-reward",
+      "construct": "routine-sustaining-reward",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-019@validation-2.0.0",
+      "id": "EXP3-S-019",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You meet someone interesting at an unfamiliar gathering. What makes the conversation worthwhile?",
+      "options": [
+        {
+          "id": "EXP3-S-019:o1",
+          "label": "It leads somewhere useful or purposeful",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-019:o2",
+          "label": "It becomes lively and opens unexpected topics",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-019:o3",
+          "label": "It creates a genuine sense of connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-019:o4",
+          "label": "It gives me a clearer understanding of how they think",
+          "color": "green"
+        }
+      ],
+      "domain": "social-interaction",
+      "context": "unfamiliar-social-setting",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "worthwhile-new-conversation",
+      "construct": "worthwhile-new-conversation",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-020@validation-2.0.0",
+      "id": "EXP3-S-020",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A family tradition can be updated in several reasonable ways. Which change appeals to you?",
+      "options": [
+        {
+          "id": "EXP3-S-020:o1",
+          "label": "One that makes the occasion stronger or easier",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-020:o2",
+          "label": "One that adds a fresh experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-020:o3",
+          "label": "One that keeps its shared meaning intact",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-020:o4",
+          "label": "One that makes the tradition clearer and repeatable",
+          "color": "green"
+        }
+      ],
+      "domain": "change-risk",
+      "context": "family",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "tradition-update-motive",
+      "construct": "tradition-update-motive",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-021@validation-2.0.0",
+      "id": "EXP3-S-021",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You have finished a personal goal earlier than expected. What feels most natural next?",
+      "options": [
+        {
+          "id": "EXP3-S-021:o1",
+          "label": "Set a more ambitious target",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-021:o2",
+          "label": "Use the freedom to explore something new",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-021:o3",
+          "label": "Celebrate with people who supported the effort",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-021:o4",
+          "label": "Review what worked before choosing the next step",
+          "color": "green"
+        }
+      ],
+      "domain": "achievement-competition",
+      "context": "personal-goal",
+      "tones": [
+        "post-success"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "post-goal-direction",
+      "construct": "post-goal-direction",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION",
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-022@validation-2.0.0",
+      "id": "EXP3-S-022",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A travel plan offers either one excellent destination or several shorter stops. What most shapes your choice?",
+      "options": [
+        {
+          "id": "EXP3-S-022:o1",
+          "label": "Which choice gives the strongest overall payoff",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-022:o2",
+          "label": "Which choice gives the widest range of experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-022:o3",
+          "label": "Which choice creates the best shared rhythm",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-022:o4",
+          "label": "Which choice can be planned with the clearest tradeoffs",
+          "color": "green"
+        }
+      ],
+      "domain": "decision-making",
+      "context": "travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "travel-depth-versus-breadth",
+      "construct": "travel-depth-versus-breadth",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-023@validation-2.0.0",
+      "id": "EXP3-S-023",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are choosing someone to teach you a skill. What quality matters most?",
+      "options": [
+        {
+          "id": "EXP3-S-023:o1",
+          "label": "They push me toward a visible standard",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-023:o2",
+          "label": "They make room to experiment and discover",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-023:o3",
+          "label": "They stay invested in steady progress together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-023:o4",
+          "label": "They explain the logic behind each step",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "learning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "teacher-value",
+      "construct": "teacher-value",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-024@validation-2.0.0",
+      "id": "EXP3-S-024",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend group is planning a recurring get-together. What makes you want to keep attending?",
+      "options": [
+        {
+          "id": "EXP3-S-024:o1",
+          "label": "It gives us something meaningful to accomplish",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-024:o2",
+          "label": "It keeps introducing fresh experiences",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-024:o3",
+          "label": "It strengthens a dependable connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-024:o4",
+          "label": "It has a rhythm and purpose that make sense",
+          "color": "green"
+        }
+      ],
+      "domain": "relationships-support",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "recurring-gathering-value",
+      "construct": "recurring-gathering-value",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-025@validation-2.0.0",
+      "id": "EXP3-S-025",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are browsing a market with no urgent need to buy. What catches your attention?",
+      "options": [
+        {
+          "id": "EXP3-S-025:o1",
+          "label": "Something with clear usefulness or value",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-025:o2",
+          "label": "Something unusual I have not seen before",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-025:o3",
+          "label": "Something connected to a person or shared memory",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-025:o4",
+          "label": "Something whose quality I can examine closely",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "purchasing",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "market-attention",
+      "construct": "market-attention",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-026@validation-2.0.0",
+      "id": "EXP3-S-026",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A neighbor asks for help with a small community idea. What would make you join?",
+      "options": [
+        {
+          "id": "EXP3-S-026:o1",
+          "label": "A clear outcome I can help deliver",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-026:o2",
+          "label": "Freedom to shape the idea creatively",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-026:o3",
+          "label": "A chance to build lasting local connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-026:o4",
+          "label": "A plan that shows how the effort will work",
+          "color": "green"
+        }
+      ],
+      "domain": "community-participation",
+      "context": "community",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "community-join-motive",
+      "construct": "community-join-motive",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "AUTONOMY_INTERDEPENDENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-027@validation-2.0.0",
+      "id": "EXP3-S-027",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A household system is working but could be improved. What would you change first?",
+      "options": [
+        {
+          "id": "EXP3-S-027:o1",
+          "label": "Remove the step slowing results",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-027:o2",
+          "label": "Make it more flexible for changing needs",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-027:o3",
+          "label": "Make it easier for everyone to use consistently",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-027:o4",
+          "label": "Make the process clearer and more reliable",
+          "color": "green"
+        }
+      ],
+      "domain": "organization-process",
+      "context": "household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "household-system-improvement",
+      "construct": "household-system-improvement",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-028@validation-2.0.0",
+      "id": "EXP3-S-028",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "Someone you trust changes their mind after a good discussion. What earns your respect?",
+      "options": [
+        {
+          "id": "EXP3-S-028:o1",
+          "label": "They act quickly once a better direction is clear",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-028:o2",
+          "label": "They stay open to an option they had not imagined",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-028:o3",
+          "label": "They honor the people and commitments involved",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-028:o4",
+          "label": "They explain which facts changed their view",
+          "color": "green"
+        }
+      ],
+      "domain": "decision-reconsideration",
+      "context": "close-relationship",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "respected-reconsideration",
+      "construct": "respected-reconsideration",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION",
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-029@validation-2.0.0",
+      "id": "EXP3-S-029",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are choosing a photo from a memorable day to keep. Which one do you prefer?",
+      "options": [
+        {
+          "id": "EXP3-S-029:o1",
+          "label": "The moment that captured the main achievement",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-029:o2",
+          "label": "The most vivid or surprising moment",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-029:o3",
+          "label": "The moment that best shows the people together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-029:o4",
+          "label": "The image that best preserves what actually happened",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "memory-leisure",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "memory-photo-choice",
+      "construct": "memory-photo-choice",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-030@validation-2.0.0",
+      "id": "EXP3-S-030",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A hobby group has room for one new activity. What would you advocate for?",
+      "options": [
+        {
+          "id": "EXP3-S-030:o1",
+          "label": "Something with a goal we can work toward",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-030:o2",
+          "label": "Something different that broadens the experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-030:o3",
+          "label": "Something that helps members know each other better",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-030:o4",
+          "label": "Something with enough structure to improve over time",
+          "color": "green"
+        }
+      ],
+      "domain": "decision-making",
+      "context": "hobby-recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "hobby-group-addition",
+      "construct": "hobby-group-addition",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-031@validation-2.0.0",
+      "id": "EXP3-S-031",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You have two equally good ways to finish an ordinary task. What makes one feel complete?",
+      "options": [
+        {
+          "id": "EXP3-S-031:o1",
+          "label": "The intended result is clearly achieved",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-031:o2",
+          "label": "The result leaves room for a better next step",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-031:o3",
+          "label": "The people affected can rely on what was done",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-031:o4",
+          "label": "The result is correct and can be repeated",
+          "color": "green"
+        }
+      ],
+      "domain": "completion",
+      "context": "everyday-problem-solving",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "completion-signal",
+      "construct": "completion-signal",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-032@validation-2.0.0",
+      "id": "EXP3-S-032",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend is planning a major personal change. What support do you naturally offer?",
+      "options": [
+        {
+          "id": "EXP3-S-032:o1",
+          "label": "Help turn the choice into concrete next steps",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-032:o2",
+          "label": "Help explore what new possibilities it could open",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-032:o3",
+          "label": "Stay present through the transition",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-032:o4",
+          "label": "Help examine assumptions and likely consequences",
+          "color": "green"
+        }
+      ],
+      "domain": "relationships-support",
+      "context": "friendship",
+      "tones": [
+        "change"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "support-during-change",
+      "construct": "support-during-change",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-033@validation-2.0.0",
+      "id": "EXP3-S-033",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You can choose one feature for a shared home space. What gets your vote?",
+      "options": [
+        {
+          "id": "EXP3-S-033:o1",
+          "label": "Something that improves everyday function",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-033:o2",
+          "label": "Something that makes the space more lively",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-033:o3",
+          "label": "Something that helps people spend time together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-033:o4",
+          "label": "Something durable with clear long-term value",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "household",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "shared-space-feature",
+      "construct": "shared-space-feature",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-034@validation-2.0.0",
+      "id": "EXP3-S-034",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A personal project has lost momentum. What helps you re-engage?",
+      "options": [
+        {
+          "id": "EXP3-S-034:o1",
+          "label": "Choose the next result and finish it",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-034:o2",
+          "label": "Change the approach enough to make it interesting",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-034:o3",
+          "label": "Reconnect with why the project matters to me or others",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-034:o4",
+          "label": "Review where the process stopped making sense",
+          "color": "green"
+        }
+      ],
+      "domain": "recovery",
+      "context": "personal-project",
+      "tones": [
+        "recovery"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "project-reengagement",
+      "construct": "project-reengagement",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-035@validation-2.0.0",
+      "id": "EXP3-S-035",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A relative tells the same favorite story again. What do you naturally attend to?",
+      "options": [
+        {
+          "id": "EXP3-S-035:o1",
+          "label": "The point or lesson behind the story",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-035:o2",
+          "label": "The energy and way they tell it",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-035:o3",
+          "label": "What the story means to them and the family",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-035:o4",
+          "label": "The details that help me understand the time or event",
+          "color": "green"
+        }
+      ],
+      "domain": "communication",
+      "context": "family",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "repeated-story-attention",
+      "construct": "repeated-story-attention",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-036@validation-2.0.0",
+      "id": "EXP3-S-036",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are selecting a travel bag for many future trips. What matters most?",
+      "options": [
+        {
+          "id": "EXP3-S-036:o1",
+          "label": "It performs well under demanding use",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-036:o2",
+          "label": "It adapts to many different kinds of trips",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-036:o3",
+          "label": "It supports the way my companions and I travel",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-036:o4",
+          "label": "Its design and durability are easy to evaluate",
+          "color": "green"
+        }
+      ],
+      "domain": "purchasing",
+      "context": "travel-purchase",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "travel-bag-priority",
+      "construct": "travel-bag-priority",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-037@validation-2.0.0",
+      "id": "EXP3-S-037",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A game night offers four roles. Which sounds most enjoyable?",
+      "options": [
+        {
+          "id": "EXP3-S-037:o1",
+          "label": "Pursue the win and keep play moving",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-037:o2",
+          "label": "Add energy and try surprising moves",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-037:o3",
+          "label": "Keep everyone involved in the shared experience",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-037:o4",
+          "label": "Notice patterns and make a thoughtful strategy",
+          "color": "green"
+        }
+      ],
+      "domain": "recreation",
+      "context": "group-recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "game-night-role",
+      "construct": "game-night-role",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-038@validation-2.0.0",
+      "id": "EXP3-S-038",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A useful app changes its layout. What determines whether you keep using it?",
+      "options": [
+        {
+          "id": "EXP3-S-038:o1",
+          "label": "Whether I can still get the result efficiently",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-038:o2",
+          "label": "Whether the change adds interesting possibilities",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-038:o3",
+          "label": "Whether it still supports the people or routines tied to it",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-038:o4",
+          "label": "Whether the new logic is clear and dependable",
+          "color": "green"
+        }
+      ],
+      "domain": "change-risk",
+      "context": "personal-technology",
+      "tones": [
+        "change"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "app-change-evaluation",
+      "construct": "app-change-evaluation",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-039@validation-2.0.0",
+      "id": "EXP3-S-039",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are planning a quiet evening with someone close. What matters most?",
+      "options": [
+        {
+          "id": "EXP3-S-039:o1",
+          "label": "Doing something we have wanted to accomplish",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-039:o2",
+          "label": "Leaving room for the mood to lead us",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-039:o3",
+          "label": "Having unhurried time that strengthens connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-039:o4",
+          "label": "Agreeing on a plan that suits us both",
+          "color": "green"
+        }
+      ],
+      "domain": "relationships-support",
+      "context": "close-relationship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "quiet-evening-value",
+      "construct": "quiet-evening-value",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-040@validation-2.0.0",
+      "id": "EXP3-S-040",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A class offers several optional assignments. Which one do you choose?",
+      "options": [
+        {
+          "id": "EXP3-S-040:o1",
+          "label": "The one with the strongest challenge or outcome",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-040:o2",
+          "label": "The one that lets me experiment",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-040:o3",
+          "label": "The one connected to people or shared meaning",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-040:o4",
+          "label": "The one that deepens my understanding",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "learning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "optional-assignment-choice",
+      "construct": "optional-assignment-choice",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-041@validation-2.0.0",
+      "id": "EXP3-S-041",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "Your household has one free shelf. What would you use it for?",
+      "options": [
+        {
+          "id": "EXP3-S-041:o1",
+          "label": "Tools or supplies that support current goals",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-041:o2",
+          "label": "Objects I can rotate as interests change",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-041:o3",
+          "label": "Things that carry shared or personal meaning",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-041:o4",
+          "label": "A clearly arranged set I use and understand",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "free-shelf-use",
+      "construct": "free-shelf-use",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-042@validation-2.0.0",
+      "id": "EXP3-S-042",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are considering a subscription you do not need. What would justify it?",
+      "options": [
+        {
+          "id": "EXP3-S-042:o1",
+          "label": "A clear improvement in results or efficiency",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-042:o2",
+          "label": "Regular access to fresh choices",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-042:o3",
+          "label": "A shared benefit for people I care about",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-042:o4",
+          "label": "Reliable value supported by the details",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "purchasing",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "subscription-value",
+      "construct": "subscription-value",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-043@validation-2.0.0",
+      "id": "EXP3-S-043",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend asks what made a shared trip memorable. What comes to mind first?",
+      "options": [
+        {
+          "id": "EXP3-S-043:o1",
+          "label": "What we managed to do or accomplish",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-043:o2",
+          "label": "The unexpected moments and discoveries",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-043:o3",
+          "label": "The connection and stories we now share",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-043:o4",
+          "label": "How the pieces of the trip came together",
+          "color": "green"
+        }
+      ],
+      "domain": "communication",
+      "context": "friendship-travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "trip-memory-focus",
+      "construct": "trip-memory-focus",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-044@validation-2.0.0",
+      "id": "EXP3-S-044",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are joining a volunteer activity for one day. What role feels most worthwhile?",
+      "options": [
+        {
+          "id": "EXP3-S-044:o1",
+          "label": "Own a result that can be seen by day’s end",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-044:o2",
+          "label": "Bring ideas and energy where needed",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-044:o3",
+          "label": "Offer steady support alongside other people",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-044:o4",
+          "label": "Handle a part that needs accuracy and consistency",
+          "color": "green"
+        }
+      ],
+      "domain": "community-participation",
+      "context": "volunteering",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "volunteer-role-value",
+      "construct": "volunteer-role-value",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-045@validation-2.0.0",
+      "id": "EXP3-S-045",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A trusted person gives you feedback you did not expect. What helps you use it?",
+      "options": [
+        {
+          "id": "EXP3-S-045:o1",
+          "label": "A clear link to a better result",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-045:o2",
+          "label": "A new possibility I had not considered",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-045:o3",
+          "label": "Confidence that the relationship remains solid",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-045:o4",
+          "label": "Specific examples that make the pattern understandable",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "close-relationship",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "feedback-acceptance",
+      "construct": "feedback-acceptance",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-046@validation-2.0.0",
+      "id": "EXP3-S-046",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are choosing a place to become a regular customer. What keeps you returning?",
+      "options": [
+        {
+          "id": "EXP3-S-046:o1",
+          "label": "They consistently deliver what I came for",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-046:o2",
+          "label": "There is enough variety to keep it interesting",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-046:o3",
+          "label": "They recognize me and the relationship feels genuine",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-046:o4",
+          "label": "Their quality and process are dependable",
+          "color": "green"
+        }
+      ],
+      "domain": "trust-formation",
+      "context": "service-provider",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "regular-customer-loyalty",
+      "construct": "regular-customer-loyalty",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-047@validation-2.0.0",
+      "id": "EXP3-S-047",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A personal collection has grown large. What do you enjoy most about it?",
+      "options": [
+        {
+          "id": "EXP3-S-047:o1",
+          "label": "Finding valuable pieces and completing goals",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-047:o2",
+          "label": "Discovering surprising additions",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-047:o3",
+          "label": "The memories and connections attached to it",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-047:o4",
+          "label": "Understanding its categories, history, or quality",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "hobby",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "collection-reward",
+      "construct": "collection-reward",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-048@validation-2.0.0",
+      "id": "EXP3-S-048",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You and a friend disagree about how to spend a shared day. What do you want first?",
+      "options": [
+        {
+          "id": "EXP3-S-048:o1",
+          "label": "A decision that lets the day move forward",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-048:o2",
+          "label": "A new option neither of us proposed",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-048:o3",
+          "label": "A choice that preserves a good day together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-048:o4",
+          "label": "A clear comparison of the practical tradeoffs",
+          "color": "green"
+        }
+      ],
+      "domain": "conflict",
+      "context": "friendship",
+      "tones": [
+        "disagreement"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "shared-day-disagreement",
+      "construct": "shared-day-disagreement",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-049@validation-2.0.0",
+      "id": "EXP3-S-049",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are preparing for a recreational challenge. What gives you confidence?",
+      "options": [
+        {
+          "id": "EXP3-S-049:o1",
+          "label": "Knowing the result I am aiming to reach",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-049:o2",
+          "label": "Knowing I can adapt and enjoy the experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-049:o3",
+          "label": "Knowing I have dependable support",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-049:o4",
+          "label": "Knowing the plan, conditions, and likely risks",
+          "color": "green"
+        }
+      ],
+      "domain": "planning",
+      "context": "recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "challenge-preparation",
+      "construct": "challenge-preparation",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-050@validation-2.0.0",
+      "id": "EXP3-S-050",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A family member offers to take over a task you usually do. What matters most?",
+      "options": [
+        {
+          "id": "EXP3-S-050:o1",
+          "label": "They can own the result without slowing things down",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-050:o2",
+          "label": "They can bring a fresh approach",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-050:o3",
+          "label": "The handoff supports us without weakening trust",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-050:o4",
+          "label": "The expectations and process are clear",
+          "color": "green"
+        }
+      ],
+      "domain": "autonomy-interdependence",
+      "context": "family-household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "accepting-help-condition",
+      "construct": "accepting-help-condition",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "AUTONOMY_INTERDEPENDENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-051@validation-2.0.0",
+      "id": "EXP3-S-051",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You discover a free local lecture on an unfamiliar topic. What makes you attend?",
+      "options": [
+        {
+          "id": "EXP3-S-051:o1",
+          "label": "It may help me achieve something I care about",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-051:o2",
+          "label": "It sounds like an interesting new experience",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-051:o3",
+          "label": "Someone I value wants to share it",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-051:o4",
+          "label": "The subject raises questions I want answered",
+          "color": "green"
+        }
+      ],
+      "domain": "learning",
+      "context": "learning-community",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "lecture-attendance-motive",
+      "construct": "lecture-attendance-motive",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-052@validation-2.0.0",
+      "id": "EXP3-S-052",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A trip has one open morning. Which plan attracts you?",
+      "options": [
+        {
+          "id": "EXP3-S-052:o1",
+          "label": "Choose one worthwhile destination and make it happen",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-052:o2",
+          "label": "Wander and follow what looks interesting",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-052:o3",
+          "label": "Spend it in a way everyone can enjoy together",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-052:o4",
+          "label": "Pick an option after checking time, distance, and details",
+          "color": "green"
+        }
+      ],
+      "domain": "personal-preference",
+      "context": "travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "open-travel-morning",
+      "construct": "open-travel-morning",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-053@validation-2.0.0",
+      "id": "EXP3-S-053",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You are choosing music for a shared drive. What guides you?",
+      "options": [
+        {
+          "id": "EXP3-S-053:o1",
+          "label": "Music that keeps the trip moving",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-053:o2",
+          "label": "Music that brings energy and variety",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-053:o3",
+          "label": "Music tied to the people or memories in the car",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-053:o4",
+          "label": "Music that fits the route, timing, and mood",
+          "color": "green"
+        }
+      ],
+      "domain": "social-interaction",
+      "context": "travel-entertainment",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "shared-drive-music",
+      "construct": "shared-drive-music",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-054@validation-2.0.0",
+      "id": "EXP3-S-054",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A home repair can be handled in several reasonable ways. What do you prefer?",
+      "options": [
+        {
+          "id": "EXP3-S-054:o1",
+          "label": "Fix the main problem and restore function quickly",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-054:o2",
+          "label": "Try an approach that could improve the space",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-054:o3",
+          "label": "Choose a solution everyone can live with comfortably",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-054:o4",
+          "label": "Find the cause and use a reliable repair",
+          "color": "green"
+        }
+      ],
+      "domain": "problem-solving",
+      "context": "household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "home-repair-approach",
+      "construct": "home-repair-approach",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-055@validation-2.0.0",
+      "id": "EXP3-S-055",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A friend introduces you to someone they value. What do you notice first?",
+      "options": [
+        {
+          "id": "EXP3-S-055:o1",
+          "label": "What they are trying to accomplish",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-055:o2",
+          "label": "What makes their energy or ideas distinctive",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-055:o3",
+          "label": "How they relate to my friend and others",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-055:o4",
+          "label": "How they reason and what they know well",
+          "color": "green"
+        }
+      ],
+      "domain": "social-interaction",
+      "context": "unfamiliar-social-setting",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "new-person-attention",
+      "construct": "new-person-attention",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-056@validation-2.0.0",
+      "id": "EXP3-S-056",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You have completed a satisfying creative project. What do you want from the result?",
+      "options": [
+        {
+          "id": "EXP3-S-056:o1",
+          "label": "A finished piece with clear impact",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-056:o2",
+          "label": "A springboard for another idea",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-056:o3",
+          "label": "Something meaningful to share or keep",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-056:o4",
+          "label": "A result that reflects care and mastery",
+          "color": "green"
+        }
+      ],
+      "domain": "completion",
+      "context": "creative-hobby",
+      "tones": [
+        "post-success"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "creative-project-completion",
+      "construct": "creative-project-completion",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-057@validation-2.0.0",
+      "id": "EXP3-S-057",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A community space receives a generous donation. What use appeals to you?",
+      "options": [
+        {
+          "id": "EXP3-S-057:o1",
+          "label": "Fund a visible improvement with clear impact",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-057:o2",
+          "label": "Create new programs people can explore",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-057:o3",
+          "label": "Strengthen a service people depend on",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-057:o4",
+          "label": "Invest in durable systems and measured needs",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "community",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "community-donation-use",
+      "construct": "community-donation-use",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-058@validation-2.0.0",
+      "id": "EXP3-S-058",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "Someone close to you reaches a long-term goal. What do you most want to acknowledge?",
+      "options": [
+        {
+          "id": "EXP3-S-058:o1",
+          "label": "The achievement and what it opens next",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-058:o2",
+          "label": "The courage to explore a new chapter",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-058:o3",
+          "label": "The commitments and people sustained along the way",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-058:o4",
+          "label": "The discipline and understanding behind the result",
+          "color": "green"
+        }
+      ],
+      "domain": "recognition-reward",
+      "context": "close-relationship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "acknowledging-long-goal",
+      "construct": "acknowledging-long-goal",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-059@validation-2.0.0",
+      "id": "EXP3-S-059",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "You can spend a small windfall on one of four good things. Which feels most rewarding?",
+      "options": [
+        {
+          "id": "EXP3-S-059:o1",
+          "label": "Something that advances an important goal",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-059:o2",
+          "label": "A new experience I would not usually choose",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-059:o3",
+          "label": "Something that deepens a valued connection",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-059:o4",
+          "label": "Something with lasting, well-understood value",
+          "color": "green"
+        }
+      ],
+      "domain": "resource-allocation",
+      "context": "money-purchasing",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "personal-windfall-reward",
+      "construct": "personal-windfall-reward",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION",
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-S-060@validation-2.0.0",
+      "id": "EXP3-S-060",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "prompt": "A yearly activity has become comfortable and successful. What would make you renew it?",
+      "options": [
+        {
+          "id": "EXP3-S-060:o1",
+          "label": "A chance to reach a stronger result",
+          "color": "red"
+        },
+        {
+          "id": "EXP3-S-060:o2",
+          "label": "Enough new possibility to keep expanding",
+          "color": "blue"
+        },
+        {
+          "id": "EXP3-S-060:o3",
+          "label": "The continuity and people attached to it",
+          "color": "yellow"
+        },
+        {
+          "id": "EXP3-S-060:o4",
+          "label": "A clear path to deeper skill or consistency",
+          "color": "green"
+        }
+      ],
+      "domain": "follow-through",
+      "context": "recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "renewing-successful-activity",
+      "construct": "renewing-successful-activity",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION",
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-001@validation-2.0.0",
+      "id": "EXP3-L-R-001",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "When two leisure plans are equally appealing, I prefer the one that ends with a clear accomplishment.",
+      "options": [],
+      "domain": "achievement-competition",
+      "context": "free-time",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "leisure-accomplishment-preference",
+      "construct": "leisure-accomplishment-preference",
+      "pairs": [
+        "RED_BLUE"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-002@validation-2.0.0",
+      "id": "EXP3-L-R-002",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "After reaching a personal goal, I am energized by setting a harder one.",
+      "options": [],
+      "domain": "achievement-competition",
+      "context": "personal-goal",
+      "tones": [
+        "post-success"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "post-success-escalation",
+      "construct": "post-success-escalation",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-003@validation-2.0.0",
+      "id": "EXP3-L-R-003",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "When I have limited time, I would rather complete one important result than explore several interesting directions.",
+      "options": [],
+      "domain": "resource-allocation",
+      "context": "ordinary-planning",
+      "tones": [
+        "competing-alternatives"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "one-result-over-options",
+      "construct": "one-result-over-options",
+      "pairs": [
+        "RED_BLUE"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-004@validation-2.0.0",
+      "id": "EXP3-L-R-004",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "I trust advice more when it gives me a clear course of action.",
+      "options": [],
+      "domain": "trust-formation",
+      "context": "service-provider",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "actionable-advice-trust",
+      "construct": "actionable-advice-trust",
+      "pairs": [
+        "RED_GREEN",
+        "RED_YELLOW"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-005@validation-2.0.0",
+      "id": "EXP3-L-R-005",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "A challenge is more satisfying when I can see how well I performed.",
+      "options": [],
+      "domain": "recognition-reward",
+      "context": "recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "visible-performance-reward",
+      "construct": "visible-performance-reward",
+      "pairs": [
+        "RED_BLUE",
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-006@validation-2.0.0",
+      "id": "EXP3-L-R-006",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "When a personal project slows down, choosing the next result helps me re-engage.",
+      "options": [],
+      "domain": "recovery",
+      "context": "personal-project",
+      "tones": [
+        "recovery"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "result-led-reengagement",
+      "construct": "result-led-reengagement",
+      "pairs": [
+        "RED_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-007@validation-2.0.0",
+      "id": "EXP3-L-R-007",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "I would rather own a meaningful decision than wait for everyone to become equally comfortable with it.",
+      "options": [],
+      "domain": "leadership-ownership",
+      "context": "general-cross-context",
+      "tones": [
+        "competing-alternatives"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "decision-ownership-versus-consensus",
+      "construct": "decision-ownership-versus-consensus",
+      "pairs": [
+        "RED_YELLOW"
+      ],
+      "dimensions": [
+        "AUTONOMY_INTERDEPENDENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-008@validation-2.0.0",
+      "id": "EXP3-L-R-008",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "When several purchases are good enough, I favor the one with the strongest practical payoff.",
+      "options": [],
+      "domain": "decision-making",
+      "context": "purchasing",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "purchase-payoff-priority",
+      "construct": "purchase-payoff-priority",
+      "pairs": [
+        "RED_BLUE",
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-009@validation-2.0.0",
+      "id": "EXP3-L-R-009",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "A relaxing day feels better to me when I still move something important forward.",
+      "options": [],
+      "domain": "personal-preference",
+      "context": "free-time",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "rest-with-progress",
+      "construct": "rest-with-progress",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-010@validation-2.0.0",
+      "id": "EXP3-L-R-010",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "I value people who can turn a good conversation into a concrete next step.",
+      "options": [],
+      "domain": "communication",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valuing-forward-motion",
+      "construct": "valuing-forward-motion",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-011@validation-2.0.0",
+      "id": "EXP3-L-R-011",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "When an opportunity has meaningful upside, I am willing to decide before every detail is settled.",
+      "options": [],
+      "domain": "change-risk",
+      "context": "everyday-decision",
+      "tones": [
+        "uncertainty"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "upside-before-complete-detail",
+      "construct": "upside-before-complete-detail",
+      "pairs": [
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-012@validation-2.0.0",
+      "id": "EXP3-L-R-012",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "I feel finished when the intended outcome is clearly achieved, even if the process could still be refined.",
+      "options": [],
+      "domain": "completion",
+      "context": "general-cross-context",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "outcome-as-completion",
+      "construct": "outcome-as-completion",
+      "pairs": [
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-R-013@validation-2.0.0",
+      "id": "EXP3-L-R-013",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "red",
+      "prompt": "Recognition matters most to me when it reflects a result I earned.",
+      "options": [],
+      "domain": "recognition-reward",
+      "context": "general-cross-context",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "earned-result-recognition",
+      "construct": "earned-result-recognition",
+      "pairs": [
+        "RED_BLUE",
+        "RED_YELLOW"
+      ],
+      "dimensions": [
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-001@validation-2.0.0",
+      "id": "EXP3-L-B-001",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "When several good plans are available, I feel energized by keeping room for discovery.",
+      "options": [],
+      "domain": "personal-preference",
+      "context": "free-time",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "discovery-with-good-options",
+      "construct": "discovery-with-good-options",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-002@validation-2.0.0",
+      "id": "EXP3-L-B-002",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "After a success, I naturally look for a fresh direction rather than repeating the same formula.",
+      "options": [],
+      "domain": "achievement-competition",
+      "context": "personal-goal",
+      "tones": [
+        "post-success"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "post-success-expansion",
+      "construct": "post-success-expansion",
+      "pairs": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-003@validation-2.0.0",
+      "id": "EXP3-L-B-003",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "I value a travel companion who notices unexpected possibilities along the way.",
+      "options": [],
+      "domain": "relationships-support",
+      "context": "travel",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valuing-travel-openness",
+      "construct": "valuing-travel-openness",
+      "pairs": [
+        "BLUE_GREEN",
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-004@validation-2.0.0",
+      "id": "EXP3-L-B-004",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "When learning for fun, I prefer experimenting early to following a complete sequence first.",
+      "options": [],
+      "domain": "learning",
+      "context": "learning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "learning-experimentation-entry",
+      "construct": "learning-experimentation-entry",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-005@validation-2.0.0",
+      "id": "EXP3-L-B-005",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "A familiar activity stays appealing when there is room to vary the experience.",
+      "options": [],
+      "domain": "follow-through",
+      "context": "recreation",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "variety-sustains-interest",
+      "construct": "variety-sustains-interest",
+      "pairs": [
+        "BLUE_YELLOW",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-006@validation-2.0.0",
+      "id": "EXP3-L-B-006",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "I am drawn to people who make an ordinary moment feel more alive.",
+      "options": [],
+      "domain": "social-interaction",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valuing-expressive-energy",
+      "construct": "valuing-expressive-energy",
+      "pairs": [
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-007@validation-2.0.0",
+      "id": "EXP3-L-B-007",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "When two products are equally useful, I am more interested in the one that can be used in new ways.",
+      "options": [],
+      "domain": "decision-making",
+      "context": "purchasing",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "product-possibility-preference",
+      "construct": "product-possibility-preference",
+      "pairs": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-008@validation-2.0.0",
+      "id": "EXP3-L-B-008",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "Having several promising options feels more energizing than narrowing the choice early.",
+      "options": [],
+      "domain": "decision-making",
+      "context": "general-cross-context",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "option-breadth-energy",
+      "construct": "option-breadth-energy",
+      "pairs": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-009@validation-2.0.0",
+      "id": "EXP3-L-B-009",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "I re-engage with a stalled hobby by changing how I approach it.",
+      "options": [],
+      "domain": "recovery",
+      "context": "hobby",
+      "tones": [
+        "recovery"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "novelty-led-reengagement",
+      "construct": "novelty-led-reengagement",
+      "pairs": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-010@validation-2.0.0",
+      "id": "EXP3-L-B-010",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "An open afternoon feels valuable because it can become something I did not plan.",
+      "options": [],
+      "domain": "time-horizon",
+      "context": "free-time",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "open-time-possibility",
+      "construct": "open-time-possibility",
+      "pairs": [
+        "BLUE_GREEN",
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-011@validation-2.0.0",
+      "id": "EXP3-L-B-011",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "I enjoy sharing an idea more when the conversation expands beyond where it started.",
+      "options": [],
+      "domain": "communication",
+      "context": "communication",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "INTERPERSONAL",
+      "family": "conversation-expansion-reward",
+      "construct": "conversation-expansion-reward",
+      "pairs": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-012@validation-2.0.0",
+      "id": "EXP3-L-B-012",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "Freedom to shape an experience matters more to me than knowing exactly how it will unfold.",
+      "options": [],
+      "domain": "environment-preference",
+      "context": "travel-leisure",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "freedom-over-predictability",
+      "construct": "freedom-over-predictability",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-B-013@validation-2.0.0",
+      "id": "EXP3-L-B-013",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "blue",
+      "prompt": "When someone changes my mind, it is often because they show me a possibility I had not considered.",
+      "options": [],
+      "domain": "decision-reconsideration",
+      "context": "general-cross-context",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "possibility-causes-reconsideration",
+      "construct": "possibility-causes-reconsideration",
+      "pairs": [
+        "BLUE_GREEN",
+        "RED_BLUE"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-001@validation-2.0.0",
+      "id": "EXP3-L-Y-001",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "A recurring activity becomes more valuable to me as the relationships around it deepen.",
+      "options": [],
+      "domain": "relationships-support",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "relationship-depth-through-repetition",
+      "construct": "relationship-depth-through-repetition",
+      "pairs": [
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-002@validation-2.0.0",
+      "id": "EXP3-L-Y-002",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "When two choices are equally reasonable, I prefer the one that protects a commitment people already rely on.",
+      "options": [],
+      "domain": "stability-security",
+      "context": "everyday-decision",
+      "tones": [
+        "competing-alternatives"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "commitment-continuity-priority",
+      "construct": "commitment-continuity-priority",
+      "pairs": [
+        "RED_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-003@validation-2.0.0",
+      "id": "EXP3-L-Y-003",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "I trust someone more when their support remains steady after the exciting part has passed.",
+      "options": [],
+      "domain": "trust-formation",
+      "context": "close-relationship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "steady-support-builds-trust",
+      "construct": "steady-support-builds-trust",
+      "pairs": [
+        "BLUE_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-004@validation-2.0.0",
+      "id": "EXP3-L-Y-004",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "A celebration feels most satisfying when it strengthens a shared connection.",
+      "options": [],
+      "domain": "relationships-support",
+      "context": "celebration",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "celebration-connection-reward",
+      "construct": "celebration-connection-reward",
+      "pairs": [
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [
+        "RECOGNITION_REWARD"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-005@validation-2.0.0",
+      "id": "EXP3-L-Y-005",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "When I reconsider a personal plan, the effect on important relationships carries real weight.",
+      "options": [],
+      "domain": "decision-reconsideration",
+      "context": "close-relationship",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "relationships-in-reconsideration",
+      "construct": "relationships-in-reconsideration",
+      "pairs": [
+        "RED_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-006@validation-2.0.0",
+      "id": "EXP3-L-Y-006",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "I value friends who keep small commitments even when no one is checking.",
+      "options": [],
+      "domain": "trust-formation",
+      "context": "friendship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "small-commitment-trust",
+      "construct": "small-commitment-trust",
+      "pairs": [
+        "RED_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-007@validation-2.0.0",
+      "id": "EXP3-L-Y-007",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "A home feels settled when the people in it can rely on familiar shared rhythms.",
+      "options": [],
+      "domain": "environment-preference",
+      "context": "home-environment",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "shared-rhythm-home",
+      "construct": "shared-rhythm-home",
+      "pairs": [
+        "BLUE_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-008@validation-2.0.0",
+      "id": "EXP3-L-Y-008",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "I am more likely to continue a difficult personal effort when it carries meaning for someone I care about.",
+      "options": [],
+      "domain": "follow-through",
+      "context": "personal-goal",
+      "tones": [
+        "recovery"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "relational-meaning-sustains-effort",
+      "construct": "relational-meaning-sustains-effort",
+      "pairs": [
+        "RED_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-009@validation-2.0.0",
+      "id": "EXP3-L-Y-009",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "When a disagreement is over, I still care whether the relationship feels dependable.",
+      "options": [],
+      "domain": "conflict",
+      "context": "close-relationship",
+      "tones": [
+        "disagreement"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "post-conflict-continuity",
+      "construct": "post-conflict-continuity",
+      "pairs": [
+        "RED_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-010@validation-2.0.0",
+      "id": "EXP3-L-Y-010",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "I would rather preserve a dependable connection than win a minor point.",
+      "options": [],
+      "domain": "conflict",
+      "context": "friendship",
+      "tones": [
+        "competing-alternatives"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "connection-over-minor-win",
+      "construct": "connection-over-minor-win",
+      "pairs": [
+        "RED_YELLOW"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-011@validation-2.0.0",
+      "id": "EXP3-L-Y-011",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "Time with people I value feels worthwhile even when nothing new or productive happens.",
+      "options": [],
+      "domain": "relationships-support",
+      "context": "close-relationship",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "connection-without-output",
+      "construct": "connection-without-output",
+      "pairs": [
+        "RED_YELLOW",
+        "BLUE_YELLOW"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-Y-012@validation-2.0.0",
+      "id": "EXP3-L-Y-012",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "yellow",
+      "prompt": "I notice when a useful routine also helps people feel connected.",
+      "options": [],
+      "domain": "organization-process",
+      "context": "household",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "relational-value-in-routine",
+      "construct": "relational-value-in-routine",
+      "pairs": [
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-001@validation-2.0.0",
+      "id": "EXP3-L-G-001",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "When several good choices remain, I prefer the one whose consequences I can explain.",
+      "options": [],
+      "domain": "decision-making",
+      "context": "everyday-decision",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "explainable-consequence-choice",
+      "construct": "explainable-consequence-choice",
+      "pairs": [
+        "RED_GREEN",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "DECISION_RECONSIDERATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-002@validation-2.0.0",
+      "id": "EXP3-L-G-002",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "I trust a recommendation more when I can see the evidence and limits behind it.",
+      "options": [],
+      "domain": "trust-formation",
+      "context": "service-provider",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "evidence-and-limits-trust",
+      "construct": "evidence-and-limits-trust",
+      "pairs": [
+        "RED_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [
+        "TRUST_FORMATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-003@validation-2.0.0",
+      "id": "EXP3-L-G-003",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "Learning becomes satisfying when separate details form a clear whole.",
+      "options": [],
+      "domain": "learning",
+      "context": "learning",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "coherent-understanding-reward",
+      "construct": "coherent-understanding-reward",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-004@validation-2.0.0",
+      "id": "EXP3-L-G-004",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "A successful routine is worth keeping when I understand why it works.",
+      "options": [],
+      "domain": "organization-process",
+      "context": "wellness-routine",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "understood-routine-value",
+      "construct": "understood-routine-value",
+      "pairs": [
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-005@validation-2.0.0",
+      "id": "EXP3-L-G-005",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "Before repeating a good result, I want to know which parts actually produced it.",
+      "options": [],
+      "domain": "learning",
+      "context": "personal-project",
+      "tones": [
+        "post-success"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "causal-understanding-after-success",
+      "construct": "causal-understanding-after-success",
+      "pairs": [
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-006@validation-2.0.0",
+      "id": "EXP3-L-G-006",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "I value people who make expectations clear before a shared task begins.",
+      "options": [],
+      "domain": "communication",
+      "context": "household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valuing-clear-expectations",
+      "construct": "valuing-clear-expectations",
+      "pairs": [
+        "RED_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-007@validation-2.0.0",
+      "id": "EXP3-L-G-007",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "A purchase feels finished only after I understand the important tradeoffs.",
+      "options": [],
+      "domain": "completion",
+      "context": "purchasing",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "purchase-tradeoff-completion",
+      "construct": "purchase-tradeoff-completion",
+      "pairs": [
+        "RED_GREEN",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-008@validation-2.0.0",
+      "id": "EXP3-L-G-008",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "When a plan changes, I re-engage faster once the new logic is clear.",
+      "options": [],
+      "domain": "recovery",
+      "context": "ordinary-planning",
+      "tones": [
+        "change"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "clarity-restores-engagement",
+      "construct": "clarity-restores-engagement",
+      "pairs": [
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-009@validation-2.0.0",
+      "id": "EXP3-L-G-009",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "I prefer a flexible system with clear rules to one that depends on remembering exceptions.",
+      "options": [],
+      "domain": "organization-process",
+      "context": "household",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "clear-rules-over-exceptions",
+      "construct": "clear-rules-over-exceptions",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-010@validation-2.0.0",
+      "id": "EXP3-L-G-010",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "I am drawn to hobbies that reward deeper understanding over time.",
+      "options": [],
+      "domain": "learning",
+      "context": "hobby",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_PREFERENCE",
+      "family": "hobby-mastery-attraction",
+      "construct": "hobby-mastery-attraction",
+      "pairs": [
+        "BLUE_GREEN",
+        "RED_GREEN"
+      ],
+      "dimensions": [
+        "TIME_HORIZON"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-011@validation-2.0.0",
+      "id": "EXP3-L-G-011",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "When advice conflicts, I first compare the assumptions behind each view.",
+      "options": [],
+      "domain": "problem-framing",
+      "context": "general-cross-context",
+      "tones": [
+        "ordinary-calm"
+      ],
+      "orientation": "SELF_ACTION",
+      "family": "compare-conflicting-assumptions",
+      "construct": "compare-conflicting-assumptions",
+      "pairs": [
+        "RED_GREEN",
+        "BLUE_GREEN"
+      ],
+      "dimensions": [],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    },
+    {
+      "question_revision_id": "EXP3-L-G-012@validation-2.0.0",
+      "id": "EXP3-L-G-012",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "prompt": "A calm environment helps me notice patterns I would otherwise miss.",
+      "options": [],
+      "domain": "environment-preference",
+      "context": "home-environment",
+      "tones": [
+        "positive-calm"
+      ],
+      "orientation": "SELF_ATTENTION",
+      "family": "calm-enables-pattern-attention",
+      "construct": "calm-enables-pattern-attention",
+      "pairs": [
+        "BLUE_GREEN"
+      ],
+      "dimensions": [
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "work": false,
+      "weak": false,
+      "active_legacy_id": null
+    }
+  ],
+  "production_impact": "NONE"
+}

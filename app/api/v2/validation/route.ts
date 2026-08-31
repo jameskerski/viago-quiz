@@ -1,13 +1,9 @@
 import { NextResponse } from 'next/server';
-import { hasAdminSession } from '@/lib/v2/adminAuth';
 import { supabaseAdmin } from '@/lib/supabaseAdminClient';
 import { assembleValidationAttempt, createSeed, publicManifest, scoreValidationAttempt } from '@/lib/v2/validation';
 
 const FLAGS=new Set(['confusing','two_answers_true','no_answer_true','obvious_best_answer','context_dependent','repetitive','other']);
-const unauthorized=()=>NextResponse.json({error:'Private validation access required'},{status:401});
-
 export async function GET(request:Request){
- if(!(await hasAdminSession()))return unauthorized();
  const id=new URL(request.url).searchParams.get('attempt_id'); if(!id)return NextResponse.json({error:'attempt_id required'},{status:400});
  const {data,error}=await supabaseAdmin.from('validation_attempts').select('id,participant_id,attempt_number,manifest,answers,item_flags,score_vector,primary_color,secondary_color,ranking,score_margin,started_at,completed_at,elapsed_seconds').eq('id',id).single();
  if(error)return NextResponse.json({error:error.message},{status:404});
@@ -15,7 +11,6 @@ export async function GET(request:Request){
 }
 
 export async function POST(request:Request){
- if(!(await hasAdminSession()))return unauthorized();
  const body=(await request.json().catch(()=>({}))) as Record<string,unknown>; const action=body.action;
  try{
   if(action==='start'){

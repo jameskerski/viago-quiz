@@ -1,10 +1,10 @@
 import { createHash, randomUUID } from 'node:crypto';
-import bank from '@/data/v2-research/validation-bank-183-v1.0.0.json';
+import bank from '@/data/v2-research/validation-bank-293-v2.0.0.json';
 
 export const VALIDATION_MODE = 'VIAGO_V2_PRIVATE_HUMAN_VALIDATION';
 export const BANK_VERSION = bank.bank_version;
 export const BANK_HASH = bank.bank_hash;
-export const ASSEMBLER_VERSION = 'viago-validation-assembler-v1.0.0';
+export const ASSEMBLER_VERSION = 'viago-validation-assembler-v2.0.0';
 export const SCORING_VERSION = 'viago-validation-scoring-equal-opportunity-v1.0.0';
 export const RETEST_INTERVAL = '14–21 days';
 export type Color = 'red'|'blue'|'yellow'|'green';
