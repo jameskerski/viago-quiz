@@ -1,8 +1,9 @@
 import { NextResponse } from 'next/server';
+import { randomUUID } from 'node:crypto';
 import { hasAdminSession } from '@/lib/v2/adminAuth';
 import { supabaseAdmin } from '@/lib/supabaseAdminClient';
 import { assembleValidationAttempt, createSeed, publicManifest, scoreValidationAttempt } from '@/lib/v2/validation';
-import { bindValidationAttempt, canAccessValidationAttempt } from '@/lib/v2/validationAccess';
+import { bindValidationAttempt, bindValidationParticipant, canAccessValidationAttempt, currentValidationParticipantId } from '@/lib/v2/validationAccess';
 
 const FLAGS=new Set(['confusing','two_answers_true','no_answer_true','obvious_best_answer','context_dependent','repetitive','other']);
 export async function GET(request:Request){
@@ -17,11 +18,12 @@ export async function POST(request:Request){
  const body=(await request.json().catch(()=>({}))) as Record<string,unknown>; const action=body.action;
  try{
   if(action==='start'){
-   const participantCode=String(body?.participant_code||'').trim().slice(0,80); const population=body?.population==='EXPERIENCED'?'EXPERIENCED':'NEW';
-   if(!participantCode)return NextResponse.json({error:'Participant code is required'},{status:400});
+   const participantName=String(body?.participant_name||'').trim().replace(/\s+/g,' ').slice(0,80);const priorExperience=['YES','NO','UNSURE'].includes(String(body?.prior_experience))?String(body.prior_experience):'UNSURE';const population=priorExperience==='YES'?'EXPERIENCED':'NEW';
+   if(!participantName)return NextResponse.json({error:'Your name is required'},{status:400});
    const known=(value:unknown)=>['red','blue','yellow','green'].includes(String(value))?String(value):null;
-   let {data:participant}=await supabaseAdmin.from('validation_participants').select('*').eq('participant_code',participantCode).maybeSingle();
-   if(!participant){const created=await supabaseAdmin.from('validation_participants').insert({participant_code:participantCode,population,known_primary:known(body.known_primary),known_secondary:known(body.known_secondary)}).select().single();if(created.error)throw created.error;participant=created.data;}
+   const existingId=await currentValidationParticipantId();let participant=null;
+   if(existingId){const existing=await supabaseAdmin.from('validation_participants').select('*').eq('id',existingId).maybeSingle();if(existing.error)throw existing.error;const label=String(existing.data?.participant_code||'').toLocaleLowerCase();if(label===participantName.toLocaleLowerCase()||label.startsWith(`${participantName.toLocaleLowerCase()} (`))participant=existing.data;}
+   if(!participant){const collision=await supabaseAdmin.from('validation_participants').select('id').eq('participant_code',participantName).maybeSingle();if(collision.error)throw collision.error;const participantCode=collision.data?`${participantName} (${randomUUID().slice(0,4)})`:participantName;const created=await supabaseAdmin.from('validation_participants').insert({participant_code:participantCode,population,known_primary:priorExperience==='YES'?known(body.known_primary):null,known_secondary:priorExperience==='YES'?known(body.known_secondary):null}).select().single();if(created.error)throw created.error;participant=created.data;await bindValidationParticipant(participant.id);}
    const previous=await supabaseAdmin.from('validation_attempts').select('attempt_number').eq('participant_id',participant.id).order('attempt_number',{ascending:false}).limit(1);
    if(previous.error)throw previous.error;const attemptNumber=(previous.data?.[0]?.attempt_number||0)+1;const manifest=assembleValidationAttempt(createSeed());
    const inserted=await supabaseAdmin.from('validation_attempts').insert({participant_id:participant.id,attempt_number:attemptNumber,mode:manifest.mode,bank_version:manifest.bank_version,bank_hash:manifest.bank_hash,assembler_version:manifest.assembler_version,scoring_version:manifest.scoring_version,seed:manifest.seed,manifest_hash:manifest.manifest_hash,manifest}).select('id,attempt_number').single();

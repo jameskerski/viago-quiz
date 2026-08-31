@@ -4,6 +4,7 @@ import { BANK_VERSION } from '@/lib/v2/validation';
 
 const ACCESS_COOKIE='viago_validation_cohort';
 const ATTEMPT_COOKIE='viago_validation_attempt';
+const PARTICIPANT_COOKIE='viago_validation_participant';
 
 function configuration(){
   const enabled=process.env.VIAGO_VALIDATION_COHORT_ENABLED==='true';
@@ -33,6 +34,16 @@ export async function bindValidationAttempt(attemptId:string){
   const config=configuration();if(!config||!active(config))throw new Error('Validation cohort access is unavailable');
   const signature=sign('attempt',attemptId,config);
   (await cookies()).set(ATTEMPT_COOKIE,`${attemptId}.${signature}`,{httpOnly:true,secure:true,sameSite:'lax',path:'/api/v2/validation',expires:config.expires});
+}
+export async function bindValidationParticipant(participantId:string){
+  const config=configuration();if(!config||!active(config))throw new Error('Validation cohort access is unavailable');
+  const signature=sign('participant',participantId,config);
+  (await cookies()).set(PARTICIPANT_COOKIE,`${participantId}.${signature}`,{httpOnly:true,secure:true,sameSite:'lax',path:'/api/v2/validation',expires:config.expires});
+}
+export async function currentValidationParticipantId(){
+  const config=configuration();if(!config||!active(config))return null;
+  const value=(await cookies()).get(PARTICIPANT_COOKIE)?.value||'';const dot=value.indexOf('.');if(dot<1)return null;
+  const id=value.slice(0,dot),signature=value.slice(dot+1);return equal(signature,sign('participant',id,config))?id:null;
 }
 export async function canAccessValidationAttempt(attemptId:string){
   const config=configuration();if(!config||!active(config))return false;
