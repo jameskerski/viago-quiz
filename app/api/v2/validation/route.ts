@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { hasAdminSession } from '@/lib/v2/adminAuth';
 import { supabaseAdmin } from '@/lib/supabaseAdminClient';
 import { assembleValidationAttempt, createSeed, publicManifest, scoreValidationAttempt } from '@/lib/v2/validation';
-import { bindValidationAttempt, canAccessValidationAttempt, hasValidationAccess } from '@/lib/v2/validationAccess';
+import { bindValidationAttempt, canAccessValidationAttempt } from '@/lib/v2/validationAccess';
 
 const FLAGS=new Set(['confusing','two_answers_true','no_answer_true','obvious_best_answer','context_dependent','repetitive','other']);
 export async function GET(request:Request){
@@ -17,7 +17,6 @@ export async function POST(request:Request){
  const body=(await request.json().catch(()=>({}))) as Record<string,unknown>; const action=body.action;
  try{
   if(action==='start'){
-   if(!(await hasAdminSession())&&!(await hasValidationAccess()))return NextResponse.json({error:'Validation cohort access required'},{status:401});
    const participantCode=String(body?.participant_code||'').trim().slice(0,80); const population=body?.population==='EXPERIENCED'?'EXPERIENCED':'NEW';
    if(!participantCode)return NextResponse.json({error:'Participant code is required'},{status:400});
    const known=(value:unknown)=>['red','blue','yellow','green'].includes(String(value))?String(value):null;

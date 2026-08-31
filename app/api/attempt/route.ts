@@ -34,7 +34,7 @@ export async function GET(req: Request) {
     // 2) Load question prompts (English + Spanish)
     const { data: qRows, error: qErr } = await supabase
       .from("questions")
-      .select("id, prompt, prompt_es, likert_color")
+      .select("id, prompt, prompt_es")
       .in("id", questionIds);
 
     if (qErr) throw qErr;
@@ -53,7 +53,7 @@ export async function GET(req: Request) {
       // 3a) All options for those questions (English + Spanish)
       const { data: optRows, error: optErr } = await supabase
         .from("question_options")
-        .select("id, question_id, label, label_es, red, blue, yellow, green")
+        .select("id, question_id, label, label_es")
         .in("question_id", singleQuestionIds);
 
       if (optErr) throw optErr;
@@ -84,10 +84,6 @@ export async function GET(req: Request) {
             lang === "es"
               ? (opt.label_es ?? opt.label ?? "")
               : (opt.label ?? ""),
-          red: opt.red,
-          blue: opt.blue,
-          yellow: opt.yellow,
-          green: opt.green,
           sort_order: r.position ?? r.sort_order ?? 0, // keep numeric order for UI if needed
         });
         grouped.set(r.question_id, arr);
@@ -104,10 +100,6 @@ export async function GET(req: Request) {
                 lang === "es"
                   ? (o.label_es ?? o.label ?? "")
                   : (o.label ?? ""),
-              red: o.red,
-              blue: o.blue,
-              yellow: o.yellow,
-              green: o.green,
               sort_order: 0,
             }));
           grouped.set(qid, fallback);
@@ -128,7 +120,6 @@ export async function GET(req: Request) {
           lang === "es"
             ? (q?.prompt_es ?? q?.prompt ?? "")
             : (q?.prompt ?? ""),
-        likert_color: q?.likert_color ?? null,
         options:
           r.qtype === "single"
             ? (optionsByQuestionId.get(r.question_id) ?? [])

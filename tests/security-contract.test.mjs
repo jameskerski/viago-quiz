@@ -51,3 +51,15 @@ test("target SQL denies browser roles and permits historical positions", () => {
   assert.doesNotMatch(sql, /unique\s*\(attempt_id\s*,\s*position\)/i);
   assert.match(sql, /foreign key\(question_id,option_id\)/i);
 });
+
+test("public attempt payload does not expose scoring metadata", () => {
+  const route = fs.readFileSync("app/api/attempt/route.ts", "utf8");
+  assert.doesNotMatch(route, /select\([^\n]*(?:red|blue|yellow|green|likert_color)/);
+  assert.doesNotMatch(route, /(?:red|blue|yellow|green|likert_color):\s*(?:opt|o|q)/);
+});
+
+test("public health response is minimal", () => {
+  const route = fs.readFileSync("app/api/health/route.ts", "utf8");
+  assert.match(route, /NextResponse\.json\(\{ ok: !error \}/);
+  assert.doesNotMatch(route, /prompt|details|hint|error\.message/);
+});
