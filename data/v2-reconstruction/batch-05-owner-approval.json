@@ -1,0 +1,9 @@
+{
+  "approval_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_05_OWNER_APPROVAL",
+  "approved_commit": "ba3c7e3d566d73dec03653dee687d93e00611ebb",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
+  "counts": { "KEEP_EXACTLY": 1, "REWORD": 7, "REPLACE": 2, "RETIRE": 15 },
+  "approved_backlog_entries": ["EXP-009"],
+  "production_authority": false,
+  "notes": "OWNER accepted all 25 Batch 05 dispositions and EXP-009. No runtime mutation is authorized."
+}

@@ -16,7 +16,7 @@ assert.equal(schema.status, "OWNER_APPROVED_NON_RUNTIME");
 assert.equal(taxonomy.status, "OWNER_APPROVED_NON_RUNTIME");
 assert.equal(approval.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.equal(batches[3].status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
-assert.equal(batch.status, "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION");
+assert.equal(batch.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.equal(batch.production_impact, "NONE");
 assert.deepEqual(batch.questions.map((item) => item.question_id), audit.questions.slice(100, 125).map((item) => item.canonical_id));
 assert.deepEqual(batch.counts, { KEEP_EXACTLY: 1, REWORD: 7, REPLACE: 2, RETIRE: 15 });
@@ -31,7 +31,7 @@ for (const item of batch.questions) {
   assert.ok(["KEEP_EXACTLY", "REWORD", "REPLACE", "RETIRE"].includes(item.proposed_disposition));
   assert.equal(item.origin, "LEGACY");
   assert.equal(item.runtime_authority, false);
-  assert.equal(item.quality.owner_review_state, "PENDING_BATCH_REVIEW");
+  assert.equal(item.quality.owner_review_state, "OWNER_APPROVED");
   assert.ok(domains.has(item.measurement.behavioral_domain));
   assert.ok(contexts.has(item.measurement.life_context));
   assert.ok(item.measurement.situational_tones.every((tone) => tones.has(tone)));
@@ -64,11 +64,11 @@ assert.ok(backlog.entries.slice(0, 8).every((item) => item.owner_review_state ==
 const newBacklog = backlog.entries.filter((item) => item.discovered_in === "BATCH_05");
 assert.equal(newBacklog.length, 1);
 assert.equal(newBacklog[0].backlog_id, "EXP-009");
-assert.equal(newBacklog[0].owner_review_state, "PENDING_BATCH_REVIEW");
+assert.equal(newBacklog[0].owner_review_state, "OWNER_APPROVED");
 assert.equal(batch.coverage.by_context["general-cross-context"], 60);
 assert.equal(batch.coverage.by_orientation.SELF_PREFERENCE, 55);
 assert.equal(batch.coverage.by_orientation.PREFERENCE_IN_OTHERS, 6);
 assert.equal(batch.coverage.by_tone.recovery, 2);
 assert.ok(Object.values(batch.coverage.pairwise_opportunities).every((count) => count > 0));
 
-console.log(JSON.stringify({ status: "PASS", questions: 25, counts: batch.counts, cumulative_counts: batch.cumulative_counts, approved_backlog_entries: 8, pending_backlog_entries: 1, production_impact: "NONE" }, null, 2));
+console.log(JSON.stringify({ status: "PASS", questions: 25, counts: batch.counts, cumulative_counts: batch.cumulative_counts, approved_backlog_entries: 9, pending_backlog_entries: 0, production_impact: "NONE" }, null, 2));

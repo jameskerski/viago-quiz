@@ -1,7 +1,7 @@
 {
   "manifest_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_05",
   "schema_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
   "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   "metadata_schema": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   "taxonomy": "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
@@ -136,7 +136,7 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
       "discovered_in": "BATCH_05",
-      "owner_review_state": "PENDING_BATCH_REVIEW"
+      "owner_review_state": "OWNER_APPROVED"
     }
   ],
   "questions": [
@@ -191,7 +191,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision creates a real motivational contrast and measures Yellow support without implying that earning for oneself is selfish.",
       "runtime_authority": false
@@ -246,7 +246,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Suggesting plans alone can reflect Red initiative; the revision makes Blue novelty and shared experience the reason for acting.",
       "runtime_authority": false
@@ -388,7 +388,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "HIGH",
         "semantic_redundancy": "RELATED",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy options are leadership stereotypes and make Yellow uniquely inclusive; the candidate provides four competent team foundations.",
       "runtime_authority": false
@@ -437,7 +437,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item frames money focus as morally suspect and does not expose a governed Yellow relational motivation or balanced alternative.",
       "runtime_authority": false
@@ -501,7 +501,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "RELATED",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Comfort with missing information can reflect risk tolerance or Blue spontaneity; the candidate ties the choice to Red momentum and reversibility.",
       "runtime_authority": false
@@ -553,7 +553,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item is broad and duplicates stronger discovery, unpredictable-experience, and shared-novelty questions without adding a distinct motive or context.",
       "runtime_authority": false
@@ -631,7 +631,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "VIP status, dancing, staying close, and hanging back are cultural or situational stereotypes rather than governed color motivations.",
       "runtime_authority": false
@@ -688,7 +688,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "A clear purpose can attract any color; the revision makes Red outcome orientation the explicit social discriminator.",
       "runtime_authority": false
@@ -737,7 +737,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Noticing exclusion is socially desirable and can reflect fairness or learned facilitation; the item does not reveal why belonging matters to Yellow.",
       "runtime_authority": false
@@ -791,7 +791,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Adaptability and confidence are learned competencies available to every color and are not independent Red evidence.",
       "runtime_authority": false
@@ -842,7 +842,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The statement measures confidence and repeats stronger planning-versus-flexibility items already proposed.",
       "runtime_authority": false
@@ -941,7 +941,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "HIGH",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision removes stories, inclusion, and questions as color stereotypes and makes each option a useful decision contribution.",
       "runtime_authority": false
@@ -991,7 +991,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Feeling safe to be oneself can indicate trust, maturity, context, or either Blue expression or Yellow relational safety; the assignment is not discriminating.",
       "runtime_authority": false
@@ -1044,7 +1044,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "HIGH",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item defines Blue through inability to sustain routine, directly violating the approved deficit-framing rule and duplicating stronger positive freedom items.",
       "runtime_authority": false
@@ -1094,7 +1094,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Honesty is a universal virtue and the contrast makes harmony sound dishonest; directness alone is not Red evidence.",
       "runtime_authority": false
@@ -1148,7 +1148,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "DUPLICATE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "This is an exact duplicate of Question 64, already replaced by the governed C02-L-Y-01 trust-versus-closure candidate.",
       "runtime_authority": false
@@ -1201,7 +1201,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "DUPLICATE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "This duplicates Question 108’s semantic family; Question 108 receives the clearer motive-centered revision.",
       "runtime_authority": false
@@ -1251,7 +1251,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Fairness and inclusion are universal ethical positions and explicitly cannot independently score Yellow.",
       "runtime_authority": false
@@ -1302,7 +1302,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Accountability is a universal virtue and avoidance is pejorative; the item does not distinguish Red responsibility for results from mature behavior available to all colors.",
       "runtime_authority": false
@@ -1401,7 +1401,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision preserves valuable preference-in-others coverage while replacing push, positivity, caring, and instruction stereotypes with balanced foundations.",
       "runtime_authority": false
@@ -1457,7 +1457,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item states a legitimate Green risk preference with a clear opportunity cost and does not rely on anxiety or generic competence.",
       "runtime_authority": false
@@ -1532,7 +1532,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The Blue option admits procrastination, Red implies rushing, and the remaining options claim helpfulness or discipline; the item measures work habits and competence stereotypes.",
       "runtime_authority": false
@@ -1588,7 +1588,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision replaces avoidance with positive Green risk control and acknowledges that the uncertain option has legitimate upside.",
       "runtime_authority": false
@@ -1640,7 +1640,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "DUPLICATE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "This is an exact duplicate of Question 43, already approved as KEEP_EXACTLY.",
       "runtime_authority": false
@@ -1739,7 +1739,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision retains valuable drain/frustration coverage while replacing boredom, tension, and unclear expectations with governed motivational obstructions.",
       "runtime_authority": false

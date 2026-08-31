@@ -17,11 +17,11 @@ test('Batch 05 covers exactly legacy questions 101 through 125', () => {
   assert.deepEqual(batch.cumulative_counts, { KEEP_EXACTLY: 14, REWORD: 41, REPLACE: 26, RETIRE: 44 });
 });
 
-test('Batch 05 remains pending and non-production', () => {
-  assert.equal(batch.status, 'PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION');
+test('Batch 05 records OWNER approval and remains non-production', () => {
+  assert.equal(batch.status, 'OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION');
   assert.equal(batch.production_impact, 'NONE');
   assert.ok(batch.questions.every((item) => item.runtime_authority === false));
-  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'PENDING_BATCH_REVIEW'));
+  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('Batch 05 keeps proposed single-select mappings balanced', () => {
@@ -35,7 +35,7 @@ test('Batch 05 preserves approved backlog and adds only EXP-009 for review', () 
   assert.ok(backlog.entries.slice(0, 8).every((item) => item.owner_review_state === 'OWNER_APPROVED'));
   const added = backlog.entries.filter((item) => item.discovered_in === 'BATCH_05');
   assert.deepEqual(added.map((item) => item.backlog_id), ['EXP-009']);
-  assert.equal(added[0].owner_review_state, 'PENDING_BATCH_REVIEW');
+  assert.equal(added[0].owner_review_state, 'OWNER_APPROVED');
 });
 
 test('Batch 05 artifacts remain isolated from runtime', () => {

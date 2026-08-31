@@ -280,7 +280,7 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
       "discovered_in": "BATCH_05",
-      "owner_review_state": "PENDING_BATCH_REVIEW"
+      "owner_review_state": "OWNER_APPROVED"
     }
   ],
   "production_impact": "NONE"
