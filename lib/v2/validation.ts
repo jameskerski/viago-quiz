@@ -31,7 +31,7 @@ export function assembleValidationAttempt(seed: string) {
 }
 
 export function scoreValidationAttempt(manifest: ReturnType<typeof assembleValidationAttempt>, answers: Record<string,number|string>) {
-  const scores:Record<Color,number>={red:104,blue:104,yellow:104,green:104};
+  const scores:Record<Color,number>={red:0,blue:0,yellow:0,green:0};
   for(const q of manifest.questions){const answer=answers[q.question_revision_id];if(q.format==='LIKERT'&&typeof answer==='number'&&q.color)scores[q.color as Color]+=answer;else if(q.format==='SINGLE_SELECT'&&typeof answer==='string'){const option=q.options.find(o=>o.id===answer);if(option?.color)scores[option.color as Color]+=4;}}
   const ranking=(Object.entries(scores) as [Color,number][]).sort((a,b)=>b[1]-a[1]||['red','blue','yellow','green'].indexOf(a[0])-['red','blue','yellow','green'].indexOf(b[0]));
   return {scores,primary:ranking[0][0],secondary:ranking[1][0],margin:ranking[0][1]-ranking[1][1],ranking:ranking.map(([color])=>color)};

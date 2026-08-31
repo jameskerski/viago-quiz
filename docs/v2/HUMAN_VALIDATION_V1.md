@@ -22,7 +22,7 @@ The bank artifact contains 183 exact question revisions (93 Likert, 90 single-se
 
 The deterministic SHA-256 counter assembler selects 26 single-select plus 24 Likert questions, exactly six Likert opportunities per color. It enforces one exact semantic family per attempt, at most three broad-construct items, at most eight work items, at most 18 general-context items, and at most 22 self-preference items. No AI runs during selection.
 
-Validation scoring is explicitly research-only: every color begins at 104, six Likert responses contribute 1–5, and each of the 26 single-select choices contributes four points to its mapped color. Every color therefore has the same theoretical range of 110–134. Deterministic tie order is Red, Blue, Yellow, Green and remains versioned for analysis; it is not production scoring authority.
+Validation scoring is explicitly research-only: six Likert responses per color contribute 0–4 and each of the 26 single-select choices contributes four points to its mapped color. Every color therefore has the same theoretical maximum of 128. Deterministic tie order is Red, Blue, Yellow, Green and remains versioned for analysis; it is not production scoring authority.
 
 ## Feedback and retests
 

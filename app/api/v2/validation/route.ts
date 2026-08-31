@@ -33,7 +33,7 @@ export async function POST(request:Request){
   const current=await supabaseAdmin.from('validation_attempts').select('*').eq('id',attemptId).single();if(current.error)throw current.error;if(current.data.completed_at&&action!=='feedback')return NextResponse.json({error:'Completed attempts are immutable'},{status:409});
   if(action==='answer'){
    const revision=String(body.question_revision_id||'');const question=current.data.manifest.questions.find((q:{question_revision_id:string})=>q.question_revision_id===revision);if(!question)return NextResponse.json({error:'Question is not in this manifest'},{status:400});
-   const answer=body.answer;if(question.format==='LIKERT'&&(!Number.isInteger(answer)||Number(answer)<1||Number(answer)>5))return NextResponse.json({error:'Invalid Likert answer'},{status:400});
+   const answer=body.answer;if(question.format==='LIKERT'&&(!Number.isInteger(answer)||Number(answer)<0||Number(answer)>4))return NextResponse.json({error:'Invalid Likert answer'},{status:400});
    if(question.format==='SINGLE_SELECT'&&!question.options.some((o:{id:string})=>o.id===answer))return NextResponse.json({error:'Invalid option'},{status:400});
    const answers={...current.data.answers,[revision]:answer};const update=await supabaseAdmin.from('validation_attempts').update({answers}).eq('id',attemptId);if(update.error)throw update.error;return NextResponse.json({ok:true});
   }
