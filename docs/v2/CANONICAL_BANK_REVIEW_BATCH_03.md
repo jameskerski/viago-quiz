@@ -430,7 +430,7 @@ When friends disagree about a shared plan and either option could work, I would 
 
 **WHAT IT MEASURES:** Whether protecting trust justifies leaving a decision open longer.
 
-**CONTEXT:** team
+**CONTEXT:** friendship
 
 **TONE:** disagreement, pressure
 

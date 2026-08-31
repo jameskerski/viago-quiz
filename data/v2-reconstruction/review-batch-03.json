@@ -55,13 +55,14 @@
       "everyday-decision": 2,
       "family": 2,
       "free-time-leisure": 1,
+      "friendship": 1,
       "general-cross-context": 38,
       "hobbies": 1,
       "household": 2,
       "money-purchasing": 1,
       "personal-project": 1,
       "recreation": 2,
-      "team": 7,
+      "team": 6,
       "unfamiliar-social-situation": 2,
       "work-business": 11
     },
@@ -1139,7 +1140,7 @@
           "harmony"
         ],
         "behavioral_domain": "conflict",
-        "life_context": "team",
+        "life_context": "friendship",
         "situational_tones": [
           "disagreement",
           "pressure"
