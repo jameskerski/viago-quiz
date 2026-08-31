@@ -1,0 +1,103 @@
+{
+  "manifest_id": "VIAGO_TARGETED_EXPANSION_02_FINAL_ADMISSION",
+  "schema_version": "1.0.0",
+  "status": "OWNER_APPROVED_NON_PRODUCTION_CANONICAL_RESEARCH_BANK",
+  "source_commit": "41b2d8f6de170095f3b865b102326033577fc79e",
+  "source_manifest": "data/v2-proposals/targeted-expansion-02.json",
+  "taxonomy": "VIAGO_WHOLE_PERSON_RESEARCH_DIMENSIONS_V1",
+  "revisions": [
+    {
+      "candidate_id": "EXP2-S-13",
+      "question": "You have one completely free evening after a demanding week. Where are you most likely to invest it?",
+      "options": [
+        { "label": "Make visible progress on one personally important result", "color": "red" },
+        { "label": "Choose the most energizing or interesting possibility available", "color": "blue" },
+        { "label": "Give the time to a person or commitment that matters to me", "color": "yellow" },
+        { "label": "Get absorbed in a subject, puzzle, or skill I want to understand more deeply", "color": "green" }
+      ],
+      "discriminator": "Allocation of scarce discretionary energy toward impact, possibility, meaningful commitment, or absorbing understanding/mastery.",
+      "desirability_balance": "Green is now a concrete, enjoyable evening choice rather than the person who evaluates the choices carefully. All four responses offer a legitimate form of restoration or satisfaction."
+    },
+    {
+      "candidate_id": "EXP2-S-22",
+      "question": "You are learning a subject for personal interest, with no test or deadline. What tells you it is time to move on?",
+      "options": [
+        { "label": "I can use what I learned to accomplish the result I wanted", "color": "red" },
+        { "label": "I have followed the most engaging questions and want a fresh direction", "color": "blue" },
+        { "label": "The interest feels meaningfully connected to something I value and has found a lasting place in my life", "color": "yellow" },
+        { "label": "I can explain the core ideas and see how they fit together", "color": "green" }
+      ],
+      "discriminator": "Completion through usable result, explored curiosity, personally meaningful continuity, or coherent understanding.",
+      "desirability_balance": "Yellow no longer requires an external beneficiary. Its completion signal is personal meaning and continuity, alongside three equally legitimate completion standards."
+    },
+    {
+      "candidate_id": "EXP2-L-G-02",
+      "question": "Recognition feels more meaningful when it acknowledges the rigor and reliability behind my work than when it emphasizes the scale of the result.",
+      "options": [],
+      "discriminator": "Recognition of rigor/reliability versus recognition of result scale.",
+      "desirability_balance": "Both technical quality and visible scale are legitimate forms of recognition; the alternative no longer sounds superficial."
+    },
+    {
+      "candidate_id": "EXP2-L-R-03",
+      "question": "I am quicker to trust someone who takes ownership of moving a result forward than someone who builds trust through a steady, dependable process.",
+      "options": [],
+      "discriminator": "Trust through owned forward movement versus trust through dependable process.",
+      "desirability_balance": "Both people actively build trust through useful behavior; the alternative is no longer passive reassurance."
+    }
+  ],
+  "dispositions": {
+    "ADMIT": [
+      "EXP2-S-01", "EXP2-S-02", "EXP2-S-03", "EXP2-S-04", "EXP2-S-05", "EXP2-S-06", "EXP2-S-07", "EXP2-S-08", "EXP2-S-09", "EXP2-S-10", "EXP2-S-11", "EXP2-S-12", "EXP2-S-14", "EXP2-S-15", "EXP2-S-16", "EXP2-S-17", "EXP2-S-19", "EXP2-S-20", "EXP2-S-21", "EXP2-S-23", "EXP2-S-24", "EXP2-L-R-01", "EXP2-L-B-01", "EXP2-L-Y-01", "EXP2-L-G-01", "EXP2-L-R-02", "EXP2-L-B-02", "EXP2-L-Y-02", "EXP2-L-B-03", "EXP2-L-Y-03", "EXP2-L-G-03"
+    ],
+    "REVISE_AND_ADMIT": ["EXP2-S-13", "EXP2-S-22", "EXP2-L-G-02", "EXP2-L-R-03"],
+    "DEFER_REDUNDANCY": ["EXP2-S-18"],
+    "RETIRE_CANDIDATE": []
+  },
+  "deferred_rationale": {
+    "EXP2-S-18": "The specialist-adviser scenario repeats the same result/possibility/continuity/evidence trust architecture already supplied by EXP1-S-05. Broadening purchase adviser to specialist does not add enough new measurement value for admission."
+  },
+  "admission_summary": {
+    "starting_bank": 148,
+    "admitted_candidates": 35,
+    "deferred_candidates": 1,
+    "retired_candidates": 0,
+    "resulting_unique_bank": 183,
+    "formats": { "LIKERT": 93, "SINGLE_SELECT": 90 },
+    "orientations": {
+      "INTERPERSONAL": 7,
+      "PREFERENCE_IN_OTHERS": 24,
+      "RESPONSE_TO_OTHERS": 22,
+      "SELF_ACTION": 17,
+      "SELF_ATTENTION": 53,
+      "SELF_PREFERENCE": 60
+    },
+    "dimensions": {
+      "AUTONOMY_INTERDEPENDENCE": 4,
+      "COMPLETION_CRITERIA": 6,
+      "DECISION_RECONSIDERATION": 3,
+      "ENVIRONMENT_PREFERENCE": 8,
+      "NATURAL_AVOIDANCE": 5,
+      "RECOGNITION_REWARD": 5,
+      "RESOURCE_ALLOCATION": 7,
+      "SUCCESS_MOTIVATION": 11,
+      "TIME_HORIZON": 10,
+      "TRUST_FORMATION": 9
+    }
+  },
+  "backlog": [
+    { "id": "EXP-001", "status": "SATISFIED" },
+    { "id": "EXP-002", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-003", "status": "SATISFIED" },
+    { "id": "EXP-004", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-005", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-006", "status": "SATISFIED" },
+    { "id": "EXP-007", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-008", "status": "SATISFIED" },
+    { "id": "EXP-009", "status": "DOWNGRADE_MONITOR" },
+    { "id": "EXP-010", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-011", "status": "DOWNGRADE_MONITOR" }
+  ],
+  "next_phase_recommendation": "Further content expansion is not justified before assembler simulation. The 183-question research bank now has sufficient conceptual breadth to test selection frequency, within-attempt family collisions, format/color opportunities, context/tone distribution, and repeat exposure. Generate more content only if simulation identifies a specific measurable deficit.",
+  "runtime_authority": false,
+  "production_impact": "NONE"
+}
