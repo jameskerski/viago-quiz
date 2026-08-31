@@ -1,0 +1,1421 @@
+{
+  "manifest_id": "VIAGO_DEVELOPMENT_CANDIDATE_FINAL_REASSESSMENT_BATCH_A",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "source_scope": "All 16 Cohort 01 candidates plus Cohort 02 candidates C02-S-01 through C02-S-12",
+  "counts": {
+    "ADMIT": 10,
+    "REVISE": 3,
+    "REPLACE_LEGACY": 11,
+    "DEFER_REDUNDANCY": 4,
+    "RETIRE_CANDIDATE": 0
+  },
+  "unique_replacements_represented": 11,
+  "legacy_identities_replaced": 12,
+  "early_potential_unique_bank_count": 109,
+  "early_count_method": "97 reconstructed legacy identities minus legacy identities covered by Batch A replacement candidates, plus one copy of each unique replacement candidate, plus Batch A ADMIT and REVISE candidates. Batch B remains unresolved.",
+  "records": [
+    {
+      "batch_position": 1,
+      "candidate_id": "C01-L-R-01",
+      "cohort": "COHORT_01",
+      "wording": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 28,
+          "question_id": "29efc415-38e9-408a-aa7b-4d46f6996c20",
+          "current": "I feel responsible for keeping things moving when others in the group hesitate."
+        },
+        {
+          "corpus_position": 151,
+          "question_id": "ff6825e1-6afd-4686-a323-507195f22cb9",
+          "current": "I’m comfortable skipping steps if it helps me move faster."
+        }
+      ],
+      "semantic_family": "decision-ownership-to-restore-progress",
+      "measurement": {
+        "behavioral_domain": "decision-making",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "pressure",
+          "competing-alternatives"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 28,
+        "question_id": "29efc415-38e9-408a-aa7b-4d46f6996c20",
+        "current": "I feel responsible for keeping things moving when others in the group hesitate."
+      },
+      "closest_development_candidate": "C01-L-R-02",
+      "incremental_measurement_contribution": "Turns stalled decisions into owned progress; removing it loses a clean Red ownership discriminator.",
+      "what_unique_value_it_adds": "Turns stalled decisions into owned progress; removing it loses a clean Red ownership discriminator.",
+      "why": "It is already the approved superior replacement for two legacy identities and must enter once.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 2,
+      "candidate_id": "C01-L-R-02",
+      "cohort": "COHORT_01",
+      "wording": "If a decision can be changed later, I’d rather choose a workable option now than wait for every detail.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 105,
+          "question_id": "a4a2deed-c11e-43bd-abff-1a6055c64d83",
+          "current": "I’m comfortable making decisions even when I don’t have all the information."
+        }
+      ],
+      "semantic_family": "workable-decision-before-complete-detail",
+      "measurement": {
+        "behavioral_domain": "decision-making",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "uncertainty",
+          "pressure"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 105,
+        "question_id": "a4a2deed-c11e-43bd-abff-1a6055c64d83",
+        "current": "I’m comfortable making decisions even when I don’t have all the information."
+      },
+      "closest_development_candidate": "C01-L-R-01",
+      "incremental_measurement_contribution": "Measures reversible action rather than generic missing-information comfort.",
+      "what_unique_value_it_adds": "Measures reversible action rather than generic missing-information comfort.",
+      "why": "It is the approved replacement for legacy Question 105.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 3,
+      "candidate_id": "C01-L-R-03",
+      "cohort": "COHORT_01",
+      "wording": "When time is short, I become more direct about the next action, even if the conversation feels abrupt.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "REVISE",
+      "revised_wording": "When time is short and progress depends on a decision, I become more direct about the next action, even if the conversation feels abrupt.",
+      "replaced_legacy_identities": [],
+      "semantic_family": "direct-action-under-time-pressure",
+      "measurement": {
+        "behavioral_domain": "communication-expression",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "pressure"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 20,
+        "question_id": "1bde0c6b-3fa1-4740-8799-338b6dc42f98",
+        "current": "I care a lot about being fair, even when it’s uncomfortable.",
+        "similarity": 0.1765
+      },
+      "closest_development_candidate": "C01-L-R-04",
+      "incremental_measurement_contribution": "Adds communication behavior under time pressure, but must anchor directness to progress rather than directness itself.",
+      "what_unique_value_it_adds": "Adds communication behavior under time pressure, but must anchor directness to progress rather than directness itself.",
+      "why": "Directness alone is not Red evidence; one final motive-centered revision is required.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 4,
+      "candidate_id": "C01-L-R-04",
+      "cohort": "COHORT_01",
+      "wording": "When a plan is losing ground, restoring forward movement matters more to me than perfecting the replacement first.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "restore-movement-before-perfect-replacement",
+      "measurement": {
+        "behavioral_domain": "follow-through-recovery",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "failure-mistake",
+          "recovery"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 14,
+        "question_id": "17d21643-7826-47e6-b115-79d0a74fa33c",
+        "current": "I’m more confident moving forward when there’s a clear plan instead of improvising.",
+        "similarity": 0.2105
+      },
+      "closest_development_candidate": "C01-L-R-03",
+      "incremental_measurement_contribution": "Adds independent recovery preference after a plan loses ground.",
+      "what_unique_value_it_adds": "Adds independent recovery preference after a plan loses ground.",
+      "why": "This is useful parallel Red measurement in a recovery tone that remains thin.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 5,
+      "candidate_id": "C01-L-R-05",
+      "cohort": "COHORT_01",
+      "wording": "After I own a mistake, my attention moves quickly to the decision that will get things back on track.",
+      "options": [],
+      "intended_mapping": "red",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 2,
+          "question_id": "039de60f-9c76-45f4-9061-147a51745e0f",
+          "current": "I’m comfortable being the one who takes the heat if a decision doesn’t work out."
+        }
+      ],
+      "semantic_family": "post-mistake-recovery-decision",
+      "measurement": {
+        "behavioral_domain": "follow-through-recovery",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "failure-mistake",
+          "recovery"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "RED_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 2,
+        "question_id": "039de60f-9c76-45f4-9061-147a51745e0f",
+        "current": "I’m comfortable being the one who takes the heat if a decision doesn’t work out."
+      },
+      "closest_development_candidate": "C01-L-R-04",
+      "incremental_measurement_contribution": "Separates owning a mistake from the subsequent Red focus on recovery direction.",
+      "what_unique_value_it_adds": "Separates owning a mistake from the subsequent Red focus on recovery direction.",
+      "why": "It is already the approved superior replacement for legacy Question 2.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 6,
+      "candidate_id": "C01-L-B-02",
+      "cohort": "COHORT_01",
+      "wording": "In a room where I don’t know anyone, I usually find a natural way into the conversation without waiting to be introduced.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "REVISE",
+      "revised_wording": "In a room where I don’t know anyone, I feel drawn to discover who is there and what conversation might unfold rather than wait for the setting to become familiar.",
+      "replaced_legacy_identities": [],
+      "semantic_family": "exploratory-social-entry",
+      "measurement": {
+        "behavioral_domain": "social-interaction",
+        "life_context": "unfamiliar-social-situation",
+        "situational_tones": [
+          "new-unfamiliar",
+          "social-setting"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 33,
+        "question_id": "34202350-60a2-45e1-b4b8-bf0fa471d020",
+        "current": "I prefer meaningful conversations over small talk at social events.",
+        "similarity": 0.0952
+      },
+      "closest_development_candidate": "C01-L-B-05",
+      "incremental_measurement_contribution": "Adds unfamiliar-social exploration, but current wording leans on sociability alone.",
+      "what_unique_value_it_adds": "Adds unfamiliar-social exploration, but current wording leans on sociability alone.",
+      "why": "A final revision must show attraction to discovery and interaction rather than generic outgoingness.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 7,
+      "candidate_id": "C01-L-B-03",
+      "cohort": "COHORT_01",
+      "wording": "When plans change at the last minute, I can usually spot something interesting in the new direction.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "DEFER_REDUNDANCY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "interesting-possibility-after-change",
+      "measurement": {
+        "behavioral_domain": "change-risk",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "change",
+          "opportunity"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "BLUE_YELLOW",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 106,
+        "question_id": "a9e9ac76-174c-4b12-b3ea-32edcf609761",
+        "current": "I’m usually up for trying something new if it sounds fun.",
+        "similarity": 0.1667
+      },
+      "closest_development_candidate": "C01-S-03",
+      "incremental_measurement_contribution": "Valid positive Blue change framing, but the reconstructed bank and C01-S-03 already provide stronger motive-specific parallel measurement.",
+      "what_unique_value_it_adds": "Valid positive Blue change framing, but the reconstructed bank and C01-S-03 already provide stronger motive-specific parallel measurement.",
+      "why": "The remaining incremental value is too small for admission now.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 8,
+      "candidate_id": "C01-L-B-05",
+      "cohort": "COHORT_01",
+      "wording": "In a quiet group, I feel drawn to spark conversation even when there is nothing specific we need to decide.",
+      "options": [],
+      "intended_mapping": "blue",
+      "decision": "REVISE",
+      "revised_wording": "In a quiet group, I feel drawn to introduce a topic or possibility that could create shared energy, even when there is nothing specific we need to decide.",
+      "replaced_legacy_identities": [],
+      "semantic_family": "creating-shared-social-energy",
+      "measurement": {
+        "behavioral_domain": "social-interaction",
+        "life_context": "unfamiliar-social-situation",
+        "situational_tones": [
+          "social-setting",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "BLUE_YELLOW"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 111,
+        "question_id": "b6eaa376-b183-47b4-b1a1-8093f4a9bebf",
+        "current": "I feel more confident when I know there’s a plan backing my actions.",
+        "similarity": 0.1579
+      },
+      "closest_development_candidate": "C01-L-B-02",
+      "incremental_measurement_contribution": "Adds non-task social expression, but must distinguish shared energy from sociability alone.",
+      "what_unique_value_it_adds": "Adds non-task social expression, but must distinguish shared energy from sociability alone.",
+      "why": "The construct earns admission after a final motive-centered wording adjustment.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 9,
+      "candidate_id": "C01-L-Y-02",
+      "cohort": "COHORT_01",
+      "wording": "When a workable group decision is ready, I’m more comfortable delaying it to hear from the people most affected than moving ahead and gathering their feedback afterward.",
+      "options": [],
+      "intended_mapping": "yellow",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 3,
+          "question_id": "04cb4f9d-f1e1-476a-862c-b1c7c18faaaf",
+          "current": "It is important to me that social settings always ensure everyone feels included and comfortable."
+        }
+      ],
+      "semantic_family": "voice-before-closure",
+      "measurement": {
+        "behavioral_domain": "relationships-support",
+        "life_context": "team",
+        "situational_tones": [
+          "competing-alternatives",
+          "pressure"
+        ],
+        "orientation": "INTERPERSONAL",
+        "pairwise_discrimination": [
+          "RED_YELLOW",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 3,
+        "question_id": "04cb4f9d-f1e1-476a-862c-b1c7c18faaaf",
+        "current": "It is important to me that social settings always ensure everyone feels included and comfortable."
+      },
+      "closest_development_candidate": "C02-L-Y-01",
+      "incremental_measurement_contribution": "Measures affected-party voice before closure through a balanced timing tradeoff.",
+      "what_unique_value_it_adds": "Measures affected-party voice before closure through a balanced timing tradeoff.",
+      "why": "It is the approved replacement for legacy Question 3 and adds distinct inclusion-before-closure evidence.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 10,
+      "candidate_id": "C01-L-G-01",
+      "cohort": "COHORT_01",
+      "wording": "When instructions leave gaps, I’d rather clarify them before starting than make a reasonable assumption and adjust later.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "DEFER_REDUNDANCY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "clarify-gaps-before-starting",
+      "measurement": {
+        "behavioral_domain": "problem-framing",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "uncertainty"
+        ],
+        "orientation": "SELF_ACTION",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 19,
+        "question_id": "1bac0735-73c1-43b1-86a8-41ec34adfd86",
+        "current": "I get uncomfortable when things feel disorganized or unclear.",
+        "similarity": 0.1667
+      },
+      "closest_development_candidate": "C01-S-02",
+      "incremental_measurement_contribution": "The construct is valid, but incomplete-instruction and clarity-before-action coverage is already deep.",
+      "what_unique_value_it_adds": "The construct is valid, but incomplete-instruction and clarity-before-action coverage is already deep.",
+      "why": "Different wording does not create enough incremental measurement value.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 11,
+      "candidate_id": "C01-L-G-02",
+      "cohort": "COHORT_01",
+      "wording": "I’m willing to slow down a workable quick fix to check whether it creates another problem later.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "downstream-risk-before-quick-fix",
+      "measurement": {
+        "behavioral_domain": "problem-solving",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "pressure",
+          "uncertainty"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "BLUE_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 116,
+        "question_id": "c117eb5e-feba-43db-9d9d-8da220cce761",
+        "current": "I tend to slow down decisions if I sense tension or discomfort between people.",
+        "similarity": 0.1111
+      },
+      "closest_development_candidate": "C01-L-G-01",
+      "incremental_measurement_contribution": "Adds downstream-consequence checking rather than merely requesting more information.",
+      "what_unique_value_it_adds": "Adds downstream-consequence checking rather than merely requesting more information.",
+      "why": "This is useful Green risk-control measurement with a defensible speed tradeoff.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 12,
+      "candidate_id": "C01-L-G-03",
+      "cohort": "COHORT_01",
+      "wording": "During disagreement, I focus first on separating facts from assumptions, even when others want to settle the issue quickly.",
+      "options": [],
+      "intended_mapping": "green",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "facts-versus-assumptions-in-disagreement",
+      "measurement": {
+        "behavioral_domain": "conflict",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "disagreement",
+          "pressure"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 140,
+        "question_id": "eed5b69d-d389-4e2c-9b28-bc8d9da662a4",
+        "current": "When I get feedback, my first reaction is…",
+        "similarity": 0.12
+      },
+      "closest_development_candidate": "C01-L-G-02",
+      "incremental_measurement_contribution": "Adds Green evidence discipline specifically inside conflict.",
+      "what_unique_value_it_adds": "Adds Green evidence discipline specifically inside conflict.",
+      "why": "Removing it would lose a distinct conflict-tone measure rather than a generic accuracy item.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 13,
+      "candidate_id": "C01-S-01",
+      "cohort": "COHORT_01",
+      "wording": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+      "options": [
+        {
+          "label": "Set a workable first direction and coordinate the next action",
+          "color": "red"
+        },
+        {
+          "label": "Generate a few fast possibilities and rally people around the most promising one",
+          "color": "blue"
+        },
+        {
+          "label": "Check the immediate effects on people and coordinate the support they will need",
+          "color": "yellow"
+        },
+        {
+          "label": "Verify the critical facts and define a reliable first response",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 67,
+          "question_id": "76a13ab4-c5cc-43df-8d92-100689764905",
+          "current": "When I’m focused, I…"
+        }
+      ],
+      "semantic_family": "unowned-urgent-problem",
+      "measurement": {
+        "behavioral_domain": "leadership-ownership",
+        "life_context": "work-business",
+        "situational_tones": [
+          "pressure",
+          "uncertainty"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 67,
+        "question_id": "76a13ab4-c5cc-43df-8d92-100689764905",
+        "current": "When I’m focused, I…"
+      },
+      "closest_development_candidate": "C02-S-01",
+      "incremental_measurement_contribution": "Provides balanced first-contribution evidence under urgent missing ownership.",
+      "what_unique_value_it_adds": "Provides balanced first-contribution evidence under urgent missing ownership.",
+      "why": "It is the approved replacement for legacy Question 67.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 14,
+      "candidate_id": "C01-S-02",
+      "cohort": "COHORT_01",
+      "wording": "You join a new project and the goal is still vague. What helps you engage first?",
+      "options": [
+        {
+          "label": "Proposing a starting direction we can adjust as we learn",
+          "color": "red"
+        },
+        {
+          "label": "Talking through possibilities until an exciting angle emerges",
+          "color": "blue"
+        },
+        {
+          "label": "Understanding who depends on the project and which commitments matter",
+          "color": "yellow"
+        },
+        {
+          "label": "Clarifying the requirements and what success must include",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 46,
+          "question_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+          "current": "Before starting something new, I prefer to…"
+        }
+      ],
+      "semantic_family": "engagement-with-vague-goal",
+      "measurement": {
+        "behavioral_domain": "problem-framing",
+        "life_context": "work-business",
+        "situational_tones": [
+          "new-unfamiliar",
+          "uncertainty"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 46,
+        "question_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "current": "Before starting something new, I prefer to…"
+      },
+      "closest_development_candidate": "C01-L-G-01",
+      "incremental_measurement_contribution": "Measures what enables engagement when a goal is vague across all four colors.",
+      "what_unique_value_it_adds": "Measures what enables engagement when a goal is vague across all four colors.",
+      "why": "It is the approved replacement for legacy Question 46 and subsumes weaker instruction-gap content.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 15,
+      "candidate_id": "C01-S-03",
+      "cohort": "COHORT_01",
+      "wording": "A plan you were counting on changes with little warning. What matters most in your first response?",
+      "options": [
+        {
+          "label": "Finding the best available direction so progress does not stall",
+          "color": "red"
+        },
+        {
+          "label": "Seeing what new possibilities the change opens up",
+          "color": "blue"
+        },
+        {
+          "label": "Protecting the people and commitments affected by the change",
+          "color": "yellow"
+        },
+        {
+          "label": "Rebuilding enough clarity to understand what happens next",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color; research-only change distinctions",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 13,
+          "question_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+          "current": "When plans change suddenly, I…"
+        }
+      ],
+      "semantic_family": "first-motive-after-unexpected-change",
+      "measurement": {
+        "behavioral_domain": "change-risk",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "change",
+          "uncertainty"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 13,
+        "question_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+        "current": "When plans change suddenly, I…"
+      },
+      "closest_development_candidate": "C02-S-03",
+      "incremental_measurement_contribution": "Captures why each color responds to disruption, not generic adaptability.",
+      "what_unique_value_it_adds": "Captures why each color responds to disruption, not generic adaptability.",
+      "why": "It is the approved replacement for legacy Question 13 and the strongest general change-motive anchor.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 16,
+      "candidate_id": "C01-S-07",
+      "cohort": "COHORT_01",
+      "wording": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Narrow the workable choices and recommend one so the group can get going",
+          "color": "red"
+        },
+        {
+          "label": "Offer a fresh possibility that could bring some energy back to the group",
+          "color": "blue"
+        },
+        {
+          "label": "Look for the choice that best fits the group’s shared mood and preferences",
+          "color": "yellow"
+        },
+        {
+          "label": "Compare time, cost, and logistics and suggest the most practical fit",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "stalled-friend-activity-choice",
+      "measurement": {
+        "behavioral_domain": "decision-making",
+        "life_context": "friendship",
+        "situational_tones": [
+          "ordinary-calm",
+          "social-setting"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 4,
+        "question_id": "092ef69e-a476-4451-a770-a879e8723fae",
+        "current": "When a decision needs to be made, I usually…",
+        "similarity": 0.2941
+      },
+      "closest_development_candidate": "C02-S-05",
+      "incremental_measurement_contribution": "Adds balanced ordinary-life group-choice behavior in friendship.",
+      "what_unique_value_it_adds": "Adds balanced ordinary-life group-choice behavior in friendship.",
+      "why": "Despite family resemblance to group decisions, the non-work context and response orientation provide useful parallel measurement.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 17,
+      "candidate_id": "C02-S-01",
+      "cohort": "COHORT_02",
+      "wording": "A volunteer event is about to begin, but responsibilities are still unclear. What contribution comes most naturally to you first?",
+      "options": [
+        {
+          "label": "Set the first priorities and help people take ownership of them",
+          "color": "red"
+        },
+        {
+          "label": "Create an engaging way for volunteers to begin contributing",
+          "color": "blue"
+        },
+        {
+          "label": "Help volunteers feel connected to one another and confident about where they fit",
+          "color": "yellow"
+        },
+        {
+          "label": "Map the essential tasks, resources, and order of operations",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "DEFER_REDUNDANCY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "unowned-volunteer-launch",
+      "measurement": {
+        "behavioral_domain": "leadership-ownership",
+        "life_context": "community",
+        "situational_tones": [
+          "new-unfamiliar",
+          "pressure"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 67,
+        "question_id": "76a13ab4-c5cc-43df-8d92-100689764905",
+        "current": "When I’m focused, I…",
+        "similarity": 0.3158
+      },
+      "closest_development_candidate": "C01-S-01",
+      "incremental_measurement_contribution": "The community context is useful, but the same unowned-launch architecture is already strongly measured.",
+      "what_unique_value_it_adds": "The community context is useful, but the same unowned-launch architecture is already strongly measured.",
+      "why": "Context change alone does not justify another near-identical first-contribution item.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 18,
+      "candidate_id": "C02-S-02",
+      "cohort": "COHORT_02",
+      "wording": "A customer requests an important change, but the scope is still unclear. What do you naturally focus on first?",
+      "options": [
+        {
+          "label": "Define the decision that must be made and establish the next step",
+          "color": "red"
+        },
+        {
+          "label": "Explore creative alternatives that might make the request work",
+          "color": "blue"
+        },
+        {
+          "label": "Understand which customer and team commitments the change will affect",
+          "color": "yellow"
+        },
+        {
+          "label": "Clarify the requirements, dependencies, and likely consequences",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "ambiguous-customer-request",
+      "measurement": {
+        "behavioral_domain": "problem-framing",
+        "life_context": "work-business",
+        "situational_tones": [
+          "uncertainty",
+          "pressure"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 73,
+        "question_id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+        "current": "When delegating, I…",
+        "similarity": 0.2353
+      },
+      "closest_development_candidate": "C01-S-02",
+      "incremental_measurement_contribution": "Adds customer-facing ambiguity and scope tradeoffs rather than internal vague-goal engagement.",
+      "what_unique_value_it_adds": "Adds customer-facing ambiguity and scope tradeoffs rather than internal vague-goal engagement.",
+      "why": "It provides useful parallel problem-framing measurement in an externally constrained context.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 19,
+      "candidate_id": "C02-S-03",
+      "cohort": "COHORT_02",
+      "wording": "A missed connection changes a group trip with little warning. What matters most in your first response?",
+      "options": [
+        {
+          "label": "Choose the strongest available route so the trip keeps moving",
+          "color": "red"
+        },
+        {
+          "label": "Look for an unexpected possibility that could still make the trip memorable",
+          "color": "blue"
+        },
+        {
+          "label": "Coordinate around the travelers’ needs and the commitments already made",
+          "color": "yellow"
+        },
+        {
+          "label": "Compare timing, constraints, and reliability before choosing the new route",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "missed-travel-connection",
+      "measurement": {
+        "behavioral_domain": "change-risk",
+        "life_context": "travel",
+        "situational_tones": [
+          "change",
+          "pressure"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 13,
+        "question_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+        "current": "When plans change suddenly, I…",
+        "similarity": 0.5882
+      },
+      "closest_development_candidate": "C01-S-03",
+      "incremental_measurement_contribution": "Adds travel and group-continuity evidence to the established change-motive architecture.",
+      "what_unique_value_it_adds": "Adds travel and group-continuity evidence to the established change-motive architecture.",
+      "why": "The distinct ordinary-life context justifies deliberate parallel measurement.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 20,
+      "candidate_id": "C02-S-04",
+      "cohort": "COHORT_02",
+      "wording": "A shared household routine keeps breaking down. Which response feels most natural to you?",
+      "options": [
+        {
+          "label": "Choose a clearer arrangement and start using it right away",
+          "color": "red"
+        },
+        {
+          "label": "Try a more flexible approach that makes the routine easier to stay engaged with",
+          "color": "blue"
+        },
+        {
+          "label": "Talk through what each person can sustain and agree on together",
+          "color": "yellow"
+        },
+        {
+          "label": "Lay out the tasks, timing, and handoffs in a repeatable system",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 12,
+          "question_id": "14135310-4169-47af-bbc7-8d1345b2b51c",
+          "current": "I like routines that help things run smoothly for everyone involved."
+        }
+      ],
+      "semantic_family": "shared-household-routine",
+      "measurement": {
+        "behavioral_domain": "organization-process",
+        "life_context": "household",
+        "situational_tones": [
+          "routine-stability",
+          "failure-mistake"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 12,
+        "question_id": "14135310-4169-47af-bbc7-8d1345b2b51c",
+        "current": "I like routines that help things run smoothly for everyone involved."
+      },
+      "closest_development_candidate": "C02-S-11",
+      "incremental_measurement_contribution": "Adds household process-recovery behavior across all colors.",
+      "what_unique_value_it_adds": "Adds household process-recovery behavior across all colors.",
+      "why": "It is already the approved replacement for legacy Question 12.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 21,
+      "candidate_id": "C02-S-05",
+      "cohort": "COHORT_02",
+      "wording": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?",
+      "options": [
+        {
+          "label": "Which choice will create the clearest visible result",
+          "color": "red"
+        },
+        {
+          "label": "Which choice could generate the most participation and fresh energy",
+          "color": "blue"
+        },
+        {
+          "label": "Which choice will strengthen residents’ connection to the shared space over time",
+          "color": "yellow"
+        },
+        {
+          "label": "Which choice has the strongest cost, maintenance, and feasibility case",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "limited-community-budget",
+      "measurement": {
+        "behavioral_domain": "decision-making",
+        "life_context": "community",
+        "situational_tones": [
+          "constrained-resources",
+          "competing-alternatives"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 46,
+        "question_id": "4ec48535-9510-4e86-9ee7-a6ea509af280",
+        "current": "Before starting something new, I prefer to…",
+        "similarity": 0.1765
+      },
+      "closest_development_candidate": "C01-S-07",
+      "incremental_measurement_contribution": "Adds resource-allocation motives and durable community impact outside work.",
+      "what_unique_value_it_adds": "Adds resource-allocation motives and durable community impact outside work.",
+      "why": "Removing it would lose a distinctive purchasing/community constraint.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 22,
+      "candidate_id": "C02-S-06",
+      "cohort": "COHORT_02",
+      "wording": "A newly formed team needs a way of working together. What would you most naturally help establish first?",
+      "options": [
+        {
+          "label": "Clear ownership for decisions and the pace needed to deliver",
+          "color": "red"
+        },
+        {
+          "label": "An open exchange where possibilities and energy can build",
+          "color": "blue"
+        },
+        {
+          "label": "Shared expectations that support trust and dependable commitments",
+          "color": "yellow"
+        },
+        {
+          "label": "Defined roles, processes, and checkpoints that keep work coherent",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 103,
+          "question_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+          "current": "In a group project, I’m most likely to…"
+        }
+      ],
+      "semantic_family": "new-team-working-norms",
+      "measurement": {
+        "behavioral_domain": "organization-process",
+        "life_context": "team",
+        "situational_tones": [
+          "new-unfamiliar",
+          "ordinary-calm"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 103,
+        "question_id": "a3057e3d-142d-41af-b1fa-57d6bf0b0aa8",
+        "current": "In a group project, I’m most likely to…"
+      },
+      "closest_development_candidate": "C01-S-01",
+      "incremental_measurement_contribution": "Measures which foundation each color establishes for sustained collaboration.",
+      "what_unique_value_it_adds": "Measures which foundation each color establishes for sustained collaboration.",
+      "why": "It is the approved replacement for legacy Question 103.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 23,
+      "candidate_id": "C02-S-07",
+      "cohort": "COHORT_02",
+      "wording": "A customer raises an urgent complaint that needs a thoughtful response. What do you naturally contribute first?",
+      "options": [
+        {
+          "label": "Take ownership of the resolution and make the next action clear",
+          "color": "red"
+        },
+        {
+          "label": "Generate response options that could reopen a constructive path",
+          "color": "blue"
+        },
+        {
+          "label": "Understand the impact on the customer and protect the working relationship",
+          "color": "yellow"
+        },
+        {
+          "label": "Verify what happened and define a correction that will hold",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 47,
+          "question_id": "505ae241-8349-438d-b8db-d37b51518f95",
+          "current": "With customers/clients, I’m best at…"
+        }
+      ],
+      "semantic_family": "urgent-customer-complaint",
+      "measurement": {
+        "behavioral_domain": "communication-expression",
+        "life_context": "work-business",
+        "situational_tones": [
+          "pressure",
+          "disagreement"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 47,
+        "question_id": "505ae241-8349-438d-b8db-d37b51518f95",
+        "current": "With customers/clients, I’m best at…"
+      },
+      "closest_development_candidate": "C02-S-02",
+      "incremental_measurement_contribution": "Adds response behavior under customer conflict rather than ambiguous scope.",
+      "what_unique_value_it_adds": "Adds response behavior under customer conflict rather than ambiguous scope.",
+      "why": "It is the approved replacement for legacy Question 47.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 24,
+      "candidate_id": "C02-S-08",
+      "cohort": "COHORT_02",
+      "wording": "Weather forces a community event to change at the last minute. What contribution comes most naturally to you?",
+      "options": [
+        {
+          "label": "Choose a workable backup and organize the immediate switch",
+          "color": "red"
+        },
+        {
+          "label": "Reimagine the event so the changed format still feels lively",
+          "color": "blue"
+        },
+        {
+          "label": "Coordinate around participant needs and promises already made",
+          "color": "yellow"
+        },
+        {
+          "label": "Compare the constraints and select the most reliable fallback",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "DEFER_REDUNDANCY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "weather-event-redesign",
+      "measurement": {
+        "behavioral_domain": "change-risk",
+        "life_context": "community",
+        "situational_tones": [
+          "change",
+          "pressure"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 4,
+        "question_id": "092ef69e-a476-4451-a770-a879e8723fae",
+        "current": "When a decision needs to be made, I usually…",
+        "similarity": 0.2632
+      },
+      "closest_development_candidate": "C02-S-03",
+      "incremental_measurement_contribution": "The item is sound, but sudden disruption is already represented across general, travel, and community-adjacent content.",
+      "what_unique_value_it_adds": "The item is sound, but sudden disruption is already represented across general, travel, and community-adjacent content.",
+      "why": "Its measurement/context combination does not add enough beyond C01-S-03 and C02-S-03.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 25,
+      "candidate_id": "C02-S-09",
+      "cohort": "COHORT_02",
+      "wording": "A team is choosing between several capable software tools. What matters most in your recommendation?",
+      "options": [
+        {
+          "label": "Which tool will improve output and speed soonest",
+          "color": "red"
+        },
+        {
+          "label": "Which tool opens the most interesting possibilities for how the team works",
+          "color": "blue"
+        },
+        {
+          "label": "Which tool best supports the team’s shared needs and working commitments",
+          "color": "yellow"
+        },
+        {
+          "label": "Which tool has the strongest evidence for reliability, fit, and integration",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "team-tool-selection",
+      "measurement": {
+        "behavioral_domain": "decision-making",
+        "life_context": "team",
+        "situational_tones": [
+          "competing-alternatives",
+          "ordinary-calm"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 13,
+        "question_id": "16d86da0-614b-4c2f-a935-51e08ab09baa",
+        "current": "When plans change suddenly, I…",
+        "similarity": 0.1905
+      },
+      "closest_development_candidate": "C02-S-05",
+      "incremental_measurement_contribution": "Adds selection criteria for capable alternatives in a practical technology decision.",
+      "what_unique_value_it_adds": "Adds selection criteria for capable alternatives in a practical technology decision.",
+      "why": "It provides a distinct calm decision window rather than another crisis response.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 26,
+      "candidate_id": "C02-S-10",
+      "cohort": "COHORT_02",
+      "wording": "Someone asks for your first reaction to a promising but unfinished idea. Where does your attention naturally go?",
+      "options": [
+        {
+          "label": "The strongest direction and the next move that would advance it",
+          "color": "red"
+        },
+        {
+          "label": "The possibilities that could make the idea more vivid or engaging",
+          "color": "blue"
+        },
+        {
+          "label": "How the idea may connect with the people it is meant to serve",
+          "color": "yellow"
+        },
+        {
+          "label": "The assumptions, details, and consequences that still need testing",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "rough-idea-feedback",
+      "measurement": {
+        "behavioral_domain": "communication-expression",
+        "life_context": "general-cross-context",
+        "situational_tones": [
+          "opportunity",
+          "uncertainty"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 73,
+        "question_id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+        "current": "When delegating, I…",
+        "similarity": 0.1579
+      },
+      "closest_development_candidate": "C01-L-G-03",
+      "incremental_measurement_contribution": "Adds what each color notices when responding to an unfinished possibility.",
+      "what_unique_value_it_adds": "Adds what each color notices when responding to an unfinished possibility.",
+      "why": "This is a valuable positive, non-crisis response-to-others measure.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 27,
+      "candidate_id": "C02-S-11",
+      "cohort": "COHORT_02",
+      "wording": "A familiar work process keeps producing small but avoidable errors. What do you naturally examine first?",
+      "options": [
+        {
+          "label": "The bottleneck that should be changed so performance improves",
+          "color": "red"
+        },
+        {
+          "label": "Alternative approaches that could make the process work better",
+          "color": "blue"
+        },
+        {
+          "label": "The handoffs where people may need clearer support or coordination",
+          "color": "yellow"
+        },
+        {
+          "label": "The pattern of errors and the process control that would prevent them",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "ADMIT",
+      "revised_wording": null,
+      "replaced_legacy_identities": [],
+      "semantic_family": "recurring-minor-errors",
+      "measurement": {
+        "behavioral_domain": "organization-process",
+        "life_context": "work-business",
+        "situational_tones": [
+          "failure-mistake",
+          "routine-stability"
+        ],
+        "orientation": "SELF_ATTENTION",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 140,
+        "question_id": "eed5b69d-d389-4e2c-9b28-bc8d9da662a4",
+        "current": "When I get feedback, my first reaction is…",
+        "similarity": 0.1905
+      },
+      "closest_development_candidate": "C02-S-04",
+      "incremental_measurement_contribution": "Adds repeated-error diagnosis in a work process, distinct from household routine recovery.",
+      "what_unique_value_it_adds": "Adds repeated-error diagnosis in a work process, distinct from household routine recovery.",
+      "why": "It supplies deliberate parallel process-reliability measurement across context and tone.",
+      "runtime_authority": false
+    },
+    {
+      "batch_position": 28,
+      "candidate_id": "C02-S-12",
+      "cohort": "COHORT_02",
+      "wording": "A new colleague feels overwhelmed by several competing demands. What kind of help comes most naturally to you?",
+      "options": [
+        {
+          "label": "Identify the most important priority and help them take the next action",
+          "color": "red"
+        },
+        {
+          "label": "Help them see possibilities and regain some energy for the work",
+          "color": "blue"
+        },
+        {
+          "label": "Help them identify which relationships and commitments need steady attention first",
+          "color": "yellow"
+        },
+        {
+          "label": "Organize the demands into clear steps, resources, and dependencies",
+          "color": "green"
+        }
+      ],
+      "intended_mapping": "one option per color",
+      "decision": "REPLACE_LEGACY",
+      "revised_wording": null,
+      "replaced_legacy_identities": [
+        {
+          "corpus_position": 69,
+          "question_id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+          "current": "People usually rely on me for…"
+        }
+      ],
+      "semantic_family": "supporting-overwhelmed-colleague",
+      "measurement": {
+        "behavioral_domain": "relationships-support",
+        "life_context": "work-business",
+        "situational_tones": [
+          "pressure",
+          "constrained-resources"
+        ],
+        "orientation": "RESPONSE_TO_OTHERS",
+        "pairwise_discrimination": [
+          "RED_BLUE",
+          "RED_YELLOW",
+          "RED_GREEN",
+          "BLUE_YELLOW",
+          "BLUE_GREEN",
+          "YELLOW_GREEN"
+        ]
+      },
+      "closest_reconstructed_legacy": {
+        "corpus_position": 69,
+        "question_id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+        "current": "People usually rely on me for…"
+      },
+      "closest_development_candidate": "C01-S-01",
+      "incremental_measurement_contribution": "Measures the kind of practical support each color naturally provides under overload.",
+      "what_unique_value_it_adds": "Measures the kind of practical support each color naturally provides under overload.",
+      "why": "It is the approved replacement for legacy Question 69 and avoids making Yellow uniquely compassionate.",
+      "runtime_authority": false
+    }
+  ],
+  "production_impact": "NONE"
+}

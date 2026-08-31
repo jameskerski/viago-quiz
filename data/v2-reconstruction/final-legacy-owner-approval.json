@@ -1,0 +1,9 @@
+{
+  "approval_id": "VIAGO_COMPLETE_LEGACY_RECONSTRUCTION_OWNER_APPROVAL",
+  "approved_commit": "a7fdd23bfadd514edc41a416bc0af3ae60befd38",
+  "status": "OWNER_APPROVED_REVIEW_BASELINE_NON_PRODUCTION",
+  "final_counts": { "KEEP_EXACTLY": 19, "REWORD": 50, "REPLACE": 28, "RETIRE": 54 },
+  "unique_admitted_legacy_identities": 97,
+  "approved_backlog_entries": ["EXP-001", "EXP-002", "EXP-003", "EXP-004", "EXP-005", "EXP-006", "EXP-007", "EXP-008", "EXP-009"],
+  "production_authority": false
+}
