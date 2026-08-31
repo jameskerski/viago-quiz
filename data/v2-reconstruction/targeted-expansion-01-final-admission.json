@@ -1,0 +1,89 @@
+{
+  "manifest_id": "VIAGO_TARGETED_EXPANSION_01_FINAL_ADMISSION",
+  "schema_version": "1.0.0",
+  "status": "OWNER_APPROVED_NON_PRODUCTION_CANONICAL_RESEARCH_BANK",
+  "source_commit": "47b39390622a4f8e9c2d4fd998e01a50dc04a004",
+  "source_manifest": "data/v2-proposals/targeted-expansion-01.json",
+  "revisions": [
+    {
+      "candidate_id": "EXP1-S-10",
+      "wording": "Someone is showing you how to use an unfamiliar tool. What makes their explanation most useful to you?",
+      "options": [
+        { "label": "They get me to a working result quickly, then help me improve it", "color": "red" },
+        { "label": "They let me explore what the tool can do through interesting examples", "color": "blue" },
+        { "label": "They build a steady learning partnership and keep a shared commitment from one session to the next", "color": "yellow" },
+        { "label": "They explain how the parts work and why each step matters", "color": "green" }
+      ],
+      "rationale": "Makes Yellow about dependable learning partnership, continuity, and shared commitment rather than general kindness or teaching competence."
+    },
+    {
+      "candidate_id": "EXP1-S-11",
+      "wording": "A close friend is handling a disagreement that affects several people. Which quality in their approach would you respect most?",
+      "options": [
+        { "label": "They move the issue toward a clear decision that people can act on", "color": "red" },
+        { "label": "They open a new path that gives the situation more room to improve", "color": "blue" },
+        { "label": "They look for a form of continued connection that people can sustain after the disagreement", "color": "yellow" },
+        { "label": "They separate facts, assumptions, and responsibilities before conclusions", "color": "green" }
+      ],
+      "rationale": "Frames Yellow as preference for sustainable relational continuity, not the uniquely correct or emotionally mature conflict response."
+    },
+    {
+      "candidate_id": "EXP1-L-G-02",
+      "wording": "After a mistake, I want to understand why it happened before I try the same task again.",
+      "options": [],
+      "rationale": "Measures causal understanding before retrying and removes confidence, anxiety, caution, and self-esteem from the construct."
+    }
+  ],
+  "dispositions": {
+    "ADMIT": [
+      "EXP1-S-01", "EXP1-S-02", "EXP1-S-03", "EXP1-S-04", "EXP1-S-05", "EXP1-S-06", "EXP1-S-07", "EXP1-S-08", "EXP1-S-09", "EXP1-S-12", "EXP1-S-13", "EXP1-S-14", "EXP1-S-15", "EXP1-S-16", "EXP1-S-17", "EXP1-S-18", "EXP1-S-19", "EXP1-S-20", "EXP1-L-R-01", "EXP1-L-R-02", "EXP1-L-B-01", "EXP1-L-B-02", "EXP1-L-Y-01", "EXP1-L-Y-02", "EXP1-L-G-01"
+    ],
+    "REVISE_AND_ADMIT": ["EXP1-S-10", "EXP1-S-11", "EXP1-L-G-02"],
+    "DEFER_REDUNDANCY": [],
+    "RETIRE_CANDIDATE": []
+  },
+  "admission_summary": {
+    "starting_bank": 120,
+    "admitted_candidates": 28,
+    "deferred_candidates": 0,
+    "retired_candidates": 0,
+    "resulting_unique_bank": 148,
+    "formats": { "LIKERT": 81, "SINGLE_SELECT": 67 },
+    "orientations": {
+      "INTERPERSONAL": 5,
+      "PREFERENCE_IN_OTHERS": 21,
+      "RESPONSE_TO_OTHERS": 20,
+      "SELF_ACTION": 11,
+      "SELF_ATTENTION": 39,
+      "SELF_PREFERENCE": 52
+    }
+  },
+  "backlog": [
+    { "id": "EXP-001", "status": "SATISFIED" },
+    { "id": "EXP-002", "status": "DOWNGRADE_MONITOR" },
+    { "id": "EXP-003", "status": "SATISFIED" },
+    { "id": "EXP-004", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-005", "status": "DOWNGRADE_MONITOR" },
+    { "id": "EXP-006", "status": "SATISFIED" },
+    { "id": "EXP-007", "status": "DOWNGRADE_MONITOR" },
+    { "id": "EXP-008", "status": "SATISFIED" },
+    { "id": "EXP-009", "status": "DOWNGRADE_MONITOR" },
+    { "id": "EXP-010", "status": "SATISFIED_FOR_CURRENT_BANK" },
+    { "id": "EXP-011", "status": "DOWNGRADE_MONITOR" }
+  ],
+  "next_expansion_recommendation": {
+    "first_step": "Rerun non-production assembler simulation against the 148-item bank before generating more questions.",
+    "conditional_size": "If simulation demonstrates material gaps, generate no more than 16–20 focused candidates.",
+    "priorities": [
+      "selector-evidenced semantic-family gaps",
+      "governed drains/frustrations if underselected",
+      "recovery if family or context depth remains thin",
+      "monitored Yellow-Green distinctions"
+    ],
+    "format": "Favor single-select only where simulation demonstrates repeat-exposure or family-depth need; require a clean pairwise motivational tradeoff for any Likert item.",
+    "orientation": "PREFERENCE_IN_OTHERS is no longer the primary volume gap; monitor rather than force additional items.",
+    "context": "Retain non-work diversity and fill only contexts shown to be sparse in assembled attempts."
+  },
+  "runtime_authority": false,
+  "production_impact": "NONE"
+}
