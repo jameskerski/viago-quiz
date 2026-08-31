@@ -1,7 +1,7 @@
 {
   "manifest_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_04",
   "schema_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
   "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   "metadata_schema": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   "taxonomy": "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
@@ -129,7 +129,7 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
       "discovered_in": "BATCH_04",
-      "owner_review_state": "PENDING_BATCH_REVIEW"
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-008",
@@ -160,7 +160,7 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
       "discovered_in": "BATCH_04",
-      "owner_review_state": "PENDING_BATCH_REVIEW"
+      "owner_review_state": "OWNER_APPROVED"
     }
   ],
   "questions": [
@@ -209,7 +209,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Task switching can reflect role demands, attention regulation, or work design and is not independently Blue; stronger freshness items already cover the governed motive.",
       "runtime_authority": false
@@ -264,7 +264,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision removes ‘genuine’ as a virtue and measures a valid Blue preference in others against slower, equally legitimate disclosure.",
       "runtime_authority": false
@@ -320,7 +320,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy words rigid and restrictive make resistance obvious; the revision gives a practical schedule credit while exposing the Blue freedom motive.",
       "runtime_authority": false
@@ -370,7 +370,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Ease about the future is vulnerable to anxiety and life-circumstance confounds and substantially overlaps stronger planning and predictable-progress items.",
       "runtime_authority": false
@@ -420,7 +420,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item measures unease and duplicates the stronger Batch 03 constraints-before-entry revision.",
       "runtime_authority": false
@@ -519,7 +519,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item lists color stereotypes; the revision uses one situation and four competent, motivation-centered communication priorities.",
       "runtime_authority": false
@@ -583,7 +583,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "RELATED",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Pushing through distraction is a competence claim; the candidate measures the governed Red achievement motive without implying superior self-control.",
       "runtime_authority": false
@@ -647,7 +647,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "RELATED",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item asks respondents to admit poor motivation; the candidate compares two workable project structures.",
       "runtime_authority": false
@@ -701,7 +701,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "This repeats the same semantic family as Question 28 and C01-L-R-01, already proposed as its stronger replacement.",
       "runtime_authority": false
@@ -756,7 +756,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy productive-versus-passing-time wording moralizes leisure; the revision gives both uses of time legitimate value.",
       "runtime_authority": false
@@ -811,7 +811,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision anchors Green in evidence and repeatability rather than claiming that cautious trust itself is Green.",
       "runtime_authority": false
@@ -867,7 +867,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "HIGH",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item compounds laughter, talking, sharing, and aliveness; the revision isolates Blue social energy against a valid alternative.",
       "runtime_authority": false
@@ -922,7 +922,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item directly names two historically established Red motivations without relying on directness, confidence, or generic competence.",
       "runtime_authority": false
@@ -978,7 +978,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision replaces a generic claim of supportive effort with two legitimate relationship models and an explicit Yellow continuity preference.",
       "runtime_authority": false
@@ -1028,7 +1028,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Boredom tolerance is ambiguous and this duplicates the governed freshness-versus-working-routine family already retained through C02-L-B-02.",
       "runtime_authority": false
@@ -1079,7 +1079,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The statement measures attention persistence or self-control and asks respondents to admit a weakness rather than a governed Blue preference.",
       "runtime_authority": false
@@ -1136,7 +1136,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision removes productivity as a competence claim and preserves a clean Blue-versus-Red motivational distinction.",
       "runtime_authority": false
@@ -1191,7 +1191,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Stepping outside a comfort zone can sound courageous or virtuous; the revision makes Blue discovery the sole reason for trying the unfamiliar.",
       "runtime_authority": false
@@ -1243,7 +1243,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item confounds Blue novelty with anxiety and substantially duplicates the stronger unpredictable-new-experience item retained as Question 71.",
       "runtime_authority": false
@@ -1298,7 +1298,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision removes social anxiety and measures Green structure in a legitimate non-work context.",
       "runtime_authority": false
@@ -1348,7 +1348,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item is vulnerable to anxiety and context effects and duplicates several stronger Green tradeoff items already proposed.",
       "runtime_authority": false
@@ -1399,7 +1399,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The statement is closer to Yellow loyalty than Green, but also confounds relational history and introversion and overlaps the approved depth-versus-breadth candidate.",
       "runtime_authority": false
@@ -1452,7 +1452,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The semantic family is already represented more clearly by C01-L-R-01; retaining another paraphrase would add redundancy rather than coverage.",
       "runtime_authority": false
@@ -1551,7 +1551,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision makes all four responses useful recovery strategies and removes compound stereotypes and superior-competence implications.",
       "runtime_authority": false
@@ -1601,7 +1601,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item rewards organization and consideration as virtues while neither independently establishes Yellow.",
       "runtime_authority": false

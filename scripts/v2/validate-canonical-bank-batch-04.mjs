@@ -16,7 +16,7 @@ assert.equal(schema.status, "OWNER_APPROVED_NON_RUNTIME");
 assert.equal(taxonomy.status, "OWNER_APPROVED_NON_RUNTIME");
 assert.equal(approval.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.equal(batches[2].status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
-assert.equal(batch.status, "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION");
+assert.equal(batch.status, "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION");
 assert.equal(batch.production_impact, "NONE");
 assert.equal(batch.questions.length, 25);
 assert.deepEqual(batch.questions.map((item) => item.question_id), audit.questions.slice(75, 100).map((item) => item.canonical_id));
@@ -33,7 +33,7 @@ for (const item of batch.questions) {
   assert.ok(allowedDispositions.has(item.proposed_disposition));
   assert.equal(item.origin, "LEGACY");
   assert.equal(item.runtime_authority, false);
-  assert.equal(item.quality.owner_review_state, "PENDING_BATCH_REVIEW");
+  assert.equal(item.quality.owner_review_state, "OWNER_APPROVED");
   assert.ok(domains.has(item.measurement.behavioral_domain));
   assert.ok(contexts.has(item.measurement.life_context));
   assert.ok(item.measurement.situational_tones.every((tone) => tones.has(tone)));
@@ -61,14 +61,14 @@ for (const item of batch.questions) {
   if (item.format === "SINGLE_SELECT" && item.proposed) assert.deepEqual(item.proposed.options.map((option) => option.color).sort(), ["blue", "green", "red", "yellow"]);
 }
 
-assert.equal(backlog.entries.length, 8);
-assert.equal(new Set(backlog.entries.map((item) => item.backlog_id)).size, 8);
+assert.ok(backlog.entries.length >= 8);
+assert.equal(new Set(backlog.entries.map((item) => item.backlog_id)).size, backlog.entries.length);
 const priorBacklog = backlog.entries.filter((item) => item.discovered_in === "BATCH_03");
 const newBacklog = backlog.entries.filter((item) => item.discovered_in === "BATCH_04");
 assert.equal(priorBacklog.length, 6);
 assert.ok(priorBacklog.every((item) => item.owner_review_state === "OWNER_APPROVED"));
 assert.equal(newBacklog.length, 2);
-assert.ok(newBacklog.every((item) => item.owner_review_state === "PENDING_BATCH_REVIEW"));
+assert.ok(newBacklog.every((item) => item.owner_review_state === "OWNER_APPROVED"));
 for (const item of backlog.entries) {
   assert.ok(["HIGH", "MEDIUM", "LOW"].includes(item.priority));
   assert.ok(["LIKERT", "SINGLE_SELECT", "EITHER", "MULTIPLE_PARALLEL_ITEMS"].includes(item.needed_format));

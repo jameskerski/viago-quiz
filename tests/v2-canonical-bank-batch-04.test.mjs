@@ -18,10 +18,10 @@ test('Batch 04 covers exactly legacy questions 76 through 100', () => {
 });
 
 test('Batch 04 remains pending and non-production', () => {
-  assert.equal(batch.status, 'PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION');
+  assert.equal(batch.status, 'OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION');
   assert.equal(batch.production_impact, 'NONE');
   assert.ok(batch.questions.every((item) => item.runtime_authority === false));
-  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'PENDING_BATCH_REVIEW'));
+  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('Batch 04 keeps single-select mappings balanced', () => {
@@ -30,9 +30,10 @@ test('Batch 04 keeps single-select mappings balanced', () => {
   }
 });
 
-test('approved backlog is preserved and only two Batch 04 gaps are pending', () => {
-  assert.equal(backlog.entries.filter((item) => item.owner_review_state === 'OWNER_APPROVED').length, 6);
-  assert.equal(backlog.entries.filter((item) => item.owner_review_state === 'PENDING_BATCH_REVIEW').length, 2);
+test('Batch 04 backlog approvals are preserved', () => {
+  const approved = backlog.entries.filter((item) => item.discovered_in === 'BATCH_04');
+  assert.equal(approved.length, 2);
+  assert.ok(approved.every((item) => item.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('Batch 04 artifacts remain isolated from runtime', () => {

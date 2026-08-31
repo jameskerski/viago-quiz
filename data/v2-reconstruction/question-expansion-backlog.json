@@ -213,7 +213,7 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
       "discovered_in": "BATCH_04",
-      "owner_review_state": "PENDING_BATCH_REVIEW"
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-008",
@@ -244,6 +244,42 @@
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
       "discovered_in": "BATCH_04",
+      "owner_review_state": "OWNER_APPROVED"
+    },
+    {
+      "backlog_id": "EXP-009",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "drains and frustrations anchored in governed motivations",
+      "behavioral_domain": "general-preference",
+      "life_contexts": [
+        "work-business",
+        "friendship",
+        "family",
+        "household",
+        "everyday-decision"
+      ],
+      "situational_tones": [
+        "constrained-resources",
+        "disagreement",
+        "long-term-commitment",
+        "recovery"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "PREFERENCE_IN_OTHERS"
+      ],
+      "motivational_tradeoff": "which obstruction to progress, possibility, trust, or clarity most reliably reduces energy",
+      "insufficiency": "Legacy drain and frustration items rely on boredom, tension, bluntness, anxiety, or accountability virtues rather than showing which governed motivation is blocked.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "MEDIUM",
+      "discovered_in": "BATCH_05",
       "owner_review_state": "PENDING_BATCH_REVIEW"
     }
   ],
