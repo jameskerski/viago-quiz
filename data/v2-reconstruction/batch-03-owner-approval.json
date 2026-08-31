@@ -1,0 +1,15 @@
+{
+  "approval_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_03_OWNER_BASELINE",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
+  "approved_commit": "6b3b441",
+  "approved_counts": {
+    "KEEP_EXACTLY": 4,
+    "REWORD": 8,
+    "REPLACE": 6,
+    "RETIRE": 7
+  },
+  "approved_backlog_ids": ["EXP-001", "EXP-002", "EXP-003", "EXP-004", "EXP-005", "EXP-006"],
+  "scope": "Questions 51-75 and six expansion-backlog gaps remain non-production research authority.",
+  "production_authority": false,
+  "production_impact": "NONE"
+}

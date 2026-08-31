@@ -28,7 +28,8 @@
       "insufficiency": "Legacy items frequently substitute sociability or introversion; existing candidates establish the distinction but lack enough independent contexts for a large bank.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-002",
@@ -56,7 +57,8 @@
       "insufficiency": "Legacy material repeatedly assigns generic caution, reliability, or introversion to these colors without exposing why stability matters.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-003",
@@ -83,7 +85,8 @@
       "insufficiency": "Many legacy questions measure generic responsibility or competence; additional motive-centered parallel items are needed.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-004",
@@ -114,7 +117,8 @@
       "insufficiency": "The first 75 legacy questions provide almost no valid PREFERENCE_IN_OTHERS evidence; the few examples are virtue-loaded or semantically unclear.",
       "needed_format": "EITHER",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-005",
@@ -149,7 +153,8 @@
       "insufficiency": "Reconstruction still contains disproportionate uncertainty, pressure, change, and problem scenarios relative to calm or enjoyable ordinary life.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-006",
@@ -177,7 +182,69 @@
       "insufficiency": "Legacy action language often conflates Red momentum with Blue spontaneity; more controlled non-work contrasts are needed.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
+    },
+    {
+      "backlog_id": "EXP-007",
+      "colors_or_pairs": [
+        "RED_YELLOW",
+        "BLUE_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "core_trait_gap": "non-virtue relational maintenance and mutual support",
+      "behavioral_domain": "relationships-support",
+      "life_contexts": [
+        "friendship",
+        "family",
+        "close-relationship"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "long-term-commitment",
+        "recovery"
+      ],
+      "orientations": [
+        "INTERPERSONAL",
+        "RESPONSE_TO_OTHERS"
+      ],
+      "motivational_tradeoff": "maintaining mutual support and relational continuity vs. greater independence or redirected effort",
+      "insufficiency": "Legacy Yellow items frequently claim kindness, consideration, reliability, or organization instead of exposing the relational motive and a reasonable alternative.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "HIGH",
+      "discovered_in": "BATCH_04",
+      "owner_review_state": "PENDING_BATCH_REVIEW"
+    },
+    {
+      "backlog_id": "EXP-008",
+      "colors_or_pairs": [
+        "RED_BLUE",
+        "BLUE_YELLOW",
+        "BLUE_GREEN"
+      ],
+      "core_trait_gap": "freedom and variety without distractibility or boredom confounds",
+      "behavioral_domain": "general-preference",
+      "life_contexts": [
+        "hobbies",
+        "free-time-leisure",
+        "personal-project",
+        "travel"
+      ],
+      "situational_tones": [
+        "ordinary-calm",
+        "opportunity",
+        "long-term-commitment"
+      ],
+      "orientations": [
+        "SELF_ATTENTION",
+        "SELF_PREFERENCE"
+      ],
+      "motivational_tradeoff": "fresh possibility and freedom vs. sustained result, continuity, or predictable structure",
+      "insufficiency": "Batch 04 contains several Blue items that measure boredom, attention persistence, or inability to tolerate structure rather than a positive preference for possibility and freedom.",
+      "needed_format": "MULTIPLE_PARALLEL_ITEMS",
+      "priority": "MEDIUM",
+      "discovered_in": "BATCH_04",
+      "owner_review_state": "PENDING_BATCH_REVIEW"
     }
   ],
   "production_impact": "NONE"

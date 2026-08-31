@@ -1,7 +1,7 @@
 {
   "manifest_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_03",
   "schema_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
   "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   "metadata_schema": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   "taxonomy": "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
@@ -125,7 +125,8 @@
       "insufficiency": "Legacy items frequently substitute sociability or introversion; existing candidates establish the distinction but lack enough independent contexts for a large bank.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-002",
@@ -153,7 +154,8 @@
       "insufficiency": "Legacy material repeatedly assigns generic caution, reliability, or introversion to these colors without exposing why stability matters.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-003",
@@ -180,7 +182,8 @@
       "insufficiency": "Many legacy questions measure generic responsibility or competence; additional motive-centered parallel items are needed.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-004",
@@ -211,7 +214,8 @@
       "insufficiency": "The first 75 legacy questions provide almost no valid PREFERENCE_IN_OTHERS evidence; the few examples are virtue-loaded or semantically unclear.",
       "needed_format": "EITHER",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-005",
@@ -246,7 +250,8 @@
       "insufficiency": "Reconstruction still contains disproportionate uncertainty, pressure, change, and problem scenarios relative to calm or enjoyable ordinary life.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "HIGH",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     },
     {
       "backlog_id": "EXP-006",
@@ -274,7 +279,8 @@
       "insufficiency": "Legacy action language often conflates Red momentum with Blue spontaneity; more controlled non-work contrasts are needed.",
       "needed_format": "MULTIPLE_PARALLEL_ITEMS",
       "priority": "MEDIUM",
-      "discovered_in": "BATCH_03"
+      "discovered_in": "BATCH_03",
+      "owner_review_state": "OWNER_APPROVED"
     }
   ],
   "questions": [
@@ -328,7 +334,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy threat/opportunity framing can indicate optimism or Blue novelty; the revision anchors endorsement in Red progress and chosen direction.",
       "runtime_authority": false
@@ -378,7 +384,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Avoiding success at others’ expense is an ethical position and universal virtue, not independently Yellow evidence.",
       "runtime_authority": false
@@ -433,7 +439,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy wording invites a fairness judgment about deserving more; the revision measures Red motivation from visible, outcome-linked reward.",
       "runtime_authority": false
@@ -532,7 +538,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy Yellow option makes fairness the color signal; the revision gives all four colors attractive, governed motivations.",
       "runtime_authority": false
@@ -596,7 +602,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Caution about an inner circle can reflect introversion or risk; the candidate directly measures Yellow relational depth against Blue breadth.",
       "runtime_authority": false
@@ -650,7 +656,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Commitment is the explicit source of the support motivation, so the item measures governed Yellow loyalty rather than generic helpfulness.",
       "runtime_authority": false
@@ -715,7 +721,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy wording can signal boredom tolerance or poor follow-through; the candidate preserves Blue freshness without implying abandonment.",
       "runtime_authority": false
@@ -765,7 +771,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Being good at completing tasks is a competency and socially desirable self-claim, not independently Green evidence.",
       "runtime_authority": false
@@ -821,7 +827,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision supplies a real choice and limits the scenario to discretionary money, reducing financial-security and moral confounds.",
       "runtime_authority": false
@@ -876,7 +882,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item can measure anxiety; the revision compares two reasonable planning preferences.",
       "runtime_authority": false
@@ -995,7 +1001,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Hesitating because change could affect others is generic caution; the candidate reveals Yellow continuity alongside three equally legitimate motives.",
       "runtime_authority": false
@@ -1051,7 +1057,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision makes Green clarity—not compliance or competence—the reason for preferring advance expectations.",
       "runtime_authority": false
@@ -1100,7 +1106,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Honesty is a universal virtue and bluntness/directness is explicitly insufficient as Red scoring evidence.",
       "runtime_authority": false
@@ -1166,7 +1172,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The candidate makes the Yellow relational motive and real cost explicit instead of treating interpersonal discomfort itself as evidence.",
       "runtime_authority": false
@@ -1215,7 +1221,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item can reflect trust, conscientiousness, suspicion, or practical judgment and its Green assignment is not governed by the color model.",
       "runtime_authority": false
@@ -1264,7 +1270,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The statement combines organization and reliability as virtues; neither independently establishes Yellow.",
       "runtime_authority": false
@@ -1406,7 +1412,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item mixes speed, talking, helping, and quiet precision as stereotypes; the candidate provides four useful motivations in one situation.",
       "runtime_authority": false
@@ -1481,7 +1487,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "Boundary style is learned and context-dependent; the Yellow option is pejoratively anxious while directness and logic are not standalone color signals.",
       "runtime_authority": false
@@ -1623,7 +1629,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "SUBSTANTIAL",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy item asks respondents to claim strengths; the candidate observes a preferred helping contribution with balanced options.",
       "runtime_authority": false
@@ -1676,7 +1682,7 @@
         "response_desirability_risk": "HIGH",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "DUPLICATE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "This is an exact duplicate of reviewed Question 41, which Batch 02 proposes to keep exactly.",
       "runtime_authority": false
@@ -1731,7 +1737,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item cleanly measures Blue attraction to experience and novelty against a real uncertainty cost.",
       "runtime_authority": false
@@ -1786,7 +1792,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item ties motivation to responsibility for results, an established Red foundation, rather than generic responsibility alone.",
       "runtime_authority": false
@@ -1885,7 +1891,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The revision gives every color a competent delegation priority and removes the implication that only Yellow supports people.",
       "runtime_authority": false
@@ -1984,7 +1990,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The legacy options portray Blue as unable to persist and Green as stressed; the revision offers four constructive reasons to keep a routine.",
       "runtime_authority": false
@@ -2038,7 +2044,7 @@
         "response_desirability_risk": "LOW",
         "context_dependence_risk": "LOW",
         "semantic_redundancy": "NONE",
-        "owner_review_state": "PENDING_BATCH_REVIEW"
+        "owner_review_state": "OWNER_APPROVED"
       },
       "why": "The item presents a clear Blue/Green preference with neither approach framed as more competent or mature.",
       "runtime_authority": false

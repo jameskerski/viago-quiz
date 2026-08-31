@@ -18,10 +18,10 @@ test('Batch 03 covers exactly legacy questions 51 through 75', () => {
 });
 
 test('Batch 03 remains pending and isolated from runtime authority', () => {
-  assert.equal(batch.status, 'PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION');
+  assert.equal(batch.status, 'OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION');
   assert.equal(batch.production_impact, 'NONE');
   assert.ok(batch.questions.every((item) => item.runtime_authority === false));
-  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'PENDING_BATCH_REVIEW'));
+  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('proposed single-select responses retain one mapping per color', () => {
@@ -33,8 +33,9 @@ test('proposed single-select responses retain one mapping per color', () => {
 test('expansion backlog is formal, prioritized, and non-production', () => {
   assert.equal(backlog.backlog_id, 'VIAGO_QUESTION_EXPANSION_BACKLOG');
   assert.equal(backlog.production_impact, 'NONE');
-  assert.equal(backlog.entries.length, 6);
-  assert.ok(backlog.entries.every((item) => ['HIGH', 'MEDIUM'].includes(item.priority)));
+  const approved = backlog.entries.filter((item) => item.discovered_in === 'BATCH_03');
+  assert.equal(approved.length, 6);
+  assert.ok(approved.every((item) => item.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('Batch 03 and backlog artifacts remain absent from application runtime', () => {
