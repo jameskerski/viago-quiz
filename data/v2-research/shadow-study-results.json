@@ -1,0 +1,625 @@
+{
+  "schema_version": "1.0.0",
+  "status": "NON_PRODUCTION_SHADOW_STUDY_COMPLETE",
+  "generated_at": null,
+  "source": {
+    "archive_identity": "VIAGO__ROLLBACK_RETIREMENT__20260829T231712.741Z",
+    "source_project": "zkmkenhziznafbgmcayp",
+    "source_schema": "public",
+    "authoritative_production": "xombtulaktoprxxtkbcy.viago_quiz",
+    "exported_at": "2026-08-29T23:18:24.561Z",
+    "archive_only_attempts_excluded": 6,
+    "source_checks": {
+      "questions": {
+        "rows": 151,
+        "compressed_sha256": "cc46fc4ccf9ec56f836fe475ce541f367b9646a31704dcc55f59159b345dc000",
+        "verified": true
+      },
+      "question_options": {
+        "rows": 124,
+        "compressed_sha256": "7e9338e1ab29e517516f63c2a007e56ee122b28d9fed4e8cc169c92c3a021555",
+        "verified": true
+      },
+      "quiz_attempts": {
+        "rows": 1978,
+        "compressed_sha256": "2f56fef5c17509d27a3828782ac3736ee7fe9eac96036076fa02f3a366a9c2b3",
+        "verified": true
+      },
+      "quiz_attempt_questions": {
+        "rows": 98133,
+        "compressed_sha256": "8b49c77462efe19243a5077d278582ac87f1bebd01d5f60b217a6c599eb5060f",
+        "verified": true
+      },
+      "quiz_attempt_answers": {
+        "rows": 67989,
+        "compressed_sha256": "e76e7a45a914c0afd392379e341e0a694d674d9e0affc336dcbcd1aa91122c35",
+        "verified": true
+      }
+    }
+  },
+  "population": {
+    "archived_attempts_after_archive_only_exclusion": 1972,
+    "attempts_with_expected_current_50_question_shape": 1940,
+    "completed_attempts_with_50_unique_assigned_answers": 1259,
+    "completion_evidence_coverage_pct": 64.9
+  },
+  "current_historical_evidence": {
+    "opportunity_shape": {
+      "single": 25,
+      "likert": {
+        "red": 6,
+        "blue": 6,
+        "yellow": 6,
+        "green": 7
+      },
+      "varies_by_random_selection": false
+    },
+    "chronological_adjacent_attempt_overlap": {
+      "total": {
+        "min": 19,
+        "p05": 22,
+        "mean": 25.4698,
+        "p50": 25,
+        "p95": 29,
+        "max": 32
+      },
+      "single": {
+        "min": 19,
+        "p05": 19,
+        "mean": 20.1882,
+        "p50": 20,
+        "p95": 22,
+        "max": 24
+      },
+      "likert": {
+        "min": 0,
+        "p05": 2,
+        "mean": 5.2816,
+        "p50": 5,
+        "p95": 8,
+        "max": 11
+      }
+    },
+    "question_selection_frequency": {
+      "eligible_attempts": 1940,
+      "questions_observed": 151,
+      "selected_count_summary": {
+        "min": 358,
+        "p05": 366,
+        "mean": 642.3841,
+        "p50": 408,
+        "p95": 1576,
+        "max": 1596
+      }
+    },
+    "completed_results": {
+      "winner_counts": {
+        "red": 303,
+        "blue": 215,
+        "green": 427,
+        "yellow": 314
+      },
+      "top_margin": {
+        "min": 0,
+        "p05": 1,
+        "mean": 18.9245,
+        "p50": 14,
+        "p95": 55,
+        "max": 96
+      },
+      "exact_top_score_tie_count": 25,
+      "exact_top_score_tie_pct": 1.99,
+      "near_tie_margin_lte_4_count": 218,
+      "near_tie_margin_lte_4_pct": 17.32
+    }
+  },
+  "green_opportunity_sensitivity": {
+    "structural_difference": {
+      "max_points_advantage": 4,
+      "neutral_uniform_expected_advantage": 2
+    },
+    "simulation_only_green_six_sevenths_score_scaling": {
+      "winner_change_count": 47,
+      "winner_change_pct": 3.73,
+      "winner_transitions": {
+        "green->blue": 6,
+        "green->red": 12,
+        "green->yellow": 29
+      },
+      "winner_changes_among_near_ties": 47,
+      "near_tie_sensitivity_pct": 21.56,
+      "full_ordering_change_count": 145,
+      "full_ordering_change_pct": 11.52,
+      "interpretation": "Sensitivity diagnostic only; not a stored rescore and not Design B response evidence."
+    },
+    "leave_one_observed_green_likert_answer_out": {
+      "counterfactuals": 8813,
+      "winner_changes": 316,
+      "winner_change_pct": 3.59,
+      "ordering_changes": 1012,
+      "ordering_change_pct": 11.48,
+      "attempts_sensitive_to_at_least_one_omission": 60,
+      "attempts_sensitive_pct": 4.77,
+      "sensitive_attempts_among_near_ties": 60,
+      "near_tie_sensitivity_pct": 27.52
+    }
+  },
+  "weak_legacy_evidence": {
+    "weak_question_count_per_completed_current_attempt": {
+      "min": 6,
+      "p05": 9,
+      "mean": 13.2701,
+      "p50": 13,
+      "p95": 17,
+      "max": 20
+    },
+    "attempts_over_design_b_cap": 1259,
+    "attempts_over_design_b_cap_pct": 100,
+    "weak_points_share": {
+      "mean_pct": 22.09,
+      "p50_pct": 22.22,
+      "p95_pct": 29.55
+    },
+    "remove_all_weak_answers_winner_change_count": 136,
+    "remove_all_weak_answers_winner_change_pct": 10.8,
+    "caveat": "Removal sensitivity is not evidence that the weak item caused an incorrect result; it changes opportunity and uses audit flags rather than response calibration."
+  },
+  "design_b_capped": {
+    "simulation_attempts": 5000,
+    "pairwise_overlap": {
+      "total": {
+        "min": 7,
+        "p05": 12,
+        "mean": 16.0884,
+        "p95": 20,
+        "max": 26
+      },
+      "single": {
+        "min": 4,
+        "p05": 8,
+        "mean": 11.2342,
+        "p95": 14,
+        "max": 18
+      },
+      "likert": {
+        "min": 0,
+        "p05": 2,
+        "mean": 4.8542,
+        "p95": 8,
+        "max": 12
+      },
+      "semantic_family": {
+        "min": 8,
+        "p05": 14,
+        "mean": 17.8646,
+        "p95": 22,
+        "max": 28
+      }
+    },
+    "within_attempt": {
+      "unique_domains": {
+        "min": 12,
+        "p05": 14,
+        "mean": 15.8938,
+        "p95": 17,
+        "max": 17
+      },
+      "unique_contexts": {
+        "min": 8,
+        "p05": 8,
+        "mean": 8.7234,
+        "p95": 10,
+        "max": 10
+      },
+      "workplace_questions": {
+        "min": 3,
+        "p05": 6,
+        "mean": 7.767,
+        "p95": 8,
+        "max": 8
+      },
+      "weak_legacy_questions": {
+        "min": 2,
+        "p05": 5,
+        "mean": 4.9942,
+        "p95": 5,
+        "max": 5
+      },
+      "semantic_family_collisions": {
+        "min": 0,
+        "p05": 0,
+        "mean": 0,
+        "p95": 0,
+        "max": 0
+      }
+    },
+    "question_selection_frequency": {
+      "coefficient_of_variation": 0.5733,
+      "all_question_summary": {
+        "min": 313,
+        "p05": 362,
+        "mean": 1213.5922,
+        "p95": 2369,
+        "max": 2460
+      },
+      "candidate_selection_rate_pct": {
+        "min": 11.7,
+        "p05": 13.76,
+        "mean": 30.9996,
+        "p50": 28.06,
+        "p95": 47.44,
+        "max": 49.2
+      },
+      "top_15_candidates": [
+        {
+          "proposal_id": "C03-S-12",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "communication",
+          "context": "everyday-recommendation",
+          "semantic_family": "partly-known-recommendation",
+          "selected": 2460,
+          "selection_rate_pct": 49.2
+        },
+        {
+          "proposal_id": "C03-S-05",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "communication",
+          "context": "unfamiliar-social-situation",
+          "semantic_family": "preferred-new-social-contact",
+          "selected": 2409,
+          "selection_rate_pct": 48.18
+        },
+        {
+          "proposal_id": "C03-S-02",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "problem-solving-learning",
+          "context": "hobby-learning",
+          "semantic_family": "entry-into-unfamiliar-hobby",
+          "selected": 2379,
+          "selection_rate_pct": 47.58
+        },
+        {
+          "proposal_id": "C02-S-04",
+          "cohort": "cohort_02",
+          "question_type": "SINGLE_SELECT",
+          "domain": "rules-process",
+          "context": "home",
+          "semantic_family": "shared-household-routine",
+          "selected": 2372,
+          "selection_rate_pct": 47.44
+        },
+        {
+          "proposal_id": "C02-S-01",
+          "cohort": "cohort_02",
+          "question_type": "SINGLE_SELECT",
+          "domain": "leadership-influence",
+          "context": "volunteer",
+          "semantic_family": "unowned-volunteer-launch",
+          "selected": 2360,
+          "selection_rate_pct": 47.2
+        },
+        {
+          "proposal_id": "C02-S-16",
+          "cohort": "cohort_02",
+          "question_type": "SINGLE_SELECT",
+          "domain": "stability-security",
+          "context": "home-transition",
+          "semantic_family": "new-neighborhood-settling",
+          "selected": 2354,
+          "selection_rate_pct": 47.08
+        },
+        {
+          "proposal_id": "C03-S-08",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "problem-framing",
+          "context": "friendship",
+          "semantic_family": "friend-facing-two-good-options",
+          "selected": 2347,
+          "selection_rate_pct": 46.94
+        },
+        {
+          "proposal_id": "C02-S-05",
+          "cohort": "cohort_02",
+          "question_type": "SINGLE_SELECT",
+          "domain": "cooperation-support",
+          "context": "community",
+          "semantic_family": "limited-community-budget",
+          "selected": 2344,
+          "selection_rate_pct": 46.88
+        },
+        {
+          "proposal_id": "C03-S-07",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "planning-organization",
+          "context": "leisure-travel",
+          "semantic_family": "open-day-travel-planning",
+          "selected": 2341,
+          "selection_rate_pct": 46.82
+        },
+        {
+          "proposal_id": "C01-S-02",
+          "cohort": "cohort_01",
+          "question_type": "SINGLE_SELECT",
+          "domain": "risk-change",
+          "context": "unfamiliar-situation",
+          "semantic_family": "unfamiliar-entry",
+          "selected": 2339,
+          "selection_rate_pct": 46.78
+        },
+        {
+          "proposal_id": "C02-S-13",
+          "cohort": "cohort_02",
+          "question_type": "SINGLE_SELECT",
+          "domain": "general-behavioral-preference",
+          "context": "personal-leisure",
+          "semantic_family": "unexpected-free-afternoon",
+          "selected": 2338,
+          "selection_rate_pct": 46.76
+        },
+        {
+          "proposal_id": "C03-S-06",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "everyday-problem-solving",
+          "context": "cooking-hobby",
+          "semantic_family": "inconsistent-favorite-recipe",
+          "selected": 2336,
+          "selection_rate_pct": 46.72
+        },
+        {
+          "proposal_id": "C03-S-01",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "independence-follow-through",
+          "context": "personal-project",
+          "semantic_family": "return-to-self-chosen-project",
+          "selected": 2327,
+          "selection_rate_pct": 46.54
+        },
+        {
+          "proposal_id": "C03-S-10",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "conflict",
+          "context": "family-memory",
+          "semantic_family": "different-memories-without-required-decision",
+          "selected": 2312,
+          "selection_rate_pct": 46.24
+        },
+        {
+          "proposal_id": "C03-S-04",
+          "cohort": "cohort_03",
+          "question_type": "SINGLE_SELECT",
+          "domain": "stability-security",
+          "context": "family-tradition",
+          "semantic_family": "tradition-that-no-longer-fits",
+          "selected": 2301,
+          "selection_rate_pct": 46.02
+        }
+      ],
+      "bottom_15_candidates": [
+        {
+          "proposal_id": "C01-L-G-01",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "detail-accuracy",
+          "context": "work-business",
+          "semantic_family": "evidence-before-action",
+          "selected": 585,
+          "selection_rate_pct": 11.7
+        },
+        {
+          "proposal_id": "C01-L-R-02",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "decision-making",
+          "context": "work-business",
+          "semantic_family": "decisive-action",
+          "selected": 668,
+          "selection_rate_pct": 13.36
+        },
+        {
+          "proposal_id": "C01-L-R-01",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "leadership-influence",
+          "context": "team",
+          "semantic_family": "decisive-action",
+          "selected": 688,
+          "selection_rate_pct": 13.76
+        },
+        {
+          "proposal_id": "C01-L-R-05",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "independence-follow-through",
+          "context": "work-business",
+          "semantic_family": "recovery-after-setback",
+          "selected": 696,
+          "selection_rate_pct": 13.92
+        },
+        {
+          "proposal_id": "C02-L-G-02",
+          "cohort": "cohort_02",
+          "question_type": "LIKERT",
+          "domain": "rules-process",
+          "context": "work-business",
+          "semantic_family": "repeatability-over-improvisation",
+          "selected": 699,
+          "selection_rate_pct": 13.98
+        },
+        {
+          "proposal_id": "C01-L-R-04",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "risk-change",
+          "context": "team",
+          "semantic_family": "decisive-action",
+          "selected": 714,
+          "selection_rate_pct": 14.28
+        },
+        {
+          "proposal_id": "C01-L-G-03",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "problem-solving-learning",
+          "context": "conflict",
+          "semantic_family": "evidence-before-action",
+          "selected": 801,
+          "selection_rate_pct": 16.02
+        },
+        {
+          "proposal_id": "C01-L-G-02",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "problem-solving-learning",
+          "context": "pressure",
+          "semantic_family": "evidence-before-action",
+          "selected": 803,
+          "selection_rate_pct": 16.06
+        },
+        {
+          "proposal_id": "C01-L-B-05",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "communication",
+          "context": "team",
+          "semantic_family": "expressive-connection",
+          "selected": 805,
+          "selection_rate_pct": 16.1
+        },
+        {
+          "proposal_id": "C02-L-R-02",
+          "cohort": "cohort_02",
+          "question_type": "LIKERT",
+          "domain": "leadership-influence",
+          "context": "team",
+          "semantic_family": "ambiguous-result-ownership",
+          "selected": 859,
+          "selection_rate_pct": 17.18
+        },
+        {
+          "proposal_id": "C02-L-B-01",
+          "cohort": "cohort_02",
+          "question_type": "LIKERT",
+          "domain": "risk-change",
+          "context": "creative-work",
+          "semantic_family": "emergent-project-path",
+          "selected": 868,
+          "selection_rate_pct": 17.36
+        },
+        {
+          "proposal_id": "C02-L-Y-01",
+          "cohort": "cohort_02",
+          "question_type": "LIKERT",
+          "domain": "conflict",
+          "context": "team",
+          "semantic_family": "trust-before-quick-closure",
+          "selected": 892,
+          "selection_rate_pct": 17.84
+        },
+        {
+          "proposal_id": "C02-L-R-01",
+          "cohort": "cohort_02",
+          "question_type": "LIKERT",
+          "domain": "competition-achievement",
+          "context": "work-business",
+          "semantic_family": "clear-performance-standard",
+          "selected": 894,
+          "selection_rate_pct": 17.88
+        },
+        {
+          "proposal_id": "C01-L-Y-02",
+          "cohort": "cohort_01",
+          "question_type": "LIKERT",
+          "domain": "cooperation-support",
+          "context": "team",
+          "semantic_family": "principled-inclusion",
+          "selected": 934,
+          "selection_rate_pct": 18.68
+        },
+        {
+          "proposal_id": "C03-L-G-01",
+          "cohort": "cohort_03",
+          "question_type": "LIKERT",
+          "domain": "planning-organization",
+          "context": "personal-travel",
+          "semantic_family": "travel-structure-versus-freedom",
+          "selected": 936,
+          "selection_rate_pct": 18.72
+        }
+      ]
+    },
+    "average_source_distribution": {
+      "cohort_01": 3.5368,
+      "cohort_02": 7.3886,
+      "cohort_03": 6.1244,
+      "legacy_active": 32.9502
+    },
+    "average_domain_distribution": {
+      "communication": 3.4574,
+      "competition-achievement": 1.7508,
+      "conflict": 2.4278,
+      "cooperation-support": 3.3766,
+      "decision-making": 3.2076,
+      "detail-accuracy": 1.5758,
+      "emotional-expression": 1.4556,
+      "general-behavioral-preference": 8.1478,
+      "independence-follow-through": 1.3304,
+      "leadership-influence": 1.7868,
+      "pace-action": 2.3552,
+      "planning-organization": 3.5462,
+      "problem-solving-learning": 2.1942,
+      "risk-change": 3.8506,
+      "rules-process": 1.7016,
+      "social-interaction": 5.8458,
+      "stability-security": 1.9898
+    },
+    "average_context_distribution": {
+      "communication": 1.1618,
+      "conflict": 2.2314,
+      "leadership": 0.0916,
+      "personal-preference": 23.9326,
+      "planning": 5.4994,
+      "pressure": 1.5976,
+      "social": 4.3834,
+      "team": 3.9878,
+      "unfamiliar-situation": 3.4268,
+      "work-business": 3.6876
+    },
+    "five_sparsest_domains": {
+      "independence-follow-through": 1.3304,
+      "emotional-expression": 1.4556,
+      "detail-accuracy": 1.5758,
+      "rules-process": 1.7016,
+      "competition-achievement": 1.7508
+    },
+    "five_sparsest_contexts": {
+      "leadership": 0.0916,
+      "communication": 1.1618,
+      "pressure": 1.5976,
+      "conflict": 2.2314,
+      "unfamiliar-situation": 3.4268
+    }
+  },
+  "proof_boundaries": {
+    "computationally_supported": [
+      "Current opportunity quotas are invariant and structurally favor Green by one Likert item.",
+      "Historical assignment/answer distributions, tie margins, weak-item exposure, and sensitivity counterfactuals.",
+      "Design B assembly frequency, repeat overlap, semantic collision, and metadata diversity under fixed seeds."
+    ],
+    "requires_human_response_data": [
+      "Whether Design B preserves recognizable dominant/secondary colors.",
+      "Reliability, retest stability, ambiguity, gameability, and item discrimination.",
+      "Whether weak-item capping improves respondent-perceived quality or empirical validity.",
+      "Direct legacy-versus-Design-B result agreement because respondents did not answer the unasked Design B items."
+    ]
+  },
+  "decision": "CURRENT_206_POOL_SUFFICIENT_FOR_HUMAN_VALIDATION",
+  "production_impact": "NONE"
+}

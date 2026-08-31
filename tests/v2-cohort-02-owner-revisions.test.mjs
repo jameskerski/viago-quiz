@@ -65,13 +65,13 @@ test('context diversity is permanent governance without rigid equal quotas', () 
   assert.ok(contextRule.review_tests.some((item) => /distribution/.test(item)));
 });
 
-test('revisions remain review-only, runtime-isolated, and Cohort 03 is absent', () => {
+test('revisions remain review-only and later OWNER-approved Cohort 03 stays runtime-isolated', () => {
   assert.equal(revisions.status, 'OWNER_REVIEW_REQUIRED_NOT_RUNTIME_ELIGIBLE');
   assert.deepEqual(revisions.runtime_impact, {questions_activated: 0, active_questions_changed: 0, scoring_changed: false, selector_changed: false, cohort_03_generated: false});
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-  assert.equal(fs.existsSync(path.join(root, 'data/v2-proposals/cohort-03.json')), false);
+  assert.equal(fs.existsSync(path.join(root, 'data/v2-proposals/cohort-03.json')), true);
   for (const file of [...walk(path.join(root, 'app')), ...walk(path.join(root, 'lib'))]) {
-    assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /cohort-02-owner-revisions|context-diversity-rule/);
+    assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /cohort-02-owner-revisions|context-diversity-rule|cohort-03/);
   }
 });
 

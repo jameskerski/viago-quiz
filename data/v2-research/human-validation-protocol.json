@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_NOT_LAUNCHED_OWNER_APPROVAL_REQUIRED",
+  "purpose": "Paired, non-clinical comparison of the current VIAGO assessment and research Design B/capped.",
+  "populations": [
+    {
+      "name": "experienced_viago_users",
+      "target_range": "40-60",
+      "purpose": "Assess recognizable dominant/secondary color continuity against prior VIAGO experience without treating prior labels as ground truth."
+    },
+    {
+      "name": "new_test_takers",
+      "target_range": "80-120",
+      "purpose": "Assess clarity, completion, gameability, and within-person legacy/new agreement without prior-model anchoring."
+    }
+  ],
+  "design": {
+    "type": "randomized paired crossover",
+    "order": "Randomly assign half to legacy-first and half to Design-B-first; stratify by experienced/new population.",
+    "initial_interval": "48-72 hours between legacy and Design B to limit recall while keeping circumstances reasonably stable.",
+    "retest_subset": "At least 60 participants, balanced across populations, repeat Design B after 14-21 days with a new stored seed.",
+    "assembly": "Design B/capped, bank and assembler versions frozen, seed and complete manifest stored.",
+    "answer_handling": "Each assessment is answered normally. Never project answers onto questions the participant did not receive.",
+    "blinding": "Do not identify which version is legacy or research until both initial assessments and feedback are complete."
+  },
+  "feedback": {
+    "per_item": [
+      "unclear_or_ambiguous",
+      "two_answers_felt_equally_true",
+      "obvious_desirable_answer",
+      "felt_repetitive",
+      "none_fit"
+    ],
+    "post_assessment": [
+      "result_self_recognition_1_to_5",
+      "dominant_secondary_explanation_clarity_1_to_5",
+      "perceived_repetition_1_to_5",
+      "perceived_gameability_1_to_5",
+      "completion_effort_1_to_5",
+      "free_text_confusing_items"
+    ]
+  },
+  "descriptive_endpoints": [
+    "dominant_color_exact_agreement_between_versions",
+    "dominant_secondary_ordered_agreement",
+    "dominant_secondary_unordered_set_agreement",
+    "four_color_score_rank_correlation",
+    "top_score_margin_change",
+    "Design-B_retest_dominant_and_secondary_stability",
+    "item_ambiguity_and_desirability_flag_rates",
+    "completion_time_and_abandonment",
+    "perceived_repetition_and_gameability",
+    "selection_frequency_and_response_distribution_by_item"
+  ],
+  "analysis_governance": {
+    "pre_register_before_launch": [
+      "primary endpoints",
+      "minimum usable sample",
+      "agreement and ambiguity decision thresholds",
+      "missing-data rules",
+      "exclusion rules",
+      "subgroup comparisons"
+    ],
+    "claims_not_authorized": [
+      "clinical validity",
+      "diagnostic accuracy",
+      "causality",
+      "population norms",
+      "employment selection validity"
+    ],
+    "deployment_authority": false,
+    "contact_authority": false
+  },
+  "production_impact": "NONE"
+}
