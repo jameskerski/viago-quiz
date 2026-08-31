@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { V2OfficialLogo } from '@/components/v2/V2Shell';
 
-export function V2AdminShell({ active, children }: { active: 'analytics' | 'questions'; children: ReactNode }) {
+export function V2AdminShell({ active, children }: { active: 'analytics' | 'questions' | 'validation'; children: ReactNode }) {
   const router = useRouter();
   async function logout() {
     await fetch('/api/v2/admin/logout', { method: 'POST' });
@@ -16,7 +16,7 @@ export function V2AdminShell({ active, children }: { active: 'analytics' | 'ques
     <header className="flex flex-col gap-5 border-b border-white/[.08] py-5 md:flex-row md:items-center md:justify-between">
       <Link href="/v2/admin" aria-label="VIAGO administration home"><V2OfficialLogo className="!h-12" /></Link>
       <nav className="flex flex-wrap items-center gap-1 rounded-2xl border border-white/[.08] bg-black/20 p-1.5" aria-label="Admin navigation">
-        {item('/v2/admin','analytics','Analytics')}{item('/v2/admin/questions','questions','Questions & Content')}
+        {item('/v2/admin','analytics','Analytics')}{item('/v2/admin/questions','questions','Questions & Content')}{item('/v2/admin/validation','validation','Validation')}
         <button onClick={() => void logout()} className="rounded-xl px-4 py-2 text-sm font-semibold text-white/38 transition hover:bg-white/[.05] hover:text-white">Logout</button>
       </nav>
     </header>{children}
