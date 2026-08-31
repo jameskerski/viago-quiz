@@ -1,0 +1,62 @@
+{
+  "schema_id": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "runtime_authority": false,
+  "identity": {
+    "question_id": "Immutable conceptual question identity.",
+    "revision_id": "Immutable identity for exact wording, options, mappings, and governed metadata.",
+    "supersedes_revision_id": "Prior revision when wording or mapping changes; null for an initial revision.",
+    "origin": ["LEGACY", "COHORT_01", "COHORT_02", "COHORT_03", "FUTURE"],
+    "format": ["LIKERT", "SINGLE_SELECT"],
+    "status": [
+      "PROPOSED_KEEP_EXACTLY",
+      "PROPOSED_REWORD",
+      "PROPOSED_REPLACE",
+      "PROPOSED_RETIRE",
+      "PROPOSED_ADMIT",
+      "PROPOSED_REVISE",
+      "PROPOSED_REPLACE_OTHER",
+      "PROPOSED_DEFER_REDUNDANCY",
+      "PROPOSED_RETIRE_CANDIDATE",
+      "OWNER_REVIEW_REQUIRED",
+      "OWNER_APPROVED_NON_RUNTIME"
+    ]
+  },
+  "content": {
+    "prompt": "Exact test-taker wording for this revision.",
+    "options": "Empty for Likert; otherwise ordered option identities, wording, and one color mapping each.",
+    "language": "BCP-47 language tag; this reconstruction begins with en and does not authorize translation changes."
+  },
+  "scoring_target": {
+    "likert": "One intended color with governed construct rationale.",
+    "single_select": "Exactly one option-to-color mapping for Red, Blue, Yellow, and Green.",
+    "authority": "Research metadata only until separately approved for runtime."
+  },
+  "measurement": {
+    "core_traits": "One or more normalized motivational constructs; never merely a color label.",
+    "behavioral_domain": "One normalized primary domain, plus optional secondary domains.",
+    "life_context": "One normalized context.",
+    "situational_tones": "One or more normalized conditions.",
+    "motivational_tradeoff": "The meaningful competing priorities exposed by the item.",
+    "orientation": ["SELF_ACTION", "SELF_PREFERENCE", "SELF_ATTENTION", "RESPONSE_TO_OTHERS", "PREFERENCE_IN_OTHERS", "INTERPERSONAL", "MIXED"],
+    "semantic_family": "Stable family identity for substantially related measurements.",
+    "pairwise_discrimination": ["RED_BLUE", "RED_YELLOW", "RED_GREEN", "BLUE_YELLOW", "BLUE_GREEN", "YELLOW_GREEN"]
+  },
+  "quality": {
+    "color_model_alignment": ["ALIGNED", "PARTIALLY_ALIGNED", "CONTRADICTED", "NOT_ESTABLISHED"],
+    "color_assignment_confidence": ["HIGH", "MODERATE", "LOW", "NOT_APPLICABLE"],
+    "ambiguity_risk": ["LOW", "MODERATE", "HIGH"],
+    "response_desirability_risk": ["LOW", "MODERATE", "HIGH"],
+    "context_dependence_risk": ["LOW", "MODERATE", "HIGH"],
+    "semantic_redundancy": ["NONE", "RELATED", "SUBSTANTIAL", "DUPLICATE"],
+    "historical_evidence": "Legacy identity, original assignment, audit flags, and observed-use status where available.",
+    "owner_review_state": ["NOT_REVIEWED", "PENDING_BATCH_REVIEW", "OWNER_APPROVED", "OWNER_REJECTED", "OWNER_DEFERRED"]
+  },
+  "governance": {
+    "revision_rule": "Never mutate an approved revision in place. Create a new revision identity and preserve the predecessor.",
+    "admission_rule": "Every origin is reviewed under the same color-model, motivation, desirability, ambiguity, competency, redundancy, and coverage standards.",
+    "production_boundary": "This schema and every reconstruction disposition are non-production until separately authorized."
+  }
+}
