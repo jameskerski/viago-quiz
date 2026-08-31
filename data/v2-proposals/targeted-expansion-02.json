@@ -1,0 +1,1751 @@
+{
+  "manifest_id": "VIAGO_TARGETED_EXPANSION_02_WHOLE_PERSON",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  "semantic_authority": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "taxonomy": "VIAGO_WHOLE_PERSON_RESEARCH_DIMENSIONS_V1",
+  "canonical_starting_bank": {
+    "count": 148,
+    "likert": 81,
+    "single_select": 67,
+    "source_commit": "24a31c36fa42fc68d4ceac5d945dc270ebebcdd6"
+  },
+  "counts": {
+    "candidates": 36,
+    "formats": {
+      "LIKERT": 12,
+      "SINGLE_SELECT": 24
+    },
+    "dimensions": {
+      "AUTONOMY_INTERDEPENDENCE": 4,
+      "COMPLETION_CRITERIA": 6,
+      "DECISION_RECONSIDERATION": 3,
+      "ENVIRONMENT_PREFERENCE": 8,
+      "NATURAL_AVOIDANCE": 5,
+      "RECOGNITION_REWARD": 5,
+      "RESOURCE_ALLOCATION": 7,
+      "SUCCESS_MOTIVATION": 11,
+      "TIME_HORIZON": 10,
+      "TRUST_FORMATION": 10
+    },
+    "orientations": {
+      "INTERPERSONAL": 2,
+      "PREFERENCE_IN_OTHERS": 4,
+      "RESPONSE_TO_OTHERS": 2,
+      "SELF_ACTION": 6,
+      "SELF_ATTENTION": 14,
+      "SELF_PREFERENCE": 8
+    },
+    "contexts": {
+      "close-relationship": 3,
+      "everyday-decision": 1,
+      "family": 2,
+      "free-time-leisure": 2,
+      "friendship": 2,
+      "general-cross-context": 6,
+      "hobbies": 1,
+      "home-household": 1,
+      "household": 3,
+      "learning": 2,
+      "learning-recreation": 1,
+      "ordinary-life": 1,
+      "personal-goal": 1,
+      "personal-project": 1,
+      "purchasing": 1,
+      "recreation": 1,
+      "service-professional": 1,
+      "social-setting": 1,
+      "travel": 4,
+      "unfamiliar-social-situation": 1
+    },
+    "evidence_classes": {
+      "HISTORICALLY_ESTABLISHED": 9,
+      "OWNER_GOVERNED": 20,
+      "SUPPORTED_INFERENCE": 7
+    },
+    "pairwise": {
+      "RED_BLUE": 27,
+      "RED_YELLOW": 27,
+      "RED_GREEN": 30,
+      "BLUE_YELLOW": 28,
+      "BLUE_GREEN": 29,
+      "YELLOW_GREEN": 28
+    },
+    "backlog_coverage": {
+      "EXP-005": 8,
+      "EXP-007": 7,
+      "EXP-009": 3,
+      "EXP-002": 6
+    },
+    "non_work": 36,
+    "non_work_share": 1,
+    "semantic_screen_rejects": 12,
+    "projected_bank_if_all_admitted": 184
+  },
+  "candidates": [
+    {
+      "candidate_id": "EXP2-S-01",
+      "format": "SINGLE_SELECT",
+      "question": "A personal goal succeeds sooner than expected. What are you most naturally drawn to do next?",
+      "options": [
+        {
+          "label": "Set a stronger result to pursue while momentum is high",
+          "color": "red"
+        },
+        {
+          "label": "Use the opening to explore a fresh direction the success made possible",
+          "color": "blue"
+        },
+        {
+          "label": "Share the success with people who mattered and strengthen what you built together",
+          "color": "yellow"
+        },
+        {
+          "label": "Study what worked and turn it into a dependable approach",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "next attraction after personal success",
+      "orientation": "SELF_ACTION",
+      "context": "personal-goal",
+      "tone": "success-positive",
+      "motivational_tradeoff": "raise result vs expand possibility vs deepen connection vs codify success",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds success-state behavior where no repair or uncertainty drives the answer.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+        "text": "A personal goal has stopped improving despite steady effort. Which response would you most naturally try next?",
+        "similarity": 0.2632
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-02",
+      "format": "SINGLE_SELECT",
+      "question": "A hobby that once felt difficult has become easy. What would keep it satisfying?",
+      "options": [
+        {
+          "label": "A harder level or clearer achievement to work toward",
+          "color": "red"
+        },
+        {
+          "label": "A new variation that changes the experience",
+          "color": "blue"
+        },
+        {
+          "label": "A regular way to enjoy it with people I value",
+          "color": "yellow"
+        },
+        {
+          "label": "Deeper technique and more consistent mastery",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "RECOGNITION_REWARD",
+      "measurement": "reward that sustains an easy hobby",
+      "orientation": "SELF_ATTENTION",
+      "context": "hobbies",
+      "tone": "success-enjoyment",
+      "motivational_tradeoff": "challenge vs novelty vs shared continuity vs mastery",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures sustained motivation after competence rather than response to failure.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-02",
+        "text": "A friend offers to help you make a difficult personal decision. What kind of help would you value most?",
+        "similarity": 0.15
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-03",
+      "format": "SINGLE_SELECT",
+      "question": "A close relationship is strong and comfortable. What feels most worth investing in next?",
+      "options": [
+        {
+          "label": "A meaningful shared goal we can accomplish",
+          "color": "red"
+        },
+        {
+          "label": "A new experience that brings fresh energy",
+          "color": "blue"
+        },
+        {
+          "label": "The dependable rituals and commitments that deepen our bond",
+          "color": "yellow"
+        },
+        {
+          "label": "A clearer understanding of what helps the relationship work well",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "RESOURCE_ALLOCATION",
+      "measurement": "investment when a relationship is already strong",
+      "orientation": "INTERPERSONAL",
+      "context": "close-relationship",
+      "tone": "relational-success",
+      "motivational_tradeoff": "shared achievement vs experience vs continuity vs understanding",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds positive relationship-success evidence without making support a virtue test.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+        "text": "An everyday routine is working well. What most makes it worth keeping?",
+        "similarity": 0.1875
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-04",
+      "format": "SINGLE_SELECT",
+      "question": "A trip is going beautifully and an extra day opens up. What would add the most value?",
+      "options": [
+        {
+          "label": "Use it to reach a destination or milestone we would otherwise miss",
+          "color": "red"
+        },
+        {
+          "label": "Follow an intriguing possibility that was not in the plan",
+          "color": "blue"
+        },
+        {
+          "label": "Spend more unhurried time with people or places that already feel meaningful",
+          "color": "yellow"
+        },
+        {
+          "label": "Learn more deeply about what has made the trip work so well",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "RESOURCE_ALLOCATION",
+      "measurement": "use of extra capacity during success",
+      "orientation": "SELF_ACTION",
+      "context": "travel",
+      "tone": "positive-opportunity",
+      "motivational_tradeoff": "milestone vs novelty vs meaning vs depth",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Uses abundance rather than scarcity to reveal what each color adds to success.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-02",
+        "text": "A friend offers to help you make a difficult personal decision. What kind of help would you value most?",
+        "similarity": 0.2353
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-05",
+      "format": "SINGLE_SELECT",
+      "question": "Nothing is wrong with the following free-time options. Which would be least naturally attractive to you?",
+      "options": [
+        {
+          "label": "An evening with no outcome, challenge, or sense of progress",
+          "color": "red"
+        },
+        {
+          "label": "An evening where every activity and detail is fixed in advance",
+          "color": "blue"
+        },
+        {
+          "label": "An evening of brief encounters with little chance for lasting connection",
+          "color": "yellow"
+        },
+        {
+          "label": "An evening built around choices whose purpose and basis remain unclear",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "NATURAL_AVOIDANCE",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "absence of core motivational reward in free time",
+      "orientation": "SELF_ATTENTION",
+      "context": "free-time-leisure",
+      "tone": "neutral-non-attraction",
+      "motivational_tradeoff": "missing progress vs freedom vs continuity vs rationale",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005",
+        "EXP-009"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures non-attraction without fear, deficit language, or moral judgment.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C02-S-13",
+        "text": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+        "similarity": 0.1579
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-06",
+      "format": "SINGLE_SELECT",
+      "question": "You are considering four perfectly pleasant social settings. Which would hold the least appeal?",
+      "options": [
+        {
+          "label": "One where people talk for hours but nothing ever moves toward a shared aim",
+          "color": "red"
+        },
+        {
+          "label": "One where the same familiar interaction repeats with no room for surprise",
+          "color": "blue"
+        },
+        {
+          "label": "One with many lively contacts but little chance to know anyone over time",
+          "color": "yellow"
+        },
+        {
+          "label": "One where plans and expectations keep changing without explanation",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "NATURAL_AVOIDANCE",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "missing reward in a social environment",
+      "orientation": "SELF_ATTENTION",
+      "context": "social-setting",
+      "tone": "neutral-non-attraction",
+      "motivational_tradeoff": "direction vs variety vs depth vs predictability",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002",
+        "EXP-005",
+        "EXP-009"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Separates four legitimate social non-attractions from introversion/extraversion stereotypes.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-15",
+        "text": "A recurring household task is wearing down everyone involved. Which part would drain you most?",
+        "similarity": 0.0952
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-07",
+      "format": "SINGLE_SELECT",
+      "question": "You have limited vacation time and several good ideas. What matters most in deciding how to use it?",
+      "options": [
+        {
+          "label": "Choosing the experience that delivers the most important outcome now",
+          "color": "red"
+        },
+        {
+          "label": "Preserving room for an unexpected possibility to become the highlight",
+          "color": "blue"
+        },
+        {
+          "label": "Honoring the people and traditions the time is meant to sustain",
+          "color": "yellow"
+        },
+        {
+          "label": "Building a plan that will remain workable across the whole trip",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "TIME_HORIZON",
+      "secondary_dimension": "RESOURCE_ALLOCATION",
+      "measurement": "time-horizon priority for limited vacation",
+      "orientation": "SELF_ATTENTION",
+      "context": "travel",
+      "tone": "scarcity-choice",
+      "motivational_tradeoff": "immediate impact vs emergence vs continuity vs future dependability",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds explicit time-horizon evidence in a positive non-work allocation.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C02-S-15",
+        "text": "A group has several good ideas but cannot settle on one direction. What contribution comes most naturally to you?",
+        "similarity": 0.2778
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-08",
+      "format": "SINGLE_SELECT",
+      "question": "A family is deciding whether to use extra savings now or preserve them for later. What consideration gets your attention first?",
+      "options": [
+        {
+          "label": "Which choice creates the most meaningful progress toward a priority",
+          "color": "red"
+        },
+        {
+          "label": "Which choice keeps the most valuable future possibilities open",
+          "color": "blue"
+        },
+        {
+          "label": "Which choice best protects commitments and continuity for the family",
+          "color": "yellow"
+        },
+        {
+          "label": "Which choice is most defensible across likely future conditions",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "TIME_HORIZON",
+      "secondary_dimension": "RESOURCE_ALLOCATION",
+      "measurement": "present-versus-future attention with sufficient resources",
+      "orientation": "RESPONSE_TO_OTHERS",
+      "context": "family",
+      "tone": "long-horizon-choice",
+      "motivational_tradeoff": "progress vs optionality vs continuity vs evidence-based durability",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds time horizon without implying saving or spending is inherently mature.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C02-S-14",
+        "text": "A group receives two credible reports that point toward different decisions. What gets your attention first?",
+        "similarity": 0.2174
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-09",
+      "format": "SINGLE_SELECT",
+      "question": "Several household responsibilities can be arranged in different workable ways. Which arrangement would fit you best?",
+      "options": [
+        {
+          "label": "I own complete outcomes and can decide how to deliver them",
+          "color": "red"
+        },
+        {
+          "label": "I have freedom to shift among tasks as needs and interests emerge",
+          "color": "blue"
+        },
+        {
+          "label": "We maintain a dependable shared rhythm and help one another follow through",
+          "color": "yellow"
+        },
+        {
+          "label": "Roles, standards, and handoffs are explicit enough to be reliable",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "AUTONOMY_INTERDEPENDENCE",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "preferred basis for shared household work",
+      "orientation": "SELF_PREFERENCE",
+      "context": "household",
+      "tone": "ordinary-choice",
+      "motivational_tradeoff": "outcome ownership vs freedom vs mutual continuity vs role clarity",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures why an autonomy structure fits rather than equating independence with a color.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C03-S-02",
+        "text": "You are beginning a hobby that has several ways to learn it. Which starting point feels most natural?",
+        "similarity": 0.15
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-10",
+      "format": "SINGLE_SELECT",
+      "question": "On a group trip, everyone can spend one afternoon separately or together. Which arrangement most appeals to you?",
+      "options": [
+        {
+          "label": "Take ownership of one experience I especially want to accomplish",
+          "color": "red"
+        },
+        {
+          "label": "Keep the afternoon open enough to follow whatever becomes interesting",
+          "color": "blue"
+        },
+        {
+          "label": "Choose a shared activity that strengthens the experience we are having together",
+          "color": "yellow"
+        },
+        {
+          "label": "Agree on a clear plan so everyone can use the time dependably",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "AUTONOMY_INTERDEPENDENCE",
+      "secondary_dimension": "RESOURCE_ALLOCATION",
+      "measurement": "autonomy motive during discretionary travel",
+      "orientation": "SELF_PREFERENCE",
+      "context": "travel",
+      "tone": "positive-choice",
+      "motivational_tradeoff": "owned outcome vs exploratory freedom vs shared connection vs coordinated structure",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds autonomy/interdependence in a context where all structures are legitimate.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-15",
+        "text": "A recurring household task is wearing down everyone involved. Which part would drain you most?",
+        "similarity": 0.15
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-11",
+      "format": "SINGLE_SELECT",
+      "question": "A personal project receives warm praise. Which part of the recognition would feel most meaningful?",
+      "options": [
+        {
+          "label": "That the result made a visible difference and I was trusted with it",
+          "color": "red"
+        },
+        {
+          "label": "That it opened excitement, conversation, or new possibilities",
+          "color": "blue"
+        },
+        {
+          "label": "That people recognized the commitment and meaning carried through the work",
+          "color": "yellow"
+        },
+        {
+          "label": "That the rigor, quality, or understanding behind it was noticed",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "RECOGNITION_REWARD",
+      "secondary_dimension": "SUCCESS_MOTIVATION",
+      "measurement": "meaningful recognition for a successful personal project",
+      "orientation": "SELF_ATTENTION",
+      "context": "personal-project",
+      "tone": "recognition-positive",
+      "motivational_tradeoff": "impact vs energy vs commitment vs mastery",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Expands recognition beyond status or generic praise.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "e6164f25-f8ce-4038-8a32-b001f5fecb48",
+        "text": "Which form of recognition feels most meaningful to you?",
+        "similarity": 0.2857
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-12",
+      "format": "SINGLE_SELECT",
+      "question": "You complete a demanding recreational course. Which reward would feel most satisfying?",
+      "options": [
+        {
+          "label": "A new challenge or responsibility that shows I advanced",
+          "color": "red"
+        },
+        {
+          "label": "Freedom to use the skill in a more expressive or adventurous way",
+          "color": "blue"
+        },
+        {
+          "label": "A lasting connection with the people who shared the experience",
+          "color": "yellow"
+        },
+        {
+          "label": "Detailed feedback showing what I mastered and can reproduce",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "RECOGNITION_REWARD",
+      "secondary_dimension": "SUCCESS_MOTIVATION",
+      "measurement": "reward after recreational achievement",
+      "orientation": "SELF_ATTENTION",
+      "context": "learning-recreation",
+      "tone": "recognition-positive",
+      "motivational_tradeoff": "advancement vs expressive freedom vs connection vs mastery",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds non-work reward preference after success with equally respectable outcomes.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-20",
+        "text": "You ask someone who knows you well to recommend a course or hobby. Which recommendation would feel most personally useful?",
+        "similarity": 0.2778
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-13",
+      "format": "SINGLE_SELECT",
+      "question": "You have one completely free evening after a demanding week. Where are you most likely to invest it?",
+      "options": [
+        {
+          "label": "Make visible progress on one personally important result",
+          "color": "red"
+        },
+        {
+          "label": "Choose the most energizing or interesting possibility available",
+          "color": "blue"
+        },
+        {
+          "label": "Give the time to a person or commitment that matters to me",
+          "color": "yellow"
+        },
+        {
+          "label": "Use it for something whose value and fit I have considered carefully",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "RESOURCE_ALLOCATION",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "allocation of scarce discretionary energy",
+      "orientation": "SELF_ACTION",
+      "context": "free-time-leisure",
+      "tone": "limited-energy",
+      "motivational_tradeoff": "impact vs interest vs commitment vs justified fit",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005"
+      ],
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "why_it_earns_a_place": "Extends free-time attraction into explicit energy allocation.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-18",
+        "text": "A friendship has become distant after plans repeatedly fell through. What would most help you decide whether to invest again?",
+        "similarity": 0.125
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-14",
+      "format": "SINGLE_SELECT",
+      "question": "Several people and interests could use your attention this month, but you cannot fully support all of them. What guides the first allocation?",
+      "options": [
+        {
+          "label": "Where my attention can produce the clearest meaningful result",
+          "color": "red"
+        },
+        {
+          "label": "Where there is the most promising possibility to explore",
+          "color": "blue"
+        },
+        {
+          "label": "Which relationship or commitment most depends on dependable continuity",
+          "color": "yellow"
+        },
+        {
+          "label": "Where the need and likely effect are best supported by evidence",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "RESOURCE_ALLOCATION",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "allocation of limited attention",
+      "orientation": "SELF_ACTION",
+      "context": "ordinary-life",
+      "tone": "competing-commitments",
+      "motivational_tradeoff": "impact vs possibility vs commitment vs justified effect",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds attention allocation without making optimization itself Green.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "eae82ae1-ca73-4c00-b328-7c846c5fbc26",
+        "text": "An everyday system breaks down and affects several people. What do you focus on first?",
+        "similarity": 0.1818
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-15",
+      "format": "SINGLE_SELECT",
+      "question": "You can shape one room at home around how you naturally like to spend time. What quality matters most?",
+      "options": [
+        {
+          "label": "It supports focused progress on things I want to accomplish",
+          "color": "red"
+        },
+        {
+          "label": "It can change easily to support different moods and experiences",
+          "color": "blue"
+        },
+        {
+          "label": "It feels comfortable for dependable connection and familiar routines",
+          "color": "yellow"
+        },
+        {
+          "label": "Its layout and purpose are coherent, calm, and easy to maintain",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "ENVIRONMENT_PREFERENCE",
+      "secondary_dimension": "AUTONOMY_INTERDEPENDENCE",
+      "measurement": "preferred home environment reward",
+      "orientation": "SELF_PREFERENCE",
+      "context": "home-household",
+      "tone": "positive-ordinary",
+      "motivational_tradeoff": "focus vs flexibility vs belonging vs coherence",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002",
+        "EXP-005"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds direct home-environment preference without messy/organized or introvert/extrovert shortcuts.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C01-S-01",
+        "text": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+        "similarity": 0.2
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-16",
+      "format": "SINGLE_SELECT",
+      "question": "You may choose among four equally effective learning environments. Which one would fit you best?",
+      "options": [
+        {
+          "label": "Clear challenges and milestones that show advancement",
+          "color": "red"
+        },
+        {
+          "label": "Variety, experimentation, and freedom to follow interesting paths",
+          "color": "blue"
+        },
+        {
+          "label": "A steady group or mentor relationship that grows over time",
+          "color": "yellow"
+        },
+        {
+          "label": "A structured progression whose principles and standards make sense",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "ENVIRONMENT_PREFERENCE",
+      "secondary_dimension": "AUTONOMY_INTERDEPENDENCE",
+      "measurement": "preferred motivational structure for learning",
+      "orientation": "SELF_PREFERENCE",
+      "context": "learning",
+      "tone": "positive-learning",
+      "motivational_tradeoff": "challenge vs exploration vs continuity vs structure",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002"
+      ],
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "why_it_earns_a_place": "Adds environment fit around learning without claiming fixed learning styles.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "c5e34cf0-bcbe-4a13-b7ec-b93ba6559df8",
+        "text": "A supervisor gives you meaningful autonomy. Which quality most helps you do your best work?",
+        "similarity": 0.1053
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-17",
+      "format": "SINGLE_SELECT",
+      "question": "You have recently met someone you may become close friends with. What most naturally causes trust to grow?",
+      "options": [
+        {
+          "label": "They take ownership of what they say they will do and produce results",
+          "color": "red"
+        },
+        {
+          "label": "They engage openly and make room for genuine possibility and exchange",
+          "color": "blue"
+        },
+        {
+          "label": "They remain present over time and honor the connection they are building",
+          "color": "yellow"
+        },
+        {
+          "label": "Their words, actions, and explanations remain consistent and understandable",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "TRUST_FORMATION",
+      "secondary_dimension": null,
+      "measurement": "reason trust grows in a new friendship",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "context": "friendship",
+      "tone": "trust-forming",
+      "motivational_tradeoff": "ownership vs openness vs continuity vs consistency",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Directly asks why trust grows while labeling the cross-color model as research inference.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+        "text": "You are delegating an important task to someone capable. What do you most naturally establish first?",
+        "similarity": 0.2105
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-18",
+      "format": "SINGLE_SELECT",
+      "question": "A specialist is advising you on a choice where several answers could work. What most builds your trust?",
+      "options": [
+        {
+          "label": "They own a recommendation and connect it to the result I need",
+          "color": "red"
+        },
+        {
+          "label": "They engage with my ideas and reveal useful possibilities",
+          "color": "blue"
+        },
+        {
+          "label": "They understand what must remain dependable for the people involved",
+          "color": "yellow"
+        },
+        {
+          "label": "They show the evidence, limits, and reasoning behind their advice",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "TRUST_FORMATION",
+      "secondary_dimension": null,
+      "measurement": "basis for trusting expert advice",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "context": "service-professional",
+      "tone": "trust-forming",
+      "motivational_tradeoff": "owned result vs generative engagement vs continuity vs evidence",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "why_it_earns_a_place": "Deepens trust formation beyond the prior purchase-adviser item through an ambiguous expert choice.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C03-S-03",
+        "text": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?",
+        "similarity": 0.2727
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-19",
+      "format": "SINGLE_SELECT",
+      "question": "You made a household purchase after careful consideration. What would most naturally make you reconsider it?",
+      "options": [
+        {
+          "label": "It is not delivering the result it was meant to produce",
+          "color": "red"
+        },
+        {
+          "label": "A substantially better possibility becomes available",
+          "color": "blue"
+        },
+        {
+          "label": "It is disrupting routines or commitments that matter to the household",
+          "color": "yellow"
+        },
+        {
+          "label": "New evidence shows the original assumptions no longer hold",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "DECISION_RECONSIDERATION",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "trigger for revisiting a completed purchase decision",
+      "orientation": "SELF_ATTENTION",
+      "context": "purchasing",
+      "tone": "post-decision",
+      "motivational_tradeoff": "failed result vs better possibility vs damaged continuity vs invalid evidence",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds ordinary-life change-of-mind triggers without framing reconsideration as weakness.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-02",
+        "text": "A friend offers to help you make a difficult personal decision. What kind of help would you value most?",
+        "similarity": 0.2
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-20",
+      "format": "SINGLE_SELECT",
+      "question": "A family has agreed on a plan that is already underway. What would most justify reopening the decision?",
+      "options": [
+        {
+          "label": "Progress toward the intended outcome has materially stalled",
+          "color": "red"
+        },
+        {
+          "label": "A new option could create much more value than the chosen path",
+          "color": "blue"
+        },
+        {
+          "label": "The plan is damaging trust or commitments the family meant to protect",
+          "color": "yellow"
+        },
+        {
+          "label": "The facts or assumptions supporting the plan have materially changed",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "DECISION_RECONSIDERATION",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "trigger for reopening a shared decision",
+      "orientation": "RESPONSE_TO_OTHERS",
+      "context": "family",
+      "tone": "post-decision",
+      "motivational_tradeoff": "stalled outcome vs superior possibility vs relational cost vs changed evidence",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures why reconsideration becomes legitimate after shared commitment.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C03-S-10",
+        "text": "You and a sibling remember an important family event differently, but no practical decision depends on agreeing. What would you most naturally want from the conversation?",
+        "similarity": 0.2083
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-21",
+      "format": "SINGLE_SELECT",
+      "question": "You are finishing a home project with several optional improvements still possible. When does it feel done?",
+      "options": [
+        {
+          "label": "When the intended result is achieved and ready to use",
+          "color": "red"
+        },
+        {
+          "label": "When I have explored the interesting possibilities that still carry energy",
+          "color": "blue"
+        },
+        {
+          "label": "When the commitment to the household feels fulfilled and settled",
+          "color": "yellow"
+        },
+        {
+          "label": "When the quality, details, and process are coherent enough to rely on",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "COMPLETION_CRITERIA",
+      "secondary_dimension": "SUCCESS_MOTIVATION",
+      "measurement": "completion signal for a household project",
+      "orientation": "SELF_ATTENTION",
+      "context": "household",
+      "tone": "near-completion",
+      "motivational_tradeoff": "result vs explored possibility vs fulfilled commitment vs dependable quality",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Directly measures the OWNER-authorized 'when am I done?' construct.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C02-L-R-02",
+        "text": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle.",
+        "similarity": 0.1667
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-22",
+      "format": "SINGLE_SELECT",
+      "question": "You are learning a subject for personal interest, with no test or deadline. What tells you it is time to move on?",
+      "options": [
+        {
+          "label": "I can use what I learned to accomplish the result I wanted",
+          "color": "red"
+        },
+        {
+          "label": "I have followed the most engaging questions and want a fresh direction",
+          "color": "blue"
+        },
+        {
+          "label": "I have reached the depth I meant to share or sustain with others",
+          "color": "yellow"
+        },
+        {
+          "label": "I can explain the core ideas and see how they fit together",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "COMPLETION_CRITERIA",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "completion signal in self-directed learning",
+      "orientation": "SELF_ATTENTION",
+      "context": "learning",
+      "tone": "open-ended-completion",
+      "motivational_tradeoff": "usable result vs explored interest vs meaningful continuity vs coherent understanding",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds completion without external deadlines and avoids equating mastery with intelligence.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-S-12",
+        "text": "You are meeting a local guide in an unfamiliar place. What would make the time with them especially worthwhile?",
+        "similarity": 0.1429
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-23",
+      "format": "SINGLE_SELECT",
+      "question": "A difficult conversation has covered the main issue, but could continue. What most makes it feel complete?",
+      "options": [
+        {
+          "label": "A clear decision or next action has been reached",
+          "color": "red"
+        },
+        {
+          "label": "The important perspectives and possible paths have been aired",
+          "color": "blue"
+        },
+        {
+          "label": "The relationship and commitments feel stable enough to continue",
+          "color": "yellow"
+        },
+        {
+          "label": "The facts, meanings, and responsibilities are sufficiently clear",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "COMPLETION_CRITERIA",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "completion signal in interpersonal conversation",
+      "orientation": "INTERPERSONAL",
+      "context": "close-relationship",
+      "tone": "conversation-closure",
+      "motivational_tradeoff": "action vs exploration vs relational settlement vs clarity",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002",
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds interpersonal completion where no answer is uniquely mature.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+        "text": "An everyday routine is working well. What most makes it worth keeping?",
+        "similarity": 0.1667
+      }
+    },
+    {
+      "candidate_id": "EXP2-S-24",
+      "format": "SINGLE_SELECT",
+      "question": "You are planning a personal trip and could keep researching indefinitely. What tells you the planning is finished?",
+      "options": [
+        {
+          "label": "The plan can deliver the main outcomes I care about",
+          "color": "red"
+        },
+        {
+          "label": "There is enough direction while leaving room for discoveries",
+          "color": "blue"
+        },
+        {
+          "label": "The important shared commitments and needs are covered",
+          "color": "yellow"
+        },
+        {
+          "label": "The information, sequence, and contingencies are dependable enough",
+          "color": "green"
+        }
+      ],
+      "color_mapping": "one option per color",
+      "primary_dimension": "COMPLETION_CRITERIA",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "completion threshold for travel planning",
+      "orientation": "SELF_ATTENTION",
+      "context": "travel",
+      "tone": "planning-completion",
+      "motivational_tradeoff": "outcome sufficiency vs open possibility vs shared continuity vs dependable structure",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_YELLOW",
+        "RED_GREEN",
+        "BLUE_YELLOW",
+        "BLUE_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds completion criteria to a familiar context without repeating disruption or stalled-choice scenarios.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "0a24caa5-8413-49e7-a56f-9999f4e50879",
+        "text": "Someone tells you they are upset about something you did. What do you most naturally want to establish first?",
+        "similarity": 0.1
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-R-01",
+      "format": "LIKERT",
+      "question": "After a meaningful success, I am more drawn to raise the standard than to spend much time preserving the experience as it is.",
+      "options": [],
+      "color_mapping": "red",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "Red attraction to the next result after success",
+      "orientation": "SELF_PREFERENCE",
+      "context": "general-cross-context",
+      "tone": "success-positive",
+      "motivational_tradeoff": "next achievement vs continuity",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_YELLOW",
+        "RED_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds clean post-success Red motivation rather than pressure response.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "695d628c-53d3-46c2-b360-d355ee0511ad",
+        "text": "When I have discretionary money, I’m more drawn to using it for a memorable experience than reserving it for a defined future purpose.",
+        "similarity": 0.1739
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-B-01",
+      "format": "LIKERT",
+      "question": "When something is already going well, I naturally look for a fresh possibility that could expand the experience.",
+      "options": [],
+      "color_mapping": "blue",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "NATURAL_AVOIDANCE",
+      "measurement": "Blue expansion during success",
+      "orientation": "SELF_ACTION",
+      "context": "general-cross-context",
+      "tone": "success-positive",
+      "motivational_tradeoff": "fresh possibility vs preserving current form",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "BLUE_YELLOW",
+        "BLUE_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures positive expansion without boredom or distractibility framing.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C01-L-B-05",
+        "text": "In a quiet group, I feel drawn to introduce a topic or possibility that could create shared energy, even when there is nothing specific we need to decide.",
+        "similarity": 0.1429
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-Y-01",
+      "format": "LIKERT",
+      "question": "When a shared routine works well, strengthening its sense of continuity matters more to me than adding variety.",
+      "options": [],
+      "color_mapping": "yellow",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "TIME_HORIZON",
+      "measurement": "Yellow continuity during success",
+      "orientation": "SELF_PREFERENCE",
+      "context": "household",
+      "tone": "routine-success",
+      "motivational_tradeoff": "continuity vs variety",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "BLUE_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-002",
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds success-state Yellow preference without equating stability with fear of change.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "4afceb5f-2cbf-4027-91b4-2fe0440b5225",
+        "text": "When others are relying on me, preserving a dependable commitment matters more than switching to a more appealing option.",
+        "similarity": 0.1905
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-G-01",
+      "format": "LIKERT",
+      "question": "A success feels more useful to me after I understand what made it repeatable, even when no immediate improvement is required.",
+      "options": [],
+      "color_mapping": "green",
+      "primary_dimension": "SUCCESS_MOTIVATION",
+      "secondary_dimension": "COMPLETION_CRITERIA",
+      "measurement": "Green understanding after success",
+      "orientation": "SELF_ATTENTION",
+      "context": "general-cross-context",
+      "tone": "success-positive",
+      "motivational_tradeoff": "causal repeatability vs moving on",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "RED_GREEN",
+        "BLUE_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds analytical attention after success rather than after error.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "e24c1a59-d6f6-4cde-9293-06a8f0740b99",
+        "text": "I’m motivated when success allows me more freedom and enjoyment.",
+        "similarity": 0.1667
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-R-02",
+      "format": "LIKERT",
+      "question": "When closure and continued exploration are both reasonable, I lean toward the choice that creates visible progress sooner.",
+      "options": [],
+      "color_mapping": "red",
+      "primary_dimension": "TIME_HORIZON",
+      "secondary_dimension": "COMPLETION_CRITERIA",
+      "measurement": "Red immediate progress horizon",
+      "orientation": "SELF_PREFERENCE",
+      "context": "general-cross-context",
+      "tone": "time-tradeoff",
+      "motivational_tradeoff": "sooner progress vs open exploration",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "RED_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds explicit time-horizon tradeoff without calling speed superior.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-L-R-02",
+        "text": "Learning holds my attention better when I can use it toward a visible result than when exploration is the main reward.",
+        "similarity": 0.1818
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-B-02",
+      "format": "LIKERT",
+      "question": "I am more attracted to activities that leave room for the experience to evolve than to activities whose path is fully fixed.",
+      "options": [],
+      "color_mapping": "blue",
+      "primary_dimension": "NATURAL_AVOIDANCE",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "Blue attraction to emergent freedom",
+      "orientation": "SELF_PREFERENCE",
+      "context": "recreation",
+      "tone": "neutral-attraction",
+      "motivational_tradeoff": "evolving freedom vs fixed path",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_BLUE",
+        "BLUE_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-005"
+      ],
+      "coverage_classification": "DELIBERATE_PARALLEL_MEASUREMENT",
+      "why_it_earns_a_place": "Adds non-pathological non-attraction to fixed form across activities.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "C02-L-B-01",
+        "text": "I feel more energized by a project when I can shape it as new possibilities emerge than when the path is fixed from the start.",
+        "similarity": 0.1818
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-Y-02",
+      "format": "LIKERT",
+      "question": "Recognition feels more meaningful when it acknowledges a commitment I sustained with people than when it focuses only on the final result.",
+      "options": [],
+      "color_mapping": "yellow",
+      "primary_dimension": "RECOGNITION_REWARD",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "Yellow reward through honored relational commitment",
+      "orientation": "SELF_ATTENTION",
+      "context": "close-relationship",
+      "tone": "recognition-positive",
+      "motivational_tradeoff": "sustained commitment vs result only",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-007"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Distinguishes relational meaning from approval-seeking.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "a0bea5a2-24a4-4f40-8bea-d1090df652d5",
+        "text": "Earning more feels most meaningful to me when it strengthens security or support for people I care about rather than mainly expanding my own options.",
+        "similarity": 0.2308
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-G-02",
+      "format": "LIKERT",
+      "question": "I value recognition of the rigor behind a result more than recognition based only on how impressive the result appears.",
+      "options": [],
+      "color_mapping": "green",
+      "primary_dimension": "RECOGNITION_REWARD",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "Green reward through rigor and reliability",
+      "orientation": "SELF_ATTENTION",
+      "context": "general-cross-context",
+      "tone": "recognition-positive",
+      "motivational_tradeoff": "rigor vs appearance",
+      "evidence_class": "OWNER_GOVERNED",
+      "pairwise_contribution": [
+        "RED_GREEN",
+        "BLUE_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Measures meaningful quality recognition without needing to be right.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "59ded366-49c8-46e8-891e-3dd48a501695",
+        "text": "A reward tied directly to the result I achieve motivates me more than receiving the same recognition regardless of outcome.",
+        "similarity": 0.2
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-R-03",
+      "format": "LIKERT",
+      "question": "I am quicker to trust someone who demonstrates ownership of a result than someone who mainly offers reassurance about the process.",
+      "options": [],
+      "color_mapping": "red",
+      "primary_dimension": "TRUST_FORMATION",
+      "secondary_dimension": null,
+      "measurement": "Red trust through ownership and outcome",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "context": "general-cross-context",
+      "tone": "trust-forming",
+      "motivational_tradeoff": "demonstrated ownership vs reassurance",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_YELLOW",
+        "RED_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds a bounded trust reason without equating confidence or dominance with Red.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "4d694041-2641-4635-aa79-e5dc6c188682",
+        "text": "I focus more on results than on following a process exactly.",
+        "similarity": 0.1176
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-B-03",
+      "format": "LIKERT",
+      "question": "I am more likely to trust a new connection when our interaction feels open to genuine exchange and possibility than when it stays carefully scripted.",
+      "options": [],
+      "color_mapping": "blue",
+      "primary_dimension": "TRUST_FORMATION",
+      "secondary_dimension": "ENVIRONMENT_PREFERENCE",
+      "measurement": "Blue trust through open generative interaction",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "context": "unfamiliar-social-situation",
+      "tone": "trust-forming",
+      "motivational_tradeoff": "open exchange vs scripted interaction",
+      "evidence_class": "SUPPORTED_INFERENCE",
+      "pairwise_contribution": [
+        "BLUE_YELLOW",
+        "BLUE_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Tests an explicitly labeled inference instead of silently making it scoring doctrine.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "10c0c4fb-2eca-474f-bc81-50229d945b34",
+        "text": "I enjoy a social event more when I know the setting and plan beforehand than when the evening is left open.",
+        "similarity": 0.1667
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-Y-03",
+      "format": "LIKERT",
+      "question": "Even when people are pleasant, relationships with little continuity are less naturally attractive to me than relationships that grow through repeated connection.",
+      "options": [],
+      "color_mapping": "yellow",
+      "primary_dimension": "NATURAL_AVOIDANCE",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "Yellow non-attraction to low-continuity relationships",
+      "orientation": "SELF_ATTENTION",
+      "context": "friendship",
+      "tone": "neutral-non-attraction",
+      "motivational_tradeoff": "breadth without continuity vs repeated connection",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "BLUE_YELLOW",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [
+        "EXP-007",
+        "EXP-009"
+      ],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds non-attraction through missing continuity rather than hurt feelings or conflict avoidance.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "0309c2cb-91b4-4ac4-936f-051fd9a9c18c",
+        "text": "When change could improve the situation but disrupt important relationships, I prefer to protect continuity with people before accelerating it.",
+        "similarity": 0.1852
+      }
+    },
+    {
+      "candidate_id": "EXP2-L-G-03",
+      "format": "LIKERT",
+      "question": "I am willing to reopen a settled decision when its underlying evidence no longer holds, even if the current path is convenient.",
+      "options": [],
+      "color_mapping": "green",
+      "primary_dimension": "DECISION_RECONSIDERATION",
+      "secondary_dimension": "TRUST_FORMATION",
+      "measurement": "Green reconsideration through invalidated evidence",
+      "orientation": "SELF_ACTION",
+      "context": "everyday-decision",
+      "tone": "post-decision",
+      "motivational_tradeoff": "convenient continuation vs valid basis",
+      "evidence_class": "HISTORICALLY_ESTABLISHED",
+      "pairwise_contribution": [
+        "RED_GREEN",
+        "YELLOW_GREEN"
+      ],
+      "backlog_served": [],
+      "coverage_classification": "NET_NEW_COVERAGE",
+      "why_it_earns_a_place": "Adds a clean post-decision evidence trigger without praising caution or intelligence.",
+      "runtime_authority": false,
+      "closest_canonical_item": {
+        "id": "EXP1-L-G-01",
+        "text": "I trust an explanation more when the person makes the evidence and assumptions visible, even if that takes longer than giving a quick recommendation.",
+        "similarity": 0.1538
+      }
+    }
+  ],
+  "semantic_screen_rejects": [
+    {
+      "draft_id": "EXP2-X-01",
+      "concept": "Success makes me want to win even more.",
+      "reason": "Red ego/competition stereotype and self-congratulatory wording."
+    },
+    {
+      "draft_id": "EXP2-X-02",
+      "concept": "I avoid boring routines.",
+      "reason": "Prohibited Blue=boredom shortcut; no governed motivational tradeoff."
+    },
+    {
+      "draft_id": "EXP2-X-03",
+      "concept": "I avoid conflict because relationships matter.",
+      "reason": "Prohibited Yellow conflict-avoidance shortcut and social desirability contamination."
+    },
+    {
+      "draft_id": "EXP2-X-04",
+      "concept": "I avoid chaotic environments.",
+      "reason": "Green anxiety/chaos shortcut with no competing attractive motive."
+    },
+    {
+      "draft_id": "EXP2-X-05",
+      "concept": "I prefer to work alone.",
+      "reason": "Autonomy stereotype; motive and color discrimination are absent."
+    },
+    {
+      "draft_id": "EXP2-X-06",
+      "concept": "Praise from others motivates me.",
+      "reason": "Approval-seeking framing does not distinguish governed recognition rewards."
+    },
+    {
+      "draft_id": "EXP2-X-07",
+      "concept": "I always finish what I start.",
+      "reason": "Virtue/competency claim rather than completion criterion."
+    },
+    {
+      "draft_id": "EXP2-X-08",
+      "concept": "When plans suddenly change, what do you do?",
+      "reason": "Saturated disruption architecture."
+    },
+    {
+      "draft_id": "EXP2-X-09",
+      "concept": "A group cannot agree; how do you decide?",
+      "reason": "Saturated stalled-group-choice architecture."
+    },
+    {
+      "draft_id": "EXP2-X-10",
+      "concept": "I trust people who are honest and reliable.",
+      "reason": "Universal virtue with no discriminating reason for trust."
+    },
+    {
+      "draft_id": "EXP2-X-11",
+      "concept": "Which person deserves recognition?",
+      "reason": "Invites moral/competency judgment rather than preferred form of recognition."
+    },
+    {
+      "draft_id": "EXP2-X-12",
+      "concept": "I reconsider decisions when I was wrong.",
+      "reason": "Universal reason and self-esteem threat; does not reveal a color-specific trigger."
+    }
+  ],
+  "thin_dimensions": [
+    {
+      "dimension": "NATURAL_AVOIDANCE",
+      "reason": "Four items establish the construct, but selector behavior must show whether this family is sufficiently distinct from environment preference and governed drains."
+    },
+    {
+      "dimension": "AUTONOMY_INTERDEPENDENCE",
+      "reason": "Four items are intentionally cautious because rigid independence/sociality claims are not governed color doctrine."
+    },
+    {
+      "dimension": "DECISION_RECONSIDERATION",
+      "reason": "Four items provide initial coverage; Blue and Yellow triggers remain partly OWNER-governed research hypotheses."
+    }
+  ],
+  "owner_governance_required": [
+    {
+      "claim": "Blue trust grows through open, authentic, possibility-rich interaction.",
+      "status": "SUPPORTED_INFERENCE",
+      "candidate_ids": [
+        "EXP2-S-17",
+        "EXP2-L-B-03"
+      ]
+    },
+    {
+      "claim": "Color-specific time horizons generalize beyond the governed motives expressed in each item.",
+      "status": "SUPPORTED_INFERENCE",
+      "candidate_ids": [
+        "EXP2-S-07",
+        "EXP2-S-08",
+        "EXP2-S-22"
+      ]
+    },
+    {
+      "claim": "Green seeks causal repeatability after success as a general reward.",
+      "status": "SUPPORTED_INFERENCE",
+      "candidate_ids": [
+        "EXP2-L-G-01"
+      ]
+    },
+    {
+      "claim": "Interpersonal completion signals generalize beyond the stated conversation context.",
+      "status": "SUPPORTED_INFERENCE",
+      "candidate_ids": [
+        "EXP2-S-23"
+      ]
+    }
+  ],
+  "production_impact": "NONE"
+}

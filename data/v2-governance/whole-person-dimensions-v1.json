@@ -1,0 +1,26 @@
+{
+  "taxonomy_id": "VIAGO_WHOLE_PERSON_RESEARCH_DIMENSIONS_V1",
+  "version": "1.0.0",
+  "status": "OWNER_AUTHORIZED_RESEARCH_TAXONOMY",
+  "semantic_authority": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "runtime_authority": false,
+  "dimensions": [
+    { "id": "SUCCESS_MOTIVATION", "definition": "What naturally attracts or motivates a person when an activity, relationship, or goal is already going well." },
+    { "id": "NATURAL_AVOIDANCE", "definition": "What is naturally less attractive because it lacks a governed motivational reward, without implying fear, pathology, incompetence, or moral disapproval." },
+    { "id": "TIME_HORIZON", "definition": "How immediate progress, emerging possibility, continuity over time, and dependable future preparation shape preference." },
+    { "id": "AUTONOMY_INTERDEPENDENCE", "definition": "Why a person prefers ownership, exploratory freedom, dependable collaboration, or clear role structure." },
+    { "id": "RECOGNITION_REWARD", "definition": "What makes achievement or contribution feel meaningfully acknowledged or satisfying." },
+    { "id": "RESOURCE_ALLOCATION", "definition": "How scarce time, attention, energy, opportunity, space, or effort is naturally allocated among legitimate alternatives." },
+    { "id": "ENVIRONMENT_PREFERENCE", "definition": "What combination of challenge, variety, connection, clarity, autonomy, pace, or stability makes an environment naturally attractive." },
+    { "id": "TRUST_FORMATION", "definition": "Why trust grows through results, openness and possibility, relational continuity, or evidence and reliability." },
+    { "id": "DECISION_RECONSIDERATION", "definition": "What governed signal naturally causes a person to revisit a decision already made." },
+    { "id": "COMPLETION_CRITERIA", "definition": "What governed signal makes an activity, decision, conversation, or responsibility feel sufficiently complete." }
+  ],
+  "governance": {
+    "no_scoring_doctrine": true,
+    "supported_inference_requires_label": true,
+    "no_stereotype_shortcuts": true,
+    "no_virtue_or_competency_loading": true,
+    "no_runtime_selection": true
+  }
+}
