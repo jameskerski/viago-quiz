@@ -1,7 +1,12 @@
 {
   "schema_id": "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   "schema_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "status": "OWNER_APPROVED_NON_RUNTIME",
+  "owner_approval": {
+    "approved": true,
+    "approval_reference": "OWNER_APPROVAL_CANONICAL_BANK_RECONSTRUCTION_BATCH_01",
+    "approved_commit": "14eb0ecbaef7efdc48d1d89c24bdb4c251c7a109"
+  },
   "governing_model": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   "runtime_authority": false,
   "identity": {

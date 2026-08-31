@@ -221,7 +221,7 @@ const records = batchSource.map((question, index) => {
       response_desirability_risk: question.quality_classifications.includes("SOCIAL_DESIRABILITY_RISK") || decision.family === "fairness-as-virtue" ? "HIGH" : "LOW",
       context_dependence_risk: question.quality_classifications.includes("CONTEXT_DEPENDENT") ? "HIGH" : "LOW",
       semantic_redundancy: decision.id === "199f9df0-be56-402e-a98c-8b1b8e4518af" ? "DUPLICATE" : decision.replacement ? "SUBSTANTIAL" : question.quality_classifications.includes("SEMANTICALLY_OVERLAPPING") ? "RELATED" : "NONE",
-      owner_review_state: "PENDING_BATCH_REVIEW"
+      owner_review_state: "OWNER_APPROVED"
     },
     why: decision.why,
     runtime_authority: false
@@ -240,7 +240,7 @@ const coverage = {
 const output = {
   manifest_id: "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_01",
   schema_version: "1.0.0",
-  status: "PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION",
+  status: "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
   governing_model: "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
   metadata_schema: "VIAGO_CANONICAL_QUESTION_METADATA_V1",
   taxonomy: "VIAGO_CANONICAL_QUESTION_TAXONOMIES_V1",
@@ -257,7 +257,7 @@ fs.writeFileSync(path.join(ROOT, "data/v2-reconstruction/review-batch-01.json"),
 const lines = [
   "# VIAGO Canonical Question Bank Reconstruction — Review Batch 01",
   "",
-  "Status: `PROPOSED_FOR_OWNER_REVIEW_NON_PRODUCTION`",
+  "Status: `OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION`",
   "",
   `Counts: ${counts.KEEP_EXACTLY} KEEP_EXACTLY · ${counts.REWORD} REWORD · ${counts.REPLACE} REPLACE · ${counts.RETIRE} RETIRE`,
   "",

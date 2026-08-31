@@ -1,0 +1,21 @@
+{
+  "approval_id": "VIAGO_CANONICAL_BANK_RECONSTRUCTION_BATCH_01_OWNER_APPROVAL",
+  "status": "OWNER_APPROVED_PROPOSED_CANONICAL_NON_PRODUCTION",
+  "approved_commit": "14eb0ecbaef7efdc48d1d89c24bdb4c251c7a109",
+  "approved_counts": {
+    "KEEP_EXACTLY": 3,
+    "REWORD": 8,
+    "REPLACE": 9,
+    "RETIRE": 5
+  },
+  "taxonomy_decisions": {
+    "planning_and_organization_process": "APPROVED_SEPARATE_DOMAINS",
+    "general_cross_context": "APPROVED_WHEN_ABSTRACTION_IMPROVES_MEASUREMENT_TRACK_FREQUENCY",
+    "fairness": "NON_DIAGNOSTIC_ALONE_REQUIRES_APPROVED_RELATIONAL_MOTIVE",
+    "scenario_changing_replacements": "APPROVED_WITH_TRACEABILITY_SEMANTIC_FAMILY_AND_RATIONALE",
+    "question_09_ideal_workday": "KEEP_EXACTLY"
+  },
+  "governing_principle": "Age is neither evidence for nor against a question. Keep exact wording when it meets today's standard; retire, reword, or replace when it does not.",
+  "runtime_authority": false,
+  "production_changes_authorized": false
+}

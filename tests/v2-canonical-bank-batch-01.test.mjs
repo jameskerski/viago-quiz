@@ -13,7 +13,7 @@ test('Batch 01 gives exactly one non-production disposition to 25 legacy questio
   assert.equal(new Set(batch.questions.map((item) => item.question_id)).size, 25);
   assert.deepEqual(batch.counts, { KEEP_EXACTLY: 3, REWORD: 8, REPLACE: 9, RETIRE: 5 });
   assert.equal(batch.production_impact, 'NONE');
-  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'PENDING_BATCH_REVIEW'));
+  assert.ok(batch.questions.every((item) => item.quality.owner_review_state === 'OWNER_APPROVED'));
 });
 
 test('revision identities and legacy traceability fail closed', () => {
@@ -26,7 +26,7 @@ test('revision identities and legacy traceability fail closed', () => {
 });
 
 test('metadata architecture is proposed and never runtime authority', () => {
-  assert.equal(schema.status, 'PROPOSED_FOR_OWNER_REVIEW');
+  assert.equal(schema.status, 'OWNER_APPROVED_NON_RUNTIME');
   assert.equal(schema.runtime_authority, false);
   assert.equal(schema.governance.production_boundary.includes('non-production'), true);
   assert.equal(batch.questions.every((item) => item.runtime_authority === false), true);
