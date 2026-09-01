@@ -6,8 +6,7 @@
     "REPLACE_V5": 12,
     "REVISE_AND_ADMIT": 5,
     "DEFER_REDUNDANCY": 9,
-    "REJECT": 4,
-    "REVISE": 19
+    "REJECT": 23
   },
   "items": [
     {
@@ -244,7 +243,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-005",
@@ -480,7 +479,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-009",
@@ -657,7 +656,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-012",
@@ -716,7 +715,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-013",
@@ -893,7 +892,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-016",
@@ -1129,7 +1128,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-020",
@@ -1424,7 +1423,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-025",
@@ -1542,7 +1541,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-027",
@@ -1719,7 +1718,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-030",
@@ -1837,7 +1836,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-032",
@@ -1896,7 +1895,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-033",
@@ -2014,7 +2013,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-035",
@@ -2604,7 +2603,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-045",
@@ -2781,7 +2780,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-048",
@@ -2840,7 +2839,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-049",
@@ -3076,7 +3075,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-053",
@@ -3312,7 +3311,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-057",
@@ -3548,7 +3547,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-061",
@@ -3607,7 +3606,7 @@
       },
       "recommended_disposition": "REVISE",
       "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
-      "final_disposition": "REVISE"
+      "final_disposition": "REJECT"
     },
     {
       "id": "HR-S-062",
