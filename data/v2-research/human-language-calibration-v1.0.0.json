@@ -1,0 +1,1232 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_VOICE_CALIBRATION",
+  "frozen_source": {
+    "bank_version": "viago-validation-bank-293-v2.0.0",
+    "bank_hash": "14fe458091426af874d524b5d1f9417fa0d5c1b23db0b55fa1f9451095bbc4ca",
+    "question_count": 293
+  },
+  "sample": {
+    "count": 30,
+    "formats": {
+      "LIKERT": 12,
+      "SINGLE_SELECT": 18
+    },
+    "sources": [
+      "development-01-03",
+      "targeted-expansion-01",
+      "reconstructed-legacy",
+      "targeted-expansion-02",
+      "final-pretest-expansion-v2"
+    ],
+    "colors": [
+      "yellow",
+      "blue",
+      "red",
+      "green"
+    ],
+    "contexts": [
+      "friendship",
+      "unfamiliar-social-situation",
+      "general-cross-context",
+      "everyday-decision",
+      "personal-project",
+      "learning",
+      "household",
+      "family",
+      "travel",
+      "learning-practical-skill",
+      "work-business",
+      "learning-personal",
+      "home-environment",
+      "group-recreation",
+      "wellness-routine",
+      "hobby",
+      "community"
+    ],
+    "orientations": [
+      "SELF_PREFERENCE",
+      "SELF_ATTENTION",
+      "PREFERENCE_IN_OTHERS",
+      "RESPONSE_TO_OTHERS",
+      "INTERPERSONAL",
+      "SELF_ACTION"
+    ]
+  },
+  "metrics": {
+    "average_current_prompt_words": 18.8,
+    "average_proposed_prompt_words": 14.1,
+    "average_current_option_words": 10,
+    "average_proposed_option_words": 7.9,
+    "current_cognitive_load": {
+      "INSTANT": 4,
+      "EASY": 6,
+      "MODERATE": 6,
+      "HIGH": 14
+    },
+    "proposed_cognitive_load": {
+      "INSTANT": 13,
+      "EASY": 17,
+      "MODERATE": 0,
+      "HIGH": 0
+    }
+  },
+  "items": [
+    {
+      "question_revision_id": "C02-L-Y-01@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "LIKERT",
+      "color": "yellow",
+      "domain": "conflict",
+      "context": "friendship",
+      "orientation": "SELF_PREFERENCE",
+      "family": "trust-before-quick-closure",
+      "dimensions": [],
+      "current": {
+        "prompt": "When friends disagree about a shared plan and either option could work, I would rather keep discussing until the group feels comfortable than choose an option and let the tension fade afterward.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "When friends disagree about a plan, I'd rather keep talking until everyone feels okay than choose and move on.",
+        "options": {}
+      },
+      "measures": "Yellow preference for group comfort and relationship continuity before quick closure.",
+      "must_not_change": "The respondent must still choose relational comfort over faster closure, not simply endorse kindness.",
+      "preservation_check": {
+        "same_color": "yellow",
+        "same_option_mapping": true,
+        "same_construct": "trust",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C01-L-B-02@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "LIKERT",
+      "color": "blue",
+      "domain": "social-interaction",
+      "context": "unfamiliar-social-situation",
+      "orientation": "SELF_ATTENTION",
+      "family": "exploratory-social-entry",
+      "dimensions": [],
+      "current": {
+        "prompt": "In a room where I don’t know anyone, I feel drawn to discover who is there and what conversation might unfold rather than wait for the setting to become familiar.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "When I don't know anyone in the room, I want to see who I might connect with instead of waiting to feel comfortable.",
+        "options": {}
+      },
+      "measures": "Blue attraction to possibility and interaction in an unfamiliar social setting.",
+      "must_not_change": "Curiosity about emerging interaction must remain distinct from waiting for familiarity.",
+      "preservation_check": {
+        "same_color": "blue",
+        "same_option_mapping": true,
+        "same_construct": "exploratory-social",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-L-R-01@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "LIKERT",
+      "color": "red",
+      "domain": "preferred-adviser-closure-versus-possibility",
+      "context": "general-cross-context",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "preferred-adviser-closure-versus-possibility",
+      "dimensions": [],
+      "current": {
+        "prompt": "When I seek advice, I am more drawn to someone who gives a clear recommendation that creates forward movement than to someone who keeps several possibilities open.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "When I ask for advice, I prefer a clear recommendation over a list of possibilities.",
+        "options": {}
+      },
+      "measures": "Red preference for decisive guidance that enables movement.",
+      "must_not_change": "Clear direction must remain preferred over keeping possibilities open.",
+      "preservation_check": {
+        "same_color": "red",
+        "same_option_mapping": true,
+        "same_construct": "possibility-freedom",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "0eaa09f4-95af-45a6-9846-13202a795033@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "green",
+      "domain": "stability-security",
+      "context": "everyday-decision",
+      "orientation": "SELF_PREFERENCE",
+      "family": "predictability-versus-upside",
+      "dimensions": [],
+      "current": {
+        "prompt": "When two options are similarly worthwhile, I prefer the one with more predictable consequences to the one with more upside and uncertainty.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "When two choices are both good, I prefer the one with a more predictable outcome over the riskier one.",
+        "options": {}
+      },
+      "measures": "Green preference for predictable consequences over uncertain upside.",
+      "must_not_change": "Predictability must remain in genuine tension with potentially greater upside.",
+      "preservation_check": {
+        "same_color": "green",
+        "same_option_mapping": true,
+        "same_construct": "predictability-versus",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-L-R-01@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "LIKERT",
+      "color": "red",
+      "domain": "follow-through-recovery",
+      "context": "personal-project",
+      "orientation": "SELF_PREFERENCE",
+      "family": "finish-versus-replace-personal-goal",
+      "dimensions": [],
+      "current": {
+        "prompt": "When a personal goal stops feeling exciting, I would rather keep working toward the result I chose than replace it with a more interesting goal.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "Even when a personal goal stops being exciting, I'd rather finish it than switch to something more interesting.",
+        "options": {}
+      },
+      "measures": "Red follow-through toward a chosen result after excitement fades.",
+      "must_not_change": "Finishing the chosen result must remain contrasted with pursuing renewed interest.",
+      "preservation_check": {
+        "same_color": "red",
+        "same_option_mapping": true,
+        "same_construct": "completion",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP2-L-B-03@validation-1.0.0",
+      "source": "targeted-expansion-02",
+      "format": "LIKERT",
+      "color": "blue",
+      "domain": "Blue trust through open generative interaction",
+      "context": "unfamiliar-social-situation",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "Blue trust through open generative interaction",
+      "dimensions": [
+        "TRUST_FORMATION",
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "current": {
+        "prompt": "I am more likely to trust a new connection when our interaction feels open to genuine exchange and possibility than when it stays carefully scripted.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "I trust a new connection more when the conversation feels open and unscripted.",
+        "options": {}
+      },
+      "measures": "Blue trust formation through open, generative interaction.",
+      "must_not_change": "Trust must come from open possibility rather than careful scripting alone.",
+      "preservation_check": {
+        "same_color": "blue",
+        "same_option_mapping": true,
+        "same_construct": "trust",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "fac997ca-5035-4573-929c-38c5a010b701@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "yellow",
+      "domain": "relationships-support",
+      "context": "friendship",
+      "orientation": "SELF_PREFERENCE",
+      "family": "reliable-mutual-support-over-social-variety",
+      "dimensions": [],
+      "current": {
+        "prompt": "A social group feels most rewarding to me when people reliably show up for one another, even if the group is quieter or less varied.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "I enjoy a group most when people show up for each other, even if it's quiet and predictable.",
+        "options": {}
+      },
+      "measures": "Yellow preference for dependable mutual support over social variety.",
+      "must_not_change": "Reliable connection must remain more rewarding than liveliness or variety.",
+      "preservation_check": {
+        "same_color": "yellow",
+        "same_option_mapping": true,
+        "same_construct": "reliable-mutual",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "53ece3a0-2862-42b5-a4fc-1468fd3549e8@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "green",
+      "domain": "stability-security",
+      "context": "everyday-decision",
+      "orientation": "SELF_PREFERENCE",
+      "family": "predictable-progress-versus-rapid-growth",
+      "dimensions": [],
+      "current": {
+        "prompt": "When choosing between two worthwhile paths, I prefer the one with steadier, more predictable progress to the one with faster but less certain growth.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "I'd rather make steady, predictable progress than grow faster with more risk.",
+        "options": {}
+      },
+      "measures": "Green preference for dependable progress over faster uncertain growth.",
+      "must_not_change": "The tradeoff between steadiness and speed/upside must remain explicit.",
+      "preservation_check": {
+        "same_color": "green",
+        "same_option_mapping": true,
+        "same_construct": "achievement",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "MODERATE",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "799f2aac-8544-4bd3-850b-dd76fc1e2cfc@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "red",
+      "domain": "leadership-ownership",
+      "context": "general-cross-context",
+      "orientation": "SELF_ATTENTION",
+      "family": "focus-when-results-depend-on-self",
+      "dimensions": [],
+      "current": {
+        "prompt": "I stay focused when I know results depend on me.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "I focus more when the result depends on me.",
+        "options": {}
+      },
+      "measures": "Red focus activated by personal ownership of results.",
+      "must_not_change": "The item must measure ownership-driven focus, not confidence or competence.",
+      "preservation_check": {
+        "same_color": "red",
+        "same_option_mapping": true,
+        "same_construct": "achievement",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "INSTANT",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "79803d54-28bb-4990-b557-22fd67927109@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "blue",
+      "domain": "change-risk",
+      "context": "general-cross-context",
+      "orientation": "SELF_ATTENTION",
+      "family": "energy-from-unpredictable-experience",
+      "dimensions": [],
+      "current": {
+        "prompt": "I’m energized by new experiences, even if they’re unpredictable.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "New experiences energize me, even when I don't know how they'll turn out.",
+        "options": {}
+      },
+      "measures": "Blue energy from novelty despite unpredictability.",
+      "must_not_change": "Novel experience must remain attractive even without a predictable outcome.",
+      "preservation_check": {
+        "same_color": "blue",
+        "same_option_mapping": true,
+        "same_construct": "energy-from",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "INSTANT",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "63a771d2-a37a-4a48-b5fd-f5d316d26b0d@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "LIKERT",
+      "color": "yellow",
+      "domain": "relationships-support",
+      "context": "general-cross-context",
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "supporting-established-commitments",
+      "dimensions": [],
+      "current": {
+        "prompt": "I feel responsible for supporting people I’ve committed to.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "I feel responsible for people I've made a commitment to.",
+        "options": {}
+      },
+      "measures": "Yellow support rooted in established commitment.",
+      "must_not_change": "Responsibility must come from loyalty to a commitment, not general helpfulness.",
+      "preservation_check": {
+        "same_color": "yellow",
+        "same_option_mapping": true,
+        "same_construct": "supporting-established",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "INSTANT",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-L-G-003@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "LIKERT",
+      "color": "green",
+      "domain": "learning",
+      "context": "learning",
+      "orientation": "SELF_ATTENTION",
+      "family": "coherent-understanding-reward",
+      "dimensions": [
+        "COMPLETION_CRITERIA"
+      ],
+      "current": {
+        "prompt": "Learning becomes satisfying when separate details form a clear whole.",
+        "options": {}
+      },
+      "human": {
+        "prompt": "Learning feels satisfying when the details finally fit together.",
+        "options": {}
+      },
+      "measures": "Green reward from coherent understanding.",
+      "must_not_change": "Satisfaction must come from seeing how details connect, not intelligence or achievement.",
+      "preservation_check": {
+        "same_color": "green",
+        "same_option_mapping": true,
+        "same_construct": "coherent-understanding-reward",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP2-S-22@validation-1.0.0",
+      "source": "targeted-expansion-02",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "completion signal in self-directed learning",
+      "context": "learning",
+      "orientation": "SELF_ATTENTION",
+      "family": "completion signal in self-directed learning",
+      "dimensions": [
+        "COMPLETION_CRITERIA",
+        "TIME_HORIZON"
+      ],
+      "current": {
+        "prompt": "You are learning a subject for personal interest, with no test or deadline. What tells you it is time to move on?",
+        "options": {
+          "red": "I can use what I learned to accomplish the result I wanted",
+          "blue": "I have followed the most engaging questions and want a fresh direction",
+          "yellow": "The interest feels meaningfully connected to something I value and has found a lasting place in my life",
+          "green": "I can explain the core ideas and see how they fit together"
+        }
+      },
+      "human": {
+        "prompt": "You're learning something just for fun. When does it feel complete enough to move on?",
+        "options": {
+          "red": "I can use it to do what I set out to do.",
+          "blue": "I've followed what interested me and want something new.",
+          "yellow": "It now feels like a meaningful part of my life.",
+          "green": "I understand the main ideas and how they fit together."
+        }
+      },
+      "measures": "Different completion signals in self-directed learning.",
+      "must_not_change": "Each option must retain result, exploration, lasting meaning, or coherent understanding as the stopping signal.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "learning",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-S-06@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "problem-solving",
+      "context": "household",
+      "orientation": "SELF_ATTENTION",
+      "family": "inconsistent-favorite-recipe",
+      "dimensions": [],
+      "current": {
+        "prompt": "A favorite recipe keeps turning out differently even though each version is usable. What would you be most interested in trying next?",
+        "options": {
+          "red": "Choose the result I want and change the factor most likely to improve it",
+          "blue": "Experiment with a new variation and see what enjoyable result emerges",
+          "yellow": "Adapt it around the tastes and experience of the people sharing it",
+          "green": "Change one factor at a time so I can understand what produces each result"
+        }
+      },
+      "human": {
+        "prompt": "A favorite recipe comes out differently each time. What would you try next?",
+        "options": {
+          "red": "Choose the result I want and change what matters most.",
+          "blue": "Try a new variation and see what happens.",
+          "yellow": "Adjust it to suit the people eating it.",
+          "green": "Change one thing at a time to find the cause."
+        }
+      },
+      "measures": "Preferred response to inconsistent results in an everyday task.",
+      "must_not_change": "The four responses must remain outcome improvement, exploration, shared experience, and causal testing.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "inconsistent-favorite",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-S-10@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "conflict",
+      "context": "family",
+      "orientation": "INTERPERSONAL",
+      "family": "different-memories-without-required-decision",
+      "dimensions": [],
+      "current": {
+        "prompt": "You and a sibling remember an important family event differently, but no practical decision depends on agreeing. What would you most naturally want from the conversation?",
+        "options": {
+          "red": "A clear conclusion about the main point so the disagreement can close",
+          "blue": "A lively exchange that leaves room for both versions of the story",
+          "yellow": "Understanding how each version connects to what matters to each of us",
+          "green": "Clarity about what can be verified and what genuinely remains uncertain"
+        }
+      },
+      "human": {
+        "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?",
+        "options": {
+          "red": "Settle the main point and move on.",
+          "blue": "Share both versions and keep the conversation open.",
+          "yellow": "Understand why each version matters to us.",
+          "green": "Separate what we know from what we're unsure about."
+        }
+      },
+      "measures": "Preferred aim when resolving different family memories.",
+      "must_not_change": "Closure, open exchange, relational meaning, and factual clarity must remain equally defensible aims.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "decision",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-S-07@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "planning",
+      "context": "travel",
+      "orientation": "SELF_PREFERENCE",
+      "family": "open-day-travel-planning",
+      "dimensions": [],
+      "current": {
+        "prompt": "You have one open day in a place you have wanted to visit. How would you most naturally shape the day?",
+        "options": {
+          "red": "Choose the experience that matters most and build the day around completing it",
+          "blue": "Keep plenty of room to follow whatever looks interesting once I am there",
+          "yellow": "Shape the day around a pace and experiences everyone can enjoy together",
+          "green": "Research the route, timing, and key details so the day works smoothly"
+        }
+      },
+      "human": {
+        "prompt": "You have one free day in a place you've always wanted to visit. How do you plan it?",
+        "options": {
+          "red": "Pick the one must-do experience and make it happen.",
+          "blue": "Leave room to follow whatever looks interesting.",
+          "yellow": "Choose a pace and activities everyone can enjoy.",
+          "green": "Check the route, timing, and details ahead of time."
+        }
+      },
+      "measures": "Travel-day planning preference.",
+      "must_not_change": "The options must retain priority achievement, open exploration, shared enjoyment, and dependable planning.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "planning",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-S-01@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "valued-contribution-in-travel-companion",
+      "context": "travel",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valued-contribution-in-travel-companion",
+      "dimensions": [],
+      "current": {
+        "prompt": "You are choosing a friend to plan a weekend away with. Which quality would you value most in that person?",
+        "options": {
+          "red": "They help us commit to a destination and turn the idea into a real trip",
+          "blue": "They keep discovering possibilities that could make the trip more memorable",
+          "yellow": "They pay attention to what will let both of us feel comfortable and connected",
+          "green": "They compare the practical details so our choices fit together reliably"
+        }
+      },
+      "human": {
+        "prompt": "You're planning a weekend away with a friend. What do you most want them to bring?",
+        "options": {
+          "red": "Help choose a destination and make the trip happen.",
+          "blue": "Keep finding ideas that could make the trip special.",
+          "yellow": "Notice what will help us both enjoy the time together.",
+          "green": "Compare the details so the plan works smoothly."
+        }
+      },
+      "measures": "Preferred contribution from a travel companion.",
+      "must_not_change": "The valued contribution must remain decisive action, possibility, mutual connection, or practical reliability.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "valued-contribution",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-S-10@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "valued-tool-explanation",
+      "context": "learning-practical-skill",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valued-tool-explanation",
+      "dimensions": [],
+      "current": {
+        "prompt": "Someone is showing you how to use an unfamiliar tool. What makes their explanation most useful to you?",
+        "options": {
+          "red": "They get me to a working result quickly, then help me improve it",
+          "blue": "They let me explore what the tool can do through interesting examples",
+          "yellow": "They build a steady learning partnership and keep a shared commitment from one session to the next",
+          "green": "They explain how the parts work and why each step matters"
+        }
+      },
+      "human": {
+        "prompt": "Someone is teaching you to use a new tool. What helps you most?",
+        "options": {
+          "red": "Get me to a working result, then help me improve it.",
+          "blue": "Let me explore what it can do through examples.",
+          "yellow": "Stick with me and build on what we learned last time.",
+          "green": "Explain how the parts work and why each step matters."
+        }
+      },
+      "measures": "Preferred support while learning a practical tool.",
+      "must_not_change": "The four preferences must remain quick result, exploration, steady learning partnership, and structural understanding.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "planning",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-S-08@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "relationships-support",
+      "context": "friendship",
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "friend-facing-two-good-options",
+      "dimensions": [],
+      "current": {
+        "prompt": "A friend is choosing between two good opportunities and asks you to talk it through. Which question are you most naturally inclined to explore?",
+        "options": {
+          "red": "Which opportunity moves you closer to the result you want most?",
+          "blue": "Which opportunity opens the experiences and possibilities that energize you?",
+          "yellow": "Which opportunity best fits the relationships and commitments you want to maintain?",
+          "green": "Which opportunity holds up best when you compare the evidence and consequences?"
+        }
+      },
+      "human": {
+        "prompt": "A friend is choosing between two good opportunities. What do you ask first?",
+        "options": {
+          "red": "Which one gets you closer to what you want most?",
+          "blue": "Which one opens possibilities that excite you?",
+          "yellow": "Which one best fits the people and commitments you value?",
+          "green": "Which one holds up best when you compare the facts?"
+        }
+      },
+      "measures": "Natural lens used to help a friend choose.",
+      "must_not_change": "The question must distinguish desired result, possibility, relational commitments, and evidence.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "friend-facing",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-S-11@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "valued-conflict-contribution-in-friend",
+      "context": "friendship",
+      "orientation": "PREFERENCE_IN_OTHERS",
+      "family": "valued-conflict-contribution-in-friend",
+      "dimensions": [],
+      "current": {
+        "prompt": "A close friend is handling a disagreement that affects several people. Which quality in their approach would you respect most?",
+        "options": {
+          "red": "They move the issue toward a clear decision that people can act on",
+          "blue": "They open a new path that gives the situation more room to improve",
+          "yellow": "They look for a form of continued connection that people can sustain after the disagreement",
+          "green": "They separate facts, assumptions, and responsibilities before conclusions"
+        }
+      },
+      "human": {
+        "prompt": "A close friend is handling a disagreement. What do you respect most in their approach?",
+        "options": {
+          "red": "They move people toward a clear decision.",
+          "blue": "They find a new way forward.",
+          "yellow": "They help people stay connected afterward.",
+          "green": "They sort out the facts before deciding."
+        }
+      },
+      "measures": "Preferred conflict contribution in another person.",
+      "must_not_change": "Resolution, possibility, continued connection, and factual clarification must remain balanced.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "conflict",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-S-18@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "recovery-after-friendship-disruption",
+      "context": "friendship",
+      "orientation": "SELF_ATTENTION",
+      "family": "recovery-after-friendship-disruption",
+      "dimensions": [],
+      "current": {
+        "prompt": "A friendship has become distant after plans repeatedly fell through. What would most help you decide whether to invest again?",
+        "options": {
+          "red": "A concrete step that shows the friendship can move forward",
+          "blue": "A different way of connecting that makes the relationship feel alive again",
+          "yellow": "A dependable sign that the bond and commitments still matter to both of us",
+          "green": "A clear understanding of what happened and what would be different"
+        }
+      },
+      "human": {
+        "prompt": "A friendship faded after plans kept falling through. What would make you try again?",
+        "options": {
+          "red": "A concrete step that moves the friendship forward.",
+          "blue": "A new way of connecting that feels fresh.",
+          "yellow": "A dependable sign that the friendship still matters.",
+          "green": "A clear explanation of what happened and what will change."
+        }
+      },
+      "measures": "Preferred evidence for recovering a disrupted friendship.",
+      "must_not_change": "Movement, renewed possibility, dependable bond, and causal clarity must remain distinct.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "recovery",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C03-S-01@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "follow-through-recovery",
+      "context": "personal-project",
+      "orientation": "SELF_ATTENTION",
+      "family": "return-to-self-chosen-project",
+      "dimensions": [],
+      "current": {
+        "prompt": "A personal project you chose has been sitting unfinished for several weeks. What would most naturally draw you back into it?",
+        "options": {
+          "red": "Choosing the next visible milestone and deciding to finish it",
+          "blue": "Finding a fresh angle that makes the project interesting again",
+          "yellow": "Reconnecting with why I chose the project and what continuing it means to me",
+          "green": "Working out why progress stopped and creating a more reliable approach"
+        }
+      },
+      "human": {
+        "prompt": "A personal project has sat unfinished for weeks. What would pull you back in?",
+        "options": {
+          "red": "Pick the next milestone and decide to finish.",
+          "blue": "Find a fresh angle that makes it interesting again.",
+          "yellow": "Reconnect with why the project matters to me.",
+          "green": "Figure out why I stopped and make a better plan."
+        }
+      },
+      "measures": "Motivation for returning to an unfinished personal project.",
+      "must_not_change": "The return motive must remain result, renewed interest, personal meaning/continuity, or diagnosis and reliability.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "return-to",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "C01-S-01@validation-1.0.0",
+      "source": "development-01-03",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "leadership-ownership",
+      "context": "work-business",
+      "orientation": "RESPONSE_TO_OTHERS",
+      "family": "unowned-urgent-problem",
+      "dimensions": [],
+      "current": {
+        "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?",
+        "options": {
+          "red": "Set a workable first direction and coordinate the next action",
+          "blue": "Generate a few fast possibilities and rally people around the most promising one",
+          "yellow": "Check the immediate effects on people and coordinate the support they will need",
+          "green": "Verify the critical facts and define a reliable first response"
+        }
+      },
+      "human": {
+        "prompt": "A time-sensitive problem comes up and no one owns it. What do you do first?",
+        "options": {
+          "red": "Choose a workable direction and get the next step moving.",
+          "blue": "Come up with quick possibilities and build energy around one.",
+          "yellow": "Check who is affected and what support they need.",
+          "green": "Confirm the key facts and shape a reliable response."
+        }
+      },
+      "measures": "First contribution to an urgent, unowned problem.",
+      "must_not_change": "The options must retain forward action, generative possibility, people impact/support, and factual reliability.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "unowned-urgent",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP1-S-14@validation-1.0.0",
+      "source": "targeted-expansion-01",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "learning-plateau-response",
+      "context": "learning-personal",
+      "orientation": "SELF_ACTION",
+      "family": "learning-plateau-response",
+      "dimensions": [],
+      "current": {
+        "prompt": "After several practice sessions, a new skill still is not improving. What are you most naturally inclined to do next?",
+        "options": {
+          "red": "Set a nearer performance target and push for a measurable gain",
+          "blue": "Change the exercise or approach to discover a more engaging path",
+          "yellow": "Return to the reason the skill matters and seek steady support",
+          "green": "Diagnose where the breakdown occurs and adjust the practice method"
+        }
+      },
+      "human": {
+        "prompt": "You've practiced a new skill several times but aren't improving. What do you do next?",
+        "options": {
+          "red": "Set a closer target and push for a clear gain.",
+          "blue": "Try a different exercise that feels more engaging.",
+          "yellow": "Reconnect with why it matters and get steady support.",
+          "green": "Find where I'm getting stuck and change how I practice."
+        }
+      },
+      "measures": "Preferred response to a learning plateau.",
+      "must_not_change": "The responses must remain measurable progress, exploratory change, meaningful supported continuity, and diagnosis.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "learning",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "HIGH",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-S-007@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "environment-preference",
+      "context": "home-environment",
+      "orientation": "SELF_PREFERENCE",
+      "family": "room-design-priority",
+      "dimensions": [
+        "ENVIRONMENT_PREFERENCE"
+      ],
+      "current": {
+        "prompt": "You are arranging a room you use often. What matters most?",
+        "options": {
+          "red": "It supports what I want to accomplish there",
+          "blue": "It feels lively and easy to change",
+          "yellow": "It feels welcoming and familiar",
+          "green": "It has a clear, practical arrangement"
+        }
+      },
+      "human": {
+        "prompt": "You are setting up a room you use often. What matters most?",
+        "options": {
+          "red": "It helps me accomplish what I use it for.",
+          "blue": "It feels lively and easy to change.",
+          "yellow": "It feels welcoming and familiar.",
+          "green": "It has a clear, practical layout."
+        }
+      },
+      "measures": "Preferred qualities in a personal environment.",
+      "must_not_change": "Function toward goals, adaptable energy, familiarity, and practical structure must remain distinct.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "room-design-priority",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-S-037@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "recreation",
+      "context": "group-recreation",
+      "orientation": "SELF_PREFERENCE",
+      "family": "game-night-role",
+      "dimensions": [],
+      "current": {
+        "prompt": "A game night offers four roles. Which sounds most enjoyable?",
+        "options": {
+          "red": "Pursue the win and keep play moving",
+          "blue": "Add energy and try surprising moves",
+          "yellow": "Keep everyone involved in the shared experience",
+          "green": "Notice patterns and make a thoughtful strategy"
+        }
+      },
+      "human": {
+        "prompt": "At game night, which role sounds most fun?",
+        "options": {
+          "red": "Go for the win and keep the game moving.",
+          "blue": "Bring energy and try surprising moves.",
+          "yellow": "Keep everyone involved in the experience.",
+          "green": "Spot patterns and build a thoughtful strategy."
+        }
+      },
+      "measures": "Preferred contribution during group recreation.",
+      "must_not_change": "Competition/momentum, expressive novelty, inclusion, and strategic analysis must remain balanced.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "game-night-role",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-S-018@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "follow-through",
+      "context": "wellness-routine",
+      "orientation": "SELF_PREFERENCE",
+      "family": "routine-sustaining-reward",
+      "dimensions": [
+        "SUCCESS_MOTIVATION"
+      ],
+      "current": {
+        "prompt": "A healthy routine has been easy to maintain. What keeps it worthwhile?",
+        "options": {
+          "red": "Seeing continued improvement",
+          "blue": "Keeping enough variety to stay engaged",
+          "yellow": "Feeling supported by a steady rhythm or partner",
+          "green": "Knowing why it works and tracking consistency"
+        }
+      },
+      "human": {
+        "prompt": "A healthy routine has been easy to keep. What makes it worth continuing?",
+        "options": {
+          "red": "Seeing myself keep improving.",
+          "blue": "Having enough variety to stay interested.",
+          "yellow": "Sharing a steady rhythm or support with someone.",
+          "green": "Knowing why it works and tracking consistency."
+        }
+      },
+      "measures": "Reward that sustains an established routine.",
+      "must_not_change": "Improvement, variety, supported continuity, and understood consistency must remain the reward signals.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "routine-sustaining-reward",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "EASY"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-S-047@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "personal-preference",
+      "context": "hobby",
+      "orientation": "SELF_PREFERENCE",
+      "family": "collection-reward",
+      "dimensions": [],
+      "current": {
+        "prompt": "A personal collection has grown large. What do you enjoy most about it?",
+        "options": {
+          "red": "Finding valuable pieces and completing goals",
+          "blue": "Discovering surprising additions",
+          "yellow": "The memories and connections attached to it",
+          "green": "Understanding its categories, history, or quality"
+        }
+      },
+      "human": {
+        "prompt": "Your collection has gotten large. What do you enjoy most about it?",
+        "options": {
+          "red": "Finding valuable pieces and completing goals.",
+          "blue": "Discovering surprising additions.",
+          "yellow": "The memories and connections tied to it.",
+          "green": "Understanding its categories, history, or quality."
+        }
+      },
+      "measures": "Primary reward in maintaining a personal collection.",
+      "must_not_change": "Accomplishment/value, discovery, connection, and knowledge must remain distinct.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "collection-reward",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "EXP3-S-057@validation-2.0.0",
+      "source": "final-pretest-expansion-v2",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "resource-allocation",
+      "context": "community",
+      "orientation": "INTERPERSONAL",
+      "family": "community-donation-use",
+      "dimensions": [
+        "RESOURCE_ALLOCATION"
+      ],
+      "current": {
+        "prompt": "A community space receives a generous donation. What use appeals to you?",
+        "options": {
+          "red": "Fund a visible improvement with clear impact",
+          "blue": "Create new programs people can explore",
+          "yellow": "Strengthen a service people depend on",
+          "green": "Invest in durable systems and measured needs"
+        }
+      },
+      "human": {
+        "prompt": "A community space gets a large donation. What should it fund?",
+        "options": {
+          "red": "A visible improvement with clear impact.",
+          "blue": "New programs people can explore.",
+          "yellow": "A service people rely on.",
+          "green": "Long-lasting systems based on real needs."
+        }
+      },
+      "measures": "Preferred use of shared community resources.",
+      "must_not_change": "Visible impact, possibility, dependable support, and evidence-based durability must remain balanced.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "community-donation-use",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "EASY",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    },
+    {
+      "question_revision_id": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@validation-1.0.0",
+      "source": "reconstructed-legacy",
+      "format": "SINGLE_SELECT",
+      "color": null,
+      "domain": "work-execution",
+      "context": "work-business",
+      "orientation": "SELF_PREFERENCE",
+      "family": "ideal-workday-environment",
+      "dimensions": [],
+      "current": {
+        "prompt": "My ideal workday feels like…",
+        "options": {
+          "red": "progress and measurable wins",
+          "blue": "variety, people, and momentum",
+          "yellow": "steady teamwork and support",
+          "green": "structure, clarity, and focus time"
+        }
+      },
+      "human": {
+        "prompt": "My ideal workday feels like…",
+        "options": {
+          "red": "progress and measurable wins",
+          "blue": "variety, people, and momentum",
+          "yellow": "steady teamwork and support",
+          "green": "structure, clarity, and focus time"
+        }
+      },
+      "measures": "Preferred work environment and reward pattern.",
+      "must_not_change": "The four attractive environments must remain outcome, stimulation, support, and structure.",
+      "preservation_check": {
+        "same_color": null,
+        "same_option_mapping": true,
+        "same_construct": "environment",
+        "no_scoring_change": true
+      },
+      "cognitive_load": {
+        "current": "INSTANT",
+        "proposed": "INSTANT"
+      },
+      "why_easier": "Uses shorter, concrete, conversational wording while keeping the same motivational tradeoff."
+    }
+  ],
+  "production_authority": "NONE",
+  "artifact_hash": "0d58971f70d4877ad65265ebf17441cfdd5a6bd82519ca4f9495a51f279e4986"
+}
