@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "status": "V6_PRE_ACTIVATION_SIMULATION",
+  "bank_id": "viago-validation-bank-308-human-recognition-v6.0.0",
+  "bank_hash": "3e26157677b35089d42c63ec330d3176431ff5da549d1908cc67bfd38bdd9a66",
+  "assembler_version": "VIAGO_RETEST_NOVELTY_ASSEMBLER_V1",
+  "participants": 1000,
+  "attempts_each": 4,
+  "attempts": [
+    {
+      "attempt": 1,
+      "mean_single": 26,
+      "mean_likert": 24,
+      "mean_hr": 4.78,
+      "mean_work": 1.519,
+      "mean_contexts": 26.938,
+      "mean_red": 6,
+      "mean_blue": 6,
+      "mean_yellow": 6,
+      "mean_green": 6
+    },
+    {
+      "attempt": 2,
+      "mean_single": 26,
+      "mean_likert": 24,
+      "mean_hr": 4.765,
+      "mean_work": 1.463,
+      "mean_contexts": 27.737,
+      "mean_red": 6,
+      "mean_blue": 6,
+      "mean_yellow": 6,
+      "mean_green": 6
+    },
+    {
+      "attempt": 3,
+      "mean_single": 26,
+      "mean_likert": 24,
+      "mean_hr": 4.139,
+      "mean_work": 1.446,
+      "mean_contexts": 27.967,
+      "mean_red": 6,
+      "mean_blue": 6,
+      "mean_yellow": 6,
+      "mean_green": 6
+    },
+    {
+      "attempt": 4,
+      "mean_single": 26,
+      "mean_likert": 24,
+      "mean_hr": 3.292,
+      "mean_work": 1.512,
+      "mean_contexts": 27.534,
+      "mean_red": 6,
+      "mean_blue": 6,
+      "mean_yellow": 6,
+      "mean_green": 6
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "mean_exact": 0,
+      "mean_revision": 0,
+      "mean_family": 0,
+      "mean_construct": 0,
+      "mean_experiential": 0.259
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "mean_exact": 0,
+      "mean_revision": 0,
+      "mean_family": 0,
+      "mean_construct": 0,
+      "mean_experiential": 0.307
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "mean_exact": 0,
+      "mean_revision": 0,
+      "mean_family": 0,
+      "mean_construct": 0.027,
+      "mean_experiential": 0.322
+    }
+  ],
+  "selector_failures": 0,
+  "failure_rate": 0,
+  "scoring_changes": "NONE",
+  "audit_hash": "97f3fbcbee72a39fd128e2df960a984fca6d345c051412b6814b3385983ecd7a"
+}

@@ -1,0 +1,3853 @@
+{
+  "schema_version": "1.0.0",
+  "status": "V6_FINAL_RECONCILIATION",
+  "counts": {
+    "ADMIT_NEW": 15,
+    "REPLACE_V5": 12,
+    "REVISE_AND_ADMIT": 5,
+    "DEFER_REDUNDANCY": 9,
+    "REJECT": 4,
+    "REVISE": 19
+  },
+  "items": [
+    {
+      "id": "HR-S-001",
+      "format": "SINGLE_SELECT",
+      "context": "friends",
+      "prompt": "Your friend just got dumped and calls you upset. What do you naturally do first?",
+      "options": [
+        {
+          "id": "HR-S-001:o1",
+          "label": "Help them choose one next step that gets them moving",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-001:o2",
+          "label": "Get them out of the house and into a different mood",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-001:o3",
+          "label": "Stay on the phone and let them talk it through",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-001:o4",
+          "label": "Ask what happened so the pattern makes sense",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "support after breakup",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific friends moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-12",
+        "revision_id": "C02-S-12@expression-1.0.0",
+        "prompt": "A friend is overwhelmed by commitments. What help comes naturally?",
+        "similarity": 0.167
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-002",
+      "format": "SINGLE_SELECT",
+      "context": "friends",
+      "prompt": "A friend is celebrating a big win. What part do you enjoy most?",
+      "options": [
+        {
+          "id": "HR-S-002:o1",
+          "label": "Recognizing how hard they worked for it",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-002:o2",
+          "label": "Making the celebration feel exciting and memorable",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-002:o3",
+          "label": "Seeing people who care about them show up",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-002:o4",
+          "label": "Hearing exactly how they made it happen",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "celebrating success",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific friends moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-047",
+        "revision_id": "EXP3-S-047@human-1.0.0",
+        "prompt": "Your collection has gotten large. What do you enjoy most about it?",
+        "similarity": 0.182
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-003",
+      "format": "SINGLE_SELECT",
+      "context": "friends",
+      "prompt": "A friend keeps canceling plans at the last minute. What bothers you most?",
+      "options": [
+        {
+          "id": "HR-S-003:o1",
+          "label": "Nothing ever gets settled or completed",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-003:o2",
+          "label": "The whole experience loses its energy",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-003:o3",
+          "label": "It starts to weaken the friendship",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-003:o4",
+          "label": "You cannot rely on the plan they gave you",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "friendship reliability",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific friends moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "86f93908-6a45-42f7-bd7b-d2d7d3d13de6",
+        "revision_id": "86f93908-6a45-42f7-bd7b-d2d7d3d13de6@engagement-1.0.0",
+        "prompt": "Plans for a group trip change at the last minute. What do you explain first?",
+        "similarity": 0.231
+      },
+      "recommended_disposition": "REJECT",
+      "review_reason": "The four-way architecture is too strained or socially loaded to justify preserving this draft.",
+      "final_disposition": "REJECT"
+    },
+    {
+      "id": "HR-S-004",
+      "format": "SINGLE_SELECT",
+      "context": "friends",
+      "prompt": "You and a close friend disagree about a big life choice. What do you want from the conversation?",
+      "options": [
+        {
+          "id": "HR-S-004:o1",
+          "label": "A clear decision about what happens next",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-004:o2",
+          "label": "Room to explore a different possibility",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-004:o3",
+          "label": "Confidence that the friendship stays solid",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-004:o4",
+          "label": "A shared understanding of the facts",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "friendship disagreement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific friends moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-048",
+        "revision_id": "EXP3-S-048@human-1.0.0",
+        "prompt": "You and a friend disagree about how to spend a shared day. What do you want first?",
+        "similarity": 0.308
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-005",
+      "format": "SINGLE_SELECT",
+      "context": "family",
+      "prompt": "Your family has one free Saturday together. What sounds best?",
+      "options": [
+        {
+          "id": "HR-S-005:o1",
+          "label": "Doing something everyone will feel proud to finish",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-005:o2",
+          "label": "Going somewhere lively that none of you has tried",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-005:o3",
+          "label": "Returning to something meaningful everyone enjoys",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-005:o4",
+          "label": "Choosing something with clear details, timing, and expectations",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "family free time",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific family moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-001",
+        "revision_id": "EXP3-S-001@human-1.0.0",
+        "prompt": "You have a free Saturday with no obligations. What would make it feel best spent?",
+        "similarity": 0.273
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REVISE_AND_ADMIT"
+    },
+    {
+      "id": "HR-S-006",
+      "format": "SINGLE_SELECT",
+      "context": "family",
+      "prompt": "A family tradition no longer works for everyone. What matters most?",
+      "options": [
+        {
+          "id": "HR-S-006:o1",
+          "label": "Choosing a better version and moving forward",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-006:o2",
+          "label": "Turning it into something fresh and enjoyable",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-006:o3",
+          "label": "Keeping the part that holds the family together",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-006:o4",
+          "label": "Understanding what must change and what still works",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "family tradition",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific family moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C03-S-04",
+        "revision_id": "C03-S-04@human-1.0.0",
+        "prompt": "A family tradition still matters, but its format no longer fits. What matters most in updating it?",
+        "similarity": 0.497
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-007",
+      "format": "SINGLE_SELECT",
+      "context": "family",
+      "prompt": "A relative asks you to host a holiday meal. What part pulls you in?",
+      "options": [
+        {
+          "id": "HR-S-007:o1",
+          "label": "Making it an occasion people will remember",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-007:o2",
+          "label": "Creating a fun atmosphere that keeps moving",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-007:o3",
+          "label": "Giving everyone a place where they feel they belong",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-007:o4",
+          "label": "Making the timing, food, and space work well",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "holiday hosting",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific family moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-035",
+        "revision_id": "EXP3-S-035@human-1.0.0",
+        "prompt": "A relative tells the same favorite story again. What do you naturally attend to?",
+        "similarity": 0.151
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-008",
+      "format": "SINGLE_SELECT",
+      "context": "family",
+      "prompt": "Someone in your family reaches a difficult goal. What do you notice first?",
+      "options": [
+        {
+          "id": "HR-S-008:o1",
+          "label": "The determination it took to succeed",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-008:o2",
+          "label": "The excitement their success creates",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-008:o3",
+          "label": "Who supported them along the way",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-008:o4",
+          "label": "The choices that made the result possible",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "family achievement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific family moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-055",
+        "revision_id": "EXP3-S-055@human-1.0.0",
+        "prompt": "A friend introduces you to someone they value. What do you notice first?",
+        "similarity": 0.3
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-009",
+      "format": "SINGLE_SELECT",
+      "context": "travel",
+      "prompt": "You arrive at a resort with a completely free afternoon. What sounds best?",
+      "options": [
+        {
+          "id": "HR-S-009:o1",
+          "label": "Finding the one experience worth saying you conquered",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-009:o2",
+          "label": "Following whatever looks most exciting in the moment",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-009:o3",
+          "label": "Settling in with the people you came with",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-009:o4",
+          "label": "Learning the layout and choosing the best use of the time",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "vacation free time",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific travel moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-13",
+        "revision_id": "C02-S-13@human-1.0.0",
+        "prompt": "An afternoon unexpectedly becomes free with no obligations. What are you most naturally drawn to do?",
+        "similarity": 0.154
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-010",
+      "format": "SINGLE_SELECT",
+      "context": "travel",
+      "prompt": "You are choosing a hotel for a trip you have saved for. What wins you over?",
+      "options": [
+        {
+          "id": "HR-S-010:o1",
+          "label": "The room or service feels like a real upgrade",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-010:o2",
+          "label": "The place looks fun and full of things to try",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-010:o3",
+          "label": "It feels warm and right for the people traveling with you",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-010:o4",
+          "label": "The reviews, location, and details hold up",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "hotel choice",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific travel moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-052",
+        "revision_id": "EXP3-S-052@human-1.0.0",
+        "prompt": "A trip has one open morning. Which plan attracts you?",
+        "similarity": 0.091
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-011",
+      "format": "SINGLE_SELECT",
+      "context": "travel",
+      "prompt": "Your road trip has an unexpected four-hour delay. What is your first instinct?",
+      "options": [
+        {
+          "id": "HR-S-011:o1",
+          "label": "Find the fastest workable route and keep moving",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-011:o2",
+          "label": "Turn the delay into a new stop or story",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-011:o3",
+          "label": "Make sure everyone is okay with the new plan",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-011:o4",
+          "label": "Check the options and consequences before choosing",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "travel disruption",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific travel moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-013",
+        "revision_id": "EXP3-S-013@human-1.0.0",
+        "prompt": "You find an unexpected hour in your day. What do you notice first?",
+        "similarity": 0.273
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-012",
+      "format": "SINGLE_SELECT",
+      "context": "travel",
+      "prompt": "You are packing for a week away. Which approach feels most like you?",
+      "options": [
+        {
+          "id": "HR-S-012:o1",
+          "label": "Pack what supports the trip you intend to have",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-012:o2",
+          "label": "Start with favorites and adjust as ideas come",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-012:o3",
+          "label": "Think about comfort and what the group may need",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-012:o4",
+          "label": "Use a list and check the details before leaving",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "vacation packing",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific travel moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP1-S-01",
+        "revision_id": "EXP1-S-01@human-1.0.0",
+        "prompt": "You're planning a weekend away with a friend. What do you most want them to bring?",
+        "similarity": 0.247
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-013",
+      "format": "SINGLE_SELECT",
+      "context": "money",
+      "prompt": "You unexpectedly receive $500 after every bill is paid. What sounds most satisfying?",
+      "options": [
+        {
+          "id": "HR-S-013:o1",
+          "label": "Put it toward a visible goal or meaningful upgrade",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-013:o2",
+          "label": "Spend it on an experience you will remember",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-013:o3",
+          "label": "Use some of it for people or a cause you value",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-013:o4",
+          "label": "Save it or make the choice with the strongest value",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "unexpected money",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific money moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b",
+        "revision_id": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@human-1.0.0",
+        "prompt": "You receive unexpected money that is genuinely available to use. Which choice feels most satisfying?",
+        "similarity": 0.176
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-014",
+      "format": "SINGLE_SELECT",
+      "context": "money",
+      "prompt": "You have been saving for something expensive. What keeps you motivated?",
+      "options": [
+        {
+          "id": "HR-S-014:o1",
+          "label": "Watching yourself get closer to the target",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-014:o2",
+          "label": "Imagining the new experiences it will open",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-014:o3",
+          "label": "Knowing why it matters to you or your family",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-014:o4",
+          "label": "Seeing the plan work exactly as expected",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "saving motivation",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific money moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-04",
+        "revision_id": "C02-S-04@expression-1.0.0",
+        "prompt": "A shared household routine keeps failing. What do you try?",
+        "similarity": 0.091
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-015",
+      "format": "SINGLE_SELECT",
+      "context": "money",
+      "prompt": "A friend offers you a risky investment idea. What draws your attention first?",
+      "options": [
+        {
+          "id": "HR-S-015:o1",
+          "label": "The size of the possible win",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-015:o2",
+          "label": "The possibility that it is something new",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-015:o3",
+          "label": "Whether you trust the person bringing it to you",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-015:o4",
+          "label": "The evidence, assumptions, and downside",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "risk attention",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific money moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-10",
+        "revision_id": "C02-S-10@expression-1.0.0",
+        "prompt": "You hear a promising but unfinished idea. What catches your attention first?",
+        "similarity": 0.25
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-016",
+      "format": "SINGLE_SELECT",
+      "context": "money",
+      "prompt": "You decide to spend less for a month. What makes the challenge appealing?",
+      "options": [
+        {
+          "id": "HR-S-016:o1",
+          "label": "Beating a clear target",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-016:o2",
+          "label": "Finding creative ways to still enjoy yourself",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-016:o3",
+          "label": "Doing it alongside someone you care about",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-016:o4",
+          "label": "Tracking where the money actually goes",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "spending challenge",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific money moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C01-S-07",
+        "revision_id": "C01-S-07@expression-1.0.0",
+        "prompt": "Friends cannot decide what to do. What do you add?",
+        "similarity": 0.1
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-017",
+      "format": "SINGLE_SELECT",
+      "context": "shopping",
+      "prompt": "You are buying a phone you expect to keep for years. What matters most?",
+      "options": [
+        {
+          "id": "HR-S-017:o1",
+          "label": "Strong performance and a premium feel",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-017:o2",
+          "label": "Features that make everyday life more interesting",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-017:o3",
+          "label": "A phone that helps me stay connected with the people in my life",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-017:o4",
+          "label": "Reliability, evidence, and long-term value",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "phone purchase",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific shopping moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C03-S-03",
+        "revision_id": "C03-S-03@human-1.0.0",
+        "prompt": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?",
+        "similarity": 0.056
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REVISE_AND_ADMIT"
+    },
+    {
+      "id": "HR-S-018",
+      "format": "SINGLE_SELECT",
+      "context": "shopping",
+      "prompt": "You are choosing a gift for someone close to you. What feels most satisfying?",
+      "options": [
+        {
+          "id": "HR-S-018:o1",
+          "label": "Finding something impressive they would not buy themselves",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-018:o2",
+          "label": "Finding something surprising that creates a great reaction",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-018:o3",
+          "label": "Finding something tied to your relationship with them",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-018:o4",
+          "label": "Finding something that fits what they actually use",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "gift choice",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific shopping moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-016",
+        "revision_id": "EXP3-S-016@human-1.0.0",
+        "prompt": "You are picking a gift for someone you know well. What guides you most?",
+        "similarity": 0.273
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-019",
+      "format": "SINGLE_SELECT",
+      "context": "shopping",
+      "prompt": "You see an expensive item you immediately love. What happens next?",
+      "options": [
+        {
+          "id": "HR-S-019:o1",
+          "label": "I picture how good it will feel to own the best version",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-019:o2",
+          "label": "I get excited by how new and different it feels",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-019:o3",
+          "label": "I think about whether it fits my life and values",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-019:o4",
+          "label": "I compare the facts before deciding",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "purchase impulse",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific shopping moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+        "revision_id": "9dfbefb2-64e4-48aa-b3d2-219463a49544@expression-1.0.0",
+        "prompt": "A personal goal has stopped improving. What do you try next?",
+        "similarity": 0.083
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-020",
+      "format": "SINGLE_SELECT",
+      "context": "shopping",
+      "prompt": "Two couches cost the same. Which difference is most persuasive?",
+      "options": [
+        {
+          "id": "HR-S-020:o1",
+          "label": "One makes the room look notably better",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-020:o2",
+          "label": "One has a style that feels fresh and expressive",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-020:o3",
+          "label": "One feels welcoming for the people who use it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-020:o4",
+          "label": "One has stronger materials and reviews",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "furniture choice",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific shopping moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "e6164f25-f8ce-4038-8a32-b001f5fecb48",
+        "revision_id": "e6164f25-f8ce-4038-8a32-b001f5fecb48@expression-1.0.0",
+        "prompt": "Which recognition means the most to you?",
+        "similarity": 0.111
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-021",
+      "format": "SINGLE_SELECT",
+      "context": "style",
+      "prompt": "You are dressing for an event where you want to feel like yourself. What do you reach for?",
+      "options": [
+        {
+          "id": "HR-S-021:o1",
+          "label": "Something sharp that makes a strong impression",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-021:o2",
+          "label": "Something expressive that lifts your energy",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-021:o3",
+          "label": "Something comfortable that feels authentic",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-021:o4",
+          "label": "Something clean, versatile, and well put together",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "personal style",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific style moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C03-S-10",
+        "revision_id": "C03-S-10@human-1.0.0",
+        "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?",
+        "similarity": 0.125
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-022",
+      "format": "SINGLE_SELECT",
+      "context": "style",
+      "prompt": "A friend asks which outfit suits them. What do you notice first?",
+      "options": [
+        {
+          "id": "HR-S-022:o1",
+          "label": "Which one gives them the strongest presence",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-022:o2",
+          "label": "Which one brings out their personality",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-022:o3",
+          "label": "Which one lets them look relaxed and genuine",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-022:o4",
+          "label": "Which one fits the setting and works as a whole",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "style advice",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific style moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-055",
+        "revision_id": "EXP3-S-055@human-1.0.0",
+        "prompt": "A friend introduces you to someone they value. What do you notice first?",
+        "similarity": 0.333
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-023",
+      "format": "SINGLE_SELECT",
+      "context": "style",
+      "prompt": "You are replacing something you wear all the time. What makes one choice feel right?",
+      "options": [
+        {
+          "id": "HR-S-023:o1",
+          "label": "It looks like a meaningful upgrade",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-023:o2",
+          "label": "It gives you more ways to express yourself",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-023:o3",
+          "label": "It feels like something I will value and want to keep",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-023:o4",
+          "label": "It will work reliably in many situations",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "wardrobe replacement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific style moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-031",
+        "revision_id": "EXP3-S-031@human-1.0.0",
+        "prompt": "You have two equally good ways to finish an ordinary task. What makes one feel complete?",
+        "similarity": 0.167
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "REVISE_AND_ADMIT"
+    },
+    {
+      "id": "HR-S-024",
+      "format": "SINGLE_SELECT",
+      "context": "style",
+      "prompt": "You walk into a room and notice someone immediately. What most likely caught your eye?",
+      "options": [
+        {
+          "id": "HR-S-024:o1",
+          "label": "Their confident presence",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-024:o2",
+          "label": "Their energy and originality",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-024:o3",
+          "label": "The warmth between them and other people",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-024:o4",
+          "label": "A detail that reveals care or intention",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "social attention",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific style moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-006",
+        "revision_id": "EXP3-S-006@human-1.0.0",
+        "prompt": "Someone recommends a book you might enjoy. What makes you most likely to read it?",
+        "similarity": 0.188
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-025",
+      "format": "SINGLE_SELECT",
+      "context": "games",
+      "prompt": "A friendly game gets close near the end. What makes it fun for you?",
+      "options": [
+        {
+          "id": "HR-S-025:o1",
+          "label": "The chance to pull out the win",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-025:o2",
+          "label": "The energy and unexpected turns",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-025:o3",
+          "label": "Sharing the moment with everyone playing",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-025:o4",
+          "label": "Seeing whether your strategy holds up",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "friendly competition",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific games moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-037",
+        "revision_id": "EXP3-S-037@human-1.0.0",
+        "prompt": "At game night, which role sounds most fun?",
+        "similarity": 0.167
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-026",
+      "format": "SINGLE_SELECT",
+      "context": "games",
+      "prompt": "Your group starts a game nobody knows well. What role feels natural?",
+      "options": [
+        {
+          "id": "HR-S-026:o1",
+          "label": "Get everyone started and learn while playing",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-026:o2",
+          "label": "Make the first round loose and entertaining",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-026:o3",
+          "label": "Help everyone stay included as they learn",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-026:o4",
+          "label": "Read enough of the rules to keep play clear",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "new game",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific games moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-037",
+        "revision_id": "EXP3-S-037@human-1.0.0",
+        "prompt": "At game night, which role sounds most fun?",
+        "similarity": 0.154
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-027",
+      "format": "SINGLE_SELECT",
+      "context": "games",
+      "prompt": "You lose a game you expected to win. What thought comes first?",
+      "options": [
+        {
+          "id": "HR-S-027:o1",
+          "label": "I want another shot at it",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-027:o2",
+          "label": "That was still a good story",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-027:o3",
+          "label": "I care more about how the group feels afterward",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-027:o4",
+          "label": "I want to know where my strategy failed",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "response to losing",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific games moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-043",
+        "revision_id": "EXP3-S-043@human-1.0.0",
+        "prompt": "A friend asks what made a shared trip memorable. What comes to mind first?",
+        "similarity": 0.143
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-028",
+      "format": "SINGLE_SELECT",
+      "context": "games",
+      "prompt": "You join a trivia team. What contribution sounds most enjoyable?",
+      "options": [
+        {
+          "id": "HR-S-028:o1",
+          "label": "Taking responsibility for the final answer",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-028:o2",
+          "label": "Keeping the team energized between questions",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-028:o3",
+          "label": "Making sure everyone gets heard",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-028:o4",
+          "label": "Remembering details and connecting clues",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "trivia contribution",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific games moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-037",
+        "revision_id": "EXP3-S-037@human-1.0.0",
+        "prompt": "At game night, which role sounds most fun?",
+        "similarity": 0.182
+      },
+      "recommended_disposition": "REJECT",
+      "review_reason": "The four-way architecture is too strained or socially loaded to justify preserving this draft.",
+      "final_disposition": "REJECT"
+    },
+    {
+      "id": "HR-S-029",
+      "format": "SINGLE_SELECT",
+      "context": "social",
+      "prompt": "You walk into a wedding reception where you know only two people. What do you do first?",
+      "options": [
+        {
+          "id": "HR-S-029:o1",
+          "label": "Find your people and establish where you fit",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-029:o2",
+          "label": "Start exploring the room and meeting someone new",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-029:o3",
+          "label": "Stay close to the people you came to support",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-029:o4",
+          "label": "Take in the room before deciding where to settle",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "unfamiliar social setting",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific social moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "eae82ae1-ca73-4c00-b328-7c846c5fbc26",
+        "revision_id": "eae82ae1-ca73-4c00-b328-7c846c5fbc26@expression-1.0.0",
+        "prompt": "A system people rely on breaks down. What do you focus on first?",
+        "similarity": 0.143
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-030",
+      "format": "SINGLE_SELECT",
+      "context": "social",
+      "prompt": "A party is going well and it is getting late. What most influences when you leave?",
+      "options": [
+        {
+          "id": "HR-S-030:o1",
+          "label": "Whether the night has already reached its high point",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-030:o2",
+          "label": "Whether the energy still feels alive",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-030:o3",
+          "label": "Whether the people I came with are ready",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-030:o4",
+          "label": "What tomorrow requires and how late it is",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "leaving social event",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific social moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-005",
+        "revision_id": "EXP3-S-005@human-1.0.0",
+        "prompt": "A celebration is going well. What do you naturally add?",
+        "similarity": 0.182
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REVISE_AND_ADMIT"
+    },
+    {
+      "id": "HR-S-031",
+      "format": "SINGLE_SELECT",
+      "context": "social",
+      "prompt": "Friends are meeting at 7. Which description is closest to you?",
+      "options": [
+        {
+          "id": "HR-S-031:o1",
+          "label": "I want to arrive ready for the main event",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-031:o2",
+          "label": "I may arrive when the evening starts feeling alive",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-031:o3",
+          "label": "I coordinate with the people I am going with",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-031:o4",
+          "label": "I plan backward so I know when to leave",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "social punctuality",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific social moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C01-S-07",
+        "revision_id": "C01-S-07@expression-1.0.0",
+        "prompt": "Friends cannot decide what to do. What do you add?",
+        "similarity": 0.143
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-032",
+      "format": "SINGLE_SELECT",
+      "context": "social",
+      "prompt": "A quiet gathering suddenly turns into dancing. What sounds most like you?",
+      "options": [
+        {
+          "id": "HR-S-032:o1",
+          "label": "I join if I can bring confident energy",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-032:o2",
+          "label": "I am curious and may be one of the first out there",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-032:o3",
+          "label": "I join when it feels good with the people around me",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-032:o4",
+          "label": "I watch for a bit and decide whether it fits me",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "dance-floor response",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific social moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-037",
+        "revision_id": "EXP3-S-037@human-1.0.0",
+        "prompt": "At game night, which role sounds most fun?",
+        "similarity": 0.154
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-033",
+      "format": "SINGLE_SELECT",
+      "context": "home",
+      "prompt": "You have one day to improve a room in your home. What would feel best?",
+      "options": [
+        {
+          "id": "HR-S-033:o1",
+          "label": "A visible change that makes the room feel upgraded",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-033:o2",
+          "label": "A fresh change that makes the space more fun",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-033:o3",
+          "label": "A change that makes people feel more at home",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-033:o4",
+          "label": "A change that makes the room work better every day",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "home improvement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific home moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-007",
+        "revision_id": "EXP3-S-007@human-1.0.0",
+        "prompt": "You are setting up a room you use often. What matters most?",
+        "similarity": 0.083
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-034",
+      "format": "SINGLE_SELECT",
+      "context": "home",
+      "prompt": "A closet has become hard to use. What motivates you to deal with it?",
+      "options": [
+        {
+          "id": "HR-S-034:o1",
+          "label": "The satisfaction of taking control of the mess",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-034:o2",
+          "label": "The chance to rediscover things and change it up",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-034:o3",
+          "label": "Making everyday life easier for everyone sharing it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-034:o4",
+          "label": "Creating an order that will stay useful",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "home organization motive",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific home moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-041",
+        "revision_id": "EXP3-S-041@human-1.0.0",
+        "prompt": "Your household has one free shelf. What would you use it for?",
+        "similarity": 0.1
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-035",
+      "format": "SINGLE_SELECT",
+      "context": "home",
+      "prompt": "You are planning a backyard get-together. What do you care about most?",
+      "options": [
+        {
+          "id": "HR-S-035:o1",
+          "label": "Making it feel like a standout event",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-035:o2",
+          "label": "Giving people plenty to do and talk about",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-035:o3",
+          "label": "Creating a relaxed place where people connect",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-035:o4",
+          "label": "Getting the setup and timing to work cleanly",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "home gathering",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific home moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-024",
+        "revision_id": "EXP3-S-024@human-1.0.0",
+        "prompt": "A friend group is planning a recurring get-together. What makes you want to keep attending?",
+        "similarity": 0.214
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-036",
+      "format": "SINGLE_SELECT",
+      "context": "home",
+      "prompt": "A household item keeps breaking. What is your natural response?",
+      "options": [
+        {
+          "id": "HR-S-036:o1",
+          "label": "Replace it with something stronger and be done",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-036:o2",
+          "label": "Try a different solution that might work better",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-036:o3",
+          "label": "Choose what will be dependable for everyone using it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-036:o4",
+          "label": "Find the cause so the next choice fixes the problem",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "household problem",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific home moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-04",
+        "revision_id": "C02-S-04@expression-1.0.0",
+        "prompt": "A shared household routine keeps failing. What do you try?",
+        "similarity": 0.2
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-037",
+      "format": "SINGLE_SELECT",
+      "context": "fitness",
+      "prompt": "You decide to exercise more regularly. What would keep you going?",
+      "options": [
+        {
+          "id": "HR-S-037:o1",
+          "label": "A target I can measure and beat",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-037:o2",
+          "label": "Enough variety that it stays energizing",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-037:o3",
+          "label": "Doing it with someone who keeps showing up",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-037:o4",
+          "label": "A routine whose method and progress make sense",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "fitness motivation",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific fitness moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C01-S-07",
+        "revision_id": "C01-S-07@expression-1.0.0",
+        "prompt": "Friends cannot decide what to do. What do you add?",
+        "similarity": 0.111
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-038",
+      "format": "SINGLE_SELECT",
+      "context": "fitness",
+      "prompt": "You finish a difficult workout. What feels most rewarding?",
+      "options": [
+        {
+          "id": "HR-S-038:o1",
+          "label": "Knowing I pushed past a limit",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-038:o2",
+          "label": "The rush and energy afterward",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-038:o3",
+          "label": "Sharing the effort with someone",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-038:o4",
+          "label": "Seeing what improved in my performance",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "workout reward",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific fitness moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-059",
+        "revision_id": "EXP3-S-059@human-1.0.0",
+        "prompt": "You can spend a small windfall on one of four good things. Which feels most rewarding?",
+        "similarity": 0.214
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-039",
+      "format": "SINGLE_SELECT",
+      "context": "fitness",
+      "prompt": "A workout plan stops producing results. What do you want to do?",
+      "options": [
+        {
+          "id": "HR-S-039:o1",
+          "label": "Raise the challenge and get progress moving",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-039:o2",
+          "label": "Change it up and try something fresh",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-039:o3",
+          "label": "Find a version I can sustain with support",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-039:o4",
+          "label": "Review the data and adjust what is not working",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "fitness plateau",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific fitness moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C02-S-02",
+        "revision_id": "C02-S-02@expression-1.0.0",
+        "prompt": "Friends want to change the weekend plan. What do you focus on?",
+        "similarity": 0.2
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-040",
+      "format": "SINGLE_SELECT",
+      "context": "fitness",
+      "prompt": "A friend invites you to train for an event together. What pulls you in?",
+      "options": [
+        {
+          "id": "HR-S-040:o1",
+          "label": "Having a finish line to chase",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-040:o2",
+          "label": "The adventure of doing something different",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-040:o3",
+          "label": "The shared commitment with my friend",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-040:o4",
+          "label": "The chance to follow a clear training plan",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "shared fitness goal",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific fitness moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+        "revision_id": "7cf21580-ec06-4c65-b602-4c9317eeac3d@expression-1.0.0",
+        "prompt": "A friend offers to handle part of a weekend event. What do you settle first?",
+        "similarity": 0.167
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-041",
+      "format": "SINGLE_SELECT",
+      "context": "community",
+      "prompt": "A neighborhood event needs volunteers. Which role sounds best?",
+      "options": [
+        {
+          "id": "HR-S-041:o1",
+          "label": "Own a visible outcome and make sure it happens",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-041:o2",
+          "label": "Create an activity that draws people in",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-041:o3",
+          "label": "Welcome people and keep connections strong",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-041:o4",
+          "label": "Handle a system that makes the event run reliably",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "community volunteering",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific community moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-010",
+        "revision_id": "EXP3-S-010@human-1.0.0",
+        "prompt": "A local event offers several ways to participate. Which role attracts you?",
+        "similarity": 0.234
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-042",
+      "format": "SINGLE_SELECT",
+      "context": "community",
+      "prompt": "A local cause matters to you. How are you most likely to stay involved?",
+      "options": [
+        {
+          "id": "HR-S-042:o1",
+          "label": "Take responsibility for a concrete result",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-042:o2",
+          "label": "Bring energy and new ways to get attention",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-042:o3",
+          "label": "Build lasting relationships around the cause",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-042:o4",
+          "label": "Understand the issue and support what works",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "cause involvement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific community moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP1-S-07",
+        "revision_id": "EXP1-S-07@human-1.0.0",
+        "prompt": "A new neighbor begins bringing people together. What would make you most likely to trust their influence?",
+        "similarity": 0.205
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-043",
+      "format": "SINGLE_SELECT",
+      "context": "community",
+      "prompt": "A neighbor you barely know asks for help. What affects your answer most?",
+      "options": [
+        {
+          "id": "HR-S-043:o1",
+          "label": "Whether I can solve the problem directly",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-043:o2",
+          "label": "Whether it could become an interesting shared effort",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-043:o3",
+          "label": "Whether saying yes builds a better connection",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-043:o4",
+          "label": "Whether I understand what is actually needed",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "neighbor help",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific community moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-026",
+        "revision_id": "EXP3-S-026@human-1.0.0",
+        "prompt": "A neighbor asks for help with a small community idea. What would make you join?",
+        "similarity": 0.311
+      },
+      "recommended_disposition": "REJECT",
+      "review_reason": "The four-way architecture is too strained or socially loaded to justify preserving this draft.",
+      "final_disposition": "REJECT"
+    },
+    {
+      "id": "HR-S-044",
+      "format": "SINGLE_SELECT",
+      "context": "community",
+      "prompt": "Your community group has limited money. What priority feels strongest?",
+      "options": [
+        {
+          "id": "HR-S-044:o1",
+          "label": "Fund the change with the clearest visible impact",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-044:o2",
+          "label": "Fund the idea that could create fresh participation",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-044:o3",
+          "label": "Fund what protects belonging and continuity",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-044:o4",
+          "label": "Fund the option with the strongest evidence and durability",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "community budget",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific community moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-057",
+        "revision_id": "EXP3-S-057@human-1.0.0",
+        "prompt": "A community space gets a large donation. What should it fund?",
+        "similarity": 0.157
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-045",
+      "format": "SINGLE_SELECT",
+      "context": "animals",
+      "prompt": "You spend an afternoon at an animal shelter. What stays with you most?",
+      "options": [
+        {
+          "id": "HR-S-045:o1",
+          "label": "The progress made when an animal is successfully placed",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-045:o2",
+          "label": "The different personalities and lively moments",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-045:o3",
+          "label": "The bond and trust that can grow with patient care",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-045:o4",
+          "label": "Learning what each animal needs to do well",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "animal shelter",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific animals moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP2-S-10",
+        "revision_id": "EXP2-S-10@human-1.0.0",
+        "prompt": "On a group trip, everyone can spend one afternoon separately or together. Which arrangement most appeals to you?",
+        "similarity": 0.2
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-046",
+      "format": "SINGLE_SELECT",
+      "context": "nature",
+      "prompt": "You visit a national park for one day. What sounds most satisfying?",
+      "options": [
+        {
+          "id": "HR-S-046:o1",
+          "label": "Completing a trail that feels like an achievement",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-046:o2",
+          "label": "Following curiosity toward the most exciting experience",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-046:o3",
+          "label": "Sharing an unhurried day with people you care about",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-046:o4",
+          "label": "Learning enough about the place to notice what makes it special",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "nature visit",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific nature moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C03-S-07",
+        "revision_id": "C03-S-07@human-1.0.0",
+        "prompt": "You have one free day in a place you've always wanted to visit. How do you plan it?",
+        "similarity": 0.231
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REVISE_AND_ADMIT"
+    },
+    {
+      "id": "HR-S-047",
+      "format": "SINGLE_SELECT",
+      "context": "animals",
+      "prompt": "A friend is choosing whether to adopt a pet. What question comes to you first?",
+      "options": [
+        {
+          "id": "HR-S-047:o1",
+          "label": "Are you ready to take full responsibility for it?",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-047:o2",
+          "label": "What kind of personality would make life more fun?",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-047:o3",
+          "label": "Can you offer a lasting bond and steady home?",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-047:o4",
+          "label": "What care, cost, and routine will it require?",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "pet adoption advice",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific animals moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C03-S-08",
+        "revision_id": "C03-S-08@human-1.0.0",
+        "prompt": "A friend is choosing between two good opportunities. What do you ask first?",
+        "similarity": 0.231
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-048",
+      "format": "SINGLE_SELECT",
+      "context": "nature",
+      "prompt": "Your group finds a quiet overlook with no one else around. What makes the moment valuable?",
+      "options": [
+        {
+          "id": "HR-S-048:o1",
+          "label": "It feels like reaching somewhere worth the effort",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-048:o2",
+          "label": "It feels like discovering something unexpected",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-048:o3",
+          "label": "It becomes a memory shared with the people there",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-048:o4",
+          "label": "You can slow down and notice how the place fits together",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "meaning of nature moment",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific nature moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-030",
+        "revision_id": "EXP3-S-030@human-1.0.0",
+        "prompt": "A hobby group has room for one new activity. What would you advocate for?",
+        "similarity": 0.133
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-049",
+      "format": "SINGLE_SELECT",
+      "context": "conflict",
+      "prompt": "Two friends are arguing and pull you into it. What do you naturally contribute?",
+      "options": [
+        {
+          "id": "HR-S-049:o1",
+          "label": "Push toward the decision that resolves it",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-049:o2",
+          "label": "Offer another angle that loosens the stalemate",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-049:o3",
+          "label": "Keep the relationship from being damaged",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-049:o4",
+          "label": "Separate what happened from what each person assumed",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "friend conflict",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific conflict moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "f6d67e8f-9521-42e7-9f20-2322e033e33b",
+        "revision_id": "f6d67e8f-9521-42e7-9f20-2322e033e33b@expression-1.0.0",
+        "prompt": "Two people who need to work together disagree. What do you naturally add?",
+        "similarity": 0.154
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-050",
+      "format": "SINGLE_SELECT",
+      "context": "conflict",
+      "prompt": "Someone criticizes you in front of other people. What reaction is hardest to ignore?",
+      "options": [
+        {
+          "id": "HR-S-050:o1",
+          "label": "The urge to answer directly and regain ground",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-050:o2",
+          "label": "The urge to change the energy and move past it",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-050:o3",
+          "label": "The concern that trust has been damaged",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-050:o4",
+          "label": "The need to determine whether the criticism is accurate",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "public criticism",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific conflict moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-055",
+        "revision_id": "EXP3-S-055@human-1.0.0",
+        "prompt": "A friend introduces you to someone they value. What do you notice first?",
+        "similarity": 0.077
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-051",
+      "format": "SINGLE_SELECT",
+      "context": "conflict",
+      "prompt": "A disagreement has gone in circles for an hour. What do you want most?",
+      "options": [
+        {
+          "id": "HR-S-051:o1",
+          "label": "A decision that lets everyone move forward",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-051:o2",
+          "label": "A new idea that breaks the pattern",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-051:o3",
+          "label": "A way to continue without weakening the relationship",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-051:o4",
+          "label": "A clear statement of what is actually disputed",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "circular disagreement",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific conflict moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP1-S-01",
+        "revision_id": "EXP1-S-01@human-1.0.0",
+        "prompt": "You're planning a weekend away with a friend. What do you most want them to bring?",
+        "similarity": 0.182
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-052",
+      "format": "SINGLE_SELECT",
+      "context": "conflict",
+      "prompt": "You realize you were wrong during an argument. What feels most natural next?",
+      "options": [
+        {
+          "id": "HR-S-052:o1",
+          "label": "Own it clearly and settle what happens next",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-052:o2",
+          "label": "Shift toward a better way forward",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-052:o3",
+          "label": "Repair the connection with the other person",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-052:o4",
+          "label": "Explain what changed your understanding",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "admitting wrong",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific conflict moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-021",
+        "revision_id": "EXP3-S-021@human-1.0.0",
+        "prompt": "You have finished a personal goal earlier than expected. What feels most natural next?",
+        "similarity": 0.267
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-053",
+      "format": "SINGLE_SELECT",
+      "context": "success",
+      "prompt": "You finish a personal project you worked on for months. What do you want next?",
+      "options": [
+        {
+          "id": "HR-S-053:o1",
+          "label": "A visible next goal that builds on the win",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-053:o2",
+          "label": "A fresh project with a different kind of energy",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-053:o3",
+          "label": "Time to share the result with people who mattered",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-053:o4",
+          "label": "A look at what worked so you can repeat it",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "after success",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific success moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP2-S-01",
+        "revision_id": "EXP2-S-01@human-1.0.0",
+        "prompt": "A personal goal succeeds sooner than expected. What are you most naturally drawn to do next?",
+        "similarity": 0.133
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-054",
+      "format": "SINGLE_SELECT",
+      "context": "success",
+      "prompt": "Someone compliments something you did well. Which compliment lands best?",
+      "options": [
+        {
+          "id": "HR-S-054:o1",
+          "label": "You really delivered",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-054:o2",
+          "label": "You made that exciting and original",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-054:o3",
+          "label": "You made people feel part of it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-054:o4",
+          "label": "You thought that through beautifully",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "preferred recognition",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific success moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "e6164f25-f8ce-4038-8a32-b001f5fecb48",
+        "revision_id": "e6164f25-f8ce-4038-8a32-b001f5fecb48@expression-1.0.0",
+        "prompt": "Which recognition means the most to you?",
+        "similarity": 0
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-055",
+      "format": "SINGLE_SELECT",
+      "context": "failure",
+      "prompt": "A plan you cared about fails. What helps you recover?",
+      "options": [
+        {
+          "id": "HR-S-055:o1",
+          "label": "Choosing a new target and taking action",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-055:o2",
+          "label": "Finding a new possibility that restores energy",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-055:o3",
+          "label": "Returning to the people and commitments that still matter",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-055:o4",
+          "label": "Understanding the cause before trying again",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "recovery after failure",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific failure moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP1-S-17",
+        "revision_id": "EXP1-S-17@human-1.0.0",
+        "prompt": "A personal goal ends in a disappointing result after significant effort. What most helps you begin recovering?",
+        "similarity": 0.059
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-056",
+      "format": "SINGLE_SELECT",
+      "context": "failure",
+      "prompt": "You make an embarrassing mistake in front of friends. What do you do first?",
+      "options": [
+        {
+          "id": "HR-S-056:o1",
+          "label": "Address it directly so it does not define the moment",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-056:o2",
+          "label": "Laugh, reset the mood, and keep the night moving",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-056:o3",
+          "label": "Check how it affected the people involved",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-056:o4",
+          "label": "Figure out exactly what went wrong",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "social mistake",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific failure moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "C01-S-02",
+        "revision_id": "C01-S-02@engagement-1.0.0",
+        "prompt": "Friends want to plan a milestone celebration, but the idea is still vague. What pulls you in first?",
+        "similarity": 0.143
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-057",
+      "format": "SINGLE_SELECT",
+      "context": "planning",
+      "prompt": "You have a free weekend coming. When do you start deciding what to do?",
+      "options": [
+        {
+          "id": "HR-S-057:o1",
+          "label": "When I see what I want to accomplish",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-057:o2",
+          "label": "When an exciting possibility catches my attention",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-057:o3",
+          "label": "When I know who I want to spend it with",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-057:o4",
+          "label": "Early enough to compare the realistic options",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "weekend planning",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific planning moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-041",
+        "revision_id": "EXP3-S-041@human-1.0.0",
+        "prompt": "Your household has one free shelf. What would you use it for?",
+        "similarity": 0.111
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-058",
+      "format": "SINGLE_SELECT",
+      "context": "planning",
+      "prompt": "You are cooking a meal you have never made. What approach sounds best?",
+      "options": [
+        {
+          "id": "HR-S-058:o1",
+          "label": "Focus on producing a result you will be proud to serve",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-058:o2",
+          "label": "Make it playful and adjust as you go",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-058:o3",
+          "label": "Choose something everyone will enjoy sharing",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-058:o4",
+          "label": "Read the recipe and understand the key steps",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "cooking new meal",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific planning moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "53a98bef-2fdf-4619-a09c-b4e02847b10c",
+        "revision_id": "53a98bef-2fdf-4619-a09c-b4e02847b10c@expression-1.0.0",
+        "prompt": "Which kind of win feels best?",
+        "similarity": 0.1
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    },
+    {
+      "id": "HR-S-059",
+      "format": "SINGLE_SELECT",
+      "context": "spontaneity",
+      "prompt": "A friend texts, “Want to leave town tomorrow?” What pulls your answer most?",
+      "options": [
+        {
+          "id": "HR-S-059:o1",
+          "label": "Whether the trip is worth the time and effort",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-059:o2",
+          "label": "The excitement of saying yes to something sudden",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-059:o3",
+          "label": "Whether it works for the people and promises in my life",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-059:o4",
+          "label": "Whether the timing, cost, and details make sense",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "spontaneous trip",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific spontaneity moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP1-S-01",
+        "revision_id": "EXP1-S-01@human-1.0.0",
+        "prompt": "You're planning a weekend away with a friend. What do you most want them to bring?",
+        "similarity": 0.231
+      },
+      "recommended_disposition": "ADMIT_NEW",
+      "review_reason": "Adds a useful human-recognition window without requiring removal of a stronger V5 item.",
+      "final_disposition": "ADMIT_NEW"
+    },
+    {
+      "id": "HR-S-060",
+      "format": "SINGLE_SELECT",
+      "context": "planning",
+      "prompt": "Your flight leaves early tomorrow morning. What are you most likely doing tonight?",
+      "options": [
+        {
+          "id": "HR-S-060:o1",
+          "label": "Making sure nothing can keep me from the goal",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-060:o2",
+          "label": "Leaving room for the evening while grabbing what I need",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-060:o3",
+          "label": "Coordinating with the people traveling with me",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-060:o4",
+          "label": "Checking documents, timing, and packed items",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "flight preparation",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific planning moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-006",
+        "revision_id": "EXP3-S-006@human-1.0.0",
+        "prompt": "Someone recommends a book you might enjoy. What makes you most likely to read it?",
+        "similarity": 0.125
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-061",
+      "format": "SINGLE_SELECT",
+      "context": "recognition",
+      "prompt": "You complete something difficult. What kind of recognition feels best?",
+      "options": [
+        {
+          "id": "HR-S-061:o1",
+          "label": "People notice the level of result I achieved",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-061:o2",
+          "label": "People share the excitement of the moment",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-061:o3",
+          "label": "The people close to me understand what it meant",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-061:o4",
+          "label": "Someone recognizes the judgment and care behind it",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "recognition preference",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific recognition moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "53a98bef-2fdf-4619-a09c-b4e02847b10c",
+        "revision_id": "53a98bef-2fdf-4619-a09c-b4e02847b10c@expression-1.0.0",
+        "prompt": "Which kind of win feels best?",
+        "similarity": 0.375
+      },
+      "recommended_disposition": "REVISE",
+      "review_reason": "At least one response fails the immediate-human-instinct, natural-thought, or prompt-answer test and needs another wording pass.",
+      "final_disposition": "REVISE"
+    },
+    {
+      "id": "HR-S-062",
+      "format": "SINGLE_SELECT",
+      "context": "social",
+      "prompt": "A group photo is about to be taken. What is most like you?",
+      "options": [
+        {
+          "id": "HR-S-062:o1",
+          "label": "I step into a spot where I look confident",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-062:o2",
+          "label": "I add energy so the photo feels alive",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-062:o3",
+          "label": "I make sure the people I care about are included",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-062:o4",
+          "label": "I notice whether everyone and everything is set",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "group photo",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific social moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP3-S-047",
+        "revision_id": "EXP3-S-047@human-1.0.0",
+        "prompt": "Your collection has gotten large. What do you enjoy most about it?",
+        "similarity": 0.2
+      },
+      "recommended_disposition": "REJECT",
+      "review_reason": "The four-way architecture is too strained or socially loaded to justify preserving this draft.",
+      "final_disposition": "REJECT"
+    },
+    {
+      "id": "HR-S-063",
+      "format": "SINGLE_SELECT",
+      "context": "hobbies",
+      "prompt": "You pick up a new hobby. What makes you stick with it?",
+      "options": [
+        {
+          "id": "HR-S-063:o1",
+          "label": "Seeing yourself become noticeably better",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-063:o2",
+          "label": "Discovering new directions whenever curiosity shifts",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-063:o3",
+          "label": "Feeling connected to the people or meaning around it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-063:o4",
+          "label": "Understanding how the pieces work together",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "hobby persistence",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific hobbies moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP2-S-16",
+        "revision_id": "EXP2-S-16@human-1.0.0",
+        "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?",
+        "similarity": 0
+      },
+      "recommended_disposition": "REPLACE_V5",
+      "review_reason": "The concrete recognition window is stronger than the closest abstract or flatter V5 observation.",
+      "final_disposition": "REPLACE_V5"
+    },
+    {
+      "id": "HR-S-064",
+      "format": "SINGLE_SELECT",
+      "context": "hobbies",
+      "prompt": "You have become very good at a hobby. What sounds most enjoyable now?",
+      "options": [
+        {
+          "id": "HR-S-064:o1",
+          "label": "Testing yourself at a higher level",
+          "color": "red"
+        },
+        {
+          "id": "HR-S-064:o2",
+          "label": "Using it in fresh and surprising ways",
+          "color": "blue"
+        },
+        {
+          "id": "HR-S-064:o3",
+          "label": "Sharing it with people who value it",
+          "color": "yellow"
+        },
+        {
+          "id": "HR-S-064:o4",
+          "label": "Refining the technique and understanding it deeply",
+          "color": "green"
+        }
+      ],
+      "what_it_measures": "hobby mastery",
+      "coverage_classification": "NET_NEW_COVERAGE_OR_USEFUL_PARALLEL",
+      "status": "REVIEW_ONLY",
+      "quality": {
+        "prompt_answer_alignment": "PASS",
+        "answer_distinction": "PASS",
+        "human_thought_plausibility": "PASS",
+        "emotional_recognition": "PASS",
+        "readability": "INSTANT_OR_EASY",
+        "desirability_balance": "PASS",
+        "color_model_alignment": "PASS",
+        "behavioral_expression_alignment": "PASS",
+        "stereotype_guard": "PASS",
+        "semantic_duplication": "REQUIRES_FINAL_BANK_RECONCILIATION"
+      },
+      "behavioral_expression_layer": {
+        "red": "achievement, visible progress, decisive action, competition, or recognition",
+        "blue": "energy, novelty, expression, freedom, spontaneity, or experience",
+        "yellow": "loyalty, belonging, shared commitment, support, trust, or continuity",
+        "green": "evidence, clarity, causal understanding, predictability, reliability, or structure"
+      },
+      "why_it_feels_human": "Uses a specific hobbies moment that a participant can picture and answer from lived preference.",
+      "closest_current_v5": {
+        "id": "EXP2-S-02",
+        "revision_id": "EXP2-S-02@human-1.0.0",
+        "prompt": "A hobby that once felt difficult has become easy. What would keep it satisfying?",
+        "similarity": 0.223
+      },
+      "recommended_disposition": "DEFER_REDUNDANCY",
+      "review_reason": "Individually plausible, but it adds insufficient experiential value beyond stronger current or proposed items.",
+      "final_disposition": "DEFER_REDUNDANCY"
+    }
+  ],
+  "removed_v5": [
+    "C02-S-12",
+    "EXP3-S-001",
+    "C02-S-13",
+    "EXP3-S-052",
+    "dacfb979-0cbf-4f3e-8d33-310a9648dc0b",
+    "C03-S-03",
+    "EXP3-S-016",
+    "EXP3-S-037",
+    "EXP3-S-005",
+    "EXP3-S-007",
+    "C03-S-07",
+    "f6d67e8f-9521-42e7-9f20-2322e033e33b",
+    "EXP2-S-01",
+    "e6164f25-f8ce-4038-8a32-b001f5fecb48",
+    "EXP1-S-17",
+    "EXP2-S-16"
+  ],
+  "added": [
+    "HR-S-001",
+    "HR-S-002",
+    "HR-S-005",
+    "HR-S-007",
+    "HR-S-009",
+    "HR-S-010",
+    "HR-S-013",
+    "HR-S-016",
+    "HR-S-017",
+    "HR-S-018",
+    "HR-S-020",
+    "HR-S-021",
+    "HR-S-023",
+    "HR-S-025",
+    "HR-S-027",
+    "HR-S-030",
+    "HR-S-033",
+    "HR-S-035",
+    "HR-S-037",
+    "HR-S-038",
+    "HR-S-040",
+    "HR-S-041",
+    "HR-S-042",
+    "HR-S-046",
+    "HR-S-049",
+    "HR-S-050",
+    "HR-S-053",
+    "HR-S-054",
+    "HR-S-055",
+    "HR-S-057",
+    "HR-S-059",
+    "HR-S-063"
+  ],
+  "bank_id": "viago-validation-bank-308-human-recognition-v6.0.0",
+  "bank_hash": "3e26157677b35089d42c63ec330d3176431ff5da549d1908cc67bfd38bdd9a66",
+  "experience_audit": {
+    "single_select_count": 165,
+    "prompt_answer_alignment": "PASS",
+    "answer_distinction": "PASS",
+    "human_thought_plausibility": "PASS",
+    "emotional_recognition": "PASS",
+    "mechanical_option_parallelism": "PASS",
+    "automated_issues": []
+  }
+}

@@ -1,9 +1,9 @@
 import activePointer from '@/data/v2-governance/active-validation-bank.json';
-import activeBank from '@/data/v2-research/validation-bank-292-expression-v5.0.0.json';
+import activeBank from '@/data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json';
 
 export const ACTIVE_VALIDATION_BANK_ID = activePointer.active_validation_bank_id;
-export const ACTIVE_BANK_CREATED_AT = '2026-09-01T05:14:38.506Z';
-export const ACTIVE_BANK_ACTIVATED_AT = '2026-09-01T05:15:02.700Z';
+export const ACTIVE_BANK_CREATED_AT = activePointer.created_at;
+export const ACTIVE_BANK_ACTIVATED_AT = activePointer.activated_at;
 export const ACTIVE_BANK_SOURCE_COMMIT = activePointer.source_commit;
 export const ACTIVE_BANK_DEPLOYMENT_ID = activePointer.deployment_id;
 

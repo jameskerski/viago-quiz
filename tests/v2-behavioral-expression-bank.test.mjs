@@ -64,10 +64,10 @@ test('simulation preserves deterministic equal-opportunity architecture without 
   }
 });
 
-test('OWNER-authorized V5 activation remains isolated from Production and historical evidence',()=>{
+test('OWNER-authorized V5 remains immutable historical evidence after V6 successor selection',()=>{
   assert.equal(bank.status,'OWNER_AUTHORIZED_ACTIVE_VALIDATION');
   assert.equal(review.production_impact,'NONE');
   assert.equal(review.historical_attempts_unchanged,true);
   const runtime=fs.readFileSync(new URL('../lib/v2/validation.ts',import.meta.url),'utf8');
-  assert.match(runtime,/validation-bank-292-expression-v5\.0\.0/);
+  assert.match(runtime,/viago-validation-bank-308-human-recognition-v6\.0\.0/);
 });
