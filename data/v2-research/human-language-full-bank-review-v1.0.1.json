@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "source_bank": {
+    "id": "viago-validation-bank-293-v2.0.0",
+    "hash": "14fe458091426af874d524b5d1f9417fa0d5c1b23db0b55fa1f9451095bbc4ca"
+  },
+  "successor_bank": {
+    "id": "viago-validation-bank-293-human-v3.0.1",
+    "hash": "e833f16d9c0c57c84cc1f5e02f26b96dcf9640615680bb8723a5ae6ea8023ce1"
+  },
+  "metrics": {
+    "unchanged": 209,
+    "rewritten": 84,
+    "rejected_rewrites": 0,
+    "current": {
+      "average_prompt_words": 16.7,
+      "average_option_words": 9,
+      "average_clause_count": 1.9,
+      "average_option_length_spread": 2.7,
+      "cognitive_load": {
+        "INSTANT": 45,
+        "EASY": 193,
+        "MODERATE": 45,
+        "HIGH": 10
+      }
+    },
+    "proposed": {
+      "average_prompt_words": 14.9,
+      "average_option_words": 8.8,
+      "average_clause_count": 1.8,
+      "average_option_length_spread": 2.6,
+      "cognitive_load": {
+        "INSTANT": 52,
+        "EASY": 241,
+        "MODERATE": 0,
+        "HIGH": 0
+      }
+    }
+  },
+  "hardest_rewrites": [
+    "C02-L-Y-01@human-1.0.0",
+    "C01-L-B-05@human-1.0.0",
+    "C01-L-Y-02@human-1.0.0",
+    "EXP1-L-R-01@human-1.0.0",
+    "C02-L-B-01@human-1.0.0",
+    "EXP2-L-B-03@human-1.0.0",
+    "53ece3a0-2862-42b5-a4fc-1468fd3549e8@human-1.0.0",
+    "C03-L-Y-01@human-1.0.1",
+    "EXP1-L-B-01@human-1.0.0",
+    "adac68bb-5fd6-4cae-90c6-576985ca3df1@human-1.0.0",
+    "c647a4f5-8b50-466f-9a65-c6a8f2d0fda2@human-1.0.0",
+    "C03-S-08@human-1.0.0",
+    "8ab6d9b5-9a3b-48e2-9eb8-f5e37edf3a9c@human-1.0.0",
+    "EXP2-L-G-03@human-1.0.0",
+    "a0bea5a2-24a4-4f40-8bea-d1090df652d5@human-1.0.0",
+    "C03-L-B-01@human-1.0.0",
+    "edc39e05-a151-4cbc-8d29-60ffeec35c2d@human-1.0.0",
+    "C03-L-G-01@human-1.0.0",
+    "EXP2-S-14@human-1.0.1",
+    "C03-S-06@human-1.0.0",
+    "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b@human-1.0.0",
+    "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+    "EXP2-L-R-01@human-1.0.0",
+    "8c889b4b-94cf-41b5-89d0-507cbc300e8b@human-1.0.0",
+    "EXP2-L-Y-03@human-1.0.0",
+    "829ad3cb-57ca-4836-99f2-a50c36b8f4e0@human-1.0.0",
+    "EXP2-L-G-01@human-1.0.1",
+    "0f42f5e4-1703-416f-863a-e46b511b19d8@human-1.0.0",
+    "2df82369-1df5-407a-be21-1dff3ccb59d5@human-1.0.0",
+    "C02-L-R-01@human-1.0.0"
+  ],
+  "all_moderate_or_high": [],
+  "semantic_risk_items": [
+    {
+      "question_revision_id": "0f42f5e4-1703-416f-863a-e46b511b19d8@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "2df82369-1df5-407a-be21-1dff3ccb59d5@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "53ece3a0-2862-42b5-a4fc-1468fd3549e8@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "8c889b4b-94cf-41b5-89d0-507cbc300e8b@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "a0bea5a2-24a4-4f40-8bea-d1090df652d5@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "c647a4f5-8b50-466f-9a65-c6a8f2d0fda2@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C01-L-Y-02@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C02-L-Y-01@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C03-S-06@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C03-S-08@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C03-L-Y-01@human-1.0.1",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "C03-L-G-01@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "EXP2-S-14@human-1.0.1",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "EXP2-L-G-01@human-1.0.1",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "EXP2-L-Y-03@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    },
+    {
+      "question_revision_id": "EXP2-L-G-03@human-1.0.0",
+      "flags": [
+        "YELLOW_GREEN_EXTRA_REVIEW"
+      ],
+      "resolution": "Construct, mapping, semantic family, and scoring retained; OWNER review requested because compression is substantial."
+    }
+  ],
+  "random_quality_sample": [
+    "EXP3-L-G-011@human-1.0.0",
+    "EXP2-S-13@human-1.0.0",
+    "829ad3cb-57ca-4836-99f2-a50c36b8f4e0@human-1.0.0",
+    "EXP3-S-052@human-1.0.0",
+    "EXP2-S-04@human-1.0.0",
+    "EXP2-L-R-03@human-1.0.0",
+    "eed5b69d-d389-4e2c-9b28-bc8d9da662a4@human-1.0.0",
+    "C02-L-R-02@human-1.0.0",
+    "EXP3-S-022@human-1.0.0",
+    "EXP1-L-G-02@human-1.0.0",
+    "EXP3-S-059@human-1.0.0",
+    "8c889b4b-94cf-41b5-89d0-507cbc300e8b@human-1.0.0",
+    "EXP3-L-G-004@human-1.0.0",
+    "7cf21580-ec06-4c65-b602-4c9317eeac3d@human-1.0.0",
+    "C02-S-09@human-1.0.0",
+    "C03-L-R-01@human-1.0.0",
+    "EXP1-L-B-02@human-1.0.0",
+    "EXP3-L-Y-007@human-1.0.0",
+    "EXP3-S-050@human-1.0.0",
+    "8ab6d9b5-9a3b-48e2-9eb8-f5e37edf3a9c@human-1.0.0"
+  ],
+  "integrity": {
+    "question_count_preserved": true,
+    "source_ids_unique": true,
+    "successor_revision_ids_unique": true,
+    "formats_preserved": true,
+    "colors_preserved": true,
+    "option_color_mappings_preserved": true,
+    "semantic_families_preserved": true,
+    "scoring_unchanged": true,
+    "assembler_unchanged": true,
+    "no_new_duplicates": true
+  },
+  "migration_plan": [
+    "Keep every existing viago-validation-bank-293-v2.0.0 attempt bound to its original bank, assembler, scoring version, and question revisions.",
+    "Do not switch unfinished attempts; let them complete on v2.0.0 or explicitly mark them abandoned under a separately approved policy.",
+    "After OWNER approval, register the successor bank as a new immutable version and route only newly created validation attempts to it.",
+    "Preserve bank_version, bank_hash, assembler_version, scoring_version, seed, composition, answers, results, and feedback on every attempt.",
+    "Compare successor-bank evidence with v2.0.0 as separate cohorts; never rescore or reinterpret historical attempts."
+  ],
+  "production_authority": "NONE",
+  "artifact_hash": "9ad36b3c892b801f5600716fdc2cdb909e17819cfb7ff1735dfd9b1e4fc32a6a"
+}
