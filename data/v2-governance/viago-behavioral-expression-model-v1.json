@@ -1,0 +1,866 @@
+{
+  "model_id": "VIAGO_BEHAVIORAL_EXPRESSION_MODEL_V1",
+  "semantic_version": "1.0.0",
+  "status": "OWNER_APPROVED_FROZEN",
+  "supplements": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0",
+  "scoring_authority": "CORE_MOTIVATION_REMAINS_PRIMARY_NO_AUTOMATIC_EXPRESSION_SCORING",
+  "classifications": [
+    "CORE_SUPPORTED_EXPRESSION",
+    "COMMON_EXPRESSION",
+    "OVEREXPRESSION",
+    "RESEARCH_HYPOTHESIS",
+    "CONTRA_EVIDENCE_CANDIDATE",
+    "NON_DIAGNOSTIC"
+  ],
+  "provenance": {
+    "owner_reference_id": "OWNER_SUPPLIED_BEHAVIORAL_EXPRESSION_REFERENCE_V1",
+    "owner_reference_custody": "PRIVATE_OWNER_EVIDENCE_NOT_IN_PUBLIC_SOURCE_CONTROL",
+    "legacy_authority": "VIAGO_BEHAVIORAL_COLOR_MODEL_V1_0 and preserved legacy result evidence",
+    "interpretation": "VIAGO-generated governed synthesis; not a quotation or proprietary-question reproduction"
+  },
+  "negative_scoring": {
+    "implemented": false,
+    "status": "NOT_AUTHORIZED"
+  },
+  "dimensions": [
+    "core motivation",
+    "emotional rewards",
+    "common attractions",
+    "common aversions",
+    "visible behavioral expressions",
+    "social expression",
+    "relationship expression",
+    "money/spending expression",
+    "style/presentation expression",
+    "time/punctuality expression",
+    "planning expression",
+    "travel/recreation expression",
+    "competition expression",
+    "leadership/followership expression",
+    "trust expression",
+    "conflict expression",
+    "recognition/status expression",
+    "home/environment expression",
+    "learning/information expression",
+    "overexpressions",
+    "research hypotheses",
+    "possible contra-evidence"
+  ],
+  "colors": {
+    "red": {
+      "core motivation": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "achievement",
+          "results",
+          "agency",
+          "control of direction"
+        ],
+        "rationale": "Direct continuation of Red Driver/Achiever authority."
+      },
+      "emotional rewards": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "winning",
+          "visible progress",
+          "accomplishment",
+          "influence"
+        ],
+        "rationale": "Rewards express result ownership rather than aggression."
+      },
+      "common attractions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "challenge",
+          "premium quality",
+          "high performance",
+          "recognition"
+        ],
+        "rationale": "Attractions are windows into achievement/status motivation, not independent rules."
+      },
+      "common aversions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "stalled progress",
+          "powerlessness",
+          "low standards"
+        ],
+        "rationale": "Governed motive is blocked."
+      },
+      "visible behavioral expressions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "decisiveness",
+          "urgency",
+          "competition",
+          "taking charge"
+        ],
+        "rationale": "Common but available to every color."
+      },
+      "social expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "purposeful networking",
+          "association with accomplished people"
+        ],
+        "rationale": "Needs human evidence; sociability alone is non-diagnostic."
+      },
+      "relationship expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "protecting shared outcomes",
+          "showing care through action"
+        ],
+        "rationale": "Counters selfish caricature."
+      },
+      "money/spending expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "premium purchases",
+          "visible quality",
+          "upside seeking"
+        ],
+        "rationale": "Requires motive-based wording and wealth-neutral scenarios."
+      },
+      "style/presentation expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "sharp",
+          "impressive",
+          "best-of-category"
+        ],
+        "rationale": "Status or quality motive must be explicit; flashy alone is non-diagnostic."
+      },
+      "time/punctuality expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "urgency when results are at stake"
+        ],
+        "rationale": "Punctuality alone is non-diagnostic."
+      },
+      "planning expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "planning backward from a target"
+        ],
+        "rationale": "Distinguished from Green process coherence."
+      },
+      "travel/recreation expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "must-do accomplishment",
+          "premium experience",
+          "challenge"
+        ],
+        "rationale": "Research window only."
+      },
+      "competition expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "winning",
+          "challenge",
+          "measurable improvement"
+        ],
+        "rationale": "Strongest behavioral-expression window."
+      },
+      "leadership/followership expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "taking ownership",
+          "setting direction"
+        ],
+        "rationale": "Leadership alone is non-diagnostic."
+      },
+      "trust expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "confidence in demonstrated ownership and delivery"
+        ],
+        "rationale": "Results-based trust preference."
+      },
+      "conflict expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "direct resolution",
+          "forward movement"
+        ],
+        "rationale": "Directness alone is non-diagnostic."
+      },
+      "recognition/status expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "achievement recognition",
+          "authority",
+          "visible impact"
+        ],
+        "rationale": "Recognition preference must connect to accomplishment."
+      },
+      "home/environment expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "quality",
+          "presentation",
+          "goal support"
+        ],
+        "rationale": "Avoid wealth and taste stereotypes."
+      },
+      "learning/information expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "learning toward a visible standard or usable result"
+        ],
+        "rationale": "Competence itself is non-diagnostic."
+      },
+      "overexpressions": {
+        "classification": "OVEREXPRESSION",
+        "claims": [
+          "impatience",
+          "abruptness",
+          "domination",
+          "status seeking",
+          "overachievement"
+        ],
+        "rationale": "Never use humiliating direct self-report."
+      },
+      "research hypotheses": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "exclusivity",
+          "VIP treatment",
+          "material reward salience"
+        ],
+        "rationale": "Requires balanced testing."
+      },
+      "possible contra-evidence": {
+        "classification": "CONTRA_EVIDENCE_CANDIDATE",
+        "claims": [
+          "strong avoidance of visible achievement or agency may weigh against Red"
+        ],
+        "rationale": "No negative scoring authorized."
+      }
+    },
+    "blue": {
+      "core motivation": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "fun",
+          "possibility",
+          "energy",
+          "spontaneity",
+          "experience"
+        ],
+        "rationale": "Direct continuation of Blue Energizer/Explorer authority."
+      },
+      "emotional rewards": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "excitement",
+          "discovery",
+          "shared enthusiasm",
+          "freedom"
+        ],
+        "rationale": "Rewards express possibility and experience."
+      },
+      "common attractions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "novelty",
+          "humor",
+          "adventure",
+          "creative expression",
+          "new people"
+        ],
+        "rationale": "Sociability alone is non-diagnostic."
+      },
+      "common aversions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "stagnation",
+          "closed possibilities",
+          "lifeless repetition"
+        ],
+        "rationale": "Boredom alone is non-diagnostic."
+      },
+      "visible behavioral expressions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "spontaneity",
+          "enthusiasm",
+          "experimentation",
+          "expressiveness"
+        ],
+        "rationale": "Do not equate with irresponsibility."
+      },
+      "social expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "social breadth",
+          "lively exchange",
+          "meeting new people"
+        ],
+        "rationale": "Breadth and energy distinguish from Yellow depth/continuity."
+      },
+      "relationship expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "shared experiences",
+          "playful connection",
+          "open exchange"
+        ],
+        "rationale": "Not a claim of shallow relationships."
+      },
+      "money/spending expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "experience spending",
+          "spontaneous purchases",
+          "new options"
+        ],
+        "rationale": "Impulse alone is non-diagnostic."
+      },
+      "style/presentation expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "bright",
+          "expressive",
+          "different",
+          "mood-based"
+        ],
+        "rationale": "Avoid reducing Blue to loudness."
+      },
+      "time/punctuality expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "flexibility when an experience is alive"
+        ],
+        "rationale": "Lateness alone is non-diagnostic."
+      },
+      "planning expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "plans that leave room for discovery"
+        ],
+        "rationale": "Planning ability is not contra-Blue."
+      },
+      "travel/recreation expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "adventure",
+          "exploration",
+          "spontaneous discovery"
+        ],
+        "rationale": "Strong ordinary-life window."
+      },
+      "competition expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "energy",
+          "memorable moments",
+          "creative play"
+        ],
+        "rationale": "Distinguished from Red winning."
+      },
+      "leadership/followership expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "energizing others",
+          "following an inspiring leader who allows freedom"
+        ],
+        "rationale": "Requires evidence."
+      },
+      "trust expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "openness",
+          "adaptability",
+          "fresh possibility"
+        ],
+        "rationale": "Not equivalent to charisma."
+      },
+      "conflict expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "changing tone",
+          "opening another possibility"
+        ],
+        "rationale": "Avoid treating avoidance as Blue evidence."
+      },
+      "recognition/status expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "attention",
+          "shared excitement",
+          "creative contribution"
+        ],
+        "rationale": "Attention alone is non-diagnostic."
+      },
+      "home/environment expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "lively",
+          "changeable",
+          "expressive"
+        ],
+        "rationale": "Taste-neutral wording required."
+      },
+      "learning/information expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "experimentation",
+          "examples",
+          "following curiosity"
+        ],
+        "rationale": "No rigid learning-style claim."
+      },
+      "overexpressions": {
+        "classification": "OVEREXPRESSION",
+        "claims": [
+          "poor follow-through",
+          "forgetfulness",
+          "impulsive choice",
+          "schedule drift"
+        ],
+        "rationale": "Measure as tradeoffs, never deficits."
+      },
+      "research hypotheses": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "outdoors/sunshine attraction",
+          "freer spending",
+          "strong-leader following"
+        ],
+        "rationale": "Needs evidence."
+      },
+      "possible contra-evidence": {
+        "classification": "CONTRA_EVIDENCE_CANDIDATE",
+        "claims": [
+          "persistent preference for fixed predictability over possibility may weigh against Blue"
+        ],
+        "rationale": "No negative scoring authorized."
+      }
+    },
+    "yellow": {
+      "core motivation": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "trust",
+          "loyalty",
+          "belonging",
+          "harmony",
+          "shared commitment",
+          "relational continuity"
+        ],
+        "rationale": "Direct continuation of Yellow Stabilizer/Loyalist authority."
+      },
+      "emotional rewards": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "connection",
+          "being dependable",
+          "shared meaning",
+          "relational safety"
+        ],
+        "rationale": "Kindness alone is non-diagnostic."
+      },
+      "common attractions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "family",
+          "familiar connection",
+          "authenticity",
+          "mutual support"
+        ],
+        "rationale": "Attractions require relational motive."
+      },
+      "common aversions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "betrayed trust",
+          "fractured belonging",
+          "broken commitments",
+          "phony connection"
+        ],
+        "rationale": "Fairness alone is non-diagnostic."
+      },
+      "visible behavioral expressions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "support",
+          "peacemaking",
+          "loyal follow-through",
+          "remembering meaningful occasions"
+        ],
+        "rationale": "Helpful behavior alone is non-diagnostic."
+      },
+      "social expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "depth",
+          "familiarity",
+          "inclusive belonging"
+        ],
+        "rationale": "Distinguished from Blue breadth/energy."
+      },
+      "relationship expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "loyalty",
+          "trust",
+          "continuity",
+          "shared commitment"
+        ],
+        "rationale": "Strongest Yellow expression window."
+      },
+      "money/spending expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "shared security",
+          "people",
+          "causes",
+          "meaningful gifts"
+        ],
+        "rationale": "Generosity alone is non-diagnostic."
+      },
+      "style/presentation expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "comfortable",
+          "authentic",
+          "familiar",
+          "values-aligned"
+        ],
+        "rationale": "Avoid moral superiority or blandness."
+      },
+      "time/punctuality expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "time commitments as promises to people"
+        ],
+        "rationale": "Punctuality alone is non-diagnostic."
+      },
+      "planning expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "planning around people and commitments"
+        ],
+        "rationale": "Distinguished from Green structure."
+      },
+      "travel/recreation expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "shared pace",
+          "togetherness",
+          "familiar rituals"
+        ],
+        "rationale": "Not generic compromise."
+      },
+      "competition expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "team camaraderie",
+          "shared experience"
+        ],
+        "rationale": "Avoid portraying Yellow as unwilling to compete."
+      },
+      "leadership/followership expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "supportive followership",
+          "ethical or relational leadership"
+        ],
+        "rationale": "Supporter preference is not incapacity."
+      },
+      "trust expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "presence over time",
+          "honoring commitments",
+          "authentic connection"
+        ],
+        "rationale": "Strong discriminator."
+      },
+      "conflict expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "preserving relationship",
+          "sustainable connection",
+          "harmony"
+        ],
+        "rationale": "Conflict avoidance alone is non-diagnostic."
+      },
+      "recognition/status expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "appreciation",
+          "meaning",
+          "dependable contribution"
+        ],
+        "rationale": "Do not make Yellow morally best."
+      },
+      "home/environment expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "warm",
+          "familiar",
+          "comfortable",
+          "connected"
+        ],
+        "rationale": "Avoid taste stereotypes."
+      },
+      "learning/information expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "steady partnership",
+          "shared commitment",
+          "encouragement over time"
+        ],
+        "rationale": "No rigid learning-style claim."
+      },
+      "overexpressions": {
+        "classification": "OVEREXPRESSION",
+        "claims": [
+          "overtrust",
+          "conflict avoidance",
+          "self-silencing",
+          "gullibility"
+        ],
+        "rationale": "Never use humiliating self-report."
+      },
+      "research hypotheses": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "animals",
+          "nature",
+          "environmental concern",
+          "volunteering",
+          "materialism aversion"
+        ],
+        "rationale": "Values may be cultural or cross-color; require motive-based evidence."
+      },
+      "possible contra-evidence": {
+        "classification": "CONTRA_EVIDENCE_CANDIDATE",
+        "claims": [
+          "persistent preference for impersonal gain despite relational cost may weigh against Yellow"
+        ],
+        "rationale": "No negative scoring authorized."
+      }
+    },
+    "green": {
+      "core motivation": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "evidence",
+          "clarity",
+          "coherence",
+          "understanding",
+          "predictability",
+          "repeatability",
+          "risk control"
+        ],
+        "rationale": "Direct continuation of Green Analyst/Planner authority."
+      },
+      "emotional rewards": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "certainty earned through understanding",
+          "quality",
+          "reliability",
+          "mastery"
+        ],
+        "rationale": "Intelligence alone is non-diagnostic."
+      },
+      "common attractions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "facts",
+          "systems",
+          "practicality",
+          "value",
+          "clear standards"
+        ],
+        "rationale": "Organization alone is non-diagnostic."
+      },
+      "common aversions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "unsupported claims",
+          "illogical change",
+          "hidden risk",
+          "incoherence"
+        ],
+        "rationale": "Anxiety alone is non-diagnostic."
+      },
+      "visible behavioral expressions": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "research",
+          "analysis",
+          "planning",
+          "precision",
+          "skepticism"
+        ],
+        "rationale": "Available to every color."
+      },
+      "social expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "substantive conversation",
+          "measured participation"
+        ],
+        "rationale": "Introversion alone is non-diagnostic."
+      },
+      "relationship expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "consistency",
+          "clear expectations",
+          "reliable follow-through"
+        ],
+        "rationale": "Not emotional detachment doctrine."
+      },
+      "money/spending expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "saving",
+          "investing",
+          "value comparison",
+          "understood tradeoffs"
+        ],
+        "rationale": "Frugality alone is non-diagnostic."
+      },
+      "style/presentation expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "clean",
+          "practical",
+          "versatile",
+          "coordinated",
+          "understated"
+        ],
+        "rationale": "Avoid reducing Green to blandness."
+      },
+      "time/punctuality expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "predictable timing",
+          "planning",
+          "respecting dependencies"
+        ],
+        "rationale": "Punctuality alone is non-diagnostic."
+      },
+      "planning expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "sequence",
+          "contingencies",
+          "repeatable process",
+          "risk control"
+        ],
+        "rationale": "Strong expression window."
+      },
+      "travel/recreation expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "details",
+          "value",
+          "route clarity",
+          "understanding place or activity"
+        ],
+        "rationale": "Planning does not exclude enjoyment."
+      },
+      "competition expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "strategy",
+          "patterns",
+          "mastery"
+        ],
+        "rationale": "Distinguished from Red winning."
+      },
+      "leadership/followership expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "standards",
+          "evidence-based direction",
+          "reliable systems"
+        ],
+        "rationale": "Leadership alone is non-diagnostic."
+      },
+      "trust expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "consistent words/actions",
+          "transparent reasoning",
+          "evidence"
+        ],
+        "rationale": "Strong discriminator."
+      },
+      "conflict expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "facts",
+          "definitions",
+          "logic",
+          "actual points of disagreement"
+        ],
+        "rationale": "Do not make Green the correct answer."
+      },
+      "recognition/status expression": {
+        "classification": "COMMON_EXPRESSION",
+        "claims": [
+          "expertise",
+          "quality",
+          "reliability"
+        ],
+        "rationale": "Recognition preference is not vanity."
+      },
+      "home/environment expression": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "functional",
+          "orderly",
+          "practical",
+          "predictable"
+        ],
+        "rationale": "Generic tidiness is non-diagnostic."
+      },
+      "learning/information expression": {
+        "classification": "CORE_SUPPORTED_EXPRESSION",
+        "claims": [
+          "principles",
+          "causal understanding",
+          "logical sequence",
+          "precise feedback"
+        ],
+        "rationale": "Strong expression window."
+      },
+      "overexpressions": {
+        "classification": "OVEREXPRESSION",
+        "claims": [
+          "analysis paralysis",
+          "emotional distance",
+          "suspicion",
+          "prejudgment",
+          "perfectionistic delay"
+        ],
+        "rationale": "Never use humiliating self-report."
+      },
+      "research hypotheses": {
+        "classification": "RESEARCH_HYPOTHESIS",
+        "claims": [
+          "status aversion",
+          "value over prestige",
+          "skepticism of motives"
+        ],
+        "rationale": "Needs evidence."
+      },
+      "possible contra-evidence": {
+        "classification": "CONTRA_EVIDENCE_CANDIDATE",
+        "claims": [
+          "strong preference for conspicuous status without regard to evidence or value may weigh against Green"
+        ],
+        "rationale": "No negative scoring authorized."
+      }
+    }
+  }
+}

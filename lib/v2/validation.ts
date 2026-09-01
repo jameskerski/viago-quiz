@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
-import bank from '@/data/v2-research/validation-bank-292-engagement-v4.0.0.json';
+import bank from '@/data/v2-research/validation-bank-292-expression-v5.0.0.json';
 
 export const VALIDATION_MODE = 'VIAGO_V2_PRIVATE_HUMAN_VALIDATION';
 export const BANK_VERSION = bank.bank_version;
