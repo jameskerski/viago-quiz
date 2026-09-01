@@ -2,8 +2,9 @@ import { NextResponse } from 'next/server';
 import { randomUUID } from 'node:crypto';
 import { hasAdminSession } from '@/lib/v2/adminAuth';
 import { supabaseAdmin } from '@/lib/supabaseAdminClient';
-import { assembleValidationAttempt, createSeed, publicManifest, scoreValidationAttempt, type HistoryExposure } from '@/lib/v2/validation';
+import { ASSEMBLER_VERSION, BANK_HASH, BANK_VERSION, assembleValidationAttempt, createSeed, publicManifest, scoreValidationAttempt, type HistoryExposure } from '@/lib/v2/validation';
 import { bindValidationAttempt, bindValidationParticipant, canAccessValidationAttempt, currentValidationParticipantId } from '@/lib/v2/validationAccess';
+import { assertEnvironmentValidationAuthority } from '@/lib/v2/validationEnvironmentAuthority';
 
 const FLAGS=new Set(['confusing','two_answers_true','no_answer_true','obvious_best_answer','context_dependent','repetitive','other']);
 export async function GET(request:Request){
@@ -18,6 +19,7 @@ export async function POST(request:Request){
  const body=(await request.json().catch(()=>({}))) as Record<string,unknown>; const action=body.action;
  try{
   if(action==='start'){
+   await assertEnvironmentValidationAuthority({bankId:BANK_VERSION,bankHash:BANK_HASH,assemblerVersion:ASSEMBLER_VERSION});
    const participantName=String(body?.participant_name||'').trim().replace(/\s+/g,' ').slice(0,80);const priorExperience=['YES','NO','UNSURE'].includes(String(body?.prior_experience))?String(body.prior_experience):'UNSURE';const population=priorExperience==='YES'?'EXPERIENCED':'NEW';
    if(!participantName)return NextResponse.json({error:'Your name is required'},{status:400});
    const known=(value:unknown)=>['red','blue','yellow','green'].includes(String(value))?String(value):null;

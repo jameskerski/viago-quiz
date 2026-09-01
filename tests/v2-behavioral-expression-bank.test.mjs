@@ -69,5 +69,5 @@ test('OWNER-authorized V5 remains immutable historical evidence after V6 success
   assert.equal(review.production_impact,'NONE');
   assert.equal(review.historical_attempts_unchanged,true);
   const runtime=fs.readFileSync(new URL('../lib/v2/validation.ts',import.meta.url),'utf8');
-  assert.match(runtime,/viago-validation-bank-308-human-recognition-v6\.0\.0/);
+  assert.match(runtime,/viago-validation-bank-human-recognition-purge-v1\.0\.0/);
 });

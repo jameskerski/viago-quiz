@@ -42,8 +42,12 @@ test('history-aware four-attempt simulation passes at actual bank depth',()=>{
  for(const transition of simulation.transitions){assert.equal(transition.exact,0);assert.equal(transition.revision,0);assert.equal(transition.family,0);assert.ok(transition.construct<1);assert.ok(transition.experiential<0.5)}
 });
 
-test('purge remains isolated from active runtime and production authority',()=>{
+test('purge activation remains Preview environment-scoped and production-safe',()=>{
  const runtimeFiles=['lib/v2/validation.ts','data/v2-governance/active-validation-bank.json','app/api/v2/validation/route.ts'].map(file=>fs.readFileSync(file,'utf8')).join('\n');
- assert.doesNotMatch(runtimeFiles,/viago-validation-bank-240-human-recognition-purge-v1\.0\.0/);
+ assert.match(runtimeFiles,/viago-validation-bank-240-human-recognition-purge-v1\.0\.0/);
+ const authority=fs.readFileSync('lib/v2/validationEnvironmentAuthority.ts','utf8');
+ assert.match(authority,/VERCEL_ENV !== 'preview'/);
+ assert.match(authority,/VERCEL_GIT_COMMIT_REF !== 'v2\/personality-platform'/);
+ assert.match(authority,/preview-owner-validation/);
  assert.equal(review.quality.new_gap_fill_questions.length,0);
 });

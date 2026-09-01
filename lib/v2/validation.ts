@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
-import bank from '@/data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json';
+import bank from '@/data/v2-research/viago-validation-bank-human-recognition-purge-v1.0.0.json';
 import { ACTIVE_BANK_ACTIVATED_AT, ACTIVE_BANK_DEPLOYMENT_ID, ACTIVE_BANK_SOURCE_COMMIT, ACTIVE_VALIDATION_BANK_ID, assertActiveValidationPointer } from '@/lib/v2/validationProvenance';
 
 export const VALIDATION_MODE = 'VIAGO_V2_PRIVATE_HUMAN_VALIDATION';
