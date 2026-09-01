@@ -1,16 +1,21 @@
 # VIAGO engagement pass V1
 
-Status: PROPOSED_FOR_OWNER_EXPERIENCE_REVIEW. No activation or production authority.
+Status: OWNER_AUTHORIZED_FOR_VALIDATION_ACTIVATION. No production authority.
 
 ## Summary
 
 - Source: viago-validation-bank-293-human-v3.0.1 (e833f16d9c0c57c84cc1f5e02f26b96dcf9640615680bb8723a5ae6ea8023ce1)
-- Successor: viago-validation-bank-292-engagement-v4.0.0 (84e457ca35d6088456e74f0f27a33e0a90befbd7fe6d955e2c85c7b7c5b2484e)
+- Successor: viago-validation-bank-292-engagement-v4.0.0 (f445dd34268cd33f07330df639ff19bf511b61c03f35276268d2da06c1ea4325)
 - Questions: 292
 - Before engagement: {"DRY":7,"MECHANICAL":1,"NATURAL":164,"NEUTRAL":53,"VIVID":68}
 - After engagement: {"NATURAL":163,"NEUTRAL":53,"VIVID":76}
 - Readability: {"EASY":238,"INSTANT":54}
 - Weakest dispositions: {"KEEP":29,"POLISH":10,"RE-SCENE":15,"RETIRE":1}
+
+## Semantic reconciliation
+
+- 0ff7b326: broadened from ideal-workday environment to cross-context day-satisfaction/reward. Metadata is now reward-preference / ordinary-life / preferred-day-satisfaction-reward / preferred-reward-pattern.
+- The other 14 re-scenes retain their governed construct and semantic family while recording their new context.
 
 ## 15 re-scenes
 
@@ -172,28 +177,29 @@ Status: PROPOSED_FOR_OWNER_EXPERIENCE_REVIEW. No activation or production author
 
 ## Mechanical option parallelism
 
-- Before: C03-S-06, 7d22afa7-f5b6-450c-93d4-a8b2f3318410, C02-S-09, EXP3-S-031
-- After: 7d22afa7-f5b6-450c-93d4-a8b2f3318410, EXP3-S-031
+- 7d22afa7: PRESERVE; the four reasons are immediately distinct.
+- EXP3-S-031: PRESERVE; the four completion signals are immediately distinct.
+- Unresolved: none.
 
 ## Simulation
 
-- Seed 41001: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 25; conflict/pressure 1; work/business 6; repeated contexts 33
+- Seed 41001: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 1; work/business 5; repeated contexts 32
 - Seed 41002: VIVID/NATURAL 46; NEUTRAL 4; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 2; work/business 2; repeated contexts 30
 - Seed 41003: VIVID/NATURAL 42; NEUTRAL 8; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 2; work/business 5; repeated contexts 33
 - Seed 41004: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 18; conflict/pressure 7; work/business 6; repeated contexts 33
 - Seed 41005: VIVID/NATURAL 36; NEUTRAL 14; DRY/MECHANICAL 0; positive/playful/social 19; conflict/pressure 7; work/business 3; repeated contexts 32
 - Seed 41006: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 27; conflict/pressure 9; work/business 7; repeated contexts 34
-- Seed 41007: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 18; conflict/pressure 9; work/business 7; repeated contexts 33
+- Seed 41007: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 18; conflict/pressure 9; work/business 6; repeated contexts 32
 - Seed 41008: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 6; work/business 8; repeated contexts 34
-- Seed 41009: VIVID/NATURAL 35; NEUTRAL 15; DRY/MECHANICAL 0; positive/playful/social 25; conflict/pressure 7; work/business 5; repeated contexts 32
+- Seed 41009: VIVID/NATURAL 35; NEUTRAL 15; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 7; work/business 4; repeated contexts 31
 - Seed 41010: VIVID/NATURAL 39; NEUTRAL 11; DRY/MECHANICAL 0; positive/playful/social 21; conflict/pressure 11; work/business 6; repeated contexts 35
-- Seed 41011: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 27; conflict/pressure 5; work/business 4; repeated contexts 32
-- Seed 41012: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 23; conflict/pressure 6; work/business 7; repeated contexts 33
-- Seed 41013: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 5; work/business 6; repeated contexts 32
+- Seed 41011: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 28; conflict/pressure 5; work/business 4; repeated contexts 32
+- Seed 41012: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 6; work/business 7; repeated contexts 33
+- Seed 41013: VIVID/NATURAL 38; NEUTRAL 12; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 5; work/business 5; repeated contexts 31
 - Seed 41014: VIVID/NATURAL 36; NEUTRAL 14; DRY/MECHANICAL 0; positive/playful/social 17; conflict/pressure 5; work/business 7; repeated contexts 37
 - Seed 41015: VIVID/NATURAL 35; NEUTRAL 15; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 11; work/business 1; repeated contexts 36
-- Seed 41016: VIVID/NATURAL 42; NEUTRAL 8; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 4; work/business 5; repeated contexts 35
-- Seed 41017: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 24; conflict/pressure 6; work/business 7; repeated contexts 34
-- Seed 41018: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 29; conflict/pressure 6; work/business 9; repeated contexts 35
-- Seed 41019: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 27; conflict/pressure 4; work/business 5; repeated contexts 34
-- Seed 41020: VIVID/NATURAL 43; NEUTRAL 7; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 7; work/business 7; repeated contexts 34
+- Seed 41016: VIVID/NATURAL 42; NEUTRAL 8; DRY/MECHANICAL 0; positive/playful/social 25; conflict/pressure 4; work/business 5; repeated contexts 35
+- Seed 41017: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 23; conflict/pressure 6; work/business 7; repeated contexts 34
+- Seed 41018: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 29; conflict/pressure 6; work/business 8; repeated contexts 34
+- Seed 41019: VIVID/NATURAL 40; NEUTRAL 10; DRY/MECHANICAL 0; positive/playful/social 28; conflict/pressure 4; work/business 5; repeated contexts 34
+- Seed 41020: VIVID/NATURAL 43; NEUTRAL 7; DRY/MECHANICAL 0; positive/playful/social 26; conflict/pressure 7; work/business 6; repeated contexts 33

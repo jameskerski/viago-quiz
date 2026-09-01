@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "status": "PROPOSED_FOR_OWNER_REVIEW",
+  "status": "OWNER_AUTHORIZED_FOR_VALIDATION_ACTIVATION",
   "source_bank": {
     "id": "viago-validation-bank-293-human-v3.0.1",
     "hash": "e833f16d9c0c57c84cc1f5e02f26b96dcf9640615680bb8723a5ae6ea8023ce1"
   },
   "successor_bank": {
     "id": "viago-validation-bank-292-engagement-v4.0.0",
-    "hash": "84e457ca35d6088456e74f0f27a33e0a90befbd7fe6d955e2c85c7b7c5b2484e"
+    "hash": "f445dd34268cd33f07330df639ff19bf511b61c03f35276268d2da06c1ea4325"
   },
   "before": {
     "engagement": {
@@ -100,7 +100,7 @@
       "learning-practical-skill": 1,
       "memory-leisure": 1,
       "money-purchasing": 4,
-      "ordinary-life": 1,
+      "ordinary-life": 2,
       "ordinary-planning": 3,
       "ordinary-problem-solving": 1,
       "personal-goal": 6,
@@ -113,20 +113,20 @@
       "unfamiliar-social-setting": 1,
       "unfamiliar-social-situation": 4,
       "wellness-routine": 1,
-      "work_business": 32
+      "work_business": 31
     },
     "energy": {
       "ASPIRATIONAL": 35,
       "CONFLICT": 11,
       "OTHER": 47,
-      "PLAYFUL": 19,
-      "POSITIVE": 53,
-      "PRACTICAL": 94,
+      "PLAYFUL": 20,
+      "POSITIVE": 54,
+      "PRACTICAL": 88,
       "PRESSURE": 18,
       "RECOVERY": 22,
-      "REFLECTIVE": 23,
-      "RELATIONAL": 87,
-      "SOCIAL": 82
+      "REFLECTIVE": 24,
+      "RELATIONAL": 88,
+      "SOCIAL": 80
     }
   },
   "weakest_items": [
@@ -503,142 +503,153 @@
     {
       "id": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "RECONCILED_WITH_NEW_GOVERNED_METADATA"
     },
     {
       "id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "86f93908-6a45-42f7-bd7b-d2d7d3d13de6",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "b770ab96-fa4a-4177-be7e-4021c654effb",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "c5e34cf0-bcbe-4a13-b7ec-b93ba6559df8",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "eed5b69d-d389-4e2c-9b28-bc8d9da662a4",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C01-S-01",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C01-S-02",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-02",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-06",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-09",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-11",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-12",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-S-14",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C02-L-R-02",
       "flags": [
-        "CONTEXT_CHANGED_RECONFIRM_CONSTRUCT"
+        "CONTEXT_CHANGED_FINAL_SEMANTIC_CHECK"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "C03-L-Y-01",
       "flags": [
         "PRIOR_OWNER_SEMANTIC_CORRECTION"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "EXP1-L-G-01",
       "flags": [
         "PRIOR_OWNER_SEMANTIC_CORRECTION"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "EXP2-L-G-01",
       "flags": [
         "PRIOR_OWNER_SEMANTIC_CORRECTION"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "EXP2-L-G-02",
       "flags": [
         "PRIOR_OWNER_SEMANTIC_CORRECTION"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
     },
     {
       "id": "EXP2-S-14",
       "flags": [
         "PRIOR_OWNER_SEMANTIC_CORRECTION"
       ],
-      "status": "PRESERVED_PENDING_OWNER_EXPERIENCE_REVIEW"
+      "status": "PRESERVED_AND_VERIFIED"
+    }
+  ],
+  "semantic_reconciliations": [
+    {
+      "id": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
+      "decision": "A",
+      "old_family": "ideal-workday-environment",
+      "new_family": "preferred-day-satisfaction-reward",
+      "old_construct": "preferred-environment",
+      "new_construct": "preferred-reward-pattern",
+      "rationale": "The re-scene genuinely broadens the item beyond work. Its four mapped responses remain governed reward preferences, so metadata now names the broader construct instead of claiming equivalence."
     }
   ],
   "mechanical_option_parallelism": {
@@ -652,13 +663,10 @@
       "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
       "EXP3-S-031"
     ],
-    "unresolved": [
-      "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
-      "EXP3-S-031"
-    ],
-    "unresolved_rationale": {
-      "7d22afa7-f5b6-450c-93d4-a8b2f3318410": "Parallel grammar expresses four distinct reasons for retaining a successful routine; keep for OWNER review.",
-      "EXP3-S-031": "Parallel completion statements express four different stopping signals; keep for OWNER review."
+    "unresolved": [],
+    "resolved_decisions": {
+      "7d22afa7-f5b6-450c-93d4-a8b2f3318410": "PRESERVE: results/attention, freshness/flexibility, shared dependability, and predictability are immediately distinct reasons.",
+      "EXP3-S-031": "PRESERVE: achieved outcome, next-step possibility, dependability for others, and correctness/repeatability are immediately distinct completion signals."
     }
   },
   "simulations": [
@@ -667,10 +675,10 @@
       "vivid_natural": 38,
       "neutral": 12,
       "dry_mechanical": 0,
-      "positive_playful_social": 25,
+      "positive_playful_social": 24,
       "serious_conflict_pressure": 1,
-      "work_business": 6,
-      "repeated_contexts": 33,
+      "work_business": 5,
+      "repeated_contexts": 32,
       "average_readability_score": 1.7,
       "context_counts": {
         "communication": 1,
@@ -684,24 +692,25 @@
         "home_life": 5,
         "learning": 1,
         "money-purchasing": 1,
+        "ordinary-life": 1,
         "personal-goal": 2,
         "purchasing": 1,
         "relationships": 3,
         "sports_recreation": 2,
         "travel_vacation": 4,
-        "work_business": 6
+        "work_business": 5
       },
       "energy_counts": {
         "ASPIRATIONAL": 8,
         "OTHER": 8,
         "PLAYFUL": 7,
         "POSITIVE": 10,
-        "PRACTICAL": 13,
+        "PRACTICAL": 12,
         "PRESSURE": 1,
         "RECOVERY": 3,
-        "REFLECTIVE": 5,
+        "REFLECTIVE": 6,
         "RELATIONAL": 15,
-        "SOCIAL": 12
+        "SOCIAL": 11
       },
       "question_revision_ids": [
         "C02-S-04@human-1.0.0",
@@ -793,7 +802,7 @@
         "OTHER": 9,
         "PLAYFUL": 3,
         "POSITIVE": 8,
-        "PRACTICAL": 15,
+        "PRACTICAL": 13,
         "PRESSURE": 2,
         "RECOVERY": 4,
         "REFLECTIVE": 3,
@@ -982,7 +991,7 @@
         "OTHER": 10,
         "PLAYFUL": 2,
         "POSITIVE": 9,
-        "PRACTICAL": 16,
+        "PRACTICAL": 15,
         "PRESSURE": 5,
         "RECOVERY": 5,
         "REFLECTIVE": 1,
@@ -1077,7 +1086,7 @@
         "OTHER": 13,
         "PLAYFUL": 4,
         "POSITIVE": 6,
-        "PRACTICAL": 19,
+        "PRACTICAL": 18,
         "PRESSURE": 7,
         "RECOVERY": 3,
         "REFLECTIVE": 3,
@@ -1171,12 +1180,12 @@
         "OTHER": 9,
         "PLAYFUL": 2,
         "POSITIVE": 11,
-        "PRACTICAL": 14,
+        "PRACTICAL": 13,
         "PRESSURE": 6,
         "RECOVERY": 4,
         "REFLECTIVE": 3,
-        "RELATIONAL": 12,
-        "SOCIAL": 19
+        "RELATIONAL": 13,
+        "SOCIAL": 18
       },
       "question_revision_ids": [
         "EXP1-S-11@human-1.0.0",
@@ -1238,8 +1247,8 @@
       "dry_mechanical": 0,
       "positive_playful_social": 18,
       "serious_conflict_pressure": 9,
-      "work_business": 7,
-      "repeated_contexts": 33,
+      "work_business": 6,
+      "repeated_contexts": 32,
       "average_readability_score": 1.8,
       "context_counts": {
         "community": 1,
@@ -1252,25 +1261,26 @@
         "home_life": 2,
         "learning-general": 1,
         "learning-personal": 1,
+        "ordinary-life": 1,
         "personal-goal": 1,
         "personal-technology": 1,
         "purchasing": 1,
         "relationships": 8,
         "social-setting": 1,
         "travel_vacation": 2,
-        "work_business": 7
+        "work_business": 6
       },
       "energy_counts": {
         "ASPIRATIONAL": 9,
         "CONFLICT": 2,
         "OTHER": 10,
         "PLAYFUL": 2,
-        "POSITIVE": 5,
-        "PRACTICAL": 14,
+        "POSITIVE": 6,
+        "PRACTICAL": 11,
         "PRESSURE": 7,
         "RECOVERY": 4,
-        "REFLECTIVE": 5,
-        "RELATIONAL": 20,
+        "REFLECTIVE": 6,
+        "RELATIONAL": 21,
         "SOCIAL": 13
       },
       "question_revision_ids": [
@@ -1360,7 +1370,7 @@
         "OTHER": 6,
         "PLAYFUL": 4,
         "POSITIVE": 9,
-        "PRACTICAL": 19,
+        "PRACTICAL": 17,
         "PRESSURE": 4,
         "RECOVERY": 8,
         "REFLECTIVE": 3,
@@ -1425,10 +1435,10 @@
       "vivid_natural": 35,
       "neutral": 15,
       "dry_mechanical": 0,
-      "positive_playful_social": 25,
+      "positive_playful_social": 24,
       "serious_conflict_pressure": 7,
-      "work_business": 5,
-      "repeated_contexts": 32,
+      "work_business": 4,
+      "repeated_contexts": 31,
       "average_readability_score": 1.8,
       "context_counts": {
         "celebrations": 1,
@@ -1443,12 +1453,13 @@
         "learning-general": 1,
         "learning-personal": 1,
         "money-purchasing": 1,
+        "ordinary-life": 1,
         "personal-goal": 1,
         "relationships": 3,
         "sports_recreation": 1,
         "travel_vacation": 2,
         "unfamiliar-social-situation": 1,
-        "work_business": 5
+        "work_business": 4
       },
       "energy_counts": {
         "ASPIRATIONAL": 5,
@@ -1456,12 +1467,12 @@
         "OTHER": 6,
         "PLAYFUL": 2,
         "POSITIVE": 12,
-        "PRACTICAL": 20,
+        "PRACTICAL": 17,
         "PRESSURE": 6,
         "RECOVERY": 4,
-        "REFLECTIVE": 5,
+        "REFLECTIVE": 6,
         "RELATIONAL": 13,
-        "SOCIAL": 12
+        "SOCIAL": 11
       },
       "question_revision_ids": [
         "EXP3-S-022@human-1.0.0",
@@ -1549,12 +1560,12 @@
         "OTHER": 7,
         "PLAYFUL": 3,
         "POSITIVE": 6,
-        "PRACTICAL": 18,
+        "PRACTICAL": 16,
         "PRESSURE": 9,
         "RECOVERY": 5,
         "REFLECTIVE": 2,
         "RELATIONAL": 13,
-        "SOCIAL": 15
+        "SOCIAL": 14
       },
       "question_revision_ids": [
         "17d21643-7826-47e6-b115-79d0a74fa33c@engagement-1.0.0",
@@ -1614,7 +1625,7 @@
       "vivid_natural": 38,
       "neutral": 12,
       "dry_mechanical": 0,
-      "positive_playful_social": 27,
+      "positive_playful_social": 28,
       "serious_conflict_pressure": 5,
       "work_business": 4,
       "repeated_contexts": 32,
@@ -1643,13 +1654,13 @@
         "ASPIRATIONAL": 7,
         "CONFLICT": 1,
         "OTHER": 5,
-        "PLAYFUL": 4,
-        "POSITIVE": 11,
-        "PRACTICAL": 16,
+        "PLAYFUL": 5,
+        "POSITIVE": 12,
+        "PRACTICAL": 15,
         "PRESSURE": 4,
         "RECOVERY": 3,
         "REFLECTIVE": 5,
-        "RELATIONAL": 17,
+        "RELATIONAL": 18,
         "SOCIAL": 14
       },
       "question_revision_ids": [
@@ -1710,7 +1721,7 @@
       "vivid_natural": 38,
       "neutral": 12,
       "dry_mechanical": 0,
-      "positive_playful_social": 23,
+      "positive_playful_social": 24,
       "serious_conflict_pressure": 6,
       "work_business": 7,
       "repeated_contexts": 33,
@@ -1738,9 +1749,9 @@
         "ASPIRATIONAL": 4,
         "CONFLICT": 4,
         "OTHER": 8,
-        "PLAYFUL": 3,
+        "PLAYFUL": 4,
         "POSITIVE": 9,
-        "PRACTICAL": 13,
+        "PRACTICAL": 12,
         "PRESSURE": 3,
         "RECOVERY": 6,
         "REFLECTIVE": 5,
@@ -1807,8 +1818,8 @@
       "dry_mechanical": 0,
       "positive_playful_social": 26,
       "serious_conflict_pressure": 5,
-      "work_business": 6,
-      "repeated_contexts": 32,
+      "work_business": 5,
+      "repeated_contexts": 31,
       "average_readability_score": 1.8,
       "context_counts": {
         "celebrations": 1,
@@ -1822,26 +1833,27 @@
         "home_life": 2,
         "learning": 1,
         "learning-personal": 1,
+        "ordinary-life": 1,
         "ordinary-planning": 1,
         "purchasing": 1,
         "relationships": 5,
         "sports_recreation": 2,
         "travel_vacation": 3,
         "unfamiliar-social-situation": 1,
-        "work_business": 6
+        "work_business": 5
       },
       "energy_counts": {
         "ASPIRATIONAL": 7,
         "CONFLICT": 2,
         "OTHER": 8,
-        "PLAYFUL": 5,
+        "PLAYFUL": 6,
         "POSITIVE": 9,
-        "PRACTICAL": 14,
+        "PRACTICAL": 12,
         "PRESSURE": 3,
         "RECOVERY": 5,
-        "REFLECTIVE": 4,
+        "REFLECTIVE": 5,
         "RELATIONAL": 15,
-        "SOCIAL": 15
+        "SOCIAL": 14
       },
       "question_revision_ids": [
         "56d9cd80-ce6f-48c6-b6c3-c2fa3e95ac6b@human-1.0.0",
@@ -1927,7 +1939,7 @@
         "OTHER": 10,
         "PLAYFUL": 1,
         "POSITIVE": 6,
-        "PRACTICAL": 18,
+        "PRACTICAL": 16,
         "PRESSURE": 4,
         "RECOVERY": 5,
         "REFLECTIVE": 4,
@@ -2019,11 +2031,11 @@
         "OTHER": 7,
         "PLAYFUL": 3,
         "POSITIVE": 9,
-        "PRACTICAL": 15,
+        "PRACTICAL": 14,
         "PRESSURE": 8,
         "RECOVERY": 4,
         "REFLECTIVE": 5,
-        "RELATIONAL": 17,
+        "RELATIONAL": 18,
         "SOCIAL": 15
       },
       "question_revision_ids": [
@@ -2084,7 +2096,7 @@
       "vivid_natural": 42,
       "neutral": 8,
       "dry_mechanical": 0,
-      "positive_playful_social": 24,
+      "positive_playful_social": 25,
       "serious_conflict_pressure": 4,
       "work_business": 5,
       "repeated_contexts": 35,
@@ -2110,9 +2122,9 @@
         "ASPIRATIONAL": 4,
         "CONFLICT": 1,
         "OTHER": 7,
-        "PLAYFUL": 2,
-        "POSITIVE": 7,
-        "PRACTICAL": 19,
+        "PLAYFUL": 3,
+        "POSITIVE": 8,
+        "PRACTICAL": 15,
         "PRESSURE": 3,
         "RECOVERY": 6,
         "REFLECTIVE": 5,
@@ -2177,7 +2189,7 @@
       "vivid_natural": 40,
       "neutral": 10,
       "dry_mechanical": 0,
-      "positive_playful_social": 24,
+      "positive_playful_social": 23,
       "serious_conflict_pressure": 6,
       "work_business": 7,
       "repeated_contexts": 34,
@@ -2205,13 +2217,13 @@
         "CONFLICT": 3,
         "OTHER": 5,
         "PLAYFUL": 2,
-        "POSITIVE": 7,
-        "PRACTICAL": 21,
+        "POSITIVE": 8,
+        "PRACTICAL": 19,
         "PRESSURE": 3,
         "RECOVERY": 3,
         "REFLECTIVE": 4,
-        "RELATIONAL": 18,
-        "SOCIAL": 16
+        "RELATIONAL": 19,
+        "SOCIAL": 15
       },
       "question_revision_ids": [
         "94fc0c96-7820-416c-a6e4-abe8f767ad07@human-1.0.0",
@@ -2273,8 +2285,8 @@
       "dry_mechanical": 0,
       "positive_playful_social": 29,
       "serious_conflict_pressure": 6,
-      "work_business": 9,
-      "repeated_contexts": 35,
+      "work_business": 8,
+      "repeated_contexts": 34,
       "average_readability_score": 1.8,
       "context_counts": {
         "everyday-decision": 1,
@@ -2283,6 +2295,7 @@
         "general-cross-context": 9,
         "hobbies": 3,
         "home_life": 4,
+        "ordinary-life": 1,
         "personal-goal": 1,
         "personal-technology": 1,
         "purchasing": 2,
@@ -2291,7 +2304,7 @@
         "sports_recreation": 1,
         "travel_vacation": 6,
         "unfamiliar-social-situation": 1,
-        "work_business": 9
+        "work_business": 8
       },
       "energy_counts": {
         "ASPIRATIONAL": 9,
@@ -2299,10 +2312,10 @@
         "OTHER": 5,
         "PLAYFUL": 3,
         "POSITIVE": 9,
-        "PRACTICAL": 19,
+        "PRACTICAL": 17,
         "PRESSURE": 4,
         "RECOVERY": 7,
-        "REFLECTIVE": 4,
+        "REFLECTIVE": 5,
         "RELATIONAL": 15,
         "SOCIAL": 21
       },
@@ -2364,7 +2377,7 @@
       "vivid_natural": 40,
       "neutral": 10,
       "dry_mechanical": 0,
-      "positive_playful_social": 27,
+      "positive_playful_social": 28,
       "serious_conflict_pressure": 4,
       "work_business": 5,
       "repeated_contexts": 34,
@@ -2391,9 +2404,9 @@
         "ASPIRATIONAL": 6,
         "CONFLICT": 2,
         "OTHER": 5,
-        "PLAYFUL": 4,
+        "PLAYFUL": 5,
         "POSITIVE": 7,
-        "PRACTICAL": 16,
+        "PRACTICAL": 14,
         "PRESSURE": 2,
         "RECOVERY": 3,
         "REFLECTIVE": 3,
@@ -2460,8 +2473,8 @@
       "dry_mechanical": 0,
       "positive_playful_social": 26,
       "serious_conflict_pressure": 7,
-      "work_business": 7,
-      "repeated_contexts": 34,
+      "work_business": 6,
+      "repeated_contexts": 33,
       "average_readability_score": 1.9,
       "context_counts": {
         "community": 4,
@@ -2473,13 +2486,14 @@
         "hobbies": 1,
         "home_life": 7,
         "learning": 1,
+        "ordinary-life": 1,
         "personal-goal": 1,
         "purchasing": 1,
         "relationships": 4,
         "sports_recreation": 4,
         "travel_vacation": 1,
         "unfamiliar-social-setting": 1,
-        "work_business": 7
+        "work_business": 6
       },
       "energy_counts": {
         "ASPIRATIONAL": 4,
@@ -2487,11 +2501,11 @@
         "OTHER": 8,
         "PLAYFUL": 3,
         "POSITIVE": 9,
-        "PRACTICAL": 16,
+        "PRACTICAL": 14,
         "PRESSURE": 4,
         "RECOVERY": 5,
-        "REFLECTIVE": 2,
-        "RELATIONAL": 13,
+        "REFLECTIVE": 3,
+        "RELATIONAL": 14,
         "SOCIAL": 18
       },
       "question_revision_ids": [
@@ -2556,13 +2570,14 @@
     "scoring_unchanged": true,
     "assembler_architecture_unchanged": true,
     "new_question_types": false,
-    "semantic_families_preserved": true,
+    "semantic_families_preserved_or_reconciled": true,
+    "semantic_family_reconciliation_count": 1,
     "exact_collisions": false,
     "virtue_loading_regression": false,
     "stereotype_regression": false,
     "historical_attempts_unchanged": true,
     "production_authority": "NONE"
   },
-  "recommendation": "READY_FOR_OWNER_EXPERIENCE_REVIEW",
-  "audit_hash": "1c9e938713de816fd84149b59055565c4f6db89404c8c3aa28fa5a8d748f3ae7"
+  "recommendation": "READY_FOR_OWNER_V4_RETEST",
+  "audit_hash": "049f752690c199275bee8eb5792de4ca28a4ac44c7578e5fac240d8f87ca6027"
 }
