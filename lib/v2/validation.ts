@@ -1,8 +1,9 @@
 import { createHash, randomUUID } from 'node:crypto';
 import bank from '@/data/v2-research/validation-bank-292-expression-v5.0.0.json';
+import { ACTIVE_BANK_ACTIVATED_AT, ACTIVE_BANK_DEPLOYMENT_ID, ACTIVE_BANK_SOURCE_COMMIT, ACTIVE_VALIDATION_BANK_ID, assertActiveValidationPointer } from '@/lib/v2/validationProvenance';
 
 export const VALIDATION_MODE = 'VIAGO_V2_PRIVATE_HUMAN_VALIDATION';
-export const BANK_VERSION = bank.bank_version;
+export const BANK_VERSION = ACTIVE_VALIDATION_BANK_ID;
 export const BANK_HASH = bank.bank_hash;
 export const ASSEMBLER_VERSION = 'viago-validation-assembler-v2.0.0';
 export const SCORING_VERSION = 'viago-validation-scoring-equal-opportunity-v1.0.0';
@@ -19,15 +20,16 @@ class DeterministicRng {
 
 export function createSeed() { return randomUUID(); }
 export function assembleValidationAttempt(seed: string) {
+  assertActiveValidationPointer();
   const rng=new DeterministicRng(`${BANK_VERSION}|${ASSEMBLER_VERSION}|${seed}`);
   const chosen: BankQuestion[]=[]; const ids=new Set<string>(); const families=new Map<string,number>(); const constructs=new Map<string,number>();
   let work=0,general=0,selfPreference=0;
   const add=(pool: BankQuestion[])=>{for(const q of rng.shuffle(pool)){if(ids.has(q.id)||(families.get(q.family)||0)>=1||(constructs.get(q.construct)||0)>=3||(q.work&&work>=8)||(q.context==='general-cross-context'&&general>=18)||(q.orientation==='SELF_PREFERENCE'&&selfPreference>=22))continue;chosen.push(q);ids.add(q.id);families.set(q.family,(families.get(q.family)||0)+1);constructs.set(q.construct,(constructs.get(q.construct)||0)+1);if(q.work)work++;if(q.context==='general-cross-context')general++;if(q.orientation==='SELF_PREFERENCE')selfPreference++;return;}throw new Error('Frozen bank cannot satisfy assembler constraints');};
   for(const color of ['red','blue','yellow','green'] as Color[]) for(let i=0;i<6;i++) add(bank.questions.filter(q=>q.format==='LIKERT'&&q.color===color));
   for(let i=0;i<26;i++) add(bank.questions.filter(q=>q.format==='SINGLE_SELECT'));
-  const questions=rng.shuffle(chosen).map((q,index)=>({position:index+1,question_revision_id:q.question_revision_id,question_id:q.id,format:q.format,color:q.color,prompt:q.prompt,domain:q.domain,context:q.context,semantic_family:q.family,option_order:q.format==='SINGLE_SELECT'?rng.shuffle(q.options.map(o=>o.id)):[],options:q.options}));
+  const questions=rng.shuffle(chosen).map((q,index)=>({position:index+1,question_revision_id:q.question_revision_id,question_id:q.id,format:q.format,color:q.color,prompt:q.prompt,domain:q.domain,context:q.context,semantic_family:q.family,option_order:q.format==='SINGLE_SELECT'?rng.shuffle(q.options.map(o=>o.id)):[],options:q.options.map(o=>({...o,option_revision_id:`${q.question_revision_id}:${o.id}`}))}));
   const manifestHash=createHash('sha256').update(JSON.stringify(questions.map(({prompt,options,...q})=>q))).digest('hex');
-  return {mode:VALIDATION_MODE,bank_version:BANK_VERSION,bank_hash:BANK_HASH,assembler_version:ASSEMBLER_VERSION,scoring_version:SCORING_VERSION,seed,manifest_hash:manifestHash,questions};
+  return {mode:VALIDATION_MODE,bank_version:BANK_VERSION,bank_hash:BANK_HASH,bank_activated_at:ACTIVE_BANK_ACTIVATED_AT,assembler_version:ASSEMBLER_VERSION,scoring_version:SCORING_VERSION,source_commit:ACTIVE_BANK_SOURCE_COMMIT,source_deployment_id:ACTIVE_BANK_DEPLOYMENT_ID,seed,manifest_hash:manifestHash,questions};
 }
 
 export function scoreValidationAttempt(manifest: ReturnType<typeof assembleValidationAttempt>, answers: Record<string,number|string>) {
@@ -37,4 +39,4 @@ export function scoreValidationAttempt(manifest: ReturnType<typeof assembleValid
   return {scores,primary:ranking[0][0],secondary:ranking[1][0],margin:ranking[0][1]-ranking[1][1],ranking:ranking.map(([color])=>color)};
 }
 
-export function publicManifest(manifest: ReturnType<typeof assembleValidationAttempt>){return {...manifest,questions:manifest.questions.map(q=>({position:q.position,question_revision_id:q.question_revision_id,format:q.format,prompt:q.prompt,options:q.option_order.map(id=>{const option=q.options.find(o=>o.id===id);return{id,label:option?.label||''};})}))};}
+export function publicManifest(manifest: ReturnType<typeof assembleValidationAttempt>){return {...manifest,questions:manifest.questions.map(q=>({position:q.position,question_revision_id:q.question_revision_id,format:q.format,prompt:q.prompt,options:q.option_order.map(id=>{const option=q.options.find(o=>o.id===id);return{id,option_revision_id:option?.option_revision_id,label:option?.label||''};})}))};}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "active_validation_bank_id": "viago-validation-bank-292-expression-v5.0.0",
+  "bank_hash": "6f3ae865ec5f195ec6bce137bfeba39f2cb9cbf2c48d66aa5f16cd40775e513c",
+  "assembler_version": "viago-validation-assembler-v2.0.0",
+  "scoring_version": "viago-validation-scoring-equal-opportunity-v1.0.0",
+  "created_at": "2026-09-01T05:14:38.506Z",
+  "activated_at": "2026-09-01T05:15:02.700Z",
+  "source_commit": "5bd022ec1b7a2c4eb7beff3979fa1edac6e47d05",
+  "deployment_id": "dpl_AzcwvRPoN1DT1tiSASGecc4avqJ1",
+  "status": "ACTIVE_VALIDATION"
+}
