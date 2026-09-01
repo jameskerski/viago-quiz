@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "status": "RESEARCH_ONLY",
+  "bank": {
+    "id": "viago-validation-bank-292-expression-v5.0.0",
+    "hash": "6f3ae865ec5f195ec6bce137bfeba39f2cb9cbf2c48d66aa5f16cd40775e513c"
+  },
+  "current_selector": {
+    "participant_history_aware": false,
+    "within_attempt_controls": [
+      "logical question identity",
+      "semantic family cap 1",
+      "broad construct cap 3",
+      "work/context/orientation caps"
+    ],
+    "cross_attempt_controls": []
+  },
+  "learning_item": {
+    "question_id": "EXP2-S-16",
+    "revision_id": "EXP2-S-16@human-1.0.0",
+    "family": "preferred motivational structure for learning",
+    "construct": "learning",
+    "simulated_selection_frequency": 0.16,
+    "expected_uniform_single_select_frequency": 0.174496644295302
+  },
+  "simulation": {
+    "participants": 100,
+    "attempts_each": 5,
+    "assembled_attempts": 500,
+    "consecutive_pairs": 400,
+    "current_means": {
+      "exact": 8.7425,
+      "revision": 8.7425,
+      "family": 8.7425,
+      "construct": 17.2225
+    },
+    "history_aware_means": {
+      "exact": 0,
+      "revision": 0,
+      "family": 0,
+      "construct": 0.2625
+    },
+    "selector_failures": 0,
+    "failure_rate": 0
+  },
+  "proposed_policy": [
+    "Hard-avoid logical identities from immediately prior attempt when feasible.",
+    "Penalize identities seen anywhere in recent participant history.",
+    "Penalize immediate and recent semantic-family recurrence.",
+    "Penalize immediate and recent broad-construct recurrence.",
+    "Keep all existing 26/24, six-Likert-per-color, scoring, and within-attempt caps.",
+    "Persist history-policy version and diagnostics in the manifest; fail transparently if scoring-balance constraints cannot be met."
+  ],
+  "audit_hash": "e3b7fd163e4b2e7e332619d9ba4b86c247f4522ca71b211bdcf197ec7c5a2e76"
+}

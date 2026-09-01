@@ -1,0 +1,1596 @@
+{
+  "schema_version": "1.0.0",
+  "status": "READ_ONLY_FORENSIC_RESEARCH",
+  "source_evidence_hash": "51c78c25111451be3c7fd742e5078767d3f3fa34e1cf73cb70c709d3d6d3e4ca",
+  "attempts": [
+    {
+      "id": "dd97a7d4-b8aa-4c66-8d85-e6eedf6dca97",
+      "bank": "viago-validation-bank-183-v1.0.0",
+      "started_at": "2026-08-31T14:44:41.350833+00:00",
+      "completed_at": "2026-08-31T15:05:47.239+00:00",
+      "manifest_hash": "22c894aa3ca36c9ec9ac1957f466d7a15991462f4c94e8b3894b892bd2d9235e"
+    },
+    {
+      "id": "66590d2b-83e8-4f6d-979f-4fcc52222ad4",
+      "bank": "viago-validation-bank-293-v2.0.0",
+      "started_at": "2026-08-31T23:24:15.401941+00:00",
+      "completed_at": null,
+      "manifest_hash": "4056461e896bb618f78f44a4000f70b98bb7089c7209d644174e2076bc0a0b12"
+    },
+    {
+      "id": "ae07507c-bd11-4d39-8829-a5190f91b298",
+      "bank": "viago-validation-bank-292-engagement-v4.0.0",
+      "started_at": "2026-09-01T04:07:40.234242+00:00",
+      "completed_at": "2026-09-01T04:27:06.639+00:00",
+      "manifest_hash": "8d024af9412ea1bd93531ae9749462e141d8ef89d0bb5accc1ba02744c83bdb4"
+    },
+    {
+      "id": "bf869416-1bc8-4b9b-8aa8-ac6b0abccb7f",
+      "bank": "viago-validation-bank-292-engagement-v4.0.0",
+      "started_at": "2026-09-01T05:11:21.754955+00:00",
+      "completed_at": null,
+      "manifest_hash": "e5e2a04815f0cec5399766817fcc5d565c7f9284b46ff858ab5fdc061b9d9912"
+    },
+    {
+      "id": "1b1b7b85-b3b9-47e5-8e33-5fa1dc00a30b",
+      "bank": "viago-validation-bank-292-engagement-v4.0.0",
+      "started_at": "2026-09-01T05:11:23.08555+00:00",
+      "completed_at": null,
+      "manifest_hash": "160b85095d8d260ec07c82be49819a2df45ef045bbb32d0dad7e2187ae63355f"
+    },
+    {
+      "id": "0f81e855-2018-4733-988a-5fbe2d52183f",
+      "bank": "viago-validation-bank-292-expression-v5.0.0",
+      "started_at": "2026-09-01T05:54:37.273783+00:00",
+      "completed_at": "2026-09-01T06:07:09.267+00:00",
+      "manifest_hash": "ea06466f5aced56a3cc1c0b55df6495386a27cfffaaab00ac185684db99483a5"
+    }
+  ],
+  "consecutive_pair_count": 5,
+  "pairwise": [
+    {
+      "left": {
+        "id": "dd97a7d4-b8aa-4c66-8d85-e6eedf6dca97",
+        "bank": "viago-validation-bank-183-v1.0.0",
+        "started_at": "2026-08-31T14:44:41.350833+00:00",
+        "completed": true
+      },
+      "right": {
+        "id": "66590d2b-83e8-4f6d-979f-4fcc52222ad4",
+        "bank": "viago-validation-bank-293-v2.0.0",
+        "started_at": "2026-08-31T23:24:15.401941+00:00",
+        "completed": false
+      },
+      "counts": {
+        "exact_question": 6,
+        "exact_revision": 6,
+        "semantic_family": 6,
+        "broad_construct": 19,
+        "experiential_near_match": 0
+      },
+      "exact_question_matches": [
+        {
+          "key": "EXP2-S-12",
+          "left_revision": "EXP2-S-12@validation-1.0.0",
+          "right_revision": "EXP2-S-12@validation-1.0.0",
+          "prompt": "You complete a demanding recreational course. Which reward would feel most satisfying?"
+        },
+        {
+          "key": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "prompt": "You receive unexpected money that is genuinely available to use. Which choice feels most satisfying?"
+        },
+        {
+          "key": "C01-L-R-05",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@validation-1.0.0",
+          "prompt": "After I own a mistake, my attention moves quickly to the decision that will get things back on track."
+        },
+        {
+          "key": "C01-S-01",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@validation-1.0.0",
+          "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?"
+        },
+        {
+          "key": "EXP2-S-16",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@validation-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "C02-S-05",
+          "left_revision": "C02-S-05@validation-1.0.0",
+          "right_revision": "C02-S-05@validation-1.0.0",
+          "prompt": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?"
+        }
+      ],
+      "exact_revision_matches": [
+        {
+          "key": "EXP2-S-12@validation-1.0.0",
+          "left_revision": "EXP2-S-12@validation-1.0.0",
+          "right_revision": "EXP2-S-12@validation-1.0.0",
+          "prompt": "You complete a demanding recreational course. Which reward would feel most satisfying?"
+        },
+        {
+          "key": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "prompt": "You receive unexpected money that is genuinely available to use. Which choice feels most satisfying?"
+        },
+        {
+          "key": "C01-L-R-05@validation-1.0.0",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@validation-1.0.0",
+          "prompt": "After I own a mistake, my attention moves quickly to the decision that will get things back on track."
+        },
+        {
+          "key": "C01-S-01@validation-1.0.0",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@validation-1.0.0",
+          "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?"
+        },
+        {
+          "key": "EXP2-S-16@validation-1.0.0",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@validation-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "C02-S-05@validation-1.0.0",
+          "left_revision": "C02-S-05@validation-1.0.0",
+          "right_revision": "C02-S-05@validation-1.0.0",
+          "prompt": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?"
+        }
+      ],
+      "semantic_family_matches": [
+        {
+          "key": "reward after recreational achievement",
+          "left_revision": "EXP2-S-12@validation-1.0.0",
+          "right_revision": "EXP2-S-12@validation-1.0.0",
+          "prompt": "You complete a demanding recreational course. Which reward would feel most satisfying?"
+        },
+        {
+          "key": "discretionary-resource-allocation",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "prompt": "You receive unexpected money that is genuinely available to use. Which choice feels most satisfying?"
+        },
+        {
+          "key": "post-mistake-recovery-decision",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@validation-1.0.0",
+          "prompt": "After I own a mistake, my attention moves quickly to the decision that will get things back on track."
+        },
+        {
+          "key": "unowned-urgent-problem",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@validation-1.0.0",
+          "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?"
+        },
+        {
+          "key": "preferred motivational structure for learning",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@validation-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "limited-community-budget",
+          "left_revision": "C02-S-05@validation-1.0.0",
+          "right_revision": "C02-S-05@validation-1.0.0",
+          "prompt": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?"
+        }
+      ],
+      "broad_construct_matches": [
+        {
+          "key": "reward after recreational achievement",
+          "left_revision": "EXP2-S-12@validation-1.0.0",
+          "right_revision": "EXP2-S-12@validation-1.0.0",
+          "prompt": "You complete a demanding recreational course. Which reward would feel most satisfying?"
+        },
+        {
+          "key": "resource-allocation",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "prompt": "You receive unexpected money that is genuinely available to use. Which choice feels most satisfying?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@validation-1.0.0",
+          "prompt": "After I own a mistake, my attention moves quickly to the decision that will get things back on track."
+        },
+        {
+          "key": "recovery",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "EXP1-L-G-02@validation-1.0.0",
+          "prompt": "After a mistake, I want to understand why it happened before I try the same task again."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "EXP2-L-R-02@validation-1.0.0",
+          "right_revision": "53a98bef-2fdf-4619-a09c-b4e02847b10c@validation-1.0.0",
+          "prompt": "Which kind of progress feels most naturally rewarding?"
+        },
+        {
+          "key": "achievement",
+          "left_revision": "EXP2-L-R-02@validation-1.0.0",
+          "right_revision": "2171df8f-e7e0-4de3-90f8-eaa1d186e9f1@validation-1.0.0",
+          "prompt": "I feel most motivated when progress can be measured against a clear target or standard."
+        },
+        {
+          "key": "process-reliability",
+          "left_revision": "917bb239-754d-4fc1-abe5-731dd1389226@validation-1.0.0",
+          "right_revision": "C02-L-G-02@validation-1.0.0",
+          "prompt": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time."
+        },
+        {
+          "key": "unowned-urgent",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@validation-1.0.0",
+          "prompt": "A time-sensitive problem appears and no one clearly owns it. What contribution comes most naturally to you first?"
+        },
+        {
+          "key": "resource-allocation",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "EXP2-S-08@validation-1.0.0",
+          "prompt": "A family is deciding whether to use extra savings now or preserve them for later. What consideration gets your attention first?"
+        },
+        {
+          "key": "achievement",
+          "left_revision": "EXP2-L-R-02@validation-1.0.0",
+          "right_revision": "C02-L-R-02@validation-1.0.0",
+          "prompt": "When several people could own a project, I feel more comfortable taking responsibility for the result than waiting for roles to settle."
+        },
+        {
+          "key": "blocked-motive",
+          "left_revision": "EXP1-S-16@validation-1.0.0",
+          "right_revision": "EXP1-S-15@validation-1.0.0",
+          "prompt": "A recurring household task is wearing down everyone involved. Which part would drain you most?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@validation-1.0.0",
+          "right_revision": "C02-L-Y-02@validation-1.0.0",
+          "prompt": "I feel more settled deepening a dependable relationship than widening my circle with new connections."
+        },
+        {
+          "key": "resource-allocation",
+          "left_revision": "dacfb979-0cbf-4f3e-8d33-310a9648dc0b@validation-1.0.0",
+          "right_revision": "EXP2-S-13@validation-1.0.0",
+          "prompt": "You have one completely free evening after a demanding week. Where are you most likely to invest it?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@validation-1.0.0",
+          "right_revision": "EXP2-L-Y-03@validation-1.0.0",
+          "prompt": "Even when people are pleasant, relationships with little continuity are less naturally attractive to me than relationships that grow through repeated connection."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP1-S-20@validation-1.0.0",
+          "right_revision": "EXP2-S-16@validation-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "decision",
+          "left_revision": "EXP1-S-02@validation-1.0.0",
+          "right_revision": "C01-S-07@validation-1.0.0",
+          "prompt": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@validation-1.0.0",
+          "right_revision": "EXP1-L-Y-01@validation-1.0.0",
+          "prompt": "I place more trust in people who maintain dependable connection over time than in people whose main contribution is opening new possibilities."
+        },
+        {
+          "key": "limited-community",
+          "left_revision": "C02-S-05@validation-1.0.0",
+          "right_revision": "C02-S-05@validation-1.0.0",
+          "prompt": "A neighborhood project has enough funding for only one improvement. What guides your recommendation first?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "9dfbefb2-64e4-48aa-b3d2-219463a49544@validation-1.0.0",
+          "prompt": "A personal goal has stopped improving despite steady effort. Which response would you most naturally try next?"
+        }
+      ],
+      "experiential_near_matches": []
+    },
+    {
+      "left": {
+        "id": "66590d2b-83e8-4f6d-979f-4fcc52222ad4",
+        "bank": "viago-validation-bank-293-v2.0.0",
+        "started_at": "2026-08-31T23:24:15.401941+00:00",
+        "completed": false
+      },
+      "right": {
+        "id": "ae07507c-bd11-4d39-8829-a5190f91b298",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T04:07:40.234242+00:00",
+        "completed": true
+      },
+      "counts": {
+        "exact_question": 11,
+        "exact_revision": 0,
+        "semantic_family": 10,
+        "broad_construct": 20,
+        "experiential_near_match": 0
+      },
+      "exact_question_matches": [
+        {
+          "key": "EXP3-S-010",
+          "left_revision": "EXP3-S-010@validation-2.0.0",
+          "right_revision": "EXP3-S-010@human-1.0.0",
+          "prompt": "A local event offers several ways to participate. Which role attracts you?"
+        },
+        {
+          "key": "EXP2-S-16",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@human-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "EXP3-L-Y-003",
+          "left_revision": "EXP3-L-Y-003@validation-2.0.0",
+          "right_revision": "EXP3-L-Y-003@human-1.0.0",
+          "prompt": "I trust someone more when their support remains steady after the exciting part has passed."
+        },
+        {
+          "key": "C01-L-R-05",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@human-1.0.0",
+          "prompt": "After owning a mistake, I quickly focus on getting things back on track."
+        },
+        {
+          "key": "C01-S-01",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@engagement-1.0.0",
+          "prompt": "The power goes out during a community event, and nobody is in charge. What do you do first?"
+        },
+        {
+          "key": "C02-S-11",
+          "left_revision": "C02-S-11@validation-1.0.0",
+          "right_revision": "C02-S-11@engagement-1.0.0",
+          "prompt": "A familiar household routine keeps causing small mistakes. What do you look at first?"
+        },
+        {
+          "key": "C01-S-07",
+          "left_revision": "C01-S-07@validation-1.0.0",
+          "right_revision": "C01-S-07@human-1.0.0",
+          "prompt": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?"
+        },
+        {
+          "key": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@validation-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "EXP3-L-B-004",
+          "left_revision": "EXP3-L-B-004@validation-2.0.0",
+          "right_revision": "EXP3-L-B-004@human-1.0.0",
+          "prompt": "When learning for fun, I prefer experimenting early to following a complete sequence first."
+        },
+        {
+          "key": "C02-L-R-02",
+          "left_revision": "C02-L-R-02@validation-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "C02-L-B-01",
+          "left_revision": "C02-L-B-01@validation-1.0.0",
+          "right_revision": "C02-L-B-01@human-1.0.0",
+          "prompt": "I prefer shaping a project as possibilities emerge over following a fixed path."
+        }
+      ],
+      "exact_revision_matches": [],
+      "semantic_family_matches": [
+        {
+          "key": "community-role-attraction",
+          "left_revision": "EXP3-S-010@validation-2.0.0",
+          "right_revision": "EXP3-S-010@human-1.0.0",
+          "prompt": "A local event offers several ways to participate. Which role attracts you?"
+        },
+        {
+          "key": "preferred motivational structure for learning",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@human-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "steady-support-builds-trust",
+          "left_revision": "EXP3-L-Y-003@validation-2.0.0",
+          "right_revision": "EXP3-L-Y-003@human-1.0.0",
+          "prompt": "I trust someone more when their support remains steady after the exciting part has passed."
+        },
+        {
+          "key": "post-mistake-recovery-decision",
+          "left_revision": "C01-L-R-05@validation-1.0.0",
+          "right_revision": "C01-L-R-05@human-1.0.0",
+          "prompt": "After owning a mistake, I quickly focus on getting things back on track."
+        },
+        {
+          "key": "unowned-urgent-problem",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@engagement-1.0.0",
+          "prompt": "The power goes out during a community event, and nobody is in charge. What do you do first?"
+        },
+        {
+          "key": "recurring-minor-errors",
+          "left_revision": "C02-S-11@validation-1.0.0",
+          "right_revision": "C02-S-11@engagement-1.0.0",
+          "prompt": "A familiar household routine keeps causing small mistakes. What do you look at first?"
+        },
+        {
+          "key": "stalled-friend-activity-choice",
+          "left_revision": "C01-S-07@validation-1.0.0",
+          "right_revision": "C01-S-07@human-1.0.0",
+          "prompt": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?"
+        },
+        {
+          "key": "learning-experimentation-entry",
+          "left_revision": "EXP3-L-B-004@validation-2.0.0",
+          "right_revision": "EXP3-L-B-004@human-1.0.0",
+          "prompt": "When learning for fun, I prefer experimenting early to following a complete sequence first."
+        },
+        {
+          "key": "ambiguous-result-ownership",
+          "left_revision": "C02-L-R-02@validation-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "emergent-project-path",
+          "left_revision": "C02-L-B-01@validation-1.0.0",
+          "right_revision": "C02-L-B-01@human-1.0.0",
+          "prompt": "I prefer shaping a project as possibilities emerge over following a fixed path."
+        }
+      ],
+      "broad_construct_matches": [
+        {
+          "key": "process-reliability",
+          "left_revision": "C02-L-G-02@validation-1.0.0",
+          "right_revision": "4043bf30-62cb-4968-ba6e-85c7a554d894@human-1.0.0",
+          "prompt": "In close relationships, I prefer sharing feelings as they arise instead of processing them alone first."
+        },
+        {
+          "key": "community-role-attraction",
+          "left_revision": "EXP3-S-010@validation-2.0.0",
+          "right_revision": "EXP3-S-010@human-1.0.0",
+          "prompt": "A local event offers several ways to participate. Which role attracts you?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "9dfbefb2-64e4-48aa-b3d2-219463a49544@validation-1.0.0",
+          "right_revision": "eae82ae1-ca73-4c00-b328-7c846c5fbc26@human-1.0.0",
+          "prompt": "An everyday system breaks down and affects several people. What do you focus on first?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "EXP1-L-Y-01@validation-1.0.0",
+          "right_revision": "44a6b54a-9864-4137-bdec-50ba8cbb0bb5@human-1.0.0",
+          "prompt": "I’m motivated when I feel connected to the people involved, not just the task."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP2-S-16@human-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "steady-support-builds-trust",
+          "left_revision": "EXP3-L-Y-003@validation-2.0.0",
+          "right_revision": "EXP3-L-Y-003@human-1.0.0",
+          "prompt": "I trust someone more when their support remains steady after the exciting part has passed."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP1-S-20@human-1.0.0",
+          "prompt": "You ask someone who knows you well to recommend a course or hobby. Which recommendation would feel most personally useful?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "9dfbefb2-64e4-48aa-b3d2-219463a49544@validation-1.0.0",
+          "right_revision": "EXP1-S-19@human-1.0.0",
+          "prompt": "A home improvement you attempted did not work as expected. What are you most inclined to do first?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "9dfbefb2-64e4-48aa-b3d2-219463a49544@validation-1.0.0",
+          "right_revision": "C01-L-R-05@human-1.0.0",
+          "prompt": "After owning a mistake, I quickly focus on getting things back on track."
+        },
+        {
+          "key": "unowned-urgent",
+          "left_revision": "C01-S-01@validation-1.0.0",
+          "right_revision": "C01-S-01@engagement-1.0.0",
+          "prompt": "The power goes out during a community event, and nobody is in charge. What do you do first?"
+        },
+        {
+          "key": "recurring-minor",
+          "left_revision": "C02-S-11@validation-1.0.0",
+          "right_revision": "C02-S-11@engagement-1.0.0",
+          "prompt": "A familiar household routine keeps causing small mistakes. What do you look at first?"
+        },
+        {
+          "key": "decision",
+          "left_revision": "C01-S-07@validation-1.0.0",
+          "right_revision": "C01-S-07@human-1.0.0",
+          "prompt": "Friends are choosing an activity, and the conversation has stalled. What contribution comes most naturally to you?"
+        },
+        {
+          "key": "achievement",
+          "left_revision": "C02-L-R-02@validation-1.0.0",
+          "right_revision": "53ece3a0-2862-42b5-a4fc-1468fd3549e8@human-1.0.0",
+          "prompt": "I'd rather make steady, predictable progress than grow faster with more risk."
+        },
+        {
+          "key": "learning-experimentation-entry",
+          "left_revision": "EXP3-L-B-004@validation-2.0.0",
+          "right_revision": "EXP3-L-B-004@human-1.0.0",
+          "prompt": "When learning for fun, I prefer experimenting early to following a complete sequence first."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-16@validation-1.0.0",
+          "right_revision": "EXP1-S-13@human-1.0.0",
+          "prompt": "You decide to teach yourself a skill you have never tried. What would most naturally help you begin?"
+        },
+        {
+          "key": "environment",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@validation-1.0.0",
+          "right_revision": "EXP2-S-15@human-1.0.0",
+          "prompt": "You can shape one room at home around how you naturally like to spend time. What quality matters most?"
+        },
+        {
+          "key": "achievement",
+          "left_revision": "C02-L-R-02@validation-1.0.0",
+          "right_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "prompt": "I’m motivated by achieving visible results and tangible rewards."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "C02-L-R-02@validation-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "decision",
+          "left_revision": "C01-S-07@validation-1.0.0",
+          "right_revision": "EXP2-L-G-03@human-1.0.0",
+          "prompt": "I will reopen a settled decision when its evidence no longer holds."
+        },
+        {
+          "key": "emergent-project",
+          "left_revision": "C02-L-B-01@validation-1.0.0",
+          "right_revision": "C02-L-B-01@human-1.0.0",
+          "prompt": "I prefer shaping a project as possibilities emerge over following a fixed path."
+        }
+      ],
+      "experiential_near_matches": []
+    },
+    {
+      "left": {
+        "id": "ae07507c-bd11-4d39-8829-a5190f91b298",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T04:07:40.234242+00:00",
+        "completed": true
+      },
+      "right": {
+        "id": "bf869416-1bc8-4b9b-8aa8-ac6b0abccb7f",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T05:11:21.754955+00:00",
+        "completed": false
+      },
+      "counts": {
+        "exact_question": 9,
+        "exact_revision": 9,
+        "semantic_family": 9,
+        "broad_construct": 19,
+        "experiential_near_match": 0
+      },
+      "exact_question_matches": [
+        {
+          "key": "EXP2-L-R-03",
+          "left_revision": "EXP2-L-R-03@human-1.0.0",
+          "right_revision": "EXP2-L-R-03@human-1.0.0",
+          "prompt": "I trust someone faster when they move a result forward than when they build a steady process."
+        },
+        {
+          "key": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "a1fbe330-1e47-4251-9a07-ce5c2029f916",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "prompt": "When friends have free time, I like suggesting something new instead of doing what is familiar."
+        },
+        {
+          "key": "EXP3-L-G-003",
+          "left_revision": "EXP3-L-G-003@human-1.0.0",
+          "right_revision": "EXP3-L-G-003@human-1.0.0",
+          "prompt": "Learning feels satisfying when the details finally fit together."
+        },
+        {
+          "key": "EXP3-L-Y-012",
+          "left_revision": "EXP3-L-Y-012@human-1.0.0",
+          "right_revision": "EXP3-L-Y-012@human-1.0.0",
+          "prompt": "I notice when a useful routine also helps people feel connected."
+        },
+        {
+          "key": "EXP3-L-G-006",
+          "left_revision": "EXP3-L-G-006@human-1.0.0",
+          "right_revision": "EXP3-L-G-006@human-1.0.0",
+          "prompt": "I value people who make expectations clear before a shared task begins."
+        },
+        {
+          "key": "EXP3-L-Y-010",
+          "left_revision": "EXP3-L-Y-010@human-1.0.0",
+          "right_revision": "EXP3-L-Y-010@human-1.0.0",
+          "prompt": "I would rather preserve a dependable connection than win a minor point."
+        },
+        {
+          "key": "C02-L-R-02",
+          "left_revision": "C02-L-R-02@engagement-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "8ed50147-99ab-4673-9004-567c307646c9",
+          "left_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "right_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "prompt": "I’m motivated by achieving visible results and tangible rewards."
+        }
+      ],
+      "exact_revision_matches": [
+        {
+          "key": "EXP2-L-R-03@human-1.0.0",
+          "left_revision": "EXP2-L-R-03@human-1.0.0",
+          "right_revision": "EXP2-L-R-03@human-1.0.0",
+          "prompt": "I trust someone faster when they move a result forward than when they build a steady process."
+        },
+        {
+          "key": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "prompt": "When friends have free time, I like suggesting something new instead of doing what is familiar."
+        },
+        {
+          "key": "EXP3-L-G-003@human-1.0.0",
+          "left_revision": "EXP3-L-G-003@human-1.0.0",
+          "right_revision": "EXP3-L-G-003@human-1.0.0",
+          "prompt": "Learning feels satisfying when the details finally fit together."
+        },
+        {
+          "key": "EXP3-L-Y-012@human-1.0.0",
+          "left_revision": "EXP3-L-Y-012@human-1.0.0",
+          "right_revision": "EXP3-L-Y-012@human-1.0.0",
+          "prompt": "I notice when a useful routine also helps people feel connected."
+        },
+        {
+          "key": "EXP3-L-G-006@human-1.0.0",
+          "left_revision": "EXP3-L-G-006@human-1.0.0",
+          "right_revision": "EXP3-L-G-006@human-1.0.0",
+          "prompt": "I value people who make expectations clear before a shared task begins."
+        },
+        {
+          "key": "EXP3-L-Y-010@human-1.0.0",
+          "left_revision": "EXP3-L-Y-010@human-1.0.0",
+          "right_revision": "EXP3-L-Y-010@human-1.0.0",
+          "prompt": "I would rather preserve a dependable connection than win a minor point."
+        },
+        {
+          "key": "C02-L-R-02@engagement-1.0.0",
+          "left_revision": "C02-L-R-02@engagement-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "left_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "right_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "prompt": "I’m motivated by achieving visible results and tangible rewards."
+        }
+      ],
+      "semantic_family_matches": [
+        {
+          "key": "Red trust through ownership and outcome",
+          "left_revision": "EXP2-L-R-03@human-1.0.0",
+          "right_revision": "EXP2-L-R-03@human-1.0.0",
+          "prompt": "I trust someone faster when they move a result forward than when they build a steady process."
+        },
+        {
+          "key": "preferred-day-satisfaction-reward",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "introducing-novelty-in-casual-social-time",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "prompt": "When friends have free time, I like suggesting something new instead of doing what is familiar."
+        },
+        {
+          "key": "coherent-understanding-reward",
+          "left_revision": "EXP3-L-G-003@human-1.0.0",
+          "right_revision": "EXP3-L-G-003@human-1.0.0",
+          "prompt": "Learning feels satisfying when the details finally fit together."
+        },
+        {
+          "key": "relational-value-in-routine",
+          "left_revision": "EXP3-L-Y-012@human-1.0.0",
+          "right_revision": "EXP3-L-Y-012@human-1.0.0",
+          "prompt": "I notice when a useful routine also helps people feel connected."
+        },
+        {
+          "key": "valuing-clear-expectations",
+          "left_revision": "EXP3-L-G-006@human-1.0.0",
+          "right_revision": "EXP3-L-G-006@human-1.0.0",
+          "prompt": "I value people who make expectations clear before a shared task begins."
+        },
+        {
+          "key": "connection-over-minor-win",
+          "left_revision": "EXP3-L-Y-010@human-1.0.0",
+          "right_revision": "EXP3-L-Y-010@human-1.0.0",
+          "prompt": "I would rather preserve a dependable connection than win a minor point."
+        },
+        {
+          "key": "ambiguous-result-ownership",
+          "left_revision": "C02-L-R-02@engagement-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "motivation-from-visible-results-and-rewards",
+          "left_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "right_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "prompt": "I’m motivated by achieving visible results and tangible rewards."
+        }
+      ],
+      "broad_construct_matches": [
+        {
+          "key": "recovery",
+          "left_revision": "C01-L-R-05@human-1.0.0",
+          "right_revision": "EXP1-S-17@human-1.0.0",
+          "prompt": "A personal goal ends in a disappointing result after significant effort. What most helps you begin recovering?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "44a6b54a-9864-4137-bdec-50ba8cbb0bb5@human-1.0.0",
+          "right_revision": "EXP2-S-03@human-1.0.0",
+          "prompt": "A close relationship is strong and comfortable. What feels most worth investing in next?"
+        },
+        {
+          "key": "trust",
+          "left_revision": "EXP2-L-R-03@human-1.0.0",
+          "right_revision": "EXP2-L-R-03@human-1.0.0",
+          "prompt": "I trust someone faster when they move a result forward than when they build a steady process."
+        },
+        {
+          "key": "preferred-reward-pattern",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "possibility-freedom",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "prompt": "When friends have free time, I like suggesting something new instead of doing what is familiar."
+        },
+        {
+          "key": "process-reliability",
+          "left_revision": "4043bf30-62cb-4968-ba6e-85c7a554d894@human-1.0.0",
+          "right_revision": "4d694041-2641-4635-aa79-e5dc6c188682@engagement-1.0.0",
+          "prompt": "I care more about getting the result than following every step exactly."
+        },
+        {
+          "key": "coherent-understanding-reward",
+          "left_revision": "EXP3-L-G-003@human-1.0.0",
+          "right_revision": "EXP3-L-G-003@human-1.0.0",
+          "prompt": "Learning feels satisfying when the details finally fit together."
+        },
+        {
+          "key": "relational-value-in-routine",
+          "left_revision": "EXP3-L-Y-012@human-1.0.0",
+          "right_revision": "EXP3-L-Y-012@human-1.0.0",
+          "prompt": "I notice when a useful routine also helps people feel connected."
+        },
+        {
+          "key": "possibility-freedom",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "e0bbdf96-ca93-4f07-a4a1-199cd25ae427@human-1.0.0",
+          "prompt": "I work best when I have freedom to adjust my approach as I go."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP1-S-13@human-1.0.0",
+          "right_revision": "EXP1-S-08@human-1.0.0",
+          "prompt": "You are joining a class where students sometimes practice together. What would you value most in a practice partner?"
+        },
+        {
+          "key": "valuing-clear-expectations",
+          "left_revision": "EXP3-L-G-006@human-1.0.0",
+          "right_revision": "EXP3-L-G-006@human-1.0.0",
+          "prompt": "I value people who make expectations clear before a shared task begins."
+        },
+        {
+          "key": "connection-over-minor-win",
+          "left_revision": "EXP3-L-Y-010@human-1.0.0",
+          "right_revision": "EXP3-L-Y-010@human-1.0.0",
+          "prompt": "I would rather preserve a dependable connection than win a minor point."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "C02-L-R-02@engagement-1.0.0",
+          "right_revision": "C02-L-R-02@engagement-1.0.0",
+          "prompt": "When a group trip needs an organizer, I am comfortable owning the result instead of waiting for someone else."
+        },
+        {
+          "key": "decision",
+          "left_revision": "EXP2-L-G-03@human-1.0.0",
+          "right_revision": "C03-S-10@human-1.0.0",
+          "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?"
+        },
+        {
+          "key": "possibility-freedom",
+          "left_revision": "a1fbe330-1e47-4251-9a07-ce5c2029f916@human-1.0.0",
+          "right_revision": "EXP2-L-B-02@human-1.0.0",
+          "prompt": "I am more attracted to activities that leave room for the experience to evolve than to activities whose path is fully fixed."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP1-S-13@human-1.0.0",
+          "right_revision": "EXP1-L-R-02@human-1.0.0",
+          "prompt": "Learning holds my attention better when I can use it toward a visible result than when exploration is the main reward."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "C02-L-R-02@engagement-1.0.0",
+          "right_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "prompt": "I’m motivated by achieving visible results and tangible rewards."
+        },
+        {
+          "key": "conflict",
+          "left_revision": "C01-L-G-03@human-1.0.0",
+          "right_revision": "EXP1-S-11@human-1.0.0",
+          "prompt": "A close friend is handling a disagreement. What do you respect most in their approach?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "44a6b54a-9864-4137-bdec-50ba8cbb0bb5@human-1.0.0",
+          "right_revision": "C02-S-03@human-1.0.0",
+          "prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?"
+        }
+      ],
+      "experiential_near_matches": []
+    },
+    {
+      "left": {
+        "id": "bf869416-1bc8-4b9b-8aa8-ac6b0abccb7f",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T05:11:21.754955+00:00",
+        "completed": false
+      },
+      "right": {
+        "id": "1b1b7b85-b3b9-47e5-8e33-5fa1dc00a30b",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T05:11:23.08555+00:00",
+        "completed": false
+      },
+      "counts": {
+        "exact_question": 10,
+        "exact_revision": 10,
+        "semantic_family": 10,
+        "broad_construct": 22,
+        "experiential_near_match": 1
+      },
+      "exact_question_matches": [
+        {
+          "key": "EXP3-S-008",
+          "left_revision": "EXP3-S-008@human-1.0.0",
+          "right_revision": "EXP3-S-008@human-1.0.0",
+          "prompt": "A close friend shares exciting news. What response feels most natural?"
+        },
+        {
+          "key": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+          "left_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "right_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "prompt": "You are planning a weekend event, and a friend offers to own one part. What do you settle first?"
+        },
+        {
+          "key": "C02-S-03",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "C02-S-03@human-1.0.0",
+          "prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?"
+        },
+        {
+          "key": "EXP3-S-007",
+          "left_revision": "EXP3-S-007@human-1.0.0",
+          "right_revision": "EXP3-S-007@human-1.0.0",
+          "prompt": "You are setting up a room you use often. What matters most?"
+        },
+        {
+          "key": "EXP3-S-015",
+          "left_revision": "EXP3-S-015@human-1.0.0",
+          "right_revision": "EXP3-S-015@human-1.0.0",
+          "prompt": "Your group has extra money left after a trip. What use appeals to you most?"
+        },
+        {
+          "key": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "EXP3-S-046",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "C03-S-10",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "C03-S-10@human-1.0.0",
+          "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?"
+        },
+        {
+          "key": "EXP3-L-Y-008",
+          "left_revision": "EXP3-L-Y-008@human-1.0.0",
+          "right_revision": "EXP3-L-Y-008@human-1.0.0",
+          "prompt": "I am more likely to continue a difficult personal effort when it carries meaning for someone I care about."
+        },
+        {
+          "key": "EXP3-S-014",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "exact_revision_matches": [
+        {
+          "key": "EXP3-S-008@human-1.0.0",
+          "left_revision": "EXP3-S-008@human-1.0.0",
+          "right_revision": "EXP3-S-008@human-1.0.0",
+          "prompt": "A close friend shares exciting news. What response feels most natural?"
+        },
+        {
+          "key": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "left_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "right_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "prompt": "You are planning a weekend event, and a friend offers to own one part. What do you settle first?"
+        },
+        {
+          "key": "C02-S-03@human-1.0.0",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "C02-S-03@human-1.0.0",
+          "prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?"
+        },
+        {
+          "key": "EXP3-S-007@human-1.0.0",
+          "left_revision": "EXP3-S-007@human-1.0.0",
+          "right_revision": "EXP3-S-007@human-1.0.0",
+          "prompt": "You are setting up a room you use often. What matters most?"
+        },
+        {
+          "key": "EXP3-S-015@human-1.0.0",
+          "left_revision": "EXP3-S-015@human-1.0.0",
+          "right_revision": "EXP3-S-015@human-1.0.0",
+          "prompt": "Your group has extra money left after a trip. What use appeals to you most?"
+        },
+        {
+          "key": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "EXP3-S-046@human-1.0.0",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "C03-S-10@human-1.0.0",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "C03-S-10@human-1.0.0",
+          "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?"
+        },
+        {
+          "key": "EXP3-L-Y-008@human-1.0.0",
+          "left_revision": "EXP3-L-Y-008@human-1.0.0",
+          "right_revision": "EXP3-L-Y-008@human-1.0.0",
+          "prompt": "I am more likely to continue a difficult personal effort when it carries meaning for someone I care about."
+        },
+        {
+          "key": "EXP3-S-014@human-1.0.0",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "semantic_family_matches": [
+        {
+          "key": "response-to-friend-success",
+          "left_revision": "EXP3-S-008@human-1.0.0",
+          "right_revision": "EXP3-S-008@human-1.0.0",
+          "prompt": "A close friend shares exciting news. What response feels most natural?"
+        },
+        {
+          "key": "first-priority-when-delegating",
+          "left_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "right_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "prompt": "You are planning a weekend event, and a friend offers to own one part. What do you settle first?"
+        },
+        {
+          "key": "missed-travel-connection",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "C02-S-03@human-1.0.0",
+          "prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?"
+        },
+        {
+          "key": "room-design-priority",
+          "left_revision": "EXP3-S-007@human-1.0.0",
+          "right_revision": "EXP3-S-007@human-1.0.0",
+          "prompt": "You are setting up a room you use often. What matters most?"
+        },
+        {
+          "key": "shared-surplus-use",
+          "left_revision": "EXP3-S-015@human-1.0.0",
+          "right_revision": "EXP3-S-015@human-1.0.0",
+          "prompt": "Your group has extra money left after a trip. What use appeals to you most?"
+        },
+        {
+          "key": "preferred-day-satisfaction-reward",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "regular-customer-loyalty",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "different-memories-without-required-decision",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "C03-S-10@human-1.0.0",
+          "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?"
+        },
+        {
+          "key": "relational-meaning-sustains-effort",
+          "left_revision": "EXP3-L-Y-008@human-1.0.0",
+          "right_revision": "EXP3-L-Y-008@human-1.0.0",
+          "prompt": "I am more likely to continue a difficult personal effort when it carries meaning for someone I care about."
+        },
+        {
+          "key": "advice-purpose",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "broad_construct_matches": [
+        {
+          "key": "response-to-friend-success",
+          "left_revision": "EXP3-S-008@human-1.0.0",
+          "right_revision": "EXP3-S-008@human-1.0.0",
+          "prompt": "A close friend shares exciting news. What response feels most natural?"
+        },
+        {
+          "key": "process-reliability",
+          "left_revision": "4d694041-2641-4635-aa79-e5dc6c188682@engagement-1.0.0",
+          "right_revision": "C02-L-G-02@human-1.0.0",
+          "prompt": "I would rather use a repeatable process that gives consistent results than improvise a different approach each time."
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "EXP2-L-Y-03@human-1.0.0",
+          "prompt": "Relationships with little continuity appeal to me less than relationships built through repeated connection."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP1-L-R-02@human-1.0.0",
+          "right_revision": "EXP1-S-13@human-1.0.0",
+          "prompt": "You decide to teach yourself a skill you have never tried. What would most naturally help you begin?"
+        },
+        {
+          "key": "first-priority",
+          "left_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "right_revision": "7cf21580-ec06-4c65-b602-4c9317eeac3d@engagement-1.0.0",
+          "prompt": "You are planning a weekend event, and a friend offers to own one part. What do you settle first?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "EXP1-S-17@human-1.0.0",
+          "right_revision": "EXP1-L-Y-02@human-1.0.0",
+          "prompt": "After a relationship setback, restoring a dependable sense of connection matters more to me than quickly deciding what we should do next."
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "C02-S-03@human-1.0.0",
+          "prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?"
+        },
+        {
+          "key": "decision",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "C01-L-R-01@human-1.0.0",
+          "prompt": "When a decision stalls, I’d rather propose a direction and take responsibility for moving it forward than keep gathering more views."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "right_revision": "53a98bef-2fdf-4619-a09c-b4e02847b10c@engagement-1.0.0",
+          "prompt": "Which kind of win feels most rewarding?"
+        },
+        {
+          "key": "room-design-priority",
+          "left_revision": "EXP3-S-007@human-1.0.0",
+          "right_revision": "EXP3-S-007@human-1.0.0",
+          "prompt": "You are setting up a room you use often. What matters most?"
+        },
+        {
+          "key": "recovery",
+          "left_revision": "EXP1-S-17@human-1.0.0",
+          "right_revision": "EXP1-L-G-02@human-1.0.0",
+          "prompt": "After a mistake, I want to understand why it happened before trying again."
+        },
+        {
+          "key": "recovery",
+          "left_revision": "EXP1-S-17@human-1.0.0",
+          "right_revision": "C01-L-R-05@human-1.0.0",
+          "prompt": "After owning a mistake, I quickly focus on getting things back on track."
+        },
+        {
+          "key": "trust",
+          "left_revision": "EXP2-L-R-03@human-1.0.0",
+          "right_revision": "4a7016b7-648a-45a7-8b3b-0047215b2270@human-1.0.0",
+          "prompt": "I’m willing to compromise on speed if it helps maintain trust."
+        },
+        {
+          "key": "shared-surplus-use",
+          "left_revision": "EXP3-S-015@human-1.0.0",
+          "right_revision": "EXP3-S-015@human-1.0.0",
+          "prompt": "Your group has extra money left after a trip. What use appeals to you most?"
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP1-L-R-02@human-1.0.0",
+          "right_revision": "EXP2-S-22@human-1.0.0",
+          "prompt": "You're learning something just for fun. When does it feel complete enough to move on?"
+        },
+        {
+          "key": "preferred-reward-pattern",
+          "left_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "right_revision": "0ff7b326-c6ce-4cd5-994e-5ce1b6b78552@engagement-1.0.0",
+          "prompt": "At the end of a great day, what made it satisfying?"
+        },
+        {
+          "key": "regular-customer-loyalty",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "possibility-freedom",
+          "left_revision": "EXP2-L-B-02@human-1.0.0",
+          "right_revision": "829ad3cb-57ca-4836-99f2-a50c36b8f4e0@human-1.0.0",
+          "prompt": "Even with a practical schedule, I like leaving time open for something interesting."
+        },
+        {
+          "key": "achievement",
+          "left_revision": "8ed50147-99ab-4673-9004-567c307646c9@human-1.0.0",
+          "right_revision": "2171df8f-e7e0-4de3-90f8-eaa1d186e9f1@engagement-1.0.0",
+          "prompt": "A clear finish line brings out my motivation."
+        },
+        {
+          "key": "decision",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "C03-S-10@human-1.0.0",
+          "prompt": "You and a sibling remember an important family event differently. You don't need to agree. What do you want from the conversation?"
+        },
+        {
+          "key": "relational-meaning-sustains-effort",
+          "left_revision": "EXP3-L-Y-008@human-1.0.0",
+          "right_revision": "EXP3-L-Y-008@human-1.0.0",
+          "prompt": "I am more likely to continue a difficult personal effort when it carries meaning for someone I care about."
+        },
+        {
+          "key": "advice-purpose",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "experiential_near_matches": [
+        {
+          "left_id": "C02-S-03",
+          "right_id": "C01-S-03",
+          "left_prompt": "A missed connection changes a group trip with little warning. What matters most in your first response?",
+          "right_prompt": "A plan you were counting on changes with little warning. What matters most in your first response?",
+          "similarity": 0.5,
+          "same_frame": false
+        }
+      ]
+    },
+    {
+      "left": {
+        "id": "1b1b7b85-b3b9-47e5-8e33-5fa1dc00a30b",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "started_at": "2026-09-01T05:11:23.08555+00:00",
+        "completed": false
+      },
+      "right": {
+        "id": "0f81e855-2018-4733-988a-5fbe2d52183f",
+        "bank": "viago-validation-bank-292-expression-v5.0.0",
+        "started_at": "2026-09-01T05:54:37.273783+00:00",
+        "completed": true
+      },
+      "counts": {
+        "exact_question": 6,
+        "exact_revision": 6,
+        "semantic_family": 6,
+        "broad_construct": 17,
+        "experiential_near_match": 1
+      },
+      "exact_question_matches": [
+        {
+          "key": "C01-L-B-02",
+          "left_revision": "C01-L-B-02@human-1.0.0",
+          "right_revision": "C01-L-B-02@human-1.0.0",
+          "prompt": "When I don't know anyone in the room, I want to see who I might connect with instead of waiting to feel comfortable."
+        },
+        {
+          "key": "EXP3-S-020",
+          "left_revision": "EXP3-S-020@human-1.0.0",
+          "right_revision": "EXP3-S-020@human-1.0.0",
+          "prompt": "A family tradition can be updated in several reasonable ways. Which change appeals to you?"
+        },
+        {
+          "key": "EXP3-S-046",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "EXP2-S-19",
+          "left_revision": "EXP2-S-19@human-1.0.0",
+          "right_revision": "EXP2-S-19@human-1.0.0",
+          "prompt": "You made a household purchase after careful consideration. What would most naturally make you reconsider it?"
+        },
+        {
+          "key": "C03-S-03",
+          "left_revision": "C03-S-03@human-1.0.0",
+          "right_revision": "C03-S-03@human-1.0.0",
+          "prompt": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?"
+        },
+        {
+          "key": "EXP3-S-014",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "exact_revision_matches": [
+        {
+          "key": "C01-L-B-02@human-1.0.0",
+          "left_revision": "C01-L-B-02@human-1.0.0",
+          "right_revision": "C01-L-B-02@human-1.0.0",
+          "prompt": "When I don't know anyone in the room, I want to see who I might connect with instead of waiting to feel comfortable."
+        },
+        {
+          "key": "EXP3-S-020@human-1.0.0",
+          "left_revision": "EXP3-S-020@human-1.0.0",
+          "right_revision": "EXP3-S-020@human-1.0.0",
+          "prompt": "A family tradition can be updated in several reasonable ways. Which change appeals to you?"
+        },
+        {
+          "key": "EXP3-S-046@human-1.0.0",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "EXP2-S-19@human-1.0.0",
+          "left_revision": "EXP2-S-19@human-1.0.0",
+          "right_revision": "EXP2-S-19@human-1.0.0",
+          "prompt": "You made a household purchase after careful consideration. What would most naturally make you reconsider it?"
+        },
+        {
+          "key": "C03-S-03@human-1.0.0",
+          "left_revision": "C03-S-03@human-1.0.0",
+          "right_revision": "C03-S-03@human-1.0.0",
+          "prompt": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?"
+        },
+        {
+          "key": "EXP3-S-014@human-1.0.0",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "semantic_family_matches": [
+        {
+          "key": "exploratory-social-entry",
+          "left_revision": "C01-L-B-02@human-1.0.0",
+          "right_revision": "C01-L-B-02@human-1.0.0",
+          "prompt": "When I don't know anyone in the room, I want to see who I might connect with instead of waiting to feel comfortable."
+        },
+        {
+          "key": "tradition-update-motive",
+          "left_revision": "EXP3-S-020@human-1.0.0",
+          "right_revision": "EXP3-S-020@human-1.0.0",
+          "prompt": "A family tradition can be updated in several reasonable ways. Which change appeals to you?"
+        },
+        {
+          "key": "regular-customer-loyalty",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "trigger for revisiting a completed purchase decision",
+          "left_revision": "EXP2-S-19@human-1.0.0",
+          "right_revision": "EXP2-S-19@human-1.0.0",
+          "prompt": "You made a household purchase after careful consideration. What would most naturally make you reconsider it?"
+        },
+        {
+          "key": "household-purchase-priority",
+          "left_revision": "C03-S-03@human-1.0.0",
+          "right_revision": "C03-S-03@human-1.0.0",
+          "prompt": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?"
+        },
+        {
+          "key": "advice-purpose",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        }
+      ],
+      "broad_construct_matches": [
+        {
+          "key": "exploratory-social",
+          "left_revision": "C01-L-B-02@human-1.0.0",
+          "right_revision": "C01-L-B-02@human-1.0.0",
+          "prompt": "When I don't know anyone in the room, I want to see who I might connect with instead of waiting to feel comfortable."
+        },
+        {
+          "key": "possibility-freedom",
+          "left_revision": "829ad3cb-57ca-4836-99f2-a50c36b8f4e0@human-1.0.0",
+          "right_revision": "EXP1-L-R-01@human-1.0.0",
+          "prompt": "When I ask for advice, I prefer a clear recommendation over a list of possibilities."
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-22@human-1.0.0",
+          "right_revision": "EXP1-L-R-02@human-1.0.0",
+          "prompt": "Learning holds my attention better when I can use it toward a visible result than when exploration is the main reward."
+        },
+        {
+          "key": "tradition-update-motive",
+          "left_revision": "EXP3-S-020@human-1.0.0",
+          "right_revision": "EXP3-S-020@human-1.0.0",
+          "prompt": "A family tradition can be updated in several reasonable ways. Which change appeals to you?"
+        },
+        {
+          "key": "regular-customer-loyalty",
+          "left_revision": "EXP3-S-046@human-1.0.0",
+          "right_revision": "EXP3-S-046@human-1.0.0",
+          "prompt": "You are choosing a place to become a regular customer. What keeps you returning?"
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-22@human-1.0.0",
+          "right_revision": "EXP2-S-16@human-1.0.0",
+          "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "0309c2cb-91b4-4ac4-936f-051fd9a9c18c@engagement-1.0.0",
+          "prompt": "If a change could help but strain important relationships, I would rather protect the connection than move faster."
+        },
+        {
+          "key": "recovery",
+          "left_revision": "C01-L-R-05@human-1.0.0",
+          "right_revision": "EXP1-S-19@human-1.0.0",
+          "prompt": "A home improvement you attempted did not work as expected. What are you most inclined to do first?"
+        },
+        {
+          "key": "trust",
+          "left_revision": "4a7016b7-648a-45a7-8b3b-0047215b2270@human-1.0.0",
+          "right_revision": "EXP1-L-G-01@human-1.0.1",
+          "prompt": "I trust advice more when I can see the evidence and assumptions behind it, even if the answer takes longer."
+        },
+        {
+          "key": "decision",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "EXP1-S-02@expression-1.0.0",
+          "prompt": "A friend helps with a hard personal decision. What kind of help do you value?"
+        },
+        {
+          "key": "trust",
+          "left_revision": "4a7016b7-648a-45a7-8b3b-0047215b2270@human-1.0.0",
+          "right_revision": "EXP2-L-R-03@human-1.0.0",
+          "prompt": "I trust someone faster when they move a result forward than when they build a steady process."
+        },
+        {
+          "key": "completion",
+          "left_revision": "EXP2-S-19@human-1.0.0",
+          "right_revision": "EXP2-S-19@human-1.0.0",
+          "prompt": "You made a household purchase after careful consideration. What would most naturally make you reconsider it?"
+        },
+        {
+          "key": "relational-continuity",
+          "left_revision": "C02-S-03@human-1.0.0",
+          "right_revision": "C02-L-Y-02@human-1.0.0",
+          "prompt": "I feel more settled deepening a dependable relationship than widening my circle with new connections."
+        },
+        {
+          "key": "decision",
+          "left_revision": "C03-S-10@human-1.0.0",
+          "right_revision": "EXP2-S-20@expression-1.0.0",
+          "prompt": "A family plan is already underway. What would justify reopening it?"
+        },
+        {
+          "key": "household-purchase",
+          "left_revision": "C03-S-03@human-1.0.0",
+          "right_revision": "C03-S-03@human-1.0.0",
+          "prompt": "You are choosing a household item that you will use often, and several options would work. What guides your choice most?"
+        },
+        {
+          "key": "advice-purpose",
+          "left_revision": "EXP3-S-014@human-1.0.0",
+          "right_revision": "EXP3-S-014@human-1.0.0",
+          "prompt": "A friend wants honest advice about a choice. What do you most want your advice to provide?"
+        },
+        {
+          "key": "learning",
+          "left_revision": "EXP2-S-22@human-1.0.0",
+          "right_revision": "EXP1-L-B-02@human-1.0.0",
+          "prompt": "When learning something for enjoyment, I would rather have room to experiment than follow one proven sequence from the beginning."
+        }
+      ],
+      "experiential_near_matches": [
+        {
+          "left_id": "EXP3-L-G-002",
+          "right_id": "EXP1-L-G-01",
+          "left_prompt": "I trust a recommendation more when I can see the evidence and limits behind it.",
+          "right_prompt": "I trust advice more when I can see the evidence and assumptions behind it, even if the answer takes longer.",
+          "similarity": 0.385,
+          "same_frame": false
+        }
+      ]
+    }
+  ],
+  "learning_item": {
+    "id": "EXP2-S-16",
+    "appearances": [
+      {
+        "attempt_id": "dd97a7d4-b8aa-4c66-8d85-e6eedf6dca97",
+        "bank": "viago-validation-bank-183-v1.0.0",
+        "revision_id": "EXP2-S-16@validation-1.0.0",
+        "position": 30,
+        "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?",
+        "options": [
+          {
+            "id": "EXP2-S-16:o3",
+            "label": "A steady group or mentor relationship that grows over time"
+          },
+          {
+            "id": "EXP2-S-16:o4",
+            "label": "A structured progression whose principles and standards make sense"
+          },
+          {
+            "id": "EXP2-S-16:o1",
+            "label": "Clear challenges and milestones that show advancement"
+          },
+          {
+            "id": "EXP2-S-16:o2",
+            "label": "Variety, experimentation, and freedom to follow interesting paths"
+          }
+        ]
+      },
+      {
+        "attempt_id": "66590d2b-83e8-4f6d-979f-4fcc52222ad4",
+        "bank": "viago-validation-bank-293-v2.0.0",
+        "revision_id": "EXP2-S-16@validation-1.0.0",
+        "position": 37,
+        "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?",
+        "options": [
+          {
+            "id": "EXP2-S-16:o3",
+            "label": "A steady group or mentor relationship that grows over time"
+          },
+          {
+            "id": "EXP2-S-16:o1",
+            "label": "Clear challenges and milestones that show advancement"
+          },
+          {
+            "id": "EXP2-S-16:o2",
+            "label": "Variety, experimentation, and freedom to follow interesting paths"
+          },
+          {
+            "id": "EXP2-S-16:o4",
+            "label": "A structured progression whose principles and standards make sense"
+          }
+        ]
+      },
+      {
+        "attempt_id": "ae07507c-bd11-4d39-8829-a5190f91b298",
+        "bank": "viago-validation-bank-292-engagement-v4.0.0",
+        "revision_id": "EXP2-S-16@human-1.0.0",
+        "position": 6,
+        "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?",
+        "options": [
+          {
+            "id": "EXP2-S-16:o2",
+            "label": "Variety, experimentation, and freedom to follow interesting paths"
+          },
+          {
+            "id": "EXP2-S-16:o3",
+            "label": "A steady group or mentor relationship that grows over time"
+          },
+          {
+            "id": "EXP2-S-16:o1",
+            "label": "Clear challenges and milestones that show advancement"
+          },
+          {
+            "id": "EXP2-S-16:o4",
+            "label": "A structured progression whose principles and standards make sense"
+          }
+        ]
+      },
+      {
+        "attempt_id": "0f81e855-2018-4733-988a-5fbe2d52183f",
+        "bank": "viago-validation-bank-292-expression-v5.0.0",
+        "revision_id": "EXP2-S-16@human-1.0.0",
+        "position": 21,
+        "prompt": "You may choose among four equally effective learning environments. Which one would fit you best?",
+        "options": [
+          {
+            "id": "EXP2-S-16:o2",
+            "option_revision_id": "EXP2-S-16@human-1.0.0:EXP2-S-16:o2",
+            "label": "Variety, experimentation, and freedom to follow interesting paths"
+          },
+          {
+            "id": "EXP2-S-16:o1",
+            "option_revision_id": "EXP2-S-16@human-1.0.0:EXP2-S-16:o1",
+            "label": "Clear challenges and milestones that show advancement"
+          },
+          {
+            "id": "EXP2-S-16:o3",
+            "option_revision_id": "EXP2-S-16@human-1.0.0:EXP2-S-16:o3",
+            "label": "A steady group or mentor relationship that grows over time"
+          },
+          {
+            "id": "EXP2-S-16:o4",
+            "option_revision_id": "EXP2-S-16@human-1.0.0:EXP2-S-16:o4",
+            "label": "A structured progression whose principles and standards make sense"
+          }
+        ]
+      }
+    ]
+  },
+  "experiential_method": "Cross-attempt, non-identical item pair: prompt-token Jaccard >= 0.34, or >= 0.20 plus identical context/domain/orientation. This is a review screen, not semantic authority.",
+  "audit_hash": "f656cd3e3875f1bb49d8faa3efe3df3703b71e87508e3d85bf454f2763258425"
+}
