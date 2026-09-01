@@ -1,0 +1,1781 @@
+{
+  "schema_version": "1.0.0",
+  "chunk": 6,
+  "reviewed_identities": [
+    "EXP3-L-B-011",
+    "EXP3-L-B-012",
+    "EXP3-L-B-013",
+    "EXP3-L-G-001",
+    "EXP3-L-G-002",
+    "EXP3-L-G-003",
+    "EXP3-L-G-004",
+    "EXP3-L-G-005",
+    "EXP3-L-G-006",
+    "EXP3-L-G-007",
+    "EXP3-L-G-008",
+    "EXP3-L-G-009",
+    "EXP3-L-G-010",
+    "EXP3-L-G-011",
+    "EXP3-L-G-012",
+    "EXP3-L-R-001",
+    "EXP3-L-R-002",
+    "EXP3-L-R-003",
+    "EXP3-L-R-004",
+    "EXP3-L-R-005",
+    "EXP3-L-R-006",
+    "EXP3-L-R-007",
+    "EXP3-L-R-008",
+    "EXP3-L-R-009",
+    "EXP3-L-R-010",
+    "EXP3-L-R-011",
+    "EXP3-L-R-012",
+    "EXP3-L-R-013",
+    "EXP3-L-Y-001",
+    "EXP3-L-Y-002",
+    "EXP3-L-Y-003",
+    "EXP3-L-Y-004",
+    "EXP3-L-Y-005",
+    "EXP3-L-Y-006",
+    "EXP3-L-Y-007",
+    "EXP3-L-Y-008",
+    "EXP3-L-Y-009",
+    "EXP3-L-Y-010",
+    "EXP3-L-Y-011",
+    "EXP3-L-Y-012"
+  ],
+  "dispositions": [
+    {
+      "id": "EXP3-L-B-011",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/265"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/83"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/265"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/265"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/266"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/266"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/266"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/249"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-B-012",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/266"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/84"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/266"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/266"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/267"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/267"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/267"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/250"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-B-013",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/267"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/85"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/267"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/267"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/268"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/268"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/268"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/251"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "EXP3-L-G-001",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/280"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/98"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/280"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/280"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/281"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/281"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/281"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/264"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-002",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/281"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/99"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/281"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/281"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/282"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/282"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/282"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/265"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-003",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/282"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/100"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/282"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/282"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/283"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/283"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/283"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/266"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-004",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/283"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/101"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/283"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/283"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/284"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/284"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/284"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/267"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-005",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/284"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/102"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/284"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/284"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/285"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/285"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/285"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/268"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-006",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/285"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/103"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/285"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/285"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/286"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/286"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/286"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/269"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-007",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/286"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/104"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/286"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/286"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/287"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/287"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/287"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/270"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-008",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/287"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/105"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/287"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/287"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/288"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/288"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/288"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/271"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-009",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/288"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/106"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/288"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/288"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/289"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/289"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/289"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/272"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-010",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/289"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/107"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/289"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/289"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/290"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/290"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/290"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/273"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-G-011",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 92,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/290"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/108"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/290"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/290"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/291"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/291"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/291"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/274"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "EXP3-L-G-012",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/291"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/109"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/291"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/291"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/292"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/292"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/292"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/275"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-001",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/242"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/60"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/242"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/242"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/243"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/243"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/243"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/226"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-002",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/243"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/61"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/243"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/243"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/244"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/244"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/244"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/227"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-003",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/244"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/62"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/244"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/244"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/245"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/245"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/245"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/228"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-004",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/245"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/63"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/245"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/245"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/246"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/246"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/246"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/229"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-005",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/246"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/64"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/246"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/246"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/247"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/247"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/247"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/230"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-006",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/247"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/65"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/247"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/247"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/248"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/248"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/248"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/231"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-007",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 103,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/248"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/66"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/248"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/248"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/249"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/249"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/249"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/232"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-008",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/249"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/67"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/249"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/249"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/250"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/250"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/250"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/233"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-009",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/250"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/68"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/250"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/250"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/251"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/251"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/251"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/234"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-010",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/251"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/251"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/251"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/252"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/252"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/252"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/235"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-011",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/252"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/252"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/252"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/253"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/253"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/253"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/236"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-R-012",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/253"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/253"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/253"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/254"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/254"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/254"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/237"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "EXP3-L-R-013",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 92,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/254"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/72"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/254"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/254"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/255"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/255"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/255"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/238"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-001",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/268"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/86"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/268"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/268"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/269"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/269"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/269"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/252"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-002",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/269"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/87"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/269"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/269"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/270"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/270"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/270"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/253"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-003",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/270"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/88"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/270"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/270"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/271"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/271"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/271"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/254"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-004",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/271"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/89"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/271"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/271"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/272"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/272"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/272"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/255"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-005",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/272"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/90"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/272"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/272"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/273"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/273"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/273"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/256"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-006",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/273"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/91"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/273"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/273"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/274"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/274"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/274"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/257"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-007",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/274"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/92"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/274"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/274"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/275"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/275"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/275"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/258"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-008",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 91.5,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/275"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/93"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/275"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/275"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/276"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/276"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/276"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/259"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-009",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/276"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/94"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/276"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/276"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/277"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/277"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/277"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/260"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-010",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/277"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/95"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/277"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/277"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/278"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/278"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/278"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/261"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-011",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/278"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/96"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/278"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/278"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/279"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/279"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/279"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/262"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "EXP3-L-Y-012",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 97,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/279"
+        },
+        {
+          "file": "data/v2-research/final-pretest-expansion-v2.json",
+          "pointer": "/admitted/97"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/279"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/279"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/280"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/280"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/280"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/263"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    }
+  ],
+  "summary": {
+    "KEEP_EXACTLY": 37,
+    "KEEP_WITH_LIGHT_POLISH": 0,
+    "REWRITE_HUMAN": 0,
+    "REPLACE_WITH_EXISTING_HR": 0,
+    "REPLACE_WITH_NEW_HR": 0,
+    "RETIRE_REDUNDANT": 0,
+    "RETIRE_STERILE": 3,
+    "RETIRE_CONFUSING": 0,
+    "RETIRE_WEAK_EVIDENCE": 0,
+    "RETIRE_BAD_ALIGNMENT": 0,
+    "DEFER_RESEARCH": 0
+  }
+}

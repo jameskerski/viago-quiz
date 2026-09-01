@@ -1,0 +1,1061 @@
+{
+  "schema_version": "1.0.0",
+  "chunk": 9,
+  "reviewed_identities": [
+    "HR-S-021",
+    "HR-S-022",
+    "HR-S-023",
+    "HR-S-024",
+    "HR-S-025",
+    "HR-S-026",
+    "HR-S-027",
+    "HR-S-028",
+    "HR-S-029",
+    "HR-S-030",
+    "HR-S-031",
+    "HR-S-032",
+    "HR-S-033",
+    "HR-S-034",
+    "HR-S-035",
+    "HR-S-036",
+    "HR-S-037",
+    "HR-S-038",
+    "HR-S-039",
+    "HR-S-040",
+    "HR-S-041",
+    "HR-S-042",
+    "HR-S-043",
+    "HR-S-044",
+    "HR-S-045",
+    "HR-S-046",
+    "HR-S-047",
+    "HR-S-048",
+    "HR-S-049",
+    "HR-S-050",
+    "HR-S-051",
+    "HR-S-052",
+    "HR-S-053",
+    "HR-S-054",
+    "HR-S-055",
+    "HR-S-056",
+    "HR-S-057",
+    "HR-S-058",
+    "HR-S-059",
+    "HR-S-060"
+  ],
+  "dispositions": [
+    {
+      "id": "HR-S-021",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/20"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/20"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/20"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/287"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-022",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/21"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/21"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/21"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-023",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/22"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/22"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/22"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/288"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-024",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/23"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/23"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/23"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-025",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/24"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/24"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/24"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/289"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-026",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/25"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/25"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/25"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-027",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/26"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/26"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/26"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/290"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-028",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/27"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/27"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/27"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-029",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/28"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/28"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/28"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-030",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/29"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/29"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/29"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/291"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-031",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/30"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/30"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/30"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-032",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/31"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/31"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/31"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-033",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/32"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/32"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/32"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/292"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-034",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/33"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/33"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/33"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-035",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/34"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/34"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/34"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/293"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-036",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/35"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/35"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/35"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-037",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/36"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/36"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/36"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/294"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-038",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/37"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/37"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/37"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/295"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-039",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/38"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/38"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/38"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-040",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/39"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/39"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/39"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/296"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-041",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/40"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/40"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/40"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/297"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-042",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/41"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/41"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/41"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/298"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-043",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/42"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/42"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/42"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-044",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/43"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/43"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/43"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-045",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/44"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/44"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/44"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-046",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/45"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/45"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/45"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/299"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-047",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/46"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/46"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/46"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-048",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/47"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/47"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/47"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-049",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/48"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/48"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/48"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/300"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-050",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/49"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/49"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/49"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/301"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-051",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/50"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/50"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/50"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-052",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/51"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/51"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/51"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-053",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 100,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/52"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/52"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/52"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/302"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-054",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/53"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/53"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/53"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/303"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-055",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/54"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/54"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/54"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/304"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-056",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/55"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/55"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/55"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-057",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/56"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/56"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/56"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/305"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-058",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/57"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/57"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/57"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    },
+    {
+      "id": "HR-S-059",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/58"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/58"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/58"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/306"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "HR-S-060",
+      "format": "SINGLE_SELECT",
+      "disposition": "DEFER_RESEARCH",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-research/human-recognition-candidates-v1.0.0.json",
+          "pointer": "/candidates/59"
+        },
+        {
+          "file": "data/v2-research/human-recognition-final-review-v1.0.0.json",
+          "pointer": "/items/59"
+        },
+        {
+          "file": "data/v2-research/human-recognition-v6-final-reconciliation.json",
+          "pointer": "/items/59"
+        }
+      ],
+      "reason": "Preserved outside the canonical bank for research; it did not outperform the retained evidence."
+    }
+  ],
+  "summary": {
+    "KEEP_EXACTLY": 20,
+    "KEEP_WITH_LIGHT_POLISH": 0,
+    "REWRITE_HUMAN": 0,
+    "REPLACE_WITH_EXISTING_HR": 0,
+    "REPLACE_WITH_NEW_HR": 0,
+    "RETIRE_REDUNDANT": 0,
+    "RETIRE_STERILE": 0,
+    "RETIRE_CONFUSING": 0,
+    "RETIRE_WEAK_EVIDENCE": 0,
+    "RETIRE_BAD_ALIGNMENT": 0,
+    "DEFER_RESEARCH": 20
+  }
+}

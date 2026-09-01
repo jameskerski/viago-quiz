@@ -1,0 +1,1633 @@
+{
+  "schema_version": "1.0.0",
+  "chunk": 2,
+  "reviewed_identities": [
+    "59ded366-49c8-46e8-891e-3dd48a501695",
+    "5a6e8337-90ce-4cc9-b766-f74ecafab528",
+    "5f17485f-373e-455d-af0b-70ec6485943b",
+    "63a771d2-a37a-4a48-b5fd-f5d316d26b0d",
+    "66083e12-2f11-4849-976a-7e9d7edebc38",
+    "695d628c-53d3-46c2-b360-d355ee0511ad",
+    "6a004186-77cd-415b-bf4f-8cd631a9c1d6",
+    "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+    "6cbf5dfd-cb2e-4f14-ac91-982c113f59ee",
+    "6eb555cb-c60c-4820-9a3d-6b1017514265",
+    "76a13ab4-c5cc-43df-8d92-100689764905",
+    "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+    "79803d54-28bb-4990-b557-22fd67927109",
+    "799f2aac-8544-4bd3-850b-dd76fc1e2cfc",
+    "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+    "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+    "7d345f7b-6c63-429d-981c-857b2af2fb58",
+    "806a2363-7e28-42b9-99dd-7faabf6710b7",
+    "829ad3cb-57ca-4836-99f2-a50c36b8f4e0",
+    "86f93908-6a45-42f7-bd7b-d2d7d3d13de6",
+    "878213b1-fed4-4fb2-b056-be5439af77e3",
+    "89253e02-693d-46ea-85a4-c1af38ac9a73",
+    "8ab6d9b5-9a3b-48e2-9eb8-f5e37edf3a9c",
+    "8c889b4b-94cf-41b5-89d0-507cbc300e8b",
+    "8e010957-ec1f-4880-9efe-8fc1a505e68a",
+    "8ed50147-99ab-4673-9004-567c307646c9",
+    "8fa4cb1b-6113-4e67-af9a-5bde9b37ef51",
+    "917bb239-754d-4fc1-abe5-731dd1389226",
+    "9431c0ae-dc91-4d89-b055-040b44034cc3",
+    "94fc0c96-7820-416c-a6e4-abe8f767ad07",
+    "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+    "C01-L-B-02",
+    "C01-L-B-03",
+    "C01-L-B-05",
+    "C01-L-G-01",
+    "C01-L-G-02",
+    "C01-L-G-03",
+    "C01-L-R-01",
+    "C01-L-R-02",
+    "C01-L-R-03"
+  ],
+  "dispositions": [
+    {
+      "id": "59ded366-49c8-46e8-891e-3dd48a501695",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 90,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/2"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/24"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "5a6e8337-90ce-4cc9-b766-f74ecafab528",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/3"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/25"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/25"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "5f17485f-373e-455d-af0b-70ec6485943b",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/4"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "63a771d2-a37a-4a48-b5fd-f5d316d26b0d",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 84,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/5"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/26"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/26"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "66083e12-2f11-4849-976a-7e9d7edebc38",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/6"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "695d628c-53d3-46c2-b360-d355ee0511ad",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/8"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/27"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/27"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "6a004186-77cd-415b-bf4f-8cd631a9c1d6",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 103,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/9"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/28"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/28"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "6aef9c71-489c-47a3-98bf-89c37cdd5009",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/10"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "6cbf5dfd-cb2e-4f14-ac91-982c113f59ee",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/11"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/29"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/29"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "6eb555cb-c60c-4820-9a3d-6b1017514265",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/13"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "76a13ab4-c5cc-43df-8d92-100689764905",
+      "format": "SINGLE_SELECT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/16"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "78167084-c8aa-4e21-bc88-cf35b4ac0021",
+      "format": "SINGLE_SELECT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/18"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "79803d54-28bb-4990-b557-22fd67927109",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/20"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/30"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/30"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "799f2aac-8544-4bd3-850b-dd76fc1e2cfc",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 92,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/21"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/31"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/31"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "7cf21580-ec06-4c65-b602-4c9317eeac3d",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/22"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/32"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/32"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "7d22afa7-f5b6-450c-93d4-a8b2f3318410",
+      "format": "SINGLE_SELECT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/23"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/33"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/33"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "7d345f7b-6c63-429d-981c-857b2af2fb58",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 92,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-03.json",
+          "pointer": "/questions/24"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/34"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/34"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "806a2363-7e28-42b9-99dd-7faabf6710b7",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/1"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/35"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/35"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "829ad3cb-57ca-4836-99f2-a50c36b8f4e0",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/2"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/36"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/36"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "86f93908-6a45-42f7-bd7b-d2d7d3d13de6",
+      "format": "SINGLE_SELECT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 108,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/5"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/37"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/37"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "878213b1-fed4-4fb2-b056-be5439af77e3",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/6"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "89253e02-693d-46ea-85a4-c1af38ac9a73",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/7"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "8ab6d9b5-9a3b-48e2-9eb8-f5e37edf3a9c",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/9"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/38"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/38"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "8c889b4b-94cf-41b5-89d0-507cbc300e8b",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/10"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/39"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/39"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "8e010957-ec1f-4880-9efe-8fc1a505e68a",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 106.5,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/11"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/40"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/40"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "8ed50147-99ab-4673-9004-567c307646c9",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 92,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/12"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/41"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/41"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "8fa4cb1b-6113-4e67-af9a-5bde9b37ef51",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/13"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/42"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/42"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "917bb239-754d-4fc1-abe5-731dd1389226",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/16"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/43"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/43"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "9431c0ae-dc91-4d89-b055-040b44034cc3",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/17"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/44"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/44"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "94fc0c96-7820-416c-a6e4-abe8f767ad07",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 102,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/19"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/45"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/45"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "9dfbefb2-64e4-48aa-b3d2-219463a49544",
+      "format": "SINGLE_SELECT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/review-batch-04.json",
+          "pointer": "/questions/23"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/46"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/46"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "C01-L-B-02",
+      "format": "LIKERT",
+      "disposition": "RETIRE_STERILE",
+      "replacement_id": null,
+      "quality_score": 85.5,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/5"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/74"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/71"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "C01-L-B-03",
+      "format": "UNKNOWN",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/6"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "C01-L-B-05",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 93,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/7"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/75"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/72"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "C01-L-G-01",
+      "format": "UNKNOWN",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": null,
+      "current_bank_member": false,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/9"
+        }
+      ],
+      "reason": "Historical/noncanonical identity superseded or redundant after complete reconciliation."
+    },
+    {
+      "id": "C01-L-G-02",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 103,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/10"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/77"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/74"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "C01-L-G-03",
+      "format": "LIKERT",
+      "disposition": "RETIRE_REDUNDANT",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/11"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/78"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/75"
+        }
+      ],
+      "reason": "Did not earn scarce final-bank capacity after human-experience, redundancy, and coverage comparison."
+    },
+    {
+      "id": "C01-L-R-01",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 98.5,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/0"
+        },
+        {
+          "file": "data/v2-reconstruction/review-batch-02.json",
+          "pointer": "/questions/2/replacement"
+        },
+        {
+          "file": "data/v2-reconstruction/review-final-batch.json",
+          "pointer": "/questions/25/replacement"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/69"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/66"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "C01-L-R-02",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 101.5,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/1"
+        },
+        {
+          "file": "data/v2-reconstruction/review-batch-05.json",
+          "pointer": "/questions/4/replacement"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/70"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/67"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    },
+    {
+      "id": "C01-L-R-03",
+      "format": "LIKERT",
+      "disposition": "KEEP_EXACTLY",
+      "replacement_id": null,
+      "quality_score": 88,
+      "current_bank_member": true,
+      "sources": [
+        {
+          "file": "data/v2-reconstruction/development-candidate-review-batch-a.json",
+          "pointer": "/records/2"
+        },
+        {
+          "file": "data/v2-research/behavioral-expression-bank-review-v1.0.0.json",
+          "pointer": "/item_reviews/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-183-v1.0.0.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-engagement-v4.0.0.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-292-expression-v5.0.0.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.0.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-human-v3.0.1.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/validation-bank-293-v2.0.0.json",
+          "pointer": "/questions/71"
+        },
+        {
+          "file": "data/v2-research/viago-validation-bank-308-human-recognition-v6.0.0.json",
+          "pointer": "/questions/68"
+        }
+      ],
+      "reason": "Fresh Human Recognition review passed immediate comprehension, human-thought, color-evidence, and bank-value gates."
+    }
+  ],
+  "summary": {
+    "KEEP_EXACTLY": 19,
+    "KEEP_WITH_LIGHT_POLISH": 0,
+    "REWRITE_HUMAN": 0,
+    "REPLACE_WITH_EXISTING_HR": 0,
+    "REPLACE_WITH_NEW_HR": 0,
+    "RETIRE_REDUNDANT": 16,
+    "RETIRE_STERILE": 5,
+    "RETIRE_CONFUSING": 0,
+    "RETIRE_WEAK_EVIDENCE": 0,
+    "RETIRE_BAD_ALIGNMENT": 0,
+    "DEFER_RESEARCH": 0
+  }
+}

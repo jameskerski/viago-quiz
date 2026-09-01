@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS_NON_PRODUCTION_RESEARCH",
+  "participants": 1000,
+  "attempts_each": 4,
+  "bank_id": "viago-validation-bank-240-human-recognition-purge-v1.0.0",
+  "bank_hash": "24564443527bfa818c27659519ee5d32b1a6257433e2ccce0552a26d33988b73",
+  "assembler_version": "VIAGO_RETEST_NOVELTY_ASSEMBLER_V1",
+  "selector_failures": 0,
+  "failure_rate": 0,
+  "attempts": [
+    {
+      "attempt": 1,
+      "n": 1000,
+      "single": 26,
+      "likert": 24,
+      "contexts": 31.313,
+      "work": 1.425,
+      "hr": 6.331
+    },
+    {
+      "attempt": 2,
+      "n": 1000,
+      "single": 26,
+      "likert": 24,
+      "contexts": 30.836,
+      "work": 1.255,
+      "hr": 5.22
+    },
+    {
+      "attempt": 3,
+      "n": 1000,
+      "single": 26,
+      "likert": 24,
+      "contexts": 30.316,
+      "work": 1.136,
+      "hr": 3.606
+    },
+    {
+      "attempt": 4,
+      "n": 1000,
+      "single": 26,
+      "likert": 24,
+      "contexts": 30.294,
+      "work": 1.313,
+      "hr": 5.147
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "n": 1000,
+      "exact": 0,
+      "revision": 0,
+      "family": 0,
+      "construct": 0,
+      "experiential": 0
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "n": 1000,
+      "exact": 0,
+      "revision": 0,
+      "family": 0,
+      "construct": 0,
+      "experiential": 0
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "n": 1000,
+      "exact": 0,
+      "revision": 0,
+      "family": 0,
+      "construct": 0.998,
+      "experiential": 0.47
+    }
+  ],
+  "scoring_changes": "NONE",
+  "audit_hash": "c6369504599e60681f3b7bc49ce2cbca12dca132ae48c2e0bd58c57c0af321dc"
+}
