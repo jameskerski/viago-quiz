@@ -10,7 +10,7 @@ const FLAGS=new Set(['confusing','two_answers_true','no_answer_true','obvious_be
 export async function GET(request:Request){
  const id=new URL(request.url).searchParams.get('attempt_id'); if(!id)return NextResponse.json({error:'attempt_id required'},{status:400});
  if(!(await hasAdminSession())&&!(await canAccessValidationAttempt(id)))return NextResponse.json({error:'Validation attempt access required'},{status:401});
- const {data,error}=await supabaseAdmin.from('validation_attempts').select('id,participant_id,attempt_number,manifest,answers,item_flags,score_vector,primary_color,secondary_color,ranking,score_margin,started_at,completed_at,elapsed_seconds').eq('id',id).single();
+ const {data,error}=await supabaseAdmin.from('validation_attempts').select('id,participant_id,attempt_number,manifest,answers,item_flags,item_notes,score_vector,primary_color,secondary_color,ranking,score_margin,started_at,completed_at,elapsed_seconds').eq('id',id).single();
  if(error)return NextResponse.json({error:error.message},{status:404});
  return NextResponse.json({...data,manifest:publicManifest(data.manifest)});
 }
@@ -46,6 +46,11 @@ export async function POST(request:Request){
   if(action==='flag'){
    const revision=String(body.question_revision_id||'');const flag=String(body.flag||'');if(!FLAGS.has(flag))return NextResponse.json({error:'Invalid flag'},{status:400});
    const list=new Set<string>(current.data.item_flags?.[revision]||[]);body.enabled===false?list.delete(flag):list.add(flag);const item_flags={...current.data.item_flags,[revision]:[...list]};const update=await supabaseAdmin.from('validation_attempts').update({item_flags}).eq('id',attemptId);if(update.error)throw update.error;return NextResponse.json({ok:true});
+  }
+  if(action==='note'){
+   const revision=String(body.question_revision_id||'');if(!current.data.manifest.questions.some((q:{question_revision_id:string})=>q.question_revision_id===revision))return NextResponse.json({error:'Question is not in this manifest'},{status:400});
+   const note=String(body.note??'').trim();if(note.length>250)return NextResponse.json({error:'Question note must be 250 characters or fewer'},{status:400});
+   const item_notes={...(current.data.item_notes||{})};note?item_notes[revision]=note:delete item_notes[revision];const update=await supabaseAdmin.from('validation_attempts').update({item_notes}).eq('id',attemptId);if(update.error)throw update.error;return NextResponse.json({ok:true,note});
   }
   if(action==='complete'){
    if(Object.keys(current.data.answers||{}).length!==50)return NextResponse.json({error:'All 50 answers are required'},{status:400});const result=scoreValidationAttempt(current.data.manifest,current.data.answers);const completedAt=new Date();const elapsed=Math.max(0,Math.round((completedAt.getTime()-new Date(current.data.started_at).getTime())/1000));
