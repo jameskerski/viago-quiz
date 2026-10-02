@@ -58,3 +58,11 @@ test("public health and participant payload contracts remain minimal", () => {
   assert.doesNotMatch(attempt, /red_score|blue_score|yellow_score|green_score|likert_color/);
   assert.doesNotMatch(attempt, /validation_|service_role|SUPABASE_SERVICE_ROLE_KEY/);
 });
+
+test("the canonical project root enters the accepted V2 personality experience", () => {
+  const home = read("app/page.tsx");
+  const v2Home = read("app/v2/page.tsx");
+
+  assert.match(home, /redirect\('\/v2'\)/);
+  assert.doesNotMatch(v2Home, /Private V2 preview/);
+});

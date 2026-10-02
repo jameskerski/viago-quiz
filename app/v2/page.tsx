@@ -31,7 +31,7 @@ export default async function V2LandingPage() {
           <ColorOrb labels={{ red: 'Drive', blue: 'Connect', yellow: 'Care', green: 'Understand' }} />
         </div>
       </section>
-      <footer className="flex flex-col items-start justify-between gap-3 border-t border-white/[0.07] py-5 text-xs text-white/32 sm:flex-row sm:items-center"><V2OfficialLogo compact className="!h-7 opacity-55" /><span>Private V2 preview · English / Español</span></footer>
+      <footer className="flex flex-col items-start justify-between gap-3 border-t border-white/[0.07] py-5 text-xs text-white/32 sm:flex-row sm:items-center"><V2OfficialLogo compact className="!h-7 opacity-55" /><span>VIAGO Personality · English / Español</span></footer>
     </V2Shell>
   );
 }
